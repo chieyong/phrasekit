@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f5f2ee;
+  --surface: #ffffff;
+  --border: #eae6e1;
+  --text: #141210;
+  --text-secondary: #706c67;
+  --text-muted: #a8a49f;
+}
+
+/* Safe-area for bottom nav on iOS */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Page content area — accounts for fixed bottom nav */
+.page-content {
+  padding-bottom: 90px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tap highlight removal for mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide scrollbars on overflow-x containers */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

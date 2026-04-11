@@ -1,0 +1,102 @@
+"use client";
+
+import { useState } from "react";
+import Header from "@/components/layout/Header";
+import PhraseCard from "@/components/cards/PhraseCard";
+import { phrases, categories } from "@/data/mockData";
+import { useFavorites } from "@/hooks/useFavorites";
+import Link from "next/link";
+
+export default function OpgeslagenPagina() {
+  const { favorites } = useFavorites();
+  const [geselecteerdeCategorie, setGeselecteerdeCategorie] = useState<string | null>(null);
+
+  const opgeslagenZinnen = phrases.filter(
+    (p) => favorites.includes(p.id) || p.isFavorite
+  );
+
+  const gefilterd = geselecteerdeCategorie
+    ? opgeslagenZinnen.filter((p) => p.categoryId === geselecteerdeCategorie)
+    : opgeslagenZinnen;
+
+  const actieveCategorieen = categories.filter((cat) =>
+    opgeslagenZinnen.some((p) => p.categoryId === cat.id)
+  );
+
+  return (
+    <div className="page-content">
+      <Header
+        title="★ Opgeslagen zinnen"
+        subtitle={`${opgeslagenZinnen.length} opgeslagen`}
+      />
+
+      {opgeslagenZinnen.length === 0 ? (
+        /* ── Lege toestand ───────────────────────────────────────── */
+        <div className="flex flex-col items-center justify-center px-8 py-20 text-center">
+          <span className="text-5xl mb-4">☆</span>
+          <h2 className="text-lg font-semibold text-stone-700 mb-2">
+            Nog geen opgeslagen zinnen
+          </h2>
+          <p className="text-sm text-stone-400 leading-relaxed mb-6">
+            Tik op de opslaan-knop bij een zin om deze hier bij de hand te houden.
+          </p>
+          <Link
+            href="/"
+            className="bg-stone-900 text-white rounded-2xl px-5 py-3 text-sm font-medium active:scale-95 transition-transform"
+          >
+            Bekijk situaties
+          </Link>
+        </div>
+      ) : (
+        <>
+          {/* ── Categoriefilter ───────────────────────────────────── */}
+          {actieveCategorieen.length > 1 && (
+            <div className="flex gap-2 px-5 pt-4 pb-1 overflow-x-auto scrollbar-hide">
+              <button
+                onClick={() => setGeselecteerdeCategorie(null)}
+                className={`shrink-0 rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+                  geselecteerdeCategorie === null
+                    ? "bg-stone-900 text-white"
+                    : "bg-stone-100 text-stone-600 hover:bg-stone-200"
+                }`}
+              >
+                Alles
+              </button>
+              {actieveCategorieen.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() =>
+                    setGeselecteerdeCategorie(
+                      geselecteerdeCategorie === cat.id ? null : cat.id
+                    )
+                  }
+                  className={`shrink-0 rounded-full px-4 py-1.5 text-sm font-medium transition-colors flex items-center gap-1.5 ${
+                    geselecteerdeCategorie === cat.id
+                      ? "bg-stone-900 text-white"
+                      : "bg-stone-100 text-stone-600 hover:bg-stone-200"
+                  }`}
+                >
+                  <span>{cat.icon}</span>
+                  <span>{cat.name}</span>
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* ── Zinnenlijst ───────────────────────────────────────── */}
+          <div className="flex flex-col gap-1.5 px-5 pt-4">
+            {gefilterd.length === 0 ? (
+              <p className="text-center text-stone-400 text-sm py-8">
+                Geen opgeslagen zinnen in deze categorie.
+              </p>
+            ) : (
+              gefilterd.map((phrase) => (
+                <PhraseCard key={phrase.id} phrase={phrase} showCategory />
+              ))
+            )}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
