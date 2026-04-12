@@ -61,19 +61,38 @@ export default function HomePage() {
 
       {/* ── Vraag-knop ────────────────────────────────────────────── */}
       <div className="px-5 mb-8">
-        <Link href="/ask">
-          <div className="bg-stone-900 rounded-2xl px-5 py-4 flex items-center gap-4 active:opacity-80 transition-opacity">
-            <div className="flex-1">
-              <p className="text-white text-sm font-medium">
-                Vraag iets in het Japans
-              </p>
-              <p className="text-stone-400 text-xs mt-0.5">
-                Typ wat je wilt zeggen
-              </p>
+        {user ? (
+          <Link href="/ask">
+            <div className="bg-stone-900 rounded-2xl px-5 py-4 flex items-center gap-4 active:opacity-80 transition-opacity">
+              <div className="flex-1">
+                <p className="text-white text-sm font-medium">
+                  Vraag iets in het Japans
+                </p>
+                <p className="text-stone-400 text-xs mt-0.5">
+                  Typ wat je wilt zeggen
+                </p>
+              </div>
+              <span className="text-stone-500 text-sm shrink-0">→</span>
             </div>
-            <span className="text-stone-500 text-sm shrink-0">→</span>
-          </div>
-        </Link>
+          </Link>
+        ) : (
+          <button onClick={signInWithGoogle} className="w-full text-left">
+            <div className="bg-stone-900 rounded-2xl px-5 py-4 flex items-center gap-4 active:opacity-80 transition-opacity">
+              <div className="flex-1">
+                <p className="text-white text-sm font-medium flex items-center gap-2">
+                  Vraag iets in het Japans
+                  <span className="text-stone-500 text-xs border border-stone-700 rounded-md px-1.5 py-0.5">
+                    🔒 Inloggen vereist
+                  </span>
+                </p>
+                <p className="text-stone-500 text-xs mt-0.5">
+                  Log in met Google om AI-vertalingen te gebruiken
+                </p>
+              </div>
+              <span className="text-stone-600 text-sm shrink-0">→</span>
+            </div>
+          </button>
+        )}
       </div>
 
       {/* ── Situaties ─────────────────────────────────────────────── */}

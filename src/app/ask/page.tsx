@@ -8,6 +8,7 @@ import Header from "@/components/layout/Header";
 import ResultCard from "@/components/cards/ResultCard";
 import { exampleChips, getCategoryById } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
+import { useAuth } from "@/contexts/AuthContext";
 import { AskNowResult } from "@/types";
 
 type LoadState = "idle" | "loading" | "result" | "error";
@@ -18,6 +19,7 @@ function VraagInhoud() {
   const searchParams = useSearchParams();
   const vooringevuldeCategorie = searchParams.get("categorie");
   const { userCategories } = useUserPhrases();
+  const { user, loading: authLoading, signInWithGoogle } = useAuth();
 
   // Resolve category name for the subtitle
   const staticCat = vooringevuldeCategorie ? getCategoryById(vooringevuldeCategorie) : null;
@@ -73,6 +75,69 @@ function VraagInhoud() {
     setFoutmelding("");
     setTimeout(() => inputRef.current?.focus(), 100);
   };
+
+  // ── Demo-scherm voor niet-ingelogde gebruikers ──────────────────────────────
+  if (!authLoading && !user) {
+    return (
+      <div className="page-content">
+        <Header title="Vraag" subtitle="AI-vertaling" showBack />
+
+        <div className="px-5 pt-5 relative">
+
+          {/* Voorbeeld-resultaat — vaag op achtergrond */}
+          <div className="pointer-events-none select-none" aria-hidden>
+            <div className="bg-white rounded-2xl overflow-hidden opacity-40 blur-[2px]">
+              <div className="px-5 py-5">
+                <p className="text-xs text-stone-400 italic mb-3">"Waar is het dichtstbijzijnde station?"</p>
+                <p className="text-3xl font-bold text-stone-900 leading-tight mb-2">
+                  一番近い駅はどこですか？
+                </p>
+                <p className="text-base text-stone-400 italic mb-4">
+                  Ichiban chikai eki wa doko desu ka?
+                </p>
+                <p className="text-sm text-stone-500 leading-relaxed border-t border-stone-100 pt-3">
+                  Een beleefde manier om naar de dichtstbijzijnde treinhalte te vragen.
+                </p>
+              </div>
+              <div className="px-5 mb-4">
+                <div className="w-full bg-stone-50 rounded-xl px-4 py-3 text-sm font-medium text-stone-700">
+                  Voeg toe aan categorie ›
+                </div>
+              </div>
+              <div className="flex gap-3 px-5 pb-4 border-t border-stone-50 pt-1">
+                <span className="text-xs text-stone-400">🔊 Afspelen</span>
+                <span className="text-xs text-stone-400">📖 Uitleggen</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Inlog-kaart — bovenop het voorbeeld */}
+          <div className="absolute inset-x-5 top-16 flex flex-col items-center text-center">
+            <div className="bg-white rounded-2xl shadow-lg px-6 py-7 w-full">
+              <p className="text-2xl mb-3">✦</p>
+              <p className="text-base font-semibold text-stone-900 mb-1">
+                Vraag iets in het Japans
+              </p>
+              <p className="text-sm text-stone-400 mb-6 leading-relaxed">
+                Typ in het Nederlands wat je wilt zeggen. PhrasePath vertaalt het direct naar correct Japans — inclusief romaji en uitleg.
+              </p>
+              <button
+                onClick={signInWithGoogle}
+                className="w-full flex items-center justify-center gap-2.5 bg-stone-900 text-white rounded-xl px-5 py-3 text-sm font-medium active:opacity-80 transition-opacity"
+              >
+                <span className="text-base">G</span>
+                <span>Inloggen met Google</span>
+              </button>
+              <p className="text-xs text-stone-300 mt-3">Gratis · Geen creditcard nodig</p>
+            </div>
+          </div>
+
+          {/* Ruimte voor de kaart */}
+          <div className="h-72" />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="page-content">

@@ -10,6 +10,7 @@ import PhraseCard from "@/components/cards/PhraseCard";
 import SearchBar from "@/components/ui/SearchBar";
 import { getCategoryById, getPhrasesByCategory } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
+import { useAuth } from "@/contexts/AuthContext";
 
 interface CategoryPageProps {
   params: Promise<{ id: string }>;
@@ -19,6 +20,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const { id } = use(params);
   const router = useRouter();
   const { getUserPhrasesByCategory, userCategories, deleteCategory, loading: userLoading } = useUserPhrases();
+  const { user, signInWithGoogle } = useAuth();
 
   const staticCategory = getCategoryById(id);
   const userCategory = userCategories.find((c) => c.id === id);
@@ -81,13 +83,24 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
             placeholder={`Zoek in ${category.name.toLowerCase()}…`}
           />
         </div>
-        <Link
-          href={`/ask?categorie=${id}`}
-          className="shrink-0 flex items-center gap-1.5 bg-stone-900 text-white rounded-xl px-4 py-2.5 text-sm font-medium active:opacity-80 transition-opacity"
-        >
-          <span>✦</span>
-          <span>Vraag</span>
-        </Link>
+        {user ? (
+          <Link
+            href={`/ask?categorie=${id}`}
+            className="shrink-0 flex items-center gap-1.5 bg-stone-900 text-white rounded-xl px-4 py-2.5 text-sm font-medium active:opacity-80 transition-opacity"
+          >
+            <span>✦</span>
+            <span>Vraag</span>
+          </Link>
+        ) : (
+          <button
+            onClick={signInWithGoogle}
+            className="shrink-0 flex items-center gap-1.5 bg-stone-200 text-stone-500 rounded-xl px-4 py-2.5 text-sm font-medium active:opacity-80 transition-opacity"
+            title="Inloggen om AI te gebruiken"
+          >
+            <span>🔒</span>
+            <span>Vraag</span>
+          </button>
+        )}
       </div>
 
       <div className="px-5 pt-3 flex flex-col gap-1.5">

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AuthProvider } from "@/contexts/AuthContext";
+import AccessGate from "@/components/layout/AccessGate";
 
 export const metadata: Metadata = {
   title: "PhrasePath — Japanse Reiszinnen",
@@ -26,9 +27,10 @@ export default function RootLayout({
     <html lang="nl" className="h-full">
       <body className="min-h-full bg-[#f5f2ee] antialiased">
         <AuthProvider>
-          {/* Max-width container keeps it phone-sized even on desktop */}
           <div className="relative max-w-md mx-auto min-h-screen bg-[#f5f2ee] shadow-xl">
-            {children}
+            <AccessGate>
+              {children}
+            </AccessGate>
           </div>
         </AuthProvider>
       </body>
