@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = "force-dynamic";
+
 import Link from "next/link";
 import CategoryCard from "@/components/cards/CategoryCard";
 import PhraseCard from "@/components/cards/PhraseCard";
