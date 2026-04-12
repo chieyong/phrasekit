@@ -7,6 +7,7 @@ import Badge from "@/components/ui/Badge";
 import NumberChip from "@/components/ui/NumberChip";
 import { getCategoryById, getPhraseById } from "@/data/mockData";
 import { useFavorites } from "@/hooks/useFavorites";
+import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useEditablePhrase } from "@/hooks/useEditablePhrase";
 import { useAudio } from "@/hooks/useAudio";
 import { parseTextSegments } from "@/utils/japaneseNumbers";
@@ -196,7 +197,8 @@ interface PhraseDetailPageProps {
 
 export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { id } = use(params);
-  const phrase = getPhraseById(id);
+  const { getUserPhraseById, userCategories } = useUserPhrases();
+  const phrase = getPhraseById(id) ?? getUserPhraseById(id);
 
   const { isFavorite, toggleFavorite } = useFavorites();
   const { edited, numberMap, hasChanges, updateNumber, reset } =
@@ -207,7 +209,9 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
 
   if (!phrase) notFound();
 
-  const category = getCategoryById(phrase.categoryId);
+  const category =
+    getCategoryById(phrase.categoryId) ??
+    userCategories.find((c) => c.id === phrase.categoryId);
   const favorited = isFavorite(id);
   const isPlaying = audioState === "playing";
   const hasNumbers = [...numberMap.keys()].length > 0;

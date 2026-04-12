@@ -1,9 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import CategoryCard from "@/components/cards/CategoryCard";
 import PhraseCard from "@/components/cards/PhraseCard";
 import { categories, phrases } from "@/data/mockData";
+import { useUserPhrases } from "@/hooks/useUserPhrases";
 
 export default function HomePage() {
+  const { userCategories } = useUserPhrases();
   const opgeslagenZinnen = phrases.filter((p) => p.isFavorite).slice(0, 2);
 
   return (
@@ -44,6 +48,16 @@ export default function HomePage() {
         <div className="flex flex-col gap-1.5">
           {categories.map((cat) => (
             <CategoryCard key={cat.id} category={cat} />
+          ))}
+          {userCategories.map((cat) => (
+            <Link
+              key={cat.id}
+              href={`/category/${cat.id}`}
+              className="flex items-center gap-3 bg-white rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity"
+            >
+              <span className="text-2xl">{cat.icon}</span>
+              <span className="text-sm font-medium text-stone-800">{cat.name}</span>
+            </Link>
           ))}
         </div>
       </section>

@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import PhraseCard from "@/components/cards/PhraseCard";
 import SearchBar from "@/components/ui/SearchBar";
 import { getCategoryById, getPhrasesByCategory } from "@/data/mockData";
+import { useUserPhrases } from "@/hooks/useUserPhrases";
 
 interface CategoryPageProps {
   params: Promise<{ id: string }>;
@@ -13,8 +14,16 @@ interface CategoryPageProps {
 
 export default function CategoriePagina({ params }: CategoryPageProps) {
   const { id } = use(params);
-  const category = getCategoryById(id);
-  const alleZinnen = getPhrasesByCategory(id);
+  const { getUserPhrasesByCategory, userCategories } = useUserPhrases();
+
+  const staticCategory = getCategoryById(id);
+  const userCategory = userCategories.find((c) => c.id === id);
+  const category = staticCategory ?? (userCategory ? { ...userCategory, description: "", color: "", accentColor: "" } : null);
+
+  const alleZinnen = [
+    ...getPhrasesByCategory(id),
+    ...getUserPhrasesByCategory(id),
+  ];
 
   const [query, setQuery] = useState("");
 

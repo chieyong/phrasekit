@@ -3,9 +3,9 @@ import "./globals.css";
 import BottomNav from "@/components/layout/BottomNav";
 
 export const metadata: Metadata = {
-  title: "PhrasePath — Japan Travel Phrases",
+  title: "PhrasePath — Japanse Reiszinnen",
   description:
-    "Calm, fast travel phrase companion for Japan. Situation-based phrases at your fingertips.",
+    "Snelle Japanse reiszinnen voor onderweg, altijd bij de hand.",
   manifest: "/manifest.json",
 };
 
@@ -14,7 +14,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: "#faf9f7",
+  themeColor: "#141210",
 };
 
 export default function RootLayout({
@@ -23,10 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
-      <body className="min-h-full bg-[#faf9f7] antialiased">
+    <html lang="nl" className="h-full">
+      <body className="min-h-full bg-[#f5f2ee] antialiased">
         {/* Max-width container keeps it phone-sized even on desktop */}
-        <div className="relative max-w-md mx-auto min-h-screen bg-[#faf9f7] shadow-xl">
+        <div className="relative max-w-md mx-auto min-h-screen bg-[#f5f2ee] shadow-xl">
           {children}
           <BottomNav />
         </div>
