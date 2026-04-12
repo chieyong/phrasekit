@@ -4,12 +4,11 @@ export const dynamic = "force-dynamic";
 
 import { use, useState } from "react";
 import { notFound, useRouter } from "next/navigation";
-import Link from "next/link";
 import Header from "@/components/layout/Header";
 import PhraseCard from "@/components/cards/PhraseCard";
 import { getCategoryById, getPhrasesByCategory } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
-import { useAuth } from "@/contexts/AuthContext";
+import InlineTranslator from "@/components/ui/InlineTranslator";
 
 interface CategoryPageProps {
   params: Promise<{ id: string }>;
@@ -19,7 +18,6 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const { id } = use(params);
   const router = useRouter();
   const { getUserPhrasesByCategory, userCategories, deleteCategory, loading: userLoading } = useUserPhrases();
-  const { user, signInWithGoogle } = useAuth();
 
   const staticCategory = getCategoryById(id);
   const userCategory = userCategories.find((c) => c.id === id);
@@ -74,31 +72,12 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         showBack
       />
 
-      {/* ── Vertaalblok ───────────────────────────────────────────── */}
+      {/* ── Inline vertaler ───────────────────────────────────────── */}
       <div className="px-5 pt-4 pb-3">
-        {user ? (
-          <Link href={`/ask?categorie=${id}`}>
-            <div className="bg-white rounded-2xl px-5 py-4 flex items-center gap-4 shadow-sm active:opacity-80 transition-opacity border border-stone-100">
-              <div className="flex-1">
-                <p className="text-stone-800 text-sm font-medium">Vertaal iets in het Japans</p>
-                <p className="text-stone-400 text-xs mt-0.5">Wordt opgeslagen in {category.name}</p>
-              </div>
-              <span className="w-8 h-8 rounded-xl bg-stone-900 flex items-center justify-center text-white text-xs shrink-0">→</span>
-            </div>
-          </Link>
-        ) : (
-          <button onClick={signInWithGoogle} className="w-full text-left">
-            <div className="bg-white rounded-2xl px-5 py-4 flex items-center gap-4 shadow-sm active:opacity-80 transition-opacity border border-stone-100">
-              <div className="flex-1">
-                <p className="text-stone-800 text-sm font-medium">Vertaal iets in het Japans</p>
-                <p className="text-stone-400 text-xs mt-0.5 flex items-center gap-1">
-                  <span>🔒</span><span>Inloggen vereist</span>
-                </p>
-              </div>
-              <span className="w-8 h-8 rounded-xl bg-stone-200 flex items-center justify-center text-stone-400 text-xs shrink-0">→</span>
-            </div>
-          </button>
-        )}
+        <InlineTranslator
+          defaultCategoryId={id}
+          categoryName={category.name}
+        />
       </div>
 
       {/* ── Zoekbalk ──────────────────────────────────────────────── */}

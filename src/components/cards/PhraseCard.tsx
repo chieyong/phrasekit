@@ -43,18 +43,13 @@ export default function PhraseCard({
           </p>
         )}
 
-        {/* English source — small, muted label */}
-        <p className="text-xs text-stone-400 mb-1.5 leading-snug">
+        {/* Nederlands — de hero */}
+        <p className="text-base font-semibold text-stone-900 leading-snug mb-1">
           {phrase.sourceText}
         </p>
 
-        {/* Japanese — the hero */}
-        <p className="text-2xl font-semibold text-stone-900 leading-snug">
-          {phrase.translatedText}
-        </p>
-
-        {/* Romaji — supporting */}
-        <p className="text-sm text-stone-400 italic mt-1">{phrase.romaji}</p>
+        {/* Romaji — uitspraak, duidelijk zichtbaar */}
+        <p className="text-sm text-stone-500 leading-snug">{phrase.romaji}</p>
       </Link>
 
       {/* Action strip */}

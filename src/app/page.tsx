@@ -5,6 +5,7 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import CategoryCard from "@/components/cards/CategoryCard";
 import PhraseCard from "@/components/cards/PhraseCard";
+import InlineTranslator from "@/components/ui/InlineTranslator";
 import { categories, phrases } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
@@ -23,7 +24,7 @@ export default function HomePage() {
       <div className="px-5 pt-8 pb-6 flex items-start justify-between">
         <div>
           <h1 className="text-xl font-semibold text-stone-900 tracking-tight">
-            PhrasePath
+            PhraseKit <span className="text-stone-400 font-normal">Japan</span>
           </h1>
           <p className="text-xs text-stone-400 mt-0.5 tracking-wide">
             Japanse reiszinnen
@@ -59,38 +60,9 @@ export default function HomePage() {
         )}
       </div>
 
-      {/* ── Vertaal-blok ──────────────────────────────────────────── */}
-      <div className="px-5 mb-8">
-        {user ? (
-          <Link href="/ask">
-            <div className="bg-white rounded-2xl px-5 py-4 flex items-center gap-4 shadow-sm active:opacity-80 transition-opacity border border-stone-100">
-              <div className="flex-1">
-                <p className="text-stone-800 text-sm font-medium">
-                  Vertaal iets in het Japans
-                </p>
-                <p className="text-stone-400 text-xs mt-0.5">
-                  Typ wat je wilt zeggen
-                </p>
-              </div>
-              <span className="w-8 h-8 rounded-xl bg-stone-900 flex items-center justify-center text-white text-xs shrink-0">→</span>
-            </div>
-          </Link>
-        ) : (
-          <button onClick={signInWithGoogle} className="w-full text-left">
-            <div className="bg-white rounded-2xl px-5 py-4 flex items-center gap-4 shadow-sm active:opacity-80 transition-opacity border border-stone-100">
-              <div className="flex-1">
-                <p className="text-stone-800 text-sm font-medium flex items-center gap-2">
-                  Vertaal iets in het Japans
-                </p>
-                <p className="text-stone-400 text-xs mt-0.5 flex items-center gap-1">
-                  <span>🔒</span>
-                  <span>Inloggen vereist om te vertalen</span>
-                </p>
-              </div>
-              <span className="w-8 h-8 rounded-xl bg-stone-200 flex items-center justify-center text-stone-400 text-xs shrink-0">→</span>
-            </div>
-          </button>
-        )}
+      {/* ── Inline vertaler ───────────────────────────────────────── */}
+      <div className="px-5 mb-6">
+        <InlineTranslator />
       </div>
 
       {/* ── Situaties ─────────────────────────────────────────────── */}
@@ -136,6 +108,13 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
+      {/* ── Footer ────────────────────────────────────────────────── */}
+      <div className="px-5 py-8 mt-4 flex items-center justify-center">
+        <p className="text-[10px] text-stone-300 tracking-widest uppercase">
+          Gemaakt door <span className="font-semibold text-stone-400">VizCraft</span>
+        </p>
+      </div>
     </div>
   );
 }

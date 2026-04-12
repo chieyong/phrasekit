@@ -4,9 +4,9 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import AccessGate from "@/components/layout/AccessGate";
 
 export const metadata: Metadata = {
-  title: "PhrasePath — Japanse Reiszinnen",
+  title: "PhraseKit Japan",
   description:
-    "Snelle Japanse reiszinnen voor onderweg, altijd bij de hand.",
+    "Japanse reiszinnen voor onderweg, altijd bij de hand. Gemaakt door VizCraft.",
   manifest: "/manifest.json",
 };
 
