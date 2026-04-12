@@ -14,9 +14,9 @@
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
-/* Page content area — accounts for fixed bottom nav */
+/* Page content area */
 .page-content {
-  padding-bottom: 90px;
+  padding-bottom: 32px;
 }
 
 /* Smooth scrolling */

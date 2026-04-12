@@ -1,14 +1,25 @@
 "use client";
 
 import { useState, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 import Header from "@/components/layout/Header";
 import ResultCard from "@/components/cards/ResultCard";
-import { exampleChips } from "@/data/mockData";
+import { exampleChips, getCategoryById } from "@/data/mockData";
+import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { AskNowResult } from "@/types";
 
 type LoadState = "idle" | "loading" | "result" | "error";
 
 export default function VraagPagina() {
+  const searchParams = useSearchParams();
+  const vooringevuldeCategorie = searchParams.get("categorie");
+  const { userCategories } = useUserPhrases();
+
+  // Resolve category name for the subtitle
+  const staticCat = vooringevuldeCategorie ? getCategoryById(vooringevuldeCategorie) : null;
+  const userCat   = vooringevuldeCategorie ? userCategories.find(c => c.id === vooringevuldeCategorie) : null;
+  const catNaam   = staticCat?.name ?? userCat?.name ?? null;
+
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<AskNowResult | null>(null);
   const [loadState, setLoadState] = useState<LoadState>("idle");
@@ -61,7 +72,11 @@ export default function VraagPagina() {
 
   return (
     <div className="page-content">
-      <Header title="Vraag" subtitle="Vertaal iets nu meteen" />
+      <Header
+        title="Vraag"
+        subtitle={catNaam ? `Wordt opgeslagen in ${catNaam}` : "Vertaal iets nu meteen"}
+        showBack
+      />
 
       <div className="px-5 pt-5">
 
@@ -149,7 +164,10 @@ export default function VraagPagina() {
         {/* ── Resultaat ──────────────────────────────────────────── */}
         {loadState === "result" && result && (
           <div>
-            <ResultCard result={result} />
+            <ResultCard
+              result={result}
+              defaultCategoryId={vooringevuldeCategorie ?? undefined}
+            />
             <button
               onClick={handleReset}
               className="w-full mt-4 py-3 text-xs text-stone-400 hover:text-stone-600 transition"

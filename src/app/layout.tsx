@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import BottomNav from "@/components/layout/BottomNav";
 import { AuthProvider } from "@/contexts/AuthContext";
 
 export const metadata: Metadata = {
@@ -30,7 +29,6 @@ export default function RootLayout({
           {/* Max-width container keeps it phone-sized even on desktop */}
           <div className="relative max-w-md mx-auto min-h-screen bg-[#f5f2ee] shadow-xl">
             {children}
-            <BottomNav />
           </div>
         </AuthProvider>
       </body>
