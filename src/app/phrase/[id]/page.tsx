@@ -1,7 +1,7 @@
 "use client";
 
 import { use, useState } from "react";
-import { notFound } from "next/navigation";
+import { notFound, useRouter } from "next/navigation";
 import Header from "@/components/layout/Header";
 import Badge from "@/components/ui/Badge";
 import NumberChip from "@/components/ui/NumberChip";
@@ -195,24 +195,67 @@ interface PhraseDetailPageProps {
   params: Promise<{ id: string }>;
 }
 
+// Lege placeholder zodat hooks nooit undefined ontvangen tijdens laden
+const EMPTY_PHRASE = {
+  id: "", categoryId: "", sourceText: "", translatedText: "",
+  romaji: "", explanation: "", tags: [], isFavorite: false,
+};
+
 export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { id } = use(params);
-  const { getUserPhraseById, userCategories } = useUserPhrases();
-  const phrase = getPhraseById(id) ?? getUserPhraseById(id);
+  const router = useRouter();
+  const { getUserPhraseById, userCategories, loading: userLoading, deletePhrase, toggleUserFavorite } = useUserPhrases();
+  const userPhrase = getUserPhraseById(id);
+  const staticPhrase = getPhraseById(id);
+  const phrase = staticPhrase ?? userPhrase;
+  const isUserPhrase = !!userPhrase;
 
   const { isFavorite, toggleFavorite } = useFavorites();
+  // Geef altijd een geldig object mee zodat de hook niet crasht tijdens laden
   const { edited, numberMap, hasChanges, updateNumber, reset } =
-    useEditablePhrase(phrase!);
+    useEditablePhrase((phrase ?? EMPTY_PHRASE) as Parameters<typeof useEditablePhrase>[0]);
   const { play, audioState } = useAudio();
 
-  const [showGrammar, setShowGrammar] = useState(false);
+  const [showGrammar, setShowGrammar]   = useState(false);
+  const [deleting,    setDeleting]      = useState(false);
+
+  // Wacht tot Firestore klaar is voor user-zinnen; anders te vroeg notFound
+  if (!phrase && userLoading) {
+    return (
+      <div className="page-content flex items-center justify-center py-20">
+        <div className="w-6 h-6 rounded-full border-2 border-stone-300 border-t-stone-700 animate-spin" />
+      </div>
+    );
+  }
 
   if (!phrase) notFound();
 
   const category =
     getCategoryById(phrase.categoryId) ??
     userCategories.find((c) => c.id === phrase.categoryId);
-  const favorited = isFavorite(id);
+
+  // Favorites: user phrases track isFavorite in Firestore; static phrases use localStorage
+  const favorited = isUserPhrase ? phrase.isFavorite : isFavorite(id);
+
+  const handleFavoriteToggle = () => {
+    if (isUserPhrase) {
+      toggleUserFavorite(id);
+    } else {
+      toggleFavorite(id);
+    }
+  };
+
+  const handleDelete = async () => {
+    if (!confirm("Deze zin verwijderen uit je categorie?")) return;
+    setDeleting(true);
+    try {
+      await deletePhrase(id);
+      router.back();
+    } finally {
+      setDeleting(false);
+    }
+  };
+
   const isPlaying = audioState === "playing";
   const hasNumbers = [...numberMap.keys()].length > 0;
 
@@ -343,7 +386,7 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           </button>
 
           <button
-            onClick={() => toggleFavorite(phrase.id)}
+            onClick={handleFavoriteToggle}
             className={`flex-1 flex items-center justify-center gap-2 rounded-2xl py-3 text-sm font-medium transition-colors ${
               favorited
                 ? "bg-amber-50 text-amber-600"
@@ -354,6 +397,17 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
             <span>{favorited ? "Opgeslagen" : "Opslaan"}</span>
           </button>
         </div>
+
+        {/* ── Verwijderen (alleen voor eigen zinnen) ─────────────── */}
+        {isUserPhrase && (
+          <button
+            onClick={handleDelete}
+            disabled={deleting}
+            className="w-full py-3 text-xs text-red-400 hover:text-red-600 transition-colors text-center disabled:opacity-40"
+          >
+            {deleting ? "Verwijderen…" : "🗑 Zin verwijderen"}
+          </button>
+        )}
 
         {/* Explain toggle */}
         <button
