@@ -61,18 +61,18 @@ export default function CategoryPicker({
       {/* Backdrop */}
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
 
-      {/* Sheet — capped at 80 vh so it never runs off screen */}
-      <div className="relative w-full max-w-md mx-auto bg-white rounded-t-3xl shadow-2xl flex flex-col max-h-[80vh]">
+      {/* Sheet */}
+      <div className="relative w-full max-w-md mx-auto bg-white rounded-t-3xl shadow-2xl">
 
         {/* Handle */}
-        <div className="flex justify-center pt-3 pb-1 shrink-0">
+        <div className="flex justify-center pt-3 pb-1">
           <div className="w-10 h-1 rounded-full bg-stone-200" />
         </div>
 
         {mode === "list" ? (
           <>
-            {/* Header — stays visible */}
-            <div className="px-5 pt-3 pb-2 shrink-0">
+            {/* Header */}
+            <div className="px-5 pt-3 pb-2">
               <p className="text-sm font-semibold text-stone-900">
                 Opslaan in categorie
               </p>
@@ -81,8 +81,8 @@ export default function CategoryPicker({
               </p>
             </div>
 
-            {/* Scrollable category list */}
-            <div className="px-3 overflow-y-auto flex-1">
+            {/* Scrollable category list — fixed max height leaves room for the button */}
+            <div className="px-3 overflow-y-auto max-h-[45vh]">
               {allCategories.map((cat) => (
                 <button
                   key={cat.id}
@@ -98,7 +98,7 @@ export default function CategoryPicker({
             </div>
 
             {/* New category button — always visible at the bottom */}
-            <div className="px-3 pb-8 pt-1 border-t border-stone-100 shrink-0">
+            <div className="px-3 pb-8 pt-1 border-t border-stone-100">
               <button
                 onClick={() => setMode("new")}
                 className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 active:bg-stone-100 transition-colors text-left"
