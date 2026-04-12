@@ -80,7 +80,7 @@ function VraagInhoud() {
   if (!authLoading && !user) {
     return (
       <div className="page-content">
-        <Header title="Vraag" subtitle="AI-vertaling" showBack />
+        <Header title="Vertaal" subtitle="AI-vertaling" showBack />
 
         <div className="px-5 pt-5 relative">
 
@@ -116,7 +116,7 @@ function VraagInhoud() {
             <div className="bg-white rounded-2xl shadow-lg px-6 py-7 w-full">
               <p className="text-2xl mb-3">✦</p>
               <p className="text-base font-semibold text-stone-900 mb-1">
-                Vraag iets in het Japans
+                Vertaal iets in het Japans
               </p>
               <p className="text-sm text-stone-400 mb-6 leading-relaxed">
                 Typ in het Nederlands wat je wilt zeggen. PhrasePath vertaalt het direct naar correct Japans — inclusief romaji en uitleg.
@@ -142,8 +142,8 @@ function VraagInhoud() {
   return (
     <div className="page-content">
       <Header
-        title="Vraag"
-        subtitle={catNaam ? `Wordt opgeslagen in ${catNaam}` : "Vertaal iets nu meteen"}
+        title="Vertaal"
+        subtitle={catNaam ? `Wordt opgeslagen in ${catNaam}` : "Typ wat je wilt zeggen"}
         showBack
       />
 

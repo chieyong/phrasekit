@@ -59,37 +59,35 @@ export default function HomePage() {
         )}
       </div>
 
-      {/* ── Vraag-knop ────────────────────────────────────────────── */}
+      {/* ── Vertaal-blok ──────────────────────────────────────────── */}
       <div className="px-5 mb-8">
         {user ? (
           <Link href="/ask">
-            <div className="bg-stone-900 rounded-2xl px-5 py-4 flex items-center gap-4 active:opacity-80 transition-opacity">
+            <div className="bg-white rounded-2xl px-5 py-4 flex items-center gap-4 shadow-sm active:opacity-80 transition-opacity border border-stone-100">
               <div className="flex-1">
-                <p className="text-white text-sm font-medium">
-                  Vraag iets in het Japans
+                <p className="text-stone-800 text-sm font-medium">
+                  Vertaal iets in het Japans
                 </p>
                 <p className="text-stone-400 text-xs mt-0.5">
                   Typ wat je wilt zeggen
                 </p>
               </div>
-              <span className="text-stone-500 text-sm shrink-0">→</span>
+              <span className="w-8 h-8 rounded-xl bg-stone-900 flex items-center justify-center text-white text-xs shrink-0">→</span>
             </div>
           </Link>
         ) : (
           <button onClick={signInWithGoogle} className="w-full text-left">
-            <div className="bg-stone-900 rounded-2xl px-5 py-4 flex items-center gap-4 active:opacity-80 transition-opacity">
+            <div className="bg-white rounded-2xl px-5 py-4 flex items-center gap-4 shadow-sm active:opacity-80 transition-opacity border border-stone-100">
               <div className="flex-1">
-                <p className="text-white text-sm font-medium flex items-center gap-2">
-                  Vraag iets in het Japans
-                  <span className="text-stone-500 text-xs border border-stone-700 rounded-md px-1.5 py-0.5">
-                    🔒 Inloggen vereist
-                  </span>
+                <p className="text-stone-800 text-sm font-medium flex items-center gap-2">
+                  Vertaal iets in het Japans
                 </p>
-                <p className="text-stone-500 text-xs mt-0.5">
-                  Log in met Google om AI-vertalingen te gebruiken
+                <p className="text-stone-400 text-xs mt-0.5 flex items-center gap-1">
+                  <span>🔒</span>
+                  <span>Inloggen vereist om te vertalen</span>
                 </p>
               </div>
-              <span className="text-stone-600 text-sm shrink-0">→</span>
+              <span className="w-8 h-8 rounded-xl bg-stone-200 flex items-center justify-center text-stone-400 text-xs shrink-0">→</span>
             </div>
           </button>
         )}

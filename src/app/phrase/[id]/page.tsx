@@ -207,7 +207,7 @@ const EMPTY_PHRASE = {
 export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { id } = use(params);
   const router = useRouter();
-  const { getUserPhraseById, userCategories, addCategory, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite } = useUserPhrases();
+  const { getUserPhraseById, userCategories, addCategory, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite } = useUserPhrases();
   const userPhrase = getUserPhraseById(id);
   const staticPhrase = getPhraseById(id);
   const phrase = staticPhrase ?? userPhrase;
@@ -238,14 +238,16 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
     getCategoryById(phrase.categoryId) ??
     userCategories.find((c) => c.id === phrase.categoryId);
 
-  // Favorites: user phrases track isFavorite in Firestore; static phrases use localStorage
-  const favorited = isUserPhrase ? phrase.isFavorite : isFavorite(id);
+  // Favorites: user phrases → Firestore isFavorite; static phrases → Firestore staticFavoriteIds
+  const favorited = isUserPhrase
+    ? (userPhrase?.isFavorite ?? false)
+    : staticFavoriteIds.includes(id);
 
   const handleFavoriteToggle = () => {
     if (isUserPhrase) {
       toggleUserFavorite(id);
     } else {
-      toggleFavorite(id);
+      toggleStaticFavorite(id);
     }
   };
 
@@ -278,8 +280,20 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
         </p>
 
         {/* ── Hero card ──────────────────────────────────────────── */}
-        <div className="bg-white rounded-2xl px-5 py-5 mb-3">
-          <p className="text-4xl font-bold text-stone-900 leading-tight mb-3">
+        <div className="bg-white rounded-2xl px-5 py-5 mb-3 relative">
+
+          {/* Favoriet-knop rechtsboven */}
+          <button
+            onClick={handleFavoriteToggle}
+            aria-label={favorited ? "Verwijder favoriet" : "Markeer als favoriet"}
+            className={`absolute top-4 right-4 text-xl transition-colors ${
+              favorited ? "text-amber-400" : "text-stone-200 hover:text-amber-300"
+            }`}
+          >
+            {favorited ? "★" : "☆"}
+          </button>
+
+          <p className="text-4xl font-bold text-stone-900 leading-tight mb-3 pr-8">
             <JapaneseText
               originalText={phrase.translatedText}
               numberMap={numberMap}

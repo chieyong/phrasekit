@@ -7,7 +7,6 @@ import { notFound, useRouter } from "next/navigation";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import PhraseCard from "@/components/cards/PhraseCard";
-import SearchBar from "@/components/ui/SearchBar";
 import { getCategoryById, getPhrasesByCategory } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
@@ -75,32 +74,48 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         showBack
       />
 
-      <div className="px-5 pt-4 pb-2 flex gap-2">
-        <div className="flex-1">
-          <SearchBar
-            value={query}
-            onChange={setQuery}
-            placeholder={`Zoek in ${category.name.toLowerCase()}…`}
-          />
-        </div>
+      {/* ── Vertaalblok ───────────────────────────────────────────── */}
+      <div className="px-5 pt-4 pb-3">
         {user ? (
-          <Link
-            href={`/ask?categorie=${id}`}
-            className="shrink-0 flex items-center gap-1.5 bg-stone-900 text-white rounded-xl px-4 py-2.5 text-sm font-medium active:opacity-80 transition-opacity"
-          >
-            <span>✦</span>
-            <span>Vraag</span>
+          <Link href={`/ask?categorie=${id}`}>
+            <div className="bg-white rounded-2xl px-5 py-4 flex items-center gap-4 shadow-sm active:opacity-80 transition-opacity border border-stone-100">
+              <div className="flex-1">
+                <p className="text-stone-800 text-sm font-medium">Vertaal iets in het Japans</p>
+                <p className="text-stone-400 text-xs mt-0.5">Wordt opgeslagen in {category.name}</p>
+              </div>
+              <span className="w-8 h-8 rounded-xl bg-stone-900 flex items-center justify-center text-white text-xs shrink-0">→</span>
+            </div>
           </Link>
         ) : (
-          <button
-            onClick={signInWithGoogle}
-            className="shrink-0 flex items-center gap-1.5 bg-stone-200 text-stone-500 rounded-xl px-4 py-2.5 text-sm font-medium active:opacity-80 transition-opacity"
-            title="Inloggen om AI te gebruiken"
-          >
-            <span>🔒</span>
-            <span>Vraag</span>
+          <button onClick={signInWithGoogle} className="w-full text-left">
+            <div className="bg-white rounded-2xl px-5 py-4 flex items-center gap-4 shadow-sm active:opacity-80 transition-opacity border border-stone-100">
+              <div className="flex-1">
+                <p className="text-stone-800 text-sm font-medium">Vertaal iets in het Japans</p>
+                <p className="text-stone-400 text-xs mt-0.5 flex items-center gap-1">
+                  <span>🔒</span><span>Inloggen vereist</span>
+                </p>
+              </div>
+              <span className="w-8 h-8 rounded-xl bg-stone-200 flex items-center justify-center text-stone-400 text-xs shrink-0">→</span>
+            </div>
           </button>
         )}
+      </div>
+
+      {/* ── Zoekbalk ──────────────────────────────────────────────── */}
+      <div className="px-5 pb-2">
+        <div className="flex items-center gap-2 bg-stone-100/70 rounded-xl px-3 py-2">
+          <span className="text-stone-300 text-xs">○</span>
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={`Zoek in ${category.name.toLowerCase()}…`}
+            className="flex-1 bg-transparent text-xs text-stone-600 placeholder:text-stone-300 outline-none"
+          />
+          {query && (
+            <button onClick={() => setQuery("")} className="text-stone-300 text-xs hover:text-stone-500">✕</button>
+          )}
+        </div>
       </div>
 
       <div className="px-5 pt-3 flex flex-col gap-1.5">
