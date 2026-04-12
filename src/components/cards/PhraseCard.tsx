@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { Phrase } from "@/types";
-import { useFavorites } from "@/hooks/useFavorites";
 import { useAudio } from "@/hooks/useAudio";
+import { useUserPhrases } from "@/hooks/useUserPhrases";
 
 interface PhraseCardProps {
   phrase: Phrase;
@@ -14,11 +14,24 @@ export default function PhraseCard({
   phrase,
   showCategory = false,
 }: PhraseCardProps) {
-  const { isFavorite, toggleFavorite } = useFavorites();
   const { play, audioState } = useAudio();
-
-  const favorited = isFavorite(phrase.id);
+  const { userPhrases, staticFavoriteIds, toggleUserFavorite, toggleStaticFavorite } = useUserPhrases();
   const isPlaying = audioState === "playing";
+
+  const userPhrase   = userPhrases.find((p) => p.id === phrase.id);
+  const isUserPhrase = !!userPhrase;
+  const isFavorite   = isUserPhrase
+    ? (userPhrase?.isFavorite ?? false)
+    : staticFavoriteIds.includes(phrase.id);
+
+  const handleToggleFavorite = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (isUserPhrase) {
+      toggleUserFavorite(phrase.id);
+    } else {
+      toggleStaticFavorite(phrase.id);
+    }
+  };
 
   return (
     <div className="bg-white rounded-2xl overflow-hidden">
@@ -47,16 +60,6 @@ export default function PhraseCard({
       {/* Action strip */}
       <div className="flex items-center gap-3 px-5 pb-4">
         <button
-          onClick={() => toggleFavorite(phrase.id)}
-          aria-label={favorited ? "Remove from favorites" : "Save phrase"}
-          className={`text-xs font-medium transition-colors ${
-            favorited ? "text-amber-500" : "text-stone-300 hover:text-stone-500"
-          }`}
-        >
-          {favorited ? "★ Opgeslagen" : "☆ Opslaan"}
-        </button>
-
-        <button
           onClick={(e) => {
             e.preventDefault();
             if (!isPlaying) play(phrase.translatedText);
@@ -67,6 +70,16 @@ export default function PhraseCard({
           }`}
         >
           {isPlaying ? "⏸ Bezig" : "🔊 Afspelen"}
+        </button>
+
+        <button
+          onClick={handleToggleFavorite}
+          aria-label={isFavorite ? "Verwijder favoriet" : "Markeer als favoriet"}
+          className={`text-sm transition-colors ${
+            isFavorite ? "text-amber-400" : "text-stone-200 hover:text-amber-300"
+          }`}
+        >
+          {isFavorite ? "★" : "☆"}
         </button>
 
         <span className="ml-auto text-stone-200 text-xs">›</span>

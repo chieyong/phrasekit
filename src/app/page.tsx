@@ -8,9 +8,11 @@ import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 
 export default function HomePage() {
-  const { userCategories } = useUserPhrases();
+  const { userCategories, userPhrases, staticFavoriteIds } = useUserPhrases();
   const { user, loading, signInWithGoogle, signOut } = useAuth();
-  const opgeslagenZinnen = phrases.filter((p) => p.isFavorite).slice(0, 2);
+  const userFavorieten   = userPhrases.filter((p) => p.isFavorite);
+  const staticFavorieten = phrases.filter((p) => staticFavoriteIds.includes(p.id));
+  const opgeslagenZinnen = [...userFavorieten, ...staticFavorieten].slice(0, 3);
 
   return (
     <div className="page-content">
@@ -99,7 +101,7 @@ export default function HomePage() {
         <section className="px-5">
           <div className="flex items-center justify-between mb-3">
             <p className="text-[10px] font-semibold text-stone-400 uppercase tracking-widest">
-              Opgeslagen
+              Favorieten
             </p>
             <Link
               href="/favorites"

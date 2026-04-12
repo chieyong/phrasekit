@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { AskNowResult } from "@/types";
-import { useFavorites } from "@/hooks/useFavorites";
 import { useAudio } from "@/hooks/useAudio";
 import { useUserPhrases, UserCategory } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
@@ -13,14 +12,15 @@ interface ResultCardProps {
   result: AskNowResult;
   onMakePolite?: () => void;
   onMakeShorter?: () => void;
+  defaultCategoryId?: string; // pre-filled when coming from a category page
 }
 
 export default function ResultCard({
   result,
   onMakePolite,
   onMakeShorter,
+  defaultCategoryId,
 }: ResultCardProps) {
-  const { addFavoriteResult, savedResults } = useFavorites();
   const { play, audioState } = useAudio();
   const { addPhrase, addCategory, userCategories } = useUserPhrases();
   const { user, signInWithGoogle } = useAuth();
@@ -29,7 +29,6 @@ export default function ResultCard({
   const [savedTo,    setSavedTo]    = useState<string | null>(null);
   const [saving,     setSaving]     = useState(false);
 
-  const isSaved   = savedResults.includes(result.sourceText);
   const isPlaying = audioState === "playing";
 
   const handleSelectCategory = async (categoryId: string) => {
@@ -45,6 +44,12 @@ export default function ResultCard({
     }
   };
 
+  // Direct save to pre-filled category (from category page)
+  const handleDirectSave = async () => {
+    if (!defaultCategoryId) return;
+    await handleSelectCategory(defaultCategoryId);
+  };
+
   const handleAddCategory = async (
     name: string,
     icon: string
@@ -57,7 +62,11 @@ export default function ResultCard({
       signInWithGoogle();
       return;
     }
-    setShowPicker(true);
+    if (defaultCategoryId) {
+      handleDirectSave();
+    } else {
+      setShowPicker(true);
+    }
   };
 
   return (
@@ -120,24 +129,17 @@ export default function ResultCard({
                   ? "Inloggen om op te slaan"
                   : saving
                   ? "Opslaan…"
+                  : defaultCategoryId
+                  ? `Opslaan in deze categorie`
                   : "Voeg toe aan categorie"}
               </span>
-              <span className="text-stone-400 text-sm">›</span>
+              {!defaultCategoryId && <span className="text-stone-400 text-sm">›</span>}
             </button>
           </div>
         )}
 
         {/* Action strip */}
         <div className="flex flex-wrap gap-3 px-5 pb-4 border-t border-stone-50 pt-1">
-          <button
-            onClick={() => addFavoriteResult(result.sourceText)}
-            className={`text-xs font-medium transition-colors ${
-              isSaved ? "text-amber-500" : "text-stone-400 hover:text-stone-600"
-            }`}
-          >
-            {isSaved ? "★ Opgeslagen" : "☆ Opslaan"}
-          </button>
-
           <button
             onClick={() => !isPlaying && play(result.translatedText)}
             className={`text-xs font-medium transition-colors ${

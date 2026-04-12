@@ -9,6 +9,9 @@ import {
   deleteDoc,
   updateDoc,
   onSnapshot,
+  arrayUnion,
+  arrayRemove,
+  getDoc,
 } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useAuth } from "@/contexts/AuthContext";
@@ -27,8 +30,9 @@ export interface UserCategory {
 
 export function useUserPhrases() {
   const { user } = useAuth();
-  const [userPhrases,    setUserPhrases]    = useState<Phrase[]>([]);
-  const [userCategories, setUserCategories] = useState<UserCategory[]>([]);
+  const [userPhrases,       setUserPhrases]       = useState<Phrase[]>([]);
+  const [userCategories,    setUserCategories]    = useState<UserCategory[]>([]);
+  const [staticFavoriteIds, setStaticFavoriteIds] = useState<string[]>([]);
   // loading stays true until the first Firestore snapshot arrives
   const [loading, setLoading] = useState(true);
 
@@ -44,6 +48,7 @@ export function useUserPhrases() {
 
     const phrasesRef    = collection(db, "users", user.uid, "phrases");
     const categoriesRef = collection(db, "users", user.uid, "categories");
+    const metaRef       = doc(db, "users", user.uid, "meta", "favorites");
 
     let phrasesReady = false;
     let catsReady    = false;
@@ -64,9 +69,14 @@ export function useUserPhrases() {
       if (phrasesReady) setLoading(false);
     });
 
+    const unsubMeta = onSnapshot(metaRef, (snap) => {
+      setStaticFavoriteIds((snap.data()?.ids as string[]) ?? []);
+    });
+
     return () => {
       unsubPhrases();
       unsubCats();
+      unsubMeta();
     };
   }, [user]);
 
@@ -78,16 +88,17 @@ export function useUserPhrases() {
   ): Promise<Phrase> => {
     if (!user) throw new Error("Niet ingelogd");
 
+    // Firestore rejects undefined values — only include optional fields when defined
     const data: Omit<Phrase, "id"> = {
       categoryId,
       sourceText:     result.sourceText,
       translatedText: result.translatedText,
       romaji:         result.romaji,
       explanation:    result.explanation,
-      shortVersion:   result.shortVersion,
-      politeVersion:  result.politeVersion,
       tags:           [],
       isFavorite:     false,
+      ...(result.shortVersion  && { shortVersion:  result.shortVersion  }),
+      ...(result.politeVersion && { politeVersion: result.politeVersion }),
     };
 
     const ref = await addDoc(
@@ -120,6 +131,18 @@ export function useUserPhrases() {
     await deleteDoc(doc(db, "users", user.uid, "phrases", id));
   };
 
+  const movePhrase = async (id: string, newCategoryId: string): Promise<void> => {
+    if (!user) throw new Error("Niet ingelogd");
+    await updateDoc(doc(db, "users", user.uid, "phrases", id), {
+      categoryId: newCategoryId,
+    });
+  };
+
+  const deleteCategory = async (id: string): Promise<void> => {
+    if (!user) throw new Error("Niet ingelogd");
+    await deleteDoc(doc(db, "users", user.uid, "categories", id));
+  };
+
   const toggleUserFavorite = async (id: string): Promise<void> => {
     if (!user) throw new Error("Niet ingelogd");
     const phrase = userPhrases.find((p) => p.id === id);
@@ -127,6 +150,15 @@ export function useUserPhrases() {
     await updateDoc(doc(db, "users", user.uid, "phrases", id), {
       isFavorite: !phrase.isFavorite,
     });
+  };
+
+  const toggleStaticFavorite = async (id: string): Promise<void> => {
+    if (!user) throw new Error("Niet ingelogd");
+    const metaRef = doc(db, "users", user.uid, "meta", "favorites");
+    const isFav   = staticFavoriteIds.includes(id);
+    await setDoc(metaRef, {
+      ids: isFav ? arrayRemove(id) : arrayUnion(id),
+    }, { merge: true });
   };
 
   // ── Read helpers ───────────────────────────────────────────────────────────
@@ -140,11 +172,15 @@ export function useUserPhrases() {
   return {
     userPhrases,
     userCategories,
+    staticFavoriteIds,
     loading,
     addPhrase,
     addCategory,
     deletePhrase,
+    movePhrase,
+    deleteCategory,
     toggleUserFavorite,
+    toggleStaticFavorite,
     getUserPhraseById,
     getUserPhrasesByCategory,
   };

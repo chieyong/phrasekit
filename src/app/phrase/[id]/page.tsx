@@ -12,6 +12,7 @@ import { useEditablePhrase } from "@/hooks/useEditablePhrase";
 import { useAudio } from "@/hooks/useAudio";
 import { parseTextSegments } from "@/utils/japaneseNumbers";
 import { PhraseVariant } from "@/types";
+import CategoryPicker from "@/components/ui/CategoryPicker";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -204,7 +205,7 @@ const EMPTY_PHRASE = {
 export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { id } = use(params);
   const router = useRouter();
-  const { getUserPhraseById, userCategories, loading: userLoading, deletePhrase, toggleUserFavorite } = useUserPhrases();
+  const { getUserPhraseById, userCategories, addCategory, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite } = useUserPhrases();
   const userPhrase = getUserPhraseById(id);
   const staticPhrase = getPhraseById(id);
   const phrase = staticPhrase ?? userPhrase;
@@ -216,8 +217,9 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
     useEditablePhrase((phrase ?? EMPTY_PHRASE) as Parameters<typeof useEditablePhrase>[0]);
   const { play, audioState } = useAudio();
 
-  const [showGrammar, setShowGrammar]   = useState(false);
-  const [deleting,    setDeleting]      = useState(false);
+  const [showGrammar,    setShowGrammar]    = useState(false);
+  const [deleting,       setDeleting]       = useState(false);
+  const [showMovePicker, setShowMovePicker] = useState(false);
 
   // Wacht tot Firestore klaar is voor user-zinnen; anders te vroeg notFound
   if (!phrase && userLoading) {
@@ -384,29 +386,25 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
             <span>{isPlaying ? "⏸" : "🔊"}</span>
             <span>{isPlaying ? "Bezig…" : "Afspelen"}</span>
           </button>
-
-          <button
-            onClick={handleFavoriteToggle}
-            className={`flex-1 flex items-center justify-center gap-2 rounded-2xl py-3 text-sm font-medium transition-colors ${
-              favorited
-                ? "bg-amber-50 text-amber-600"
-                : "bg-white text-stone-600 hover:bg-stone-50"
-            }`}
-          >
-            <span>{favorited ? "★" : "☆"}</span>
-            <span>{favorited ? "Opgeslagen" : "Opslaan"}</span>
-          </button>
         </div>
 
-        {/* ── Verwijderen (alleen voor eigen zinnen) ─────────────── */}
+        {/* ── Verplaatsen + Verwijderen (alleen voor eigen zinnen) ── */}
         {isUserPhrase && (
-          <button
-            onClick={handleDelete}
-            disabled={deleting}
-            className="w-full py-3 text-xs text-red-400 hover:text-red-600 transition-colors text-center disabled:opacity-40"
-          >
-            {deleting ? "Verwijderen…" : "🗑 Zin verwijderen"}
-          </button>
+          <div className="flex gap-2 mb-1">
+            <button
+              onClick={() => setShowMovePicker(true)}
+              className="flex-1 py-3 text-xs text-stone-400 hover:text-stone-600 transition-colors text-center border border-stone-100 rounded-2xl"
+            >
+              ↗ Verplaatsen
+            </button>
+            <button
+              onClick={handleDelete}
+              disabled={deleting}
+              className="flex-1 py-3 text-xs text-red-400 hover:text-red-600 transition-colors text-center border border-stone-100 rounded-2xl disabled:opacity-40"
+            >
+              {deleting ? "Verwijderen…" : "🗑 Verwijderen"}
+            </button>
+          </div>
         )}
 
         {/* Explain toggle */}
@@ -418,6 +416,22 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
         </button>
 
       </div>
+
+      {/* ── Categorie verplaatsen picker ───────────────────────────── */}
+      {showMovePicker && (
+        <CategoryPicker
+          userCategories={userCategories}
+          onSelect={async (newCatId) => {
+            await movePhrase(id, newCatId);
+            setShowMovePicker(false);
+            router.back();
+          }}
+          onAddCategory={async (name, icon) => addCategory(name, icon)}
+          onClose={() => setShowMovePicker(false)}
+          title="Verplaatsen naar"
+          subtitle="Kies de nieuwe categorie voor deze zin"
+        />
+      )}
     </div>
   );
 }

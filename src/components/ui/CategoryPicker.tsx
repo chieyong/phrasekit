@@ -11,6 +11,8 @@ interface CategoryPickerProps {
   onSelect: (categoryId: string) => void;
   onAddCategory: (name: string, icon: string) => Promise<UserCategory>;
   onClose: () => void;
+  title?: string;
+  subtitle?: string;
 }
 
 const QUICK_ICONS = [
@@ -25,6 +27,8 @@ export default function CategoryPicker({
   onSelect,
   onAddCategory,
   onClose,
+  title = "Opslaan in categorie",
+  subtitle = "Kies een bestaande of maak een nieuwe aan",
 }: CategoryPickerProps) {
   const [mode,    setMode]    = useState<"list" | "new">("list");
   const [newName, setNewName] = useState("");
@@ -59,25 +63,31 @@ export default function CategoryPicker({
       className="fixed inset-0 z-50 flex items-end"
       onClick={handleBackdrop}
     >
-      {/* Backdrop */}
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
+      {/* Backdrop — klikken sluit het sheet */}
+      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
 
       {/* Sheet */}
       <div className="relative w-full max-w-md mx-auto bg-white rounded-t-3xl shadow-2xl">
 
-        {/* Handle */}
-        <div className="flex justify-center pt-3 pb-1">
-          <div className="w-10 h-1 rounded-full bg-stone-200" />
+        {/* Handle + sluitknop */}
+        <div className="flex items-center justify-between pt-3 pb-1 px-5">
+          <div className="w-10 h-1 rounded-full bg-stone-200 mx-auto" />
+          <button
+            onClick={onClose}
+            className="absolute right-5 top-4 text-xs text-stone-400 hover:text-stone-600 transition-colors"
+          >
+            Annuleren
+          </button>
         </div>
 
         {mode === "list" ? (
           <>
             <div className="px-5 pt-3 pb-2">
               <p className="text-sm font-semibold text-stone-900">
-                Opslaan in categorie
+                {title}
               </p>
               <p className="text-xs text-stone-400 mt-0.5">
-                Kies een bestaande of maak een nieuwe aan
+                {subtitle}
               </p>
             </div>
 
