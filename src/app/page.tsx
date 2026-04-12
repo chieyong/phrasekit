@@ -5,22 +5,54 @@ import CategoryCard from "@/components/cards/CategoryCard";
 import PhraseCard from "@/components/cards/PhraseCard";
 import { categories, phrases } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
+import { useAuth } from "@/contexts/AuthContext";
 
 export default function HomePage() {
   const { userCategories } = useUserPhrases();
+  const { user, loading, signInWithGoogle, signOut } = useAuth();
   const opgeslagenZinnen = phrases.filter((p) => p.isFavorite).slice(0, 2);
 
   return (
     <div className="page-content">
 
-      {/* ── Woordmerk ─────────────────────────────────────────────── */}
-      <div className="px-5 pt-8 pb-6">
-        <h1 className="text-xl font-semibold text-stone-900 tracking-tight">
-          PhrasePath
-        </h1>
-        <p className="text-xs text-stone-400 mt-0.5 tracking-wide">
-          Japanse reiszinnen
-        </p>
+      {/* ── Woordmerk + account ───────────────────────────────────── */}
+      <div className="px-5 pt-8 pb-6 flex items-start justify-between">
+        <div>
+          <h1 className="text-xl font-semibold text-stone-900 tracking-tight">
+            PhrasePath
+          </h1>
+          <p className="text-xs text-stone-400 mt-0.5 tracking-wide">
+            Japanse reiszinnen
+          </p>
+        </div>
+
+        {/* Auth button */}
+        {!loading && (
+          user ? (
+            <button
+              onClick={signOut}
+              className="flex items-center gap-2 bg-white rounded-xl px-3 py-2 shadow-sm active:opacity-70 transition-opacity"
+            >
+              {user.photoURL && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={user.photoURL}
+                  alt={user.displayName ?? ""}
+                  className="w-5 h-5 rounded-full"
+                />
+              )}
+              <span className="text-xs text-stone-500">Uitloggen</span>
+            </button>
+          ) : (
+            <button
+              onClick={signInWithGoogle}
+              className="flex items-center gap-2 bg-white rounded-xl px-3 py-2 shadow-sm active:opacity-70 transition-opacity"
+            >
+              <span className="text-base">G</span>
+              <span className="text-xs text-stone-700 font-medium">Inloggen</span>
+            </button>
+          )
+        )}
       </div>
 
       {/* ── Vraag-knop ────────────────────────────────────────────── */}

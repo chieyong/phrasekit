@@ -9,11 +9,10 @@ import { UserCategory } from "@/hooks/useUserPhrases";
 interface CategoryPickerProps {
   userCategories: UserCategory[];
   onSelect: (categoryId: string) => void;
-  onAddCategory: (name: string, icon: string) => UserCategory;
+  onAddCategory: (name: string, icon: string) => Promise<UserCategory>;
   onClose: () => void;
 }
 
-// Common travel emojis for quick icon picking
 const QUICK_ICONS = [
   "🗺️","🎒","🚌","✈️","🚢","🏔️","🛒","💊","📸","🎌",
   "🌸","🍱","🎵","🎭","💴","🏯","🌊","🍵","🎎","🛕",
@@ -27,28 +26,30 @@ export default function CategoryPicker({
   onAddCategory,
   onClose,
 }: CategoryPickerProps) {
-  const [mode, setMode] = useState<"list" | "new">("list");
+  const [mode,    setMode]    = useState<"list" | "new">("list");
   const [newName, setNewName] = useState("");
   const [newIcon, setNewIcon] = useState("🗺️");
+  const [saving,  setSaving]  = useState(false);
   const nameInputRef = useRef<HTMLInputElement>(null);
 
-  // Focus name input when switching to "new" mode
   useEffect(() => {
-    if (mode === "new") {
-      setTimeout(() => nameInputRef.current?.focus(), 100);
-    }
+    if (mode === "new") setTimeout(() => nameInputRef.current?.focus(), 100);
   }, [mode]);
 
-  // Close on backdrop tap
   const handleBackdrop = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) onClose();
   };
 
-  const handleCreate = () => {
+  const handleCreate = async () => {
     const name = newName.trim();
-    if (!name) return;
-    const cat = onAddCategory(name, newIcon);
-    onSelect(cat.id);
+    if (!name || saving) return;
+    setSaving(true);
+    try {
+      const cat = await onAddCategory(name, newIcon);
+      onSelect(cat.id);
+    } finally {
+      setSaving(false);
+    }
   };
 
   const allCategories = [...categories, ...userCategories];
@@ -71,7 +72,6 @@ export default function CategoryPicker({
 
         {mode === "list" ? (
           <>
-            {/* Header */}
             <div className="px-5 pt-3 pb-2">
               <p className="text-sm font-semibold text-stone-900">
                 Opslaan in categorie
@@ -81,7 +81,7 @@ export default function CategoryPicker({
               </p>
             </div>
 
-            {/* Scrollable category list — fixed max height leaves room for the button */}
+            {/* Scrollable list */}
             <div className="px-3 overflow-y-auto max-h-[45vh]">
               {allCategories.map((cat) => (
                 <button
@@ -90,54 +90,40 @@ export default function CategoryPicker({
                   className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 active:bg-stone-100 transition-colors text-left"
                 >
                   <span className="text-xl shrink-0">{cat.icon}</span>
-                  <span className="text-sm font-medium text-stone-800">
-                    {cat.name}
-                  </span>
+                  <span className="text-sm font-medium text-stone-800">{cat.name}</span>
                 </button>
               ))}
             </div>
 
-            {/* New category button — always visible at the bottom */}
+            {/* New category — always at bottom */}
             <div className="px-3 pb-8 pt-1 border-t border-stone-100">
               <button
                 onClick={() => setMode("new")}
                 className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 active:bg-stone-100 transition-colors text-left"
               >
-                <span className="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-stone-500 text-base shrink-0">
-                  +
-                </span>
-                <span className="text-sm font-medium text-stone-500">
-                  Nieuwe categorie aanmaken
-                </span>
+                <span className="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-stone-500 text-base shrink-0">+</span>
+                <span className="text-sm font-medium text-stone-500">Nieuwe categorie aanmaken</span>
               </button>
             </div>
           </>
         ) : (
-          /* New category form — scrollable so keyboard doesn't hide the button */
-          <div className="px-5 pt-3 pb-8 overflow-y-auto flex-1">
+          <div className="px-5 pt-3 pb-8 overflow-y-auto">
             <button
               onClick={() => setMode("list")}
               className="text-xs text-stone-400 mb-3 hover:text-stone-600 transition-colors"
             >
               ← Terug
             </button>
-            <p className="text-sm font-semibold text-stone-900 mb-4">
-              Nieuwe categorie
-            </p>
+            <p className="text-sm font-semibold text-stone-900 mb-4">Nieuwe categorie</p>
 
-            {/* Icon picker */}
-            <p className="text-xs text-stone-400 mb-2 uppercase tracking-widest font-semibold">
-              Icoon
-            </p>
+            <p className="text-xs text-stone-400 mb-2 uppercase tracking-widest font-semibold">Icoon</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {QUICK_ICONS.map((emoji) => (
                 <button
                   key={emoji}
                   onClick={() => setNewIcon(emoji)}
                   className={`w-9 h-9 rounded-xl text-xl flex items-center justify-center transition-all ${
-                    newIcon === emoji
-                      ? "bg-stone-900 scale-105"
-                      : "bg-stone-100 hover:bg-stone-200"
+                    newIcon === emoji ? "bg-stone-900 scale-105" : "bg-stone-100 hover:bg-stone-200"
                   }`}
                 >
                   {emoji}
@@ -145,10 +131,7 @@ export default function CategoryPicker({
               ))}
             </div>
 
-            {/* Name input */}
-            <p className="text-xs text-stone-400 mb-2 uppercase tracking-widest font-semibold">
-              Naam
-            </p>
+            <p className="text-xs text-stone-400 mb-2 uppercase tracking-widest font-semibold">Naam</p>
             <input
               ref={nameInputRef}
               type="text"
@@ -162,10 +145,10 @@ export default function CategoryPicker({
 
             <button
               onClick={handleCreate}
-              disabled={!newName.trim()}
+              disabled={!newName.trim() || saving}
               className="w-full bg-stone-900 text-white rounded-xl py-3 text-sm font-medium disabled:opacity-30 active:scale-95 transition-all"
             >
-              Aanmaken en opslaan
+              {saving ? "Opslaan…" : "Aanmaken en opslaan"}
             </button>
           </div>
         )}

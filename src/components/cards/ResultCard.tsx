@@ -5,6 +5,7 @@ import { AskNowResult } from "@/types";
 import { useFavorites } from "@/hooks/useFavorites";
 import { useAudio } from "@/hooks/useAudio";
 import { useUserPhrases, UserCategory } from "@/hooks/useUserPhrases";
+import { useAuth } from "@/contexts/AuthContext";
 import CategoryPicker from "@/components/ui/CategoryPicker";
 import { categories } from "@/data/mockData";
 
@@ -22,25 +23,41 @@ export default function ResultCard({
   const { addFavoriteResult, savedResults } = useFavorites();
   const { play, audioState } = useAudio();
   const { addPhrase, addCategory, userCategories } = useUserPhrases();
+  const { user, signInWithGoogle } = useAuth();
 
   const [showPicker, setShowPicker] = useState(false);
-  const [savedTo, setSavedTo] = useState<string | null>(null); // category name after saving
+  const [savedTo,    setSavedTo]    = useState<string | null>(null);
+  const [saving,     setSaving]     = useState(false);
 
-  const isSaved = savedResults.includes(result.sourceText);
+  const isSaved   = savedResults.includes(result.sourceText);
   const isPlaying = audioState === "playing";
 
-  const handleSelectCategory = (categoryId: string) => {
-    addPhrase(categoryId, result);
-    setShowPicker(false);
-
-    // Find category name for confirmation message
-    const allCats = [...categories, ...userCategories];
-    const cat = allCats.find((c) => c.id === categoryId);
-    setSavedTo(cat?.name ?? "categorie");
+  const handleSelectCategory = async (categoryId: string) => {
+    setSaving(true);
+    try {
+      await addPhrase(categoryId, result);
+      setShowPicker(false);
+      const allCats = [...categories, ...userCategories];
+      const cat = allCats.find((c) => c.id === categoryId);
+      setSavedTo(cat?.name ?? "categorie");
+    } finally {
+      setSaving(false);
+    }
   };
 
-  const handleAddCategory = (name: string, icon: string): UserCategory => {
+  const handleAddCategory = async (
+    name: string,
+    icon: string
+  ): Promise<UserCategory> => {
     return addCategory(name, icon);
+  };
+
+  const handleSaveClick = () => {
+    if (!user) {
+      signInWithGoogle();
+      return;
+    }
+    setShowPicker(true);
   };
 
   return (
@@ -48,56 +65,42 @@ export default function ResultCard({
       <div className="bg-white rounded-2xl overflow-hidden">
         {/* Main content */}
         <div className="px-5 py-5">
-          {/* Source label */}
           <p className="text-xs text-stone-400 italic mb-3">
             "{result.sourceText}"
           </p>
 
-          {/* Japanese — hero */}
           <p className="text-3xl font-bold text-stone-900 leading-tight mb-2">
             {result.translatedText}
           </p>
 
-          {/* Romaji */}
           <p className="text-base text-stone-400 italic mb-4">{result.romaji}</p>
 
-          {/* Explanation */}
           <p className="text-sm text-stone-500 leading-relaxed border-t border-stone-100 pt-3">
             {result.explanation}
           </p>
 
-          {/* Short version */}
           {result.shortVersion && (
             <div className="mt-4 pt-3 border-t border-stone-100">
               <p className="text-[10px] font-semibold text-stone-400 uppercase tracking-widest mb-1.5">
                 {result.shortVersion.label}
               </p>
-              <p className="text-lg font-semibold text-stone-900">
-                {result.shortVersion.translatedText}
-              </p>
-              <p className="text-sm text-stone-400 italic">
-                {result.shortVersion.romaji}
-              </p>
+              <p className="text-lg font-semibold text-stone-900">{result.shortVersion.translatedText}</p>
+              <p className="text-sm text-stone-400 italic">{result.shortVersion.romaji}</p>
             </div>
           )}
 
-          {/* Polite version */}
           {result.politeVersion && (
             <div className="mt-3 pt-3 border-t border-stone-100">
               <p className="text-[10px] font-semibold text-stone-400 uppercase tracking-widest mb-1.5">
                 {result.politeVersion.label}
               </p>
-              <p className="text-lg font-semibold text-stone-900">
-                {result.politeVersion.translatedText}
-              </p>
-              <p className="text-sm text-stone-400 italic">
-                {result.politeVersion.romaji}
-              </p>
+              <p className="text-lg font-semibold text-stone-900">{result.politeVersion.translatedText}</p>
+              <p className="text-sm text-stone-400 italic">{result.politeVersion.romaji}</p>
             </div>
           )}
         </div>
 
-        {/* Save to category — prominent CTA */}
+        {/* Save to category CTA */}
         {savedTo ? (
           <div className="mx-5 mb-4 flex items-center gap-2 bg-stone-50 rounded-xl px-4 py-3">
             <span className="text-green-500 text-sm">✓</span>
@@ -108,11 +111,16 @@ export default function ResultCard({
         ) : (
           <div className="px-5 mb-4">
             <button
-              onClick={() => setShowPicker(true)}
-              className="w-full flex items-center justify-between bg-stone-50 hover:bg-stone-100 rounded-xl px-4 py-3 transition-colors active:scale-95"
+              onClick={handleSaveClick}
+              disabled={saving}
+              className="w-full flex items-center justify-between bg-stone-50 hover:bg-stone-100 rounded-xl px-4 py-3 transition-colors active:scale-95 disabled:opacity-50"
             >
               <span className="text-sm font-medium text-stone-700">
-                Voeg toe aan categorie
+                {!user
+                  ? "Inloggen om op te slaan"
+                  : saving
+                  ? "Opslaan…"
+                  : "Voeg toe aan categorie"}
               </span>
               <span className="text-stone-400 text-sm">›</span>
             </button>
@@ -166,7 +174,6 @@ export default function ResultCard({
         </div>
       </div>
 
-      {/* Category picker bottom sheet */}
       {showPicker && (
         <CategoryPicker
           userCategories={userCategories}
