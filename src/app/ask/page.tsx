@@ -2,7 +2,7 @@
 
 export const dynamic = "force-dynamic";
 
-import { useState, useRef } from "react";
+import { Suspense, useState, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import Header from "@/components/layout/Header";
 import ResultCard from "@/components/cards/ResultCard";
@@ -12,7 +12,9 @@ import { AskNowResult } from "@/types";
 
 type LoadState = "idle" | "loading" | "result" | "error";
 
-export default function VraagPagina() {
+// ─── Inner component (uses useSearchParams — must be inside Suspense) ─────────
+
+function VraagInhoud() {
   const searchParams = useSearchParams();
   const vooringevuldeCategorie = searchParams.get("categorie");
   const { userCategories } = useUserPhrases();
@@ -180,5 +182,19 @@ export default function VraagPagina() {
         )}
       </div>
     </div>
+  );
+}
+
+// ─── Page export — wraps inner component in Suspense ─────────────────────────
+
+export default function VraagPagina() {
+  return (
+    <Suspense fallback={
+      <div className="page-content flex items-center justify-center py-20">
+        <div className="w-6 h-6 rounded-full border-2 border-stone-300 border-t-stone-700 animate-spin" />
+      </div>
+    }>
+      <VraagInhoud />
+    </Suspense>
   );
 }
