@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   description:
     "Japanse reiszinnen voor onderweg, altijd bij de hand. Gemaakt door VizCraft.",
   manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "PhrasePath",
+  },
+  icons: {
+    apple: "/icon-192.png",
+  },
 };
 
 export const viewport: Viewport = {
