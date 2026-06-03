@@ -10,8 +10,9 @@ export interface UseAudioReturn {
   audioState: AudioState;
 }
 
-// Module-level cache: Japanese text → blob URL (survives re-renders)
+// Module-level cache: Japanese text → blob URL (survives re-renders, cleared on voice change)
 const audioCache = new Map<string, string>();
+audioCache.clear(); // clear on module reload to pick up voice changes
 
 export function useAudio(): UseAudioReturn {
   const [audioState, setAudioState] = useState<AudioState>("idle");
