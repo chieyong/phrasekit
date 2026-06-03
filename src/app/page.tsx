@@ -2,17 +2,20 @@
 
 export const dynamic = "force-dynamic";
 
+import { useState } from "react";
 import Link from "next/link";
 import CategoryCard from "@/components/cards/CategoryCard";
 import PhraseCard from "@/components/cards/PhraseCard";
 import InlineTranslator from "@/components/ui/InlineTranslator";
+import CategoryPicker from "@/components/ui/CategoryPicker";
 import { categories, phrases } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 
 export default function HomePage() {
-  const { userCategories, userPhrases, staticFavoriteIds } = useUserPhrases();
+  const { userCategories, userPhrases, staticFavoriteIds, addCategory } = useUserPhrases();
   const { user, loading, signInWithGoogle, signOut } = useAuth();
+  const [showNewCategory, setShowNewCategory] = useState(false);
   const userFavorieten   = userPhrases.filter((p) => p.isFavorite);
   const staticFavorieten = phrases.filter((p) => staticFavoriteIds.includes(p.id));
   const opgeslagenZinnen = [...userFavorieten, ...staticFavorieten].slice(0, 3);
@@ -84,8 +87,30 @@ export default function HomePage() {
               <span className="text-sm font-medium text-stone-800">{cat.name}</span>
             </Link>
           ))}
+
+          {user && (
+            <button
+              onClick={() => setShowNewCategory(true)}
+              className="flex items-center gap-3 bg-white/60 border border-dashed border-stone-200 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity text-left w-full"
+            >
+              <span className="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-stone-400 text-base shrink-0">+</span>
+              <span className="text-sm font-medium text-stone-400">Nieuwe categorie aanmaken</span>
+            </button>
+          )}
         </div>
       </section>
+
+      {showNewCategory && (
+        <CategoryPicker
+          userCategories={userCategories}
+          onSelect={() => setShowNewCategory(false)}
+          onAddCategory={addCategory}
+          onClose={() => setShowNewCategory(false)}
+          initialMode="new"
+          title="Nieuwe categorie"
+          subtitle="Geef je categorie een naam en icoon"
+        />
+      )}
 
       {/* ── Opgeslagen zinnen ─────────────────────────────────────── */}
       {opgeslagenZinnen.length > 0 && (

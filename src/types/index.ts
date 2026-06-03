@@ -12,6 +12,14 @@ export interface Phrase {
   politeVersion?: PhraseVariant;
   tags: string[];
   isFavorite: boolean;
+  sortOrder?: number;
+  grammarExplanation?: GrammarExplanation;
+}
+
+export interface GrammarExplanation {
+  summary: string;
+  parts: { japanese: string; romaji: string; role: string; note?: string }[];
+  tip: string;
 }
 
 export interface PhraseVariant {

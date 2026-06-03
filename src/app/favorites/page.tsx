@@ -12,12 +12,12 @@ import Link from "next/link";
 
 export default function OpgeslagenPagina() {
   const { favorites } = useFavorites();
-  const { userPhrases, userCategories } = useUserPhrases();
+  const { userPhrases, userCategories, hiddenStaticPhraseIds } = useUserPhrases();
   const [geselecteerdeCategorie, setGeselecteerdeCategorie] = useState<string | null>(null);
 
-  // Static phrases saved via useFavorites (localStorage)
+  // Static phrases saved via useFavorites (localStorage), minus hidden ones
   const staticFavorites = phrases.filter(
-    (p) => favorites.includes(p.id) || p.isFavorite
+    (p) => (favorites.includes(p.id) || p.isFavorite) && !hiddenStaticPhraseIds.includes(p.id)
   );
 
   // User phrases saved via Firestore isFavorite field

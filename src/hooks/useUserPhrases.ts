@@ -15,7 +15,7 @@ import {
 } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useAuth } from "@/contexts/AuthContext";
-import { Phrase, AskNowResult } from "@/types";
+import { Phrase, AskNowResult, GrammarExplanation } from "@/types";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -26,13 +26,37 @@ export interface UserCategory {
   isUserAdded: true;
 }
 
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+
+async function generateAndSaveGrammar(
+  uid: string,
+  phraseId: string,
+  japanese: string,
+  romaji: string,
+  english: string
+): Promise<void> {
+  try {
+    const res = await fetch("/api/explain", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ japanese, romaji, english }),
+    });
+    if (!res.ok) return;
+    const grammarExplanation: GrammarExplanation = await res.json();
+    await updateDoc(doc(db, "users", uid, "phrases", phraseId), { grammarExplanation });
+  } catch {
+    // Best-effort — silently ignore on failure
+  }
+}
+
 // ─── Hook ─────────────────────────────────────────────────────────────────────
 
 export function useUserPhrases() {
   const { user } = useAuth();
-  const [userPhrases,       setUserPhrases]       = useState<Phrase[]>([]);
-  const [userCategories,    setUserCategories]    = useState<UserCategory[]>([]);
-  const [staticFavoriteIds, setStaticFavoriteIds] = useState<string[]>([]);
+  const [userPhrases,           setUserPhrases]           = useState<Phrase[]>([]);
+  const [userCategories,        setUserCategories]        = useState<UserCategory[]>([]);
+  const [staticFavoriteIds,     setStaticFavoriteIds]     = useState<string[]>([]);
+  const [hiddenStaticPhraseIds, setHiddenStaticPhraseIds] = useState<string[]>([]);
   // loading stays true until the first Firestore snapshot arrives
   const [loading, setLoading] = useState(true);
 
@@ -49,6 +73,7 @@ export function useUserPhrases() {
     const phrasesRef    = collection(db, "users", user.uid, "phrases");
     const categoriesRef = collection(db, "users", user.uid, "categories");
     const metaRef       = doc(db, "users", user.uid, "meta", "favorites");
+    const hiddenRef     = doc(db, "users", user.uid, "meta", "hidden");
 
     let phrasesReady = false;
     let catsReady    = false;
@@ -73,10 +98,15 @@ export function useUserPhrases() {
       setStaticFavoriteIds((snap.data()?.ids as string[]) ?? []);
     });
 
+    const unsubHidden = onSnapshot(hiddenRef, (snap) => {
+      setHiddenStaticPhraseIds((snap.data()?.ids as string[]) ?? []);
+    });
+
     return () => {
       unsubPhrases();
       unsubCats();
       unsubMeta();
+      unsubHidden();
     };
   }, [user]);
 
@@ -97,6 +127,7 @@ export function useUserPhrases() {
       explanation:    result.explanation,
       tags:           [],
       isFavorite:     false,
+      sortOrder:      Date.now(),
       ...(result.shortVersion  && { shortVersion:  result.shortVersion  }),
       ...(result.politeVersion && { politeVersion: result.politeVersion }),
     };
@@ -105,6 +136,10 @@ export function useUserPhrases() {
       collection(db, "users", user.uid, "phrases"),
       data
     );
+
+    // Generate grammar in the background — don't block the save flow
+    generateAndSaveGrammar(user.uid, ref.id, data.translatedText, data.romaji, data.sourceText);
+
     return { ...data, id: ref.id };
   };
 
@@ -161,18 +196,37 @@ export function useUserPhrases() {
     }, { merge: true });
   };
 
+  const hideStaticPhrase = async (id: string): Promise<void> => {
+    if (!user) throw new Error("Niet ingelogd");
+    const hiddenRef = doc(db, "users", user.uid, "meta", "hidden");
+    await setDoc(hiddenRef, { ids: arrayUnion(id) }, { merge: true });
+  };
+
+  const updatePhraseSortOrder = async (id: string, sortOrder: number): Promise<void> => {
+    if (!user) throw new Error("Niet ingelogd");
+    await updateDoc(doc(db, "users", user.uid, "phrases", id), { sortOrder });
+  };
+
+  const updatePhraseGrammar = async (id: string, grammarExplanation: GrammarExplanation): Promise<void> => {
+    if (!user) return;
+    await updateDoc(doc(db, "users", user.uid, "phrases", id), { grammarExplanation });
+  };
+
   // ── Read helpers ───────────────────────────────────────────────────────────
 
   const getUserPhraseById = (id: string) =>
     userPhrases.find((p) => p.id === id);
 
   const getUserPhrasesByCategory = (categoryId: string) =>
-    userPhrases.filter((p) => p.categoryId === categoryId);
+    userPhrases
+      .filter((p) => p.categoryId === categoryId)
+      .sort((a, b) => (a.sortOrder ?? Infinity) - (b.sortOrder ?? Infinity));
 
   return {
     userPhrases,
     userCategories,
     staticFavoriteIds,
+    hiddenStaticPhraseIds,
     loading,
     addPhrase,
     addCategory,
@@ -181,6 +235,9 @@ export function useUserPhrases() {
     deleteCategory,
     toggleUserFavorite,
     toggleStaticFavorite,
+    hideStaticPhrase,
+    updatePhraseSortOrder,
+    updatePhraseGrammar,
     getUserPhraseById,
     getUserPhrasesByCategory,
   };

@@ -13,6 +13,7 @@ interface CategoryPickerProps {
   onClose: () => void;
   title?: string;
   subtitle?: string;
+  initialMode?: "list" | "new";
 }
 
 const QUICK_ICONS = [
@@ -29,8 +30,9 @@ export default function CategoryPicker({
   onClose,
   title = "Opslaan in categorie",
   subtitle = "Kies een bestaande of maak een nieuwe aan",
+  initialMode = "list",
 }: CategoryPickerProps) {
-  const [mode,    setMode]    = useState<"list" | "new">("list");
+  const [mode,    setMode]    = useState<"list" | "new">(initialMode);
   const [newName, setNewName] = useState("");
   const [newIcon, setNewIcon] = useState("🗺️");
   const [saving,  setSaving]  = useState(false);

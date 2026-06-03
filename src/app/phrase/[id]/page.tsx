@@ -10,6 +10,7 @@ import NumberChip from "@/components/ui/NumberChip";
 import { getCategoryById, getPhraseById } from "@/data/mockData";
 import { useFavorites } from "@/hooks/useFavorites";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
+import { GrammarExplanation } from "@/types";
 import { useEditablePhrase } from "@/hooks/useEditablePhrase";
 import { useAudio } from "@/hooks/useAudio";
 import { parseTextSegments } from "@/utils/japaneseNumbers";
@@ -18,11 +19,7 @@ import CategoryPicker from "@/components/ui/CategoryPicker";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-interface ExplainResult {
-  summary: string;
-  parts: { japanese: string; romaji: string; role: string; note?: string }[];
-  tip: string;
-}
+type ExplainResult = GrammarExplanation;
 
 // ─── Inline Japanese renderer ─────────────────────────────────────────────────
 
@@ -109,13 +106,17 @@ function GrammarPanel({
   japanese,
   romaji,
   english,
+  stored,
+  onFetched,
 }: {
   japanese: string;
   romaji: string;
   english: string;
+  stored?: GrammarExplanation;
+  onFetched?: (result: GrammarExplanation) => void;
 }) {
-  const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
-  const [result, setResult] = useState<ExplainResult | null>(null);
+  const [state, setState] = useState<"idle" | "loading" | "done" | "error">(stored ? "done" : "idle");
+  const [result, setResult] = useState<ExplainResult | null>(stored ?? null);
   const [error, setError] = useState("");
 
   const load = async () => {
@@ -131,13 +132,14 @@ function GrammarPanel({
       const data: ExplainResult = await res.json();
       setResult(data);
       setState("done");
+      onFetched?.(data);
     } catch {
       setError("Couldn't load explanation.");
       setState("error");
     }
   };
 
-  // Trigger load on first render of this panel
+  // Fetch from API only when no stored explanation is available
   if (state === "idle") load();
 
   return (
@@ -207,7 +209,7 @@ const EMPTY_PHRASE = {
 export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { id } = use(params);
   const router = useRouter();
-  const { getUserPhraseById, userCategories, addCategory, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite } = useUserPhrases();
+  const { getUserPhraseById, userCategories, addCategory, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite, hideStaticPhrase, updatePhraseGrammar } = useUserPhrases();
   const userPhrase = getUserPhraseById(id);
   const staticPhrase = getPhraseById(id);
   const phrase = staticPhrase ?? userPhrase;
@@ -221,6 +223,7 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
 
   const [showGrammar,    setShowGrammar]    = useState(false);
   const [deleting,       setDeleting]       = useState(false);
+  const [hiding,         setHiding]         = useState(false);
   const [showMovePicker, setShowMovePicker] = useState(false);
 
   // Wacht tot Firestore klaar is voor user-zinnen; anders te vroeg notFound
@@ -325,12 +328,21 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           </div>
         </div>
 
-        {/* ── Grammaticapaneel (lazy) ─────────────────────────────── */}
+        {/* ── Grammatica toggle + paneel ─────────────────────────── */}
+        <button
+          onClick={() => setShowGrammar((v) => !v)}
+          className="w-full py-2.5 mb-3 text-xs text-stone-400 hover:text-stone-600 transition-colors text-center bg-white rounded-2xl"
+        >
+          {showGrammar ? "Verberg grammatica ↑" : "📖 Grammatica uitleggen"}
+        </button>
+
         {showGrammar && (
           <GrammarPanel
             japanese={phrase.translatedText}
             romaji={phrase.romaji}
             english={phrase.sourceText}
+            stored={phrase.grammarExplanation}
+            onFetched={isUserPhrase ? (result) => updatePhraseGrammar(id, result) : undefined}
           />
         )}
 
@@ -423,13 +435,28 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           </div>
         )}
 
-        {/* Explain toggle */}
-        <button
-          onClick={() => setShowGrammar((v) => !v)}
-          className="w-full py-3 text-xs text-stone-400 hover:text-stone-600 transition-colors text-center"
-        >
-          {showGrammar ? "Verberg grammatica ↑" : "📖 Grammatica uitleggen"}
-        </button>
+        {/* ── Verbergen (alleen voor standaardzinnen) ──────────────── */}
+        {!isUserPhrase && (
+          <div className="flex gap-2 mb-1">
+            <button
+              onClick={async () => {
+                if (!confirm("Deze standaardzin verbergen? Je kunt hem niet terugzetten.")) return;
+                setHiding(true);
+                try {
+                  await hideStaticPhrase(id);
+                  router.back();
+                } finally {
+                  setHiding(false);
+                }
+              }}
+              disabled={hiding}
+              className="flex-1 py-3 text-xs text-stone-400 hover:text-stone-600 transition-colors text-center border border-stone-100 rounded-2xl disabled:opacity-40"
+            >
+              {hiding ? "Verbergen…" : "👁 Verberg standaardzin"}
+            </button>
+          </div>
+        )}
+
 
       </div>
 
