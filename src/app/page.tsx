@@ -13,6 +13,8 @@ import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
 import { useAudio } from "@/hooks/useAudio";
+import { usePracticeSets, PracticeSentence, Difficulty, generateSetName } from "@/hooks/usePracticeSets";
+import { useTheme } from "@/contexts/ThemeContext";
 
 // ─── Vocab practice modal ─────────────────────────────────────────────────────
 
@@ -210,15 +212,11 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, onClose }: V
 
 // ─── Sentence practice modal ──────────────────────────────────────────────────
 
-interface PracticeSentence { dutch: string; japanese: string; romaji: string; }
-
 interface SentencePracticeModalProps {
   allCategories: Array<{ id: string; name: string; icon: string }>;
   getPhrasesForCategory: (id: string) => Array<{ translatedText: string; romaji: string; sourceText: string }>;
   onClose: () => void;
 }
-
-type Difficulty = "basis" | "gemiddeld" | "gevorderd" | "expert";
 
 const DIFFICULTIES: { id: Difficulty; label: string; desc: string; dot: string }[] = [
   { id: "basis",     label: "Basis",     desc: "Combinaties van bestaande zinnen en woorden",          dot: "bg-green-400"  },
@@ -228,14 +226,21 @@ const DIFFICULTIES: { id: Difficulty; label: string; desc: string; dot: string }
 ];
 
 function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }: SentencePracticeModalProps) {
-  const { getVocab }         = useVocabulary();
-  const { play, audioState } = useAudio();
-  const [mode,       setMode]       = useState<"select" | "loading" | "practice">("select");
-  const [selected,   setSelected]   = useState<Set<string>>(new Set());
-  const [difficulty, setDifficulty] = useState<Difficulty>("basis");
-  const [sentences,  setSentences]  = useState<PracticeSentence[]>([]);
-  const [cardIndex,  setCardIndex]  = useState(0);
-  const [flipped,    setFlipped]    = useState(false);
+  const { getVocab }                           = useVocabulary();
+  const { saveAsNew, addToExisting, deleteSet, sets } = usePracticeSets();
+  const { play, audioState }                   = useAudio();
+
+  const [mode,        setMode]        = useState<"select" | "loading" | "practice">("select");
+  const [selectTab,   setSelectTab]   = useState<"new" | "saved">("new");
+  const [selected,    setSelected]    = useState<Set<string>>(new Set());
+  const [difficulty,  setDifficulty]  = useState<Difficulty>("basis");
+  const [sentences,   setSentences]   = useState<PracticeSentence[]>([]);
+  const [cardIndex,   setCardIndex]   = useState(0);
+  const [flipped,     setFlipped]     = useState(false);
+  const [isFromSaved, setIsFromSaved] = useState(false);
+  const [showSave,    setShowSave]    = useState(false);
+  const [savedMsg,    setSavedMsg]    = useState<string | null>(null);
+  const [saving,      setSaving]      = useState(false);
 
   const toggleCat = (id: string) =>
     setSelected((prev) => { const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id); return s; });
@@ -266,9 +271,45 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
       setSentences([]);
     }
 
+    setIsFromSaved(false);
     setCardIndex(0);
     setFlipped(false);
+    setSavedMsg(null);
     setMode("practice");
+  };
+
+  const handlePracticeFromSet = (set: { sentences: PracticeSentence[]; difficulty: Difficulty }) => {
+    setSentences([...set.sentences].sort(() => Math.random() - 0.5));
+    setDifficulty(set.difficulty);
+    setIsFromSaved(true);
+    setCardIndex(0);
+    setFlipped(false);
+    setSavedMsg(null);
+    setMode("practice");
+  };
+
+  const handleSaveAsNew = async () => {
+    setSaving(true);
+    const selectedCats = allCategories.filter((c) => selected.has(c.id));
+    const name = generateSetName(selectedCats.map((c) => c.icon), difficulty);
+    try {
+      await saveAsNew(sentences, difficulty, selectedCats.map((c) => c.id), selectedCats.map((c) => c.icon));
+      setSavedMsg(`✓ Opgeslagen als "${name}"`);
+    } finally {
+      setSaving(false);
+      setShowSave(false);
+    }
+  };
+
+  const handleAddToSet = async (setId: string, setName: string) => {
+    setSaving(true);
+    try {
+      await addToExisting(setId, sentences);
+      setSavedMsg(`✓ Toegevoegd aan "${setName}"`);
+    } finally {
+      setSaving(false);
+      setShowSave(false);
+    }
   };
 
   const go = (delta: number) => {
@@ -290,64 +331,87 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
               Annuleren
             </button>
           </div>
-          <div className="px-5 pt-3 pb-2">
-            <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">✍️ Zinnen oefenen</p>
-            <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert nieuwe oefenzinnen op basis van je categorieën</p>
-          </div>
-          <div className="px-3 overflow-y-auto max-h-[45vh]">
-            {allCategories.map((cat) => (
+
+          {/* Tab switcher */}
+          <div className="flex gap-1 mx-5 mt-3 mb-3 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
+            {(["new", "saved"] as const).map((tab) => (
               <button
-                key={cat.id}
-                onClick={() => toggleCat(cat.id)}
-                className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left"
+                key={tab}
+                onClick={() => setSelectTab(tab)}
+                className={`flex-1 py-2 rounded-lg text-xs font-semibold transition-all ${
+                  selectTab === tab
+                    ? "bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100 shadow-sm"
+                    : "text-stone-400 dark:text-stone-500"
+                }`}
               >
-                <span className="text-xl shrink-0">{cat.icon}</span>
-                <span className="flex-1 text-sm font-medium text-stone-800 dark:text-stone-200">{cat.name}</span>
-                <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${
-                  selected.has(cat.id)
-                    ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100"
-                    : "border-stone-200 dark:border-stone-600"
-                }`}>
-                  {selected.has(cat.id) && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
-                </span>
+                {tab === "new" ? "✍️ Nieuw genereren" : `💾 Opgeslagen (${sets.length})`}
               </button>
             ))}
           </div>
-          <div className="px-5 pt-4 pb-2 border-t border-stone-100 dark:border-stone-700">
-            <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">
-              Moeilijkheidsgraad
-            </p>
-            <div className="grid grid-cols-2 gap-1.5 mb-4">
-              {DIFFICULTIES.map((d) => (
-                <button
-                  key={d.id}
-                  onClick={() => setDifficulty(d.id)}
-                  className={`flex items-start gap-2.5 px-3 py-2.5 rounded-xl text-left transition-all ${
-                    difficulty === d.id
-                      ? "bg-stone-900 dark:bg-stone-100"
-                      : "bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 dark:hover:bg-stone-700"
-                  }`}
-                >
-                  <span className={`mt-0.5 w-2 h-2 rounded-full shrink-0 ${d.dot}`} />
-                  <div>
-                    <p className={`text-xs font-semibold ${difficulty === d.id ? "text-white dark:text-stone-900" : "text-stone-700 dark:text-stone-200"}`}>
-                      {d.label}
-                    </p>
-                    <p className={`text-[10px] leading-tight mt-0.5 ${difficulty === d.id ? "text-stone-300 dark:text-stone-600" : "text-stone-400 dark:text-stone-500"}`}>
-                      {d.desc}
-                    </p>
-                  </div>
+
+          {selectTab === "new" ? (
+            <>
+              <div className="px-3 overflow-y-auto max-h-[30vh]">
+                {allCategories.map((cat) => (
+                  <button key={cat.id} onClick={() => toggleCat(cat.id)} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left">
+                    <span className="text-xl shrink-0">{cat.icon}</span>
+                    <span className="flex-1 text-sm font-medium text-stone-800 dark:text-stone-200">{cat.name}</span>
+                    <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${selected.has(cat.id) ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100" : "border-stone-200 dark:border-stone-600"}`}>
+                      {selected.has(cat.id) && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              <div className="px-5 pt-3 pb-2 border-t border-stone-100 dark:border-stone-700">
+                <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">Moeilijkheidsgraad</p>
+                <div className="grid grid-cols-2 gap-1.5 mb-4">
+                  {DIFFICULTIES.map((d) => (
+                    <button key={d.id} onClick={() => setDifficulty(d.id)} className={`flex items-start gap-2.5 px-3 py-2.5 rounded-xl text-left transition-all ${difficulty === d.id ? "bg-stone-900 dark:bg-stone-100" : "bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 dark:hover:bg-stone-700"}`}>
+                      <span className={`mt-0.5 w-2 h-2 rounded-full shrink-0 ${d.dot}`} />
+                      <div>
+                        <p className={`text-xs font-semibold ${difficulty === d.id ? "text-white dark:text-stone-900" : "text-stone-700 dark:text-stone-200"}`}>{d.label}</p>
+                        <p className={`text-[10px] leading-tight mt-0.5 ${difficulty === d.id ? "text-stone-300 dark:text-stone-600" : "text-stone-400 dark:text-stone-500"}`}>{d.desc}</p>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+                <button onClick={handleStart} disabled={selected.size === 0} className="w-full bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-xl py-3 text-sm font-medium disabled:opacity-30 active:scale-95 transition-all">
+                  Genereren en starten ({selected.size} {selected.size === 1 ? "categorie" : "categorieën"})
                 </button>
-              ))}
+              </div>
+            </>
+          ) : (
+            <div className="px-3 overflow-y-auto max-h-[50vh] pb-8">
+              {sets.length === 0 ? (
+                <p className="text-sm text-stone-400 dark:text-stone-500 text-center py-8">
+                  Nog geen opgeslagen sets.<br />
+                  <span className="text-xs">Genereer eerst zinnen en sla ze op.</span>
+                </p>
+              ) : (
+                sets.map((set) => {
+                  const diff = DIFFICULTIES.find((d) => d.id === set.difficulty);
+                  return (
+                    <div key={set.id} className="flex items-center gap-2 py-2">
+                      <button onClick={() => handlePracticeFromSet(set)} className="flex-1 flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left">
+                        <span className={`w-2 h-2 rounded-full shrink-0 ${diff?.dot ?? "bg-stone-400"}`} />
+                        <div className="min-w-0">
+                          <p className="text-sm font-medium text-stone-800 dark:text-stone-200 truncate">{set.name}</p>
+                          <p className="text-xs text-stone-400 dark:text-stone-500">{set.sentences.length} zinnen · {diff?.label}</p>
+                        </div>
+                      </button>
+                      <button
+                        onClick={() => void deleteSet(set.id)}
+                        className="w-8 h-8 flex items-center justify-center text-stone-300 dark:text-stone-600 hover:text-red-400 transition-colors shrink-0"
+                        aria-label="Verwijderen"
+                      >
+                        🗑
+                      </button>
+                    </div>
+                  );
+                })
+              )}
             </div>
-            <button
-              onClick={handleStart}
-              disabled={selected.size === 0}
-              className="w-full bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-xl py-3 text-sm font-medium disabled:opacity-30 active:scale-95 transition-all"
-            >
-              Genereren en starten ({selected.size} {selected.size === 1 ? "categorie" : "categorieën"})
-            </button>
-          </div>
+          )}
         </div>
       </div>
     );
@@ -391,34 +455,18 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
             {DIFFICULTIES.find((d) => d.id === difficulty)?.label}
           </span>
         </div>
-        <button
-          onClick={() => { setSentences((s) => [...s].sort(() => Math.random() - 0.5)); setCardIndex(0); setFlipped(false); }}
-          className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm"
-          aria-label="Schudden"
-        >⇄</button>
+        <button onClick={() => { setSentences((s) => [...s].sort(() => Math.random() - 0.5)); setCardIndex(0); setFlipped(false); }} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm" aria-label="Schudden">⇄</button>
       </div>
 
       {/* Card */}
       <div className="flex-1 flex items-center justify-center px-6">
         <div className="w-full max-w-sm" style={{ perspective: "1200px" }}>
-          <div
-            onClick={() => setFlipped((v) => !v)}
-            style={{
-              transformStyle: "preserve-3d",
-              transform:      flipped ? "rotateY(180deg)" : "rotateY(0deg)",
-              transition:     "transform 0.45s cubic-bezier(0.4,0,0.2,1)",
-              position:       "relative",
-              height:         "280px",
-              cursor:         "pointer",
-            }}
-          >
-            {/* Voorkant — oefenzin in het Nederlands */}
+          <div onClick={() => setFlipped((v) => !v)} style={{ transformStyle: "preserve-3d", transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)", transition: "transform 0.45s cubic-bezier(0.4,0,0.2,1)", position: "relative", height: "280px", cursor: "pointer" }}>
             <div style={{ backfaceVisibility: "hidden" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
               <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-5">Hoe zeg je dit in het Japans?</p>
               <p className="text-xl font-semibold text-stone-900 dark:text-stone-100 leading-snug">{sentence.dutch}</p>
               <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">Tik om het antwoord te zien</p>
             </div>
-            {/* Achterkant — Japans antwoord */}
             <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-stone-900 dark:bg-stone-800 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
               <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-5">Japans</p>
               <p className="text-3xl font-bold text-white leading-tight mb-2">{sentence.japanese}</p>
@@ -431,16 +479,60 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
         </div>
       </div>
 
-      {/* Navigation */}
-      <div className="flex items-center justify-center gap-6 px-5 pb-14">
+      {/* Navigation + save strip */}
+      <div className="flex items-center justify-center gap-6 px-5 pt-2">
         <button onClick={() => go(-1)} disabled={cardIndex === 0} className="w-14 h-14 rounded-full bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xl flex items-center justify-center shadow-sm disabled:opacity-20 active:scale-95 transition-all" aria-label="Vorige">←</button>
         <div className="flex gap-1.5 flex-wrap justify-center max-w-[140px]">
-          {sentences.map((_, i) => (
-            <div key={i} className={`rounded-full transition-all ${i === cardIndex ? "w-4 h-2 bg-stone-700 dark:bg-stone-300" : "w-2 h-2 bg-stone-200 dark:bg-stone-700"}`} />
-          ))}
+          {sentences.map((_, i) => (<div key={i} className={`rounded-full transition-all ${i === cardIndex ? "w-4 h-2 bg-stone-700 dark:bg-stone-300" : "w-2 h-2 bg-stone-200 dark:bg-stone-700"}`} />))}
         </div>
         <button onClick={() => go(1)} disabled={cardIndex === sentences.length - 1} className="w-14 h-14 rounded-full bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xl flex items-center justify-center shadow-sm disabled:opacity-20 active:scale-95 transition-all" aria-label="Volgende">→</button>
       </div>
+
+      {!isFromSaved && (
+        <div className="px-5 pb-10 pt-3 flex justify-center">
+          {savedMsg ? (
+            <p className="text-xs text-green-500 font-medium">{savedMsg}</p>
+          ) : (
+            <button onClick={() => setShowSave(true)} className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors flex items-center gap-1.5">
+              <span>💾</span><span>Set opslaan</span>
+            </button>
+          )}
+        </div>
+      )}
+      {isFromSaved && <div className="pb-10" />}
+
+      {/* Save overlay */}
+      {showSave && (
+        <div className="absolute inset-0 flex items-end z-10">
+          <div className="absolute inset-0 bg-black/20" onClick={() => setShowSave(false)} />
+          <div className="relative w-full bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl px-5 pt-4 pb-8">
+            <p className="text-sm font-semibold text-stone-900 dark:text-stone-100 mb-1">Set opslaan</p>
+            <p className="text-xs text-stone-400 dark:text-stone-500 mb-4">
+              Auto-naam: <span className="font-medium text-stone-600 dark:text-stone-300">
+                {generateSetName(allCategories.filter((c) => selected.has(c.id)).map((c) => c.icon), difficulty)}
+              </span>
+            </p>
+            <button onClick={handleSaveAsNew} disabled={saving} className="w-full bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-xl py-3 text-sm font-medium disabled:opacity-40 active:scale-95 transition-all mb-3">
+              {saving ? "Opslaan…" : "Opslaan als nieuwe set"}
+            </button>
+            {sets.length > 0 && (
+              <>
+                <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">Toevoegen aan bestaand setje</p>
+                <div className="flex flex-col gap-1 max-h-36 overflow-y-auto">
+                  {sets.map((s) => (
+                    <button key={s.id} onClick={() => handleAddToSet(s.id, s.name)} disabled={saving} className="flex items-center gap-2 px-3 py-2.5 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left disabled:opacity-40">
+                      <span className={`w-2 h-2 rounded-full shrink-0 ${DIFFICULTIES.find((d) => d.id === s.difficulty)?.dot ?? "bg-stone-400"}`} />
+                      <span className="text-sm text-stone-700 dark:text-stone-300 truncate">{s.name}</span>
+                      <span className="ml-auto text-xs text-stone-300 dark:text-stone-600">{s.sentences.length} zinnen</span>
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+            <button onClick={() => setShowSave(false)} className="w-full mt-3 text-xs text-stone-400 dark:text-stone-500 py-2">Annuleren</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -448,6 +540,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
 export default function HomePage() {
   const { userCategories, userPhrases, staticFavoriteIds, addCategory, getUserPhrasesByCategory } = useUserPhrases();
   const { user, loading, signInWithGoogle, signOut } = useAuth();
+  const { theme, toggle } = useTheme();
   const [showNewCategory,      setShowNewCategory]      = useState(false);
   const [showVocabPractice,    setShowVocabPractice]    = useState(false);
   const [showSentencePractice, setShowSentencePractice] = useState(false);
@@ -489,7 +582,15 @@ export default function HomePage() {
           </p>
         </div>
 
-        {/* Auth button */}
+        {/* Theme toggle + auth */}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={toggle}
+            aria-label="Wissel thema"
+            className="w-8 h-8 rounded-full bg-white dark:bg-stone-800 flex items-center justify-center text-stone-500 dark:text-stone-400 shadow-sm active:scale-95 transition-all text-sm"
+          >
+            {theme === "dark" ? "☀" : "☾"}
+          </button>
         {!loading && (
           user ? (
             <button
@@ -516,6 +617,7 @@ export default function HomePage() {
             </button>
           )
         )}
+        </div>
       </div>
 
       {/* ── Inline vertaler ───────────────────────────────────────── */}
