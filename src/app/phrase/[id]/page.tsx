@@ -272,7 +272,7 @@ const EMPTY_PHRASE = {
 export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { id } = use(params);
   const router = useRouter();
-  const { getUserPhraseById, userCategories, addCategory, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite, hideStaticPhrase, updatePhraseGrammar } = useUserPhrases();
+  const { getUserPhraseById, userCategories, addCategory, addPhrase, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite, hideStaticPhrase, updatePhraseGrammar } = useUserPhrases();
   const userPhrase = getUserPhraseById(id);
   const staticPhrase = getPhraseById(id);
   const phrase = staticPhrase ?? userPhrase;
@@ -288,6 +288,9 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const [deleting,       setDeleting]       = useState(false);
   const [hiding,         setHiding]         = useState(false);
   const [showMovePicker, setShowMovePicker] = useState(false);
+  const [showSavePicker, setShowSavePicker] = useState(false);
+  const [savedToName,    setSavedToName]    = useState<string | null>(null);
+  const [saving,         setSaving]         = useState(false);
 
   // Wacht tot Firestore klaar is voor user-zinnen; anders te vroeg notFound
   if (!phrase && userLoading) {
@@ -479,6 +482,27 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           </button>
         </div>
 
+        {/* ── Opslaan in categorie ───────────────────────────────── */}
+        {savedToName ? (
+          <div className="flex items-center gap-2 bg-stone-50 dark:bg-stone-800 rounded-2xl px-4 py-3 mb-3">
+            <span className="text-green-500 text-sm">✓</span>
+            <p className="text-sm text-stone-600 dark:text-stone-300">
+              Opgeslagen in <strong>{savedToName}</strong>
+            </p>
+          </div>
+        ) : (
+          <button
+            onClick={() => setShowSavePicker(true)}
+            disabled={saving}
+            className="w-full flex items-center justify-between bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 dark:hover:bg-stone-700 rounded-2xl px-4 py-3 mb-3 transition-colors active:scale-95 disabled:opacity-50"
+          >
+            <span className="text-sm font-medium text-stone-700 dark:text-stone-300">
+              {saving ? "Opslaan…" : "＋ Opslaan in categorie"}
+            </span>
+            <span className="text-stone-400 dark:text-stone-500 text-sm">›</span>
+          </button>
+        )}
+
         {/* ── Verplaatsen + Verwijderen (alleen voor eigen zinnen) ── */}
         {isUserPhrase && (
           <div className="flex gap-2 mb-1">
@@ -536,6 +560,35 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           onClose={() => setShowMovePicker(false)}
           title="Verplaatsen naar"
           subtitle="Kies de nieuwe categorie voor deze zin"
+        />
+      )}
+
+      {/* ── Opslaan in categorie picker ────────────────────────────── */}
+      {showSavePicker && (
+        <CategoryPicker
+          userCategories={userCategories}
+          onSelect={async (catId) => {
+            setSaving(true);
+            setShowSavePicker(false);
+            try {
+              await addPhrase(catId, {
+                sourceText:     phrase.sourceText,
+                translatedText: phrase.translatedText,
+                romaji:         phrase.romaji,
+                explanation:    phrase.explanation,
+                shortVersion:   phrase.shortVersion,
+                politeVersion:  phrase.politeVersion,
+              });
+              const cat = getCategoryById(catId) ?? userCategories.find((c) => c.id === catId);
+              setSavedToName(cat?.name ?? "categorie");
+            } finally {
+              setSaving(false);
+            }
+          }}
+          onAddCategory={async (name, icon) => addCategory(name, icon)}
+          onClose={() => setShowSavePicker(false)}
+          title="Opslaan in categorie"
+          subtitle="Kies een bestaande of maak een nieuwe aan"
         />
       )}
     </div>

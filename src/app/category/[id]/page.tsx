@@ -2,7 +2,7 @@
 
 export const dynamic = "force-dynamic";
 
-import { use, useState } from "react";
+import { use, useState, useEffect } from "react";
 import { notFound, useRouter } from "next/navigation";
 import {
   DndContext,
@@ -27,6 +27,101 @@ import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAudio } from "@/hooks/useAudio";
 import { Phrase } from "@/types";
 import InlineTranslator from "@/components/ui/InlineTranslator";
+
+// ─── Vocabulary sheet ─────────────────────────────────────────────────────────
+
+interface VocabWord { japanese: string; romaji: string; dutch: string; }
+
+function VocabSheet({ phrases, onClose }: { phrases: Phrase[]; onClose: () => void }) {
+  const [words,  setWords]  = useState<VocabWord[]>([]);
+  const [status, setStatus] = useState<"loading" | "done" | "error">("loading");
+
+  useEffect(() => {
+    fetch("/api/vocabulary", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        phrases: phrases.map((p) => ({
+          translatedText: p.translatedText,
+          romaji:         p.romaji,
+          sourceText:     p.sourceText,
+        })),
+      }),
+    })
+      .then((r) => r.json())
+      .then((data) => { setWords(data.words ?? []); setStatus("done"); })
+      .catch(() => setStatus("error"));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const handleBackdrop = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) onClose();
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
+      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
+      <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
+
+        {/* Handle + sluitknop */}
+        <div className="flex items-center justify-between pt-3 pb-1 px-5">
+          <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700 mx-auto" />
+          <button
+            onClick={onClose}
+            className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors"
+          >
+            Sluiten
+          </button>
+        </div>
+
+        <div className="px-5 pt-3 pb-2">
+          <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">📚 Woordenlijst</p>
+          <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Sleutelwoorden uit de zinnen in deze categorie</p>
+        </div>
+
+        <div className="px-5 pb-8 overflow-y-auto max-h-[55vh]">
+          {status === "loading" && (
+            <div className="space-y-3 pt-2 animate-pulse">
+              {[...Array(6)].map((_, i) => (
+                <div key={i} className="flex items-center gap-4">
+                  <div className="h-6 bg-stone-100 dark:bg-stone-800 rounded-lg w-24" />
+                  <div className="h-4 bg-stone-100 dark:bg-stone-800 rounded-lg w-16" />
+                  <div className="h-4 bg-stone-100 dark:bg-stone-800 rounded-lg flex-1" />
+                </div>
+              ))}
+            </div>
+          )}
+
+          {status === "error" && (
+            <p className="text-sm text-stone-400 dark:text-stone-500 py-4 text-center">
+              Kon woordenlijst niet laden.
+            </p>
+          )}
+
+          {status === "done" && words.length === 0 && (
+            <p className="text-sm text-stone-400 dark:text-stone-500 py-4 text-center">
+              Geen woorden gevonden.
+            </p>
+          )}
+
+          {status === "done" && words.length > 0 && (
+            <div className="divide-y divide-stone-100 dark:divide-stone-800">
+              {words.map((w, i) => (
+                <div key={i} className="flex items-center gap-4 py-3">
+                  <div className="shrink-0 min-w-[80px]">
+                    <p className="text-base font-semibold text-stone-900 dark:text-stone-100">{w.japanese}</p>
+                    <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w.romaji}</p>
+                  </div>
+                  <p className="text-sm text-stone-500 dark:text-stone-400">{w.dutch}</p>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 // ─── Flashcard module ─────────────────────────────────────────────────────────
 
@@ -241,6 +336,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const [editMode,    setEditMode]    = useState(false);
   const [hiding,      setHiding]      = useState<string | null>(null);
   const [oefenModus,  setOefenModus]  = useState(false);
+  const [showVocab,   setShowVocab]   = useState(false);
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
@@ -395,15 +491,22 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         )}
       </div>
 
-      {/* ── Oefenen-knop ─────────────────────────────────────────── */}
+      {/* ── Oefenen + Woordenlijst ───────────────────────────────── */}
       {alleZinnen.length > 0 && !editMode && (
-        <div className="px-5 pt-6 pb-4">
+        <div className="px-5 pt-6 pb-4 flex flex-col gap-2">
           <button
             onClick={() => setOefenModus(true)}
-            className="w-full py-3.5 bg-stone-900 text-white rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2"
+            className="w-full py-3.5 bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2"
           >
             <span>🃏</span>
             <span>Oefenen met flashcards</span>
+          </button>
+          <button
+            onClick={() => setShowVocab(true)}
+            className="w-full py-3.5 bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2"
+          >
+            <span>📚</span>
+            <span>Woordenlijst</span>
           </button>
         </div>
       )}
@@ -426,6 +529,14 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         <FlashcardModal
           phrases={alleZinnen}
           onClose={() => setOefenModus(false)}
+        />
+      )}
+
+      {/* ── Woordenlijst overlay ──────────────────────────────────── */}
+      {showVocab && (
+        <VocabSheet
+          phrases={alleZinnen}
+          onClose={() => setShowVocab(false)}
         />
       )}
     </div>
