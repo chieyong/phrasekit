@@ -34,25 +34,19 @@ export default function PhraseCard({
   };
 
   return (
-    <div className="bg-white rounded-2xl overflow-hidden">
-      {/* Tappable area → phrase detail */}
+    <div className="bg-white dark:bg-stone-900 rounded-2xl overflow-hidden">
       <Link href={`/phrase/${phrase.id}`} className="block px-5 pt-4 pb-3">
         {showCategory && (
-          <p className="text-[10px] font-semibold text-stone-400 uppercase tracking-widest mb-2">
+          <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">
             {phrase.categoryId}
           </p>
         )}
-
-        {/* Nederlands — de hero */}
-        <p className="text-base font-semibold text-stone-900 leading-snug mb-1">
+        <p className="text-base font-semibold text-stone-900 dark:text-stone-100 leading-snug mb-1">
           {phrase.sourceText}
         </p>
-
-        {/* Romaji — uitspraak, duidelijk zichtbaar */}
-        <p className="text-sm text-stone-500 leading-snug">{phrase.romaji}</p>
+        <p className="text-sm text-stone-500 dark:text-stone-400 leading-snug">{phrase.romaji}</p>
       </Link>
 
-      {/* Action strip */}
       <div className="flex items-center gap-3 px-5 pb-4">
         <button
           onClick={(e) => {
@@ -61,7 +55,7 @@ export default function PhraseCard({
           }}
           aria-label={isPlaying ? "Playing…" : "Play pronunciation"}
           className={`text-xs font-medium transition-colors ${
-            isPlaying ? "text-stone-500" : "text-stone-300 hover:text-stone-500"
+            isPlaying ? "text-stone-500 dark:text-stone-400" : "text-stone-300 dark:text-stone-600 hover:text-stone-500 dark:hover:text-stone-400"
           }`}
         >
           {isPlaying ? "⏸ Bezig" : "🔊 Afspelen"}
@@ -71,13 +65,13 @@ export default function PhraseCard({
           onClick={handleToggleFavorite}
           aria-label={isFavorite ? "Verwijder favoriet" : "Markeer als favoriet"}
           className={`text-sm transition-colors ${
-            isFavorite ? "text-amber-400" : "text-stone-200 hover:text-amber-300"
+            isFavorite ? "text-amber-400" : "text-stone-200 dark:text-stone-700 hover:text-amber-300"
           }`}
         >
           {isFavorite ? "★" : "☆"}
         </button>
 
-        <span className="ml-auto text-stone-200 text-xs">›</span>
+        <span className="ml-auto text-stone-200 dark:text-stone-700 text-xs">›</span>
       </div>
     </div>
   );

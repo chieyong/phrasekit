@@ -86,49 +86,49 @@ function VraagInhoud() {
 
           {/* Voorbeeld-resultaat — vaag op achtergrond */}
           <div className="pointer-events-none select-none" aria-hidden>
-            <div className="bg-white rounded-2xl overflow-hidden opacity-40 blur-[2px]">
+            <div className="bg-white dark:bg-stone-900 rounded-2xl overflow-hidden opacity-40 blur-[2px]">
               <div className="px-5 py-5">
-                <p className="text-xs text-stone-400 italic mb-3">"Waar is het dichtstbijzijnde station?"</p>
-                <p className="text-3xl font-bold text-stone-900 leading-tight mb-2">
+                <p className="text-xs text-stone-400 dark:text-stone-500 italic mb-3">"Waar is het dichtstbijzijnde station?"</p>
+                <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">
                   一番近い駅はどこですか？
                 </p>
-                <p className="text-base text-stone-400 italic mb-4">
+                <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">
                   Ichiban chikai eki wa doko desu ka?
                 </p>
-                <p className="text-sm text-stone-500 leading-relaxed border-t border-stone-100 pt-3">
+                <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed border-t border-stone-100 dark:border-stone-700 pt-3">
                   Een beleefde manier om naar de dichtstbijzijnde treinhalte te vragen.
                 </p>
               </div>
               <div className="px-5 mb-4">
-                <div className="w-full bg-stone-50 rounded-xl px-4 py-3 text-sm font-medium text-stone-700">
+                <div className="w-full bg-stone-50 dark:bg-stone-800 rounded-xl px-4 py-3 text-sm font-medium text-stone-700 dark:text-stone-300">
                   Voeg toe aan categorie ›
                 </div>
               </div>
-              <div className="flex gap-3 px-5 pb-4 border-t border-stone-50 pt-1">
-                <span className="text-xs text-stone-400">🔊 Afspelen</span>
-                <span className="text-xs text-stone-400">📖 Uitleggen</span>
+              <div className="flex gap-3 px-5 pb-4 border-t border-stone-50 dark:border-stone-800 pt-1">
+                <span className="text-xs text-stone-400 dark:text-stone-500">🔊 Afspelen</span>
+                <span className="text-xs text-stone-400 dark:text-stone-500">📖 Uitleggen</span>
               </div>
             </div>
           </div>
 
           {/* Inlog-kaart — bovenop het voorbeeld */}
           <div className="absolute inset-x-5 top-16 flex flex-col items-center text-center">
-            <div className="bg-white rounded-2xl shadow-lg px-6 py-7 w-full">
+            <div className="bg-white dark:bg-stone-900 rounded-2xl shadow-lg px-6 py-7 w-full">
               <p className="text-2xl mb-3">✦</p>
-              <p className="text-base font-semibold text-stone-900 mb-1">
+              <p className="text-base font-semibold text-stone-900 dark:text-stone-100 mb-1">
                 Vertaal iets in het Japans
               </p>
-              <p className="text-sm text-stone-400 mb-6 leading-relaxed">
+              <p className="text-sm text-stone-400 dark:text-stone-500 mb-6 leading-relaxed">
                 Typ in het Nederlands wat je wilt zeggen. PhrasePath vertaalt het direct naar correct Japans — inclusief romaji en uitleg.
               </p>
               <button
                 onClick={signInWithGoogle}
-                className="w-full flex items-center justify-center gap-2.5 bg-stone-900 text-white rounded-xl px-5 py-3 text-sm font-medium active:opacity-80 transition-opacity"
+                className="w-full flex items-center justify-center gap-2.5 bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-xl px-5 py-3 text-sm font-medium active:opacity-80 transition-opacity"
               >
                 <span className="text-base">G</span>
                 <span>Inloggen met Google</span>
               </button>
-              <p className="text-xs text-stone-300 mt-3">Gratis · Geen creditcard nodig</p>
+              <p className="text-xs text-stone-300 dark:text-stone-600 mt-3">Gratis · Geen creditcard nodig</p>
             </div>
           </div>
 
@@ -150,7 +150,7 @@ function VraagInhoud() {
       <div className="px-5 pt-5">
 
         {/* ── Invoerveld ──────────────────────────────────────────── */}
-        <div className="bg-white rounded-2xl overflow-hidden mb-4">
+        <div className="bg-white dark:bg-stone-900 rounded-2xl overflow-hidden mb-4">
           <textarea
             ref={inputRef}
             value={query}
@@ -163,13 +163,13 @@ function VraagInhoud() {
             }}
             placeholder="Wat wil je zeggen?"
             rows={3}
-            className="w-full px-5 pt-4 pb-2 text-stone-900 placeholder:text-stone-300 text-base leading-relaxed resize-none outline-none bg-transparent"
+            className="w-full px-5 pt-4 pb-2 text-stone-900 dark:text-stone-100 placeholder:text-stone-300 dark:placeholder:text-stone-600 text-base leading-relaxed resize-none outline-none bg-transparent"
           />
           <div className="flex items-center justify-between px-4 pb-4">
             {query ? (
               <button
                 onClick={() => setQuery("")}
-                className="text-xs text-stone-300 hover:text-stone-500 transition"
+                className="text-xs text-stone-300 dark:text-stone-600 hover:text-stone-500 dark:hover:text-stone-400 transition"
               >
                 Wis
               </button>
@@ -179,7 +179,7 @@ function VraagInhoud() {
             <button
               onClick={() => handleSubmit(query)}
               disabled={!query.trim() || loadState === "loading"}
-              className="bg-stone-900 text-white rounded-xl px-5 py-2 text-sm font-medium disabled:opacity-30 active:scale-95 transition-all"
+              className="bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-xl px-5 py-2 text-sm font-medium disabled:opacity-30 active:scale-95 transition-all"
             >
               {loadState === "loading" ? "Vertalen…" : "Vertaal →"}
             </button>
@@ -189,7 +189,7 @@ function VraagInhoud() {
         {/* ── Voorbeeldchips ─────────────────────────────────────── */}
         {loadState === "idle" && (
           <div>
-            <p className="text-[10px] font-semibold text-stone-400 uppercase tracking-widest mb-2.5">
+            <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2.5">
               Probeer een voorbeeld
             </p>
             <div className="flex flex-wrap gap-2">
@@ -197,7 +197,7 @@ function VraagInhoud() {
                 <button
                   key={chip.label}
                   onClick={() => handleChip(chip.query)}
-                  className="bg-white rounded-full px-3.5 py-1.5 text-sm text-stone-600 hover:text-stone-900 active:scale-95 transition-all"
+                  className="bg-white dark:bg-stone-900 rounded-full px-3.5 py-1.5 text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 active:scale-95 transition-all"
                 >
                   {chip.label}
                 </button>
@@ -208,22 +208,22 @@ function VraagInhoud() {
 
         {/* ── Laadskelet ─────────────────────────────────────────── */}
         {loadState === "loading" && (
-          <div className="bg-white rounded-2xl p-6 animate-pulse">
-            <div className="h-2.5 bg-stone-100 rounded-full w-1/4 mb-5" />
-            <div className="h-8 bg-stone-100 rounded-full w-4/5 mb-3" />
-            <div className="h-5 bg-stone-100 rounded-full w-3/5 mb-6" />
-            <div className="h-12 bg-stone-50 rounded-xl" />
+          <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 animate-pulse">
+            <div className="h-2.5 bg-stone-100 dark:bg-stone-800 rounded-full w-1/4 mb-5" />
+            <div className="h-8 bg-stone-100 dark:bg-stone-800 rounded-full w-4/5 mb-3" />
+            <div className="h-5 bg-stone-100 dark:bg-stone-800 rounded-full w-3/5 mb-6" />
+            <div className="h-12 bg-stone-50 dark:bg-stone-800 rounded-xl" />
           </div>
         )}
 
         {/* ── Fout ───────────────────────────────────────────────── */}
         {loadState === "error" && (
-          <div className="bg-white rounded-2xl px-5 py-5">
-            <p className="text-sm text-stone-500 mb-1">Kon dit niet vertalen.</p>
-            <p className="text-xs text-stone-400 mb-4">{foutmelding}</p>
+          <div className="bg-white dark:bg-stone-900 rounded-2xl px-5 py-5">
+            <p className="text-sm text-stone-500 dark:text-stone-400 mb-1">Kon dit niet vertalen.</p>
+            <p className="text-xs text-stone-400 dark:text-stone-500 mb-4">{foutmelding}</p>
             <button
               onClick={handleReset}
-              className="text-xs text-stone-400 hover:text-stone-600 transition"
+              className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition"
             >
               ← Probeer opnieuw
             </button>
@@ -239,7 +239,7 @@ function VraagInhoud() {
             />
             <button
               onClick={handleReset}
-              className="w-full mt-4 py-3 text-xs text-stone-400 hover:text-stone-600 transition"
+              className="w-full mt-4 py-3 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition"
             >
               ← Vraag iets anders
             </button>
@@ -256,7 +256,7 @@ export default function VraagPagina() {
   return (
     <Suspense fallback={
       <div className="page-content flex items-center justify-center py-20">
-        <div className="w-6 h-6 rounded-full border-2 border-stone-300 border-t-stone-700 animate-spin" />
+        <div className="w-6 h-6 rounded-full border-2 border-stone-300 dark:border-stone-600 border-t-stone-700 dark:border-t-stone-300 animate-spin" />
       </div>
     }>
       <VraagInhoud />

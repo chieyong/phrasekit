@@ -12,7 +12,7 @@ interface ResultCardProps {
   result: AskNowResult;
   onMakePolite?: () => void;
   onMakeShorter?: () => void;
-  defaultCategoryId?: string; // pre-filled when coming from a category page
+  defaultCategoryId?: string;
 }
 
 export default function ResultCard({
@@ -44,76 +44,60 @@ export default function ResultCard({
     }
   };
 
-  // Direct save to pre-filled category (from category page)
   const handleDirectSave = async () => {
     if (!defaultCategoryId) return;
     await handleSelectCategory(defaultCategoryId);
   };
 
-  const handleAddCategory = async (
-    name: string,
-    icon: string
-  ): Promise<UserCategory> => {
+  const handleAddCategory = async (name: string, icon: string): Promise<UserCategory> => {
     return addCategory(name, icon);
   };
 
   const handleSaveClick = () => {
-    if (!user) {
-      signInWithGoogle();
-      return;
-    }
-    if (defaultCategoryId) {
-      handleDirectSave();
-    } else {
-      setShowPicker(true);
-    }
+    if (!user) { signInWithGoogle(); return; }
+    if (defaultCategoryId) { handleDirectSave(); } else { setShowPicker(true); }
   };
 
   return (
     <>
-      <div className="bg-white rounded-2xl overflow-hidden">
-        {/* Main content */}
+      <div className="bg-white dark:bg-stone-900 rounded-2xl overflow-hidden">
         <div className="px-5 py-5">
-          <p className="text-xs text-stone-400 italic mb-3">
+          <p className="text-xs text-stone-400 dark:text-stone-500 italic mb-3">
             "{result.sourceText}"
           </p>
-
-          <p className="text-3xl font-bold text-stone-900 leading-tight mb-2">
+          <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">
             {result.translatedText}
           </p>
-
-          <p className="text-base text-stone-400 italic mb-4">{result.romaji}</p>
-
-          <p className="text-sm text-stone-500 leading-relaxed border-t border-stone-100 pt-3">
+          <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{result.romaji}</p>
+          <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed border-t border-stone-100 dark:border-stone-700 pt-3">
             {result.explanation}
           </p>
 
           {result.shortVersion && (
-            <div className="mt-4 pt-3 border-t border-stone-100">
-              <p className="text-[10px] font-semibold text-stone-400 uppercase tracking-widest mb-1.5">
+            <div className="mt-4 pt-3 border-t border-stone-100 dark:border-stone-700">
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-1.5">
                 {result.shortVersion.label}
               </p>
-              <p className="text-lg font-semibold text-stone-900">{result.shortVersion.translatedText}</p>
-              <p className="text-sm text-stone-400 italic">{result.shortVersion.romaji}</p>
+              <p className="text-lg font-semibold text-stone-900 dark:text-stone-100">{result.shortVersion.translatedText}</p>
+              <p className="text-sm text-stone-400 dark:text-stone-500 italic">{result.shortVersion.romaji}</p>
             </div>
           )}
 
           {result.politeVersion && (
-            <div className="mt-3 pt-3 border-t border-stone-100">
-              <p className="text-[10px] font-semibold text-stone-400 uppercase tracking-widest mb-1.5">
+            <div className="mt-3 pt-3 border-t border-stone-100 dark:border-stone-700">
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-1.5">
                 {result.politeVersion.label}
               </p>
-              <p className="text-lg font-semibold text-stone-900">{result.politeVersion.translatedText}</p>
-              <p className="text-sm text-stone-400 italic">{result.politeVersion.romaji}</p>
+              <p className="text-lg font-semibold text-stone-900 dark:text-stone-100">{result.politeVersion.translatedText}</p>
+              <p className="text-sm text-stone-400 dark:text-stone-500 italic">{result.politeVersion.romaji}</p>
             </div>
           )}
         </div>
 
-        {/* Save to category CTA */}
         {savedTo ? (
-          <div className="mx-5 mb-4 flex items-center gap-2 bg-stone-50 rounded-xl px-4 py-3">
+          <div className="mx-5 mb-4 flex items-center gap-2 bg-stone-50 dark:bg-stone-800 rounded-xl px-4 py-3">
             <span className="text-green-500 text-sm">✓</span>
-            <p className="text-sm text-stone-600">
+            <p className="text-sm text-stone-600 dark:text-stone-300">
               Opgeslagen in <strong>{savedTo}</strong>
             </p>
           </div>
@@ -122,57 +106,35 @@ export default function ResultCard({
             <button
               onClick={handleSaveClick}
               disabled={saving}
-              className="w-full flex items-center justify-between bg-stone-50 hover:bg-stone-100 rounded-xl px-4 py-3 transition-colors active:scale-95 disabled:opacity-50"
+              className="w-full flex items-center justify-between bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 dark:hover:bg-stone-700 rounded-xl px-4 py-3 transition-colors active:scale-95 disabled:opacity-50"
             >
-              <span className="text-sm font-medium text-stone-700">
-                {!user
-                  ? "Inloggen om op te slaan"
-                  : saving
-                  ? "Opslaan…"
-                  : defaultCategoryId
-                  ? `Opslaan in deze categorie`
-                  : "Voeg toe aan categorie"}
+              <span className="text-sm font-medium text-stone-700 dark:text-stone-300">
+                {!user ? "Inloggen om op te slaan" : saving ? "Opslaan…" : defaultCategoryId ? "Opslaan in deze categorie" : "Voeg toe aan categorie"}
               </span>
-              {!defaultCategoryId && <span className="text-stone-400 text-sm">›</span>}
+              {!defaultCategoryId && <span className="text-stone-400 dark:text-stone-500 text-sm">›</span>}
             </button>
           </div>
         )}
 
-        {/* Action strip */}
-        <div className="flex flex-wrap gap-3 px-5 pb-4 border-t border-stone-50 pt-1">
+        <div className="flex flex-wrap gap-3 px-5 pb-4 border-t border-stone-50 dark:border-stone-800 pt-1">
           <button
             onClick={() => !isPlaying && play(result.translatedText)}
-            className={`text-xs font-medium transition-colors ${
-              isPlaying ? "text-stone-500" : "text-stone-400 hover:text-stone-600"
-            }`}
+            className={`text-xs font-medium transition-colors ${isPlaying ? "text-stone-500 dark:text-stone-400" : "text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300"}`}
           >
             {isPlaying ? "⏸ Bezig" : "🔊 Afspelen"}
           </button>
 
           {onMakePolite && !result.politeVersion && (
-            <button
-              onClick={onMakePolite}
-              className="text-xs font-medium text-stone-400 hover:text-stone-600 transition-colors"
-            >
+            <button onClick={onMakePolite} className="text-xs font-medium text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
               🎩 Beleefder
             </button>
           )}
 
           {onMakeShorter && !result.shortVersion && (
-            <button
-              onClick={onMakeShorter}
-              className="text-xs font-medium text-stone-400 hover:text-stone-600 transition-colors"
-            >
+            <button onClick={onMakeShorter} className="text-xs font-medium text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
               ✂️ Korter
             </button>
           )}
-
-          <button
-            onClick={() => alert("Grammatica uitleg komt binnenkort!")}
-            className="text-xs font-medium text-stone-400 hover:text-stone-600 transition-colors"
-          >
-            📖 Uitleggen
-          </button>
         </div>
       </div>
 

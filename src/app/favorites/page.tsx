@@ -45,10 +45,10 @@ export default function OpgeslagenPagina() {
       {opgeslagenZinnen.length === 0 ? (
         <div className="flex flex-col items-center justify-center px-8 py-20 text-center">
           <span className="text-5xl mb-4">☆</span>
-          <h2 className="text-lg font-semibold text-stone-700 mb-2">
+          <h2 className="text-lg font-semibold text-stone-700 dark:text-stone-300 mb-2">
             Nog geen opgeslagen zinnen
           </h2>
-          <p className="text-sm text-stone-400 leading-relaxed mb-6">
+          <p className="text-sm text-stone-400 dark:text-stone-500 leading-relaxed mb-6">
             Tik op de ster bij een zin om deze hier bij de hand te houden.
           </p>
           <Link
@@ -67,8 +67,8 @@ export default function OpgeslagenPagina() {
                 onClick={() => setGeselecteerdeCategorie(null)}
                 className={`shrink-0 rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
                   geselecteerdeCategorie === null
-                    ? "bg-stone-900 text-white"
-                    : "bg-stone-100 text-stone-600 hover:bg-stone-200"
+                    ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
+                    : "bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200 dark:hover:bg-stone-700"
                 }`}
               >
                 Alles
@@ -83,8 +83,8 @@ export default function OpgeslagenPagina() {
                   }
                   className={`shrink-0 rounded-full px-4 py-1.5 text-sm font-medium transition-colors flex items-center gap-1.5 ${
                     geselecteerdeCategorie === cat.id
-                      ? "bg-stone-900 text-white"
-                      : "bg-stone-100 text-stone-600 hover:bg-stone-200"
+                      ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
+                      : "bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200 dark:hover:bg-stone-700"
                   }`}
                 >
                   <span>{cat.icon}</span>
@@ -97,7 +97,7 @@ export default function OpgeslagenPagina() {
           {/* ── Zinnenlijst ───────────────────────────────────────── */}
           <div className="flex flex-col gap-1.5 px-5 pt-4">
             {gefilterd.length === 0 ? (
-              <p className="text-center text-stone-400 text-sm py-8">
+              <p className="text-center text-stone-400 dark:text-stone-500 text-sm py-8">
                 Geen opgeslagen zinnen in deze categorie.
               </p>
             ) : (

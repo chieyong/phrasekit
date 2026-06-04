@@ -24,8 +24,155 @@ import Header from "@/components/layout/Header";
 import PhraseCard from "@/components/cards/PhraseCard";
 import { getCategoryById, getPhrasesByCategory } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
+import { useAudio } from "@/hooks/useAudio";
 import { Phrase } from "@/types";
 import InlineTranslator from "@/components/ui/InlineTranslator";
+
+// ─── Flashcard module ─────────────────────────────────────────────────────────
+
+function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () => void }) {
+  const [index,   setIndex]   = useState(0);
+  const [flipped, setFlipped] = useState(false);
+  const [order,   setOrder]   = useState(() => phrases.map((_, i) => i).sort(() => Math.random() - 0.5));
+  const { play, audioState } = useAudio();
+
+  const phrase = phrases[order[index]];
+
+  const go = (delta: number) => {
+    setFlipped(false);
+    // kleine delay zodat de kaart eerst omslaat voor die verdwijnt
+    setTimeout(() => setIndex((i) => Math.min(Math.max(i + delta, 0), order.length - 1)), 50);
+  };
+
+  const shuffle = () => {
+    setOrder((prev) => [...prev].sort(() => Math.random() - 0.5));
+    setIndex(0);
+    setFlipped(false);
+  };
+
+  if (!phrase) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
+
+      {/* ── Header ───────────────────────────────────────────── */}
+      <div className="flex items-center justify-between px-5 pt-10 pb-4">
+        <button
+          onClick={onClose}
+          className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg"
+          aria-label="Sluiten"
+        >
+          ✕
+        </button>
+
+        <p className="text-sm font-medium text-stone-400 dark:text-stone-500 tabular-nums">
+          {index + 1} <span className="text-stone-300 dark:text-stone-600">/</span> {order.length}
+        </p>
+
+        <button
+          onClick={shuffle}
+          className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 dark:text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm"
+          aria-label="Schudden"
+        >
+          ⇄
+        </button>
+      </div>
+
+      {/* ── Flashcard ────────────────────────────────────────── */}
+      <div className="flex-1 flex items-center justify-center px-6">
+        <div className="w-full max-w-sm" style={{ perspective: "1200px" }}>
+          <div
+            onClick={() => setFlipped((v) => !v)}
+            style={{
+              transformStyle:  "preserve-3d",
+              transform:       flipped ? "rotateY(180deg)" : "rotateY(0deg)",
+              transition:      "transform 0.45s cubic-bezier(0.4,0,0.2,1)",
+              position:        "relative",
+              height:          "300px",
+              cursor:          "pointer",
+            }}
+          >
+            {/* Voorkant — Nederlands */}
+            <div
+              style={{ backfaceVisibility: "hidden" }}
+              className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none"
+            >
+              <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-6">
+                Nederlands
+              </p>
+              <p className="text-2xl font-semibold text-stone-900 dark:text-stone-100 leading-snug">
+                {phrase.sourceText}
+              </p>
+              <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">Tik om te draaien</p>
+            </div>
+
+            {/* Achterkant — Japans */}
+            <div
+              style={{
+                backfaceVisibility: "hidden",
+                transform:          "rotateY(180deg)",
+              }}
+              className="absolute inset-0 bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none"
+            >
+              <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-6">
+                Japans
+              </p>
+              <p className="text-3xl font-bold text-white leading-tight mb-3">
+                {phrase.translatedText}
+              </p>
+              <p className="text-base text-stone-400 italic">
+                {phrase.romaji}
+              </p>
+              <button
+                onClick={(e) => { e.stopPropagation(); play(phrase.translatedText); }}
+                className={`mt-6 text-sm flex items-center gap-2 transition-colors ${
+                  audioState === "playing" ? "text-stone-300" : "text-stone-500 hover:text-stone-200"
+                }`}
+              >
+                {audioState === "playing" ? "⏸ Bezig…" : "🔊 Afspelen"}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ── Navigatie ────────────────────────────────────────── */}
+      <div className="flex items-center justify-center gap-6 px-5 pb-14">
+        <button
+          onClick={() => go(-1)}
+          disabled={index === 0}
+          className="w-14 h-14 rounded-full bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xl flex items-center justify-center shadow-sm disabled:opacity-20 active:scale-95 transition-all"
+          aria-label="Vorige"
+        >
+          ←
+        </button>
+
+        {/* Voortgangsbollen */}
+        <div className="flex gap-1.5">
+          {order.map((_, i) => (
+            <div
+              key={i}
+              className={`rounded-full transition-all ${
+                i === index
+                  ? "w-4 h-2 bg-stone-700 dark:bg-stone-300"
+                  : "w-2 h-2 bg-stone-200 dark:bg-stone-700"
+              }`}
+            />
+          ))}
+        </div>
+
+        <button
+          onClick={() => go(1)}
+          disabled={index === order.length - 1}
+          className="w-14 h-14 rounded-full bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xl flex items-center justify-center shadow-sm disabled:opacity-20 active:scale-95 transition-all"
+          aria-label="Volgende"
+        >
+          →
+        </button>
+      </div>
+    </div>
+  );
+}
 
 // ─── Sorteerbare kaart (alleen in bewerkingsmodus) ─────────────────────────────
 
@@ -47,11 +194,10 @@ function SortableCard({ phrase }: { phrase: Phrase }) {
       <div className="flex-1 min-w-0">
         <PhraseCard phrase={phrase} />
       </div>
-      {/* Drag handle */}
       <button
         {...attributes}
         {...listeners}
-        className="shrink-0 w-8 flex items-center justify-center text-stone-300 hover:text-stone-500 active:text-stone-700 transition-colors touch-none cursor-grab active:cursor-grabbing"
+        className="shrink-0 w-8 flex items-center justify-center text-stone-300 dark:text-stone-600 hover:text-stone-500 dark:hover:text-stone-400 active:text-stone-700 dark:active:text-stone-200 transition-colors touch-none cursor-grab active:cursor-grabbing"
         aria-label="Versleep om te herordenen"
       >
         <span className="text-base leading-none select-none">⠿</span>
@@ -80,8 +226,8 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   } = useUserPhrases();
 
   const staticCategory = getCategoryById(id);
-  const userCategory = userCategories.find((c) => c.id === id);
-  const category = staticCategory ?? (userCategory ? { ...userCategory, description: "", color: "", accentColor: "" } : null);
+  const userCategory   = userCategories.find((c) => c.id === id);
+  const category       = staticCategory ?? (userCategory ? { ...userCategory, description: "", color: "", accentColor: "" } : null);
   const isUserCategory = !!userCategory && !staticCategory;
 
   const staticZinnen = getPhrasesByCategory(id).filter(
@@ -90,10 +236,11 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const userZinnen = getUserPhrasesByCategory(id);
   const alleZinnen = [...staticZinnen, ...userZinnen];
 
-  const [query,    setQuery]    = useState("");
-  const [deleting, setDeleting] = useState(false);
-  const [editMode, setEditMode] = useState(false);
-  const [hiding,   setHiding]   = useState<string | null>(null);
+  const [query,       setQuery]       = useState("");
+  const [deleting,    setDeleting]    = useState(false);
+  const [editMode,    setEditMode]    = useState(false);
+  const [hiding,      setHiding]      = useState<string | null>(null);
+  const [oefenModus,  setOefenModus]  = useState(false);
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
@@ -103,42 +250,31 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const handleDragEnd = async (event: DragEndEvent) => {
     const { active, over } = event;
     if (!over || active.id === over.id) return;
-
     const oldIndex = userZinnen.findIndex((p) => p.id === active.id);
     const newIndex = userZinnen.findIndex((p) => p.id === over.id);
     const reordered = arrayMove(userZinnen, oldIndex, newIndex);
-
     await Promise.all(
-      reordered.map((phrase, idx) =>
-        updatePhraseSortOrder(phrase.id, (idx + 1) * 1000)
-      )
+      reordered.map((phrase, idx) => updatePhraseSortOrder(phrase.id, (idx + 1) * 1000))
     );
   };
 
   const handleHideStatic = async (phraseId: string) => {
     setHiding(phraseId);
-    try {
-      await hideStaticPhrase(phraseId);
-    } finally {
-      setHiding(null);
-    }
+    try { await hideStaticPhrase(phraseId); }
+    finally { setHiding(null); }
   };
 
   const handleDeleteCategory = async () => {
     if (!confirm(`Categorie "${category?.name}" verwijderen?`)) return;
     setDeleting(true);
-    try {
-      await deleteCategory(id);
-      router.back();
-    } finally {
-      setDeleting(false);
-    }
+    try { await deleteCategory(id); router.back(); }
+    finally { setDeleting(false); }
   };
 
   if (!category && userLoading) {
     return (
       <div className="page-content flex items-center justify-center py-20">
-        <div className="w-6 h-6 rounded-full border-2 border-stone-300 border-t-stone-700 animate-spin" />
+        <div className="w-6 h-6 rounded-full border-2 border-stone-300 dark:border-stone-600 border-t-stone-700 dark:border-t-stone-300 animate-spin" />
       </div>
     );
   }
@@ -165,26 +301,23 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
 
       {/* ── Inline vertaler ───────────────────────────────────────── */}
       <div className="px-5 pt-4 pb-3">
-        <InlineTranslator
-          defaultCategoryId={id}
-          categoryName={category.name}
-        />
+        <InlineTranslator defaultCategoryId={id} categoryName={category.name} />
       </div>
 
       {/* ── Zoekbalk + Bewerk-knop ────────────────────────────────── */}
       <div className="px-5 pb-2 flex items-center gap-2">
         {!editMode && (
-          <div className="flex-1 flex items-center gap-2 bg-stone-100/70 rounded-xl px-3 py-2">
-            <span className="text-stone-300 text-xs">○</span>
+          <div className="flex-1 flex items-center gap-2 bg-stone-100/70 dark:bg-stone-800/70 rounded-xl px-3 py-2">
+            <span className="text-stone-300 dark:text-stone-600 text-xs">○</span>
             <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={`Zoek in ${category.name.toLowerCase()}…`}
-              className="flex-1 bg-transparent text-xs text-stone-600 placeholder:text-stone-300 outline-none"
+              className="flex-1 bg-transparent text-xs text-stone-600 dark:text-stone-300 placeholder:text-stone-300 dark:placeholder:text-stone-600 outline-none"
             />
             {query && (
-              <button onClick={() => setQuery("")} className="text-stone-300 text-xs hover:text-stone-500">✕</button>
+              <button onClick={() => setQuery("")} className="text-stone-300 dark:text-stone-600 text-xs hover:text-stone-500 dark:hover:text-stone-400">✕</button>
             )}
           </div>
         )}
@@ -192,9 +325,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
           <button
             onClick={() => { setEditMode((v) => !v); setQuery(""); }}
             className={`shrink-0 text-xs font-medium px-3 py-2 rounded-xl transition-colors ${
-              editMode
-                ? "bg-stone-900 text-white"
-                : "bg-stone-100 text-stone-500 hover:bg-stone-200"
+              editMode ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900" : "bg-stone-100 dark:bg-stone-800 text-stone-500 dark:text-stone-400 hover:bg-stone-200 dark:hover:bg-stone-700"
             }`}
           >
             {editMode ? "Klaar" : "Bewerk"}
@@ -206,31 +337,22 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
       <div className="px-5 pt-3 flex flex-col gap-1.5">
         {editMode ? (
           <>
-            {/* Statische zinnen met verberg-knop */}
             {staticZinnen.map((phrase) => (
               <div key={phrase.id} className="relative">
                 <PhraseCard phrase={phrase} />
                 <button
                   onClick={() => handleHideStatic(phrase.id)}
                   disabled={hiding === phrase.id}
-                  className="absolute top-3 right-3 text-[10px] text-stone-300 hover:text-red-400 transition-colors disabled:opacity-40 bg-white/80 rounded-lg px-2 py-1"
+                  className="absolute top-3 right-3 text-[10px] text-stone-300 dark:text-stone-600 hover:text-red-400 dark:hover:text-red-400 transition-colors disabled:opacity-40 bg-white/80 dark:bg-stone-800/80 rounded-lg px-2 py-1"
                 >
                   {hiding === phrase.id ? "…" : "Verbergen"}
                 </button>
               </div>
             ))}
 
-            {/* Eigen zinnen: drag & drop */}
             {userZinnen.length > 0 && (
-              <DndContext
-                sensors={sensors}
-                collisionDetection={closestCenter}
-                onDragEnd={handleDragEnd}
-              >
-                <SortableContext
-                  items={userZinnen.map((p) => p.id)}
-                  strategy={verticalListSortingStrategy}
-                >
+              <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+                <SortableContext items={userZinnen.map((p) => p.id)} strategy={verticalListSortingStrategy}>
                   <div className="flex flex-col gap-1.5">
                     {userZinnen.map((phrase) => (
                       <SortableCard key={phrase.id} phrase={phrase} />
@@ -243,8 +365,8 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
             {alleZinnen.length === 0 && (
               <div className="text-center py-12">
                 <p className="text-3xl mb-2">📂</p>
-                <p className="text-stone-500 text-sm mb-1">Deze categorie is leeg.</p>
-                <p className="text-stone-400 text-xs">Gebruik de Vraag-knop om een zin toe te voegen.</p>
+                <p className="text-stone-500 dark:text-stone-400 text-sm mb-1">Deze categorie is leeg.</p>
+                <p className="text-stone-400 dark:text-stone-500 text-xs">Gebruik de Vraag-knop om een zin toe te voegen.</p>
               </div>
             )}
           </>
@@ -253,16 +375,16 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
             {query ? (
               <>
                 <p className="text-3xl mb-2">🔍</p>
-                <p className="text-stone-500 text-sm">Geen zinnen gevonden voor "{query}"</p>
-                <button onClick={() => setQuery("")} className="mt-3 text-sm text-stone-400 underline">
+                <p className="text-stone-500 dark:text-stone-400 text-sm">Geen zinnen gevonden voor "{query}"</p>
+                <button onClick={() => setQuery("")} className="mt-3 text-sm text-stone-400 dark:text-stone-500 underline">
                   Zoekopdracht wissen
                 </button>
               </>
             ) : (
               <>
                 <p className="text-3xl mb-2">📂</p>
-                <p className="text-stone-500 text-sm mb-1">Deze categorie is leeg.</p>
-                <p className="text-stone-400 text-xs">Gebruik de Vraag-knop om een zin toe te voegen.</p>
+                <p className="text-stone-500 dark:text-stone-400 text-sm mb-1">Deze categorie is leeg.</p>
+                <p className="text-stone-400 dark:text-stone-500 text-xs">Gebruik de Vraag-knop om een zin toe te voegen.</p>
               </>
             )}
           </div>
@@ -273,17 +395,38 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         )}
       </div>
 
-      {/* Verwijder categorie — alleen voor lege gebruikerscategorieën */}
+      {/* ── Oefenen-knop ─────────────────────────────────────────── */}
+      {alleZinnen.length > 0 && !editMode && (
+        <div className="px-5 pt-6 pb-4">
+          <button
+            onClick={() => setOefenModus(true)}
+            className="w-full py-3.5 bg-stone-900 text-white rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2"
+          >
+            <span>🃏</span>
+            <span>Oefenen met flashcards</span>
+          </button>
+        </div>
+      )}
+
+      {/* Verwijder categorie */}
       {isUserCategory && alleZinnen.length === 0 && !query && !editMode && (
         <div className="px-5 pb-8 pt-4">
           <button
             onClick={handleDeleteCategory}
             disabled={deleting}
-            className="w-full py-3 text-xs text-red-400 hover:text-red-600 transition-colors text-center border border-red-100 rounded-2xl disabled:opacity-40"
+            className="w-full py-3 text-xs text-red-400 hover:text-red-600 transition-colors text-center border border-red-100 dark:border-red-900/30 rounded-2xl disabled:opacity-40"
           >
             {deleting ? "Verwijderen…" : "🗑 Categorie verwijderen"}
           </button>
         </div>
+      )}
+
+      {/* ── Flashcard overlay ─────────────────────────────────────── */}
+      {oefenModus && (
+        <FlashcardModal
+          phrases={alleZinnen}
+          onClose={() => setOefenModus(false)}
+        />
       )}
     </div>
   );
