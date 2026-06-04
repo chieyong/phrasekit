@@ -25,32 +25,41 @@ import PhraseCard from "@/components/cards/PhraseCard";
 import { getCategoryById, getPhrasesByCategory } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAudio } from "@/hooks/useAudio";
+import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
 import { Phrase } from "@/types";
 import InlineTranslator from "@/components/ui/InlineTranslator";
 
 // ─── Vocabulary sheet ─────────────────────────────────────────────────────────
 
-interface VocabWord { japanese: string; romaji: string; dutch: string; }
-
-function VocabSheet({ phrases, onClose }: { phrases: Phrase[]; onClose: () => void }) {
+function VocabSheet({ phrases, categoryId, onClose }: { phrases: Phrase[]; categoryId: string; onClose: () => void }) {
+  const { getVocab, saveVocab } = useVocabulary();
   const [words,  setWords]  = useState<VocabWord[]>([]);
   const [status, setStatus] = useState<"loading" | "done" | "error">("loading");
 
   useEffect(() => {
-    fetch("/api/vocabulary", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        phrases: phrases.map((p) => ({
-          translatedText: p.translatedText,
-          romaji:         p.romaji,
-          sourceText:     p.sourceText,
-        })),
-      }),
-    })
-      .then((r) => r.json())
-      .then((data) => { setWords(data.words ?? []); setStatus("done"); })
-      .catch(() => setStatus("error"));
+    getVocab(categoryId).then((cached) => {
+      if (cached) { setWords(cached); setStatus("done"); return; }
+
+      fetch("/api/vocabulary", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          phrases: phrases.map((p) => ({
+            translatedText: p.translatedText,
+            romaji:         p.romaji,
+            sourceText:     p.sourceText,
+          })),
+        }),
+      })
+        .then((r) => r.json())
+        .then((data) => {
+          const fetched: VocabWord[] = data.words ?? [];
+          setWords(fetched);
+          setStatus("done");
+          saveVocab(categoryId, fetched);
+        })
+        .catch(() => setStatus("error"));
+    }).catch(() => setStatus("error"));
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -536,6 +545,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
       {showVocab && (
         <VocabSheet
           phrases={alleZinnen}
+          categoryId={id}
           onClose={() => setShowVocab(false)}
         />
       )}
