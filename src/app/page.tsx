@@ -218,14 +218,24 @@ interface SentencePracticeModalProps {
   onClose: () => void;
 }
 
+type Difficulty = "basis" | "gemiddeld" | "gevorderd" | "expert";
+
+const DIFFICULTIES: { id: Difficulty; label: string; desc: string; dot: string }[] = [
+  { id: "basis",     label: "Basis",     desc: "Combinaties van bestaande zinnen en woorden",          dot: "bg-green-400"  },
+  { id: "gemiddeld", label: "Gemiddeld", desc: "Kleine variaties, enkele verwante woorden",            dot: "bg-yellow-400" },
+  { id: "gevorderd", label: "Gevorderd", desc: "Gerelateerde woordenschat, meerdere tijdsvormen",      dot: "bg-orange-400" },
+  { id: "expert",    label: "Expert",    desc: "Vrije variaties, nieuwe woorden, complexe structuren", dot: "bg-red-400"    },
+];
+
 function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }: SentencePracticeModalProps) {
   const { getVocab }         = useVocabulary();
   const { play, audioState } = useAudio();
-  const [mode,      setMode]      = useState<"select" | "loading" | "practice">("select");
-  const [selected,  setSelected]  = useState<Set<string>>(new Set());
-  const [sentences, setSentences] = useState<PracticeSentence[]>([]);
-  const [cardIndex, setCardIndex] = useState(0);
-  const [flipped,   setFlipped]   = useState(false);
+  const [mode,       setMode]       = useState<"select" | "loading" | "practice">("select");
+  const [selected,   setSelected]   = useState<Set<string>>(new Set());
+  const [difficulty, setDifficulty] = useState<Difficulty>("basis");
+  const [sentences,  setSentences]  = useState<PracticeSentence[]>([]);
+  const [cardIndex,  setCardIndex]  = useState(0);
+  const [flipped,    setFlipped]    = useState(false);
 
   const toggleCat = (id: string) =>
     setSelected((prev) => { const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id); return s; });
@@ -234,7 +244,6 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
     if (selected.size === 0) return;
     setMode("loading");
 
-    // Collect phrases and vocab words from selected categories
     const allPhrases: Array<{ sourceText: string; translatedText: string; romaji: string }> = [];
     const allWords:   Array<{ japanese: string; romaji: string; dutch: string }>             = [];
 
@@ -248,7 +257,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
       const res  = await fetch("/api/generate-sentences", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ phrases: allPhrases, words: allWords }),
+        body: JSON.stringify({ phrases: allPhrases, words: allWords, difficulty }),
       });
       const data = await res.json();
       const generated: PracticeSentence[] = data.sentences ?? [];
@@ -304,7 +313,33 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
               </button>
             ))}
           </div>
-          <div className="px-5 pb-8 pt-3 border-t border-stone-100 dark:border-stone-700">
+          <div className="px-5 pt-4 pb-2 border-t border-stone-100 dark:border-stone-700">
+            <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">
+              Moeilijkheidsgraad
+            </p>
+            <div className="grid grid-cols-2 gap-1.5 mb-4">
+              {DIFFICULTIES.map((d) => (
+                <button
+                  key={d.id}
+                  onClick={() => setDifficulty(d.id)}
+                  className={`flex items-start gap-2.5 px-3 py-2.5 rounded-xl text-left transition-all ${
+                    difficulty === d.id
+                      ? "bg-stone-900 dark:bg-stone-100"
+                      : "bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 dark:hover:bg-stone-700"
+                  }`}
+                >
+                  <span className={`mt-0.5 w-2 h-2 rounded-full shrink-0 ${d.dot}`} />
+                  <div>
+                    <p className={`text-xs font-semibold ${difficulty === d.id ? "text-white dark:text-stone-900" : "text-stone-700 dark:text-stone-200"}`}>
+                      {d.label}
+                    </p>
+                    <p className={`text-[10px] leading-tight mt-0.5 ${difficulty === d.id ? "text-stone-300 dark:text-stone-600" : "text-stone-400 dark:text-stone-500"}`}>
+                      {d.desc}
+                    </p>
+                  </div>
+                </button>
+              ))}
+            </div>
             <button
               onClick={handleStart}
               disabled={selected.size === 0}
@@ -324,6 +359,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
       <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col items-center justify-center gap-4">
         <div className="w-8 h-8 rounded-full border-2 border-stone-300 dark:border-stone-600 border-t-stone-700 dark:border-t-stone-300 animate-spin" />
         <p className="text-sm text-stone-400 dark:text-stone-500">Oefenzinnen genereren…</p>
+        <p className="text-xs text-stone-300 dark:text-stone-600">{DIFFICULTIES.find((d) => d.id === difficulty)?.label}</p>
       </div>
     );
   }
@@ -345,11 +381,16 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
   return (
     <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
       {/* Header */}
-      <div className="flex items-center justify-between px-5 pt-10 pb-4">
+      <div className="flex items-center justify-between px-5 pt-10 pb-2">
         <button onClick={onClose} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg" aria-label="Sluiten">✕</button>
-        <p className="text-sm font-medium text-stone-400 dark:text-stone-500 tabular-nums">
-          {cardIndex + 1} <span className="text-stone-300 dark:text-stone-600">/</span> {sentences.length}
-        </p>
+        <div className="flex flex-col items-center gap-1">
+          <p className="text-sm font-medium text-stone-400 dark:text-stone-500 tabular-nums">
+            {cardIndex + 1} <span className="text-stone-300 dark:text-stone-600">/</span> {sentences.length}
+          </p>
+          <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full text-white ${DIFFICULTIES.find((d) => d.id === difficulty)?.dot ?? "bg-stone-400"}`}>
+            {DIFFICULTIES.find((d) => d.id === difficulty)?.label}
+          </span>
+        </div>
         <button
           onClick={() => { setSentences((s) => [...s].sort(() => Math.random() - 0.5)); setCardIndex(0); setFlipped(false); }}
           className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm"
