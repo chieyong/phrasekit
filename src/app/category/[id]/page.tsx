@@ -237,6 +237,11 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
               </button>
             </div>
           </div>
+          {flipped && index < order.length - 1 && (
+            <div className="flex justify-end mt-3 pr-1">
+              <button onClick={() => go(1)} className="w-9 h-9 rounded-full bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400 shadow-sm flex items-center justify-center active:scale-95 transition-all" aria-label="Volgende">→</button>
+            </div>
+          )}
         </div>
       </div>
 
