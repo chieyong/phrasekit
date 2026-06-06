@@ -123,9 +123,16 @@ function GrammarPanel({
   const [state,    setState]    = useState<"idle" | "loading" | "done" | "error">(stored ? "done" : "idle");
   const [result,   setResult]   = useState<ExplainResult | null>(stored ?? null);
   const [error,    setError]    = useState("");
-  const [qaList,   setQaList]   = useState<QA[]>([]);
-  const [vraag,    setVraag]    = useState("");
-  const [asking,   setAsking]   = useState(false);
+  const [qaList,      setQaList]      = useState<QA[]>([]);
+  const [vraag,       setVraag]       = useState("");
+  const [asking,      setAsking]      = useState(false);
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+
+  const handleCopy = (text: string, index: number) => {
+    navigator.clipboard.writeText(text);
+    setCopiedIndex(index);
+    setTimeout(() => setCopiedIndex(null), 2000);
+  };
 
   const load = async () => {
     if (state === "loading" || state === "done") return;
@@ -231,7 +238,16 @@ function GrammarPanel({
             {qaList.map((qa, i) => (
               <div key={i} className="mb-4">
                 <p className="text-xs font-medium text-stone-400 dark:text-stone-500 mb-1">↳ {qa.question}</p>
-                <p className="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">{qa.answer}</p>
+                <div className="flex items-start gap-2">
+                  <p className="text-sm text-stone-700 dark:text-stone-300 leading-relaxed flex-1">{qa.answer}</p>
+                  <button
+                    onClick={() => handleCopy(qa.answer, i)}
+                    aria-label="Kopieer antwoord"
+                    className="shrink-0 mt-0.5 text-xs text-stone-300 dark:text-stone-600 hover:text-stone-500 dark:hover:text-stone-400 transition-colors"
+                  >
+                    {copiedIndex === i ? "✓" : "⎘"}
+                  </button>
+                </div>
               </div>
             ))}
 
