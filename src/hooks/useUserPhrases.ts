@@ -128,8 +128,11 @@ export function useUserPhrases() {
       tags:           [],
       isFavorite:     false,
       sortOrder:      Date.now(),
-      ...(result.shortVersion  && { shortVersion:  result.shortVersion  }),
-      ...(result.politeVersion && { politeVersion: result.politeVersion }),
+      ...(result.shortVersion        && { shortVersion:        result.shortVersion        }),
+      ...(result.politeVersion       && { politeVersion:       result.politeVersion       }),
+      ...(result.chineseText         && { chineseText:         result.chineseText         }),
+      ...(result.pinyin              && { pinyin:              result.pinyin              }),
+      ...(result.chineseExplanation  && { chineseExplanation:  result.chineseExplanation  }),
     };
 
     const ref = await addDoc(

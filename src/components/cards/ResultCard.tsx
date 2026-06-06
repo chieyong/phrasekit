@@ -92,6 +92,28 @@ export default function ResultCard({
               <p className="text-sm text-stone-400 dark:text-stone-500 italic">{result.politeVersion.romaji}</p>
             </div>
           )}
+
+          {/* Chinese translation block */}
+          {result.chineseText && (
+            <div className="mt-4 pt-4 border-t border-stone-100 dark:border-stone-700">
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2 flex items-center gap-1.5">
+                <span>🇨🇳</span><span>Chinees (Mandarijn)</span>
+              </p>
+              <p className="text-2xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-1">
+                {result.chineseText}
+              </p>
+              <p className="text-base text-stone-400 dark:text-stone-500 italic mb-2">{result.pinyin}</p>
+              {result.chineseExplanation && (
+                <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">{result.chineseExplanation}</p>
+              )}
+              <button
+                onClick={() => play(result.chineseText!)}
+                className="mt-2 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors flex items-center gap-1"
+              >
+                🔊 Afspelen
+              </button>
+            </div>
+          )}
         </div>
 
         {savedTo ? (

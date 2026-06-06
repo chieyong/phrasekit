@@ -3,17 +3,22 @@
 export interface Phrase {
   id: string;
   categoryId: string;
-  sourceText: string;       // English
+  sourceText: string;       // Dutch
   translatedText: string;   // Japanese (kanji/kana)
-  romaji: string;           // Pronunciation guide
-  explanation: string;      // Plain-English meaning note
-  wordBreakdown?: WordBreakdown[]; // Word-by-word for detail view
+  romaji: string;
+  explanation: string;
+  wordBreakdown?: WordBreakdown[];
   shortVersion?: PhraseVariant;
   politeVersion?: PhraseVariant;
   tags: string[];
   isFavorite: boolean;
   sortOrder?: number;
   grammarExplanation?: GrammarExplanation;
+  // Chinese (optional — present when translated after Chinese support was added)
+  chineseText?: string;
+  pinyin?: string;
+  chineseExplanation?: string;
+  chineseGrammar?: GrammarExplanation;
 }
 
 export interface GrammarExplanation {
@@ -52,7 +57,10 @@ export interface AskNowResult {
   explanation: string;
   shortVersion?: PhraseVariant;
   politeVersion?: PhraseVariant;
-  // Future: grammarExplanation, audioUrl, etc.
+  // Chinese (present when API returns both languages)
+  chineseText?: string;
+  pinyin?: string;
+  chineseExplanation?: string;
 }
 
 // ─── Chip suggestions for Ask Now screen ────────────────────────────────────
