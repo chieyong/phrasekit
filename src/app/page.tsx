@@ -15,6 +15,7 @@ import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
 import { useAudio } from "@/hooks/useAudio";
 import { usePracticeSets, PracticeSentence, Difficulty, generateSetName } from "@/hooks/usePracticeSets";
 import { useTheme } from "@/contexts/ThemeContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // ─── Vocab practice modal ─────────────────────────────────────────────────────
 
@@ -27,6 +28,7 @@ interface VocabPracticeModalProps {
 function VocabPracticeModal({ allCategories, getPhrasesForCategory, onClose }: VocabPracticeModalProps) {
   const { getVocab, saveVocab }  = useVocabulary();
   const { play, audioState }     = useAudio();
+  const { language }             = useLanguage();
   const [mode,       setMode]       = useState<"select" | "loading" | "practice">("select");
   const [selected,   setSelected]   = useState<Set<string>>(new Set());
   const [words,      setWords]      = useState<VocabWord[]>([]);
@@ -42,7 +44,7 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, onClose }: V
 
     const all: VocabWord[] = [];
     for (const catId of selected) {
-      const cached = await getVocab(catId).catch(() => null);
+      const cached = await getVocab(catId, language).catch(() => null);
       if (cached) { all.push(...cached); continue; }
 
       const catPhrases = getPhrasesForCategory(catId);
@@ -51,16 +53,16 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, onClose }: V
         const res  = await fetch("/api/vocabulary", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ phrases: catPhrases }),
+          body: JSON.stringify({ phrases: catPhrases, language }),
         });
         const data = await res.json();
         const fetched: VocabWord[] = data.words ?? [];
-        saveVocab(catId, fetched);
+        saveVocab(catId, fetched, language);
         all.push(...fetched);
       } catch { /* skip */ }
     }
 
-    // Deduplicate on Japanese key, then shuffle
+    // Deduplicate on text key, then shuffle
     const unique  = Array.from(new Map(all.map((w) => [w.japanese, w])).values());
     const shuffled = unique.sort(() => Math.random() - 0.5);
     setWords(shuffled);
@@ -185,7 +187,7 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, onClose }: V
             </div>
             {/* Achterkant — Japans */}
             <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-stone-900 dark:bg-stone-800 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-              <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-6">Japans</p>
+              <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-6">{language === "zh" ? "Chinees" : "Japans"}</p>
               <p className="text-4xl font-bold text-white leading-tight mb-2">{word.japanese}</p>
               <p className="text-base text-stone-400 italic mb-4">{word.romaji}</p>
               <button onClick={(e) => { e.stopPropagation(); play(word.japanese); }} className={`text-sm flex items-center gap-2 transition-colors ${audioState === "playing" ? "text-stone-300" : "text-stone-500 hover:text-stone-200"}`}>
@@ -234,6 +236,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
   const { getVocab }                           = useVocabulary();
   const { saveAsNew, addToExisting, deleteSet, sets } = usePracticeSets();
   const { play, audioState }                   = useAudio();
+  const { language }                           = useLanguage();
 
   const [mode,        setMode]        = useState<"select" | "loading" | "practice">("select");
   const [selectTab,   setSelectTab]   = useState<"new" | "saved">("new");
@@ -259,7 +262,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
 
     for (const catId of selected) {
       allPhrases.push(...getPhrasesForCategory(catId));
-      const cached = await getVocab(catId).catch(() => null);
+      const cached = await getVocab(catId, language).catch(() => null);
       if (cached) allWords.push(...cached);
     }
 
@@ -267,7 +270,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
       const res  = await fetch("/api/generate-sentences", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ phrases: allPhrases, words: allWords, difficulty }),
+        body: JSON.stringify({ phrases: allPhrases, words: allWords, difficulty, language }),
       });
       const data = await res.json();
       const generated: PracticeSentence[] = data.sentences ?? [];
@@ -468,12 +471,12 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
         <div className="w-full max-w-sm" style={{ perspective: "1200px" }}>
           <div onClick={() => setFlipped((v) => !v)} style={{ transformStyle: "preserve-3d", transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)", transition: "transform 0.45s cubic-bezier(0.4,0,0.2,1)", position: "relative", height: "280px", cursor: "pointer" }}>
             <div style={{ backfaceVisibility: "hidden" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-              <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-5">Hoe zeg je dit in het Japans?</p>
+              <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-5">{language === "zh" ? "Hoe zeg je dit in het Chinees?" : "Hoe zeg je dit in het Japans?"}</p>
               <p className="text-xl font-semibold text-stone-900 dark:text-stone-100 leading-snug">{sentence.dutch}</p>
               <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">Tik om het antwoord te zien</p>
             </div>
             <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-stone-900 dark:bg-stone-800 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-              <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-5">Japans</p>
+              <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-5">{language === "zh" ? "Chinees" : "Japans"}</p>
               <p className="text-3xl font-bold text-white leading-tight mb-2">{sentence.japanese}</p>
               <p className="text-base text-stone-400 italic mb-4">{sentence.romaji}</p>
               <button onClick={(e) => { e.stopPropagation(); play(sentence.japanese); }} className={`text-sm flex items-center gap-2 transition-colors ${audioState === "playing" ? "text-stone-300" : "text-stone-500 hover:text-stone-200"}`}>
@@ -551,6 +554,7 @@ export default function HomePage() {
   const { userCategories, userPhrases, staticFavoriteIds, addCategory, getUserPhrasesByCategory } = useUserPhrases();
   const { user, loading, signInWithGoogle, signOut } = useAuth();
   const { theme, toggle } = useTheme();
+  const { language } = useLanguage();
   const [showNewCategory,      setShowNewCategory]      = useState(false);
   const [showVocabPractice,    setShowVocabPractice]    = useState(false);
   const [showSentencePractice, setShowSentencePractice] = useState(false);
@@ -565,6 +569,16 @@ export default function HomePage() {
   ];
 
   const getPhrasesForCategory = (catId: string) => {
+    if (language === "zh") {
+      // Chinese mode: only user phrases that have a Chinese translation
+      return getUserPhrasesByCategory(catId)
+        .filter((p) => !!p.chineseText)
+        .map((p) => ({
+          translatedText: p.chineseText!,
+          romaji:         p.pinyin ?? "",
+          sourceText:     p.sourceText,
+        }));
+    }
     const staticPhrases = getPhrasesByCategory(catId).map((p) => ({
       translatedText: p.translatedText,
       romaji:         p.romaji,

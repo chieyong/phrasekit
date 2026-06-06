@@ -215,6 +215,11 @@ export function useUserPhrases() {
     await updateDoc(doc(db, "users", user.uid, "phrases", id), { grammarExplanation });
   };
 
+  const updatePhraseChineseGrammar = async (id: string, chineseGrammar: GrammarExplanation): Promise<void> => {
+    if (!user) return;
+    await updateDoc(doc(db, "users", user.uid, "phrases", id), { chineseGrammar });
+  };
+
   // ── Read helpers ───────────────────────────────────────────────────────────
 
   const getUserPhraseById = (id: string) =>
@@ -241,6 +246,7 @@ export function useUserPhrases() {
     hideStaticPhrase,
     updatePhraseSortOrder,
     updatePhraseGrammar,
+    updatePhraseChineseGrammar,
     getUserPhraseById,
     getUserPhrasesByCategory,
   };

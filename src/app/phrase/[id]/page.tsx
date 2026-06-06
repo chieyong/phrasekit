@@ -109,12 +109,14 @@ function GrammarPanel({
   japanese,
   romaji,
   english,
+  language = "ja",
   stored,
   onFetched,
 }: {
   japanese: string;
   romaji: string;
   english: string;
+  language?: "ja" | "zh";
   stored?: GrammarExplanation;
   onFetched?: (result: GrammarExplanation) => void;
 }) {
@@ -132,7 +134,7 @@ function GrammarPanel({
       const res = await fetch("/api/explain", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ japanese, romaji, english }),
+        body: JSON.stringify({ japanese, romaji, english, language }),
       });
       if (!res.ok) throw new Error("Request failed");
       const data: ExplainResult = await res.json();
@@ -273,7 +275,7 @@ const EMPTY_PHRASE = {
 export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { id } = use(params);
   const router = useRouter();
-  const { getUserPhraseById, userCategories, addCategory, addPhrase, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite, hideStaticPhrase, updatePhraseGrammar } = useUserPhrases();
+  const { getUserPhraseById, userCategories, addCategory, addPhrase, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite, hideStaticPhrase, updatePhraseGrammar, updatePhraseChineseGrammar } = useUserPhrases();
   const userPhrase = getUserPhraseById(id);
   const staticPhrase = getPhraseById(id);
   const phrase = staticPhrase ?? userPhrase;
@@ -405,22 +407,23 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
         </div>
 
         {/* ── Grammatica toggle + paneel ─────────────────────────── */}
-        {!showChinese && (
-          <button
-            onClick={() => setShowGrammar((v) => !v)}
-            className="w-full py-2.5 mb-3 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors text-center bg-white dark:bg-stone-900 rounded-2xl"
-          >
-            {showGrammar ? "Verberg grammatica ↑" : "📖 Grammatica uitleggen"}
-          </button>
-        )}
+        <button
+          onClick={() => setShowGrammar((v) => !v)}
+          className="w-full py-2.5 mb-3 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors text-center bg-white dark:bg-stone-900 rounded-2xl"
+        >
+          {showGrammar ? "Verberg grammatica ↑" : "📖 Grammatica uitleggen"}
+        </button>
 
-        {showGrammar && !showChinese && (
+        {showGrammar && (
           <GrammarPanel
-            japanese={phrase.translatedText}
-            romaji={phrase.romaji}
+            japanese={showChinese ? (phrase.chineseText ?? phrase.translatedText) : phrase.translatedText}
+            romaji={showChinese ? (phrase.pinyin ?? phrase.romaji) : phrase.romaji}
             english={phrase.sourceText}
-            stored={phrase.grammarExplanation}
-            onFetched={isUserPhrase ? (result) => updatePhraseGrammar(id, result) : undefined}
+            language={showChinese ? "zh" : "ja"}
+            stored={showChinese ? phrase.chineseGrammar : phrase.grammarExplanation}
+            onFetched={isUserPhrase
+              ? (result) => showChinese ? updatePhraseChineseGrammar(id, result) : updatePhraseGrammar(id, result)
+              : undefined}
           />
         )}
 

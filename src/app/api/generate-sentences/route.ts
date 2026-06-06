@@ -1,19 +1,41 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const BASE_PROMPT = `You are a Japanese language teacher for Dutch-speaking travelers. Given a set of existing Japanese phrases and vocabulary words as context, generate exactly 8 new practice sentences.
+const JA_BASE_PROMPT = `Je bent een Japanse taalleraar voor Nederlandstalige reizigers. Gegeven bestaande Japanse zinnen en woordenschat als context, genereer precies 8 nieuwe oefenzinnen.
 
-Sentences must be realistic travel situations (ordering food, asking directions, shopping, hotels, transport, etc.).
+Zinnen moeten realistische reissituaties zijn (eten bestellen, de weg vragen, winkelen, hotel, transport, etc.).
 
-Respond with ONLY valid JSON in exactly this shape:
+Reageer met ALLEEN geldig JSON:
 {
   "sentences": [
     {
-      "dutch": "<Dutch sentence>",
-      "japanese": "<Japanese in kanji/kana>",
-      "romaji": "<romaji pronunciation>"
+      "dutch": "<Nederlandse zin>",
+      "japanese": "<Japans in kanji/kana>",
+      "romaji": "<romaji uitspraak>"
     }
   ]
 }`;
+
+const ZH_BASE_PROMPT = `Je bent een Chinese (Mandarijn) taalleraar voor Nederlandstalige reizigers. Gegeven bestaande Chinese zinnen en woordenschat als context, genereer precies 8 nieuwe oefenzinnen.
+
+Zinnen moeten realistische reissituaties zijn (eten bestellen, de weg vragen, winkelen, hotel, transport, etc.).
+Gebruik Vereenvoudigd Chinees. Gebruik exact dezelfde veldnamen:
+
+{
+  "sentences": [
+    {
+      "dutch": "<Nederlandse zin>",
+      "japanese": "<Chinees in vereenvoudigde karakters>",
+      "romaji": "<pinyin met toonmarkeringen>"
+    }
+  ]
+}`;
+
+const ZH_DIFFICULTY_RULES: Record<string, { rules: string; temperature: number }> = {
+  basis:     { rules: `Moeilijkheid: BASIS\n- Gebruik ALLEEN de opgegeven woorden en zinstructuren\n- Korte zinnen (max 6–8 Chinese tekens)\n- Alleen basisstructuren (主+谓+宾)`, temperature: 0.5 },
+  gemiddeld: { rules: `Moeilijkheid: GEMIDDELD\n- Voornamelijk opgegeven woordenschat, mag 1–2 verwante woorden toevoegen\n- Iets gevarieerder: gebruik 的、了、吧\n- Middellange zinnen`, temperature: 0.7 },
+  gevorderd: { rules: `Moeilijkheid: GEVORDERD\n- Gerelateerde woordenschat vrij toegestaan\n- Gevarieerde structuren: 把-zinnen, 是...的, resultaatvervoeging\n- Langere zinnen met voegwoorden (因为、所以、但是)`, temperature: 0.85 },
+  expert:    { rules: `Moeilijkheid: EXPERT\n- Vrij geïnspireerd op de categorieën — introduceer nieuwe verwante woorden\n- Complexe structuren, meerdere deelzinnen\n- Formeel en informeel taalgebruik, idiomatische uitdrukkingen`, temperature: 1.0 },
+};
 
 const DIFFICULTY_RULES: Record<string, { rules: string; temperature: number }> = {
   basis: {
@@ -61,12 +83,14 @@ export async function POST(request: NextRequest) {
   let phrases: { sourceText: string; translatedText: string; romaji: string }[];
   let words:   { japanese: string; romaji: string; dutch: string }[];
   let difficulty: string;
+  let language: string;
 
   try {
     const body = await request.json();
     phrases    = body.phrases    ?? [];
     words      = body.words      ?? [];
     difficulty = body.difficulty ?? "basis";
+    language   = body.language   ?? "ja";
   } catch {
     return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
   }
@@ -75,8 +99,11 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ sentences: [] });
   }
 
-  const { rules, temperature } = DIFFICULTY_RULES[difficulty] ?? DIFFICULTY_RULES.basis;
-  const systemPrompt = `${BASE_PROMPT}\n\n${rules}`;
+  const isZh = language === "zh";
+  const diffRules  = isZh ? ZH_DIFFICULTY_RULES : DIFFICULTY_RULES;
+  const basePrompt = isZh ? ZH_BASE_PROMPT : JA_BASE_PROMPT;
+  const { rules, temperature } = diffRules[difficulty] ?? diffRules.basis;
+  const systemPrompt = `${basePrompt}\n\n${rules}`;
 
   const phrasesBlock = phrases
     .slice(0, 20)
