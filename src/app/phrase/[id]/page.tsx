@@ -432,6 +432,7 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
 
         {showGrammar && (
           <GrammarPanel
+            key={showChinese ? "zh" : "ja"}
             japanese={showChinese ? (phrase.chineseText ?? phrase.translatedText) : phrase.translatedText}
             romaji={showChinese ? (phrase.pinyin ?? phrase.romaji) : phrase.romaji}
             english={phrase.sourceText}
