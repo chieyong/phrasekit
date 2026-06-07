@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Phrase } from "@/types";
 import { useAudio } from "@/hooks/useAudio";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface PhraseCardProps {
   phrase: Phrase;
@@ -16,7 +17,13 @@ export default function PhraseCard({
 }: PhraseCardProps) {
   const { play, audioState } = useAudio();
   const { userPhrases, staticFavoriteIds, toggleUserFavorite, toggleStaticFavorite } = useUserPhrases();
+  const { language } = useLanguage();
   const isPlaying = audioState === "playing";
+
+  // In Chinese mode: show Chinese if available, else fall back to Japanese
+  const showChinese  = language === "zh" && !!phrase.chineseText;
+  const displayText  = showChinese ? phrase.chineseText! : phrase.translatedText;
+  const displayRead  = showChinese ? (phrase.pinyin ?? "") : phrase.romaji;
 
   const userPhrase   = userPhrases.find((p) => p.id === phrase.id);
   const isUserPhrase = !!userPhrase;
@@ -44,14 +51,15 @@ export default function PhraseCard({
         <p className="text-base font-semibold text-stone-900 dark:text-stone-100 leading-snug mb-1">
           {phrase.sourceText}
         </p>
-        <p className="text-sm text-stone-500 dark:text-stone-400 leading-snug">{phrase.romaji}</p>
+        <p className="text-sm text-stone-500 dark:text-stone-400 leading-snug">{displayText}</p>
+        <p className="text-xs text-stone-400 dark:text-stone-500 italic leading-snug mt-0.5">{displayRead}</p>
       </Link>
 
       <div className="flex items-center gap-3 px-5 pb-4">
         <button
           onClick={(e) => {
             e.preventDefault();
-            if (!isPlaying) play(phrase.translatedText);
+            if (!isPlaying) play(displayText);
           }}
           aria-label={isPlaying ? "Playing…" : "Play pronunciation"}
           className={`text-xs font-medium transition-colors ${

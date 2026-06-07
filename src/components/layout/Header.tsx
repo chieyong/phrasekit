@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTheme } from "@/contexts/ThemeContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface HeaderProps {
   title: string;
@@ -20,6 +21,7 @@ export default function Header({
   const router = useRouter();
   const { user, loading, signInWithGoogle, signOut } = useAuth();
   const { theme, toggle } = useTheme();
+  const { language, setLanguage } = useLanguage();
 
   const authButton = !loading && (
     user ? (
@@ -70,6 +72,17 @@ export default function Header({
         </div>
 
         <div className="shrink-0 flex items-center gap-2">
+          {/* Taal toggle */}
+          <button
+            onClick={() => setLanguage(language === "ja" ? "zh" : "ja")}
+            className="flex items-center gap-1 bg-stone-100 dark:bg-stone-800 rounded-lg px-2 py-1 text-sm active:scale-95 transition-all"
+            aria-label="Wissel taal"
+          >
+            <span className={language === "ja" ? "opacity-100" : "opacity-40"}>🇯🇵</span>
+            <span className="text-stone-300 dark:text-stone-600 text-xs">/</span>
+            <span className={language === "zh" ? "opacity-100" : "opacity-40"}>🇨🇳</span>
+          </button>
+
           {/* Donker/licht toggle */}
           <button
             onClick={toggle}

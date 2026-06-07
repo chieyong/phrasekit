@@ -16,6 +16,7 @@ import { useAudio } from "@/hooks/useAudio";
 import { parseTextSegments } from "@/utils/japaneseNumbers";
 import { PhraseVariant } from "@/types";
 import CategoryPicker from "@/components/ui/CategoryPicker";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -108,21 +109,30 @@ function GrammarPanel({
   japanese,
   romaji,
   english,
+  language = "ja",
   stored,
   onFetched,
 }: {
   japanese: string;
   romaji: string;
   english: string;
+  language?: "ja" | "zh";
   stored?: GrammarExplanation;
   onFetched?: (result: GrammarExplanation) => void;
 }) {
   const [state,    setState]    = useState<"idle" | "loading" | "done" | "error">(stored ? "done" : "idle");
   const [result,   setResult]   = useState<ExplainResult | null>(stored ?? null);
   const [error,    setError]    = useState("");
-  const [qaList,   setQaList]   = useState<QA[]>([]);
-  const [vraag,    setVraag]    = useState("");
-  const [asking,   setAsking]   = useState(false);
+  const [qaList,      setQaList]      = useState<QA[]>([]);
+  const [vraag,       setVraag]       = useState("");
+  const [asking,      setAsking]      = useState(false);
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+
+  const handleCopy = (text: string, index: number) => {
+    navigator.clipboard.writeText(text);
+    setCopiedIndex(index);
+    setTimeout(() => setCopiedIndex(null), 2000);
+  };
 
   const load = async () => {
     if (state === "loading" || state === "done") return;
@@ -131,7 +141,7 @@ function GrammarPanel({
       const res = await fetch("/api/explain", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ japanese, romaji, english }),
+        body: JSON.stringify({ japanese, romaji, english, language }),
       });
       if (!res.ok) throw new Error("Request failed");
       const data: ExplainResult = await res.json();
@@ -228,7 +238,16 @@ function GrammarPanel({
             {qaList.map((qa, i) => (
               <div key={i} className="mb-4">
                 <p className="text-xs font-medium text-stone-400 dark:text-stone-500 mb-1">↳ {qa.question}</p>
-                <p className="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">{qa.answer}</p>
+                <div className="flex items-start gap-2">
+                  <p className="text-sm text-stone-700 dark:text-stone-300 leading-relaxed flex-1">{qa.answer}</p>
+                  <button
+                    onClick={() => handleCopy(qa.answer, i)}
+                    aria-label="Kopieer antwoord"
+                    className="shrink-0 mt-0.5 text-xs text-stone-300 dark:text-stone-600 hover:text-stone-500 dark:hover:text-stone-400 transition-colors"
+                  >
+                    {copiedIndex === i ? "✓" : "⎘"}
+                  </button>
+                </div>
               </div>
             ))}
 
@@ -272,7 +291,7 @@ const EMPTY_PHRASE = {
 export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { id } = use(params);
   const router = useRouter();
-  const { getUserPhraseById, userCategories, addCategory, addPhrase, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite, hideStaticPhrase, updatePhraseGrammar } = useUserPhrases();
+  const { getUserPhraseById, userCategories, addCategory, addPhrase, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite, hideStaticPhrase, updatePhraseGrammar, updatePhraseChineseGrammar } = useUserPhrases();
   const userPhrase = getUserPhraseById(id);
   const staticPhrase = getPhraseById(id);
   const phrase = staticPhrase ?? userPhrase;
@@ -283,6 +302,13 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { edited, numberMap, hasChanges, updateNumber, reset } =
     useEditablePhrase((phrase ?? EMPTY_PHRASE) as Parameters<typeof useEditablePhrase>[0]);
   const { play, audioState } = useAudio();
+  const { language } = useLanguage();
+
+  // Chinese mode: use Chinese fields when available, else fall back to Japanese
+  const showChinese    = language === "zh" && !!phrase?.chineseText;
+  const displayText    = showChinese ? (phrase?.chineseText ?? "") : (phrase?.translatedText ?? "");
+  const displayReading = showChinese ? (phrase?.pinyin ?? "") : (edited.romaji ?? "");
+  const displayExpl    = showChinese ? (phrase?.chineseExplanation ?? phrase?.explanation ?? "") : (phrase?.explanation ?? "");
 
   const [showGrammar,    setShowGrammar]    = useState(false);
   const [deleting,       setDeleting]       = useState(false);
@@ -363,18 +389,20 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           </button>
 
           <p className="text-4xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-3 pr-8">
-            <JapaneseText
-              originalText={phrase.translatedText}
-              numberMap={numberMap}
-              onUpdate={updateNumber}
-              size="lg"
-            />
+            {showChinese ? displayText : (
+              <JapaneseText
+                originalText={phrase.translatedText}
+                numberMap={numberMap}
+                onUpdate={updateNumber}
+                size="lg"
+              />
+            )}
           </p>
 
-          <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{edited.romaji}</p>
+          <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{displayReading}</p>
 
           <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed border-t border-stone-100 dark:border-stone-700 pt-3">
-            {phrase.explanation}
+            {displayExpl}
           </p>
 
           <div className="flex items-center justify-between mt-3">
@@ -404,11 +432,15 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
 
         {showGrammar && (
           <GrammarPanel
-            japanese={phrase.translatedText}
-            romaji={phrase.romaji}
+            key={showChinese ? "zh" : "ja"}
+            japanese={showChinese ? (phrase.chineseText ?? phrase.translatedText) : phrase.translatedText}
+            romaji={showChinese ? (phrase.pinyin ?? phrase.romaji) : phrase.romaji}
             english={phrase.sourceText}
-            stored={phrase.grammarExplanation}
-            onFetched={isUserPhrase ? (result) => updatePhraseGrammar(id, result) : undefined}
+            language={showChinese ? "zh" : "ja"}
+            stored={showChinese ? phrase.chineseGrammar : phrase.grammarExplanation}
+            onFetched={isUserPhrase
+              ? (result) => showChinese ? updatePhraseChineseGrammar(id, result) : updatePhraseGrammar(id, result)
+              : undefined}
           />
         )}
 
@@ -435,8 +467,8 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           </div>
         )}
 
-        {/* ── Variants ───────────────────────────────────────────── */}
-        {phrase.shortVersion && edited.shortVersion && (
+        {/* ── Variants (alleen Japans) ────────────────────────────── */}
+        {!showChinese && phrase.shortVersion && edited.shortVersion && (
           <VariantRow
             variant={edited.shortVersion}
             originalText={phrase.shortVersion.translatedText}
@@ -447,7 +479,7 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           />
         )}
 
-        {phrase.politeVersion && edited.politeVersion && (
+        {!showChinese && phrase.politeVersion && edited.politeVersion && (
           <VariantRow
             variant={edited.politeVersion}
             originalText={phrase.politeVersion.translatedText}
@@ -470,7 +502,7 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
         {/* ── Actions ────────────────────────────────────────────── */}
         <div className="flex gap-3 mb-3">
           <button
-            onClick={() => !isPlaying && play(edited.translatedText)}
+            onClick={() => !isPlaying && play(displayText)}
             className={`flex-1 flex items-center justify-center gap-2 rounded-2xl py-3 text-sm font-medium transition-colors ${
               isPlaying
                 ? "bg-stone-200 text-stone-600"

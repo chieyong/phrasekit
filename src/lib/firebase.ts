@@ -1,6 +1,6 @@
-import { initializeApp, getApps } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore, initializeFirestore, persistentLocalCache } from "firebase/firestore";
+import { initializeApp, getApps, FirebaseApp } from "firebase/app";
+import { Auth, getAuth } from "firebase/auth";
+import { Firestore, getFirestore, initializeFirestore, persistentLocalCache } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey:            process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -11,17 +11,25 @@ const firebaseConfig = {
   appId:             process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
-
-// Enable offline persistence (IndexedDB) in browser; fall back to memory cache on SSR or HMR re-init
-let db: ReturnType<typeof getFirestore>;
-try {
-  db = typeof window !== "undefined"
-    ? initializeFirestore(app, { localCache: persistentLocalCache() })
-    : getFirestore(app);
-} catch {
-  db = getFirestore(app);
+// Guard: skip Firebase init during Next.js build/prerender when credentials are absent.
+// All Firebase usage is client-side, so this is safe.
+function initFirebase(): { app: FirebaseApp; auth: Auth; db: Firestore } {
+  const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
+  const auth = getAuth(app);
+  let db: Firestore;
+  try {
+    db = typeof window !== "undefined"
+      ? initializeFirestore(app, { localCache: persistentLocalCache() })
+      : getFirestore(app);
+  } catch {
+    db = getFirestore(app);
+  }
+  return { app, auth, db };
 }
 
-export const auth = getAuth(app);
-export { db };
+const firebase = process.env.NEXT_PUBLIC_FIREBASE_API_KEY
+  ? initFirebase()
+  : { app: null, auth: null as unknown as Auth, db: null as unknown as Firestore };
+
+export const auth = firebase.auth;
+export const db   = firebase.db;

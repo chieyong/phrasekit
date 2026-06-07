@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 import AccessGate from "@/components/layout/AccessGate";
 
 export const metadata: Metadata = {
@@ -47,13 +48,15 @@ export default function RootLayout({
       </head>
       <body className="min-h-full bg-[var(--bg)] antialiased transition-colors duration-200">
         <ThemeProvider>
-          <AuthProvider>
-            <div className="relative max-w-md mx-auto min-h-screen bg-[var(--bg)] shadow-xl transition-colors duration-200">
-              <AccessGate>
-                {children}
-              </AccessGate>
-            </div>
-          </AuthProvider>
+          <LanguageProvider>
+            <AuthProvider>
+              <div className="relative max-w-md mx-auto min-h-screen bg-[var(--bg)] shadow-xl transition-colors duration-200">
+                <AccessGate>
+                  {children}
+                </AccessGate>
+              </div>
+            </AuthProvider>
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

@@ -26,6 +26,7 @@ import { getCategoryById, getPhrasesByCategory } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAudio } from "@/hooks/useAudio";
 import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Phrase } from "@/types";
 import InlineTranslator from "@/components/ui/InlineTranslator";
 
@@ -33,35 +34,40 @@ import InlineTranslator from "@/components/ui/InlineTranslator";
 
 function VocabSheet({ phrases, categoryId, onClose }: { phrases: Phrase[]; categoryId: string; onClose: () => void }) {
   const { getVocab, saveVocab } = useVocabulary();
+  const { language } = useLanguage();
   const [words,  setWords]  = useState<VocabWord[]>([]);
   const [status, setStatus] = useState<"loading" | "done" | "error">("loading");
 
   useEffect(() => {
-    getVocab(categoryId).then((cached) => {
+    getVocab(categoryId, language).then((cached) => {
       if (cached) { setWords(cached); setStatus("done"); return; }
+
+      // For Chinese: use chineseText+pinyin if available, else skip that phrase
+      const apiPhrases = phrases
+        .map((p) => language === "zh"
+          ? (p.chineseText ? { translatedText: p.chineseText, romaji: p.pinyin ?? "", sourceText: p.sourceText } : null)
+          : { translatedText: p.translatedText, romaji: p.romaji, sourceText: p.sourceText }
+        )
+        .filter(Boolean) as { translatedText: string; romaji: string; sourceText: string }[];
+
+      if (!apiPhrases.length) { setStatus("done"); return; }
 
       fetch("/api/vocabulary", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          phrases: phrases.map((p) => ({
-            translatedText: p.translatedText,
-            romaji:         p.romaji,
-            sourceText:     p.sourceText,
-          })),
-        }),
+        body: JSON.stringify({ phrases: apiPhrases, language }),
       })
         .then((r) => r.json())
         .then((data) => {
           const fetched: VocabWord[] = data.words ?? [];
           setWords(fetched);
           setStatus("done");
-          saveVocab(categoryId, fetched);
+          saveVocab(categoryId, fetched, language);
         })
         .catch(() => setStatus("error"));
     }).catch(() => setStatus("error"));
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [language]);
 
   const handleBackdrop = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) onClose();
