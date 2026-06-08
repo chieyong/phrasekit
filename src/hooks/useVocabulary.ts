@@ -9,6 +9,7 @@ export interface VocabWord {
   japanese: string;
   romaji: string;
   dutch: string;
+  type?: "noun" | "verb" | "adjective";
 }
 
 export function useVocabulary() {

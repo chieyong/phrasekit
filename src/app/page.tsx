@@ -62,9 +62,11 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, onClose }: V
       } catch { /* skip */ }
     }
 
-    // Deduplicate on text key, then shuffle
+    // Deduplicate on text key, then shuffle (verbs stay grouped at end within the shuffle)
     const unique  = Array.from(new Map(all.map((w) => [w.japanese, w])).values());
-    const shuffled = unique.sort(() => Math.random() - 0.5);
+    const nonVerbs = unique.filter((w) => w.type !== "verb").sort(() => Math.random() - 0.5);
+    const verbs    = unique.filter((w) => w.type === "verb").sort(() => Math.random() - 0.5);
+    const shuffled = [...nonVerbs, ...verbs];
     setWords(shuffled);
     setCardIndex(0);
     setFlipped(false);

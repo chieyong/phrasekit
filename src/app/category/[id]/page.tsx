@@ -119,19 +119,32 @@ function VocabSheet({ phrases, categoryId, onClose }: { phrases: Phrase[]; categ
             </p>
           )}
 
-          {status === "done" && words.length > 0 && (
-            <div className="divide-y divide-stone-100 dark:divide-stone-800">
-              {words.map((w, i) => (
-                <div key={i} className="flex items-center gap-4 py-3">
-                  <div className="shrink-0 min-w-[80px]">
-                    <p className="text-base font-semibold text-stone-900 dark:text-stone-100">{w.japanese}</p>
-                    <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w.romaji}</p>
-                  </div>
-                  <p className="text-sm text-stone-500 dark:text-stone-400">{w.dutch}</p>
+          {status === "done" && words.length > 0 && (() => {
+            const nonVerbs = words.filter((w) => w.type !== "verb");
+            const verbs    = words.filter((w) => w.type === "verb");
+            const renderRow = (w: VocabWord, i: number) => (
+              <div key={i} className="flex items-center gap-4 py-3">
+                <div className="shrink-0 min-w-[80px]">
+                  <p className="text-base font-semibold text-stone-900 dark:text-stone-100">{w.japanese}</p>
+                  <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w.romaji}</p>
                 </div>
-              ))}
-            </div>
-          )}
+                <p className="text-sm text-stone-500 dark:text-stone-400">{w.dutch}</p>
+              </div>
+            );
+            return (
+              <div className="divide-y divide-stone-100 dark:divide-stone-800">
+                {nonVerbs.map(renderRow)}
+                {verbs.length > 0 && (
+                  <>
+                    <div className="pt-3 pb-1">
+                      <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">Werkwoorden</p>
+                    </div>
+                    {verbs.map(renderRow)}
+                  </>
+                )}
+              </div>
+            );
+          })()}
         </div>
       </div>
     </div>
