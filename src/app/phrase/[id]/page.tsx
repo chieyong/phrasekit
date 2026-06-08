@@ -186,9 +186,19 @@ function GrammarPanel({
 
   return (
     <div className="bg-white dark:bg-stone-900 rounded-2xl px-5 py-4 mb-3">
-      <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
-        Grammatica
-      </p>
+      <div className="flex items-center justify-between mb-3">
+        <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">
+          Grammatica
+        </p>
+        {state === "done" && (
+          <button
+            onClick={() => { setState("idle"); setResult(null); }}
+            className="text-[10px] text-stone-300 dark:text-stone-600 hover:text-stone-500 dark:hover:text-stone-400 transition-colors"
+          >
+            ↺ Vernieuwen
+          </button>
+        )}
+      </div>
 
       {state === "loading" && (
         <div className="animate-pulse space-y-2">
