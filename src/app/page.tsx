@@ -16,6 +16,7 @@ import { useAudio } from "@/hooks/useAudio";
 import { usePracticeSets, PracticeSentence, Difficulty, generateSetName } from "@/hooks/usePracticeSets";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Phrase } from "@/types";
 
 // ─── Vocab practice modal ─────────────────────────────────────────────────────
 
@@ -214,6 +215,159 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, onClose }: V
           ))}
         </div>
         <button onClick={() => go(1)} disabled={cardIndex === words.length - 1} className="w-14 h-14 rounded-full bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xl flex items-center justify-center shadow-sm disabled:opacity-20 active:scale-95 transition-all" aria-label="Volgende">→</button>
+      </div>
+    </div>
+  );
+}
+
+// ─── Grammar group modal ──────────────────────────────────────────────────────
+
+interface GrammarGroupModalProps {
+  allCategories: Array<{ id: string; name: string; icon: string }>;
+  getFullPhrasesForCategory: (id: string) => Phrase[];
+  onClose: () => void;
+}
+
+function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, onClose }: GrammarGroupModalProps) {
+  const [mode,         setMode]         = useState<"select" | "loading" | "result">("select");
+  const [selected,     setSelected]     = useState<Set<string>>(new Set());
+  const [groups,       setGroups]       = useState<{ groep: string; zinIds: string[] }[]>([]);
+  const [allPhrases,   setAllPhrases]   = useState<Phrase[]>([]);
+  const [activeGroep,  setActiveGroep]  = useState<string | null>(null);
+
+  const toggleCat = (id: string) =>
+    setSelected((prev) => { const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id); return s; });
+
+  const handleGroepeer = async () => {
+    if (selected.size === 0) return;
+    const collected: Phrase[] = [];
+    for (const catId of selected) collected.push(...getFullPhrasesForCategory(catId));
+    if (collected.length < 2) return;
+
+    setMode("loading");
+    try {
+      const res  = await fetch("/api/group-grammar", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          phrases: collected.map((p) => ({ id: p.id, translatedText: p.translatedText, sourceText: p.sourceText })),
+        }),
+      });
+      const data = await res.json();
+      const fetched: { groep: string; zinIds: string[] }[] = data.groups ?? [];
+      setGroups(fetched);
+      setAllPhrases(collected);
+      setActiveGroep(fetched[0]?.groep ?? null);
+      setMode("result");
+    } catch {
+      setMode("select");
+    }
+  };
+
+  const handleBackdrop = (e: React.MouseEvent) => { if (e.target === e.currentTarget) onClose(); };
+
+  // ── Select screen ──────────────────────────────────────────────────────────
+  if (mode === "select") {
+    return (
+      <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
+        <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
+          <div className="flex items-center pt-3 pb-1 px-5">
+            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700 mx-auto" />
+            <button onClick={onClose} className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
+              Annuleren
+            </button>
+          </div>
+          <div className="px-5 pt-3 pb-2">
+            <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">🔤 Grammatica groeperen</p>
+            <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Kies categorieën — AI groepeert alle zinnen op grammaticale structuur</p>
+          </div>
+          <div className="px-3 overflow-y-auto max-h-[45vh]">
+            {allCategories.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => toggleCat(cat.id)}
+                className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left"
+              >
+                <span className="text-xl shrink-0">{cat.icon}</span>
+                <span className="flex-1 text-sm font-medium text-stone-800 dark:text-stone-200">{cat.name}</span>
+                <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${
+                  selected.has(cat.id)
+                    ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100"
+                    : "border-stone-200 dark:border-stone-600"
+                }`}>
+                  {selected.has(cat.id) && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
+                </span>
+              </button>
+            ))}
+          </div>
+          <div className="px-5 pb-8 pt-3 border-t border-stone-100 dark:border-stone-700">
+            <button
+              onClick={handleGroepeer}
+              disabled={selected.size === 0}
+              className="w-full bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-xl py-3 text-sm font-medium disabled:opacity-30 active:scale-95 transition-all"
+            >
+              Groepeer ({selected.size} {selected.size === 1 ? "categorie" : "categorieën"})
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ── Loading screen ─────────────────────────────────────────────────────────
+  if (mode === "loading") {
+    return (
+      <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col items-center justify-center gap-4">
+        <div className="w-8 h-8 rounded-full border-2 border-stone-300 dark:border-stone-600 border-t-stone-700 dark:border-t-stone-300 animate-spin" />
+        <p className="text-sm text-stone-400 dark:text-stone-500">Grammaticagroepen bepalen…</p>
+      </div>
+    );
+  }
+
+  // ── Result screen ──────────────────────────────────────────────────────────
+  const actieveZinnen = activeGroep
+    ? allPhrases.filter((p) => groups.find((g) => g.groep === activeGroep)?.zinIds.includes(p.id))
+    : [];
+
+  return (
+    <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
+      {/* Header */}
+      <div className="flex items-center justify-between px-5 pt-10 pb-4">
+        <button
+          onClick={onClose}
+          className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg"
+          aria-label="Sluiten"
+        >✕</button>
+        <p className="text-sm font-semibold text-stone-700 dark:text-stone-300">Grammaticagroepen</p>
+        <div className="w-9" />
+      </div>
+
+      {/* Tabs */}
+      <div className="px-5 pb-3">
+        <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+          {groups.map((g) => (
+            <button
+              key={g.groep}
+              onClick={() => setActiveGroep(g.groep)}
+              className={`shrink-0 px-3 py-1.5 rounded-xl text-xs font-medium transition-colors whitespace-nowrap ${
+                activeGroep === g.groep
+                  ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
+                  : "bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400 shadow-sm"
+              }`}
+            >
+              {g.groep}
+              <span className="ml-1.5 opacity-50">{g.zinIds.length}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Phrases */}
+      <div className="flex-1 overflow-y-auto px-5 flex flex-col gap-1.5 pb-8">
+        {actieveZinnen.map((phrase) => (
+          <PhraseCard key={phrase.id} phrase={phrase} showCategory />
+        ))}
       </div>
     </div>
   );
@@ -560,6 +714,7 @@ export default function HomePage() {
   const [showNewCategory,      setShowNewCategory]      = useState(false);
   const [showVocabPractice,    setShowVocabPractice]    = useState(false);
   const [showSentencePractice, setShowSentencePractice] = useState(false);
+  const [showGrammarGroup,     setShowGrammarGroup]     = useState(false);
 
   const userFavorieten   = userPhrases.filter((p) => p.isFavorite);
   const staticFavorieten = phrases.filter((p) => staticFavoriteIds.includes(p.id));
@@ -591,6 +746,12 @@ export default function HomePage() {
       romaji:         p.romaji,
       sourceText:     p.sourceText,
     }));
+    return [...staticPhrases, ...userPhr];
+  };
+
+  const getFullPhrasesForCategory = (catId: string): Phrase[] => {
+    const staticPhrases = getPhrasesByCategory(catId);
+    const userPhr = getUserPhrasesByCategory(catId);
     return [...staticPhrases, ...userPhr];
   };
 
@@ -745,6 +906,17 @@ export default function HomePage() {
             </div>
             <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
           </button>
+          <button
+            onClick={() => setShowGrammarGroup(true)}
+            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
+          >
+            <span className="text-2xl shrink-0">🔤</span>
+            <div className="text-left">
+              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica groeperen</p>
+              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Bekijk zinnen uit meerdere categorieën gegroepeerd op structuur</p>
+            </div>
+            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+          </button>
         </section>
       )}
 
@@ -768,6 +940,14 @@ export default function HomePage() {
           allCategories={allCategories}
           getPhrasesForCategory={getPhrasesForCategory}
           onClose={() => setShowSentencePractice(false)}
+        />
+      )}
+
+      {showGrammarGroup && (
+        <GrammarGroupModal
+          allCategories={allCategories}
+          getFullPhrasesForCategory={getFullPhrasesForCategory}
+          onClose={() => setShowGrammarGroup(false)}
         />
       )}
     </div>
