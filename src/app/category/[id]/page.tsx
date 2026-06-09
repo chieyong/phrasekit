@@ -119,19 +119,32 @@ function VocabSheet({ phrases, categoryId, onClose }: { phrases: Phrase[]; categ
             </p>
           )}
 
-          {status === "done" && words.length > 0 && (
-            <div className="divide-y divide-stone-100 dark:divide-stone-800">
-              {words.map((w, i) => (
-                <div key={i} className="flex items-center gap-4 py-3">
-                  <div className="shrink-0 min-w-[80px]">
-                    <p className="text-base font-semibold text-stone-900 dark:text-stone-100">{w.japanese}</p>
-                    <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w.romaji}</p>
-                  </div>
-                  <p className="text-sm text-stone-500 dark:text-stone-400">{w.dutch}</p>
+          {status === "done" && words.length > 0 && (() => {
+            const nonVerbs = words.filter((w) => w.type !== "verb");
+            const verbs    = words.filter((w) => w.type === "verb");
+            const renderRow = (w: VocabWord, i: number) => (
+              <div key={i} className="flex items-center gap-4 py-3">
+                <div className="shrink-0 min-w-[80px]">
+                  <p className="text-base font-semibold text-stone-900 dark:text-stone-100">{w.japanese}</p>
+                  <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w.romaji}</p>
                 </div>
-              ))}
-            </div>
-          )}
+                <p className="text-sm text-stone-500 dark:text-stone-400">{w.dutch}</p>
+              </div>
+            );
+            return (
+              <div className="divide-y divide-stone-100 dark:divide-stone-800">
+                {nonVerbs.map(renderRow)}
+                {verbs.length > 0 && (
+                  <>
+                    <div className="pt-3 pb-1">
+                      <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">Werkwoorden</p>
+                    </div>
+                    {verbs.map(renderRow)}
+                  </>
+                )}
+              </div>
+            );
+          })()}
         </div>
       </div>
     </div>
@@ -351,12 +364,15 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const userZinnen = getUserPhrasesByCategory(id);
   const alleZinnen = [...staticZinnen, ...userZinnen];
 
-  const [query,       setQuery]       = useState("");
-  const [deleting,    setDeleting]    = useState(false);
-  const [editMode,    setEditMode]    = useState(false);
-  const [hiding,      setHiding]      = useState<string | null>(null);
-  const [oefenModus,  setOefenModus]  = useState(false);
-  const [showVocab,   setShowVocab]   = useState(false);
+  const [query,         setQuery]         = useState("");
+  const [deleting,      setDeleting]      = useState(false);
+  const [editMode,      setEditMode]      = useState(false);
+  const [hiding,        setHiding]        = useState<string | null>(null);
+  const [oefenModus,    setOefenModus]    = useState(false);
+  const [showVocab,     setShowVocab]     = useState(false);
+  const [grammarGroups, setGrammarGroups] = useState<{ groep: string; zinIds: string[] }[] | null>(null);
+  const [activeGroep,   setActiveGroep]   = useState<string | null>(null);
+  const [groupLoading,  setGroupLoading]  = useState(false);
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
@@ -387,6 +403,30 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
     finally { setDeleting(false); }
   };
 
+  const handleGroepeerGrammatica = async () => {
+    if (grammarGroups) { setGrammarGroups(null); setActiveGroep(null); return; }
+    setGroupLoading(true);
+    try {
+      const res = await fetch("/api/group-grammar", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          phrases: alleZinnen.map((p) => ({ id: p.id, translatedText: p.translatedText, sourceText: p.sourceText })),
+        }),
+      });
+      const data = await res.json();
+      const groups: { groep: string; zinIds: string[] }[] = data.groups ?? [];
+      if (groups.length > 0) {
+        setGrammarGroups(groups);
+        setActiveGroep(groups[0].groep);
+      }
+    } catch {
+      // silently fail — user stays in normal view
+    } finally {
+      setGroupLoading(false);
+    }
+  };
+
   if (!category && userLoading) {
     return (
       <div className="page-content flex items-center justify-center py-20">
@@ -397,15 +437,22 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
 
   if (!category) notFound();
 
+  const basisLijst = grammarGroups && activeGroep
+    ? alleZinnen.filter((p) => {
+        const groep = grammarGroups.find((g) => g.groep === activeGroep);
+        return groep?.zinIds.includes(p.id) ?? false;
+      })
+    : alleZinnen;
+
   const gefilterd = query.trim()
-    ? alleZinnen.filter(
+    ? basisLijst.filter(
         (p) =>
           p.sourceText.toLowerCase().includes(query.toLowerCase()) ||
           p.translatedText.includes(query) ||
           p.romaji.toLowerCase().includes(query.toLowerCase()) ||
           p.tags.some((t) => t.toLowerCase().includes(query.toLowerCase()))
       )
-    : alleZinnen;
+    : basisLijst;
 
   return (
     <div className="page-content">
@@ -448,6 +495,28 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
           </button>
         )}
       </div>
+
+      {/* ── Grammaticagroepen tabs ────────────────────────────────── */}
+      {grammarGroups && !editMode && (
+        <div className="px-5 pb-2">
+          <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+            {grammarGroups.map((g) => (
+              <button
+                key={g.groep}
+                onClick={() => setActiveGroep(g.groep)}
+                className={`shrink-0 px-3 py-1.5 rounded-xl text-xs font-medium transition-colors whitespace-nowrap ${
+                  activeGroep === g.groep
+                    ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
+                    : "bg-stone-100 dark:bg-stone-800 text-stone-500 dark:text-stone-400 hover:bg-stone-200 dark:hover:bg-stone-700"
+                }`}
+              >
+                {g.groep}
+                <span className="ml-1.5 opacity-50">{g.zinIds.length}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* ── Zinnenlijst ───────────────────────────────────────────── */}
       <div className="px-5 pt-3 flex flex-col gap-1.5">
@@ -511,7 +580,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         )}
       </div>
 
-      {/* ── Oefenen + Woordenlijst ───────────────────────────────── */}
+      {/* ── Oefenen + Woordenlijst + Groeperen ──────────────────── */}
       {alleZinnen.length > 0 && !editMode && (
         <div className="px-5 pt-6 pb-4 flex flex-col gap-2">
           <button
@@ -527,6 +596,20 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
           >
             <span>📚</span>
             <span>Woordenlijst</span>
+          </button>
+          <button
+            onClick={handleGroepeerGrammatica}
+            disabled={groupLoading}
+            className={`w-full py-3.5 rounded-2xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${
+              grammarGroups
+                ? "bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 active:opacity-80"
+                : "bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 active:opacity-80 disabled:opacity-50"
+            }`}
+          >
+            <span>{groupLoading ? "⏳" : grammarGroups ? "✕" : "🔤"}</span>
+            <span>
+              {groupLoading ? "Groepen bepalen…" : grammarGroups ? "Groepering sluiten" : "Groepeer op grammatica"}
+            </span>
           </button>
         </div>
       )}

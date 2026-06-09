@@ -3,23 +3,27 @@ import { NextRequest, NextResponse } from "next/server";
 const JA_PROMPT = `Je bent een Japanse woordenschatleraar voor Nederlandstalige reizigers. Gegeven Japanse zinnen (met romaji en Nederlandse vertaling), extraheer de meest nuttige inhoudswoorden.
 
 Regels:
-- Alleen inhoudswoorden: zelfstandige naamwoorden, werkwoorden, bijvoeglijke naamwoorden — GEEN partikels (wa, ga, wo, ni, de, mo, ka, to, no, e), GEEN losse grammaticale uitgangen
-- Max 1–2 sleutelwoorden per zin, max 20 woorden totaal
-- Verwijder duplicaten
+- Extraheer zelfstandige naamwoorden, werkwoorden én bijvoeglijke naamwoorden
+- GEEN partikels (wa, ga, wo, ni, de, mo, ka, to, no, e), GEEN losse grammaticale uitgangen
+- Werkwoorden: geef altijd de woordenboek-vorm (辞書形), bijv. 行く, 食べる, 買う — NIET de ます/ません-vorm
+- Max 2 sleutelwoorden per zin, max 25 woorden totaal; verwijder duplicaten
+- Voeg per woord een "type" toe: "noun", "verb" of "adjective"
 
 Reageer met ALLEEN geldig JSON:
-{ "words": [ { "japanese": "<kanji/kana>", "romaji": "<lezing>", "dutch": "<Nederlandse vertaling>" } ] }`;
+{ "words": [ { "japanese": "<kanji/kana>", "romaji": "<lezing>", "dutch": "<Nederlandse vertaling>", "type": "<noun|verb|adjective>" } ] }`;
 
 const ZH_PROMPT = `Je bent een Chinese woordenschatleraar voor Nederlandstalige reizigers. Gegeven Chinese zinnen (met pinyin en Nederlandse vertaling), extraheer de meest nuttige inhoudswoorden.
 
 Regels:
-- Alleen inhoudswoorden: zelfstandige naamwoorden, werkwoorden, bijvoeglijke naamwoorden — GEEN structuurwoorden (的, 了, 是, 在, 吗 etc.)
-- Max 1–2 sleutelwoorden per zin, max 20 woorden totaal
-- Verwijder duplicaten
+- Extraheer zelfstandige naamwoorden, werkwoorden én bijvoeglijke naamwoorden
+- GEEN structuurwoorden (的, 了, 是, 在, 吗, 吧 etc.)
+- Werkwoorden: geef de basisvorm (bijv. 买, 去, 吃)
+- Max 2 sleutelwoorden per zin, max 25 woorden totaal; verwijder duplicaten
+- Voeg per woord een "type" toe: "noun", "verb" of "adjective"
 - Gebruik Vereenvoudigd Chinees
 
 Reageer met ALLEEN geldig JSON — gebruik exact deze veldnamen:
-{ "words": [ { "japanese": "<Chinese karakters>", "romaji": "<pinyin met toonmarkeringen>", "dutch": "<Nederlandse vertaling>" } ] }`;
+{ "words": [ { "japanese": "<Chinese karakters>", "romaji": "<pinyin met toonmarkeringen>", "dutch": "<Nederlandse vertaling>", "type": "<noun|verb|adjective>" } ] }`;
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.OPENAI_API_KEY;

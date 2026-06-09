@@ -7,15 +7,19 @@ Reageer met ALLEEN geldig JSON:
   "summary": "<1 zin overzicht van de grammatica>",
   "parts": [
     {
-      "japanese": "<woord of partikel>",
+      "japanese": "<woord of partikel zoals het in de zin staat>",
       "romaji": "<romanisering>",
       "role": "<grammaticale functie, bijv. 'onderwerpmarkeerder', 'beleefde afsluiting'>",
-      "note": "<optionele extra tip>"
+      "note": "<optionele extra tip — zie instructie hieronder>"
     }
   ],
   "tip": "<1 praktische tip over wanneer/hoe te gebruiken>"
 }
-Geen jargon — zeg 'markeert het onderwerp' i.p.v. 'nominatief'.`;
+
+Instructies voor het 'note' veld bij werkwoorden:
+- Als een werkwoord in vervoegde vorm staat (niet de basisvorm), vermeld dan ALTIJD: "Basisvorm: [辞書形] ([romaji]). [1 zin uitleg van de vervoeging, bijv. hoe de て-vorm werkt of wat de ます-vorm betekent]"
+- Voorbeeld: voor 遊んでいます → note: "Basisvorm: 遊ぶ (asobu). て-vorm + います = is momenteel aan het spelen."
+- Geen jargon — zeg 'markeert het onderwerp' i.p.v. 'nominatief'.`;
 
 const ZH_PROMPT = `Je bent een Chinese (Mandarijn) taalleraar voor Nederlandstalige reizigers. Gegeven een Chinese zin (met pinyin en Nederlandse betekenis), leg de grammatica uit in eenvoudig, begrijpelijk Nederlands.
 
@@ -24,15 +28,19 @@ Reageer met ALLEEN geldig JSON — gebruik dezelfde veldnamen als hieronder:
   "summary": "<1 zin overzicht van de grammatica>",
   "parts": [
     {
-      "japanese": "<woord of karakter(s) in Chinees>",
+      "japanese": "<woord of karakter(s) zoals het in de zin staat>",
       "romaji": "<pinyin>",
       "role": "<grammaticale functie, bijv. 'onderwerp', 'werkwoord', 'aanwijzend voornaamwoord'>",
-      "note": "<optionele extra tip>"
+      "note": "<optionele extra tip — zie instructie hieronder>"
     }
   ],
   "tip": "<1 praktische tip over wanneer/hoe te gebruiken>"
 }
-Geen jargon — eenvoudige, toegankelijke uitleg.`;
+
+Instructies voor het 'note' veld bij werkwoorden:
+- Als een werkwoord gecombineerd is met aspectdeeltjes (了, 过, 着) of met een resultaatsvervoeging, vermeld dan: "Basisvorm: [karakter(s)] ([pinyin]). [1 zin uitleg van de combinatie]"
+- Voorbeeld: voor 买了 → note: "Basisvorm: 买 (mǎi). 了 geeft aan dat de actie is voltooid."
+- Geen jargon — eenvoudige, toegankelijke uitleg.`;
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.OPENAI_API_KEY;
