@@ -364,9 +364,11 @@ function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, onClose }
       </div>
 
       {/* Phrases */}
-      <div className="flex-1 overflow-y-auto px-5 flex flex-col gap-1.5 pb-8">
+      <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-5 flex flex-col gap-1.5 pb-8">
         {actieveZinnen.map((phrase) => (
-          <PhraseCard key={phrase.id} phrase={phrase} showCategory />
+          <div key={phrase.id} className="shrink-0">
+            <PhraseCard phrase={phrase} showCategory />
+          </div>
         ))}
       </div>
     </div>
