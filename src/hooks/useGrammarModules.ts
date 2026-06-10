@@ -30,13 +30,12 @@ const safeId = (naam: string) => naam.replace(/\//g, "-").replace(/\s+/g, "_").s
 export function useGrammarModules() {
   const { user } = useAuth();
 
-  const getModules = useCallback(async (phraseCount: number): Promise<GrammarModule[] | null> => {
+  const getModules = useCallback(async (): Promise<{ modules: GrammarModule[]; phraseCount: number } | null> => {
     if (!user) return null;
     const snap = await getDoc(doc(db, "users", user.uid, "grammarModules", "index"));
     if (!snap.exists()) return null;
     const data = snap.data();
-    if (data.phraseCount !== phraseCount) return null; // stale
-    return (data.modules as GrammarModule[]) ?? null;
+    return { modules: (data.modules as GrammarModule[]) ?? [], phraseCount: data.phraseCount ?? 0 };
   }, [user]);
 
   const saveModules = useCallback(async (modules: GrammarModule[], phraseCount: number): Promise<void> => {

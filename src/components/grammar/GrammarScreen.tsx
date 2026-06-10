@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import PhraseCard from "@/components/cards/PhraseCard";
 import { useGrammarModules, GrammarModule, GrammarModuleDetail } from "@/hooks/useGrammarModules";
 import { useAudio } from "@/hooks/useAudio";
@@ -20,8 +20,8 @@ function ExtraVoorbeeldCard({ v }: { v: { japanese: string; romaji: string; dutc
     <div className="bg-stone-50 dark:bg-stone-800/60 rounded-2xl px-4 py-3.5 flex items-start justify-between gap-3">
       <div className="min-w-0">
         <p className="text-base font-semibold text-stone-900 dark:text-stone-100 leading-snug">{v.japanese}</p>
-        <p className="text-xs text-stone-400 dark:text-stone-500 italic mt-0.5">{v.romaji}</p>
-        <p className="text-sm text-stone-500 dark:text-stone-400 mt-1">{v.dutch}</p>
+        <p className="text-sm text-stone-400 dark:text-stone-500 mt-0.5">{v.romaji}</p>
+        <p className="text-sm text-stone-500 dark:text-stone-400 mt-1.5">{v.dutch}</p>
       </div>
       <button
         onClick={() => play(v.japanese)}
@@ -56,11 +56,9 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
     let cancelled = false;
 
     const load = async () => {
-      // try cache first
       const cached = await getModuleDetail(module.naam).catch(() => null);
       if (cached && !cancelled) { setDetail(cached); setLoading(false); return; }
 
-      // fetch from API
       try {
         const res  = await fetch("/api/grammar-module-detail", {
           method: "POST",
@@ -111,7 +109,6 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
         )}
       </div>
 
-      {/* Content */}
       {loading && (
         <div className="flex-1 flex flex-col items-center justify-center gap-4">
           <div className="w-8 h-8 rounded-full border-2 border-stone-300 dark:border-stone-600 border-t-stone-700 dark:border-t-stone-300 animate-spin" />
@@ -132,7 +129,6 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
         <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain">
           <div className="px-5 pb-16 space-y-8">
 
-            {/* Kernregel */}
             <div className="bg-white dark:bg-stone-900 rounded-2xl px-5 py-4 shadow-sm">
               <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">Kernregel</p>
               <p className="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">{detail.kernregel}</p>
@@ -144,13 +140,11 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
               )}
             </div>
 
-            {/* Uitleg */}
             <div>
               <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">Uitleg</p>
               <p className="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">{detail.uitleg}</p>
             </div>
 
-            {/* Opbouw */}
             {detail.opbouw?.length > 0 && (
               <div>
                 <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">Opbouw van het patroon</p>
@@ -162,7 +156,7 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
                       </div>
                       <div className="min-w-0">
                         <p className="text-xs font-medium text-stone-700 dark:text-stone-300">{o.rol}</p>
-                        {o.voorbeeld && <p className="text-xs text-stone-400 dark:text-stone-500 italic mt-0.5">{o.voorbeeld}</p>}
+                        {o.voorbeeld && <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">{o.voorbeeld}</p>}
                       </div>
                     </div>
                   ))}
@@ -170,7 +164,6 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
               </div>
             )}
 
-            {/* Tips */}
             {detail.tips?.length > 0 && (
               <div>
                 <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">Tips</p>
@@ -185,7 +178,6 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
               </div>
             )}
 
-            {/* Veelgemaakte fouten */}
             {detail.veelgemaaktefouten?.length > 0 && (
               <div>
                 <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">Veelgemaakte fouten</p>
@@ -200,7 +192,6 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
               </div>
             )}
 
-            {/* Jouw zinnen */}
             {matchingPhrases.length > 0 && (
               <div>
                 <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">Jouw zinnen met dit patroon</p>
@@ -214,7 +205,6 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
               </div>
             )}
 
-            {/* Extra voorbeelden */}
             {detail.extraVoorbeelden?.length > 0 && (
               <div>
                 <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">Meer voorbeeldzinnen</p>
@@ -241,54 +231,66 @@ interface GrammarScreenProps {
 
 export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProps) {
   const { getModules, saveModules } = useGrammarModules();
-  const [modules,        setModules]        = useState<GrammarModule[] | null>(null);
-  const [loading,        setLoading]        = useState(true);
-  const [error,          setError]          = useState(false);
-  const [activeModule,   setActiveModule]   = useState<GrammarModule | null>(null);
+  const [modules,          setModules]          = useState<GrammarModule[] | null>(null);
+  const [cachedCount,      setCachedCount]      = useState<number | null>(null);
+  const [loading,          setLoading]          = useState(true);
+  const [refreshing,       setRefreshing]       = useState(false);
+  const [error,            setError]            = useState(false);
+  const [activeModule,     setActiveModule]     = useState<GrammarModule | null>(null);
 
   const phraseCount = allPhrases.length;
+  const isStale     = cachedCount !== null && cachedCount !== phraseCount;
+
+  const fetchModules = useCallback(async (showRefreshSpinner = false) => {
+    if (showRefreshSpinner) setRefreshing(true); else setLoading(true);
+    setError(false);
+    try {
+      const res  = await fetch("/api/grammar-modules", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          phrases: allPhrases.map((p) => ({
+            id:             p.id,
+            translatedText: p.translatedText,
+            romaji:         p.romaji,
+            sourceText:     p.sourceText,
+          })),
+        }),
+      });
+      const data = await res.json();
+      const fetched: GrammarModule[] = data.modules ?? [];
+      setModules(fetched);
+      setCachedCount(phraseCount);
+      saveModules(fetched, phraseCount).catch(() => {});
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+      setRefreshing(false);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phraseCount]);
 
   useEffect(() => {
     let cancelled = false;
 
     const load = async () => {
-      // try cache
-      const cached = await getModules(phraseCount).catch(() => null);
-      if (cached && !cancelled) { setModules(cached); setLoading(false); return; }
-
-      // generate
-      try {
-        const res  = await fetch("/api/grammar-modules", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            phrases: allPhrases.map((p) => ({
-              id:             p.id,
-              translatedText: p.translatedText,
-              romaji:         p.romaji,
-              sourceText:     p.sourceText,
-            })),
-          }),
-        });
-        const data = await res.json();
-        const fetched: GrammarModule[] = data.modules ?? [];
-        if (!cancelled) {
-          setModules(fetched);
-          saveModules(fetched, phraseCount).catch(() => {});
-        }
-      } catch {
-        if (!cancelled) setError(true);
-      } finally {
-        if (!cancelled) setLoading(false);
+      const cached = await getModules().catch(() => null);
+      if (cancelled) return;
+      if (cached) {
+        setModules(cached.modules);
+        setCachedCount(cached.phraseCount);
+        setLoading(false);
+      } else {
+        fetchModules(false);
       }
     };
 
     load();
     return () => { cancelled = true; };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phraseCount]);
+  }, []);
 
-  // Show detail screen
   if (activeModule) {
     return (
       <ModuleDetailScreen
@@ -308,13 +310,36 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
           className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg"
           aria-label="Sluiten"
         >✕</button>
-        <div>
+        <div className="flex-1">
           <h2 className="text-base font-semibold text-stone-900 dark:text-stone-100">Grammatica uitleg</h2>
           <p className="text-xs text-stone-400 dark:text-stone-500">Gebaseerd op jouw zinnen</p>
         </div>
+        {modules && !loading && (
+          <button
+            onClick={() => fetchModules(true)}
+            disabled={refreshing}
+            className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-600 dark:hover:text-stone-300 transition-colors shadow-sm disabled:opacity-40 text-base"
+            aria-label="Vernieuwen"
+          >
+            {refreshing ? <span className="w-4 h-4 rounded-full border-2 border-stone-300 border-t-stone-600 animate-spin inline-block" /> : "↺"}
+          </button>
+        )}
       </div>
 
-      {/* Loading */}
+      {/* Stale banner */}
+      {isStale && !loading && modules && (
+        <div className="mx-5 mb-2 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/40 rounded-xl px-4 py-2.5 flex items-center justify-between gap-3">
+          <p className="text-xs text-amber-700 dark:text-amber-400">Je hebt nieuwe zinnen — modules zijn mogelijk verouderd</p>
+          <button
+            onClick={() => fetchModules(true)}
+            disabled={refreshing}
+            className="text-xs font-medium text-amber-700 dark:text-amber-400 shrink-0 underline disabled:opacity-40"
+          >
+            Vernieuwen
+          </button>
+        </div>
+      )}
+
       {loading && (
         <div className="flex-1 flex flex-col items-center justify-center gap-4">
           <div className="w-8 h-8 rounded-full border-2 border-stone-300 dark:border-stone-600 border-t-stone-700 dark:border-t-stone-300 animate-spin" />
@@ -322,16 +347,14 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
         </div>
       )}
 
-      {/* Error */}
       {error && !loading && (
         <div className="flex-1 flex flex-col items-center justify-center px-8 text-center gap-3">
           <p className="text-3xl">⚠️</p>
           <p className="text-sm text-stone-500 dark:text-stone-400">Kon de modules niet laden.</p>
-          <button onClick={onClose} className="text-sm text-stone-400 underline">Sluiten</button>
+          <button onClick={() => fetchModules(false)} className="text-sm text-stone-500 dark:text-stone-400 underline">Opnieuw proberen</button>
         </div>
       )}
 
-      {/* Module list */}
       {modules && !loading && (
         <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-5 pb-12">
           {modules.length === 0 ? (
@@ -342,7 +365,7 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
           ) : (
             <>
               <p className="text-xs text-stone-400 dark:text-stone-500 mb-4">
-                {modules.length} modules gevonden in {phraseCount} zinnen
+                {modules.length} modules · {phraseCount} zinnen
               </p>
               <div className="flex flex-col gap-2">
                 {modules.map((m) => (
