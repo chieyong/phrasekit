@@ -99,7 +99,10 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
           aria-label="Terug"
         >←</button>
         <div className="flex-1 min-w-0">
-          <h2 className="text-base font-semibold text-stone-900 dark:text-stone-100 truncate">{module.naam}</h2>
+          <div className="flex items-baseline gap-2">
+            <h2 className="text-base font-semibold text-stone-900 dark:text-stone-100 truncate">{module.naam}</h2>
+            {module.romaji && <span className="text-xs text-stone-400 dark:text-stone-500 shrink-0">{module.romaji}</span>}
+          </div>
           <p className="text-xs text-stone-400 dark:text-stone-500 truncate">{module.tagline}</p>
         </div>
         {module.niveau && (
@@ -375,7 +378,7 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
                     className="w-full text-left bg-white dark:bg-stone-900 rounded-2xl px-5 py-4 shadow-sm active:opacity-70 transition-opacity flex items-start gap-4"
                   >
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 mb-1">
+                      <div className="flex items-center gap-2 mb-0.5">
                         <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">{m.naam}</p>
                         {m.niveau && (
                           <span className={`text-[9px] font-semibold px-1.5 py-0.5 rounded-full ${NIVEAU_COLORS[m.niveau] ?? ""}`}>
@@ -383,6 +386,7 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
                           </span>
                         )}
                       </div>
+                      {m.romaji && <p className="text-xs text-stone-400 dark:text-stone-500 mb-1">{m.romaji}</p>}
                       <p className="text-xs text-stone-400 dark:text-stone-500 leading-snug">{m.tagline}</p>
                     </div>
                     <div className="shrink-0 flex flex-col items-end gap-1 mt-0.5">

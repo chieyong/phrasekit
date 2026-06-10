@@ -7,6 +7,7 @@ import { useAuth } from "@/contexts/AuthContext";
 
 export interface GrammarModule {
   naam: string;
+  romaji: string;
   tagline: string;
   niveau: "basis" | "gemiddeld" | "gevorderd";
   zinIds: string[];

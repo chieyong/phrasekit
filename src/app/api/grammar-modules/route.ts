@@ -11,7 +11,9 @@ Regels:
 - Voeg een "niveau" toe: "basis", "gemiddeld" of "gevorderd"
 
 Reageer met ALLEEN geldig JSON:
-{ "modules": [ { "naam": "...", "tagline": "...", "niveau": "basis|gemiddeld|gevorderd", "zinIds": ["..."] } ] }`;
+{ "modules": [ { "naam": "...", "romaji": "...", "tagline": "...", "niveau": "basis|gemiddeld|gevorderd", "zinIds": ["..."] } ] }
+
+Het "romaji" veld is de romanisering van de naam, bijv. "ます-stam" → "masu-stam", "て-vorm" → "te-vorm", "は...です" → "wa...desu".`;
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.OPENAI_API_KEY;
