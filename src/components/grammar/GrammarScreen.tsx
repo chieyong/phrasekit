@@ -3,7 +3,8 @@
 import { useState, useEffect, useCallback } from "react";
 import PhraseCard from "@/components/cards/PhraseCard";
 import { useGrammarModules, GrammarModule, GrammarModuleDetail } from "@/hooks/useGrammarModules";
-import { useAudio } from "@/hooks/useAudio";
+import { useLanguage } from "@/contexts/LanguageContext";
+import AudioButton from "@/components/ui/AudioButton";
 import { Phrase } from "@/types";
 
 const NIVEAU_COLORS: Record<string, string> = {
@@ -15,23 +16,14 @@ const NIVEAU_COLORS: Record<string, string> = {
 // ─── Extra example card ────────────────────────────────────────────────────────
 
 function ExtraVoorbeeldCard({ v }: { v: { japanese: string; romaji: string; dutch: string } }) {
-  const { play, audioState } = useAudio();
   return (
-    <div className="bg-stone-50 dark:bg-stone-800/60 rounded-2xl px-4 py-3.5 flex items-start justify-between gap-3">
-      <div className="min-w-0">
-        <p className="text-base font-semibold text-stone-900 dark:text-stone-100 leading-snug">{v.japanese}</p>
-        <p className="text-sm text-stone-400 dark:text-stone-500 mt-0.5">{v.romaji}</p>
-        <p className="text-sm text-stone-500 dark:text-stone-400 mt-1.5">{v.dutch}</p>
+    <div className="bg-stone-50 dark:bg-stone-800/60 rounded-2xl px-4 py-3.5">
+      <p className="text-base font-semibold text-stone-900 dark:text-stone-100 leading-snug">{v.japanese}</p>
+      <p className="text-sm text-stone-400 dark:text-stone-500 mt-0.5">{v.romaji}</p>
+      <p className="text-sm text-stone-500 dark:text-stone-400 mt-1">{v.dutch}</p>
+      <div className="mt-2.5">
+        <AudioButton text={v.japanese} />
       </div>
-      <button
-        onClick={() => play(v.japanese)}
-        className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors mt-0.5 ${
-          audioState === "playing" ? "text-stone-400 dark:text-stone-500" : "text-stone-300 dark:text-stone-600 hover:text-stone-600 dark:hover:text-stone-300"
-        }`}
-        aria-label="Afspelen"
-      >
-        🔊
-      </button>
     </div>
   );
 }
@@ -41,10 +33,11 @@ function ExtraVoorbeeldCard({ v }: { v: { japanese: string; romaji: string; dutc
 interface ModuleDetailProps {
   module: GrammarModule;
   userPhrases: Phrase[];
+  language: string;
   onBack: () => void;
 }
 
-function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) {
+function ModuleDetailScreen({ module, userPhrases, language, onBack }: ModuleDetailProps) {
   const { getModuleDetail, saveModuleDetail } = useGrammarModules();
   const [detail,  setDetail]  = useState<GrammarModuleDetail | null>(null);
   const [loading, setLoading] = useState(true);
@@ -56,18 +49,19 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
     let cancelled = false;
 
     const load = async () => {
-      const cached = await getModuleDetail(module.naam).catch(() => null);
+      const cached = await getModuleDetail(module.naam, language).catch(() => null);
       if (cached && !cancelled) { setDetail(cached); setLoading(false); return; }
 
       try {
-        const res  = await fetch("/api/grammar-module-detail", {
+        const res = await fetch("/api/grammar-module-detail", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             moduleName: module.naam,
+            language,
             phrases: matchingPhrases.map((p) => ({
-              translatedText: p.translatedText,
-              romaji:         p.romaji,
+              translatedText: language === "zh" ? (p.chineseText ?? p.translatedText) : p.translatedText,
+              romaji:         language === "zh" ? (p.pinyin ?? p.romaji) : p.romaji,
               sourceText:     p.sourceText,
             })),
           }),
@@ -75,7 +69,7 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
         const data: GrammarModuleDetail = await res.json();
         if (!cancelled) {
           setDetail(data);
-          saveModuleDetail(data).catch(() => {});
+          saveModuleDetail(data, language).catch(() => {});
         }
       } catch {
         if (!cancelled) setError(true);
@@ -87,17 +81,12 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
     load();
     return () => { cancelled = true; };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [module.naam]);
+  }, [module.naam, language]);
 
   return (
     <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
-      {/* Header */}
       <div className="flex items-center gap-3 px-5 pt-10 pb-4 shrink-0">
-        <button
-          onClick={onBack}
-          className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm"
-          aria-label="Terug"
-        >←</button>
+        <button onClick={onBack} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm" aria-label="Terug">←</button>
         <div className="flex-1 min-w-0">
           <div className="flex items-baseline gap-2">
             <h2 className="text-base font-semibold text-stone-900 dark:text-stone-100 truncate">{module.naam}</h2>
@@ -123,7 +112,7 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
       {error && !loading && (
         <div className="flex-1 flex flex-col items-center justify-center px-8 text-center gap-3">
           <p className="text-3xl">⚠️</p>
-          <p className="text-sm text-stone-500 dark:text-stone-400">Kon de les niet laden. Controleer je verbinding en probeer opnieuw.</p>
+          <p className="text-sm text-stone-500 dark:text-stone-400">Kon de les niet laden.</p>
           <button onClick={onBack} className="text-sm text-stone-400 underline">Terug</button>
         </div>
       )}
@@ -200,9 +189,7 @@ function ModuleDetailScreen({ module, userPhrases, onBack }: ModuleDetailProps) 
                 <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">Jouw zinnen met dit patroon</p>
                 <div className="flex flex-col gap-1.5">
                   {matchingPhrases.map((p) => (
-                    <div key={p.id} className="shrink-0">
-                      <PhraseCard phrase={p} />
-                    </div>
+                    <div key={p.id} className="shrink-0"><PhraseCard phrase={p} /></div>
                   ))}
                 </div>
               </div>
@@ -233,29 +220,36 @@ interface GrammarScreenProps {
 }
 
 export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProps) {
-  const { getModules, saveModules } = useGrammarModules();
-  const [modules,          setModules]          = useState<GrammarModule[] | null>(null);
-  const [cachedCount,      setCachedCount]      = useState<number | null>(null);
-  const [loading,          setLoading]          = useState(true);
-  const [refreshing,       setRefreshing]       = useState(false);
-  const [error,            setError]            = useState(false);
-  const [activeModule,     setActiveModule]     = useState<GrammarModule | null>(null);
+  const { language }                        = useLanguage();
+  const { getModules, saveModules }         = useGrammarModules();
+  const [modules,      setModules]          = useState<GrammarModule[] | null>(null);
+  const [cachedCount,  setCachedCount]      = useState<number | null>(null);
+  const [loading,      setLoading]          = useState(true);
+  const [refreshing,   setRefreshing]       = useState(false);
+  const [error,        setError]            = useState(false);
+  const [activeModule, setActiveModule]     = useState<GrammarModule | null>(null);
 
-  const phraseCount = allPhrases.length;
+  // For Chinese: only phrases that have Chinese text
+  const effectivePhrases = language === "zh"
+    ? allPhrases.filter((p) => !!p.chineseText)
+    : allPhrases;
+
+  const phraseCount = effectivePhrases.length;
   const isStale     = cachedCount !== null && cachedCount !== phraseCount;
 
   const fetchModules = useCallback(async (showRefreshSpinner = false) => {
     if (showRefreshSpinner) setRefreshing(true); else setLoading(true);
     setError(false);
     try {
-      const res  = await fetch("/api/grammar-modules", {
+      const res = await fetch("/api/grammar-modules", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          phrases: allPhrases.map((p) => ({
+          language,
+          phrases: effectivePhrases.map((p) => ({
             id:             p.id,
-            translatedText: p.translatedText,
-            romaji:         p.romaji,
+            translatedText: language === "zh" ? (p.chineseText ?? "") : p.translatedText,
+            romaji:         language === "zh" ? (p.pinyin ?? "")      : p.romaji,
             sourceText:     p.sourceText,
           })),
         }),
@@ -264,7 +258,7 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
       const fetched: GrammarModule[] = data.modules ?? [];
       setModules(fetched);
       setCachedCount(phraseCount);
-      saveModules(fetched, phraseCount).catch(() => {});
+      saveModules(fetched, phraseCount, language).catch(() => {});
     } catch {
       setError(true);
     } finally {
@@ -272,13 +266,16 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
       setRefreshing(false);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phraseCount]);
+  }, [language, phraseCount]);
 
   useEffect(() => {
     let cancelled = false;
+    setModules(null);
+    setLoading(true);
+    setActiveModule(null);
 
     const load = async () => {
-      const cached = await getModules().catch(() => null);
+      const cached = await getModules(language).catch(() => null);
       if (cancelled) return;
       if (cached) {
         setModules(cached.modules);
@@ -292,13 +289,14 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
     load();
     return () => { cancelled = true; };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [language]);
 
   if (activeModule) {
     return (
       <ModuleDetailScreen
         module={activeModule}
-        userPhrases={allPhrases}
+        userPhrases={effectivePhrases}
+        language={language}
         onBack={() => setActiveModule(null)}
       />
     );
@@ -306,16 +304,13 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
 
   return (
     <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
-      {/* Header */}
       <div className="flex items-center gap-3 px-5 pt-10 pb-4 shrink-0">
-        <button
-          onClick={onClose}
-          className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg"
-          aria-label="Sluiten"
-        >✕</button>
+        <button onClick={onClose} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg" aria-label="Sluiten">✕</button>
         <div className="flex-1">
           <h2 className="text-base font-semibold text-stone-900 dark:text-stone-100">Grammatica uitleg</h2>
-          <p className="text-xs text-stone-400 dark:text-stone-500">Gebaseerd op jouw zinnen</p>
+          <p className="text-xs text-stone-400 dark:text-stone-500">
+            {language === "zh" ? "Chinese grammatica · gebaseerd op jouw zinnen" : "Japanse grammatica · gebaseerd op jouw zinnen"}
+          </p>
         </div>
         {modules && !loading && (
           <button
@@ -329,17 +324,10 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
         )}
       </div>
 
-      {/* Stale banner */}
       {isStale && !loading && modules && (
         <div className="mx-5 mb-2 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/40 rounded-xl px-4 py-2.5 flex items-center justify-between gap-3">
           <p className="text-xs text-amber-700 dark:text-amber-400">Je hebt nieuwe zinnen — modules zijn mogelijk verouderd</p>
-          <button
-            onClick={() => fetchModules(true)}
-            disabled={refreshing}
-            className="text-xs font-medium text-amber-700 dark:text-amber-400 shrink-0 underline disabled:opacity-40"
-          >
-            Vernieuwen
-          </button>
+          <button onClick={() => fetchModules(true)} disabled={refreshing} className="text-xs font-medium text-amber-700 dark:text-amber-400 shrink-0 underline disabled:opacity-40">Vernieuwen</button>
         </div>
       )}
 
@@ -363,7 +351,11 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
           {modules.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full gap-3 text-center">
               <p className="text-3xl">📖</p>
-              <p className="text-sm text-stone-500 dark:text-stone-400">Voeg meer zinnen toe om grammaticamodules te genereren.</p>
+              <p className="text-sm text-stone-500 dark:text-stone-400">
+                {language === "zh"
+                  ? "Voeg Chinese zinnen toe om grammaticamodules te genereren."
+                  : "Voeg meer zinnen toe om grammaticamodules te genereren."}
+              </p>
             </div>
           ) : (
             <>

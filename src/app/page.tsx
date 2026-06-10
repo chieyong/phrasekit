@@ -13,8 +13,8 @@ import GrammarScreen from "@/components/grammar/GrammarScreen";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
-import { useAudio } from "@/hooks/useAudio";
 import { usePracticeSets, PracticeSentence, Difficulty, generateSetName } from "@/hooks/usePracticeSets";
+import AudioButton from "@/components/ui/AudioButton";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Phrase } from "@/types";
@@ -31,7 +31,6 @@ interface VocabPracticeModalProps {
 
 function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose }: VocabPracticeModalProps) {
   const { getVocab, saveVocab }  = useVocabulary();
-  const { play, audioState }     = useAudio();
   const { language }             = useLanguage();
   const [mode,       setMode]       = useState<"select" | "loading" | "practice">("select");
   const [selected,   setSelected]   = useState<Set<string>>(() => new Set(initialSelected));
@@ -101,8 +100,8 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
       <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
         <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
         <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
-          <div className="flex items-center pt-3 pb-1 px-5">
-            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700 mx-auto" />
+          <div className="relative flex items-center justify-center pt-4 pb-1 px-5">
+            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700" />
             <button onClick={onClose} className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
               Annuleren
             </button>
@@ -213,9 +212,7 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
               <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-6">{language === "zh" ? "Chinees" : "Japans"}</p>
               <p className="text-4xl font-bold text-white leading-tight mb-2">{word.japanese}</p>
               <p className="text-base text-stone-400 italic mb-4">{word.romaji}</p>
-              <button onClick={(e) => { e.stopPropagation(); play(word.japanese); }} className={`text-sm flex items-center gap-2 transition-colors ${audioState === "playing" ? "text-stone-300" : "text-stone-500 hover:text-stone-200"}`}>
-                {audioState === "playing" ? "⏸ Bezig…" : "🔊 Afspelen"}
-              </button>
+              <AudioButton text={word.japanese} className="bg-stone-800 hover:bg-stone-700 text-stone-300" />
             </div>
           </div>
           {flipped && cardIndex < words.length - 1 && (
@@ -251,6 +248,7 @@ interface GrammarGroupModalProps {
 }
 
 function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, initialSelected, onSelectionChange, onClose }: GrammarGroupModalProps) {
+  const { language }                     = useLanguage();
   const [mode,         setMode]         = useState<"select" | "loading" | "result">("select");
   const [selected,     setSelected]     = useState<Set<string>>(() => new Set(initialSelected));
   const [groups,       setGroups]       = useState<{ groep: string; zinIds: string[] }[]>([]);
@@ -283,7 +281,12 @@ function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, initialSe
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          phrases: collected.map((p) => ({ id: p.id, translatedText: p.translatedText, sourceText: p.sourceText })),
+          language,
+          phrases: collected.map((p) => ({
+            id:             p.id,
+            translatedText: language === "zh" ? (p.chineseText ?? p.translatedText) : p.translatedText,
+            sourceText:     p.sourceText,
+          })),
         }),
       });
       const data = await res.json();
@@ -305,8 +308,8 @@ function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, initialSe
       <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
         <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
         <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
-          <div className="flex items-center pt-3 pb-1 px-5">
-            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700 mx-auto" />
+          <div className="relative flex items-center justify-center pt-4 pb-1 px-5">
+            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700" />
             <button onClick={onClose} className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
               Annuleren
             </button>
@@ -434,7 +437,6 @@ const DIFFICULTIES: { id: Difficulty; label: string; desc: string; dot: string }
 function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose }: SentencePracticeModalProps) {
   const { getVocab }                           = useVocabulary();
   const { saveAsNew, addToExisting, deleteSet, sets } = usePracticeSets();
-  const { play, audioState }                   = useAudio();
   const { language }                           = useLanguage();
 
   const [mode,        setMode]        = useState<"select" | "loading" | "practice">("select");
@@ -543,8 +545,8 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
       <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
         <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
         <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
-          <div className="flex items-center pt-3 pb-1 px-5">
-            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700 mx-auto" />
+          <div className="relative flex items-center justify-center pt-4 pb-1 px-5">
+            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700" />
             <button onClick={onClose} className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
               Annuleren
             </button>
@@ -695,9 +697,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
               <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-5">{language === "zh" ? "Chinees" : "Japans"}</p>
               <p className="text-3xl font-bold text-white leading-tight mb-2">{sentence.japanese}</p>
               <p className="text-base text-stone-400 italic mb-4">{sentence.romaji}</p>
-              <button onClick={(e) => { e.stopPropagation(); play(sentence.japanese); }} className={`text-sm flex items-center gap-2 transition-colors ${audioState === "playing" ? "text-stone-300" : "text-stone-500 hover:text-stone-200"}`}>
-                {audioState === "playing" ? "⏸ Bezig…" : "🔊 Afspelen"}
-              </button>
+              <AudioButton text={sentence.japanese} className="bg-stone-800 hover:bg-stone-700 text-stone-300" />
             </div>
           </div>
           {flipped && cardIndex < sentences.length - 1 && (
@@ -770,12 +770,13 @@ export default function HomePage() {
   const { userCategories, userPhrases, staticFavoriteIds, addCategory, getUserPhrasesByCategory } = useUserPhrases();
   const { user, loading, signInWithGoogle, signOut } = useAuth();
   const { theme, toggle } = useTheme();
-  const { language } = useLanguage();
+  const { language, setLanguage } = useLanguage();
   const [showNewCategory,      setShowNewCategory]      = useState(false);
   const [showVocabPractice,    setShowVocabPractice]    = useState(false);
   const [showSentencePractice, setShowSentencePractice] = useState(false);
   const [showGrammarGroup,     setShowGrammarGroup]     = useState(false);
   const [showGrammarScreen,    setShowGrammarScreen]    = useState(false);
+  const [activeTab,            setActiveTab]            = useState<"zinnen" | "verdiepen">("zinnen");
   const [practiceSelection,    setPracticeSelection]    = useState<string[]>(() => {
     try { return JSON.parse(localStorage.getItem("phrasekit-cat-selection") ?? "[]"); } catch { return []; }
   });
@@ -832,15 +833,23 @@ export default function HomePage() {
       <div className="px-5 pt-8 pb-6 flex items-start justify-between">
         <div>
           <h1 className="text-xl font-semibold text-stone-900 dark:text-stone-100 tracking-tight">
-            PhraseKit <span className="text-stone-400 dark:text-stone-500 font-normal">Japan</span>
+            PhraseKit <span className="text-stone-400 dark:text-stone-500 font-normal">{language === "zh" ? "China" : "Japan"}</span>
           </h1>
           <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5 tracking-wide">
-            Japanse reiszinnen
+            {language === "zh" ? "Chinese reiszinnen" : "Japanse reiszinnen"}
           </p>
         </div>
 
-        {/* Theme toggle + auth */}
+        {/* Theme toggle + taal + auth */}
         <div className="flex items-center gap-2">
+          <button
+            onClick={() => setLanguage(language === "ja" ? "zh" : "ja")}
+            aria-label="Wissel taal"
+            className="h-8 rounded-full bg-white dark:bg-stone-800 flex items-center justify-center shadow-sm active:scale-95 transition-all px-2.5 gap-1"
+          >
+            <span className="text-sm">{language === "ja" ? "🇯🇵" : "🇨🇳"}</span>
+            <span className="text-[10px] font-semibold text-stone-500 dark:text-stone-400">{language === "ja" ? "JA" : "ZH"}</span>
+          </button>
           <button
             onClick={toggle}
             aria-label="Wissel thema"
@@ -878,41 +887,81 @@ export default function HomePage() {
       </div>
 
       {/* ── Inline vertaler ───────────────────────────────────────── */}
-      <div className="px-5 mb-6">
+      <div className="px-5 mb-4">
         <InlineTranslator />
       </div>
 
-      {/* ── Situaties ─────────────────────────────────────────────── */}
-      <section className="px-5 mb-8">
-        <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
-          Situaties
-        </p>
-        <div className="flex flex-col gap-1.5">
-          {categories.map((cat) => (
-            <CategoryCard key={cat.id} category={cat} />
-          ))}
-          {userCategories.map((cat) => (
-            <Link
-              key={cat.id}
-              href={`/category/${cat.id}`}
-              className="flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity"
-            >
-              <span className="text-2xl">{cat.icon}</span>
-              <span className="text-sm font-medium text-stone-800 dark:text-stone-200">{cat.name}</span>
-            </Link>
-          ))}
-
-          {user && (
+      {/* ── Tabs ──────────────────────────────────────────────────── */}
+      <div className="px-5 mb-5">
+        <div className="flex gap-1 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
+          {(["zinnen", "verdiepen"] as const).map((tab) => (
             <button
-              onClick={() => setShowNewCategory(true)}
-              className="flex items-center gap-3 bg-white/60 dark:bg-stone-900/60 border border-dashed border-stone-200 dark:border-stone-700 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity text-left w-full"
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`flex-1 py-2 rounded-lg text-xs font-semibold transition-all capitalize ${
+                activeTab === tab
+                  ? "bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100 shadow-sm"
+                  : "text-stone-400 dark:text-stone-500"
+              }`}
             >
-              <span className="w-8 h-8 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center text-stone-400 dark:text-stone-500 text-base shrink-0">+</span>
-              <span className="text-sm font-medium text-stone-400 dark:text-stone-500">Nieuwe categorie aanmaken</span>
+              {tab === "zinnen" ? "Zinnen" : "Verdiepen"}
             </button>
-          )}
+          ))}
         </div>
-      </section>
+      </div>
+
+      {/* ── Tab: Zinnen ───────────────────────────────────────────── */}
+      {activeTab === "zinnen" && (
+        <>
+          <section className="px-5 mb-8">
+            <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
+              Situaties
+            </p>
+            <div className="flex flex-col gap-1.5">
+              {categories.map((cat) => (
+                <CategoryCard key={cat.id} category={cat} />
+              ))}
+              {userCategories.map((cat) => (
+                <Link
+                  key={cat.id}
+                  href={`/category/${cat.id}`}
+                  className="flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity"
+                >
+                  <span className="text-2xl">{cat.icon}</span>
+                  <span className="text-sm font-medium text-stone-800 dark:text-stone-200">{cat.name}</span>
+                </Link>
+              ))}
+              {user && (
+                <button
+                  onClick={() => setShowNewCategory(true)}
+                  className="flex items-center gap-3 bg-white/60 dark:bg-stone-900/60 border border-dashed border-stone-200 dark:border-stone-700 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity text-left w-full"
+                >
+                  <span className="w-8 h-8 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center text-stone-400 dark:text-stone-500 text-base shrink-0">+</span>
+                  <span className="text-sm font-medium text-stone-400 dark:text-stone-500">Nieuwe categorie aanmaken</span>
+                </button>
+              )}
+            </div>
+          </section>
+
+          {opgeslagenZinnen.length > 0 && (
+            <section className="px-5 mb-8">
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">
+                  Favorieten
+                </p>
+                <Link href="/favorites" className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
+                  Bekijk alles
+                </Link>
+              </div>
+              <div className="flex flex-col gap-1.5">
+                {opgeslagenZinnen.map((phrase) => (
+                  <PhraseCard key={phrase.id} phrase={phrase} showCategory />
+                ))}
+              </div>
+            </section>
+          )}
+        </>
+      )}
 
       {showNewCategory && (
         <CategoryPicker
@@ -926,87 +975,55 @@ export default function HomePage() {
         />
       )}
 
-      {/* ── Opgeslagen zinnen ─────────────────────────────────────── */}
-      {opgeslagenZinnen.length > 0 && (
-        <section className="px-5">
-          <div className="flex items-center justify-between mb-3">
-            <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">
-              Favorieten
-            </p>
-            <Link
-              href="/favorites"
-              className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors"
-            >
-              Bekijk alles
-            </Link>
-          </div>
-          <div className="flex flex-col gap-1.5">
-            {opgeslagenZinnen.map((phrase) => (
-              <PhraseCard key={phrase.id} phrase={phrase} showCategory />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* ── Grammatica ───────────────────────────────────────────── */}
-      {user && (
-        <section className="px-5 mt-2 mb-2">
-          <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
-            Grammatica
-          </p>
-          <button
-            onClick={() => setShowGrammarScreen(true)}
-            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
-          >
-            <span className="text-2xl shrink-0">📖</span>
-            <div className="text-left">
-              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica uitleg</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert lessen op basis van jouw zinnen</p>
+      {/* ── Tab: Verdiepen ────────────────────────────────────────── */}
+      {activeTab === "verdiepen" && (
+        <section className="px-5 mb-8">
+          {user ? (
+            <div className="flex flex-col gap-1.5">
+              <button onClick={() => setShowGrammarScreen(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
+                <span className="text-2xl shrink-0">📖</span>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica uitleg</p>
+                  <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert lessen op basis van jouw zinnen</p>
+                </div>
+                <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+              </button>
+              <button onClick={() => setShowVocabPractice(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
+                <span className="text-2xl shrink-0">🎯</span>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Woorden oefenen</p>
+                  <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Flashcards van woordenlijsten per categorie</p>
+                </div>
+                <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+              </button>
+              <button onClick={() => setShowSentencePractice(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
+                <span className="text-2xl shrink-0">✍️</span>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Zinnen oefenen</p>
+                  <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert nieuwe oefenzinnen van je categorieën</p>
+                </div>
+                <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+              </button>
+              <button onClick={() => setShowGrammarGroup(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
+                <span className="text-2xl shrink-0">🔤</span>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica groeperen</p>
+                  <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Bekijk zinnen gegroepeerd op grammaticale structuur</p>
+                </div>
+                <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+              </button>
             </div>
-            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-          </button>
-        </section>
-      )}
-
-      {/* ── Woorden oefenen ──────────────────────────────────────── */}
-      {user && (
-        <section className="px-5 mt-2 mb-2">
-          <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
-            Oefenen
-          </p>
-          <button
-            onClick={() => setShowVocabPractice(true)}
-            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
-          >
-            <span className="text-2xl shrink-0">🎯</span>
-            <div className="text-left">
-              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Woorden oefenen</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Flashcards van woordenlijsten per categorie</p>
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-3xl mb-3">🔒</p>
+              <p className="text-sm font-medium text-stone-700 dark:text-stone-300 mb-1">Log in om te verdiepen</p>
+              <p className="text-xs text-stone-400 dark:text-stone-500 mb-4">Oefenen en grammatica zijn beschikbaar na inloggen</p>
+              <button onClick={signInWithGoogle} className="flex items-center gap-2 bg-white dark:bg-stone-800 rounded-xl px-4 py-2.5 shadow-sm active:opacity-70 transition-opacity mx-auto">
+                <span className="text-base">G</span>
+                <span className="text-xs text-stone-700 dark:text-stone-200 font-medium">Inloggen met Google</span>
+              </button>
             </div>
-            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-          </button>
-          <button
-            onClick={() => setShowSentencePractice(true)}
-            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
-          >
-            <span className="text-2xl shrink-0">✍️</span>
-            <div className="text-left">
-              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Zinnen oefenen</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert nieuwe oefenzinnen van je categorieën</p>
-            </div>
-            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-          </button>
-          <button
-            onClick={() => setShowGrammarGroup(true)}
-            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
-          >
-            <span className="text-2xl shrink-0">🔤</span>
-            <div className="text-left">
-              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica groeperen</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Bekijk zinnen uit meerdere categorieën gegroepeerd op structuur</p>
-            </div>
-            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-          </button>
+          )}
         </section>
       )}
 

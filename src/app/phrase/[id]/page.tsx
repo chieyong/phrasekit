@@ -17,6 +17,7 @@ import { parseTextSegments } from "@/utils/japaneseNumbers";
 import { PhraseVariant } from "@/types";
 import CategoryPicker from "@/components/ui/CategoryPicker";
 import { useLanguage } from "@/contexts/LanguageContext";
+import AudioButton from "@/components/ui/AudioButton";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -510,18 +511,8 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
         )}
 
         {/* ── Actions ────────────────────────────────────────────── */}
-        <div className="flex gap-3 mb-3">
-          <button
-            onClick={() => !isPlaying && play(displayText)}
-            className={`flex-1 flex items-center justify-center gap-2 rounded-2xl py-3 text-sm font-medium transition-colors ${
-              isPlaying
-                ? "bg-stone-200 text-stone-600"
-                : "bg-stone-900 text-white active:opacity-80"
-            }`}
-          >
-            <span>{isPlaying ? "⏸" : "🔊"}</span>
-            <span>{isPlaying ? "Bezig…" : "Afspelen"}</span>
-          </button>
+        <div className="mb-3">
+          <AudioButton text={displayText} />
         </div>
 
         {/* ── Opslaan in categorie ───────────────────────────────── */}
