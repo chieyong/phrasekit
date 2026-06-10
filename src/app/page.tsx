@@ -8,7 +8,8 @@ import CategoryCard from "@/components/cards/CategoryCard";
 import PhraseCard from "@/components/cards/PhraseCard";
 import InlineTranslator from "@/components/ui/InlineTranslator";
 import CategoryPicker from "@/components/ui/CategoryPicker";
-import { categories, phrases, getPhrasesByCategory } from "@/data/mockData";
+import { categories, phrases as staticPhrases, getPhrasesByCategory } from "@/data/mockData";
+import GrammarScreen from "@/components/grammar/GrammarScreen";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
@@ -23,21 +24,34 @@ import { Phrase } from "@/types";
 interface VocabPracticeModalProps {
   allCategories: Array<{ id: string; name: string; icon: string }>;
   getPhrasesForCategory: (id: string) => Array<{ translatedText: string; romaji: string; sourceText: string }>;
+  initialSelected: string[];
+  onSelectionChange: (ids: string[]) => void;
   onClose: () => void;
 }
 
-function VocabPracticeModal({ allCategories, getPhrasesForCategory, onClose }: VocabPracticeModalProps) {
+function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose }: VocabPracticeModalProps) {
   const { getVocab, saveVocab }  = useVocabulary();
   const { play, audioState }     = useAudio();
   const { language }             = useLanguage();
   const [mode,       setMode]       = useState<"select" | "loading" | "practice">("select");
-  const [selected,   setSelected]   = useState<Set<string>>(new Set());
+  const [selected,   setSelected]   = useState<Set<string>>(() => new Set(initialSelected));
   const [words,      setWords]      = useState<VocabWord[]>([]);
   const [cardIndex,  setCardIndex]  = useState(0);
   const [flipped,    setFlipped]    = useState(false);
 
+  const allIds = allCategories.map((c) => c.id);
+  const allSelected = allIds.every((id) => selected.has(id));
+
   const toggleCat = (id: string) =>
-    setSelected((prev) => { const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id); return s; });
+    setSelected((prev) => {
+      const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id);
+      onSelectionChange([...s]); return s;
+    });
+
+  const toggleAll = () => {
+    const next = allSelected ? new Set<string>() : new Set(allIds);
+    setSelected(next); onSelectionChange([...next]);
+  };
 
   const handleStart = async () => {
     if (selected.size === 0) return;
@@ -98,6 +112,12 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, onClose }: V
             <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Kies de categorieën die je wilt oefenen</p>
           </div>
           <div className="px-3 overflow-y-auto max-h-[45vh]">
+            <button onClick={toggleAll} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left border-b border-stone-100 dark:border-stone-800 mb-1">
+              <span className="flex-1 text-sm font-medium text-stone-500 dark:text-stone-400">Alles selecteren</span>
+              <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${allSelected ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100" : "border-stone-200 dark:border-stone-600"}`}>
+                {allSelected && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
+              </span>
+            </button>
             {allCategories.map((cat) => (
               <button
                 key={cat.id}
@@ -225,18 +245,31 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, onClose }: V
 interface GrammarGroupModalProps {
   allCategories: Array<{ id: string; name: string; icon: string }>;
   getFullPhrasesForCategory: (id: string) => Phrase[];
+  initialSelected: string[];
+  onSelectionChange: (ids: string[]) => void;
   onClose: () => void;
 }
 
-function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, onClose }: GrammarGroupModalProps) {
+function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, initialSelected, onSelectionChange, onClose }: GrammarGroupModalProps) {
   const [mode,         setMode]         = useState<"select" | "loading" | "result">("select");
-  const [selected,     setSelected]     = useState<Set<string>>(new Set());
+  const [selected,     setSelected]     = useState<Set<string>>(() => new Set(initialSelected));
   const [groups,       setGroups]       = useState<{ groep: string; zinIds: string[] }[]>([]);
   const [allPhrases,   setAllPhrases]   = useState<Phrase[]>([]);
   const [activeGroep,  setActiveGroep]  = useState<string | null>(null);
 
+  const allIds = allCategories.map((c) => c.id);
+  const allSelected = allIds.every((id) => selected.has(id));
+
   const toggleCat = (id: string) =>
-    setSelected((prev) => { const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id); return s; });
+    setSelected((prev) => {
+      const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id);
+      onSelectionChange([...s]); return s;
+    });
+
+  const toggleAll = () => {
+    const next = allSelected ? new Set<string>() : new Set(allIds);
+    setSelected(next); onSelectionChange([...next]);
+  };
 
   const handleGroepeer = async () => {
     if (selected.size === 0) return;
@@ -283,6 +316,12 @@ function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, onClose }
             <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Kies categorieën — AI groepeert alle zinnen op grammaticale structuur</p>
           </div>
           <div className="px-3 overflow-y-auto max-h-[45vh]">
+            <button onClick={toggleAll} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left border-b border-stone-100 dark:border-stone-800 mb-1">
+              <span className="flex-1 text-sm font-medium text-stone-500 dark:text-stone-400">Alles selecteren</span>
+              <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${allSelected ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100" : "border-stone-200 dark:border-stone-600"}`}>
+                {allSelected && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
+              </span>
+            </button>
             {allCategories.map((cat) => (
               <button
                 key={cat.id}
@@ -364,9 +403,11 @@ function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, onClose }
       </div>
 
       {/* Phrases */}
-      <div className="flex-1 overflow-y-auto px-5 flex flex-col gap-1.5 pb-8">
+      <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-5 flex flex-col gap-1.5 pb-8">
         {actieveZinnen.map((phrase) => (
-          <PhraseCard key={phrase.id} phrase={phrase} showCategory />
+          <div key={phrase.id} className="shrink-0">
+            <PhraseCard phrase={phrase} showCategory />
+          </div>
         ))}
       </div>
     </div>
@@ -378,6 +419,8 @@ function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, onClose }
 interface SentencePracticeModalProps {
   allCategories: Array<{ id: string; name: string; icon: string }>;
   getPhrasesForCategory: (id: string) => Array<{ translatedText: string; romaji: string; sourceText: string }>;
+  initialSelected: string[];
+  onSelectionChange: (ids: string[]) => void;
   onClose: () => void;
 }
 
@@ -388,7 +431,7 @@ const DIFFICULTIES: { id: Difficulty; label: string; desc: string; dot: string }
   { id: "expert",    label: "Expert",    desc: "Vrije variaties, nieuwe woorden, complexe structuren", dot: "bg-red-400"    },
 ];
 
-function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }: SentencePracticeModalProps) {
+function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose }: SentencePracticeModalProps) {
   const { getVocab }                           = useVocabulary();
   const { saveAsNew, addToExisting, deleteSet, sets } = usePracticeSets();
   const { play, audioState }                   = useAudio();
@@ -396,7 +439,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
 
   const [mode,        setMode]        = useState<"select" | "loading" | "practice">("select");
   const [selectTab,   setSelectTab]   = useState<"new" | "saved">("new");
-  const [selected,    setSelected]    = useState<Set<string>>(new Set());
+  const [selected,    setSelected]    = useState<Set<string>>(() => new Set(initialSelected));
   const [difficulty,  setDifficulty]  = useState<Difficulty>("basis");
   const [sentences,   setSentences]   = useState<PracticeSentence[]>([]);
   const [cardIndex,   setCardIndex]   = useState(0);
@@ -406,8 +449,19 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
   const [savedMsg,    setSavedMsg]    = useState<string | null>(null);
   const [saving,      setSaving]      = useState(false);
 
+  const allIds = allCategories.map((c) => c.id);
+  const allSelected = allIds.every((id) => selected.has(id));
+
   const toggleCat = (id: string) =>
-    setSelected((prev) => { const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id); return s; });
+    setSelected((prev) => {
+      const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id);
+      onSelectionChange([...s]); return s;
+    });
+
+  const toggleAll = () => {
+    const next = allSelected ? new Set<string>() : new Set(allIds);
+    setSelected(next); onSelectionChange([...next]);
+  };
 
   const handleStart = async () => {
     if (selected.size === 0) return;
@@ -516,6 +570,12 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, onClose }
           {selectTab === "new" ? (
             <>
               <div className="px-3 overflow-y-auto max-h-[30vh]">
+                <button onClick={toggleAll} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left border-b border-stone-100 dark:border-stone-800 mb-1">
+                  <span className="flex-1 text-sm font-medium text-stone-500 dark:text-stone-400">Alles selecteren</span>
+                  <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${allSelected ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100" : "border-stone-200 dark:border-stone-600"}`}>
+                    {allSelected && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
+                  </span>
+                </button>
                 {allCategories.map((cat) => (
                   <button key={cat.id} onClick={() => toggleCat(cat.id)} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left">
                     <span className="text-xl shrink-0">{cat.icon}</span>
@@ -715,9 +775,19 @@ export default function HomePage() {
   const [showVocabPractice,    setShowVocabPractice]    = useState(false);
   const [showSentencePractice, setShowSentencePractice] = useState(false);
   const [showGrammarGroup,     setShowGrammarGroup]     = useState(false);
+  const [showGrammarScreen,    setShowGrammarScreen]    = useState(false);
+  const [practiceSelection,    setPracticeSelection]    = useState<string[]>(() => {
+    try { return JSON.parse(localStorage.getItem("phrasekit-cat-selection") ?? "[]"); } catch { return []; }
+  });
+
+  const handleSelectionChange = (ids: string[]) => {
+    setPracticeSelection(ids);
+    localStorage.setItem("phrasekit-cat-selection", JSON.stringify(ids));
+  };
 
   const userFavorieten   = userPhrases.filter((p) => p.isFavorite);
-  const staticFavorieten = phrases.filter((p) => staticFavoriteIds.includes(p.id));
+  const staticFavorieten = staticPhrases.filter((p) => staticFavoriteIds.includes(p.id));
+  const allPhrases       = [...staticPhrases, ...userPhrases];
   const opgeslagenZinnen = [...userFavorieten, ...staticFavorieten].slice(0, 3);
 
   const allCategories = [
@@ -878,6 +948,26 @@ export default function HomePage() {
         </section>
       )}
 
+      {/* ── Grammatica ───────────────────────────────────────────── */}
+      {user && (
+        <section className="px-5 mt-2 mb-2">
+          <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
+            Grammatica
+          </p>
+          <button
+            onClick={() => setShowGrammarScreen(true)}
+            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
+          >
+            <span className="text-2xl shrink-0">📖</span>
+            <div className="text-left">
+              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica uitleg</p>
+              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert lessen op basis van jouw zinnen</p>
+            </div>
+            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+          </button>
+        </section>
+      )}
+
       {/* ── Woorden oefenen ──────────────────────────────────────── */}
       {user && (
         <section className="px-5 mt-2 mb-2">
@@ -931,6 +1021,8 @@ export default function HomePage() {
         <VocabPracticeModal
           allCategories={allCategories}
           getPhrasesForCategory={getPhrasesForCategory}
+          initialSelected={practiceSelection}
+          onSelectionChange={handleSelectionChange}
           onClose={() => setShowVocabPractice(false)}
         />
       )}
@@ -939,6 +1031,8 @@ export default function HomePage() {
         <SentencePracticeModal
           allCategories={allCategories}
           getPhrasesForCategory={getPhrasesForCategory}
+          initialSelected={practiceSelection}
+          onSelectionChange={handleSelectionChange}
           onClose={() => setShowSentencePractice(false)}
         />
       )}
@@ -947,7 +1041,16 @@ export default function HomePage() {
         <GrammarGroupModal
           allCategories={allCategories}
           getFullPhrasesForCategory={getFullPhrasesForCategory}
+          initialSelected={practiceSelection}
+          onSelectionChange={handleSelectionChange}
           onClose={() => setShowGrammarGroup(false)}
+        />
+      )}
+
+      {showGrammarScreen && (
+        <GrammarScreen
+          allPhrases={allPhrases}
+          onClose={() => setShowGrammarScreen(false)}
         />
       )}
     </div>
