@@ -776,6 +776,7 @@ export default function HomePage() {
   const [showSentencePractice, setShowSentencePractice] = useState(false);
   const [showGrammarGroup,     setShowGrammarGroup]     = useState(false);
   const [showGrammarScreen,    setShowGrammarScreen]    = useState(false);
+  const [activeTab,            setActiveTab]            = useState<"zinnen" | "verdiepen">("zinnen");
   const [practiceSelection,    setPracticeSelection]    = useState<string[]>(() => {
     try { return JSON.parse(localStorage.getItem("phrasekit-cat-selection") ?? "[]"); } catch { return []; }
   });
@@ -886,41 +887,81 @@ export default function HomePage() {
       </div>
 
       {/* ── Inline vertaler ───────────────────────────────────────── */}
-      <div className="px-5 mb-6">
+      <div className="px-5 mb-4">
         <InlineTranslator />
       </div>
 
-      {/* ── Situaties ─────────────────────────────────────────────── */}
-      <section className="px-5 mb-8">
-        <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
-          Situaties
-        </p>
-        <div className="flex flex-col gap-1.5">
-          {categories.map((cat) => (
-            <CategoryCard key={cat.id} category={cat} />
-          ))}
-          {userCategories.map((cat) => (
-            <Link
-              key={cat.id}
-              href={`/category/${cat.id}`}
-              className="flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity"
-            >
-              <span className="text-2xl">{cat.icon}</span>
-              <span className="text-sm font-medium text-stone-800 dark:text-stone-200">{cat.name}</span>
-            </Link>
-          ))}
-
-          {user && (
+      {/* ── Tabs ──────────────────────────────────────────────────── */}
+      <div className="px-5 mb-5">
+        <div className="flex gap-1 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
+          {(["zinnen", "verdiepen"] as const).map((tab) => (
             <button
-              onClick={() => setShowNewCategory(true)}
-              className="flex items-center gap-3 bg-white/60 dark:bg-stone-900/60 border border-dashed border-stone-200 dark:border-stone-700 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity text-left w-full"
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`flex-1 py-2 rounded-lg text-xs font-semibold transition-all capitalize ${
+                activeTab === tab
+                  ? "bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100 shadow-sm"
+                  : "text-stone-400 dark:text-stone-500"
+              }`}
             >
-              <span className="w-8 h-8 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center text-stone-400 dark:text-stone-500 text-base shrink-0">+</span>
-              <span className="text-sm font-medium text-stone-400 dark:text-stone-500">Nieuwe categorie aanmaken</span>
+              {tab === "zinnen" ? "Zinnen" : "Verdiepen"}
             </button>
-          )}
+          ))}
         </div>
-      </section>
+      </div>
+
+      {/* ── Tab: Zinnen ───────────────────────────────────────────── */}
+      {activeTab === "zinnen" && (
+        <>
+          <section className="px-5 mb-8">
+            <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
+              Situaties
+            </p>
+            <div className="flex flex-col gap-1.5">
+              {categories.map((cat) => (
+                <CategoryCard key={cat.id} category={cat} />
+              ))}
+              {userCategories.map((cat) => (
+                <Link
+                  key={cat.id}
+                  href={`/category/${cat.id}`}
+                  className="flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity"
+                >
+                  <span className="text-2xl">{cat.icon}</span>
+                  <span className="text-sm font-medium text-stone-800 dark:text-stone-200">{cat.name}</span>
+                </Link>
+              ))}
+              {user && (
+                <button
+                  onClick={() => setShowNewCategory(true)}
+                  className="flex items-center gap-3 bg-white/60 dark:bg-stone-900/60 border border-dashed border-stone-200 dark:border-stone-700 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity text-left w-full"
+                >
+                  <span className="w-8 h-8 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center text-stone-400 dark:text-stone-500 text-base shrink-0">+</span>
+                  <span className="text-sm font-medium text-stone-400 dark:text-stone-500">Nieuwe categorie aanmaken</span>
+                </button>
+              )}
+            </div>
+          </section>
+
+          {opgeslagenZinnen.length > 0 && (
+            <section className="px-5 mb-8">
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">
+                  Favorieten
+                </p>
+                <Link href="/favorites" className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
+                  Bekijk alles
+                </Link>
+              </div>
+              <div className="flex flex-col gap-1.5">
+                {opgeslagenZinnen.map((phrase) => (
+                  <PhraseCard key={phrase.id} phrase={phrase} showCategory />
+                ))}
+              </div>
+            </section>
+          )}
+        </>
+      )}
 
       {showNewCategory && (
         <CategoryPicker
@@ -934,87 +975,55 @@ export default function HomePage() {
         />
       )}
 
-      {/* ── Opgeslagen zinnen ─────────────────────────────────────── */}
-      {opgeslagenZinnen.length > 0 && (
-        <section className="px-5">
-          <div className="flex items-center justify-between mb-3">
-            <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">
-              Favorieten
-            </p>
-            <Link
-              href="/favorites"
-              className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors"
-            >
-              Bekijk alles
-            </Link>
-          </div>
-          <div className="flex flex-col gap-1.5">
-            {opgeslagenZinnen.map((phrase) => (
-              <PhraseCard key={phrase.id} phrase={phrase} showCategory />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* ── Grammatica ───────────────────────────────────────────── */}
-      {user && (
-        <section className="px-5 mt-2 mb-2">
-          <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
-            Grammatica
-          </p>
-          <button
-            onClick={() => setShowGrammarScreen(true)}
-            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
-          >
-            <span className="text-2xl shrink-0">📖</span>
-            <div className="text-left">
-              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica uitleg</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert lessen op basis van jouw zinnen</p>
+      {/* ── Tab: Verdiepen ────────────────────────────────────────── */}
+      {activeTab === "verdiepen" && (
+        <section className="px-5 mb-8">
+          {user ? (
+            <div className="flex flex-col gap-1.5">
+              <button onClick={() => setShowGrammarScreen(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
+                <span className="text-2xl shrink-0">📖</span>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica uitleg</p>
+                  <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert lessen op basis van jouw zinnen</p>
+                </div>
+                <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+              </button>
+              <button onClick={() => setShowVocabPractice(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
+                <span className="text-2xl shrink-0">🎯</span>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Woorden oefenen</p>
+                  <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Flashcards van woordenlijsten per categorie</p>
+                </div>
+                <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+              </button>
+              <button onClick={() => setShowSentencePractice(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
+                <span className="text-2xl shrink-0">✍️</span>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Zinnen oefenen</p>
+                  <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert nieuwe oefenzinnen van je categorieën</p>
+                </div>
+                <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+              </button>
+              <button onClick={() => setShowGrammarGroup(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
+                <span className="text-2xl shrink-0">🔤</span>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica groeperen</p>
+                  <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Bekijk zinnen gegroepeerd op grammaticale structuur</p>
+                </div>
+                <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+              </button>
             </div>
-            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-          </button>
-        </section>
-      )}
-
-      {/* ── Woorden oefenen ──────────────────────────────────────── */}
-      {user && (
-        <section className="px-5 mt-2 mb-2">
-          <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
-            Oefenen
-          </p>
-          <button
-            onClick={() => setShowVocabPractice(true)}
-            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
-          >
-            <span className="text-2xl shrink-0">🎯</span>
-            <div className="text-left">
-              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Woorden oefenen</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Flashcards van woordenlijsten per categorie</p>
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-3xl mb-3">🔒</p>
+              <p className="text-sm font-medium text-stone-700 dark:text-stone-300 mb-1">Log in om te verdiepen</p>
+              <p className="text-xs text-stone-400 dark:text-stone-500 mb-4">Oefenen en grammatica zijn beschikbaar na inloggen</p>
+              <button onClick={signInWithGoogle} className="flex items-center gap-2 bg-white dark:bg-stone-800 rounded-xl px-4 py-2.5 shadow-sm active:opacity-70 transition-opacity mx-auto">
+                <span className="text-base">G</span>
+                <span className="text-xs text-stone-700 dark:text-stone-200 font-medium">Inloggen met Google</span>
+              </button>
             </div>
-            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-          </button>
-          <button
-            onClick={() => setShowSentencePractice(true)}
-            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
-          >
-            <span className="text-2xl shrink-0">✍️</span>
-            <div className="text-left">
-              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Zinnen oefenen</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert nieuwe oefenzinnen van je categorieën</p>
-            </div>
-            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-          </button>
-          <button
-            onClick={() => setShowGrammarGroup(true)}
-            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
-          >
-            <span className="text-2xl shrink-0">🔤</span>
-            <div className="text-left">
-              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica groeperen</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Bekijk zinnen uit meerdere categorieën gegroepeerd op structuur</p>
-            </div>
-            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-          </button>
+          )}
         </section>
       )}
 
