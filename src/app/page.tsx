@@ -106,16 +106,17 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
               Annuleren
             </button>
           </div>
-          <div className="px-5 pt-3 pb-2 flex items-start justify-between">
-            <div>
-              <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">🎯 Woorden oefenen</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Kies de categorieën die je wilt oefenen</p>
-            </div>
-            <button onClick={toggleAll} className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors mt-0.5 shrink-0">
-              {allSelected ? "Geen" : "Alles"}
-            </button>
+          <div className="px-5 pt-3 pb-2">
+            <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">🎯 Woorden oefenen</p>
+            <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Kies de categorieën die je wilt oefenen</p>
           </div>
           <div className="px-3 overflow-y-auto max-h-[45vh]">
+            <button onClick={toggleAll} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left border-b border-stone-100 dark:border-stone-800 mb-1">
+              <span className="flex-1 text-sm font-medium text-stone-500 dark:text-stone-400">Alles selecteren</span>
+              <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${allSelected ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100" : "border-stone-200 dark:border-stone-600"}`}>
+                {allSelected && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
+              </span>
+            </button>
             {allCategories.map((cat) => (
               <button
                 key={cat.id}
@@ -309,16 +310,17 @@ function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, initialSe
               Annuleren
             </button>
           </div>
-          <div className="px-5 pt-3 pb-2 flex items-start justify-between">
-            <div>
-              <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">🔤 Grammatica groeperen</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Kies categorieën — AI groepeert alle zinnen op grammaticale structuur</p>
-            </div>
-            <button onClick={toggleAll} className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors mt-0.5 shrink-0">
-              {allSelected ? "Geen" : "Alles"}
-            </button>
+          <div className="px-5 pt-3 pb-2">
+            <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">🔤 Grammatica groeperen</p>
+            <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Kies categorieën — AI groepeert alle zinnen op grammaticale structuur</p>
           </div>
           <div className="px-3 overflow-y-auto max-h-[45vh]">
+            <button onClick={toggleAll} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left border-b border-stone-100 dark:border-stone-800 mb-1">
+              <span className="flex-1 text-sm font-medium text-stone-500 dark:text-stone-400">Alles selecteren</span>
+              <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${allSelected ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100" : "border-stone-200 dark:border-stone-600"}`}>
+                {allSelected && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
+              </span>
+            </button>
             {allCategories.map((cat) => (
               <button
                 key={cat.id}
@@ -566,12 +568,13 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
 
           {selectTab === "new" ? (
             <>
-              <div className="px-5 pb-1 flex justify-end">
-                <button onClick={toggleAll} className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
-                  {allSelected ? "Geen" : "Alles"}
-                </button>
-              </div>
               <div className="px-3 overflow-y-auto max-h-[30vh]">
+                <button onClick={toggleAll} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left border-b border-stone-100 dark:border-stone-800 mb-1">
+                  <span className="flex-1 text-sm font-medium text-stone-500 dark:text-stone-400">Alles selecteren</span>
+                  <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${allSelected ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100" : "border-stone-200 dark:border-stone-600"}`}>
+                    {allSelected && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
+                  </span>
+                </button>
                 {allCategories.map((cat) => (
                   <button key={cat.id} onClick={() => toggleCat(cat.id)} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left">
                     <span className="text-xl shrink-0">{cat.icon}</span>
