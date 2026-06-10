@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { Phrase } from "@/types";
-import { useAudio } from "@/hooks/useAudio";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useLanguage } from "@/contexts/LanguageContext";
+import AudioButton from "@/components/ui/AudioButton";
 
 interface PhraseCardProps {
   phrase: Phrase;
@@ -15,10 +15,8 @@ export default function PhraseCard({
   phrase,
   showCategory = false,
 }: PhraseCardProps) {
-  const { play, audioState } = useAudio();
   const { userPhrases, staticFavoriteIds, toggleUserFavorite, toggleStaticFavorite } = useUserPhrases();
   const { language } = useLanguage();
-  const isPlaying = audioState === "playing";
 
   // In Chinese mode: show Chinese if available, else fall back to Japanese
   const showChinese  = language === "zh" && !!phrase.chineseText;
@@ -56,18 +54,7 @@ export default function PhraseCard({
       </Link>
 
       <div className="flex items-center gap-3 px-5 pb-4">
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            if (!isPlaying) play(displayText);
-          }}
-          aria-label={isPlaying ? "Playing…" : "Play pronunciation"}
-          className={`text-xs font-medium transition-colors ${
-            isPlaying ? "text-stone-500 dark:text-stone-400" : "text-stone-300 dark:text-stone-600 hover:text-stone-500 dark:hover:text-stone-400"
-          }`}
-        >
-          {isPlaying ? "⏸ Bezig" : "🔊 Afspelen"}
-        </button>
+        <AudioButton text={displayText} />
 
         <button
           onClick={handleToggleFavorite}

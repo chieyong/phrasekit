@@ -13,8 +13,8 @@ import GrammarScreen from "@/components/grammar/GrammarScreen";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
-import { useAudio } from "@/hooks/useAudio";
 import { usePracticeSets, PracticeSentence, Difficulty, generateSetName } from "@/hooks/usePracticeSets";
+import AudioButton from "@/components/ui/AudioButton";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Phrase } from "@/types";
@@ -31,7 +31,6 @@ interface VocabPracticeModalProps {
 
 function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose }: VocabPracticeModalProps) {
   const { getVocab, saveVocab }  = useVocabulary();
-  const { play, audioState }     = useAudio();
   const { language }             = useLanguage();
   const [mode,       setMode]       = useState<"select" | "loading" | "practice">("select");
   const [selected,   setSelected]   = useState<Set<string>>(() => new Set(initialSelected));
@@ -101,8 +100,8 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
       <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
         <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
         <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
-          <div className="flex items-center pt-3 pb-1 px-5">
-            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700 mx-auto" />
+          <div className="relative flex items-center justify-center pt-4 pb-1 px-5">
+            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700" />
             <button onClick={onClose} className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
               Annuleren
             </button>
@@ -213,9 +212,7 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
               <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-6">{language === "zh" ? "Chinees" : "Japans"}</p>
               <p className="text-4xl font-bold text-white leading-tight mb-2">{word.japanese}</p>
               <p className="text-base text-stone-400 italic mb-4">{word.romaji}</p>
-              <button onClick={(e) => { e.stopPropagation(); play(word.japanese); }} className={`text-sm flex items-center gap-2 transition-colors ${audioState === "playing" ? "text-stone-300" : "text-stone-500 hover:text-stone-200"}`}>
-                {audioState === "playing" ? "⏸ Bezig…" : "🔊 Afspelen"}
-              </button>
+              <AudioButton text={word.japanese} className="bg-stone-800 hover:bg-stone-700 text-stone-300" />
             </div>
           </div>
           {flipped && cardIndex < words.length - 1 && (
@@ -311,8 +308,8 @@ function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, initialSe
       <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
         <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
         <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
-          <div className="flex items-center pt-3 pb-1 px-5">
-            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700 mx-auto" />
+          <div className="relative flex items-center justify-center pt-4 pb-1 px-5">
+            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700" />
             <button onClick={onClose} className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
               Annuleren
             </button>
@@ -440,7 +437,6 @@ const DIFFICULTIES: { id: Difficulty; label: string; desc: string; dot: string }
 function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose }: SentencePracticeModalProps) {
   const { getVocab }                           = useVocabulary();
   const { saveAsNew, addToExisting, deleteSet, sets } = usePracticeSets();
-  const { play, audioState }                   = useAudio();
   const { language }                           = useLanguage();
 
   const [mode,        setMode]        = useState<"select" | "loading" | "practice">("select");
@@ -549,8 +545,8 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
       <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
         <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
         <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
-          <div className="flex items-center pt-3 pb-1 px-5">
-            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700 mx-auto" />
+          <div className="relative flex items-center justify-center pt-4 pb-1 px-5">
+            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700" />
             <button onClick={onClose} className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
               Annuleren
             </button>
@@ -701,9 +697,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
               <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-5">{language === "zh" ? "Chinees" : "Japans"}</p>
               <p className="text-3xl font-bold text-white leading-tight mb-2">{sentence.japanese}</p>
               <p className="text-base text-stone-400 italic mb-4">{sentence.romaji}</p>
-              <button onClick={(e) => { e.stopPropagation(); play(sentence.japanese); }} className={`text-sm flex items-center gap-2 transition-colors ${audioState === "playing" ? "text-stone-300" : "text-stone-500 hover:text-stone-200"}`}>
-                {audioState === "playing" ? "⏸ Bezig…" : "🔊 Afspelen"}
-              </button>
+              <AudioButton text={sentence.japanese} className="bg-stone-800 hover:bg-stone-700 text-stone-300" />
             </div>
           </div>
           {flipped && cardIndex < sentences.length - 1 && (

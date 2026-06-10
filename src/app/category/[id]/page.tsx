@@ -29,6 +29,7 @@ import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Phrase } from "@/types";
 import InlineTranslator from "@/components/ui/InlineTranslator";
+import AudioButton from "@/components/ui/AudioButton";
 
 // ─── Vocabulary sheet ─────────────────────────────────────────────────────────
 
@@ -79,11 +80,11 @@ function VocabSheet({ phrases, categoryId, onClose }: { phrases: Phrase[]; categ
       <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
 
         {/* Handle + sluitknop */}
-        <div className="flex items-center justify-between pt-3 pb-1 px-5">
-          <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700 mx-auto" />
+        <div className="relative flex items-center justify-center pt-4 pb-1 px-5">
+          <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700" />
           <button
             onClick={onClose}
-            className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors"
+            className="absolute right-5 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors"
           >
             Sluiten
           </button>
@@ -157,7 +158,6 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
   const [index,   setIndex]   = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [order,   setOrder]   = useState(() => phrases.map((_, i) => i).sort(() => Math.random() - 0.5));
-  const { play, audioState } = useAudio();
 
   const phrase = phrases[order[index]];
 
@@ -246,14 +246,9 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
               <p className="text-base text-stone-400 italic">
                 {phrase.romaji}
               </p>
-              <button
-                onClick={(e) => { e.stopPropagation(); play(phrase.translatedText); }}
-                className={`mt-6 text-sm flex items-center gap-2 transition-colors ${
-                  audioState === "playing" ? "text-stone-300" : "text-stone-500 hover:text-stone-200"
-                }`}
-              >
-                {audioState === "playing" ? "⏸ Bezig…" : "🔊 Afspelen"}
-              </button>
+              <div className="mt-6">
+                <AudioButton text={phrase.translatedText} className="bg-stone-800 hover:bg-stone-700 text-stone-400" />
+              </div>
             </div>
           </div>
           {flipped && index < order.length - 1 && (

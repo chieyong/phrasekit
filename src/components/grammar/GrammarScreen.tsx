@@ -3,8 +3,8 @@
 import { useState, useEffect, useCallback } from "react";
 import PhraseCard from "@/components/cards/PhraseCard";
 import { useGrammarModules, GrammarModule, GrammarModuleDetail } from "@/hooks/useGrammarModules";
-import { useAudio } from "@/hooks/useAudio";
 import { useLanguage } from "@/contexts/LanguageContext";
+import AudioButton from "@/components/ui/AudioButton";
 import { Phrase } from "@/types";
 
 const NIVEAU_COLORS: Record<string, string> = {
@@ -16,23 +16,14 @@ const NIVEAU_COLORS: Record<string, string> = {
 // ─── Extra example card ────────────────────────────────────────────────────────
 
 function ExtraVoorbeeldCard({ v }: { v: { japanese: string; romaji: string; dutch: string } }) {
-  const { play, audioState } = useAudio();
   return (
-    <div className="bg-stone-50 dark:bg-stone-800/60 rounded-2xl px-4 py-3.5 flex items-start justify-between gap-3">
-      <div className="min-w-0">
-        <p className="text-base font-semibold text-stone-900 dark:text-stone-100 leading-snug">{v.japanese}</p>
-        <p className="text-sm text-stone-400 dark:text-stone-500 mt-0.5">{v.romaji}</p>
-        <p className="text-sm text-stone-500 dark:text-stone-400 mt-1.5">{v.dutch}</p>
+    <div className="bg-stone-50 dark:bg-stone-800/60 rounded-2xl px-4 py-3.5">
+      <p className="text-base font-semibold text-stone-900 dark:text-stone-100 leading-snug">{v.japanese}</p>
+      <p className="text-sm text-stone-400 dark:text-stone-500 mt-0.5">{v.romaji}</p>
+      <p className="text-sm text-stone-500 dark:text-stone-400 mt-1">{v.dutch}</p>
+      <div className="mt-2.5">
+        <AudioButton text={v.japanese} />
       </div>
-      <button
-        onClick={() => play(v.japanese)}
-        className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors mt-0.5 ${
-          audioState === "playing" ? "text-stone-400 dark:text-stone-500" : "text-stone-300 dark:text-stone-600 hover:text-stone-600 dark:hover:text-stone-300"
-        }`}
-        aria-label="Afspelen"
-      >
-        🔊
-      </button>
     </div>
   );
 }
