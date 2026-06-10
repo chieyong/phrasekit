@@ -343,6 +343,7 @@ interface CategoryPageProps {
 export default function CategoriePagina({ params }: CategoryPageProps) {
   const { id } = use(params);
   const router = useRouter();
+  const { language } = useLanguage();
   const {
     getUserPhrasesByCategory,
     userCategories,
@@ -411,7 +412,12 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          phrases: alleZinnen.map((p) => ({ id: p.id, translatedText: p.translatedText, sourceText: p.sourceText })),
+          language,
+          phrases: alleZinnen.map((p) => ({
+            id:             p.id,
+            translatedText: language === "zh" ? (p.chineseText ?? p.translatedText) : p.translatedText,
+            sourceText:     p.sourceText,
+          })),
         }),
       });
       const data = await res.json();

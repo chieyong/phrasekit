@@ -31,33 +31,33 @@ const safeId = (naam: string) => naam.replace(/\//g, "-").replace(/\s+/g, "_").s
 export function useGrammarModules() {
   const { user } = useAuth();
 
-  const getModules = useCallback(async (): Promise<{ modules: GrammarModule[]; phraseCount: number } | null> => {
+  const getModules = useCallback(async (language = "ja"): Promise<{ modules: GrammarModule[]; phraseCount: number } | null> => {
     if (!user) return null;
-    const snap = await getDoc(doc(db, "users", user.uid, "grammarModules", "index"));
+    const snap = await getDoc(doc(db, "users", user.uid, "grammarModules", `index_${language}`));
     if (!snap.exists()) return null;
     const data = snap.data();
     return { modules: (data.modules as GrammarModule[]) ?? [], phraseCount: data.phraseCount ?? 0 };
   }, [user]);
 
-  const saveModules = useCallback(async (modules: GrammarModule[], phraseCount: number): Promise<void> => {
+  const saveModules = useCallback(async (modules: GrammarModule[], phraseCount: number, language = "ja"): Promise<void> => {
     if (!user) return;
-    await setDoc(doc(db, "users", user.uid, "grammarModules", "index"), {
+    await setDoc(doc(db, "users", user.uid, "grammarModules", `index_${language}`), {
       modules,
       phraseCount,
       generatedAt: Date.now(),
     });
   }, [user]);
 
-  const getModuleDetail = useCallback(async (naam: string): Promise<GrammarModuleDetail | null> => {
+  const getModuleDetail = useCallback(async (naam: string, language = "ja"): Promise<GrammarModuleDetail | null> => {
     if (!user) return null;
-    const snap = await getDoc(doc(db, "users", user.uid, "grammarModules", `detail_${safeId(naam)}`));
+    const snap = await getDoc(doc(db, "users", user.uid, "grammarModules", `detail_${language}_${safeId(naam)}`));
     if (!snap.exists()) return null;
     return snap.data() as GrammarModuleDetail;
   }, [user]);
 
-  const saveModuleDetail = useCallback(async (detail: GrammarModuleDetail): Promise<void> => {
+  const saveModuleDetail = useCallback(async (detail: GrammarModuleDetail, language = "ja"): Promise<void> => {
     if (!user) return;
-    await setDoc(doc(db, "users", user.uid, "grammarModules", `detail_${safeId(detail.naam)}`), {
+    await setDoc(doc(db, "users", user.uid, "grammarModules", `detail_${language}_${safeId(detail.naam)}`), {
       ...detail,
       generatedAt: Date.now(),
     });

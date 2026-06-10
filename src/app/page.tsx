@@ -251,6 +251,7 @@ interface GrammarGroupModalProps {
 }
 
 function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, initialSelected, onSelectionChange, onClose }: GrammarGroupModalProps) {
+  const { language }                     = useLanguage();
   const [mode,         setMode]         = useState<"select" | "loading" | "result">("select");
   const [selected,     setSelected]     = useState<Set<string>>(() => new Set(initialSelected));
   const [groups,       setGroups]       = useState<{ groep: string; zinIds: string[] }[]>([]);
@@ -283,7 +284,12 @@ function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, initialSe
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          phrases: collected.map((p) => ({ id: p.id, translatedText: p.translatedText, sourceText: p.sourceText })),
+          language,
+          phrases: collected.map((p) => ({
+            id:             p.id,
+            translatedText: language === "zh" ? (p.chineseText ?? p.translatedText) : p.translatedText,
+            sourceText:     p.sourceText,
+          })),
         }),
       });
       const data = await res.json();
@@ -770,7 +776,7 @@ export default function HomePage() {
   const { userCategories, userPhrases, staticFavoriteIds, addCategory, getUserPhrasesByCategory } = useUserPhrases();
   const { user, loading, signInWithGoogle, signOut } = useAuth();
   const { theme, toggle } = useTheme();
-  const { language } = useLanguage();
+  const { language, setLanguage } = useLanguage();
   const [showNewCategory,      setShowNewCategory]      = useState(false);
   const [showVocabPractice,    setShowVocabPractice]    = useState(false);
   const [showSentencePractice, setShowSentencePractice] = useState(false);
@@ -832,15 +838,23 @@ export default function HomePage() {
       <div className="px-5 pt-8 pb-6 flex items-start justify-between">
         <div>
           <h1 className="text-xl font-semibold text-stone-900 dark:text-stone-100 tracking-tight">
-            PhraseKit <span className="text-stone-400 dark:text-stone-500 font-normal">Japan</span>
+            PhraseKit <span className="text-stone-400 dark:text-stone-500 font-normal">{language === "zh" ? "China" : "Japan"}</span>
           </h1>
           <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5 tracking-wide">
-            Japanse reiszinnen
+            {language === "zh" ? "Chinese reiszinnen" : "Japanse reiszinnen"}
           </p>
         </div>
 
-        {/* Theme toggle + auth */}
+        {/* Theme toggle + taal + auth */}
         <div className="flex items-center gap-2">
+          <button
+            onClick={() => setLanguage(language === "ja" ? "zh" : "ja")}
+            aria-label="Wissel taal"
+            className="h-8 rounded-full bg-white dark:bg-stone-800 flex items-center justify-center shadow-sm active:scale-95 transition-all px-2.5 gap-1"
+          >
+            <span className="text-sm">{language === "ja" ? "🇯🇵" : "🇨🇳"}</span>
+            <span className="text-[10px] font-semibold text-stone-500 dark:text-stone-400">{language === "ja" ? "JA" : "ZH"}</span>
+          </button>
           <button
             onClick={toggle}
             aria-label="Wissel thema"
