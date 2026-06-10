@@ -8,7 +8,8 @@ import CategoryCard from "@/components/cards/CategoryCard";
 import PhraseCard from "@/components/cards/PhraseCard";
 import InlineTranslator from "@/components/ui/InlineTranslator";
 import CategoryPicker from "@/components/ui/CategoryPicker";
-import { categories, phrases, getPhrasesByCategory } from "@/data/mockData";
+import { categories, phrases as staticPhrases, getPhrasesByCategory } from "@/data/mockData";
+import GrammarScreen from "@/components/grammar/GrammarScreen";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
@@ -774,6 +775,7 @@ export default function HomePage() {
   const [showVocabPractice,    setShowVocabPractice]    = useState(false);
   const [showSentencePractice, setShowSentencePractice] = useState(false);
   const [showGrammarGroup,     setShowGrammarGroup]     = useState(false);
+  const [showGrammarScreen,    setShowGrammarScreen]    = useState(false);
   const [practiceSelection,    setPracticeSelection]    = useState<string[]>(() => {
     try { return JSON.parse(localStorage.getItem("phrasekit-cat-selection") ?? "[]"); } catch { return []; }
   });
@@ -784,7 +786,8 @@ export default function HomePage() {
   };
 
   const userFavorieten   = userPhrases.filter((p) => p.isFavorite);
-  const staticFavorieten = phrases.filter((p) => staticFavoriteIds.includes(p.id));
+  const staticFavorieten = staticPhrases.filter((p) => staticFavoriteIds.includes(p.id));
+  const allPhrases       = [...staticPhrases, ...userPhrases];
   const opgeslagenZinnen = [...userFavorieten, ...staticFavorieten].slice(0, 3);
 
   const allCategories = [
@@ -945,6 +948,26 @@ export default function HomePage() {
         </section>
       )}
 
+      {/* ── Grammatica ───────────────────────────────────────────── */}
+      {user && (
+        <section className="px-5 mt-2 mb-2">
+          <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
+            Grammatica
+          </p>
+          <button
+            onClick={() => setShowGrammarScreen(true)}
+            className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity"
+          >
+            <span className="text-2xl shrink-0">📖</span>
+            <div className="text-left">
+              <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica uitleg</p>
+              <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert lessen op basis van jouw zinnen</p>
+            </div>
+            <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+          </button>
+        </section>
+      )}
+
       {/* ── Woorden oefenen ──────────────────────────────────────── */}
       {user && (
         <section className="px-5 mt-2 mb-2">
@@ -1021,6 +1044,13 @@ export default function HomePage() {
           initialSelected={practiceSelection}
           onSelectionChange={handleSelectionChange}
           onClose={() => setShowGrammarGroup(false)}
+        />
+      )}
+
+      {showGrammarScreen && (
+        <GrammarScreen
+          allPhrases={allPhrases}
+          onClose={() => setShowGrammarScreen(false)}
         />
       )}
     </div>
