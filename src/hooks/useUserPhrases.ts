@@ -220,6 +220,20 @@ export function useUserPhrases() {
     await updateDoc(doc(db, "users", user.uid, "phrases", id), { chineseGrammar });
   };
 
+  const updateChinese = async (
+    id: string,
+    chineseText: string,
+    pinyin: string,
+    chineseExplanation: string
+  ): Promise<void> => {
+    if (!user) return;
+    await updateDoc(doc(db, "users", user.uid, "phrases", id), {
+      chineseText,
+      pinyin,
+      chineseExplanation,
+    });
+  };
+
   // ── Read helpers ───────────────────────────────────────────────────────────
 
   const getUserPhraseById = (id: string) =>
@@ -247,6 +261,7 @@ export function useUserPhrases() {
     updatePhraseSortOrder,
     updatePhraseGrammar,
     updatePhraseChineseGrammar,
+    updateChinese,
     getUserPhraseById,
     getUserPhrasesByCategory,
   };

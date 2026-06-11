@@ -848,7 +848,7 @@ export default function HomePage() {
             className="h-8 rounded-full bg-white dark:bg-stone-800 flex items-center justify-center shadow-sm active:scale-95 transition-all px-2.5 gap-1"
           >
             <span className="text-sm">{language === "ja" ? "🇯🇵" : "🇨🇳"}</span>
-            <span className="text-[10px] font-semibold text-stone-500 dark:text-stone-400">{language === "ja" ? "JA" : "ZH"}</span>
+            <span className="text-[10px] font-semibold text-stone-500 dark:text-stone-400">{language === "ja" ? "JP" : "CN"}</span>
           </button>
           <button
             onClick={toggle}
@@ -1066,6 +1066,7 @@ export default function HomePage() {
 
       {showGrammarScreen && (
         <GrammarScreen
+          key={language}
           allPhrases={allPhrases}
           onClose={() => setShowGrammarScreen(false)}
         />
