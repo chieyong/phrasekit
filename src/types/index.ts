@@ -24,6 +24,7 @@ export interface Phrase {
 export interface GrammarExplanation {
   summary: string;
   parts: { japanese: string; romaji: string; role: string; note?: string }[];
+  examples?: { japanese: string; romaji: string; dutch: string }[];
   tip: string;
 }
 

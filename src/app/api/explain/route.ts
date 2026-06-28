@@ -13,13 +13,25 @@ Reageer met ALLEEN geldig JSON:
       "note": "<optionele extra tip — zie instructie hieronder>"
     }
   ],
+  "examples": [
+    {
+      "japanese": "<nieuwe voorbeeldzin in kanji/kana die hetzelfde grammaticapatroon gebruikt>",
+      "romaji": "<romanisering>",
+      "dutch": "<Nederlandse vertaling>"
+    }
+  ],
   "tip": "<1 praktische tip over wanneer/hoe te gebruiken>"
 }
 
 Instructies voor het 'note' veld bij werkwoorden:
 - Als een werkwoord in vervoegde vorm staat (niet de basisvorm), vermeld dan ALTIJD: "Basisvorm: [辞書形] ([romaji]). [1 zin uitleg van de vervoeging, bijv. hoe de て-vorm werkt of wat de ます-vorm betekent]"
 - Voorbeeld: voor 遊んでいます → note: "Basisvorm: 遊ぶ (asobu). て-vorm + います = is momenteel aan het spelen."
-- Geen jargon — zeg 'markeert het onderwerp' i.p.v. 'nominatief'.`;
+- Geen jargon — zeg 'markeert het onderwerp' i.p.v. 'nominatief'.
+
+Instructies voor 'examples':
+- Geef 2 à 3 NIEUWE, natuurlijke voorbeeldzinnen die hetzelfde kerngrammaticapatroon hergebruiken, zodat de gebruiker het patroon herkent.
+- Houd ze kort en praktisch voor reissituaties; varieer de woordenschat t.o.v. de oorspronkelijke zin.
+- Gebruik Arabische cijfers (2, 3…) in de Japanse tekst, niet kanji-cijfers.`;
 
 const ZH_PROMPT = `Je bent een Chinese (Mandarijn) taalleraar voor Nederlandstalige reizigers. Gegeven een Chinese zin (met pinyin en Nederlandse betekenis), leg de grammatica uit in eenvoudig, begrijpelijk Nederlands.
 
@@ -34,13 +46,25 @@ Reageer met ALLEEN geldig JSON — gebruik dezelfde veldnamen als hieronder:
       "note": "<optionele extra tip — zie instructie hieronder>"
     }
   ],
+  "examples": [
+    {
+      "japanese": "<nieuwe voorbeeldzin in Vereenvoudigd Chinees die hetzelfde grammaticapatroon gebruikt>",
+      "romaji": "<pinyin met toonmarkeringen>",
+      "dutch": "<Nederlandse vertaling>"
+    }
+  ],
   "tip": "<1 praktische tip over wanneer/hoe te gebruiken>"
 }
 
 Instructies voor het 'note' veld bij werkwoorden:
 - Als een werkwoord gecombineerd is met aspectdeeltjes (了, 过, 着) of met een resultaatsvervoeging, vermeld dan: "Basisvorm: [karakter(s)] ([pinyin]). [1 zin uitleg van de combinatie]"
 - Voorbeeld: voor 买了 → note: "Basisvorm: 买 (mǎi). 了 geeft aan dat de actie is voltooid."
-- Geen jargon — eenvoudige, toegankelijke uitleg.`;
+- Geen jargon — eenvoudige, toegankelijke uitleg.
+
+Instructies voor 'examples':
+- Geef 2 à 3 NIEUWE, natuurlijke voorbeeldzinnen die hetzelfde kerngrammaticapatroon hergebruiken, zodat de gebruiker het patroon herkent.
+- Houd ze kort en praktisch voor reissituaties; varieer de woordenschat t.o.v. de oorspronkelijke zin.
+- Gebruik Vereenvoudigd Chinees (简体字) en pinyin met correcte toonmarkeringen.`;
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.OPENAI_API_KEY;
@@ -80,7 +104,7 @@ export async function POST(request: NextRequest) {
           { role: "user",   content: userMessage  },
         ],
         temperature: 0.4,
-        max_tokens: 500,
+        max_tokens: 800,
       }),
     });
 

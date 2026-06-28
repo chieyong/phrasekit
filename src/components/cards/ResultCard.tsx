@@ -6,6 +6,8 @@ import { useAudio } from "@/hooks/useAudio";
 import { useUserPhrases, UserCategory } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 import CategoryPicker from "@/components/ui/CategoryPicker";
+import GrammarPanel from "@/components/grammar/GrammarPanel";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { categories } from "@/data/mockData";
 
 interface ResultCardProps {
@@ -24,6 +26,13 @@ export default function ResultCard({
   const { play, audioState } = useAudio();
   const { addPhrase, addCategory, userCategories } = useUserPhrases();
   const { user, signInWithGoogle } = useAuth();
+  const { language } = useLanguage();
+
+  // Grammar follows the active language; fall back to Japanese when the
+  // Chinese translation is absent.
+  const useZh    = language === "zh" && !!result.chineseText;
+  const gPrimary = useZh ? result.chineseText! : result.translatedText;
+  const gRomaji  = useZh ? (result.pinyin ?? "") : result.romaji;
 
   const [showPicker, setShowPicker] = useState(false);
   const [savedTo,    setSavedTo]    = useState<string | null>(null);
@@ -113,6 +122,17 @@ export default function ResultCard({
                 🔊 Afspelen
               </button>
             </div>
+          )}
+
+          {user && (
+            <GrammarPanel
+              key={useZh ? "zh" : "ja"}
+              embedded
+              japanese={gPrimary}
+              romaji={gRomaji}
+              english={result.sourceText}
+              language={useZh ? "zh" : "ja"}
+            />
           )}
         </div>
 
