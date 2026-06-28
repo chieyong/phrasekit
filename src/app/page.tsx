@@ -4,7 +4,7 @@ export const dynamic = "force-dynamic";
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import CategoryCard from "@/components/cards/CategoryCard";
+import CategoryGrid, { GridCategory } from "@/components/cards/CategoryGrid";
 import PhraseCard from "@/components/cards/PhraseCard";
 import InlineTranslator from "@/components/ui/InlineTranslator";
 import CategoryPicker from "@/components/ui/CategoryPicker";
@@ -801,7 +801,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
 }
 
 export default function HomePage() {
-  const { userCategories, userPhrases, staticFavoriteIds, addCategory, getUserPhrasesByCategory } = useUserPhrases();
+  const { userCategories, userPhrases, staticFavoriteIds, categoryOrder, saveCategoryOrder, addCategory, getUserPhrasesByCategory } = useUserPhrases();
   const { user, loading, signInWithGoogle, signOut } = useAuth();
   const { theme, toggle } = useTheme();
   const { language, setLanguage } = useLanguage();
@@ -811,6 +811,7 @@ export default function HomePage() {
   const [showGrammarGroup,     setShowGrammarGroup]     = useState(false);
   const [showGrammarScreen,    setShowGrammarScreen]    = useState(false);
   const [activeTab,            setActiveTab]            = useState<"zinnen" | "verdiepen">("zinnen");
+  const [reordering,           setReordering]           = useState(false);
   const [practiceSelection,    setPracticeSelection]    = useState<string[]>(() => {
     try { return JSON.parse(localStorage.getItem("phrasekit-cat-selection") ?? "[]"); } catch { return []; }
   });
@@ -837,6 +838,13 @@ export default function HomePage() {
     ...categories.map((c) => ({ id: c.id, name: c.name, icon: c.icon })),
     ...userCategories.map((c) => ({ id: c.id, name: c.name, icon: c.icon })),
   ];
+
+  // Situaties-grid gesorteerd op de bewaarde volgorde; nieuwe/onbekende
+  // categorieën vallen terug op de standaardvolgorde (stabiele sort).
+  const orderIndex = new Map(categoryOrder.map((id, i) => [id, i] as const));
+  const gridCategories: GridCategory[] = [...allCategories].sort(
+    (a, b) => (orderIndex.get(a.id) ?? Infinity) - (orderIndex.get(b.id) ?? Infinity)
+  );
 
   const hasScope = practiceSelection.length > 0;
 
@@ -956,7 +964,7 @@ export default function HomePage() {
                   : "text-stone-400 dark:text-stone-500"
               }`}
             >
-              {tab === "zinnen" ? "Zinnen" : "Verdiepen"}
+              {tab === "zinnen" ? "Situaties" : "Verdiepen"}
             </button>
           ))}
         </div>
@@ -966,33 +974,36 @@ export default function HomePage() {
       {activeTab === "zinnen" && (
         <>
           <section className="px-5 mb-8">
-            <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3">
-              Situaties
-            </p>
-            <div className="flex flex-col gap-1.5">
-              {categories.map((cat) => (
-                <CategoryCard key={cat.id} category={cat} />
-              ))}
-              {userCategories.map((cat) => (
-                <Link
-                  key={cat.id}
-                  href={`/category/${cat.id}`}
-                  className="flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity"
-                >
-                  <span className="text-2xl">{cat.icon}</span>
-                  <span className="text-sm font-medium text-stone-800 dark:text-stone-200">{cat.name}</span>
-                </Link>
-              ))}
-              {user && (
+            {user && allCategories.length > 1 && (
+              <div className="flex items-center justify-end mb-2">
                 <button
-                  onClick={() => setShowNewCategory(true)}
-                  className="flex items-center gap-3 bg-white/60 dark:bg-stone-900/60 border border-dashed border-stone-200 dark:border-stone-700 rounded-2xl px-4 py-3.5 active:opacity-70 transition-opacity text-left w-full"
+                  onClick={() => setReordering((v) => !v)}
+                  className={`text-xs font-medium px-3 py-1.5 rounded-lg transition-colors ${
+                    reordering
+                      ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
+                      : "text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300"
+                  }`}
                 >
-                  <span className="w-8 h-8 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center text-stone-400 dark:text-stone-500 text-base shrink-0">+</span>
-                  <span className="text-sm font-medium text-stone-400 dark:text-stone-500">Nieuwe categorie aanmaken</span>
+                  {reordering ? "Klaar" : "↕ Herorden"}
                 </button>
-              )}
-            </div>
+              </div>
+            )}
+
+            <CategoryGrid
+              categories={gridCategories}
+              reordering={reordering}
+              onReorder={saveCategoryOrder}
+            />
+
+            {user && !reordering && (
+              <button
+                onClick={() => setShowNewCategory(true)}
+                className="mt-1.5 flex items-center gap-3 bg-white/60 dark:bg-stone-900/60 border border-dashed border-stone-200 dark:border-stone-700 rounded-2xl px-4 py-3 active:opacity-70 transition-opacity text-left w-full"
+              >
+                <span className="w-7 h-7 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center text-stone-400 dark:text-stone-500 text-base shrink-0">+</span>
+                <span className="text-sm font-medium text-stone-400 dark:text-stone-500">Nieuwe categorie aanmaken</span>
+              </button>
+            )}
           </section>
 
           {opgeslagenZinnen.length > 0 && (

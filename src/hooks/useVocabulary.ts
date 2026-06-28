@@ -10,6 +10,9 @@ export interface VocabWord {
   romaji: string;
   dutch: string;
   type?: "noun" | "verb" | "adjective";
+  // "ai" = door AI voorgesteld ter aanvulling (niet uit de zinnen geëxtraheerd).
+  // Afwezig = uit de zinnen geëxtraheerd (de oorspronkelijke kern).
+  source?: "ai";
 }
 
 export function useVocabulary() {

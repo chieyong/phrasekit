@@ -31,15 +31,17 @@ import { Phrase } from "@/types";
 import InlineTranslator from "@/components/ui/InlineTranslator";
 import AudioButton from "@/components/ui/AudioButton";
 
-// ─── Vocabulary sheet ─────────────────────────────────────────────────────────
+// ─── Vocabulary list (inline) ─────────────────────────────────────────────────
 
-function VocabSheet({ phrases, categoryId, onClose }: { phrases: Phrase[]; categoryId: string; onClose: () => void }) {
+function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; categoryId: string; categoryName: string }) {
   const { getVocab, saveVocab } = useVocabulary();
   const { language } = useLanguage();
-  const [words,  setWords]  = useState<VocabWord[]>([]);
-  const [status, setStatus] = useState<"loading" | "done" | "error">("loading");
+  const [words,     setWords]     = useState<VocabWord[]>([]);
+  const [status,    setStatus]    = useState<"loading" | "done" | "error">("loading");
+  const [expanding, setExpanding] = useState(false);
 
   useEffect(() => {
+    setStatus("loading");
     getVocab(categoryId, language).then((cached) => {
       if (cached) { setWords(cached); setStatus("done"); return; }
 
@@ -51,7 +53,7 @@ function VocabSheet({ phrases, categoryId, onClose }: { phrases: Phrase[]; categ
         )
         .filter(Boolean) as { translatedText: string; romaji: string; sourceText: string }[];
 
-      if (!apiPhrases.length) { setStatus("done"); return; }
+      if (!apiPhrases.length) { setWords([]); setStatus("done"); return; }
 
       fetch("/api/vocabulary", {
         method: "POST",
@@ -70,84 +72,117 @@ function VocabSheet({ phrases, categoryId, onClose }: { phrases: Phrase[]; categ
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language]);
 
-  const handleBackdrop = (e: React.MouseEvent) => {
-    if (e.target === e.currentTarget) onClose();
+  const persist = (next: VocabWord[]) => { setWords(next); saveVocab(categoryId, next, language); };
+
+  const handleRemove = (w: VocabWord) =>
+    persist(words.filter((x) => !(x.japanese === w.japanese && x.dutch === w.dutch)));
+
+  const handleExpand = async () => {
+    if (expanding) return;
+    setExpanding(true);
+    try {
+      const res = await fetch("/api/vocabulary-expand", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          categoryName,
+          existing: words.map((w) => ({ japanese: w.japanese, dutch: w.dutch })),
+          language,
+          count: 10,
+        }),
+      });
+      const data = await res.json();
+      const suggested: VocabWord[] = data.words ?? [];
+      const have = new Set(words.map((w) => w.japanese));
+      const fresh = suggested
+        .filter((w) => w.japanese && !have.has(w.japanese))
+        .map((w) => ({ ...w, source: "ai" as const }));
+      if (fresh.length) persist([...words, ...fresh]);
+    } catch {
+      /* stil falen — lijst blijft staan */
+    } finally {
+      setExpanding(false);
+    }
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
-      <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
+    <div className="px-5 pt-4 pb-8">
+      <p className="text-xs text-stone-400 dark:text-stone-500 mb-3">
+        Sleutelwoorden uit de zinnen in deze categorie
+      </p>
 
-        {/* Handle + sluitknop */}
-        <div className="relative flex items-center justify-center pt-4 pb-1 px-5">
-          <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700" />
-          <button
-            onClick={onClose}
-            className="absolute right-5 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors"
-          >
-            Sluiten
-          </button>
-        </div>
-
-        <div className="px-5 pt-3 pb-2">
-          <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">📚 Woordenlijst</p>
-          <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Sleutelwoorden uit de zinnen in deze categorie</p>
-        </div>
-
-        <div className="px-5 pb-8 overflow-y-auto max-h-[55vh]">
-          {status === "loading" && (
-            <div className="space-y-3 pt-2 animate-pulse">
-              {[...Array(6)].map((_, i) => (
-                <div key={i} className="flex items-center gap-4">
-                  <div className="h-6 bg-stone-100 dark:bg-stone-800 rounded-lg w-24" />
-                  <div className="h-4 bg-stone-100 dark:bg-stone-800 rounded-lg w-16" />
-                  <div className="h-4 bg-stone-100 dark:bg-stone-800 rounded-lg flex-1" />
-                </div>
-              ))}
+      {status === "loading" && (
+        <div className="space-y-3 pt-2 animate-pulse">
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className="flex items-center gap-4">
+              <div className="h-6 bg-stone-100 dark:bg-stone-800 rounded-lg w-24" />
+              <div className="h-4 bg-stone-100 dark:bg-stone-800 rounded-lg w-16" />
+              <div className="h-4 bg-stone-100 dark:bg-stone-800 rounded-lg flex-1" />
             </div>
-          )}
-
-          {status === "error" && (
-            <p className="text-sm text-stone-400 dark:text-stone-500 py-4 text-center">
-              Kon woordenlijst niet laden.
-            </p>
-          )}
-
-          {status === "done" && words.length === 0 && (
-            <p className="text-sm text-stone-400 dark:text-stone-500 py-4 text-center">
-              Geen woorden gevonden.
-            </p>
-          )}
-
-          {status === "done" && words.length > 0 && (() => {
-            const nonVerbs = words.filter((w) => w.type !== "verb");
-            const verbs    = words.filter((w) => w.type === "verb");
-            const renderRow = (w: VocabWord, i: number) => (
-              <div key={i} className="flex items-center gap-4 py-3">
-                <div className="shrink-0 min-w-[80px]">
-                  <p className="text-base font-semibold text-stone-900 dark:text-stone-100">{w.japanese}</p>
-                  <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w.romaji}</p>
-                </div>
-                <p className="text-sm text-stone-500 dark:text-stone-400">{w.dutch}</p>
-              </div>
-            );
-            return (
-              <div className="divide-y divide-stone-100 dark:divide-stone-800">
-                {nonVerbs.map(renderRow)}
-                {verbs.length > 0 && (
-                  <>
-                    <div className="pt-3 pb-1">
-                      <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">Werkwoorden</p>
-                    </div>
-                    {verbs.map(renderRow)}
-                  </>
-                )}
-              </div>
-            );
-          })()}
+          ))}
         </div>
-      </div>
+      )}
+
+      {status === "error" && (
+        <p className="text-sm text-stone-400 dark:text-stone-500 py-4 text-center">
+          Kon woordenlijst niet laden.
+        </p>
+      )}
+
+      {status === "done" && words.length === 0 && (
+        <p className="text-sm text-stone-400 dark:text-stone-500 py-4 text-center">
+          Geen woorden gevonden.
+        </p>
+      )}
+
+      {status === "done" && words.length > 0 && (() => {
+        const nonVerbs = words.filter((w) => w.type !== "verb");
+        const verbs    = words.filter((w) => w.type === "verb");
+        const renderRow = (w: VocabWord, i: number) => (
+          <div key={`${w.japanese}-${i}`} className="group flex items-center gap-4 py-3">
+            <div className="shrink-0 min-w-[80px]">
+              <p className="text-base font-semibold text-stone-900 dark:text-stone-100 flex items-center gap-1">
+                {w.japanese}
+                {w.source === "ai" && <span className="text-[10px]" title="Voorgesteld door AI">✨</span>}
+              </p>
+              <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w.romaji}</p>
+            </div>
+            <p className="flex-1 text-sm text-stone-500 dark:text-stone-400">{w.dutch}</p>
+            <button
+              onClick={() => handleRemove(w)}
+              aria-label={`Verwijder ${w.dutch}`}
+              className="shrink-0 w-7 h-7 flex items-center justify-center text-stone-300 dark:text-stone-600 hover:text-red-400 transition-colors text-xs"
+            >
+              ✕
+            </button>
+          </div>
+        );
+        return (
+          <div className="divide-y divide-stone-100 dark:divide-stone-800">
+            {nonVerbs.map(renderRow)}
+            {verbs.length > 0 && (
+              <>
+                <div className="pt-3 pb-1">
+                  <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">Werkwoorden</p>
+                </div>
+                {verbs.map(renderRow)}
+              </>
+            )}
+          </div>
+        );
+      })()}
+
+      {status === "done" && (
+        <button
+          onClick={handleExpand}
+          disabled={expanding}
+          className="w-full mt-5 py-3 bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50"
+        >
+          {expanding
+            ? <><span className="w-3.5 h-3.5 rounded-full border-2 border-stone-300 dark:border-stone-600 border-t-stone-600 dark:border-t-stone-300 animate-spin" /><span>Woorden zoeken…</span></>
+            : <><span>✨</span><span>Aanvullen met AI (+10)</span></>}
+        </button>
+      )}
     </div>
   );
 }
@@ -365,7 +400,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const [editMode,      setEditMode]      = useState(false);
   const [hiding,        setHiding]        = useState<string | null>(null);
   const [oefenModus,    setOefenModus]    = useState(false);
-  const [showVocab,     setShowVocab]     = useState(false);
+  const [view,          setView]          = useState<"zinnen" | "woorden">("zinnen");
   const [grammarGroups, setGrammarGroups] = useState<{ groep: string; zinIds: string[] }[] | null>(null);
   const [activeGroep,   setActiveGroep]   = useState<string | null>(null);
   const [groupLoading,  setGroupLoading]  = useState(false);
@@ -467,6 +502,32 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
       <div className="px-5 pt-4 pb-3">
         <InlineTranslator defaultCategoryId={id} categoryName={category.name} />
       </div>
+
+      {/* ── Zinnen / Woorden toggle ───────────────────────────────── */}
+      {alleZinnen.length > 0 && !editMode && (
+        <div className="px-5 pb-1">
+          <div className="flex gap-1 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
+            {(["zinnen", "woorden"] as const).map((v) => (
+              <button
+                key={v}
+                onClick={() => setView(v)}
+                className={`flex-1 py-2 rounded-lg text-xs font-semibold transition-all ${
+                  view === v
+                    ? "bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100 shadow-sm"
+                    : "text-stone-400 dark:text-stone-500"
+                }`}
+              >
+                {v === "zinnen" ? "Zinnen" : "Woorden"}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {view === "woorden" && alleZinnen.length > 0 ? (
+        <VocabList phrases={alleZinnen} categoryId={id} categoryName={category.name} />
+      ) : (
+      <>
 
       {/* ── Zoekbalk + Bewerk-knop ────────────────────────────────── */}
       <div className="px-5 pb-2 flex items-center gap-2">
@@ -592,13 +653,6 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
             <span>Oefenen met flashcards</span>
           </button>
           <button
-            onClick={() => setShowVocab(true)}
-            className="w-full py-3.5 bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2"
-          >
-            <span>📚</span>
-            <span>Woordenlijst</span>
-          </button>
-          <button
             onClick={handleGroepeerGrammatica}
             disabled={groupLoading}
             className={`w-full py-3.5 rounded-2xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${
@@ -613,6 +667,9 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
             </span>
           </button>
         </div>
+      )}
+
+      </>
       )}
 
       {/* Verwijder categorie */}
@@ -633,15 +690,6 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         <FlashcardModal
           phrases={alleZinnen}
           onClose={() => setOefenModus(false)}
-        />
-      )}
-
-      {/* ── Woordenlijst overlay ──────────────────────────────────── */}
-      {showVocab && (
-        <VocabSheet
-          phrases={alleZinnen}
-          categoryId={id}
-          onClose={() => setShowVocab(false)}
         />
       )}
     </div>

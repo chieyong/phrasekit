@@ -57,6 +57,7 @@ export function useUserPhrases() {
   const [userCategories,        setUserCategories]        = useState<UserCategory[]>([]);
   const [staticFavoriteIds,     setStaticFavoriteIds]     = useState<string[]>([]);
   const [hiddenStaticPhraseIds, setHiddenStaticPhraseIds] = useState<string[]>([]);
+  const [categoryOrder,         setCategoryOrder]         = useState<string[]>([]);
   // loading stays true until the first Firestore snapshot arrives
   const [loading, setLoading] = useState(true);
 
@@ -64,6 +65,7 @@ export function useUserPhrases() {
     if (!user) {
       setUserPhrases([]);
       setUserCategories([]);
+      setCategoryOrder([]);
       setLoading(false);
       return;
     }
@@ -74,6 +76,7 @@ export function useUserPhrases() {
     const categoriesRef = collection(db, "users", user.uid, "categories");
     const metaRef       = doc(db, "users", user.uid, "meta", "favorites");
     const hiddenRef     = doc(db, "users", user.uid, "meta", "hidden");
+    const prefsRef      = doc(db, "users", user.uid, "meta", "categoryPrefs");
 
     let phrasesReady = false;
     let catsReady    = false;
@@ -102,11 +105,16 @@ export function useUserPhrases() {
       setHiddenStaticPhraseIds((snap.data()?.ids as string[]) ?? []);
     });
 
+    const unsubPrefs = onSnapshot(prefsRef, (snap) => {
+      setCategoryOrder((snap.data()?.order as string[]) ?? []);
+    });
+
     return () => {
       unsubPhrases();
       unsubCats();
       unsubMeta();
       unsubHidden();
+      unsubPrefs();
     };
   }, [user]);
 
@@ -244,11 +252,22 @@ export function useUserPhrases() {
       .filter((p) => p.categoryId === categoryId)
       .sort((a, b) => (a.sortOrder ?? Infinity) - (b.sortOrder ?? Infinity));
 
+  const saveCategoryOrder = async (orderedIds: string[]): Promise<void> => {
+    if (!user) return;
+    await setDoc(
+      doc(db, "users", user.uid, "meta", "categoryPrefs"),
+      { order: orderedIds },
+      { merge: true }
+    );
+  };
+
   return {
     userPhrases,
     userCategories,
     staticFavoriteIds,
     hiddenStaticPhraseIds,
+    categoryOrder,
+    saveCategoryOrder,
     loading,
     addPhrase,
     addCategory,
