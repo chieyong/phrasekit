@@ -10,6 +10,7 @@ Reageer met ALLEEN geldig JSON:
     {
       "japanese": "<één woord of partikel zoals het in de zin staat>",
       "romaji": "<romanisering>",
+      "meaning": "<Nederlandse betekenis/vertaling van dit woord; weglaten bij betekenisloze partikels>",
       "role": "<grammaticale functie, bijv. 'onderwerpmarkeerder', 'beleefde afsluiting'>",
       "note": "<optionele extra tip — zie instructie hieronder>"
     }
@@ -35,6 +36,8 @@ Reageer met ALLEEN geldig JSON:
 Instructies voor 'parts' (de opbouw):
 - Splits de zin op in de KLEINST mogelijke betekenisvolle eenheden: elk inhoudswoord én elk partikel apart (bijv. 今日 / の / 午後 / に / 運動 / しよう). Voeg ze NIET samen tot grote brokken.
 - Houd vaste grammaticale uitdrukkingen wel als één eenheid bij elkaar (bijv. と思っています).
+- Geef bij ELK inhoudswoord de Nederlandse vertaling in 'meaning' (bijv. 週 → "week", 月曜日 → "maandag"). Bij betekenisloze partikels (は, の, を, に) mag 'meaning' weg.
+- Neem GEEN leestekens of scheidingstekens op als losse eenheid (、 。 「 」 ・ ! ?). Alleen woorden en partikels.
 
 Instructies voor het 'note' veld bij werkwoorden:
 - Als een werkwoord in vervoegde vorm staat (niet de basisvorm), vermeld dan ALTIJD: "Basisvorm: [辞書形] ([romaji]). [1 zin uitleg van de vervoeging, bijv. hoe de て-vorm werkt of wat de ます-vorm betekent]"
@@ -60,6 +63,7 @@ Reageer met ALLEEN geldig JSON — gebruik dezelfde veldnamen als hieronder:
     {
       "japanese": "<één woord of karakter(s) zoals het in de zin staat>",
       "romaji": "<pinyin>",
+      "meaning": "<Nederlandse betekenis/vertaling van dit woord; weglaten bij betekenisloze structuurwoorden>",
       "role": "<grammaticale functie, bijv. 'onderwerp', 'werkwoord', 'aanwijzend voornaamwoord'>",
       "note": "<optionele extra tip — zie instructie hieronder>"
     }
@@ -85,6 +89,8 @@ Reageer met ALLEEN geldig JSON — gebruik dezelfde veldnamen als hieronder:
 Instructies voor 'parts' (de opbouw):
 - Splits de zin op in de KLEINST mogelijke betekenisvolle eenheden: elk inhoudswoord én elk structuurwoord/partikel apart. Voeg ze NIET samen tot grote brokken.
 - Houd vaste grammaticale uitdrukkingen wel als één eenheid bij elkaar.
+- Geef bij ELK inhoudswoord de Nederlandse vertaling in 'meaning'. Bij betekenisloze structuurwoorden (的, 了, 是) mag 'meaning' weg.
+- Neem GEEN leestekens of scheidingstekens op als losse eenheid (， 。 、 ！ ？). Alleen woorden en structuurwoorden.
 
 Instructies voor het 'note' veld bij werkwoorden:
 - Als een werkwoord gecombineerd is met aspectdeeltjes (了, 过, 着) of met een resultaatsvervoeging, vermeld dan: "Basisvorm: [karakter(s)] ([pinyin]). [1 zin uitleg van de combinatie]"

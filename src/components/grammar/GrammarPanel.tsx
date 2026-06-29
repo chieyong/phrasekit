@@ -143,7 +143,14 @@ export default function GrammarPanel({
                         <p className="text-[10px] text-stone-400 dark:text-stone-500">{part.romaji}</p>
                       </div>
                       <div className="mt-0.5">
-                        <p className="text-sm text-stone-600 dark:text-stone-400">{part.role}</p>
+                        {part.meaning ? (
+                          <p className="text-sm text-stone-700 dark:text-stone-300">
+                            <span className="font-medium">{part.meaning}</span>
+                            <span className="text-stone-400 dark:text-stone-500"> · {part.role}</span>
+                          </p>
+                        ) : (
+                          <p className="text-sm text-stone-600 dark:text-stone-400">{part.role}</p>
+                        )}
                         {part.note && (
                           <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">{part.note}</p>
                         )}
