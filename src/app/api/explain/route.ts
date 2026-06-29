@@ -4,15 +4,17 @@ const JA_PROMPT = `Je bent een Japanse taalleraar voor Nederlandstalige reiziger
 
 Reageer met ALLEEN geldig JSON:
 {
-  "summary": "<1 zin overzicht van de grammatica>",
+  "summary": "<1 korte zin: welke grammaticale structuur de zin gebruikt>",
+  "meaning": "<natuurlijke Nederlandse parafrase van wat de zin betekent (1 zin)>",
   "parts": [
     {
-      "japanese": "<woord of partikel zoals het in de zin staat>",
+      "japanese": "<één woord of partikel zoals het in de zin staat>",
       "romaji": "<romanisering>",
       "role": "<grammaticale functie, bijv. 'onderwerpmarkeerder', 'beleefde afsluiting'>",
       "note": "<optionele extra tip — zie instructie hieronder>"
     }
   ],
+  "synthesis": "<1 zin die de kernstructuur samenvat, bijv. 'Samen geeft ～しようと思っています aan dat je een voornemen of plan hebt'>",
   "examples": [
     {
       "japanese": "<nieuwe voorbeeldzin in kanji/kana die hetzelfde grammaticapatroon gebruikt>",
@@ -20,8 +22,19 @@ Reageer met ALLEEN geldig JSON:
       "dutch": "<Nederlandse vertaling>"
     }
   ],
+  "responses": [
+    {
+      "japanese": "<natuurlijke reactiezin in kanji/kana>",
+      "romaji": "<romanisering>",
+      "dutch": "<Nederlandse vertaling>"
+    }
+  ],
   "tip": "<1 praktische tip over wanneer/hoe te gebruiken>"
 }
+
+Instructies voor 'parts' (de opbouw):
+- Splits de zin op in de KLEINST mogelijke betekenisvolle eenheden: elk inhoudswoord én elk partikel apart (bijv. 今日 / の / 午後 / に / 運動 / しよう). Voeg ze NIET samen tot grote brokken.
+- Houd vaste grammaticale uitdrukkingen wel als één eenheid bij elkaar (bijv. と思っています).
 
 Instructies voor het 'note' veld bij werkwoorden:
 - Als een werkwoord in vervoegde vorm staat (niet de basisvorm), vermeld dan ALTIJD: "Basisvorm: [辞書形] ([romaji]). [1 zin uitleg van de vervoeging, bijv. hoe de て-vorm werkt of wat de ます-vorm betekent]"
@@ -31,21 +44,27 @@ Instructies voor het 'note' veld bij werkwoorden:
 Instructies voor 'examples':
 - Geef 2 à 3 NIEUWE, natuurlijke voorbeeldzinnen die hetzelfde kerngrammaticapatroon hergebruiken, zodat de gebruiker het patroon herkent.
 - Houd ze kort en praktisch voor reissituaties; varieer de woordenschat t.o.v. de oorspronkelijke zin.
-- Gebruik Arabische cijfers (2, 3…) in de Japanse tekst, niet kanji-cijfers.`;
+- Gebruik Arabische cijfers (2, 3…) in de Japanse tekst, niet kanji-cijfers.
+
+Instructies voor 'responses' (mogelijke reactie):
+- Geef 2 à 3 natuurlijke zinnen waarmee een gesprekspartner op deze zin zou kunnen reageren (bijv. instemming, aanmoediging, of een wedervraag).
+- Kort en spreektalig; gebruik Arabische cijfers in de Japanse tekst.`;
 
 const ZH_PROMPT = `Je bent een Chinese (Mandarijn) taalleraar voor Nederlandstalige reizigers. Gegeven een Chinese zin (met pinyin en Nederlandse betekenis), leg de grammatica uit in eenvoudig, begrijpelijk Nederlands.
 
 Reageer met ALLEEN geldig JSON — gebruik dezelfde veldnamen als hieronder:
 {
-  "summary": "<1 zin overzicht van de grammatica>",
+  "summary": "<1 korte zin: welke grammaticale structuur de zin gebruikt>",
+  "meaning": "<natuurlijke Nederlandse parafrase van wat de zin betekent (1 zin)>",
   "parts": [
     {
-      "japanese": "<woord of karakter(s) zoals het in de zin staat>",
+      "japanese": "<één woord of karakter(s) zoals het in de zin staat>",
       "romaji": "<pinyin>",
       "role": "<grammaticale functie, bijv. 'onderwerp', 'werkwoord', 'aanwijzend voornaamwoord'>",
       "note": "<optionele extra tip — zie instructie hieronder>"
     }
   ],
+  "synthesis": "<1 zin die de kernstructuur samenvat>",
   "examples": [
     {
       "japanese": "<nieuwe voorbeeldzin in Vereenvoudigd Chinees die hetzelfde grammaticapatroon gebruikt>",
@@ -53,8 +72,19 @@ Reageer met ALLEEN geldig JSON — gebruik dezelfde veldnamen als hieronder:
       "dutch": "<Nederlandse vertaling>"
     }
   ],
+  "responses": [
+    {
+      "japanese": "<natuurlijke reactiezin in Vereenvoudigd Chinees>",
+      "romaji": "<pinyin met toonmarkeringen>",
+      "dutch": "<Nederlandse vertaling>"
+    }
+  ],
   "tip": "<1 praktische tip over wanneer/hoe te gebruiken>"
 }
+
+Instructies voor 'parts' (de opbouw):
+- Splits de zin op in de KLEINST mogelijke betekenisvolle eenheden: elk inhoudswoord én elk structuurwoord/partikel apart. Voeg ze NIET samen tot grote brokken.
+- Houd vaste grammaticale uitdrukkingen wel als één eenheid bij elkaar.
 
 Instructies voor het 'note' veld bij werkwoorden:
 - Als een werkwoord gecombineerd is met aspectdeeltjes (了, 过, 着) of met een resultaatsvervoeging, vermeld dan: "Basisvorm: [karakter(s)] ([pinyin]). [1 zin uitleg van de combinatie]"
@@ -64,7 +94,11 @@ Instructies voor het 'note' veld bij werkwoorden:
 Instructies voor 'examples':
 - Geef 2 à 3 NIEUWE, natuurlijke voorbeeldzinnen die hetzelfde kerngrammaticapatroon hergebruiken, zodat de gebruiker het patroon herkent.
 - Houd ze kort en praktisch voor reissituaties; varieer de woordenschat t.o.v. de oorspronkelijke zin.
-- Gebruik Vereenvoudigd Chinees (简体字) en pinyin met correcte toonmarkeringen.`;
+- Gebruik Vereenvoudigd Chinees (简体字) en pinyin met correcte toonmarkeringen.
+
+Instructies voor 'responses' (mogelijke reactie):
+- Geef 2 à 3 natuurlijke zinnen waarmee een gesprekspartner op deze zin zou kunnen reageren (instemming, aanmoediging of wedervraag).
+- Kort en spreektalig; Vereenvoudigd Chinees.`;
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.OPENAI_API_KEY;
@@ -104,7 +138,7 @@ export async function POST(request: NextRequest) {
           { role: "user",   content: userMessage  },
         ],
         temperature: 0.4,
-        max_tokens: 800,
+        max_tokens: 1200,
       }),
     });
 

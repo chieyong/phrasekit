@@ -124,23 +124,38 @@ export default function GrammarPanel({
           <div className="space-y-3">
             <p className="text-sm text-stone-700 dark:text-stone-300 leading-relaxed">{result.summary}</p>
 
+            {result.meaning && (
+              <p className="text-sm text-stone-600 dark:text-stone-300 leading-relaxed border-l-2 border-stone-200 dark:border-stone-600 pl-3 italic">
+                {result.meaning}
+              </p>
+            )}
+
             {result.parts.length > 0 && (
-              <div className="flex flex-col gap-2">
-                {result.parts.map((part, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="bg-stone-50 dark:bg-stone-800 rounded-lg px-2.5 py-1 shrink-0 min-w-[60px]">
-                      <p className="text-sm font-semibold text-stone-800 dark:text-stone-200">{part.japanese}</p>
-                      <p className="text-[10px] text-stone-400 dark:text-stone-500">{part.romaji}</p>
+              <div className="border-t border-stone-100 dark:border-stone-700 pt-3">
+                <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">
+                  Opbouw
+                </p>
+                <div className="flex flex-col gap-2">
+                  {result.parts.map((part, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <div className="bg-stone-50 dark:bg-stone-800 rounded-lg px-2.5 py-1 shrink-0 min-w-[60px]">
+                        <p className="text-sm font-semibold text-stone-800 dark:text-stone-200">{part.japanese}</p>
+                        <p className="text-[10px] text-stone-400 dark:text-stone-500">{part.romaji}</p>
+                      </div>
+                      <div className="mt-0.5">
+                        <p className="text-sm text-stone-600 dark:text-stone-400">{part.role}</p>
+                        {part.note && (
+                          <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">{part.note}</p>
+                        )}
+                      </div>
                     </div>
-                    <div className="mt-0.5">
-                      <p className="text-sm text-stone-600 dark:text-stone-400">{part.role}</p>
-                      {part.note && (
-                        <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">{part.note}</p>
-                      )}
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
+            )}
+
+            {result.synthesis && (
+              <p className="text-sm text-stone-600 dark:text-stone-300 leading-relaxed">{result.synthesis}</p>
             )}
 
             {result.examples && result.examples.length > 0 && (
@@ -157,6 +172,26 @@ export default function GrammarPanel({
                       </div>
                       <p className="text-xs text-stone-400 dark:text-stone-500 italic mt-0.5">{ex.romaji}</p>
                       <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">{ex.dutch}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {result.responses && result.responses.length > 0 && (
+              <div className="border-t border-stone-100 dark:border-stone-700 pt-3">
+                <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">
+                  Mogelijke reactie
+                </p>
+                <div className="flex flex-col gap-2">
+                  {result.responses.map((r, i) => (
+                    <div key={i} className="bg-stone-50 dark:bg-stone-800/60 rounded-xl px-3 py-2.5">
+                      <div className="flex items-start justify-between gap-2">
+                        <p className="text-sm font-semibold text-stone-800 dark:text-stone-200 leading-snug">{r.japanese}</p>
+                        <AudioButton text={r.japanese} className="shrink-0" />
+                      </div>
+                      <p className="text-xs text-stone-400 dark:text-stone-500 italic mt-0.5">{r.romaji}</p>
+                      <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">{r.dutch}</p>
                     </div>
                   ))}
                 </div>
