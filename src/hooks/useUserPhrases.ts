@@ -189,6 +189,11 @@ export function useUserPhrases() {
     await deleteDoc(doc(db, "users", user.uid, "categories", id));
   };
 
+  const updateCategory = async (id: string, updates: { name?: string; icon?: string }): Promise<void> => {
+    if (!user) throw new Error("Niet ingelogd");
+    await updateDoc(doc(db, "users", user.uid, "categories", id), updates);
+  };
+
   const toggleUserFavorite = async (id: string): Promise<void> => {
     if (!user) throw new Error("Niet ingelogd");
     const phrase = userPhrases.find((p) => p.id === id);
@@ -271,6 +276,7 @@ export function useUserPhrases() {
     loading,
     addPhrase,
     addCategory,
+    updateCategory,
     deletePhrase,
     movePhrase,
     deleteCategory,

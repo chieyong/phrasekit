@@ -103,6 +103,18 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
     setTimeout(() => setCardIndex((i) => Math.min(Math.max(i + delta, 0), words.length - 1)), 50);
   };
 
+  // Swipe links = volgende, rechts = vorige. Een swipe onderdrukt de tik-flip.
+  const touchStartX = useRef<number | null>(null);
+  const didSwipe    = useRef(false);
+  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; didSwipe.current = false; };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    touchStartX.current = null;
+    if (Math.abs(dx) > 50) { didSwipe.current = true; if (dx < 0) go(1); else go(-1); }
+  };
+  const onCardClick = () => { if (didSwipe.current) { didSwipe.current = false; return; } setFlipped((v) => !v); };
+
   const handleBackdrop = (e: React.MouseEvent) => { if (e.target === e.currentTarget) onClose(); };
 
   // ── Select screen ──────────────────────────────────────────────────────────
@@ -202,7 +214,9 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
       <div className="flex-1 flex items-center justify-center px-6">
         <div className="w-full max-w-sm" style={{ perspective: "1200px" }}>
           <div
-            onClick={() => setFlipped((v) => !v)}
+            onClick={onCardClick}
+            onTouchStart={onTouchStart}
+            onTouchEnd={onTouchEnd}
             style={{
               transformStyle: "preserve-3d",
               transform:      flipped ? "rotateY(180deg)" : "rotateY(0deg)",
@@ -219,18 +233,13 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
               <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">Tik om te draaien</p>
             </div>
             {/* Achterkant — Japans */}
-            <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-stone-900 dark:bg-stone-800 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-              <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-6">{language === "zh" ? "Chinees" : "Japans"}</p>
-              <p className="text-4xl font-bold text-white leading-tight mb-2">{word.japanese}</p>
-              <p className="text-base text-stone-400 italic mb-4">{word.romaji}</p>
-              <AudioButton text={word.japanese} className="bg-stone-800 hover:bg-stone-700 text-stone-300" />
+            <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-6">{language === "zh" ? "Chinees" : "Japans"}</p>
+              <p className="text-4xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">{word.japanese}</p>
+              <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{word.romaji}</p>
+              <AudioButton text={word.japanese} />
             </div>
           </div>
-          {flipped && cardIndex < words.length - 1 && (
-            <div className="flex justify-end mt-3 pr-1">
-              <button onClick={() => go(1)} className="w-9 h-9 rounded-full bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400 shadow-sm flex items-center justify-center active:scale-95 transition-all" aria-label="Volgende">→</button>
-            </div>
-          )}
         </div>
       </div>
 
@@ -571,6 +580,18 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
     setTimeout(() => setCardIndex((i) => Math.min(Math.max(i + delta, 0), sentences.length - 1)), 50);
   };
 
+  // Swipe links = volgende, rechts = vorige. Een swipe onderdrukt de tik-flip.
+  const touchStartX = useRef<number | null>(null);
+  const didSwipe    = useRef(false);
+  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; didSwipe.current = false; };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    touchStartX.current = null;
+    if (Math.abs(dx) > 50) { didSwipe.current = true; if (dx < 0) go(1); else go(-1); }
+  };
+  const onCardClick = () => { if (didSwipe.current) { didSwipe.current = false; return; } setFlipped((v) => !v); };
+
   const handleBackdrop = (e: React.MouseEvent) => { if (e.target === e.currentTarget) onClose(); };
 
   // ── Select screen ──────────────────────────────────────────────────────────
@@ -721,24 +742,19 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
       {/* Card */}
       <div className="flex-1 flex items-center justify-center px-6">
         <div className="w-full max-w-sm" style={{ perspective: "1200px" }}>
-          <div onClick={() => setFlipped((v) => !v)} style={{ transformStyle: "preserve-3d", transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)", transition: "transform 0.45s cubic-bezier(0.4,0,0.2,1)", position: "relative", height: "280px", cursor: "pointer" }}>
+          <div onClick={onCardClick} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd} style={{ transformStyle: "preserve-3d", transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)", transition: "transform 0.45s cubic-bezier(0.4,0,0.2,1)", position: "relative", height: "280px", cursor: "pointer" }}>
             <div style={{ backfaceVisibility: "hidden" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
               <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-5">{language === "zh" ? "Hoe zeg je dit in het Chinees?" : "Hoe zeg je dit in het Japans?"}</p>
               <p className="text-xl font-semibold text-stone-900 dark:text-stone-100 leading-snug">{sentence.dutch}</p>
               <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">Tik om het antwoord te zien</p>
             </div>
-            <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-stone-900 dark:bg-stone-800 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-              <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-5">{language === "zh" ? "Chinees" : "Japans"}</p>
-              <p className="text-3xl font-bold text-white leading-tight mb-2">{sentence.japanese}</p>
-              <p className="text-base text-stone-400 italic mb-4">{sentence.romaji}</p>
-              <AudioButton text={sentence.japanese} className="bg-stone-800 hover:bg-stone-700 text-stone-300" />
+            <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-5">{language === "zh" ? "Chinees" : "Japans"}</p>
+              <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">{sentence.japanese}</p>
+              <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{sentence.romaji}</p>
+              <AudioButton text={sentence.japanese} />
             </div>
           </div>
-          {flipped && cardIndex < sentences.length - 1 && (
-            <div className="flex justify-end mt-3 pr-1">
-              <button onClick={() => go(1)} className="w-9 h-9 rounded-full bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400 shadow-sm flex items-center justify-center active:scale-95 transition-all" aria-label="Volgende">→</button>
-            </div>
-          )}
         </div>
       </div>
 

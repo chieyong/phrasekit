@@ -2,7 +2,7 @@
 
 export const dynamic = "force-dynamic";
 
-import { use, useState, useEffect } from "react";
+import { use, useState, useEffect, useRef } from "react";
 import { notFound, useRouter } from "next/navigation";
 import {
   DndContext,
@@ -24,6 +24,7 @@ import Header from "@/components/layout/Header";
 import PhraseCard from "@/components/cards/PhraseCard";
 import { getCategoryById, getPhrasesByCategory } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
+import CategoryPicker from "@/components/ui/CategoryPicker";
 import { useAudio } from "@/hooks/useAudio";
 import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -33,12 +34,26 @@ import AudioButton from "@/components/ui/AudioButton";
 
 // ─── Vocabulary list (inline) ─────────────────────────────────────────────────
 
+const LIST_PRESETS: { label: string; theme: string }[] = [
+  { label: "Cijfers 1–10", theme: "de cijfers 1 tot en met 10" },
+  { label: "Cijfers 1–20", theme: "de cijfers 1 tot en met 20" },
+  { label: "Maanden",      theme: "alle maanden van het jaar" },
+  { label: "Dagen",        theme: "alle dagen van de week" },
+  { label: "Kleuren",      theme: "de meest voorkomende kleuren" },
+  { label: "Tijd",         theme: "tijdsaanduidingen en de uren van de klok" },
+  { label: "Familie",      theme: "familieleden" },
+];
+
 function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; categoryId: string; categoryName: string }) {
   const { getVocab, saveVocab } = useVocabulary();
   const { language } = useLanguage();
   const [words,     setWords]     = useState<VocabWord[]>([]);
   const [status,    setStatus]    = useState<"loading" | "done" | "error">("loading");
   const [expanding, setExpanding] = useState(false);
+  const [showList,       setShowList]       = useState(false);
+  const [listTheme,      setListTheme]      = useState("");
+  const [generatingList, setGeneratingList] = useState(false);
+  const [regenerating,   setRegenerating]   = useState(false);
 
   useEffect(() => {
     setStatus("loading");
@@ -74,6 +89,36 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
 
   const persist = (next: VocabWord[]) => { setWords(next); saveVocab(categoryId, next, language); };
 
+  const handleRegenerate = async () => {
+    if (regenerating) return;
+    setRegenerating(true);
+    try {
+      const apiPhrases = phrases
+        .map((p) => language === "zh"
+          ? (p.chineseText ? { translatedText: p.chineseText, romaji: p.pinyin ?? "", sourceText: p.sourceText } : null)
+          : { translatedText: p.translatedText, romaji: p.romaji, sourceText: p.sourceText }
+        )
+        .filter(Boolean) as { translatedText: string; romaji: string; sourceText: string }[];
+      if (!apiPhrases.length) return;
+
+      const res = await fetch("/api/vocabulary", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ phrases: apiPhrases, language }),
+      });
+      const data = await res.json();
+      const extracted: VocabWord[] = data.words ?? [];
+      // Vervang de uit-zinnen geëxtraheerde set, maar bewaar AI-aanvullingen.
+      const have   = new Set(extracted.map((w) => w.japanese));
+      const keptAi = words.filter((w) => w.source === "ai" && !have.has(w.japanese));
+      persist([...extracted, ...keptAi]);
+    } catch {
+      /* stil falen — lijst blijft staan */
+    } finally {
+      setRegenerating(false);
+    }
+  };
+
   const handleRemove = (w: VocabWord) =>
     persist(words.filter((x) => !(x.japanese === w.japanese && x.dutch === w.dutch)));
 
@@ -105,11 +150,52 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
     }
   };
 
+  const handleGenerateList = async (theme: string) => {
+    const t = theme.trim();
+    if (!t || generatingList) return;
+    setGeneratingList(true);
+    try {
+      const res = await fetch("/api/vocabulary-list", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          theme: t,
+          existing: words.map((w) => ({ japanese: w.japanese, dutch: w.dutch })),
+          language,
+        }),
+      });
+      const data = await res.json();
+      const generated: VocabWord[] = data.words ?? [];
+      const have = new Set(words.map((w) => w.japanese));
+      const fresh = generated
+        .filter((w) => w.japanese && !have.has(w.japanese))
+        .map((w) => ({ ...w, source: "ai" as const }));
+      if (fresh.length) persist([...words, ...fresh]);
+      setShowList(false);
+      setListTheme("");
+    } catch {
+      /* stil falen */
+    } finally {
+      setGeneratingList(false);
+    }
+  };
+
   return (
     <div className="px-5 pt-4 pb-8">
-      <p className="text-xs text-stone-400 dark:text-stone-500 mb-3">
-        Sleutelwoorden uit de zinnen in deze categorie
-      </p>
+      <div className="flex items-center justify-between mb-3">
+        <p className="text-xs text-stone-400 dark:text-stone-500">
+          Sleutelwoorden uit de zinnen in deze categorie
+        </p>
+        {status === "done" && (
+          <button
+            onClick={handleRegenerate}
+            disabled={regenerating}
+            className="shrink-0 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors disabled:opacity-50"
+          >
+            {regenerating ? "…" : "↻ Opnieuw"}
+          </button>
+        )}
+      </div>
 
       {status === "loading" && (
         <div className="space-y-3 pt-2 animate-pulse">
@@ -183,6 +269,58 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
             : <><span>✨</span><span>Aanvullen met AI (+10)</span></>}
         </button>
       )}
+
+      {status === "done" && (
+        <div className="mt-2">
+          <button
+            onClick={() => setShowList((v) => !v)}
+            className="w-full py-3 bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2"
+          >
+            <span>{showList ? "▲" : "➕"}</span><span>Lijst toevoegen</span>
+          </button>
+
+          {showList && (
+            <div className="mt-2 bg-stone-50 dark:bg-stone-800/60 rounded-2xl p-3">
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">Kant-en-klaar</p>
+              <div className="flex flex-wrap gap-1.5 mb-3">
+                {LIST_PRESETS.map((p) => (
+                  <button
+                    key={p.label}
+                    onClick={() => handleGenerateList(p.theme)}
+                    disabled={generatingList}
+                    className="px-2.5 py-1.5 rounded-full bg-white dark:bg-stone-800 text-xs font-medium text-stone-600 dark:text-stone-300 shadow-sm active:scale-95 transition-all disabled:opacity-50"
+                  >
+                    {p.label}
+                  </button>
+                ))}
+              </div>
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">Eigen thema</p>
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  value={listTheme}
+                  onChange={(e) => setListTheme(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && handleGenerateList(listTheme)}
+                  placeholder="bijv. lichaamsdelen, in het restaurant…"
+                  disabled={generatingList}
+                  className="flex-1 bg-white dark:bg-stone-800 rounded-xl px-3 py-2.5 text-xs text-stone-700 dark:text-stone-300 placeholder:text-stone-300 dark:placeholder:text-stone-600 outline-none disabled:opacity-50"
+                />
+                <button
+                  onClick={() => handleGenerateList(listTheme)}
+                  disabled={generatingList || !listTheme.trim()}
+                  className="w-9 h-9 flex items-center justify-center rounded-xl bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 text-sm disabled:opacity-30 active:scale-95 transition-all shrink-0"
+                  aria-label="Genereer lijst"
+                >
+                  {generatingList ? "…" : "→"}
+                </button>
+              </div>
+              {generatingList && (
+                <p className="text-xs text-stone-400 dark:text-stone-500 mt-2 text-center">Lijst genereren…</p>
+              )}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
@@ -207,6 +345,18 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
     setIndex(0);
     setFlipped(false);
   };
+
+  // Swipe links = volgende, rechts = vorige. Een swipe onderdrukt de tik-flip.
+  const touchStartX = useRef<number | null>(null);
+  const didSwipe    = useRef(false);
+  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; didSwipe.current = false; };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    touchStartX.current = null;
+    if (Math.abs(dx) > 50) { didSwipe.current = true; if (dx < 0) go(1); else go(-1); }
+  };
+  const onCardClick = () => { if (didSwipe.current) { didSwipe.current = false; return; } setFlipped((v) => !v); };
 
   if (!phrase) return null;
 
@@ -240,7 +390,9 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
       <div className="flex-1 flex items-center justify-center px-6">
         <div className="w-full max-w-sm" style={{ perspective: "1200px" }}>
           <div
-            onClick={() => setFlipped((v) => !v)}
+            onClick={onCardClick}
+            onTouchStart={onTouchStart}
+            onTouchEnd={onTouchEnd}
             style={{
               transformStyle:  "preserve-3d",
               transform:       flipped ? "rotateY(180deg)" : "rotateY(0deg)",
@@ -270,27 +422,22 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
                 backfaceVisibility: "hidden",
                 transform:          "rotateY(180deg)",
               }}
-              className="absolute inset-0 bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none"
+              className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none"
             >
-              <p className="text-[10px] font-semibold text-stone-500 uppercase tracking-widest mb-6">
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-6">
                 Japans
               </p>
-              <p className="text-3xl font-bold text-white leading-tight mb-3">
+              <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-3">
                 {phrase.translatedText}
               </p>
-              <p className="text-base text-stone-400 italic">
+              <p className="text-base text-stone-400 dark:text-stone-500 italic">
                 {phrase.romaji}
               </p>
               <div className="mt-6">
-                <AudioButton text={phrase.translatedText} className="bg-stone-800 hover:bg-stone-700 text-stone-400" />
+                <AudioButton text={phrase.translatedText} />
               </div>
             </div>
           </div>
-          {flipped && index < order.length - 1 && (
-            <div className="flex justify-end mt-3 pr-1">
-              <button onClick={() => go(1)} className="w-9 h-9 rounded-full bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400 shadow-sm flex items-center justify-center active:scale-95 transition-all" aria-label="Volgende">→</button>
-            </div>
-          )}
         </div>
       </div>
 
@@ -377,6 +524,8 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const {
     getUserPhrasesByCategory,
     userCategories,
+    addCategory,
+    updateCategory,
     deleteCategory,
     hideStaticPhrase,
     hiddenStaticPhraseIds,
@@ -398,6 +547,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const [query,         setQuery]         = useState("");
   const [deleting,      setDeleting]      = useState(false);
   const [editMode,      setEditMode]      = useState(false);
+  const [showEdit,      setShowEdit]      = useState(false);
   const [hiding,        setHiding]        = useState<string | null>(null);
   const [oefenModus,    setOefenModus]    = useState(false);
   const [view,          setView]          = useState<"zinnen" | "woorden">("zinnen");
@@ -496,6 +646,15 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         title={`${category.icon} ${category.name}`}
         subtitle={category.description}
         showBack
+        rightElement={isUserCategory ? (
+          <button
+            onClick={() => setShowEdit(true)}
+            aria-label="Categorie bewerken"
+            className="w-8 h-8 flex items-center justify-center rounded-xl text-stone-400 dark:text-stone-500 hover:text-stone-700 dark:hover:text-stone-300 transition-colors"
+          >
+            ✏️
+          </button>
+        ) : undefined}
       />
 
       {/* ── Inline vertaler ───────────────────────────────────────── */}
@@ -683,6 +842,18 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
             {deleting ? "Verwijderen…" : "🗑 Categorie verwijderen"}
           </button>
         </div>
+      )}
+
+      {/* ── Categorie bewerken (naam + icoon) ─────────────────────── */}
+      {showEdit && isUserCategory && (
+        <CategoryPicker
+          userCategories={userCategories}
+          onSelect={() => {}}
+          onAddCategory={addCategory}
+          onUpdateCategory={(cid, name, icon) => updateCategory(cid, { name, icon })}
+          editCategory={{ id, name: category.name, icon: category.icon }}
+          onClose={() => setShowEdit(false)}
+        />
       )}
 
       {/* ── Flashcard overlay ─────────────────────────────────────── */}
