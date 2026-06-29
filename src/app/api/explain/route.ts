@@ -36,8 +36,9 @@ Reageer met ALLEEN geldig JSON:
 Instructies voor 'parts' (de opbouw):
 - Splits de zin op in de KLEINST mogelijke betekenisvolle eenheden: elk inhoudswoord én elk partikel apart (bijv. 今日 / の / 午後 / に / 運動 / しよう). Voeg ze NIET samen tot grote brokken.
 - Houd vaste grammaticale uitdrukkingen wel als één eenheid bij elkaar (bijv. と思っています).
-- Geef bij ELK inhoudswoord de Nederlandse vertaling in 'meaning' (bijv. 週 → "week", 月曜日 → "maandag"). Bij betekenisloze partikels (は, の, を, に) mag 'meaning' weg.
+- Geef bij ELK inhoudswoord de Nederlandse vertaling in 'meaning' (bijv. 週 → "week"). Bij betekenisloze partikels (は, の, を, に) mag 'meaning' weg.
 - Neem GEEN leestekens of scheidingstekens op als losse eenheid (、 。 「 」 ・ ! ?). Alleen woorden en partikels.
+- Bij een opsomming of lijst (bijv. 'maandag, dinsdag, woensdag…'): neem de leden NIET stuk voor stuk op. Vat de hele opsomming samen in ÉÉN 'part' (bijv. japanese: "月曜日〜日曜日", meaning: "de dagen van de week", role: "opsomming"). Houd de opbouw kort en gericht op de structuur.
 
 Instructies voor het 'note' veld bij werkwoorden:
 - Als een werkwoord in vervoegde vorm staat (niet de basisvorm), vermeld dan ALTIJD: "Basisvorm: [辞書形] ([romaji]). [1 zin uitleg van de vervoeging, bijv. hoe de て-vorm werkt of wat de ます-vorm betekent]"
@@ -91,6 +92,7 @@ Instructies voor 'parts' (de opbouw):
 - Houd vaste grammaticale uitdrukkingen wel als één eenheid bij elkaar.
 - Geef bij ELK inhoudswoord de Nederlandse vertaling in 'meaning'. Bij betekenisloze structuurwoorden (的, 了, 是) mag 'meaning' weg.
 - Neem GEEN leestekens of scheidingstekens op als losse eenheid (， 。 、 ！ ？). Alleen woorden en structuurwoorden.
+- Bij een opsomming of lijst: neem de leden NIET stuk voor stuk op. Vat de hele opsomming samen in ÉÉN 'part' (meaning: bijv. "de dagen van de week", role: "opsomming"). Houd de opbouw kort en gericht op de structuur.
 
 Instructies voor het 'note' veld bij werkwoorden:
 - Als een werkwoord gecombineerd is met aspectdeeltjes (了, 过, 着) of met een resultaatsvervoeging, vermeld dan: "Basisvorm: [karakter(s)] ([pinyin]). [1 zin uitleg van de combinatie]"
@@ -160,7 +162,16 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Empty response from service" }, { status: 502 });
     }
 
-    return NextResponse.json(JSON.parse(content));
+    const parsed = JSON.parse(content);
+    // Verwijder leestekens/scheidingstekens die het model soms tóch als 'part'
+    // opneemt (、。 etc.) — deterministisch, niet afhankelijk van de prompt.
+    if (Array.isArray(parsed?.parts)) {
+      const punctOnly = /^[\s、。，．،；：！？…‥・「」『』【】（）()［］\-—–_~]+$/u;
+      parsed.parts = parsed.parts.filter(
+        (p: { japanese?: string }) => p?.japanese && !punctOnly.test(p.japanese.trim())
+      );
+    }
+    return NextResponse.json(parsed);
   } catch (err) {
     console.error("Explain route error:", err);
     return NextResponse.json({ error: "Explanation failed" }, { status: 500 });

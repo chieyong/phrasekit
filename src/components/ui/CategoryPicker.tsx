@@ -14,11 +14,18 @@ interface CategoryPickerProps {
   title?: string;
   subtitle?: string;
   initialMode?: "list" | "new";
+  // Bewerk-modus: vul met een bestaande categorie om naam + icoon te wijzigen.
+  editCategory?: { id: string; name: string; icon: string };
+  onUpdateCategory?: (id: string, name: string, icon: string) => Promise<void>;
 }
 
 const QUICK_ICONS = [
-  "🗺️","🎒","🚌","✈️","🚢","🏔️","🛒","💊","📸","🎌",
-  "🌸","🍱","🎵","🎭","💴","🏯","🌊","🍵","🎎","🛕",
+  "🗺️","🎒","🧳","✈️","🚄","🚌","🚕","🚢","🚲","⛴️",
+  "🚉","🏨","🏯","⛩️","🗼","🏛️","🏝️","🏔️","🏖️","🏪",
+  "🏥","🛒","🛍️","💴","💳","🔑","📱","📸","🎫","🗾",
+  "🍜","🍣","🍱","🍙","🍵","🍺","☕","🍰","🥟","🍢",
+  "🌸","🌊","♨️","🎌","🎭","🎵","🎎","💊","🆘","🙏",
+  "❤️","⚽","🎮","🐱","☀️","🌙","☂️","🛕",
 ];
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -31,10 +38,13 @@ export default function CategoryPicker({
   title = "Opslaan in categorie",
   subtitle = "Kies een bestaande of maak een nieuwe aan",
   initialMode = "list",
+  editCategory,
+  onUpdateCategory,
 }: CategoryPickerProps) {
-  const [mode,    setMode]    = useState<"list" | "new">(initialMode);
-  const [newName, setNewName] = useState("");
-  const [newIcon, setNewIcon] = useState("🗺️");
+  const isEditing = !!editCategory;
+  const [mode,    setMode]    = useState<"list" | "new">(isEditing ? "new" : initialMode);
+  const [newName, setNewName] = useState(editCategory?.name ?? "");
+  const [newIcon, setNewIcon] = useState(editCategory?.icon ?? "🗺️");
   const [saving,  setSaving]  = useState(false);
   const nameInputRef = useRef<HTMLInputElement>(null);
 
@@ -46,13 +56,18 @@ export default function CategoryPicker({
     if (e.target === e.currentTarget) onClose();
   };
 
-  const handleCreate = async () => {
+  const handleSave = async () => {
     const name = newName.trim();
     if (!name || saving) return;
     setSaving(true);
     try {
-      const cat = await onAddCategory(name, newIcon);
-      onSelect(cat.id);
+      if (isEditing && onUpdateCategory) {
+        await onUpdateCategory(editCategory!.id, name, newIcon);
+        onClose();
+      } else {
+        const cat = await onAddCategory(name, newIcon);
+        onSelect(cat.id);
+      }
     } finally {
       setSaving(false);
     }
@@ -120,16 +135,20 @@ export default function CategoryPicker({
           </>
         ) : (
           <div className="px-5 pt-3 pb-8 overflow-y-auto">
-            <button
-              onClick={() => setMode("list")}
-              className="text-xs text-stone-400 mb-3 hover:text-stone-600 transition-colors"
-            >
-              ← Terug
-            </button>
-            <p className="text-sm font-semibold text-stone-900 dark:text-stone-100 mb-4">Nieuwe categorie</p>
+            {!isEditing && (
+              <button
+                onClick={() => setMode("list")}
+                className="text-xs text-stone-400 mb-3 hover:text-stone-600 transition-colors"
+              >
+                ← Terug
+              </button>
+            )}
+            <p className="text-sm font-semibold text-stone-900 dark:text-stone-100 mb-4">
+              {isEditing ? "Categorie bewerken" : "Nieuwe categorie"}
+            </p>
 
             <p className="text-xs text-stone-400 dark:text-stone-500 mb-2 uppercase tracking-widest font-semibold">Icoon</p>
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex flex-wrap gap-2 mb-4 max-h-44 overflow-y-auto">
               {QUICK_ICONS.map((emoji) => (
                 <button
                   key={emoji}
@@ -149,18 +168,18 @@ export default function CategoryPicker({
               type="text"
               value={newName}
               onChange={(e) => setNewName(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && handleCreate()}
+              onKeyDown={(e) => e.key === "Enter" && handleSave()}
               placeholder="bijv. Musea, Strand, Zakelijk…"
               maxLength={30}
               className="w-full bg-stone-50 dark:bg-stone-800 rounded-xl px-4 py-3 text-sm text-stone-900 dark:text-stone-100 placeholder:text-stone-300 dark:placeholder:text-stone-600 outline-none focus:ring-1 focus:ring-stone-300 dark:focus:ring-stone-600 transition mb-4"
             />
 
             <button
-              onClick={handleCreate}
+              onClick={handleSave}
               disabled={!newName.trim() || saving}
               className="w-full bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-xl py-3 text-sm font-medium disabled:opacity-30 active:scale-95 transition-all"
             >
-              {saving ? "Opslaan…" : "Aanmaken en opslaan"}
+              {saving ? "Opslaan…" : isEditing ? "Opslaan" : "Aanmaken en opslaan"}
             </button>
           </div>
         )}

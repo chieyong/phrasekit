@@ -6,7 +6,7 @@ Regels:
 - Extraheer zelfstandige naamwoorden, werkwoorden én bijvoeglijke naamwoorden
 - GEEN partikels (wa, ga, wo, ni, de, mo, ka, to, no, e), GEEN losse grammaticale uitgangen
 - Werkwoorden: geef altijd de woordenboek-vorm (辞書形), bijv. 行く, 食べる, 買う — NIET de ます/ません-vorm
-- Max 2 sleutelwoorden per zin, max 25 woorden totaal; verwijder duplicaten
+- Extraheer de belangrijkste inhoudswoorden per zin: méér bij langere zinnen (richtlijn: 1–2 bij korte zinnen, tot 5–6 bij lange of opsommende zinnen). Neem bij een opsomming alle genoemde leden mee. Max ~40 woorden totaal; verwijder duplicaten
 - Voeg per woord een "type" toe: "noun", "verb" of "adjective"
 
 Reageer met ALLEEN geldig JSON:
@@ -18,7 +18,7 @@ Regels:
 - Extraheer zelfstandige naamwoorden, werkwoorden én bijvoeglijke naamwoorden
 - GEEN structuurwoorden (的, 了, 是, 在, 吗, 吧 etc.)
 - Werkwoorden: geef de basisvorm (bijv. 买, 去, 吃)
-- Max 2 sleutelwoorden per zin, max 25 woorden totaal; verwijder duplicaten
+- Extraheer de belangrijkste inhoudswoorden per zin: méér bij langere zinnen (richtlijn: 1–2 bij korte zinnen, tot 5–6 bij lange of opsommende zinnen). Neem bij een opsomming alle genoemde leden mee. Max ~40 woorden totaal; verwijder duplicaten
 - Voeg per woord een "type" toe: "noun", "verb" of "adjective"
 - Gebruik Vereenvoudigd Chinees
 
@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
           { role: "user",   content: list },
         ],
         temperature: 0.3,
-        max_tokens: 600,
+        max_tokens: 900,
       }),
     });
 
