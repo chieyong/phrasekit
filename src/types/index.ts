@@ -23,8 +23,11 @@ export interface Phrase {
 
 export interface GrammarExplanation {
   summary: string;
+  meaning?: string;   // natuurlijke betekenis-parafrase ("betekent: …")
   parts: { japanese: string; romaji: string; role: string; note?: string }[];
+  synthesis?: string; // samenvattende regel onder de opbouw ("Samen geeft ~X aan dat…")
   examples?: { japanese: string; romaji: string; dutch: string }[];
+  responses?: { japanese: string; romaji: string; dutch: string }[]; // Mogelijke reactie
   tip: string;
 }
 
