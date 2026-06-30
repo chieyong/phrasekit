@@ -54,9 +54,17 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
   const [listTheme,      setListTheme]      = useState("");
   const [generatingList, setGeneratingList] = useState(false);
   const [regenerating,   setRegenerating]   = useState(false);
+  const [msg,            setMsg]            = useState<string | null>(null);
+
+  // Vertaalt een mislukt verzoek naar een begrijpelijke melding (incl. serverreden).
+  const errorMsg = (status?: number, reason?: string) =>
+    status === 429
+      ? "Te veel verzoeken — wacht even en probeer opnieuw."
+      : `Genereren mislukt${reason ? `: ${reason}` : status ? ` (${status})` : ""}.`;
 
   useEffect(() => {
     setStatus("loading");
+    setMsg(null);
     getVocab(categoryId, language).then((cached) => {
       if (cached) { setWords(cached); setStatus("done"); return; }
 
@@ -68,21 +76,29 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
         )
         .filter(Boolean) as { translatedText: string; romaji: string; sourceText: string }[];
 
-      if (!apiPhrases.length) { setWords([]); setStatus("done"); return; }
+      if (!apiPhrases.length) {
+        setWords([]); setStatus("done");
+        if (language === "zh") setMsg("Deze categorie heeft nog geen Chinese vertalingen — schakel naar 🇯🇵 of vertaal de zinnen eerst.");
+        return;
+      }
 
       fetch("/api/vocabulary", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phrases: apiPhrases, language }),
       })
-        .then((r) => r.json())
+        .then(async (r) => {
+          const data = await r.json().catch(() => null);
+          if (!r.ok) throw new Error(data?.error || `serverfout ${r.status}`);
+          return data;
+        })
         .then((data) => {
-          const fetched: VocabWord[] = data.words ?? [];
+          const fetched: VocabWord[] = data?.words ?? [];
           setWords(fetched);
           setStatus("done");
-          saveVocab(categoryId, fetched, language);
+          if (fetched.length) saveVocab(categoryId, fetched, language);
         })
-        .catch(() => setStatus("error"));
+        .catch((err) => { setStatus("error"); setMsg(`Kon woordenlijst niet laden: ${err.message}`); });
     }).catch(() => setStatus("error"));
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language]);
@@ -92,6 +108,7 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
   const handleRegenerate = async () => {
     if (regenerating) return;
     setRegenerating(true);
+    setMsg(null);
     try {
       const apiPhrases = phrases
         .map((p) => language === "zh"
@@ -106,14 +123,17 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phrases: apiPhrases, language }),
       });
+      if (!res.ok) { const e = await res.json().catch(() => null); setMsg(errorMsg(res.status, e?.error)); return; }
       const data = await res.json();
       const extracted: VocabWord[] = data.words ?? [];
+      if (!extracted.length) { setMsg("Geen woorden uit de zinnen kunnen halen."); return; }
       // Vervang de uit-zinnen geëxtraheerde set, maar bewaar AI-aanvullingen.
       const have   = new Set(extracted.map((w) => w.japanese));
       const keptAi = words.filter((w) => w.source === "ai" && !have.has(w.japanese));
       persist([...extracted, ...keptAi]);
+      setMsg(`✓ Lijst vernieuwd (${extracted.length} woorden uit de zinnen)`);
     } catch {
-      /* stil falen — lijst blijft staan */
+      setMsg("Geen verbinding — probeer het opnieuw.");
     } finally {
       setRegenerating(false);
     }
@@ -125,6 +145,7 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
   const handleExpand = async () => {
     if (expanding) return;
     setExpanding(true);
+    setMsg(null);
     try {
       const res = await fetch("/api/vocabulary-expand", {
         method: "POST",
@@ -136,15 +157,17 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
           count: 10,
         }),
       });
+      if (!res.ok) { const e = await res.json().catch(() => null); setMsg(errorMsg(res.status, e?.error)); return; }
       const data = await res.json();
       const suggested: VocabWord[] = data.words ?? [];
       const have = new Set(words.map((w) => w.japanese));
       const fresh = suggested
         .filter((w) => w.japanese && !have.has(w.japanese))
         .map((w) => ({ ...w, source: "ai" as const }));
-      if (fresh.length) persist([...words, ...fresh]);
+      if (fresh.length) { persist([...words, ...fresh]); setMsg(`✓ ${fresh.length} woorden toegevoegd`); }
+      else setMsg("Geen nieuwe woorden gevonden — die staan er al.");
     } catch {
-      /* stil falen — lijst blijft staan */
+      setMsg("Geen verbinding — probeer het opnieuw.");
     } finally {
       setExpanding(false);
     }
@@ -154,6 +177,7 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
     const t = theme.trim();
     if (!t || generatingList) return;
     setGeneratingList(true);
+    setMsg(null);
     try {
       const res = await fetch("/api/vocabulary-list", {
         method: "POST",
@@ -164,17 +188,23 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
           language,
         }),
       });
+      if (!res.ok) { const e = await res.json().catch(() => null); setMsg(errorMsg(res.status, e?.error)); return; }
       const data = await res.json();
       const generated: VocabWord[] = data.words ?? [];
       const have = new Set(words.map((w) => w.japanese));
       const fresh = generated
         .filter((w) => w.japanese && !have.has(w.japanese))
         .map((w) => ({ ...w, source: "ai" as const }));
-      if (fresh.length) persist([...words, ...fresh]);
-      setShowList(false);
-      setListTheme("");
+      if (fresh.length) {
+        persist([...words, ...fresh]);
+        setMsg(`✓ ${fresh.length} woorden toegevoegd`);
+        setShowList(false);
+        setListTheme("");
+      } else {
+        setMsg("Geen nieuwe woorden voor dit thema — staan er mogelijk al.");
+      }
     } catch {
-      /* stil falen */
+      setMsg("Geen verbinding — probeer het opnieuw.");
     } finally {
       setGeneratingList(false);
     }
@@ -257,6 +287,12 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
           </div>
         );
       })()}
+
+      {msg && (
+        <p className={`text-xs mt-4 text-center ${msg.startsWith("✓") ? "text-green-500" : "text-stone-400 dark:text-stone-500"}`}>
+          {msg}
+        </p>
+      )}
 
       {status === "done" && (
         <button
