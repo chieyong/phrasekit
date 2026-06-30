@@ -23,7 +23,7 @@ import { CSS } from "@dnd-kit/utilities";
 import Header from "@/components/layout/Header";
 import PhraseCard from "@/components/cards/PhraseCard";
 import { getCategoryById, getPhrasesByCategory } from "@/data/mockData";
-import { useUserPhrases } from "@/hooks/useUserPhrases";
+import { useUserPhrases, UserCategory } from "@/hooks/useUserPhrases";
 import CategoryPicker from "@/components/ui/CategoryPicker";
 import { useAudio } from "@/hooks/useAudio";
 import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
@@ -44,7 +44,13 @@ const LIST_PRESETS: { label: string; theme: string }[] = [
   { label: "Familie",      theme: "familieleden" },
 ];
 
-function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; categoryId: string; categoryName: string }) {
+function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCategory }: {
+  phrases: Phrase[];
+  categoryId: string;
+  categoryName: string;
+  userCategories: UserCategory[];
+  onAddCategory: (name: string, icon: string) => Promise<UserCategory>;
+}) {
   const { getVocab, saveVocab } = useVocabulary();
   const { language } = useLanguage();
   const [words,     setWords]     = useState<VocabWord[]>([]);
@@ -55,6 +61,9 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
   const [generatingList, setGeneratingList] = useState(false);
   const [regenerating,   setRegenerating]   = useState(false);
   const [msg,            setMsg]            = useState<string | null>(null);
+  const [selectMode,     setSelectMode]     = useState(false);
+  const [selected,       setSelected]       = useState<Set<string>>(new Set());
+  const [showMove,       setShowMove]       = useState(false);
 
   // Vertaalt een mislukt verzoek naar een begrijpelijke melding (incl. serverreden).
   const errorMsg = (status?: number, reason?: string) =>
@@ -142,6 +151,31 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
   const handleRemove = (w: VocabWord) =>
     persist(words.filter((x) => !(x.japanese === w.japanese && x.dutch === w.dutch)));
 
+  const toggleSelect = (key: string) =>
+    setSelected((prev) => { const s = new Set(prev); s.has(key) ? s.delete(key) : s.add(key); return s; });
+
+  const exitSelect = () => { setSelectMode(false); setSelected(new Set()); };
+
+  // Verplaats de geselecteerde woorden naar een andere/nieuwe categorie:
+  // toevoegen aan de doel-vocab (gemarkeerd als AI, gededupliceerd) en uit
+  // de huidige lijst halen.
+  const handleMove = async (targetId: string) => {
+    setShowMove(false);
+    if (targetId === categoryId || selected.size === 0) return;
+    const moving = words.filter((w) => selected.has(w.japanese));
+    try {
+      const targetWords = (await getVocab(targetId, language).catch(() => null)) ?? [];
+      const have  = new Set(targetWords.map((w) => w.japanese));
+      const toAdd = moving.filter((w) => !have.has(w.japanese)).map((w) => ({ ...w, source: "ai" as const }));
+      await saveVocab(targetId, [...targetWords, ...toAdd], language);
+      persist(words.filter((w) => !selected.has(w.japanese)));
+      exitSelect();
+      setMsg(`✓ ${moving.length} ${moving.length === 1 ? "woord" : "woorden"} verplaatst`);
+    } catch {
+      setMsg("Verplaatsen mislukt — probeer het opnieuw.");
+    }
+  };
+
   const handleExpand = async () => {
     if (expanding) return;
     setExpanding(true);
@@ -217,13 +251,25 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
           Sleutelwoorden uit de zinnen in deze categorie
         </p>
         {status === "done" && (
-          <button
-            onClick={handleRegenerate}
-            disabled={regenerating}
-            className="shrink-0 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors disabled:opacity-50"
-          >
-            {regenerating ? "…" : "↻ Opnieuw"}
-          </button>
+          <div className="flex items-center gap-3 shrink-0">
+            {!selectMode && (
+              <button
+                onClick={handleRegenerate}
+                disabled={regenerating}
+                className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors disabled:opacity-50"
+              >
+                {regenerating ? "…" : "↻ Opnieuw"}
+              </button>
+            )}
+            {words.length > 0 && (
+              <button
+                onClick={() => (selectMode ? exitSelect() : setSelectMode(true))}
+                className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors"
+              >
+                {selectMode ? "Klaar" : "Selecteer"}
+              </button>
+            )}
+          </div>
         )}
       </div>
 
@@ -254,25 +300,41 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
       {status === "done" && words.length > 0 && (() => {
         const nonVerbs = words.filter((w) => w.type !== "verb");
         const verbs    = words.filter((w) => w.type === "verb");
-        const renderRow = (w: VocabWord, i: number) => (
-          <div key={`${w.japanese}-${i}`} className="group flex items-center gap-4 py-3">
-            <div className="shrink-0 min-w-[80px]">
-              <p className="text-base font-semibold text-stone-900 dark:text-stone-100 flex items-center gap-1">
-                {w.japanese}
-                {w.source === "ai" && <span className="text-[10px]" title="Voorgesteld door AI">✨</span>}
-              </p>
-              <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w.romaji}</p>
-            </div>
-            <p className="flex-1 text-sm text-stone-500 dark:text-stone-400">{w.dutch}</p>
-            <button
-              onClick={() => handleRemove(w)}
-              aria-label={`Verwijder ${w.dutch}`}
-              className="shrink-0 w-7 h-7 flex items-center justify-center text-stone-300 dark:text-stone-600 hover:text-red-400 transition-colors text-xs"
+        const renderRow = (w: VocabWord, i: number) => {
+          const sel = selected.has(w.japanese);
+          return (
+            <div
+              key={`${w.japanese}-${i}`}
+              onClick={selectMode ? () => toggleSelect(w.japanese) : undefined}
+              className={`group flex items-center gap-4 py-3 ${selectMode ? "cursor-pointer select-none" : ""}`}
             >
-              ✕
-            </button>
-          </div>
-        );
+              {selectMode && (
+                <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${
+                  sel ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100" : "border-stone-300 dark:border-stone-600"
+                }`}>
+                  {sel && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
+                </span>
+              )}
+              <div className="shrink-0 min-w-[80px]">
+                <p className="text-base font-semibold text-stone-900 dark:text-stone-100 flex items-center gap-1">
+                  {w.japanese}
+                  {w.source === "ai" && <span className="text-[10px]" title="Voorgesteld door AI">✨</span>}
+                </p>
+                <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w.romaji}</p>
+              </div>
+              <p className="flex-1 text-sm text-stone-500 dark:text-stone-400">{w.dutch}</p>
+              {!selectMode && (
+                <button
+                  onClick={() => handleRemove(w)}
+                  aria-label={`Verwijder ${w.dutch}`}
+                  className="shrink-0 w-7 h-7 flex items-center justify-center text-stone-300 dark:text-stone-600 hover:text-red-400 transition-colors text-xs"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+          );
+        };
         return (
           <div className="divide-y divide-stone-100 dark:divide-stone-800">
             {nonVerbs.map(renderRow)}
@@ -294,7 +356,21 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
         </p>
       )}
 
-      {status === "done" && (
+      {selectMode && words.length > 0 && (
+        <div className="mt-4 flex items-center gap-3">
+          <button onClick={() => setSelected(new Set(words.map((w) => w.japanese)))} className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">Alles</button>
+          <button onClick={() => setSelected(new Set())} disabled={selected.size === 0} className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors disabled:opacity-40">Wissen</button>
+          <button
+            onClick={() => setShowMove(true)}
+            disabled={selected.size === 0}
+            className="ml-auto px-4 py-2.5 rounded-xl bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 text-sm font-medium disabled:opacity-30 active:scale-95 transition-all"
+          >
+            Verplaatsen ({selected.size})
+          </button>
+        </div>
+      )}
+
+      {status === "done" && !selectMode && (
         <button
           onClick={handleExpand}
           disabled={expanding}
@@ -306,7 +382,7 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
         </button>
       )}
 
-      {status === "done" && (
+      {status === "done" && !selectMode && (
         <div className="mt-2">
           <button
             onClick={() => setShowList((v) => !v)}
@@ -357,6 +433,17 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
           )}
         </div>
       )}
+
+      {showMove && (
+        <CategoryPicker
+          userCategories={userCategories}
+          onSelect={handleMove}
+          onAddCategory={onAddCategory}
+          onClose={() => setShowMove(false)}
+          title="Verplaatsen naar"
+          subtitle={`${selected.size} ${selected.size === 1 ? "woord" : "woorden"} naar een andere categorie`}
+        />
+      )}
     </div>
   );
 }
@@ -366,11 +453,13 @@ function VocabList({ phrases, categoryId, categoryName }: { phrases: Phrase[]; c
 function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () => void }) {
   const [index,   setIndex]   = useState(0);
   const [flipped, setFlipped] = useState(false);
+  const [dir,     setDir]     = useState(1);
   const [order,   setOrder]   = useState(() => phrases.map((_, i) => i).sort(() => Math.random() - 0.5));
 
   const phrase = phrases[order[index]];
 
   const go = (delta: number) => {
+    setDir(delta >= 0 ? 1 : -1);
     setFlipped(false);
     // kleine delay zodat de kaart eerst omslaat voor die verdwijnt
     setTimeout(() => setIndex((i) => Math.min(Math.max(i + delta, 0), order.length - 1)), 50);
@@ -424,7 +513,7 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
 
       {/* ── Flashcard ────────────────────────────────────────── */}
       <div className="flex-1 flex items-center justify-center px-6">
-        <div className="w-full max-w-sm" style={{ perspective: "1200px" }}>
+        <div key={index} className="w-full max-w-sm card-slide-in" style={{ perspective: "1200px", "--slide-from": `${dir * 28}px` } as React.CSSProperties}>
           <div
             onClick={onCardClick}
             onTouchStart={onTouchStart}
@@ -720,7 +809,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
       )}
 
       {view === "woorden" && alleZinnen.length > 0 ? (
-        <VocabList phrases={alleZinnen} categoryId={id} categoryName={category.name} />
+        <VocabList phrases={alleZinnen} categoryId={id} categoryName={category.name} userCategories={userCategories} onAddCategory={addCategory} />
       ) : (
       <>
 

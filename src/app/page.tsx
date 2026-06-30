@@ -38,6 +38,7 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
   const [words,      setWords]      = useState<VocabWord[]>([]);
   const [cardIndex,  setCardIndex]  = useState(0);
   const [flipped,    setFlipped]    = useState(false);
+  const [dir,        setDir]        = useState(1);
 
   const allIds = allCategories.map((c) => c.id);
   const allSelected = allIds.every((id) => selected.has(id));
@@ -99,6 +100,7 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
   }, [autoStart]);
 
   const go = (delta: number) => {
+    setDir(delta >= 0 ? 1 : -1);
     setFlipped(false);
     setTimeout(() => setCardIndex((i) => Math.min(Math.max(i + delta, 0), words.length - 1)), 50);
   };
@@ -212,7 +214,7 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
 
       {/* Card */}
       <div className="flex-1 flex items-center justify-center px-6">
-        <div className="w-full max-w-sm" style={{ perspective: "1200px" }}>
+        <div key={cardIndex} className="w-full max-w-sm card-slide-in" style={{ perspective: "1200px", "--slide-from": `${dir * 28}px` } as React.CSSProperties}>
           <div
             onClick={onCardClick}
             onTouchStart={onTouchStart}
@@ -479,6 +481,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
   const [sentences,   setSentences]   = useState<PracticeSentence[]>([]);
   const [cardIndex,   setCardIndex]   = useState(0);
   const [flipped,     setFlipped]     = useState(false);
+  const [dir,         setDir]         = useState(1);
   const [isFromSaved, setIsFromSaved] = useState(false);
   const [showSave,    setShowSave]    = useState(false);
   const [savedMsg,    setSavedMsg]    = useState<string | null>(null);
@@ -576,6 +579,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
   };
 
   const go = (delta: number) => {
+    setDir(delta >= 0 ? 1 : -1);
     setFlipped(false);
     setTimeout(() => setCardIndex((i) => Math.min(Math.max(i + delta, 0), sentences.length - 1)), 50);
   };
@@ -741,7 +745,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
 
       {/* Card */}
       <div className="flex-1 flex items-center justify-center px-6">
-        <div className="w-full max-w-sm" style={{ perspective: "1200px" }}>
+        <div key={cardIndex} className="w-full max-w-sm card-slide-in" style={{ perspective: "1200px", "--slide-from": `${dir * 28}px` } as React.CSSProperties}>
           <div onClick={onCardClick} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd} style={{ transformStyle: "preserve-3d", transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)", transition: "transform 0.45s cubic-bezier(0.4,0,0.2,1)", position: "relative", height: "280px", cursor: "pointer" }}>
             <div style={{ backfaceVisibility: "hidden" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
               <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-5">{language === "zh" ? "Hoe zeg je dit in het Chinees?" : "Hoe zeg je dit in het Japans?"}</p>
