@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className="h-full">
+    <html lang="nl" className="h-full" suppressHydrationWarning>
       {/* Anti-flash: apply saved theme before hydration */}
       <head>
         <script dangerouslySetInnerHTML={{ __html: `
