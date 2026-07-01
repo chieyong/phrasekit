@@ -3,10 +3,11 @@
 export interface Phrase {
   id: string;
   categoryId: string;
-  sourceText: string;       // Dutch
-  translatedText: string;   // Japanese (kanji/kana)
-  romaji: string;
-  explanation: string;
+  sourceText: string;       // Dutch — het taalonafhankelijke ankerpunt
+  // Legacy ja-velden (optioneel: nieuwe talen gebruiken alleen `translations`)
+  translatedText?: string;  // Japanese (kanji/kana)
+  romaji?: string;
+  explanation?: string;
   wordBreakdown?: WordBreakdown[];
   shortVersion?: PhraseVariant;
   politeVersion?: PhraseVariant;
@@ -19,6 +20,19 @@ export interface Phrase {
   pinyin?: string;
   chineseExplanation?: string;
   chineseGrammar?: GrammarExplanation;
+  // Taal-agnostisch model: vertaling per taalcode. De helper getPhraseTranslation
+  // valt terug op de legacy-velden hierboven voor ja/zh.
+  translations?: Record<string, PhraseTranslation>;
+}
+
+export interface PhraseTranslation {
+  text: string;                     // zin in de doeltaal
+  reading: string;                  // romaji / pinyin / jyutping
+  explanation?: string;
+  grammar?: GrammarExplanation;
+  shortVersion?: PhraseVariant;
+  politeVersion?: PhraseVariant;
+  wordBreakdown?: WordBreakdown[];
 }
 
 export interface GrammarExplanation {
@@ -55,16 +69,13 @@ export interface Category {
 // ─── Ask Now ────────────────────────────────────────────────────────────────
 
 export interface AskNowResult {
-  sourceText: string;
-  translatedText: string;
-  romaji: string;
+  sourceText: string;   // Nederlandse invoer
+  language: string;     // taalcode van deze vertaling
+  text: string;         // vertaling in de doeltaal
+  reading: string;      // romaji / pinyin / jyutping
   explanation: string;
   shortVersion?: PhraseVariant;
   politeVersion?: PhraseVariant;
-  // Chinese (present when API returns both languages)
-  chineseText?: string;
-  pinyin?: string;
-  chineseExplanation?: string;
 }
 
 // ─── Chip suggestions for Ask Now screen ────────────────────────────────────

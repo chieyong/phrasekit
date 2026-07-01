@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { useAuth } from "@/contexts/AuthContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 import ResultCard from "@/components/cards/ResultCard";
 import { AskNowResult } from "@/types";
 
@@ -17,6 +18,7 @@ export default function InlineTranslator({
   categoryName,
 }: InlineTranslatorProps) {
   const { user, signInWithGoogle } = useAuth();
+  const { language } = useLanguage();
   const [query,      setQuery]      = useState("");
   const [result,     setResult]     = useState<AskNowResult | null>(null);
   const [loadState,  setLoadState]  = useState<LoadState>("idle");
@@ -33,7 +35,7 @@ export default function InlineTranslator({
       const res = await fetch("/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: trimmed }),
+        body: JSON.stringify({ query: trimmed, language }),
       });
       if (!res.ok) {
         const err = await res.json().catch(() => ({}));

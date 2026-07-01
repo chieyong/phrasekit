@@ -26,8 +26,10 @@ import { getCategoryById, getPhrasesByCategory } from "@/data/mockData";
 import { useUserPhrases, UserCategory } from "@/hooks/useUserPhrases";
 import CategoryPicker from "@/components/ui/CategoryPicker";
 import { useAudio } from "@/hooks/useAudio";
-import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
+import { useVocabulary, VocabWord, VocabConcept, VocabLang, wordForLang } from "@/hooks/useVocabulary";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { getPhraseTranslation } from "@/utils/phrase";
+import { getLanguage } from "@/data/languages";
 import { Phrase } from "@/types";
 import InlineTranslator from "@/components/ui/InlineTranslator";
 import AudioButton from "@/components/ui/AudioButton";
@@ -51,9 +53,10 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
   userCategories: UserCategory[];
   onAddCategory: (name: string, icon: string) => Promise<UserCategory>;
 }) {
-  const { getVocab, saveVocab } = useVocabulary();
+  const { getConcepts, saveConcepts } = useVocabulary();
   const { language } = useLanguage();
-  const [words,     setWords]     = useState<VocabWord[]>([]);
+  const lang = language as VocabLang;
+  const [concepts,  setConcepts]  = useState<VocabConcept[]>([]);
   const [status,    setStatus]    = useState<"loading" | "done" | "error">("loading");
   const [expanding, setExpanding] = useState(false);
   const [showList,       setShowList]       = useState(false);
@@ -64,6 +67,10 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
   const [selectMode,     setSelectMode]     = useState(false);
   const [selected,       setSelected]       = useState<Set<string>>(new Set());
   const [showMove,       setShowMove]       = useState(false);
+  const [newWord,        setNewWord]        = useState("");
+  const [addingWord,     setAddingWord]     = useState(false);
+
+  const ckey = (d: string) => d.trim().toLowerCase();
 
   // Vertaalt een mislukt verzoek naar een begrijpelijke melding (incl. serverreden).
   const errorMsg = (status?: number, reason?: string) =>
@@ -71,75 +78,117 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
       ? "Te veel verzoeken — wacht even en probeer opnieuw."
       : `Genereren mislukt${reason ? `: ${reason}` : status ? ` (${status})` : ""}.`;
 
+  // Extractie kan alleen uit talen die de zinnen zelf bevatten (ja/zh). Voor
+  // overige talen komt vocab via vertaling van bestaande concepten.
+  const apiPhrasesForLang = () => phrases
+    .map((p) => {
+      if (lang === "ja") return { translatedText: p.translatedText, romaji: p.romaji, sourceText: p.sourceText };
+      if (lang === "zh") return p.chineseText ? { translatedText: p.chineseText, romaji: p.pinyin ?? "", sourceText: p.sourceText } : null;
+      return null;
+    })
+    .filter(Boolean) as { translatedText: string; romaji: string; sourceText: string }[];
+
+  // API-woorden (in de actieve taal) → concepten; behoudt vertalingen in andere
+  // talen als het concept (op Nederlands) al bestond.
+  const wordsToConcepts = (ws: VocabWord[], prev: VocabConcept[], asAi: boolean): VocabConcept[] => {
+    const byDutch = new Map(prev.map((c) => [ckey(c.dutch), c]));
+    return ws.filter((w) => w.dutch && w.japanese).map((w) => {
+      const ex = byDutch.get(ckey(w.dutch));
+      return {
+        dutch: w.dutch,
+        type: w.type ?? ex?.type,
+        source: asAi ? ("ai" as const) : ex?.source,
+        tr: { ...(ex?.tr ?? {}), [lang]: { text: w.japanese, reading: w.romaji } },
+      };
+    });
+  };
+
+  // Vul ontbrekende vertalingen voor de actieve taal aan via het vertaal-endpoint.
+  const ensureLanguage = async (cs: VocabConcept[]): Promise<VocabConcept[]> => {
+    const missing = cs.filter((c) => !c.tr[lang]);
+    if (!missing.length) return cs;
+    const res = await fetch("/api/vocabulary-translate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ words: missing.map((c) => ({ dutch: c.dutch, type: c.type })), language: lang }),
+    });
+    if (!res.ok) return cs; // niet nu te vertalen — toon wat er is
+    const data = await res.json();
+    const translations: { dutch: string; text: string; reading: string }[] = data.translations ?? [];
+    const byDutch = new Map(translations.map((t) => [ckey(t.dutch), t]));
+    const updated = cs.map((c) => {
+      if (c.tr[lang]) return c;
+      const t = byDutch.get(ckey(c.dutch));
+      return t && t.text ? { ...c, tr: { ...c.tr, [lang]: { text: t.text, reading: t.reading ?? "" } } } : c;
+    });
+    await saveConcepts(categoryId, updated);
+    return updated;
+  };
+
+  // Eerste keer: genereer sleutelwoorden uit de zinnen in de actieve taal.
+  const generateFromSentences = async (): Promise<VocabConcept[]> => {
+    const apiPhrases = apiPhrasesForLang();
+    if (!apiPhrases.length) {
+      if (lang !== "ja") setMsg("Nog geen woorden voor deze taal — genereer ze eerst in 🇯🇵 of 🇨🇳, dan worden ze automatisch bijvertaald.");
+      return [];
+    }
+    const res = await fetch("/api/vocabulary", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phrases: apiPhrases, language: lang }),
+    });
+    const data = await res.json().catch(() => null);
+    if (!res.ok) throw new Error(data?.error || `serverfout ${res.status}`);
+    const cs = wordsToConcepts(data?.words ?? [], [], false);
+    if (cs.length) await saveConcepts(categoryId, cs);
+    return cs;
+  };
+
   useEffect(() => {
+    let cancelled = false;
     setStatus("loading");
     setMsg(null);
-    getVocab(categoryId, language).then((cached) => {
-      if (cached) { setWords(cached); setStatus("done"); return; }
-
-      // For Chinese: use chineseText+pinyin if available, else skip that phrase
-      const apiPhrases = phrases
-        .map((p) => language === "zh"
-          ? (p.chineseText ? { translatedText: p.chineseText, romaji: p.pinyin ?? "", sourceText: p.sourceText } : null)
-          : { translatedText: p.translatedText, romaji: p.romaji, sourceText: p.sourceText }
-        )
-        .filter(Boolean) as { translatedText: string; romaji: string; sourceText: string }[];
-
-      if (!apiPhrases.length) {
-        setWords([]); setStatus("done");
-        if (language === "zh") setMsg("Deze categorie heeft nog geen Chinese vertalingen — schakel naar 🇯🇵 of vertaal de zinnen eerst.");
-        return;
+    (async () => {
+      try {
+        let cs = await getConcepts(categoryId);
+        cs = cs ? await ensureLanguage(cs) : await generateFromSentences();
+        if (cancelled) return;
+        setConcepts(cs ?? []);
+        setStatus("done");
+      } catch (err) {
+        if (cancelled) return;
+        setStatus("error");
+        setMsg(`Kon woordenlijst niet laden: ${(err as Error).message}`);
       }
-
-      fetch("/api/vocabulary", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ phrases: apiPhrases, language }),
-      })
-        .then(async (r) => {
-          const data = await r.json().catch(() => null);
-          if (!r.ok) throw new Error(data?.error || `serverfout ${r.status}`);
-          return data;
-        })
-        .then((data) => {
-          const fetched: VocabWord[] = data?.words ?? [];
-          setWords(fetched);
-          setStatus("done");
-          if (fetched.length) saveVocab(categoryId, fetched, language);
-        })
-        .catch((err) => { setStatus("error"); setMsg(`Kon woordenlijst niet laden: ${err.message}`); });
-    }).catch(() => setStatus("error"));
+    })();
+    return () => { cancelled = true; };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language]);
 
-  const persist = (next: VocabWord[]) => { setWords(next); saveVocab(categoryId, next, language); };
+  const persist = (next: VocabConcept[]) => { setConcepts(next); saveConcepts(categoryId, next); };
 
   const handleRegenerate = async () => {
     if (regenerating) return;
     setRegenerating(true);
     setMsg(null);
     try {
-      const apiPhrases = phrases
-        .map((p) => language === "zh"
-          ? (p.chineseText ? { translatedText: p.chineseText, romaji: p.pinyin ?? "", sourceText: p.sourceText } : null)
-          : { translatedText: p.translatedText, romaji: p.romaji, sourceText: p.sourceText }
-        )
-        .filter(Boolean) as { translatedText: string; romaji: string; sourceText: string }[];
+      const apiPhrases = apiPhrasesForLang();
       if (!apiPhrases.length) return;
-
       const res = await fetch("/api/vocabulary", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ phrases: apiPhrases, language }),
+        body: JSON.stringify({ phrases: apiPhrases, language: lang }),
       });
       if (!res.ok) { const e = await res.json().catch(() => null); setMsg(errorMsg(res.status, e?.error)); return; }
       const data = await res.json();
       const extracted: VocabWord[] = data.words ?? [];
       if (!extracted.length) { setMsg("Geen woorden uit de zinnen kunnen halen."); return; }
-      // Vervang de uit-zinnen geëxtraheerde set, maar bewaar AI-aanvullingen.
-      const have   = new Set(extracted.map((w) => w.japanese));
-      const keptAi = words.filter((w) => w.source === "ai" && !have.has(w.japanese));
-      persist([...extracted, ...keptAi]);
+      // Ververst de geëxtraheerde set (behoudt andere-taal-vertalingen per concept)
+      // en houdt AI-aanvullingen die niet opnieuw geëxtraheerd zijn.
+      const fresh  = wordsToConcepts(extracted, concepts, false);
+      const have   = new Set(fresh.map((c) => ckey(c.dutch)));
+      const keptAi = concepts.filter((c) => c.source === "ai" && !have.has(ckey(c.dutch)));
+      persist([...fresh, ...keptAi]);
       setMsg(`✓ Lijst vernieuwd (${extracted.length} woorden uit de zinnen)`);
     } catch {
       setMsg("Geen verbinding — probeer het opnieuw.");
@@ -148,32 +197,40 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
     }
   };
 
-  const handleRemove = (w: VocabWord) =>
-    persist(words.filter((x) => !(x.japanese === w.japanese && x.dutch === w.dutch)));
+  const handleRemove = (c: VocabConcept) =>
+    persist(concepts.filter((x) => ckey(x.dutch) !== ckey(c.dutch)));
 
   const toggleSelect = (key: string) =>
     setSelected((prev) => { const s = new Set(prev); s.has(key) ? s.delete(key) : s.add(key); return s; });
 
   const exitSelect = () => { setSelectMode(false); setSelected(new Set()); };
 
-  // Verplaats de geselecteerde woorden naar een andere/nieuwe categorie:
-  // toevoegen aan de doel-vocab (gemarkeerd als AI, gededupliceerd) en uit
-  // de huidige lijst halen.
+  // Verplaatst de geselecteerde concepten (mét al hun vertalingen) naar een
+  // andere/nieuwe categorie en haalt ze uit de huidige lijst.
   const handleMove = async (targetId: string) => {
     setShowMove(false);
     if (targetId === categoryId || selected.size === 0) return;
-    const moving = words.filter((w) => selected.has(w.japanese));
+    const moving = concepts.filter((c) => selected.has(ckey(c.dutch)));
     try {
-      const targetWords = (await getVocab(targetId, language).catch(() => null)) ?? [];
-      const have  = new Set(targetWords.map((w) => w.japanese));
-      const toAdd = moving.filter((w) => !have.has(w.japanese)).map((w) => ({ ...w, source: "ai" as const }));
-      await saveVocab(targetId, [...targetWords, ...toAdd], language);
-      persist(words.filter((w) => !selected.has(w.japanese)));
+      const targetConcepts = (await getConcepts(targetId).catch(() => null)) ?? [];
+      const have  = new Set(targetConcepts.map((c) => ckey(c.dutch)));
+      const toAdd = moving.filter((c) => !have.has(ckey(c.dutch))).map((c) => ({ ...c, source: "ai" as const }));
+      await saveConcepts(targetId, [...targetConcepts, ...toAdd]);
+      persist(concepts.filter((c) => !selected.has(ckey(c.dutch))));
       exitSelect();
       setMsg(`✓ ${moving.length} ${moving.length === 1 ? "woord" : "woorden"} verplaatst`);
     } catch {
       setMsg("Verplaatsen mislukt — probeer het opnieuw.");
     }
+  };
+
+  // Voegt gegenereerde woorden (in de actieve taal) toe als AI-concepten,
+  // gededupliceerd op Nederlands.
+  const addGenerated = (generated: VocabWord[], okMsg: (n: number) => string, emptyMsg: string): number => {
+    const have  = new Set(concepts.map((c) => ckey(c.dutch)));
+    const fresh = wordsToConcepts(generated, concepts, true).filter((c) => !have.has(ckey(c.dutch)));
+    if (fresh.length) { persist([...concepts, ...fresh]); setMsg(okMsg(fresh.length)); return fresh.length; }
+    setMsg(emptyMsg); return 0;
   };
 
   const handleExpand = async () => {
@@ -186,20 +243,14 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           categoryName,
-          existing: words.map((w) => ({ japanese: w.japanese, dutch: w.dutch })),
-          language,
+          existing: concepts.map((c) => ({ japanese: c.tr[lang]?.text ?? c.dutch, dutch: c.dutch })),
+          language: lang,
           count: 10,
         }),
       });
       if (!res.ok) { const e = await res.json().catch(() => null); setMsg(errorMsg(res.status, e?.error)); return; }
       const data = await res.json();
-      const suggested: VocabWord[] = data.words ?? [];
-      const have = new Set(words.map((w) => w.japanese));
-      const fresh = suggested
-        .filter((w) => w.japanese && !have.has(w.japanese))
-        .map((w) => ({ ...w, source: "ai" as const }));
-      if (fresh.length) { persist([...words, ...fresh]); setMsg(`✓ ${fresh.length} woorden toegevoegd`); }
-      else setMsg("Geen nieuwe woorden gevonden — die staan er al.");
+      addGenerated(data.words ?? [], (n) => `✓ ${n} woorden toegevoegd`, "Geen nieuwe woorden gevonden — die staan er al.");
     } catch {
       setMsg("Geen verbinding — probeer het opnieuw.");
     } finally {
@@ -218,29 +269,51 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           theme: t,
-          existing: words.map((w) => ({ japanese: w.japanese, dutch: w.dutch })),
-          language,
+          existing: concepts.map((c) => ({ japanese: c.tr[lang]?.text ?? c.dutch, dutch: c.dutch })),
+          language: lang,
         }),
       });
       if (!res.ok) { const e = await res.json().catch(() => null); setMsg(errorMsg(res.status, e?.error)); return; }
       const data = await res.json();
-      const generated: VocabWord[] = data.words ?? [];
-      const have = new Set(words.map((w) => w.japanese));
-      const fresh = generated
-        .filter((w) => w.japanese && !have.has(w.japanese))
-        .map((w) => ({ ...w, source: "ai" as const }));
-      if (fresh.length) {
-        persist([...words, ...fresh]);
-        setMsg(`✓ ${fresh.length} woorden toegevoegd`);
-        setShowList(false);
-        setListTheme("");
-      } else {
-        setMsg("Geen nieuwe woorden voor dit thema — staan er mogelijk al.");
-      }
+      const added = addGenerated(data.words ?? [], (n) => `✓ ${n} woorden toegevoegd`, "Geen nieuwe woorden voor dit thema — staan er mogelijk al.");
+      if (added) { setShowList(false); setListTheme(""); }
     } catch {
       setMsg("Geen verbinding — probeer het opnieuw.");
     } finally {
       setGeneratingList(false);
+    }
+  };
+
+  // Voegt één zelf ingetypt Nederlands woord toe en vertaalt het naar de
+  // actieve taal (andere talen worden lui bijgevuld).
+  const handleAddWord = async (raw: string) => {
+    const d = raw.trim();
+    if (!d || addingWord) return;
+    if (concepts.some((c) => ckey(c.dutch) === ckey(d))) { setMsg(`"${d}" staat er al.`); return; }
+    setAddingWord(true);
+    setMsg(null);
+    try {
+      const res = await fetch("/api/vocabulary-translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ words: [{ dutch: d }], language: lang }),
+      });
+      if (!res.ok) { const e = await res.json().catch(() => null); setMsg(errorMsg(res.status, e?.error)); return; }
+      const data = await res.json();
+      const t = (data.translations ?? [])[0] as { text?: string; reading?: string } | undefined;
+      const concept: VocabConcept = {
+        dutch: d,
+        source: "ai",
+        tr: t?.text ? { [lang]: { text: t.text, reading: t.reading ?? "" } } : {},
+      };
+      persist([...concepts, concept]);
+      setMsg(`✓ "${d}" toegevoegd`);
+      setNewWord("");
+      setShowList(false);
+    } catch {
+      setMsg("Toevoegen mislukt — probeer het opnieuw.");
+    } finally {
+      setAddingWord(false);
     }
   };
 
@@ -261,7 +334,7 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
                 {regenerating ? "…" : "↻ Opnieuw"}
               </button>
             )}
-            {words.length > 0 && (
+            {concepts.length > 0 && (
               <button
                 onClick={() => (selectMode ? exitSelect() : setSelectMode(true))}
                 className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors"
@@ -291,21 +364,23 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
         </p>
       )}
 
-      {status === "done" && words.length === 0 && (
+      {status === "done" && concepts.length === 0 && (
         <p className="text-sm text-stone-400 dark:text-stone-500 py-4 text-center">
           Geen woorden gevonden.
         </p>
       )}
 
-      {status === "done" && words.length > 0 && (() => {
-        const nonVerbs = words.filter((w) => w.type !== "verb");
-        const verbs    = words.filter((w) => w.type === "verb");
-        const renderRow = (w: VocabWord, i: number) => {
-          const sel = selected.has(w.japanese);
+      {status === "done" && concepts.length > 0 && (() => {
+        const rows = concepts.map((c) => ({ c, w: wordForLang(c, lang) }));
+        const nonVerbs = rows.filter((r) => r.c.type !== "verb");
+        const verbs    = rows.filter((r) => r.c.type === "verb");
+        const renderRow = ({ c, w }: { c: VocabConcept; w: VocabWord | null }, i: number) => {
+          const key = ckey(c.dutch);
+          const sel = selected.has(key);
           return (
             <div
-              key={`${w.japanese}-${i}`}
-              onClick={selectMode ? () => toggleSelect(w.japanese) : undefined}
+              key={`${key}-${i}`}
+              onClick={selectMode ? () => toggleSelect(key) : undefined}
               className={`group flex items-center gap-4 py-3 ${selectMode ? "cursor-pointer select-none" : ""}`}
             >
               {selectMode && (
@@ -316,17 +391,16 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
                 </span>
               )}
               <div className="shrink-0 min-w-[80px]">
-                <p className="text-base font-semibold text-stone-900 dark:text-stone-100 flex items-center gap-1">
-                  {w.japanese}
-                  {w.source === "ai" && <span className="text-[10px]" title="Voorgesteld door AI">✨</span>}
+                <p className="text-base font-semibold text-stone-900 dark:text-stone-100">
+                  {w ? w.japanese : "—"}
                 </p>
-                <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w.romaji}</p>
+                <p className="text-[11px] text-stone-400 dark:text-stone-500 italic">{w?.romaji ?? ""}</p>
               </div>
-              <p className="flex-1 text-sm text-stone-500 dark:text-stone-400">{w.dutch}</p>
+              <p className="flex-1 text-sm text-stone-500 dark:text-stone-400">{c.dutch}</p>
               {!selectMode && (
                 <button
-                  onClick={() => handleRemove(w)}
-                  aria-label={`Verwijder ${w.dutch}`}
+                  onClick={() => handleRemove(c)}
+                  aria-label={`Verwijder ${c.dutch}`}
                   className="shrink-0 w-7 h-7 flex items-center justify-center text-stone-300 dark:text-stone-600 hover:text-red-400 transition-colors text-xs"
                 >
                   ✕
@@ -356,9 +430,9 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
         </p>
       )}
 
-      {selectMode && words.length > 0 && (
+      {selectMode && concepts.length > 0 && (
         <div className="mt-4 flex items-center gap-3">
-          <button onClick={() => setSelected(new Set(words.map((w) => w.japanese)))} className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">Alles</button>
+          <button onClick={() => setSelected(new Set(concepts.map((c) => ckey(c.dutch))))} className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">Alles</button>
           <button onClick={() => setSelected(new Set())} disabled={selected.size === 0} className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors disabled:opacity-40">Wissen</button>
           <button
             onClick={() => setShowMove(true)}
@@ -388,11 +462,31 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
             onClick={() => setShowList((v) => !v)}
             className="w-full py-3 bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2"
           >
-            <span>{showList ? "▲" : "➕"}</span><span>Lijst toevoegen</span>
+            <span>{showList ? "▲" : "➕"}</span><span>Toevoegen</span>
           </button>
 
           {showList && (
             <div className="mt-2 bg-stone-50 dark:bg-stone-800/60 rounded-2xl p-3">
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">Los woord (Nederlands)</p>
+              <div className="flex gap-2 mb-3">
+                <input
+                  type="text"
+                  value={newWord}
+                  onChange={(e) => setNewWord(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && handleAddWord(newWord)}
+                  placeholder="bijv. paraplu, links, duur…"
+                  disabled={addingWord}
+                  className="flex-1 bg-white dark:bg-stone-800 rounded-xl px-3 py-2.5 text-xs text-stone-700 dark:text-stone-300 placeholder:text-stone-300 dark:placeholder:text-stone-600 outline-none disabled:opacity-50"
+                />
+                <button
+                  onClick={() => handleAddWord(newWord)}
+                  disabled={addingWord || !newWord.trim()}
+                  className="w-9 h-9 flex items-center justify-center rounded-xl bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 text-sm disabled:opacity-30 active:scale-95 transition-all shrink-0"
+                  aria-label="Woord toevoegen"
+                >
+                  {addingWord ? "…" : "→"}
+                </button>
+              </div>
               <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2">Kant-en-klaar</p>
               <div className="flex flex-wrap gap-1.5 mb-3">
                 {LIST_PRESETS.map((p) => (
@@ -451,6 +545,7 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
 // ─── Flashcard module ─────────────────────────────────────────────────────────
 
 function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () => void }) {
+  const { language } = useLanguage();
   const [index,   setIndex]   = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [dir,     setDir]     = useState(1);
@@ -484,6 +579,8 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
   const onCardClick = () => { if (didSwipe.current) { didSwipe.current = false; return; } setFlipped((v) => !v); };
 
   if (!phrase) return null;
+
+  const tr = getPhraseTranslation(phrase, language);
 
   return (
     <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
@@ -550,16 +647,16 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
               className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none"
             >
               <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-6">
-                Japans
+                {getLanguage(language)?.label ?? ""}
               </p>
               <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-3">
-                {phrase.translatedText}
+                {tr?.text ?? "…"}
               </p>
               <p className="text-base text-stone-400 dark:text-stone-500 italic">
-                {phrase.romaji}
+                {tr?.reading ?? ""}
               </p>
               <div className="mt-6">
-                <AudioButton text={phrase.translatedText} />
+                <AudioButton text={tr?.text ?? ""} />
               </div>
             </div>
           </div>
@@ -759,8 +856,8 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
     ? basisLijst.filter(
         (p) =>
           p.sourceText.toLowerCase().includes(query.toLowerCase()) ||
-          p.translatedText.includes(query) ||
-          p.romaji.toLowerCase().includes(query.toLowerCase()) ||
+          (p.translatedText ?? "").includes(query) ||
+          (p.romaji ?? "").toLowerCase().includes(query.toLowerCase()) ||
           p.tags.some((t) => t.toLowerCase().includes(query.toLowerCase()))
       )
     : basisLijst;

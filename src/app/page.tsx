@@ -12,11 +12,13 @@ import { categories, phrases as staticPhrases, getPhrasesByCategory } from "@/da
 import GrammarScreen from "@/components/grammar/GrammarScreen";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
-import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
+import { useVocabulary, VocabWord, wordForLang } from "@/hooks/useVocabulary";
 import { usePracticeSets, PracticeSentence, Difficulty, generateSetName } from "@/hooks/usePracticeSets";
 import AudioButton from "@/components/ui/AudioButton";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSelector from "@/components/ui/LanguageSelector";
+import { getPhraseTranslation } from "@/utils/phrase";
 import { Phrase } from "@/types";
 
 // ─── Vocab practice modal ─────────────────────────────────────────────────────
@@ -31,7 +33,7 @@ interface VocabPracticeModalProps {
 }
 
 function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose, autoStart }: VocabPracticeModalProps) {
-  const { getVocab, saveVocab }  = useVocabulary();
+  const { getConcepts }          = useVocabulary();
   const { language }             = useLanguage();
   const [mode,       setMode]       = useState<"select" | "loading" | "practice">(autoStart ? "loading" : "select");
   const [selected,   setSelected]   = useState<Set<string>>(() => new Set(initialSelected));
@@ -60,9 +62,14 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
 
     const all: VocabWord[] = [];
     for (const catId of selected) {
-      const cached = await getVocab(catId, language).catch(() => null);
-      if (cached) { all.push(...cached); continue; }
+      // Gedeelde conceptenlijst → woorden in de actieve taal.
+      const concepts = await getConcepts(catId).catch(() => null);
+      const mapped = (concepts ?? [])
+        .map((c) => wordForLang(c, language))
+        .filter(Boolean) as VocabWord[];
+      if (mapped.length) { all.push(...mapped); continue; }
 
+      // Fallback: nog geen (vertaalde) concepten — genereer voor deze sessie.
       const catPhrases = getPhrasesForCategory(catId);
       if (!catPhrases.length) continue;
       try {
@@ -72,9 +79,7 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
           body: JSON.stringify({ phrases: catPhrases, language }),
         });
         const data = await res.json();
-        const fetched: VocabWord[] = data.words ?? [];
-        saveVocab(catId, fetched, language);
-        all.push(...fetched);
+        all.push(...((data.words ?? []) as VocabWord[]));
       } catch { /* skip */ }
     }
 
@@ -470,7 +475,7 @@ const DIFFICULTIES: { id: Difficulty; label: string; desc: string; dot: string }
 ];
 
 function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose, autoStart, initialDifficulty, initialView }: SentencePracticeModalProps) {
-  const { getVocab }                           = useVocabulary();
+  const { getConcepts }                        = useVocabulary();
   const { saveAsNew, addToExisting, deleteSet, sets } = usePracticeSets();
   const { language }                           = useLanguage();
 
@@ -510,8 +515,10 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
 
     for (const catId of selected) {
       allPhrases.push(...getPhrasesForCategory(catId));
-      const cached = await getVocab(catId, language).catch(() => null);
-      if (cached) allWords.push(...cached);
+      const concepts = await getConcepts(catId).catch(() => null);
+      if (concepts) {
+        allWords.push(...(concepts.map((c) => wordForLang(c, language)).filter(Boolean) as VocabWord[]));
+      }
     }
 
     try {
@@ -824,7 +831,7 @@ export default function HomePage() {
   const { userCategories, userPhrases, staticFavoriteIds, categoryOrder, saveCategoryOrder, addCategory, getUserPhrasesByCategory } = useUserPhrases();
   const { user, loading, signInWithGoogle, signOut } = useAuth();
   const { theme, toggle } = useTheme();
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
   const [showNewCategory,      setShowNewCategory]      = useState(false);
   const [showVocabPractice,    setShowVocabPractice]    = useState(false);
   const [sentenceModal,        setSentenceModal]        = useState<{ view: "new" | "saved"; autoStart: boolean } | null>(null);
@@ -876,28 +883,16 @@ export default function HomePage() {
   const selectAllScope = () => handleSelectionChange(allCategories.map((c) => c.id));
   const clearScope     = () => handleSelectionChange([]);
 
+  // Zinnen in de actieve taal (via de agnostische helper); zinnen zonder die
+  // vertaling worden overgeslagen.
   const getPhrasesForCategory = (catId: string) => {
-    if (language === "zh") {
-      // Chinese mode: only user phrases that have a Chinese translation
-      return getUserPhrasesByCategory(catId)
-        .filter((p) => !!p.chineseText)
-        .map((p) => ({
-          translatedText: p.chineseText!,
-          romaji:         p.pinyin ?? "",
-          sourceText:     p.sourceText,
-        }));
-    }
-    const staticPhrases = getPhrasesByCategory(catId).map((p) => ({
-      translatedText: p.translatedText,
-      romaji:         p.romaji,
-      sourceText:     p.sourceText,
-    }));
-    const userPhr = getUserPhrasesByCategory(catId).map((p) => ({
-      translatedText: p.translatedText,
-      romaji:         p.romaji,
-      sourceText:     p.sourceText,
-    }));
-    return [...staticPhrases, ...userPhr];
+    const all = [...getPhrasesByCategory(catId), ...getUserPhrasesByCategory(catId)];
+    return all
+      .map((p) => {
+        const tr = getPhraseTranslation(p, language);
+        return tr ? { translatedText: tr.text, romaji: tr.reading, sourceText: p.sourceText } : null;
+      })
+      .filter(Boolean) as { translatedText: string; romaji: string; sourceText: string }[];
   };
 
   const getFullPhrasesForCategory = (catId: string): Phrase[] => {
@@ -922,14 +917,7 @@ export default function HomePage() {
 
         {/* Theme toggle + taal + auth */}
         <div className="flex items-center gap-2">
-          <button
-            onClick={() => setLanguage(language === "ja" ? "zh" : "ja")}
-            aria-label="Wissel taal"
-            className="h-8 rounded-full bg-white dark:bg-stone-800 flex items-center justify-center shadow-sm active:scale-95 transition-all px-2.5 gap-1"
-          >
-            <span className="text-sm">{language === "ja" ? "🇯🇵" : "🇨🇳"}</span>
-            <span className="text-[10px] font-semibold text-stone-500 dark:text-stone-400">{language === "ja" ? "JP" : "CN"}</span>
-          </button>
+          <LanguageSelector />
           <button
             onClick={toggle}
             aria-label="Wissel thema"

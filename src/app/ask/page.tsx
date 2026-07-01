@@ -9,6 +9,7 @@ import ResultCard from "@/components/cards/ResultCard";
 import { exampleChips, getCategoryById } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { AskNowResult } from "@/types";
 
 type LoadState = "idle" | "loading" | "result" | "error";
@@ -20,6 +21,7 @@ function VraagInhoud() {
   const vooringevuldeCategorie = searchParams.get("categorie");
   const { userCategories } = useUserPhrases();
   const { user, loading: authLoading, signInWithGoogle } = useAuth();
+  const { language } = useLanguage();
 
   // Resolve category name for the subtitle
   const staticCat = vooringevuldeCategorie ? getCategoryById(vooringevuldeCategorie) : null;
@@ -45,7 +47,7 @@ function VraagInhoud() {
       const res = await fetch("/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: trimmed }),
+        body: JSON.stringify({ query: trimmed, language }),
       });
 
       if (!res.ok) {

@@ -15,7 +15,7 @@ import {
 } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useAuth } from "@/contexts/AuthContext";
-import { Phrase, AskNowResult, GrammarExplanation } from "@/types";
+import { Phrase, AskNowResult, GrammarExplanation, PhraseTranslation } from "@/types";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -31,19 +31,23 @@ export interface UserCategory {
 async function generateAndSaveGrammar(
   uid: string,
   phraseId: string,
-  japanese: string,
-  romaji: string,
+  lang: string,
+  text: string,
+  reading: string,
   english: string
 ): Promise<void> {
   try {
     const res = await fetch("/api/explain", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ japanese, romaji, english }),
+      body: JSON.stringify({ japanese: text, romaji: reading, english, language: lang }),
     });
     if (!res.ok) return;
-    const grammarExplanation: GrammarExplanation = await res.json();
-    await updateDoc(doc(db, "users", uid, "phrases", phraseId), { grammarExplanation });
+    const grammar: GrammarExplanation = await res.json();
+    const field = lang === "ja" ? { grammarExplanation: grammar }
+                : lang === "zh" ? { chineseGrammar: grammar }
+                : { [`translations.${lang}.grammar`]: grammar };
+    await updateDoc(doc(db, "users", uid, "phrases", phraseId), field);
   } catch {
     // Best-effort — silently ignore on failure
   }
@@ -126,21 +130,36 @@ export function useUserPhrases() {
   ): Promise<Phrase> => {
     if (!user) throw new Error("Niet ingelogd");
 
-    // Firestore rejects undefined values — only include optional fields when defined
+    const lang = result.language;
+    const translation: PhraseTranslation = {
+      text:        result.text,
+      reading:     result.reading,
+      explanation: result.explanation,
+      ...(result.shortVersion  && { shortVersion:  result.shortVersion  }),
+      ...(result.politeVersion && { politeVersion: result.politeVersion }),
+    };
+
+    // Sla op onder translations.{taal}; voor ja/zh óók de legacy-velden zodat
+    // nog niet gemigreerde schermen (flashcards, oefenen) blijven werken.
     const data: Omit<Phrase, "id"> = {
       categoryId,
-      sourceText:     result.sourceText,
-      translatedText: result.translatedText,
-      romaji:         result.romaji,
-      explanation:    result.explanation,
-      tags:           [],
-      isFavorite:     false,
-      sortOrder:      Date.now(),
-      ...(result.shortVersion        && { shortVersion:        result.shortVersion        }),
-      ...(result.politeVersion       && { politeVersion:       result.politeVersion       }),
-      ...(result.chineseText         && { chineseText:         result.chineseText         }),
-      ...(result.pinyin              && { pinyin:              result.pinyin              }),
-      ...(result.chineseExplanation  && { chineseExplanation:  result.chineseExplanation  }),
+      sourceText:   result.sourceText,
+      tags:         [],
+      isFavorite:   false,
+      sortOrder:    Date.now(),
+      translations: { [lang]: translation },
+      ...(lang === "ja" && {
+        translatedText: result.text,
+        romaji:         result.reading,
+        explanation:    result.explanation,
+        ...(result.shortVersion  && { shortVersion:  result.shortVersion  }),
+        ...(result.politeVersion && { politeVersion: result.politeVersion }),
+      }),
+      ...(lang === "zh" && {
+        chineseText:        result.text,
+        pinyin:             result.reading,
+        chineseExplanation: result.explanation,
+      }),
     };
 
     const ref = await addDoc(
@@ -149,7 +168,7 @@ export function useUserPhrases() {
     );
 
     // Generate grammar in the background — don't block the save flow
-    generateAndSaveGrammar(user.uid, ref.id, data.translatedText, data.romaji, data.sourceText);
+    generateAndSaveGrammar(user.uid, ref.id, lang, result.text, result.reading, result.sourceText);
 
     return { ...data, id: ref.id };
   };
@@ -223,28 +242,20 @@ export function useUserPhrases() {
     await updateDoc(doc(db, "users", user.uid, "phrases", id), { sortOrder });
   };
 
-  const updatePhraseGrammar = async (id: string, grammarExplanation: GrammarExplanation): Promise<void> => {
+  // Grammatica per taal: ja/zh gaan naar de legacy-velden, overige talen naar
+  // translations.{lang}.grammar. De lees-helper merge't beide.
+  const updatePhraseGrammar = async (id: string, lang: string, grammar: GrammarExplanation): Promise<void> => {
     if (!user) return;
-    await updateDoc(doc(db, "users", user.uid, "phrases", id), { grammarExplanation });
+    const ref = doc(db, "users", user.uid, "phrases", id);
+    if (lang === "ja")      await updateDoc(ref, { grammarExplanation: grammar });
+    else if (lang === "zh") await updateDoc(ref, { chineseGrammar: grammar });
+    else                    await updateDoc(ref, { [`translations.${lang}.grammar`]: grammar });
   };
 
-  const updatePhraseChineseGrammar = async (id: string, chineseGrammar: GrammarExplanation): Promise<void> => {
+  // On-demand vertaling van een zin naar een taal → translations.{lang}.
+  const updatePhraseTranslation = async (id: string, lang: string, tr: PhraseTranslation): Promise<void> => {
     if (!user) return;
-    await updateDoc(doc(db, "users", user.uid, "phrases", id), { chineseGrammar });
-  };
-
-  const updateChinese = async (
-    id: string,
-    chineseText: string,
-    pinyin: string,
-    chineseExplanation: string
-  ): Promise<void> => {
-    if (!user) return;
-    await updateDoc(doc(db, "users", user.uid, "phrases", id), {
-      chineseText,
-      pinyin,
-      chineseExplanation,
-    });
+    await updateDoc(doc(db, "users", user.uid, "phrases", id), { [`translations.${lang}`]: tr });
   };
 
   // ── Read helpers ───────────────────────────────────────────────────────────
@@ -285,8 +296,7 @@ export function useUserPhrases() {
     hideStaticPhrase,
     updatePhraseSortOrder,
     updatePhraseGrammar,
-    updatePhraseChineseGrammar,
-    updateChinese,
+    updatePhraseTranslation,
     getUserPhraseById,
     getUserPhrasesByCategory,
   };

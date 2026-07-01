@@ -1,8 +1,9 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState } from "react";
+import { LangCode, DEFAULT_LANG, isLangCode } from "@/data/languages";
 
-export type AppLanguage = "ja" | "zh";
+export type AppLanguage = LangCode;
 
 interface LanguageContextValue {
   language: AppLanguage;
@@ -10,16 +11,16 @@ interface LanguageContextValue {
 }
 
 const LanguageContext = createContext<LanguageContextValue>({
-  language: "ja",
+  language: DEFAULT_LANG,
   setLanguage: () => {},
 });
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<AppLanguage>("ja");
+  const [language, setLanguageState] = useState<AppLanguage>(DEFAULT_LANG);
 
   useEffect(() => {
-    const saved = localStorage.getItem("phrasekit-language") as AppLanguage | null;
-    if (saved === "ja" || saved === "zh") setLanguageState(saved);
+    const saved = localStorage.getItem("phrasekit-language");
+    if (saved && isLangCode(saved)) setLanguageState(saved);
   }, []);
 
   const setLanguage = (l: AppLanguage) => {
