@@ -33,6 +33,7 @@ import { getLanguage } from "@/data/languages";
 import { Phrase } from "@/types";
 import InlineTranslator from "@/components/ui/InlineTranslator";
 import AudioButton from "@/components/ui/AudioButton";
+import SpeedButton from "@/components/ui/SpeedButton";
 
 // ─── Vocabulary list (inline) ─────────────────────────────────────────────────
 
@@ -642,6 +643,7 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
         </p>
 
         <div className="flex items-center gap-2">
+          <SpeedButton />
           <button
             onClick={() => setAudioFirst((v) => !v)}
             className={`w-9 h-9 flex items-center justify-center rounded-full shadow-sm transition-colors text-sm ${
@@ -800,6 +802,7 @@ function WordFlashcardModal({ words, onClose }: { words: VocabWord[]; onClose: (
         <button onClick={onClose} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg" aria-label="Sluiten">✕</button>
         <p className="text-sm font-medium text-stone-400 dark:text-stone-500 tabular-nums">{index + 1} <span className="text-stone-300 dark:text-stone-600">/</span> {order.length}</p>
         <div className="flex items-center gap-2">
+          <SpeedButton />
           <button onClick={() => setAudioFirst((v) => !v)} className={`w-9 h-9 flex items-center justify-center rounded-full shadow-sm transition-colors text-sm ${audioFirst ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900" : "bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200"}`} aria-label="Luister eerst" title="Luister-eerst: hoor het woord, draai om voor het Nederlands">🔊</button>
           <button onClick={shuffle} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm" aria-label="Schudden">⇄</button>
         </div>
@@ -1008,10 +1011,10 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         <InlineTranslator defaultCategoryId={id} categoryName={category.name} />
       </div>
 
-      {/* ── Zinnen / Woorden toggle ───────────────────────────────── */}
+      {/* ── Zinnen / Woorden toggle + afspeelsnelheid ─────────────── */}
       {alleZinnen.length > 0 && !editMode && (
-        <div className="px-5 pb-1">
-          <div className="flex gap-1 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
+        <div className="px-5 pb-1 flex items-center gap-2">
+          <div className="flex-1 flex gap-1 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
             {(["zinnen", "woorden"] as const).map((v) => (
               <button
                 key={v}
@@ -1026,6 +1029,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
               </button>
             ))}
           </div>
+          <SpeedButton />
         </div>
       )}
 

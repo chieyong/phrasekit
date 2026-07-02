@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useSpeed } from "@/contexts/SpeedContext";
 
 export type AudioState = "idle" | "playing" | "unsupported";
 
@@ -20,6 +21,7 @@ const BCP47: Record<string, string> = { ja: "ja-JP", zh: "zh-CN", yue: "zh-HK" }
 
 export function useAudio(): UseAudioReturn {
   const { language } = useLanguage();
+  const { speed } = useSpeed();
   const [audioState, setAudioState] = useState<AudioState>("idle");
   const audioElementRef  = useRef<HTMLAudioElement | null>(null);
   const utteranceRef     = useRef<SpeechSynthesisUtterance | null>(null);
@@ -60,7 +62,7 @@ export function useAudio(): UseAudioReturn {
   const speakViaSpeechAPI = useCallback((text: string, lang: string) => {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang  = BCP47[lang] ?? "ja-JP";
-    utterance.rate  = 0.85;
+    utterance.rate  = speed;
     utterance.pitch = lang === "ja" ? 1.1 : 1.0;
     const voice = getVoice(lang);
     if (voice) { utterance.voice = voice; utterance.lang = voice.lang; }
@@ -72,7 +74,7 @@ export function useAudio(): UseAudioReturn {
     };
     utteranceRef.current = utterance;
     window.speechSynthesis.speak(utterance);
-  }, []);
+  }, [speed]);
 
   // Wacht zo nodig tot de stemmen geladen zijn en spreek dan.
   const speakWhenReady = useCallback((text: string, lang: string) => {
@@ -94,13 +96,13 @@ export function useAudio(): UseAudioReturn {
 
   const playViaOpenAI = useCallback(async (text: string, lang: string): Promise<boolean> => {
     try {
-      const key = `${lang}:${text}`;
+      const key = `${lang}:${speed}:${text}`;
       let url = audioCache.get(key);
       if (!url) {
         const res = await fetch("/api/tts", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text }),
+          body: JSON.stringify({ text, speed }),
         });
         if (!res.ok) return false;
         const blob = await res.blob();
@@ -117,7 +119,7 @@ export function useAudio(): UseAudioReturn {
     } catch {
       return false;
     }
-  }, []);
+  }, [speed]);
 
   // ── Public play ────────────────────────────────────────────────────────────
 

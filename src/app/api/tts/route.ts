@@ -7,9 +7,11 @@ export async function POST(request: NextRequest) {
   }
 
   let text: string;
+  let speed = 1;
   try {
     const body = await request.json();
-    text = (body.text ?? "").trim();
+    text  = (body.text ?? "").trim();
+    speed = Math.min(Math.max(Number(body.speed) || 1, 0.25), 4);
   } catch {
     return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
   }
@@ -30,6 +32,7 @@ export async function POST(request: NextRequest) {
         voice: "nova",
         input: text,
         response_format: "mp3",
+        speed,
       }),
     });
 
