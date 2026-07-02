@@ -1,4 +1,22 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getLanguage } from "@/data/languages";
+
+function buildGenericPrompt(langCode: string): string {
+  const name    = getLanguage(langCode)?.label ?? "de doeltaal";
+  const reading = getLanguage(langCode)?.readingLabel ?? "lezing";
+  return `Je bent een grammaticadocent ${name} voor Nederlandstalige reizigers. Analyseer de gegeven zinnen en identificeer 4-8 grammaticale patronen die prominent aanwezig zijn.
+
+Regels:
+- Kies patronen die écht voorkomen in de zinnen (niet hypothetisch).
+- Naam: kort; Tagline: één zin over doel/gebruik.
+- Elke zin valt in precies één module — kies het meest kenmerkende patroon.
+- Sorteer van meest voorkomend naar minst voorkomend.
+- Voeg een "niveau" toe: "basis", "gemiddeld" of "gevorderd".
+- "romaji": ${reading}-weergave van de naam.
+
+Reageer met ALLEEN geldig JSON:
+{ "modules": [ { "naam": "...", "romaji": "...", "tagline": "...", "niveau": "basis|gemiddeld|gevorderd", "zinIds": ["..."] } ] }`;
+}
 
 const JA_PROMPT = `Je bent een Japanse grammaticadocent voor Nederlandstalige reizigers. Analyseer de gegeven zinnen en identificeer 4-8 grammaticale patronen die prominent aanwezig zijn.
 
@@ -44,9 +62,8 @@ export async function POST(request: NextRequest) {
 
   if (phrases.length < 3) return NextResponse.json({ modules: [] });
 
-  const isZh   = language === "zh";
-  const label1 = isZh ? "中文"   : "日本語";
-  const label2 = isZh ? "pinyin" : "romaji";
+  const label1 = getLanguage(language)?.label ?? "Doeltaal";
+  const label2 = getLanguage(language)?.readingLabel ?? "lezing";
 
   const list = phrases
     .slice(0, 60)
@@ -61,7 +78,7 @@ export async function POST(request: NextRequest) {
         model: "gpt-4o-mini",
         response_format: { type: "json_object" },
         messages: [
-          { role: "system", content: isZh ? ZH_PROMPT : JA_PROMPT },
+          { role: "system", content: language === "zh" ? ZH_PROMPT : language === "ja" ? JA_PROMPT : buildGenericPrompt(language) },
           { role: "user",   content: list },
         ],
         temperature: 0.2,

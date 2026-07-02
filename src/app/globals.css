@@ -63,11 +63,11 @@ body {
   display: none;
 }
 
-/* Flashcard: lichte schuif-in bij wisselen van kaart (richting via --slide-from) */
+/* Flashcard: schuif-in bij wisselen van kaart (richting via --slide-from) */
 @keyframes cardSlideIn {
-  from { opacity: 0.3; transform: translateX(var(--slide-from, 0)); }
-  to   { opacity: 1;   transform: translateX(0); }
+  from { opacity: 0.12; transform: translateX(var(--slide-from, 0)) scale(0.955); }
+  to   { opacity: 1;    transform: translateX(0) scale(1); }
 }
 .card-slide-in {
-  animation: cardSlideIn 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: cardSlideIn 0.34s cubic-bezier(0.22, 0.61, 0.36, 1);
 }

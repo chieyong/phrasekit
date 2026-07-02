@@ -412,8 +412,9 @@ export const exampleChips: ExampleChip[] = [
 export const mockAskNowResponses: Record<string, AskNowResult> = {
   default: {
     sourceText: "4 kaartjes naar Kyoto graag",
-    translatedText: "京都まで4枚お願いします。",
-    romaji: "Kyōto made yon-mai onegai shimasu.",
+    language: "ja",
+    text: "京都まで4枚お願いします。",
+    reading: "Kyōto made yon-mai onegai shimasu.",
     explanation: "Een beleefde vraag om 4 kaartjes naar Kyoto bij het loket.",
     shortVersion: {
       translatedText: "京都、4枚。",

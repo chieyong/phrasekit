@@ -6,17 +6,18 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import AccessGate from "@/components/layout/AccessGate";
 
 export const metadata: Metadata = {
-  title: "PhraseKit Japan",
+  title: "PhraseKit",
   description:
-    "Japanse reiszinnen voor onderweg, altijd bij de hand. Gemaakt door VizCraft.",
+    "Reiszinnen voor onderweg, altijd bij de hand. Gemaakt door VizCraft.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "PhrasePath",
+    title: "PhraseKit",
   },
   icons: {
-    apple: "/icon-192.png",
+    icon: "/icon-192.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 

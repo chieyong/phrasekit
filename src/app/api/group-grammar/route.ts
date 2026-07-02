@@ -1,4 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getLanguage } from "@/data/languages";
+
+function buildGenericPrompt(langCode: string): string {
+  const name = getLanguage(langCode)?.label ?? "de doeltaal";
+  return `Je bent een grammaticadocent ${name}. Gegeven een lijst zinnen (met id, ${name} tekst en Nederlandse vertaling), groepeer ze op grammaticale structuur.
+
+Regels:
+- Maak 2–5 zinvolle groepen op basis van grammaticale patronen.
+- Elke zin valt in precies één groep — wijs elke id toe.
+- Groepsnamen zijn kort (max 3 woorden), in het Nederlands.
+- Sorteer groepen van meest voorkomend naar minst voorkomend.
+
+Reageer met ALLEEN geldig JSON:
+{ "groups": [ { "groep": "<naam>", "zinIds": ["<id>", ...] } ] }`;
+}
 
 const JA_PROMPT = `Je bent een Japanse grammaticadocent. Gegeven een lijst zinnen (met id, Japanse tekst en Nederlandse vertaling), groepeer ze op grammaticale structuur.
 
@@ -40,8 +55,7 @@ export async function POST(request: NextRequest) {
 
   if (phrases.length < 2) return NextResponse.json({ groups: [] });
 
-  const isZh   = language === "zh";
-  const label  = isZh ? "Chinees" : "Japans";
+  const label  = getLanguage(language)?.label ?? "Doeltaal";
   const list   = phrases
     .slice(0, 50)
     .map((p, i) => `${i + 1}. id:${p.id} | ${label}: ${p.translatedText} | NL: ${p.sourceText}`)
@@ -55,7 +69,7 @@ export async function POST(request: NextRequest) {
         model: "gpt-4o-mini",
         response_format: { type: "json_object" },
         messages: [
-          { role: "system", content: isZh ? ZH_PROMPT : JA_PROMPT },
+          { role: "system", content: language === "zh" ? ZH_PROMPT : language === "ja" ? JA_PROMPT : buildGenericPrompt(language) },
           { role: "user",   content: list },
         ],
         temperature: 0.2,

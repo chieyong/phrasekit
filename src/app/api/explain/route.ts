@@ -1,6 +1,32 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getLanguage } from "@/data/languages";
 
-const JA_PROMPT = `Je bent een Japanse taalleraar voor Nederlandstalige reizigers. Gegeven een Japanse zin (met romaji en Nederlandse betekenis), leg de grammatica uit in eenvoudig, begrijpelijk Nederlands.
+// Generieke grammatica-prompt voor talen zonder eigen prompt (bijv. Kantonees).
+function buildGenericPrompt(langCode: string): string {
+  const l = getLanguage(langCode);
+  const name    = l?.label ?? "de doeltaal";
+  const reading = l?.readingLabel ?? "lezing";
+  const script  = l?.scriptNote ?? "";
+  return `Je bent een taalleraar ${name} voor Nederlandstalige reizigers. Gegeven een zin in het ${name} (met ${reading} en Nederlandse betekenis), leg de grammatica uit in eenvoudig, begrijpelijk Nederlands.
+
+Reageer met ALLEEN geldig JSON — gebruik exact deze veldnamen (het veld 'japanese' bevat de tekst in de doeltaal, 'romaji' de ${reading}):
+{
+  "summary": "<1 korte zin: welke structuur de zin gebruikt>",
+  "meaning": "<natuurlijke Nederlandse parafrase (1 zin)>",
+  "parts": [ { "japanese": "<woord of partikel ${script}>", "romaji": "<${reading}>", "meaning": "<Nederlandse vertaling van dit woord; weglaten bij functiewoorden>", "role": "<grammaticale functie>", "note": "<optioneel>" } ],
+  "synthesis": "<1 zin die de kernstructuur samenvat>",
+  "examples": [ { "japanese": "<nieuwe voorbeeldzin ${script}>", "romaji": "<${reading}>", "dutch": "<vertaling>" } ],
+  "responses": [ { "japanese": "<natuurlijke reactiezin ${script}>", "romaji": "<${reading}>", "dutch": "<vertaling>" } ],
+  "tip": "<1 praktische tip>"
+}
+
+Instructies:
+- Splits 'parts' in de kleinst mogelijke eenheden (elk inhoudswoord én partikel apart); geef bij inhoudswoorden de Nederlandse vertaling in 'meaning'.
+- Neem GEEN losse leestekens/scheidingstekens op; vat een opsomming samen in één part.
+- Geef 2–3 nieuwe voorbeelden en 2–3 mogelijke reacties, kort en praktisch.`;
+}
+
+const JA_PROMPT = `Je bent een Japanse taalleraar voor Nederlandstalige reizigers. Gegeven een Japanse zin (met romaji en Nederlandse betekenis), leg de grammatica uit in eenvoudig, begrijpelijk Nederlands. Gegeven een Japanse zin (met romaji en Nederlandse betekenis), leg de grammatica uit in eenvoudig, begrijpelijk Nederlands.
 
 Reageer met ALLEEN geldig JSON:
 {
@@ -129,9 +155,9 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Text is required" }, { status: 400 });
   }
 
-  const systemPrompt  = language === "zh" ? ZH_PROMPT : JA_PROMPT;
-  const labelText     = language === "zh" ? "Chinees" : "Japans";
-  const labelReading  = language === "zh" ? "Pinyin"  : "Romaji";
+  const systemPrompt  = language === "zh" ? ZH_PROMPT : language === "ja" ? JA_PROMPT : buildGenericPrompt(language);
+  const labelText     = getLanguage(language)?.label ?? "Doeltaal";
+  const labelReading  = getLanguage(language)?.readingLabel ?? "Lezing";
   const userMessage   = `${labelText}: ${japanese}\n${labelReading}: ${romaji}\nBetekenis: ${english}`;
 
   try {

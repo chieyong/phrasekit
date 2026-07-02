@@ -7,7 +7,6 @@ import { useUserPhrases, UserCategory } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 import CategoryPicker from "@/components/ui/CategoryPicker";
 import GrammarPanel from "@/components/grammar/GrammarPanel";
-import { useLanguage } from "@/contexts/LanguageContext";
 import { categories } from "@/data/mockData";
 
 interface ResultCardProps {
@@ -26,13 +25,6 @@ export default function ResultCard({
   const { play, audioState } = useAudio();
   const { addPhrase, addCategory, userCategories } = useUserPhrases();
   const { user, signInWithGoogle } = useAuth();
-  const { language } = useLanguage();
-
-  // Grammar follows the active language; fall back to Japanese when the
-  // Chinese translation is absent.
-  const useZh    = language === "zh" && !!result.chineseText;
-  const gPrimary = useZh ? result.chineseText! : result.translatedText;
-  const gRomaji  = useZh ? (result.pinyin ?? "") : result.romaji;
 
   const [showPicker, setShowPicker] = useState(false);
   const [savedTo,    setSavedTo]    = useState<string | null>(null);
@@ -75,9 +67,9 @@ export default function ResultCard({
             "{result.sourceText}"
           </p>
           <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">
-            {result.translatedText}
+            {result.text}
           </p>
-          <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{result.romaji}</p>
+          <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{result.reading}</p>
           <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed border-t border-stone-100 dark:border-stone-700 pt-3">
             {result.explanation}
           </p>
@@ -102,36 +94,14 @@ export default function ResultCard({
             </div>
           )}
 
-          {/* Chinese translation block */}
-          {result.chineseText && (
-            <div className="mt-4 pt-4 border-t border-stone-100 dark:border-stone-700">
-              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2 flex items-center gap-1.5">
-                <span>🇨🇳</span><span>Chinees (Mandarijn)</span>
-              </p>
-              <p className="text-2xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-1">
-                {result.chineseText}
-              </p>
-              <p className="text-base text-stone-400 dark:text-stone-500 italic mb-2">{result.pinyin}</p>
-              {result.chineseExplanation && (
-                <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">{result.chineseExplanation}</p>
-              )}
-              <button
-                onClick={() => play(result.chineseText!)}
-                className="mt-2 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors flex items-center gap-1"
-              >
-                🔊 Afspelen
-              </button>
-            </div>
-          )}
-
           {user && (
             <GrammarPanel
-              key={useZh ? "zh" : "ja"}
+              key={result.language}
               embedded
-              japanese={gPrimary}
-              romaji={gRomaji}
+              japanese={result.text}
+              romaji={result.reading}
               english={result.sourceText}
-              language={useZh ? "zh" : "ja"}
+              language={result.language}
             />
           )}
         </div>
@@ -160,7 +130,7 @@ export default function ResultCard({
 
         <div className="flex flex-wrap gap-3 px-5 pb-4 border-t border-stone-50 dark:border-stone-800 pt-1">
           <button
-            onClick={() => !isPlaying && play(result.translatedText)}
+            onClick={() => !isPlaying && play(result.text)}
             className={`text-xs font-medium transition-colors ${isPlaying ? "text-stone-500 dark:text-stone-400" : "text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300"}`}
           >
             {isPlaying ? "⏸ Bezig" : "🔊 Afspelen"}

@@ -12,11 +12,15 @@ import { categories, phrases as staticPhrases, getPhrasesByCategory } from "@/da
 import GrammarScreen from "@/components/grammar/GrammarScreen";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
-import { useVocabulary, VocabWord } from "@/hooks/useVocabulary";
+import { useVocabulary, VocabWord, wordForLang } from "@/hooks/useVocabulary";
 import { usePracticeSets, PracticeSentence, Difficulty, generateSetName } from "@/hooks/usePracticeSets";
 import AudioButton from "@/components/ui/AudioButton";
+import { useAudio } from "@/hooks/useAudio";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSelector from "@/components/ui/LanguageSelector";
+import { getPhraseTranslation } from "@/utils/phrase";
+import { getLanguage } from "@/data/languages";
 import { Phrase } from "@/types";
 
 // ─── Vocab practice modal ─────────────────────────────────────────────────────
@@ -31,14 +35,16 @@ interface VocabPracticeModalProps {
 }
 
 function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose, autoStart }: VocabPracticeModalProps) {
-  const { getVocab, saveVocab }  = useVocabulary();
+  const { getConceptsForLang }   = useVocabulary();
   const { language }             = useLanguage();
+  const { play }                 = useAudio();
   const [mode,       setMode]       = useState<"select" | "loading" | "practice">(autoStart ? "loading" : "select");
   const [selected,   setSelected]   = useState<Set<string>>(() => new Set(initialSelected));
   const [words,      setWords]      = useState<VocabWord[]>([]);
   const [cardIndex,  setCardIndex]  = useState(0);
   const [flipped,    setFlipped]    = useState(false);
   const [dir,        setDir]        = useState(1);
+  const [audioFirst, setAudioFirst] = useState(false);
 
   const allIds = allCategories.map((c) => c.id);
   const allSelected = allIds.every((id) => selected.has(id));
@@ -60,9 +66,14 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
 
     const all: VocabWord[] = [];
     for (const catId of selected) {
-      const cached = await getVocab(catId, language).catch(() => null);
-      if (cached) { all.push(...cached); continue; }
+      // Gedeelde conceptenlijst → woorden in de actieve taal (met lui bijvertalen).
+      const concepts = await getConceptsForLang(catId, language).catch(() => []);
+      const mapped = concepts
+        .map((c) => wordForLang(c, language))
+        .filter(Boolean) as VocabWord[];
+      if (mapped.length) { all.push(...mapped); continue; }
 
+      // Fallback: nog geen (vertaalde) concepten — genereer voor deze sessie.
       const catPhrases = getPhrasesForCategory(catId);
       if (!catPhrases.length) continue;
       try {
@@ -72,9 +83,7 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
           body: JSON.stringify({ phrases: catPhrases, language }),
         });
         const data = await res.json();
-        const fetched: VocabWord[] = data.words ?? [];
-        saveVocab(catId, fetched, language);
-        all.push(...fetched);
+        all.push(...((data.words ?? []) as VocabWord[]));
       } catch { /* skip */ }
     }
 
@@ -104,6 +113,12 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
     setFlipped(false);
     setTimeout(() => setCardIndex((i) => Math.min(Math.max(i + delta, 0), words.length - 1)), 50);
   };
+
+  // Luister-eerst: speel de doeltaal automatisch af bij een nieuwe kaart.
+  useEffect(() => {
+    if (audioFirst && mode === "practice") { const w = words[cardIndex]; if (w?.japanese) play(w.japanese); }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cardIndex, audioFirst, mode]);
 
   // Swipe links = volgende, rechts = vorige. Een swipe onderdrukt de tik-flip.
   const touchStartX = useRef<number | null>(null);
@@ -205,16 +220,24 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
         <p className="text-sm font-medium text-stone-400 dark:text-stone-500 tabular-nums">
           {cardIndex + 1} <span className="text-stone-300 dark:text-stone-600">/</span> {words.length}
         </p>
-        <button
-          onClick={() => { setWords((w) => [...w].sort(() => Math.random() - 0.5)); setCardIndex(0); setFlipped(false); }}
-          className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm"
-          aria-label="Schudden"
-        >⇄</button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setAudioFirst((v) => !v)}
+            className={`w-9 h-9 flex items-center justify-center rounded-full shadow-sm transition-colors text-sm ${audioFirst ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900" : "bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200"}`}
+            aria-label="Luister eerst"
+            title="Luister-eerst: hoor het woord, draai om voor het Nederlands"
+          >🔊</button>
+          <button
+            onClick={() => { setWords((w) => [...w].sort(() => Math.random() - 0.5)); setCardIndex(0); setFlipped(false); }}
+            className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm"
+            aria-label="Schudden"
+          >⇄</button>
+        </div>
       </div>
 
       {/* Card */}
       <div className="flex-1 flex items-center justify-center px-6">
-        <div key={cardIndex} className="w-full max-w-sm card-slide-in" style={{ perspective: "1200px", "--slide-from": `${dir * 28}px` } as React.CSSProperties}>
+        <div key={cardIndex} className="w-full max-w-sm card-slide-in" style={{ perspective: "1200px", "--slide-from": `${dir * 44}px` } as React.CSSProperties}>
           <div
             onClick={onCardClick}
             onTouchStart={onTouchStart}
@@ -228,19 +251,31 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
               cursor:         "pointer",
             }}
           >
-            {/* Voorkant — Nederlands */}
-            <div style={{ backfaceVisibility: "hidden" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-              <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-6">Nederlands</p>
-              <p className="text-2xl font-semibold text-stone-900 dark:text-stone-100 leading-snug">{word.dutch}</p>
-              <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">Tik om te draaien</p>
-            </div>
-            {/* Achterkant — Japans */}
-            <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-6">{language === "zh" ? "Chinees" : "Japans"}</p>
-              <p className="text-4xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">{word.japanese}</p>
-              <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{word.romaji}</p>
-              <AudioButton text={word.japanese} />
-            </div>
+            {(() => {
+              const targetNode = (
+                <>
+                  <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-6">{getLanguage(language)?.label ?? ""}</p>
+                  <p className="text-4xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">{word.japanese}</p>
+                  <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{word.romaji}</p>
+                  <AudioButton text={word.japanese} />
+                </>
+              );
+              const dutchNode = (
+                <>
+                  <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-6">Nederlands</p>
+                  <p className="text-2xl font-semibold text-stone-900 dark:text-stone-100 leading-snug">{word.dutch}</p>
+                  <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">Tik om te draaien</p>
+                </>
+              );
+              return (<>
+                <div style={{ backfaceVisibility: "hidden" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
+                  {audioFirst ? targetNode : dutchNode}
+                </div>
+                <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
+                  {audioFirst ? dutchNode : targetNode}
+                </div>
+              </>);
+            })()}
           </div>
         </div>
       </div>
@@ -307,7 +342,7 @@ function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, initialSe
           language,
           phrases: collected.map((p) => ({
             id:             p.id,
-            translatedText: language === "zh" ? (p.chineseText ?? p.translatedText) : p.translatedText,
+            translatedText: getPhraseTranslation(p, language)?.text ?? "",
             sourceText:     p.sourceText,
           })),
         }),
@@ -470,9 +505,10 @@ const DIFFICULTIES: { id: Difficulty; label: string; desc: string; dot: string }
 ];
 
 function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose, autoStart, initialDifficulty, initialView }: SentencePracticeModalProps) {
-  const { getVocab }                           = useVocabulary();
+  const { getConceptsForLang }                 = useVocabulary();
   const { saveAsNew, addToExisting, deleteSet, sets } = usePracticeSets();
   const { language }                           = useLanguage();
+  const { play }                               = useAudio();
 
   const [mode,        setMode]        = useState<"select" | "loading" | "practice">(autoStart ? "loading" : "select");
   const [selectTab,   setSelectTab]   = useState<"new" | "saved">(initialView ?? "new");
@@ -482,6 +518,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
   const [cardIndex,   setCardIndex]   = useState(0);
   const [flipped,     setFlipped]     = useState(false);
   const [dir,         setDir]         = useState(1);
+  const [audioFirst,  setAudioFirst]  = useState(false);
   const [isFromSaved, setIsFromSaved] = useState(false);
   const [showSave,    setShowSave]    = useState(false);
   const [savedMsg,    setSavedMsg]    = useState<string | null>(null);
@@ -510,8 +547,8 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
 
     for (const catId of selected) {
       allPhrases.push(...getPhrasesForCategory(catId));
-      const cached = await getVocab(catId, language).catch(() => null);
-      if (cached) allWords.push(...cached);
+      const concepts = await getConceptsForLang(catId, language).catch(() => []);
+      allWords.push(...(concepts.map((c) => wordForLang(c, language)).filter(Boolean) as VocabWord[]));
     }
 
     try {
@@ -583,6 +620,12 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
     setFlipped(false);
     setTimeout(() => setCardIndex((i) => Math.min(Math.max(i + delta, 0), sentences.length - 1)), 50);
   };
+
+  // Luister-eerst: speel de doeltaal automatisch af bij een nieuwe kaart.
+  useEffect(() => {
+    if (audioFirst && mode === "practice") { const s = sentences[cardIndex]; if (s?.japanese) play(s.japanese); }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cardIndex, audioFirst, mode]);
 
   // Swipe links = volgende, rechts = vorige. Een swipe onderdrukt de tik-flip.
   const touchStartX = useRef<number | null>(null);
@@ -740,24 +783,41 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
             {DIFFICULTIES.find((d) => d.id === difficulty)?.label}
           </span>
         </div>
-        <button onClick={() => { setSentences((s) => [...s].sort(() => Math.random() - 0.5)); setCardIndex(0); setFlipped(false); }} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm" aria-label="Schudden">⇄</button>
+        <div className="flex items-center gap-2">
+          <button onClick={() => setAudioFirst((v) => !v)} className={`w-9 h-9 flex items-center justify-center rounded-full shadow-sm transition-colors text-sm ${audioFirst ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900" : "bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200"}`} aria-label="Luister eerst" title="Luister-eerst: hoor de zin, draai om voor het Nederlands">🔊</button>
+          <button onClick={() => { setSentences((s) => [...s].sort(() => Math.random() - 0.5)); setCardIndex(0); setFlipped(false); }} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm" aria-label="Schudden">⇄</button>
+        </div>
       </div>
 
       {/* Card */}
       <div className="flex-1 flex items-center justify-center px-6">
-        <div key={cardIndex} className="w-full max-w-sm card-slide-in" style={{ perspective: "1200px", "--slide-from": `${dir * 28}px` } as React.CSSProperties}>
+        <div key={cardIndex} className="w-full max-w-sm card-slide-in" style={{ perspective: "1200px", "--slide-from": `${dir * 44}px` } as React.CSSProperties}>
           <div onClick={onCardClick} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd} style={{ transformStyle: "preserve-3d", transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)", transition: "transform 0.45s cubic-bezier(0.4,0,0.2,1)", position: "relative", height: "280px", cursor: "pointer" }}>
-            <div style={{ backfaceVisibility: "hidden" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-              <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-5">{language === "zh" ? "Hoe zeg je dit in het Chinees?" : "Hoe zeg je dit in het Japans?"}</p>
-              <p className="text-xl font-semibold text-stone-900 dark:text-stone-100 leading-snug">{sentence.dutch}</p>
-              <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">Tik om het antwoord te zien</p>
-            </div>
-            <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-5">{language === "zh" ? "Chinees" : "Japans"}</p>
-              <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">{sentence.japanese}</p>
-              <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{sentence.romaji}</p>
-              <AudioButton text={sentence.japanese} />
-            </div>
+            {(() => {
+              const targetNode = (
+                <>
+                  <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-5">{getLanguage(language)?.label ?? ""}</p>
+                  <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">{sentence.japanese}</p>
+                  <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{sentence.romaji}</p>
+                  <AudioButton text={sentence.japanese} />
+                </>
+              );
+              const dutchNode = (
+                <>
+                  <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-5">{audioFirst ? "Nederlands" : `Hoe zeg je dit in het ${getLanguage(language)?.label ?? ""}?`}</p>
+                  <p className="text-xl font-semibold text-stone-900 dark:text-stone-100 leading-snug">{sentence.dutch}</p>
+                  <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">{audioFirst ? "" : "Tik om het antwoord te zien"}</p>
+                </>
+              );
+              return (<>
+                <div style={{ backfaceVisibility: "hidden" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
+                  {audioFirst ? targetNode : dutchNode}
+                </div>
+                <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
+                  {audioFirst ? dutchNode : targetNode}
+                </div>
+              </>);
+            })()}
           </div>
         </div>
       </div>
@@ -824,7 +884,7 @@ export default function HomePage() {
   const { userCategories, userPhrases, staticFavoriteIds, categoryOrder, saveCategoryOrder, addCategory, getUserPhrasesByCategory } = useUserPhrases();
   const { user, loading, signInWithGoogle, signOut } = useAuth();
   const { theme, toggle } = useTheme();
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
   const [showNewCategory,      setShowNewCategory]      = useState(false);
   const [showVocabPractice,    setShowVocabPractice]    = useState(false);
   const [sentenceModal,        setSentenceModal]        = useState<{ view: "new" | "saved"; autoStart: boolean } | null>(null);
@@ -876,28 +936,16 @@ export default function HomePage() {
   const selectAllScope = () => handleSelectionChange(allCategories.map((c) => c.id));
   const clearScope     = () => handleSelectionChange([]);
 
+  // Zinnen in de actieve taal (via de agnostische helper); zinnen zonder die
+  // vertaling worden overgeslagen.
   const getPhrasesForCategory = (catId: string) => {
-    if (language === "zh") {
-      // Chinese mode: only user phrases that have a Chinese translation
-      return getUserPhrasesByCategory(catId)
-        .filter((p) => !!p.chineseText)
-        .map((p) => ({
-          translatedText: p.chineseText!,
-          romaji:         p.pinyin ?? "",
-          sourceText:     p.sourceText,
-        }));
-    }
-    const staticPhrases = getPhrasesByCategory(catId).map((p) => ({
-      translatedText: p.translatedText,
-      romaji:         p.romaji,
-      sourceText:     p.sourceText,
-    }));
-    const userPhr = getUserPhrasesByCategory(catId).map((p) => ({
-      translatedText: p.translatedText,
-      romaji:         p.romaji,
-      sourceText:     p.sourceText,
-    }));
-    return [...staticPhrases, ...userPhr];
+    const all = [...getPhrasesByCategory(catId), ...getUserPhrasesByCategory(catId)];
+    return all
+      .map((p) => {
+        const tr = getPhraseTranslation(p, language);
+        return tr ? { translatedText: tr.text, romaji: tr.reading, sourceText: p.sourceText } : null;
+      })
+      .filter(Boolean) as { translatedText: string; romaji: string; sourceText: string }[];
   };
 
   const getFullPhrasesForCategory = (catId: string): Phrase[] => {
@@ -913,23 +961,16 @@ export default function HomePage() {
       <div className="px-5 pt-8 pb-6 flex items-start justify-between">
         <div>
           <h1 className="text-xl font-semibold text-stone-900 dark:text-stone-100 tracking-tight">
-            PhraseKit <span className="text-stone-400 dark:text-stone-500 font-normal">{language === "zh" ? "China" : "Japan"}</span>
+            PhraseKit <span className="text-stone-400 dark:text-stone-500 font-normal">{getLanguage(language)?.label ?? ""}</span>
           </h1>
           <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5 tracking-wide">
-            {language === "zh" ? "Chinese reiszinnen" : "Japanse reiszinnen"}
+            {`${getLanguage(language)?.label ?? ""} reiszinnen`}
           </p>
         </div>
 
         {/* Theme toggle + taal + auth */}
         <div className="flex items-center gap-2">
-          <button
-            onClick={() => setLanguage(language === "ja" ? "zh" : "ja")}
-            aria-label="Wissel taal"
-            className="h-8 rounded-full bg-white dark:bg-stone-800 flex items-center justify-center shadow-sm active:scale-95 transition-all px-2.5 gap-1"
-          >
-            <span className="text-sm">{language === "ja" ? "🇯🇵" : "🇨🇳"}</span>
-            <span className="text-[10px] font-semibold text-stone-500 dark:text-stone-400">{language === "ja" ? "JP" : "CN"}</span>
-          </button>
+          <LanguageSelector />
           <button
             onClick={toggle}
             aria-label="Wissel thema"

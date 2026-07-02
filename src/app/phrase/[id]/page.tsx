@@ -2,7 +2,7 @@
 
 export const dynamic = "force-dynamic";
 
-import { use, useState } from "react";
+import { use, useState, useEffect, useRef } from "react";
 import { notFound, useRouter } from "next/navigation";
 import Header from "@/components/layout/Header";
 import Badge from "@/components/ui/Badge";
@@ -17,6 +17,7 @@ import { parseTextSegments } from "@/utils/japaneseNumbers";
 import { PhraseVariant } from "@/types";
 import CategoryPicker from "@/components/ui/CategoryPicker";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { getPhraseTranslation } from "@/utils/phrase";
 import AudioButton from "@/components/ui/AudioButton";
 
 // ─── Inline Japanese renderer ─────────────────────────────────────────────────
@@ -113,7 +114,7 @@ const EMPTY_PHRASE = {
 export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { id } = use(params);
   const router = useRouter();
-  const { getUserPhraseById, userCategories, addCategory, addPhrase, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite, hideStaticPhrase, updatePhraseGrammar, updatePhraseChineseGrammar } = useUserPhrases();
+  const { getUserPhraseById, userCategories, addCategory, addPhrase, loading: userLoading, deletePhrase, movePhrase, toggleUserFavorite, staticFavoriteIds, toggleStaticFavorite, hideStaticPhrase, updatePhraseGrammar, updatePhraseTranslation } = useUserPhrases();
   const userPhrase = getUserPhraseById(id);
   const staticPhrase = getPhraseById(id);
   const phrase = staticPhrase ?? userPhrase;
@@ -126,11 +127,33 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
   const { play, audioState } = useAudio();
   const { language } = useLanguage();
 
-  // Chinese mode: use Chinese fields when available, else fall back to Japanese
-  const showChinese    = language === "zh" && !!phrase?.chineseText;
-  const displayText    = showChinese ? (phrase?.chineseText ?? "") : (phrase?.translatedText ?? "");
-  const displayReading = showChinese ? (phrase?.pinyin ?? "") : (edited.romaji ?? "");
-  const displayExpl    = showChinese ? (phrase?.chineseExplanation ?? phrase?.explanation ?? "") : (phrase?.explanation ?? "");
+  // Taal-agnostisch: lees de vertaling voor de actieve taal (met legacy-fallback).
+  const isJa           = language === "ja";
+  const tr             = phrase ? getPhraseTranslation(phrase, language) : undefined;
+  const displayText    = tr?.text ?? "";
+  const displayReading = isJa ? (edited.romaji ?? "") : (tr?.reading ?? "");
+  const displayExpl    = tr?.explanation ?? "";
+  const needsTranslation = !!phrase && isUserPhrase && !tr;
+
+  // Ontbreekt de vertaling voor de actieve taal? Vertaal on-demand.
+  const translatedRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (!needsTranslation || !phrase) return;
+    const key = `${phrase.id}_${language}`;
+    if (translatedRef.current === key) return;
+    translatedRef.current = key;
+    fetch("/api/translate-phrase", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ sourceText: phrase.sourceText, language }),
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.text) updatePhraseTranslation(phrase.id, language, { text: data.text, reading: data.reading ?? "", explanation: data.explanation });
+      })
+      .catch(() => {});
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [needsTranslation, phrase?.id, language]);
 
   const [showGrammar,    setShowGrammar]    = useState(false);
   const [deleting,       setDeleting]       = useState(false);
@@ -211,14 +234,14 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           </button>
 
           <p className="text-4xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-3 pr-8">
-            {showChinese ? displayText : (
+            {isJa && phrase.translatedText ? (
               <JapaneseText
                 originalText={phrase.translatedText}
                 numberMap={numberMap}
                 onUpdate={updateNumber}
                 size="lg"
               />
-            )}
+            ) : (displayText || "…")}
           </p>
 
           <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{displayReading}</p>
@@ -228,7 +251,7 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           </p>
 
           <div className="flex items-center justify-between mt-3">
-            {hasNumbers && !hasChanges && (
+            {isJa && hasNumbers && !hasChanges && (
               <p className="text-[10px] text-stone-300 dark:text-stone-600 tracking-wide">
                 Tik op een getal om aan te passen
               </p>
@@ -252,23 +275,23 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           {showGrammar ? "Verberg grammatica ↑" : "📖 Grammatica uitleggen"}
         </button>
 
-        {showGrammar && (
+        {showGrammar && displayText && (
           <GrammarPanel
-            key={showChinese ? "zh" : "ja"}
-            japanese={showChinese ? (phrase.chineseText ?? phrase.translatedText) : phrase.translatedText}
-            romaji={showChinese ? (phrase.pinyin ?? phrase.romaji) : phrase.romaji}
+            key={language}
+            japanese={displayText}
+            romaji={tr?.reading ?? ""}
             english={phrase.sourceText}
-            language={showChinese ? "zh" : "ja"}
-            stored={showChinese ? phrase.chineseGrammar : phrase.grammarExplanation}
+            language={language}
+            stored={tr?.grammar}
             onFetched={isUserPhrase
-              ? (result) => showChinese ? updatePhraseChineseGrammar(id, result) : updatePhraseGrammar(id, result)
+              ? (result) => updatePhraseGrammar(id, language, result)
               : undefined}
           />
         )}
 
         {/* ── Woord voor woord (verborgen bij gewijzigde getallen of grammatica) */}
-        {phrase.wordBreakdown &&
-          phrase.wordBreakdown.length > 0 &&
+        {tr?.wordBreakdown &&
+          tr.wordBreakdown.length > 0 &&
           !hasChanges &&
           !showGrammar && (
           <div className="bg-white dark:bg-stone-900 rounded-2xl px-5 py-4 mb-3">
@@ -276,7 +299,7 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
               Woord voor woord
             </p>
             <div className="flex flex-col gap-2.5">
-              {phrase.wordBreakdown.map((wb, idx) => (
+              {tr.wordBreakdown.map((wb, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <div className="bg-stone-50 dark:bg-stone-800 rounded-lg px-2.5 py-1 shrink-0">
                     <p className="text-sm font-semibold text-stone-800 dark:text-stone-200">{wb.word}</p>
@@ -290,7 +313,7 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
         )}
 
         {/* ── Variants (alleen Japans) ────────────────────────────── */}
-        {!showChinese && phrase.shortVersion && edited.shortVersion && (
+        {isJa && phrase.shortVersion && edited.shortVersion && (
           <VariantRow
             variant={edited.shortVersion}
             originalText={phrase.shortVersion.translatedText}
@@ -301,7 +324,7 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
           />
         )}
 
-        {!showChinese && phrase.politeVersion && edited.politeVersion && (
+        {isJa && phrase.politeVersion && edited.politeVersion && (
           <VariantRow
             variant={edited.politeVersion}
             originalText={phrase.politeVersion.translatedText}
@@ -416,12 +439,13 @@ export default function PhraseDetailPage({ params }: PhraseDetailPageProps) {
             setShowSavePicker(false);
             try {
               await addPhrase(catId, {
-                sourceText:     phrase.sourceText,
-                translatedText: phrase.translatedText,
-                romaji:         phrase.romaji,
-                explanation:    phrase.explanation,
-                shortVersion:   phrase.shortVersion,
-                politeVersion:  phrase.politeVersion,
+                sourceText:   phrase.sourceText,
+                language,
+                text:         tr?.text ?? "",
+                reading:      tr?.reading ?? "",
+                explanation:  tr?.explanation ?? "",
+                shortVersion: tr?.shortVersion,
+                politeVersion: tr?.politeVersion,
               });
               const cat = getCategoryById(catId) ?? userCategories.find((c) => c.id === catId);
               setSavedToName(cat?.name ?? "categorie");

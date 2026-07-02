@@ -73,7 +73,7 @@ function applyMapToVariant(
 export function useEditablePhrase(phrase: Phrase): UseEditablePhraseReturn {
   // Detect original digit values in the translated text once
   const originalDigits = useMemo(
-    () => detectDigitsInText(phrase.translatedText),
+    () => detectDigitsInText(phrase.translatedText ?? ""),
     [phrase.translatedText]
   );
 
@@ -83,7 +83,7 @@ export function useEditablePhrase(phrase: Phrase): UseEditablePhraseReturn {
   );
 
   const edited = useMemo((): EditedPhraseState => {
-    const main = applyMap(phrase.translatedText, phrase.romaji, numberMap);
+    const main = applyMap(phrase.translatedText ?? "", phrase.romaji ?? "", numberMap);
 
     return {
       translatedText: main.text,

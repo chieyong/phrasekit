@@ -9,6 +9,8 @@ import ResultCard from "@/components/cards/ResultCard";
 import { exampleChips, getCategoryById } from "@/data/mockData";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { getLanguage } from "@/data/languages";
 import { AskNowResult } from "@/types";
 
 type LoadState = "idle" | "loading" | "result" | "error";
@@ -20,6 +22,7 @@ function VraagInhoud() {
   const vooringevuldeCategorie = searchParams.get("categorie");
   const { userCategories } = useUserPhrases();
   const { user, loading: authLoading, signInWithGoogle } = useAuth();
+  const { language } = useLanguage();
 
   // Resolve category name for the subtitle
   const staticCat = vooringevuldeCategorie ? getCategoryById(vooringevuldeCategorie) : null;
@@ -45,7 +48,7 @@ function VraagInhoud() {
       const res = await fetch("/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: trimmed }),
+        body: JSON.stringify({ query: trimmed, language }),
       });
 
       if (!res.ok) {
@@ -116,10 +119,10 @@ function VraagInhoud() {
             <div className="bg-white dark:bg-stone-900 rounded-2xl shadow-lg px-6 py-7 w-full">
               <p className="text-2xl mb-3">✦</p>
               <p className="text-base font-semibold text-stone-900 dark:text-stone-100 mb-1">
-                Vertaal iets in het Japans
+                {`Vertaal iets in het ${getLanguage(language)?.label ?? ""}`}
               </p>
               <p className="text-sm text-stone-400 dark:text-stone-500 mb-6 leading-relaxed">
-                Typ in het Nederlands wat je wilt zeggen. PhrasePath vertaalt het direct naar correct Japans — inclusief romaji en uitleg.
+                {`Typ in het Nederlands wat je wilt zeggen. PhraseKit vertaalt het direct naar correct ${getLanguage(language)?.label ?? ""} — inclusief ${getLanguage(language)?.readingLabel?.toLowerCase() ?? "lezing"} en uitleg.`}
               </p>
               <button
                 onClick={signInWithGoogle}

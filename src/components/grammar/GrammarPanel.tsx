@@ -20,7 +20,7 @@ export default function GrammarPanel({
   japanese: string;
   romaji: string;
   english: string;
-  language?: "ja" | "zh";
+  language?: string;
   stored?: GrammarExplanation;
   onFetched?: (result: GrammarExplanation) => void;
   embedded?: boolean;

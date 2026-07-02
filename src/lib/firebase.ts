@@ -19,7 +19,7 @@ function initFirebase(): { app: FirebaseApp; auth: Auth; db: Firestore } {
   let db: Firestore;
   try {
     db = typeof window !== "undefined"
-      ? initializeFirestore(app, { localCache: persistentLocalCache() })
+      ? initializeFirestore(app, { localCache: persistentLocalCache(), ignoreUndefinedProperties: true })
       : getFirestore(app);
   } catch {
     db = getFirestore(app);

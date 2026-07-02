@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Phrase } from "@/types";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { getPhraseTranslation } from "@/utils/phrase";
+import { getLanguage } from "@/data/languages";
 import AudioButton from "@/components/ui/AudioButton";
 
 // Module-level set — shared across all PhraseCard instances to prevent duplicate calls
@@ -19,33 +21,35 @@ export default function PhraseCard({
   phrase,
   showCategory = false,
 }: PhraseCardProps) {
-  const { userPhrases, staticFavoriteIds, toggleUserFavorite, toggleStaticFavorite, updateChinese } = useUserPhrases();
+  const { userPhrases, staticFavoriteIds, toggleUserFavorite, toggleStaticFavorite, updatePhraseTranslation } = useUserPhrases();
   const { language } = useLanguage();
 
-  const userPhrase              = userPhrases.find((p) => p.id === phrase.id);
-  const isUserPhrase            = !!userPhrase;
-  const needsChineseTranslation = language === "zh" && !phrase.chineseText && isUserPhrase;
-  const showChinese             = language === "zh" && !!phrase.chineseText;
-  const displayText             = showChinese ? phrase.chineseText! : phrase.translatedText;
-  const displayRead             = showChinese ? (phrase.pinyin ?? "") : phrase.romaji;
-  const isGenerating            = needsChineseTranslation && translating.has(phrase.id);
+  const userPhrase   = userPhrases.find((p) => p.id === phrase.id);
+  const isUserPhrase = !!userPhrase;
+  const current      = userPhrase ?? phrase;               // verse translations bij eigen zinnen
+  const tr           = getPhraseTranslation(current, language);
+  const needsTranslation = !tr && isUserPhrase;            // actieve taal ontbreekt → vertaal on-demand
+  const tkey         = `${phrase.id}_${language}`;
+  const isGenerating = needsTranslation && translating.has(tkey);
+  const displayText  = tr?.text ?? "";
+  const displayRead  = tr?.reading ?? "";
 
   useEffect(() => {
-    if (!needsChineseTranslation || translating.has(phrase.id)) return;
-    translating.add(phrase.id);
-    fetch("/api/translate-chinese", {
+    if (!needsTranslation || translating.has(tkey)) return;
+    translating.add(tkey);
+    fetch("/api/translate-phrase", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ sourceText: phrase.sourceText }),
+      body: JSON.stringify({ sourceText: current.sourceText, language }),
     })
       .then((r) => r.json())
       .then((data) => {
-        if (data.chineseText) updateChinese(phrase.id, data.chineseText, data.pinyin ?? "", data.chineseExplanation ?? "");
+        if (data.text) updatePhraseTranslation(phrase.id, language, { text: data.text, reading: data.reading ?? "", explanation: data.explanation });
       })
       .catch(() => {})
-      .finally(() => translating.delete(phrase.id));
+      .finally(() => translating.delete(tkey));
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [needsChineseTranslation, phrase.id]);
+  }, [needsTranslation, phrase.id, language]);
 
   const isFavorite   = isUserPhrase
     ? (userPhrase?.isFavorite ?? false)
@@ -72,7 +76,7 @@ export default function PhraseCard({
           {phrase.sourceText}
         </p>
         {isGenerating ? (
-          <p className="text-xs text-stone-300 dark:text-stone-600 italic mt-0.5">Chinees vertalen…</p>
+          <p className="text-xs text-stone-300 dark:text-stone-600 italic mt-0.5">{getLanguage(language)?.label ?? "Vertalen"} vertalen…</p>
         ) : (
           <>
             <p className="text-sm text-stone-500 dark:text-stone-400 leading-snug">{displayText}</p>
