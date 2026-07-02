@@ -16,6 +16,7 @@ import { useVocabulary, VocabWord, wordForLang } from "@/hooks/useVocabulary";
 import { usePracticeSets, PracticeSentence, Difficulty, generateSetName } from "@/hooks/usePracticeSets";
 import AudioButton from "@/components/ui/AudioButton";
 import { useAudio } from "@/hooks/useAudio";
+import SpeedButton from "@/components/ui/SpeedButton";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/ui/LanguageSelector";
@@ -221,6 +222,7 @@ function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelec
           {cardIndex + 1} <span className="text-stone-300 dark:text-stone-600">/</span> {words.length}
         </p>
         <div className="flex items-center gap-2">
+          <SpeedButton />
           <button
             onClick={() => setAudioFirst((v) => !v)}
             className={`w-9 h-9 flex items-center justify-center rounded-full shadow-sm transition-colors text-sm ${audioFirst ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900" : "bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200"}`}
@@ -784,6 +786,7 @@ function SentencePracticeModal({ allCategories, getPhrasesForCategory, initialSe
           </span>
         </div>
         <div className="flex items-center gap-2">
+          <SpeedButton />
           <button onClick={() => setAudioFirst((v) => !v)} className={`w-9 h-9 flex items-center justify-center rounded-full shadow-sm transition-colors text-sm ${audioFirst ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900" : "bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200"}`} aria-label="Luister eerst" title="Luister-eerst: hoor de zin, draai om voor het Nederlands">🔊</button>
           <button onClick={() => { setSentences((s) => [...s].sort(() => Math.random() - 0.5)); setCardIndex(0); setFlipped(false); }} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm" aria-label="Schudden">⇄</button>
         </div>
