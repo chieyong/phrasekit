@@ -4,6 +4,8 @@ import { useState, useEffect, useCallback } from "react";
 import PhraseCard from "@/components/cards/PhraseCard";
 import { useGrammarModules, GrammarModule, GrammarModuleDetail } from "@/hooks/useGrammarModules";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { getPhraseTranslation } from "@/utils/phrase";
+import { getLanguage } from "@/data/languages";
 import AudioButton from "@/components/ui/AudioButton";
 import { Phrase } from "@/types";
 
@@ -60,8 +62,8 @@ function ModuleDetailScreen({ module, userPhrases, language, onBack }: ModuleDet
             moduleName: module.naam,
             language,
             phrases: matchingPhrases.map((p) => ({
-              translatedText: language === "zh" ? (p.chineseText ?? p.translatedText) : p.translatedText,
-              romaji:         language === "zh" ? (p.pinyin ?? p.romaji) : p.romaji,
+              translatedText: getPhraseTranslation(p, language)?.text ?? "",
+              romaji:         getPhraseTranslation(p, language)?.reading ?? "",
               sourceText:     p.sourceText,
             })),
           }),
@@ -230,8 +232,8 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
   const [activeModule, setActiveModule]     = useState<GrammarModule | null>(null);
 
   // For Chinese: only phrases that have Chinese text
-  const effectivePhrases = language === "zh"
-    ? allPhrases.filter((p) => !!p.chineseText)
+  const effectivePhrases = language !== "ja"
+    ? allPhrases.filter((p) => !!getPhraseTranslation(p, language))
     : allPhrases;
 
   const phraseCount = effectivePhrases.length;
@@ -248,8 +250,8 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
           language,
           phrases: effectivePhrases.map((p) => ({
             id:             p.id,
-            translatedText: language === "zh" ? (p.chineseText ?? "") : p.translatedText,
-            romaji:         language === "zh" ? (p.pinyin ?? "")      : p.romaji,
+            translatedText: getPhraseTranslation(p, language)?.text ?? "",
+            romaji:         getPhraseTranslation(p, language)?.reading ?? "",
             sourceText:     p.sourceText,
           })),
         }),
@@ -309,7 +311,7 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
         <div className="flex-1">
           <h2 className="text-base font-semibold text-stone-900 dark:text-stone-100">Grammatica uitleg</h2>
           <p className="text-xs text-stone-400 dark:text-stone-500">
-            {language === "zh" ? "Chinese grammatica · gebaseerd op jouw zinnen" : "Japanse grammatica · gebaseerd op jouw zinnen"}
+            {`${getLanguage(language)?.label ?? ""} grammatica · gebaseerd op jouw zinnen`}
           </p>
         </div>
         {modules && !loading && (
@@ -352,9 +354,9 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
             <div className="flex flex-col items-center justify-center h-full gap-3 text-center">
               <p className="text-3xl">📖</p>
               <p className="text-sm text-stone-500 dark:text-stone-400">
-                {language === "zh"
-                  ? "Voeg Chinese zinnen toe om grammaticamodules te genereren."
-                  : "Voeg meer zinnen toe om grammaticamodules te genereren."}
+                {language === "ja"
+                  ? "Voeg meer zinnen toe om grammaticamodules te genereren."
+                  : `Open eerst wat zinnen in het ${getLanguage(language)?.label ?? ""} (ze worden dan vertaald), of voeg zinnen toe.`}
               </p>
             </div>
           ) : (

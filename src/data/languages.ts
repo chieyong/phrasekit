@@ -13,8 +13,8 @@ export interface LanguageDef {
 }
 
 export const LANGUAGES: LanguageDef[] = [
-  { code: "ja",  label: "Japans",    flag: "🇯🇵", readingLabel: "Romaji",   scriptNote: "in kanji/kana",                        enabled: true  },
-  { code: "zh",  label: "Chinees",   flag: "🇨🇳", readingLabel: "Pinyin",   scriptNote: "in Vereenvoudigd Chinees (简体字)",      enabled: true  },
+  { code: "ja",  label: "Japans",     flag: "🇯🇵", readingLabel: "Romaji",   scriptNote: "in kanji/kana",                        enabled: true  },
+  { code: "zh",  label: "Mandarijns", flag: "🇨🇳", readingLabel: "Pinyin",   scriptNote: "in Vereenvoudigd Chinees (简体字)",      enabled: true  },
   { code: "yue", label: "Kantonees", flag: "🇭🇰", readingLabel: "Jyutping", scriptNote: "in traditioneel Chinees schrift (Kantonees)", enabled: true },
 ];
 

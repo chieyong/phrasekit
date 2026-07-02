@@ -1,4 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getLanguage } from "@/data/languages";
+
+// Generieke oefenzin-prompt + neutrale moeilijkheidsregels voor talen zonder
+// eigen prompt (bijv. Kantonees).
+function buildGenericBasePrompt(langCode: string): string {
+  const l = getLanguage(langCode);
+  const name    = l?.label ?? "de doeltaal";
+  const reading = l?.readingLabel ?? "lezing";
+  const script  = l?.scriptNote ?? "";
+  return `Je bent een taalleraar ${name} voor Nederlandstalige reizigers. Gegeven bestaande zinnen en woordenschat als context, genereer precies 8 nieuwe oefenzinnen.
+
+Zinnen moeten realistische reissituaties zijn (eten bestellen, de weg vragen, winkelen, hotel, transport, etc.).
+
+Reageer met ALLEEN geldig JSON (het veld 'japanese' bevat de ${name} tekst ${script}, 'romaji' de ${reading}):
+{
+  "sentences": [
+    { "dutch": "<Nederlandse zin>", "japanese": "<${name} ${script}>", "romaji": "<${reading}>" }
+  ]
+}`;
+}
+
+const GENERIC_DIFFICULTY_RULES: Record<string, { rules: string; temperature: number }> = {
+  basis:     { rules: "Moeilijkheid: BASIS — gebruik ALLEEN de opgegeven woorden en structuren; korte, eenvoudige zinnen.", temperature: 0.5 },
+  gemiddeld: { rules: "Moeilijkheid: GEMIDDELD — voornamelijk de opgegeven woordenschat, 1–2 verwante woorden toegestaan; iets gevarieerder.", temperature: 0.7 },
+  gevorderd: { rules: "Moeilijkheid: GEVORDERD — gerelateerde woordenschat vrij; gevarieerde structuren; langere zinnen.", temperature: 0.85 },
+  expert:    { rules: "Moeilijkheid: EXPERT — vrij geïnspireerd op de thema's, nieuwe verwante woorden; complexe structuren en meerdere deelzinnen.", temperature: 1.0 },
+};
 
 const JA_BASE_PROMPT = `Je bent een Japanse taalleraar voor Nederlandstalige reizigers. Gegeven bestaande Japanse zinnen en woordenschat als context, genereer precies 8 nieuwe oefenzinnen.
 
@@ -100,8 +127,9 @@ export async function POST(request: NextRequest) {
   }
 
   const isZh = language === "zh";
-  const diffRules  = isZh ? ZH_DIFFICULTY_RULES : DIFFICULTY_RULES;
-  const basePrompt = isZh ? ZH_BASE_PROMPT : JA_BASE_PROMPT;
+  const isJa = language === "ja";
+  const diffRules  = isZh ? ZH_DIFFICULTY_RULES : isJa ? DIFFICULTY_RULES : GENERIC_DIFFICULTY_RULES;
+  const basePrompt = isZh ? ZH_BASE_PROMPT : isJa ? JA_BASE_PROMPT : buildGenericBasePrompt(language);
   const { rules, temperature } = diffRules[difficulty] ?? diffRules.basis;
   const systemPrompt = `${basePrompt}\n\n${rules}`;
 

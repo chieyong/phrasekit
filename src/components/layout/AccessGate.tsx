@@ -15,7 +15,7 @@ export default function AccessGate({ children }: { children: ReactNode }) {
         Geen toegang
       </h1>
       <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed mb-6">
-        Dit account heeft geen toegang tot PhrasePath. Vraag de beheerder om je e-mailadres toe te voegen.
+        Dit account heeft geen toegang tot PhraseKit. Vraag de beheerder om je e-mailadres toe te voegen.
       </p>
       <button
         onClick={signInWithGoogle}

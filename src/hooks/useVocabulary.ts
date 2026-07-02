@@ -91,5 +91,35 @@ export function useVocabulary() {
     return concepts;
   }, [user, saveConcepts]);
 
-  return { getConcepts, saveConcepts };
+  // Zoals getConcepts, maar vult ontbrekende vertalingen voor `lang` aan via het
+  // vertaal-endpoint (en slaat ze op). Gebruikt door zowel de categoriepagina als
+  // de oefenmodules, zodat een nieuwe taal overal automatisch bijvertaalt.
+  const getConceptsForLang = useCallback(async (categoryId: string, lang: VocabLang): Promise<VocabConcept[]> => {
+    const cs = await getConcepts(categoryId);
+    if (!cs || !cs.length) return cs ?? [];
+    const missing = cs.filter((c) => !c.tr[lang]);
+    if (!missing.length) return cs;
+    try {
+      const res = await fetch("/api/vocabulary-translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ words: missing.map((c) => ({ dutch: c.dutch, type: c.type })), language: lang }),
+      });
+      if (!res.ok) return cs;
+      const data = await res.json();
+      const translations: { dutch: string; text: string; reading: string }[] = data.translations ?? [];
+      const byDutch = new Map(translations.map((t) => [conceptKey(t.dutch), t]));
+      const updated = cs.map((c) => {
+        if (c.tr[lang]) return c;
+        const t = byDutch.get(conceptKey(c.dutch));
+        return t && t.text ? { ...c, tr: { ...c.tr, [lang]: { text: t.text, reading: t.reading ?? "" } } } : c;
+      });
+      await saveConcepts(categoryId, updated);
+      return updated;
+    } catch {
+      return cs;
+    }
+  }, [getConcepts, saveConcepts]);
+
+  return { getConcepts, getConceptsForLang, saveConcepts };
 }

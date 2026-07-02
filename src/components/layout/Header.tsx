@@ -72,7 +72,7 @@ export default function Header({
 
         <div className="shrink-0 flex items-center gap-2">
           {/* Taal-kiezer */}
-          <LanguageSelector compact />
+          <LanguageSelector />
 
           {/* Donker/licht toggle */}
           <button

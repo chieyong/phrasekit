@@ -1,7 +1,7 @@
 {
-  "name": "PhrasePath — Japanse Reiszinnen",
-  "short_name": "PhrasePath",
-  "description": "Snelle Japanse reiszinnen voor onderweg, altijd bij de hand.",
+  "name": "PhraseKit — Reiszinnen",
+  "short_name": "PhraseKit",
+  "description": "Snelle reiszinnen voor onderweg, altijd bij de hand.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f5f2ee",

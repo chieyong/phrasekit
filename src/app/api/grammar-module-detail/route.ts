@@ -1,4 +1,32 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getLanguage } from "@/data/languages";
+
+function buildGenericPrompt(langCode: string): string {
+  const name    = getLanguage(langCode)?.label ?? "de doeltaal";
+  const reading = getLanguage(langCode)?.readingLabel ?? "lezing";
+  const script  = getLanguage(langCode)?.scriptNote ?? "";
+  return `Je bent een grammaticadocent ${name} die uitvoerige, heldere lessen schrijft voor Nederlandstalige reizigers. Schrijf een volledige grammaticales over het opgegeven patroon.
+
+Geef terug als JSON (veld "japanese" bevat de ${name} tekst ${script}, "romaji" de ${reading}):
+{
+  "naam": "...",
+  "tagline": "...",
+  "niveau": "basis|gemiddeld|gevorderd",
+  "kernregel": "...",
+  "patroon": "...",
+  "uitleg": "...",
+  "opbouw": [ { "element": "...", "rol": "...", "voorbeeld": "..." } ],
+  "tips": [ "..." ],
+  "veelgemaaktefouten": [ "..." ],
+  "extraVoorbeelden": [ { "japanese": "...", "romaji": "...", "dutch": "..." } ]
+}
+
+Richtlijnen:
+- kernregel: 2-3 zinnen wanneer/waarom dit patroon wordt gebruikt.
+- patroon: formele notatie. uitleg: 5-7 zinnen met nuances en vergelijking met Nederlands.
+- opbouw: 3-5 elementen apart verklaard; tips: 3-4; veelgemaaktefouten: 2-3 met correctie.
+- extraVoorbeelden: 6 nieuwe voorbeeldzinnen in het ${name}.`;
+}
 
 const JA_PROMPT = `Je bent een Japanse grammaticadocent die uitvoerige, heldere lessen schrijft voor Nederlandstalige reizigers. Schrijf een volledige grammaticales over het opgegeven patroon.
 
@@ -68,9 +96,8 @@ export async function POST(request: NextRequest) {
 
   if (!moduleName) return NextResponse.json({ error: "Module name required" }, { status: 400 });
 
-  const isZh        = language === "zh";
-  const langLabel   = isZh ? "Chinees (Mandarijn)" : "Japans";
-  const readingLabel = isZh ? "pinyin" : "romaji";
+  const langLabel   = getLanguage(language)?.label ?? "Doeltaal";
+  const readingLabel = getLanguage(language)?.readingLabel ?? "lezing";
 
   const phrasesText = phrases.length > 0
     ? `\n\nDe gebruiker heeft deze zinnen in zijn collectie die dit patroon gebruiken:\n${
@@ -86,7 +113,7 @@ export async function POST(request: NextRequest) {
         model: "gpt-4o",
         response_format: { type: "json_object" },
         messages: [
-          { role: "system", content: isZh ? ZH_PROMPT : JA_PROMPT },
+          { role: "system", content: language === "zh" ? ZH_PROMPT : language === "ja" ? JA_PROMPT : buildGenericPrompt(language) },
           { role: "user",   content: `Schrijf een uitvoerige ${langLabel} grammaticales over het patroon: "${moduleName}". Gebruik ${readingLabel} voor de romanisering.${phrasesText}` },
         ],
         temperature: 0.3,
