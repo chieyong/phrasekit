@@ -21,6 +21,7 @@ export async function POST(request: NextRequest) {
 
   const file       = form.get("file");
   const target     = String(form.get("target") ?? "");
+  const reading    = String(form.get("reading") ?? "");
   const language   = String(form.get("language") ?? "ja");
   const sourceText = String(form.get("sourceText") ?? "");
   const ext        = String(form.get("ext") ?? "webm");
@@ -34,7 +35,8 @@ export async function POST(request: NextRequest) {
     const wForm = new FormData();
     wForm.append("file", file, `audio.${ext}`);
     wForm.append("model", "whisper-1");
-    wForm.append("prompt", target);
+    // Bewust GÉÉN doelzin als prompt: dat biast Whisper naar de verwachte tekst
+    // en maakt uitspraakfouten onzichtbaar. We willen juist de rúwe transcriptie.
     const lang = whisperLang(language);
     if (lang) wForm.append("language", lang);
 
@@ -53,16 +55,18 @@ export async function POST(request: NextRequest) {
 
   // 2. Vergelijk met de doelzin en geef feedback.
   const label = getLanguage(language)?.label ?? "de doeltaal";
-  const system = `Je bent een vriendelijke uitspraakcoach ${label} voor een Nederlandstalige. Je krijgt de doelzin en wat de spraakherkenning van de opname maakte. Beoordeel de uitspraak op basis van hoe dicht de herkende tekst bij de doelzin ligt qua klank en betekenis (niet qua exacte spelling). Wees bemoedigend maar eerlijk.
+  const system = `Je bent een uitspraakcoach ${label} voor een Nederlandstalige. Je krijgt de doelzin (met uitspraak) en de RUWE transcriptie van wat de spreker werkelijk zei. Beoordeel op klankniveau hoe goed het uitgesprokene overeenkomt met de doelzin. Wees bemoedigend maar eerlijk — de spreker leert alleen als je echte afwijkingen benoemt.
 
 Antwoord met ALLEEN geldige JSON:
 { "score": 0-100, "verdict": "goed|bijna|opnieuw", "feedback": "1-2 zinnen in het Nederlands", "tip": "korte uitspraaktip of lege string" }
 
-Richtlijnen:
-- 80-100 = goed herkenbaar; 50-79 = bijna, kleine afwijkingen; onder 50 = moeilijk te verstaan of iets anders gezegd.
-- Als de herkende tekst leeg of totaal anders is: verdict "opnieuw", lage score, moedig aan het opnieuw te proberen.
-- feedback: benoem concreet wat goed ging of afweek, zonder technisch jargon.`;
-  const user = `Doelzin (${label}): ${target}${sourceText ? `\nBetekenis (NL): ${sourceText}` : ""}\nHerkend uit de opname: ${transcription || "(niets verstaan)"}`;
+Beoordeel zo:
+- Vergelijk de KLANK van de transcriptie met de doelzin. Zelfde woorden én klanken → hoog. Een ander woord, een verkeerde klinker/medeklinker, of een verkeerd telwoord (bijv. 枚/mai vs 名/mei) → duidelijk lager, en benoem het concreet.
+- Negeer onschuldige verschillen die de klank niet raken: interpunctie, spaties, of een ander schriftteken met exact dezelfde uitspraak (kanji vs kana).
+- Lege of totaal andere transcriptie → verdict "opnieuw", lage score.
+- 80-100 = klopt; 50-79 = bijna, kleine afwijking; onder 50 = duidelijk mis of onverstaanbaar.
+- feedback: benoem concreet welk woord of welke klank goed ging of afweek, zonder technisch jargon.`;
+  const user = `Doelzin (${label}): ${target}${reading ? `\nUitspraak: ${reading}` : ""}${sourceText ? `\nBetekenis (NL): ${sourceText}` : ""}\nRuwe transcriptie van de opname: ${transcription || "(niets verstaan)"}`;
 
   try {
     const res = await fetch("https://api.openai.com/v1/chat/completions", {

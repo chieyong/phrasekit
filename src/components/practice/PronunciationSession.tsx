@@ -40,6 +40,7 @@ export default function PronunciationSession({ getPhrasesForCategory, selectedCa
   const [busy,      setBusy]      = useState(false);   // transcriberen/feedback ophalen
   const [result,    setResult]    = useState<Result | null>(null);
   const [myUrl,     setMyUrl]     = useState<string | null>(null);
+  const [revealed,  setRevealed]  = useState(false);   // antwoord (doeltaal) tonen
 
   const langLabel = getLanguage(language)?.label ?? "";
 
@@ -88,12 +89,14 @@ export default function PronunciationSession({ getPhrasesForCategory, selectedCa
       form.append("file", rec.blob, `audio.${rec.ext}`);
       form.append("ext", rec.ext);
       form.append("target", item.target);
+      form.append("reading", item.reading);
       form.append("language", language);
       form.append("sourceText", item.dutch);
       const res  = await fetch("/api/pronunciation", { method: "POST", body: form });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "mislukt");
       setResult(data as Result);
+      setRevealed(true);   // na je poging het antwoord tonen om te vergelijken
     } catch {
       setResult({ transcription: "", score: null, verdict: "opnieuw", feedback: "Er ging iets mis bij het verwerken. Probeer het opnieuw." });
     } finally {
@@ -106,6 +109,7 @@ export default function PronunciationSession({ getPhrasesForCategory, selectedCa
   const next = () => {
     clearMyUrl();
     setResult(null);
+    setRevealed(false);
     setIndex((i) => i + 1);
   };
 
@@ -150,11 +154,23 @@ export default function PronunciationSession({ getPhrasesForCategory, selectedCa
       {/* Doelzin */}
       <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-6 flex flex-col items-center justify-center gap-6">
         <div className="w-full max-w-sm bg-white dark:bg-stone-900 rounded-3xl shadow-sm px-8 py-8 text-center">
-          <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-4">{langLabel}</p>
-          <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">{item.target}</p>
-          <p className="text-base text-stone-400 dark:text-stone-500 italic mb-1">{item.reading}</p>
-          <p className="text-sm text-stone-500 dark:text-stone-400 mb-5">{item.dutch}</p>
-          <AudioButton text={item.target} />
+          {revealed ? (
+            <>
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-4">{langLabel}</p>
+              <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">{item.target}</p>
+              <p className="text-base text-stone-400 dark:text-stone-500 italic mb-1">{item.reading}</p>
+              <p className="text-sm text-stone-500 dark:text-stone-400 mb-5">{item.dutch}</p>
+              <AudioButton text={item.target} />
+            </>
+          ) : (
+            <>
+              <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-4">Hoe zeg je dit in het {langLabel}?</p>
+              <p className="text-2xl font-semibold text-stone-900 dark:text-stone-100 leading-snug mb-6">{item.dutch}</p>
+              <button onClick={() => setRevealed(true)} className="text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors underline">
+                Toon antwoord
+              </button>
+            </>
+          )}
         </div>
 
         {/* Resultaat */}
