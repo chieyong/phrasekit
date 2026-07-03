@@ -302,6 +302,211 @@ const KO: Curriculum = {
   ],
 };
 
+// ─── Indonesisch (Basis → Gevorderd) ────────────────────────────────────────────
+
+const ID: Curriculum = {
+  framework: "Basis → Gevorderd",
+  levels: [
+    { id: "basis",     label: "Basis",     color: C.green },
+    { id: "gemiddeld", label: "Gemiddeld", color: C.amber },
+    { id: "gevorderd", label: "Gevorderd", color: C.rose },
+  ],
+  topics: [
+    { id: "id-b-zijn",     naam: "adalah (zijn)",             romaji: "saya guru",              tagline: "'Zijn': vaak helemaal weggelaten",          niveau: "basis" },
+    { id: "id-b-svo",      naam: "woordvolgorde",             romaji: "saya makan nasi",        tagline: "Basiszinsbouw: onderwerp–werkwoord–object", niveau: "basis" },
+    { id: "id-b-pron",     naam: "voornaamwoorden",           romaji: "saya / kamu / dia",      tagline: "Ik, jij, hij/zij",                          niveau: "basis" },
+    { id: "id-b-bezit",    naam: "bezit (-ku / -mu)",         romaji: "buku saya",              tagline: "Bezit: 'mijn boek' — achtervoegsels",       niveau: "basis" },
+    { id: "id-b-neg",      naam: "tidak / bukan (ontkenning)", romaji: "tidak / bukan",         tagline: "Werkwoord vs. zelfstandig naamwoord ontkennen", niveau: "basis" },
+    { id: "id-b-vraag",    naam: "vraagwoorden",              romaji: "apa / siapa / di mana",  tagline: "Wat / wie / waar",                          niveau: "basis" },
+    { id: "id-b-ada",      naam: "ada (er is)",               romaji: "ada / tidak ada",        tagline: "'Er is' en 'hebben'",                       niveau: "basis" },
+    { id: "id-b-iniitu",   naam: "ini / itu (dit/dat)",       romaji: "ini / itu",              tagline: "Dit en dat",                                niveau: "basis" },
+    { id: "id-b-aspect",   naam: "sudah / sedang / akan",     romaji: "sudah / sedang / akan",  tagline: "Aspect zonder werkwoordsvervoeging",        niveau: "basis" },
+    { id: "id-b-counters", naam: "telwoorden (kata bantu)",   romaji: "seorang / seekor",       tagline: "Tellen met het juiste telwoord",            niveau: "basis" },
+    { id: "id-b-adj",      naam: "bijvoeglijk naamwoord",     romaji: "rumah besar",            tagline: "Komt ná het zelfstandig naamwoord",         niveau: "basis" },
+    { id: "id-b-mau",      naam: "mau / ingin (willen)",      romaji: "saya mau",               tagline: "Willen en wensen",                          niveau: "basis" },
+    { id: "id-b-bisa",     naam: "bisa / boleh (kunnen)",     romaji: "bisa / boleh",           tagline: "Kunnen en mogen",                           niveau: "basis" },
+    { id: "id-b-preps",    naam: "di / ke / dari",            romaji: "di / ke / dari",         tagline: "In / naar / van",                           niveau: "basis" },
+
+    { id: "id-m-ber",      naam: "voorvoegsel ber-",          romaji: "berbicara / berjalan",   tagline: "ber-: bezig zijn, hebben of doen",          niveau: "gemiddeld" },
+    { id: "id-m-men",      naam: "voorvoegsel me(N)-",        romaji: "membaca / menulis",      tagline: "me-: actieve werkwoorden vormen",           niveau: "gemiddeld" },
+    { id: "id-m-kan",      naam: "achtervoegsel -kan",        romaji: "membelikan",             tagline: "-kan: voor iemand / iets veroorzaken",      niveau: "gemiddeld" },
+    { id: "id-m-i",        naam: "achtervoegsel -i",          romaji: "menemani / memasuki",    tagline: "-i: locatie of herhaalde handeling",        niveau: "gemiddeld" },
+    { id: "id-m-di",       naam: "lijdende vorm di-",         romaji: "dibaca / ditulis",       tagline: "Passief met di-",                           niveau: "gemiddeld" },
+    { id: "id-m-redup",    naam: "reduplicatie",              romaji: "anak-anak / jalan-jalan", tagline: "Meervoud, variatie en herhaling",          niveau: "gemiddeld" },
+    { id: "id-m-compar",   naam: "vergelijken",               romaji: "lebih … daripada",       tagline: "A is …-er dan B",                           niveau: "gemiddeld" },
+    { id: "id-m-super",    naam: "overtreffende trap",        romaji: "paling / ter-",          tagline: "'De meest…'",                               niveau: "gemiddeld" },
+    { id: "id-m-imper",    naam: "gebiedende wijs",           romaji: "makan! / silakan",       tagline: "Opdracht en uitnodiging",                   niveau: "gemiddeld" },
+    { id: "id-m-conj",     naam: "voegwoorden",               romaji: "karena / tetapi / kalau", tagline: "Omdat / maar / als",                       niveau: "gemiddeld" },
+    { id: "id-m-adv",      naam: "bijwoorden",                romaji: "dengan cepat / sekali",  tagline: "Bijwoorden vormen",                         niveau: "gemiddeld" },
+
+    { id: "id-g-kean",     naam: "circumfix ke-…-an",         romaji: "kedinginan / keindahan", tagline: "Toestand en abstracte begrippen",           niveau: "gevorderd" },
+    { id: "id-g-pean",     naam: "circumfix pe(N)-…-an",      romaji: "pendidikan",             tagline: "Zelfstandige naamwoorden van processen",    niveau: "gevorderd" },
+    { id: "id-g-ter",      naam: "voorvoegsel ter-",          romaji: "terbuka / tertidur",     tagline: "Onbedoeld, toestand of 'meest'",            niveau: "gevorderd" },
+    { id: "id-g-se",       naam: "voorvoegsel se-",           romaji: "sebesar / setiap",       tagline: "'Even … als' en 'elke'",                    niveau: "gevorderd" },
+    { id: "id-g-yang",     naam: "yang (betrekkelijk)",       romaji: "orang yang …",           tagline: "'Die/dat'-bijzinnen met yang",              niveau: "gevorderd" },
+    { id: "id-g-passief2", naam: "passief met voornaamwoord", romaji: "saya baca",              tagline: "De persoonlijke lijdende vorm",             niveau: "gevorderd" },
+    { id: "id-g-kalau",    naam: "voorwaarde (kalau/jika)",   romaji: "kalau / jika",           tagline: "Als…dan",                                   niveau: "gevorderd" },
+    { id: "id-g-untuk",    naam: "doel (untuk / supaya)",     romaji: "untuk / supaya / agar",  tagline: "'Om te…' en 'zodat'",                       niveau: "gevorderd" },
+    { id: "id-g-sambil",   naam: "sambil / ketika",           romaji: "sambil / ketika",        tagline: "Terwijl / toen",                            niveau: "gevorderd" },
+    { id: "id-g-partikel", naam: "partikels -lah / -kah / pun", romaji: "-lah / -kah / pun",    tagline: "Nadruk en toon",                            niveau: "gevorderd" },
+  ],
+};
+
+// ─── Frans (CEFR A1 → B1) ───────────────────────────────────────────────────────
+
+const FR: Curriculum = {
+  framework: "CEFR A1 → B1",
+  levels: [
+    { id: "A1", label: "A1", color: C.green },
+    { id: "A2", label: "A2", color: C.amber },
+    { id: "B1", label: "B1", color: C.rose },
+  ],
+  topics: [
+    { id: "fr-a1-etre",     naam: "être",                        romaji: "je suis / il est",      tagline: "Het werkwoord 'zijn'",                          niveau: "A1" },
+    { id: "fr-a1-avoir",    naam: "avoir",                       romaji: "j'ai / tu as",          tagline: "Het werkwoord 'hebben'",                        niveau: "A1" },
+    { id: "fr-a1-articles", naam: "articles",                    romaji: "le / la / un / une",    tagline: "Lidwoorden: bepaald en onbepaald",              niveau: "A1" },
+    { id: "fr-a1-genre",    naam: "genre & nombre",              romaji: "un livre / des livres", tagline: "Geslacht en meervoud",                          niveau: "A1" },
+    { id: "fr-a1-preser",   naam: "présent -er",                 romaji: "je parle",              tagline: "Tegenwoordige tijd: -er-werkwoorden",           niveau: "A1" },
+    { id: "fr-a1-presir",   naam: "présent -ir / -re",           romaji: "je finis / je vends",   tagline: "Tegenwoordige tijd: -ir en -re",                niveau: "A1" },
+    { id: "fr-a1-negation", naam: "négation ne…pas",             romaji: "je ne sais pas",        tagline: "Ontkennen",                                     niveau: "A1" },
+    { id: "fr-a1-questions", naam: "questions (est-ce que)",     romaji: "est-ce que…?",          tagline: "Vragen stellen",                                niveau: "A1" },
+    { id: "fr-a1-adjectifs", naam: "adjectifs (accord)",         romaji: "petit / petite",        tagline: "Bijvoeglijke naamwoorden verbuigen",            niveau: "A1" },
+    { id: "fr-a1-possess",  naam: "possessifs",                  romaji: "mon / ma / mes",        tagline: "Bezit: mijn, jouw",                             niveau: "A1" },
+    { id: "fr-a1-prep",     naam: "prépositions à / de",         romaji: "à Paris / de Paris",    tagline: "De voorzetsels à en de",                        niveau: "A1" },
+    { id: "fr-a1-ilya",     naam: "il y a",                      romaji: "il y a un café",        tagline: "'Er is / er zijn'",                             niveau: "A1" },
+    { id: "fr-a1-futproche", naam: "aller & futur proche",       romaji: "je vais manger",        tagline: "Gaan + de nabije toekomst",                     niveau: "A1" },
+    { id: "fr-a1-partitif", naam: "articles partitifs",          romaji: "du / de la / des",      tagline: "'Wat' van iets: du / de la",                    niveau: "A1" },
+
+    { id: "fr-a2-pcavoir",  naam: "passé composé (avoir)",       romaji: "j'ai mangé",            tagline: "Voltooid verleden tijd met avoir",              niveau: "A2" },
+    { id: "fr-a2-pcetre",   naam: "passé composé (être)",        romaji: "je suis allé(e)",       tagline: "Voltooid verleden met être + akkoord",          niveau: "A2" },
+    { id: "fr-a2-imparfait", naam: "imparfait",                  romaji: "je mangeais",           tagline: "Onvoltooid verleden: gewoontes en beschrijving", niveau: "A2" },
+    { id: "fr-a2-futur",    naam: "futur simple",                romaji: "je mangerai",           tagline: "De toekomende tijd",                            niveau: "A2" },
+    { id: "fr-a2-pronoms",  naam: "pronoms COD / COI",           romaji: "je le vois / je lui parle", tagline: "Lijdend en meewerkend voorwerp-voornaamwoorden", niveau: "A2" },
+    { id: "fr-a2-pronom",   naam: "verbes pronominaux",          romaji: "je me lève",            tagline: "Wederkerende werkwoorden",                      niveau: "A2" },
+    { id: "fr-a2-comparatif", naam: "comparatif & superlatif",   romaji: "plus grand que",        tagline: "Vergelijken: plus / moins … que",               niveau: "A2" },
+    { id: "fr-a2-imperatif", naam: "impératif",                  romaji: "mange ! / allons !",    tagline: "De gebiedende wijs",                            niveau: "A2" },
+    { id: "fr-a2-adverbes", naam: "adverbes en -ment",           romaji: "lentement",             tagline: "Bijwoorden op -ment",                           niveau: "A2" },
+    { id: "fr-a2-devoir",   naam: "il faut / devoir",            romaji: "il faut partir",        tagline: "Moeten en verplichting",                        niveau: "A2" },
+    { id: "fr-a2-vouloir",  naam: "vouloir / pouvoir",           romaji: "je voudrais / je peux", tagline: "Willen, kunnen, beleefd vragen",                niveau: "A2" },
+    { id: "fr-a2-yen",      naam: "y & en",                      romaji: "j'y vais / j'en ai",    tagline: "De voornaamwoorden y en en",                    niveau: "A2" },
+
+    { id: "fr-b1-conditionnel", naam: "conditionnel",            romaji: "je voudrais / j'aimerais", tagline: "De voorwaardelijke wijs (wens, beleefdheid)", niveau: "B1" },
+    { id: "fr-b1-subjonctif", naam: "subjonctif présent",        romaji: "il faut que je fasse",  tagline: "De aanvoegende wijs (basis)",                   niveau: "B1" },
+    { id: "fr-b1-si",       naam: "phrases avec si",             romaji: "si j'avais…, je…",      tagline: "Voorwaardelijke zinnen met 'si'",               niveau: "B1" },
+    { id: "fr-b1-pqp",      naam: "plus-que-parfait",            romaji: "j'avais mangé",         tagline: "Voltooid verleden verleden tijd",               niveau: "B1" },
+    { id: "fr-b1-relatifs", naam: "pronoms relatifs",            romaji: "qui / que / dont / où", tagline: "Betrekkelijke voornaamwoorden",                 niveau: "B1" },
+    { id: "fr-b1-indirect", naam: "discours indirect",           romaji: "il dit que…",           tagline: "Indirecte rede",                                niveau: "B1" },
+    { id: "fr-b1-gerondif", naam: "gérondif",                    romaji: "en mangeant",           tagline: "'Terwijl / door te…' met en + -ant",            niveau: "B1" },
+    { id: "fr-b1-futant",   naam: "futur antérieur",             romaji: "j'aurai fini",          tagline: "'Zullen hebben gedaan'",                        niveau: "B1" },
+    { id: "fr-b1-passif",   naam: "voix passive",                romaji: "c'est fait par…",       tagline: "De lijdende vorm",                              niveau: "B1" },
+    { id: "fr-b1-demonstr", naam: "pronoms démonstratifs",       romaji: "celui / celle",         tagline: "Aanwijzende voornaamwoorden",                   niveau: "B1" },
+    { id: "fr-b1-depuis",   naam: "depuis / pendant / il y a",   romaji: "depuis deux ans",       tagline: "Tijdsuitdrukkingen",                            niveau: "B1" },
+  ],
+};
+
+// ─── Duits (CEFR A1 → B1) ───────────────────────────────────────────────────────
+
+const DE: Curriculum = {
+  framework: "CEFR A1 → B1",
+  levels: [
+    { id: "A1", label: "A1", color: C.green },
+    { id: "A2", label: "A2", color: C.amber },
+    { id: "B1", label: "B1", color: C.rose },
+  ],
+  topics: [
+    { id: "de-a1-sein",     naam: "sein",                        romaji: "ich bin / du bist",     tagline: "Het werkwoord 'zijn'",                          niveau: "A1" },
+    { id: "de-a1-haben",    naam: "haben",                       romaji: "ich habe / du hast",    tagline: "Het werkwoord 'hebben'",                        niveau: "A1" },
+    { id: "de-a1-praesens", naam: "Präsens",                     romaji: "ich mache",             tagline: "De tegenwoordige tijd",                         niveau: "A1" },
+    { id: "de-a1-artikel",  naam: "Artikel",                     romaji: "der / die / das, ein",  tagline: "Lidwoorden en geslacht",                        niveau: "A1" },
+    { id: "de-a1-nom",      naam: "Nominativ",                   romaji: "der Mann ist…",         tagline: "De eerste naamval (onderwerp)",                 niveau: "A1" },
+    { id: "de-a1-akk",      naam: "Akkusativ",                   romaji: "ich sehe den Mann",     tagline: "De vierde naamval (lijdend voorwerp)",          niveau: "A1" },
+    { id: "de-a1-neg",      naam: "Negation nicht / kein",       romaji: "nicht / kein",          tagline: "Ontkennen",                                     niveau: "A1" },
+    { id: "de-a1-fragen",   naam: "W-Fragen",                    romaji: "was? / wo? / wie?",     tagline: "Vraagwoorden en vraagzinnen",                   niveau: "A1" },
+    { id: "de-a1-pron",     naam: "Personalpronomen",            romaji: "ich / du / er / sie",   tagline: "Persoonlijke voornaamwoorden",                  niveau: "A1" },
+    { id: "de-a1-possess",  naam: "Possessivartikel",            romaji: "mein / dein",           tagline: "Bezit: mijn, jouw",                             niveau: "A1" },
+    { id: "de-a1-modal",    naam: "Modalverben",                 romaji: "können / müssen / wollen", tagline: "Modale werkwoorden",                         niveau: "A1" },
+    { id: "de-a1-v2",       naam: "Wortstellung (V2)",           romaji: "Heute gehe ich…",       tagline: "Het werkwoord op de tweede plaats",             niveau: "A1" },
+    { id: "de-a1-prepzeit", naam: "Präpositionen (Zeit)",        romaji: "am / um / im",          tagline: "Voorzetsels van tijd",                          niveau: "A1" },
+
+    { id: "de-a2-dativ",    naam: "Dativ",                       romaji: "ich helfe dem Mann",    tagline: "De derde naamval (meewerkend voorwerp)",        niveau: "A2" },
+    { id: "de-a2-wechsel",  naam: "Wechselpräpositionen",        romaji: "in / auf / an + Dat/Akk", tagline: "Voorzetsels met twee naamvallen",             niveau: "A2" },
+    { id: "de-a2-perfekt",  naam: "Perfekt",                     romaji: "ich habe gemacht",      tagline: "De voltooid verleden tijd",                     niveau: "A2" },
+    { id: "de-a2-perfsein", naam: "Perfekt mit sein",            romaji: "ich bin gegangen",      tagline: "Perfekt met 'sein'",                            niveau: "A2" },
+    { id: "de-a2-praet",    naam: "Präteritum (sein/haben)",     romaji: "ich war / hatte",       tagline: "Verleden tijd van zijn, hebben, modaal",        niveau: "A2" },
+    { id: "de-a2-komp",     naam: "Komparativ & Superlativ",     romaji: "größer / am größten",   tagline: "Vergelijken",                                   niveau: "A2" },
+    { id: "de-a2-imper",    naam: "Imperativ",                   romaji: "geh! / gehen Sie!",     tagline: "De gebiedende wijs",                            niveau: "A2" },
+    { id: "de-a2-trennbar", naam: "trennbare Verben",            romaji: "ich stehe auf",         tagline: "Scheidbare werkwoorden",                        niveau: "A2" },
+    { id: "de-a2-konj",     naam: "Konjunktionen",               romaji: "weil / dass / wenn",    tagline: "Voegwoorden en bijzinnen",                      niveau: "A2" },
+    { id: "de-a2-nebensatz", naam: "Nebensatz-Wortstellung",     romaji: "…, weil ich müde bin",  tagline: "Werkwoord achteraan in de bijzin",              niveau: "A2" },
+    { id: "de-a2-adjdekl",  naam: "Adjektivdeklination",         romaji: "ein guter Mann",        tagline: "Bijvoeglijke naamwoorden verbuigen",            niveau: "A2" },
+    { id: "de-a2-genitiv",  naam: "Genitiv",                     romaji: "das Auto des Mannes",   tagline: "De tweede naamval (bezit)",                     niveau: "A2" },
+
+    { id: "de-b1-konj2",    naam: "Konjunktiv II",               romaji: "ich würde / könnte",    tagline: "Wensen, beleefdheid en hypotheses",             niveau: "B1" },
+    { id: "de-b1-futur",    naam: "Futur I",                     romaji: "ich werde machen",      tagline: "De toekomende tijd",                            niveau: "B1" },
+    { id: "de-b1-passiv",   naam: "Passiv",                      romaji: "es wird gemacht",       tagline: "De lijdende vorm",                              niveau: "B1" },
+    { id: "de-b1-relativ",  naam: "Relativsätze",                romaji: "der Mann, der…",        tagline: "Betrekkelijke bijzinnen",                       niveau: "B1" },
+    { id: "de-b1-reflexiv", naam: "reflexive Verben",            romaji: "ich freue mich",        tagline: "Wederkerende werkwoorden",                      niveau: "B1" },
+    { id: "de-b1-infzu",    naam: "Infinitiv mit zu",            romaji: "ich versuche zu…",      tagline: "Infinitief met 'zu'",                           niveau: "B1" },
+    { id: "de-b1-umzu",     naam: "um…zu / damit",               romaji: "um zu lernen",          tagline: "Doel: 'om te…'",                                niveau: "B1" },
+    { id: "de-b1-plusq",    naam: "Plusquamperfekt",             romaji: "ich hatte gemacht",     tagline: "Voltooid verleden verleden tijd",               niveau: "B1" },
+    { id: "de-b1-indirekt", naam: "indirekte Rede",              romaji: "er sagt, dass…",        tagline: "Indirecte rede",                                niveau: "B1" },
+    { id: "de-b1-adjnomen", naam: "Adjektiv als Nomen",          romaji: "der Deutsche",          tagline: "Bijvoeglijk naamwoord als zelfstandig naamwoord", niveau: "B1" },
+    { id: "de-b1-prepgen",  naam: "Präpositionen mit Genitiv",   romaji: "wegen / trotz",         tagline: "Voorzetsels met de genitief",                   niveau: "B1" },
+  ],
+};
+
+// ─── Spaans (CEFR A1 → B1) ──────────────────────────────────────────────────────
+
+const ES: Curriculum = {
+  framework: "CEFR A1 → B1",
+  levels: [
+    { id: "A1", label: "A1", color: C.green },
+    { id: "A2", label: "A2", color: C.amber },
+    { id: "B1", label: "B1", color: C.rose },
+  ],
+  topics: [
+    { id: "es-a1-ser",      naam: "ser",                         romaji: "yo soy / tú eres",      tagline: "'Zijn' voor eigenschappen en identiteit",       niveau: "A1" },
+    { id: "es-a1-estar",    naam: "estar",                       romaji: "yo estoy / está",       tagline: "'Zijn' voor plaats en toestand",                niveau: "A1" },
+    { id: "es-a1-servs",    naam: "ser vs estar",                romaji: "es / está",             tagline: "Wanneer ser en wanneer estar",                  niveau: "A1" },
+    { id: "es-a1-articulos", naam: "artículos & género",         romaji: "el / la / un / una",    tagline: "Lidwoorden en geslacht",                        niveau: "A1" },
+    { id: "es-a1-plural",   naam: "plural",                      romaji: "libro → libros",        tagline: "Meervoud",                                      niveau: "A1" },
+    { id: "es-a1-presar",   naam: "presente -ar",                romaji: "yo hablo",              tagline: "Tegenwoordige tijd: -ar-werkwoorden",           niveau: "A1" },
+    { id: "es-a1-preser",   naam: "presente -er / -ir",          romaji: "como / vivo",           tagline: "Tegenwoordige tijd: -er en -ir",                niveau: "A1" },
+    { id: "es-a1-neg",      naam: "negación",                    romaji: "no hablo",              tagline: "Ontkennen",                                     niveau: "A1" },
+    { id: "es-a1-preg",     naam: "preguntas",                   romaji: "¿qué? / ¿dónde?",       tagline: "Vragen stellen",                                niveau: "A1" },
+    { id: "es-a1-adj",      naam: "adjetivos (concordancia)",    romaji: "alto / alta",           tagline: "Bijvoeglijke naamwoorden verbuigen",            niveau: "A1" },
+    { id: "es-a1-poses",    naam: "posesivos",                   romaji: "mi / tu / su",          tagline: "Bezit",                                         niveau: "A1" },
+    { id: "es-a1-gustar",   naam: "gustar",                      romaji: "me gusta",              tagline: "'Leuk vinden' met gustar",                      niveau: "A1" },
+    { id: "es-a1-hay",      naam: "hay",                         romaji: "hay un café",           tagline: "'Er is / er zijn'",                             niveau: "A1" },
+    { id: "es-a1-ira",      naam: "ir a + infinitivo",           romaji: "voy a comer",           tagline: "De nabije toekomst",                            niveau: "A1" },
+
+    { id: "es-a2-reflex",   naam: "verbos reflexivos",           romaji: "me levanto",            tagline: "Wederkerende werkwoorden",                      niveau: "A2" },
+    { id: "es-a2-indef",    naam: "pretérito indefinido",        romaji: "hablé / comí",          tagline: "Verleden tijd (afgeronde handeling)",           niveau: "A2" },
+    { id: "es-a2-imperf",   naam: "pretérito imperfecto",        romaji: "hablaba",               tagline: "Onvoltooid verleden: gewoontes en beschrijving", niveau: "A2" },
+    { id: "es-a2-indefvs",  naam: "indefinido vs imperfecto",    romaji: "hablé / hablaba",       tagline: "Wanneer welke verleden tijd",                   niveau: "A2" },
+    { id: "es-a2-futuro",   naam: "futuro simple",               romaji: "hablaré",               tagline: "De toekomende tijd",                            niveau: "A2" },
+    { id: "es-a2-compar",   naam: "comparativo & superlativo",   romaji: "más grande que",        tagline: "Vergelijken",                                   niveau: "A2" },
+    { id: "es-a2-imper",    naam: "imperativo",                  romaji: "¡habla! / ¡hable!",     tagline: "De gebiedende wijs",                            niveau: "A2" },
+    { id: "es-a2-pron",     naam: "pronombres OD / OI",          romaji: "lo veo / le doy",       tagline: "Lijdend en meewerkend voorwerp-voornaamwoorden", niveau: "A2" },
+    { id: "es-a2-irreg",    naam: "verbos con cambio vocálico",  romaji: "puedo / quiero",        tagline: "Klankwisselende werkwoorden (o→ue, e→ie)",      niveau: "A2" },
+    { id: "es-a2-gerundio", naam: "estar + gerundio",            romaji: "estoy comiendo",        tagline: "Nu bezig: -ando / -iendo",                      niveau: "A2" },
+    { id: "es-a2-tenerque", naam: "tener que / hay que",         romaji: "tengo que ir",          tagline: "Moeten en verplichting",                        niveau: "A2" },
+    { id: "es-a2-porpara",  naam: "por vs para",                 romaji: "por / para",            tagline: "Het verschil tussen por en para",               niveau: "A2" },
+
+    { id: "es-b1-perfecto", naam: "pretérito perfecto",          romaji: "he comido",             tagline: "Voltooid tegenwoordige tijd",                   niveau: "B1" },
+    { id: "es-b1-subj",     naam: "presente de subjuntivo",      romaji: "espero que venga",      tagline: "De aanvoegende wijs (basis)",                   niveau: "B1" },
+    { id: "es-b1-condic",   naam: "condicional",                 romaji: "me gustaría",           tagline: "De voorwaardelijke wijs (wens, beleefdheid)",   niveau: "B1" },
+    { id: "es-b1-si",       naam: "oraciones condicionales",     romaji: "si tuviera…, …",        tagline: "Voorwaardelijke zinnen met 'si'",               niveau: "B1" },
+    { id: "es-b1-plusc",    naam: "pluscuamperfecto",            romaji: "había comido",          tagline: "Voltooid verleden verleden tijd",               niveau: "B1" },
+    { id: "es-b1-relativos", naam: "pronombres relativos",       romaji: "que / quien / donde",   tagline: "Betrekkelijke voornaamwoorden",                 niveau: "B1" },
+    { id: "es-b1-indirecto", naam: "estilo indirecto",           romaji: "dice que…",             tagline: "Indirecte rede",                                niveau: "B1" },
+    { id: "es-b1-pasiva",   naam: "voz pasiva",                  romaji: "es hecho por…",         tagline: "De lijdende vorm",                              niveau: "B1" },
+    { id: "es-b1-mandatosneg", naam: "mandatos negativos",       romaji: "no hables",             tagline: "Ontkennende gebiedende wijs (subjuntivo)",      niveau: "B1" },
+    { id: "es-b1-subjvs",   naam: "subjuntivo vs indicativo",    romaji: "creo que / no creo que", tagline: "Wanneer de subjuntivo nodig is",               niveau: "B1" },
+    { id: "es-b1-perifrasis", naam: "perífrasis verbales",       romaji: "acabo de llegar",       tagline: "Constructies zoals acabar de, volver a",        niveau: "B1" },
+  ],
+};
+
 // ─── Register ───────────────────────────────────────────────────────────────────
 
 const GRAMMAR_CURRICULA: Partial<Record<LangCode, Curriculum>> = {
@@ -309,7 +514,11 @@ const GRAMMAR_CURRICULA: Partial<Record<LangCode, Curriculum>> = {
   zh:  ZH,
   yue: YUE,
   ko:  KO,
+  id:  ID,
   en:  EN,
+  fr:  FR,
+  de:  DE,
+  es:  ES,
 };
 
 export function getCurriculum(lang: string): Curriculum | null {
