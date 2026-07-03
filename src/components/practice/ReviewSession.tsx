@@ -10,15 +10,20 @@ import AudioButton from "@/components/ui/AudioButton";
 
 // Hoeveel nieuwe woorden een sessie maximaal introduceert bovenop de herhalingen.
 const DAILY_NEW = 10;
+// Maximaal aantal kaarten in een gerichte categorie-sessie.
+const CATEGORY_MAX = 30;
 
 interface ReviewSessionProps {
   allCategories: Array<{ id: string; name: string; icon: string }>;
+  // Gezet = gerichte categorie-sessie: alle woorden uit deze categorieën, geen
+  // due-prioriteit. Beoordelingen tellen wél mee in de SRS. Leeg/undefined = Vandaag.
+  scopeCategoryIds?: string[];
   onClose: () => void;
 }
 
 type Phase = "loading" | "review" | "done" | "empty";
 
-export default function ReviewSession({ allCategories, onClose }: ReviewSessionProps) {
+export default function ReviewSession({ allCategories, scopeCategoryIds, onClose }: ReviewSessionProps) {
   const { dueCards, rate }   = useSrs();
   const { recordReviews }    = useDailyStats();
   const { getConcepts }      = useVocabulary();
@@ -45,6 +50,31 @@ export default function ReviewSession({ allCategories, onClose }: ReviewSessionP
     startedRef.current = true;
 
     const build = async () => {
+      // ── Gerichte modus: alle woorden uit de gekozen categorieën ───────────────
+      if (scopeCategoryIds && scopeCategoryIds.length) {
+        const seen  = new Set<string>();
+        const words: SrsSeed[] = [];
+        for (const catId of scopeCategoryIds) {
+          const concepts = await getConcepts(catId).catch(() => null);
+          if (!concepts) continue;
+          for (const c of concepts) {
+            const w = wordForLang(c, language);
+            if (!w) continue;
+            const seed: SrsSeed = { type: "word", lang: language, dutch: w.dutch, target: w.japanese, reading: w.romaji };
+            const id = srsCardId(seed.type, seed.lang, seed.dutch);
+            if (seen.has(id)) continue;
+            seen.add(id);
+            words.push(seed);
+          }
+        }
+        const built = words.sort(() => Math.random() - 0.5).slice(0, CATEGORY_MAX);
+        setDueTotal(0);
+        setQueue(built);
+        setPhase(built.length ? "review" : "empty");
+        return;
+      }
+
+      // ── Vandaag-modus: herhalingen eerst, daarna een portie nieuwe woorden ────
       // 1. Due-kaarten uit de SRS (momentopname bij openen).
       const due = dueCards(language).map((c): SrsSeed => ({
         type: c.type, lang: c.lang, dutch: c.dutch, target: c.target, reading: c.reading,

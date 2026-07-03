@@ -34,6 +34,7 @@ import { Phrase } from "@/types";
 import InlineTranslator from "@/components/ui/InlineTranslator";
 import AudioButton from "@/components/ui/AudioButton";
 import SpeedButton from "@/components/ui/SpeedButton";
+import ReviewSession from "@/components/practice/ReviewSession";
 
 // ─── Vocabulary list (inline) ─────────────────────────────────────────────────
 
@@ -452,7 +453,7 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
           onClick={() => setShowPractice(true)}
           className="w-full mt-5 py-3.5 bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2"
         >
-          <span>🃏</span><span>Woorden oefenen</span>
+          <span>🎯</span><span>Oefen deze woorden</span>
         </button>
       )}
 
@@ -552,8 +553,9 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
       )}
 
       {showPractice && (
-        <WordFlashcardModal
-          words={concepts.map((c) => wordForLang(c, lang)).filter(Boolean) as VocabWord[]}
+        <ReviewSession
+          allCategories={[]}
+          scopeCategoryIds={[categoryId]}
           onClose={() => setShowPractice(false)}
         />
       )}
@@ -737,92 +739,6 @@ function FlashcardModal({ phrases, onClose }: { phrases: Phrase[]; onClose: () =
         >
           →
         </button>
-      </div>
-    </div>
-  );
-}
-
-// ─── Woorden-flashcards (per categorie) ────────────────────────────────────────
-
-function WordFlashcardModal({ words, onClose }: { words: VocabWord[]; onClose: () => void }) {
-  const { language } = useLanguage();
-  const { play } = useAudio();
-  const [index,      setIndex]      = useState(0);
-  const [flipped,    setFlipped]    = useState(false);
-  const [dir,        setDir]        = useState(1);
-  const [audioFirst, setAudioFirst] = useState(false);
-  const [order,      setOrder]      = useState(() => words.map((_, i) => i).sort(() => Math.random() - 0.5));
-
-  const word = words[order[index]];
-
-  useEffect(() => {
-    if (audioFirst && word?.japanese) play(word.japanese);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [index, audioFirst]);
-
-  const go = (delta: number) => {
-    setDir(delta >= 0 ? 1 : -1);
-    setFlipped(false);
-    setTimeout(() => setIndex((i) => Math.min(Math.max(i + delta, 0), order.length - 1)), 50);
-  };
-  const shuffle = () => { setOrder((p) => [...p].sort(() => Math.random() - 0.5)); setIndex(0); setFlipped(false); };
-
-  const touchStartX = useRef<number | null>(null);
-  const didSwipe    = useRef(false);
-  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; didSwipe.current = false; };
-  const onTouchEnd = (e: React.TouchEvent) => {
-    if (touchStartX.current === null) return;
-    const dx = e.changedTouches[0].clientX - touchStartX.current;
-    touchStartX.current = null;
-    if (Math.abs(dx) > 50) { didSwipe.current = true; if (dx < 0) go(1); else go(-1); }
-  };
-  const onCardClick = () => { if (didSwipe.current) { didSwipe.current = false; return; } setFlipped((v) => !v); };
-
-  if (!word) return null;
-
-  const targetNode = (
-    <>
-      <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-6">{getLanguage(language)?.label ?? ""}</p>
-      <p className="text-4xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">{word.japanese}</p>
-      <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{word.romaji}</p>
-      <AudioButton text={word.japanese} />
-    </>
-  );
-  const dutchNode = (
-    <>
-      <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-6">Nederlands</p>
-      <p className="text-2xl font-semibold text-stone-900 dark:text-stone-100 leading-snug">{word.dutch}</p>
-      <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">Tik om te draaien</p>
-    </>
-  );
-
-  return (
-    <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
-      <div className="flex items-center justify-between px-5 pt-10 pb-4">
-        <button onClick={onClose} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg" aria-label="Sluiten">✕</button>
-        <p className="text-sm font-medium text-stone-400 dark:text-stone-500 tabular-nums">{index + 1} <span className="text-stone-300 dark:text-stone-600">/</span> {order.length}</p>
-        <div className="flex items-center gap-2">
-          <SpeedButton />
-          <button onClick={() => setAudioFirst((v) => !v)} className={`w-9 h-9 flex items-center justify-center rounded-full shadow-sm transition-colors text-sm ${audioFirst ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900" : "bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200"}`} aria-label="Luister eerst" title="Luister-eerst: hoor het woord, draai om voor het Nederlands">🔊</button>
-          <button onClick={shuffle} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm" aria-label="Schudden">⇄</button>
-        </div>
-      </div>
-
-      <div className="flex-1 flex items-center justify-center px-6">
-        <div key={index} className="w-full max-w-sm card-slide-in" style={{ perspective: "1200px", "--slide-from": `${dir * 44}px` } as React.CSSProperties}>
-          <div onClick={onCardClick} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd} style={{ transformStyle: "preserve-3d", transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)", transition: "transform 0.45s cubic-bezier(0.4,0,0.2,1)", position: "relative", height: "260px", cursor: "pointer" }}>
-            <div style={{ backfaceVisibility: "hidden" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">{audioFirst ? targetNode : dutchNode}</div>
-            <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">{audioFirst ? dutchNode : targetNode}</div>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex items-center justify-center gap-6 px-5 pb-14">
-        <button onClick={() => go(-1)} disabled={index === 0} className="w-14 h-14 rounded-full bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xl flex items-center justify-center shadow-sm disabled:opacity-20 active:scale-95 transition-all" aria-label="Vorige">←</button>
-        <div className="flex gap-1.5 flex-wrap justify-center max-w-[140px]">
-          {order.map((_, i) => (<div key={i} className={`rounded-full transition-all ${i === index ? "w-4 h-2 bg-stone-700 dark:bg-stone-300" : "w-2 h-2 bg-stone-200 dark:bg-stone-700"}`} />))}
-        </div>
-        <button onClick={() => go(1)} disabled={index === order.length - 1} className="w-14 h-14 rounded-full bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xl flex items-center justify-center shadow-sm disabled:opacity-20 active:scale-95 transition-all" aria-label="Volgende">→</button>
       </div>
     </div>
   );
