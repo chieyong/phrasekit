@@ -9,8 +9,7 @@ import PhraseCard from "@/components/cards/PhraseCard";
 import InlineTranslator from "@/components/ui/InlineTranslator";
 import CategoryPicker from "@/components/ui/CategoryPicker";
 import { categories, phrases as staticPhrases, getPhrasesByCategory } from "@/data/mockData";
-import GrammarScreen from "@/components/grammar/GrammarScreen";
-import GrammarPath from "@/components/grammar/GrammarPath";
+import GrammarHub from "@/components/grammar/GrammarHub";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 import { useVocabulary, VocabWord, wordForLang } from "@/hooks/useVocabulary";
@@ -28,469 +27,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/ui/LanguageSelector";
 import { getPhraseTranslation } from "@/utils/phrase";
 import { getLanguage } from "@/data/languages";
-import { Phrase } from "@/types";
-
-// ─── Vocab practice modal ─────────────────────────────────────────────────────
-
-interface VocabPracticeModalProps {
-  allCategories: Array<{ id: string; name: string; icon: string }>;
-  getPhrasesForCategory: (id: string) => Array<{ translatedText: string; romaji: string; sourceText: string }>;
-  initialSelected: string[];
-  onSelectionChange: (ids: string[]) => void;
-  onClose: () => void;
-  autoStart?: boolean;
-}
-
-function VocabPracticeModal({ allCategories, getPhrasesForCategory, initialSelected, onSelectionChange, onClose, autoStart }: VocabPracticeModalProps) {
-  const { getConceptsForLang }   = useVocabulary();
-  const { language }             = useLanguage();
-  const { play }                 = useAudio();
-  const [mode,       setMode]       = useState<"select" | "loading" | "practice">(autoStart ? "loading" : "select");
-  const [selected,   setSelected]   = useState<Set<string>>(() => new Set(initialSelected));
-  const [words,      setWords]      = useState<VocabWord[]>([]);
-  const [cardIndex,  setCardIndex]  = useState(0);
-  const [flipped,    setFlipped]    = useState(false);
-  const [dir,        setDir]        = useState(1);
-  const [audioFirst, setAudioFirst] = useState(false);
-
-  const allIds = allCategories.map((c) => c.id);
-  const allSelected = allIds.every((id) => selected.has(id));
-
-  const toggleCat = (id: string) =>
-    setSelected((prev) => {
-      const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id);
-      onSelectionChange([...s]); return s;
-    });
-
-  const toggleAll = () => {
-    const next = allSelected ? new Set<string>() : new Set(allIds);
-    setSelected(next); onSelectionChange([...next]);
-  };
-
-  const handleStart = async () => {
-    if (selected.size === 0) return;
-    setMode("loading");
-
-    const all: VocabWord[] = [];
-    for (const catId of selected) {
-      // Gedeelde conceptenlijst → woorden in de actieve taal (met lui bijvertalen).
-      const concepts = await getConceptsForLang(catId, language).catch(() => []);
-      const mapped = concepts
-        .map((c) => wordForLang(c, language))
-        .filter(Boolean) as VocabWord[];
-      if (mapped.length) { all.push(...mapped); continue; }
-
-      // Fallback: nog geen (vertaalde) concepten — genereer voor deze sessie.
-      const catPhrases = getPhrasesForCategory(catId);
-      if (!catPhrases.length) continue;
-      try {
-        const res  = await fetch("/api/vocabulary", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ phrases: catPhrases, language }),
-        });
-        const data = await res.json();
-        all.push(...((data.words ?? []) as VocabWord[]));
-      } catch { /* skip */ }
-    }
-
-    // Deduplicate on text key, then shuffle (verbs stay grouped at end within the shuffle)
-    const unique  = Array.from(new Map(all.map((w) => [w.japanese, w])).values());
-    const nonVerbs = unique.filter((w) => w.type !== "verb").sort(() => Math.random() - 0.5);
-    const verbs    = unique.filter((w) => w.type === "verb").sort(() => Math.random() - 0.5);
-    const shuffled = [...nonVerbs, ...verbs];
-    setWords(shuffled);
-    setCardIndex(0);
-    setFlipped(false);
-    setMode("practice");
-  };
-
-  // Scope is chosen on the Verdiepen tab; when opened from there we skip the
-  // select screen and generate straight away.
-  const startedRef = useRef(false);
-  useEffect(() => {
-    if (!autoStart || startedRef.current) return;
-    startedRef.current = true;
-    void handleStart();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [autoStart]);
-
-  const go = (delta: number) => {
-    setDir(delta >= 0 ? 1 : -1);
-    setFlipped(false);
-    setTimeout(() => setCardIndex((i) => Math.min(Math.max(i + delta, 0), words.length - 1)), 50);
-  };
-
-  // Luister-eerst: speel de doeltaal automatisch af bij een nieuwe kaart.
-  useEffect(() => {
-    if (audioFirst && mode === "practice") { const w = words[cardIndex]; if (w?.japanese) play(w.japanese); }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [cardIndex, audioFirst, mode]);
-
-  // Swipe links = volgende, rechts = vorige. Een swipe onderdrukt de tik-flip.
-  const touchStartX = useRef<number | null>(null);
-  const didSwipe    = useRef(false);
-  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; didSwipe.current = false; };
-  const onTouchEnd = (e: React.TouchEvent) => {
-    if (touchStartX.current === null) return;
-    const dx = e.changedTouches[0].clientX - touchStartX.current;
-    touchStartX.current = null;
-    if (Math.abs(dx) > 50) { didSwipe.current = true; if (dx < 0) go(1); else go(-1); }
-  };
-  const onCardClick = () => { if (didSwipe.current) { didSwipe.current = false; return; } setFlipped((v) => !v); };
-
-  const handleBackdrop = (e: React.MouseEvent) => { if (e.target === e.currentTarget) onClose(); };
-
-  // ── Select screen ──────────────────────────────────────────────────────────
-  if (mode === "select") {
-    return (
-      <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
-        <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
-          <div className="relative flex items-center justify-center pt-4 pb-1 px-5">
-            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700" />
-            <button onClick={onClose} className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
-              Annuleren
-            </button>
-          </div>
-          <div className="px-5 pt-3 pb-2">
-            <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">🎯 Woorden oefenen</p>
-            <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Kies de categorieën die je wilt oefenen</p>
-          </div>
-          <div className="px-3 overflow-y-auto max-h-[45vh]">
-            <button onClick={toggleAll} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left border-b border-stone-100 dark:border-stone-800 mb-1">
-              <span className="flex-1 text-sm font-medium text-stone-500 dark:text-stone-400">Alles selecteren</span>
-              <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${allSelected ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100" : "border-stone-200 dark:border-stone-600"}`}>
-                {allSelected && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
-              </span>
-            </button>
-            {allCategories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => toggleCat(cat.id)}
-                className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left"
-              >
-                <span className="text-xl shrink-0">{cat.icon}</span>
-                <span className="flex-1 text-sm font-medium text-stone-800 dark:text-stone-200">{cat.name}</span>
-                <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${
-                  selected.has(cat.id)
-                    ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100"
-                    : "border-stone-200 dark:border-stone-600"
-                }`}>
-                  {selected.has(cat.id) && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
-                </span>
-              </button>
-            ))}
-          </div>
-          <div className="px-5 pb-8 pt-3 border-t border-stone-100 dark:border-stone-700">
-            <button
-              onClick={handleStart}
-              disabled={selected.size === 0}
-              className="w-full bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-xl py-3 text-sm font-medium disabled:opacity-30 active:scale-95 transition-all"
-            >
-              Starten ({selected.size} {selected.size === 1 ? "categorie" : "categorieën"})
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // ── Loading screen ─────────────────────────────────────────────────────────
-  if (mode === "loading") {
-    return (
-      <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col items-center justify-center gap-4">
-        <div className="w-8 h-8 rounded-full border-2 border-stone-300 dark:border-stone-600 border-t-stone-700 dark:border-t-stone-300 animate-spin" />
-        <p className="text-sm text-stone-400 dark:text-stone-500">Woordenlijst ophalen…</p>
-      </div>
-    );
-  }
-
-  // ── Practice screen ────────────────────────────────────────────────────────
-  if (!words.length) {
-    return (
-      <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col items-center justify-center gap-4 px-8 text-center">
-        <p className="text-4xl">📭</p>
-        <p className="text-base font-semibold text-stone-700 dark:text-stone-300">Geen woorden gevonden</p>
-        <p className="text-sm text-stone-400 dark:text-stone-500 leading-relaxed">Open een categorie en genereer eerst de woordenlijst.</p>
-        <button onClick={onClose} className="mt-2 text-sm text-stone-500 dark:text-stone-400 underline">Sluiten</button>
-      </div>
-    );
-  }
-
-  const word = words[cardIndex];
-  return (
-    <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
-      {/* Header */}
-      <div className="flex items-center justify-between px-5 pt-10 pb-4">
-        <button onClick={onClose} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg" aria-label="Sluiten">✕</button>
-        <p className="text-sm font-medium text-stone-400 dark:text-stone-500 tabular-nums">
-          {cardIndex + 1} <span className="text-stone-300 dark:text-stone-600">/</span> {words.length}
-        </p>
-        <div className="flex items-center gap-2">
-          <SpeedButton />
-          <button
-            onClick={() => setAudioFirst((v) => !v)}
-            className={`w-9 h-9 flex items-center justify-center rounded-full shadow-sm transition-colors text-sm ${audioFirst ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900" : "bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200"}`}
-            aria-label="Luister eerst"
-            title="Luister-eerst: hoor het woord, draai om voor het Nederlands"
-          >🔊</button>
-          <button
-            onClick={() => { setWords((w) => [...w].sort(() => Math.random() - 0.5)); setCardIndex(0); setFlipped(false); }}
-            className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm"
-            aria-label="Schudden"
-          >⇄</button>
-        </div>
-      </div>
-
-      {/* Card */}
-      <div className="flex-1 flex items-center justify-center px-6">
-        <div key={cardIndex} className="w-full max-w-sm card-slide-in" style={{ perspective: "1200px", "--slide-from": `${dir * 44}px` } as React.CSSProperties}>
-          <div
-            onClick={onCardClick}
-            onTouchStart={onTouchStart}
-            onTouchEnd={onTouchEnd}
-            style={{
-              transformStyle: "preserve-3d",
-              transform:      flipped ? "rotateY(180deg)" : "rotateY(0deg)",
-              transition:     "transform 0.45s cubic-bezier(0.4,0,0.2,1)",
-              position:       "relative",
-              height:         "260px",
-              cursor:         "pointer",
-            }}
-          >
-            {(() => {
-              const targetNode = (
-                <>
-                  <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-6">{getLanguage(language)?.label ?? ""}</p>
-                  <p className="text-4xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">{word.japanese}</p>
-                  <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">{word.romaji}</p>
-                  <AudioButton text={word.japanese} />
-                </>
-              );
-              const dutchNode = (
-                <>
-                  <p className="text-[10px] font-semibold text-stone-300 dark:text-stone-600 uppercase tracking-widest mb-6">Nederlands</p>
-                  <p className="text-2xl font-semibold text-stone-900 dark:text-stone-100 leading-snug">{word.dutch}</p>
-                  <p className="text-xs text-stone-300 dark:text-stone-600 mt-8">Tik om te draaien</p>
-                </>
-              );
-              return (<>
-                <div style={{ backfaceVisibility: "hidden" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-                  {audioFirst ? targetNode : dutchNode}
-                </div>
-                <div style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }} className="absolute inset-0 bg-white dark:bg-stone-900 rounded-3xl shadow-sm flex flex-col items-center justify-center px-8 text-center select-none">
-                  {audioFirst ? dutchNode : targetNode}
-                </div>
-              </>);
-            })()}
-          </div>
-        </div>
-      </div>
-
-      {/* Navigation */}
-      <div className="flex items-center justify-center gap-6 px-5 pb-14">
-        <button onClick={() => go(-1)} disabled={cardIndex === 0} className="w-14 h-14 rounded-full bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xl flex items-center justify-center shadow-sm disabled:opacity-20 active:scale-95 transition-all" aria-label="Vorige">←</button>
-        <div className="flex gap-1.5">
-          {words.map((_, i) => (
-            <div key={i} className={`rounded-full transition-all ${i === cardIndex ? "w-4 h-2 bg-stone-700 dark:bg-stone-300" : "w-2 h-2 bg-stone-200 dark:bg-stone-700"}`} />
-          ))}
-        </div>
-        <button onClick={() => go(1)} disabled={cardIndex === words.length - 1} className="w-14 h-14 rounded-full bg-white dark:bg-stone-800 text-stone-600 dark:text-stone-300 text-xl flex items-center justify-center shadow-sm disabled:opacity-20 active:scale-95 transition-all" aria-label="Volgende">→</button>
-      </div>
-    </div>
-  );
-}
-
-// ─── Grammar group modal ──────────────────────────────────────────────────────
-
-interface GrammarGroupModalProps {
-  allCategories: Array<{ id: string; name: string; icon: string }>;
-  getFullPhrasesForCategory: (id: string) => Phrase[];
-  initialSelected: string[];
-  onSelectionChange: (ids: string[]) => void;
-  onClose: () => void;
-  autoStart?: boolean;
-}
-
-function GrammarGroupModal({ allCategories, getFullPhrasesForCategory, initialSelected, onSelectionChange, onClose, autoStart }: GrammarGroupModalProps) {
-  const { language }                     = useLanguage();
-  const [mode,         setMode]         = useState<"select" | "loading" | "result">(autoStart ? "loading" : "select");
-  const [selected,     setSelected]     = useState<Set<string>>(() => new Set(initialSelected));
-  const [groups,       setGroups]       = useState<{ groep: string; zinIds: string[] }[]>([]);
-  const [allPhrases,   setAllPhrases]   = useState<Phrase[]>([]);
-  const [activeGroep,  setActiveGroep]  = useState<string | null>(null);
-
-  const allIds = allCategories.map((c) => c.id);
-  const allSelected = allIds.every((id) => selected.has(id));
-
-  const toggleCat = (id: string) =>
-    setSelected((prev) => {
-      const s = new Set(prev); s.has(id) ? s.delete(id) : s.add(id);
-      onSelectionChange([...s]); return s;
-    });
-
-  const toggleAll = () => {
-    const next = allSelected ? new Set<string>() : new Set(allIds);
-    setSelected(next); onSelectionChange([...next]);
-  };
-
-  const handleGroepeer = async () => {
-    if (selected.size === 0) { if (autoStart) onClose(); return; }
-    const collected: Phrase[] = [];
-    for (const catId of selected) collected.push(...getFullPhrasesForCategory(catId));
-    if (collected.length < 2) { if (autoStart) onClose(); return; }
-
-    setMode("loading");
-    try {
-      const res  = await fetch("/api/group-grammar", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          language,
-          phrases: collected.map((p) => ({
-            id:             p.id,
-            translatedText: getPhraseTranslation(p, language)?.text ?? "",
-            sourceText:     p.sourceText,
-          })),
-        }),
-      });
-      const data = await res.json();
-      const fetched: { groep: string; zinIds: string[] }[] = data.groups ?? [];
-      setGroups(fetched);
-      setAllPhrases(collected);
-      setActiveGroep(fetched[0]?.groep ?? null);
-      setMode("result");
-    } catch {
-      if (autoStart) onClose(); else setMode("select");
-    }
-  };
-
-  // Scope is chosen on the Verdiepen tab; auto-run when opened from there.
-  const startedRef = useRef(false);
-  useEffect(() => {
-    if (!autoStart || startedRef.current) return;
-    startedRef.current = true;
-    void handleGroepeer();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [autoStart]);
-
-  const handleBackdrop = (e: React.MouseEvent) => { if (e.target === e.currentTarget) onClose(); };
-
-  // ── Select screen ──────────────────────────────────────────────────────────
-  if (mode === "select") {
-    return (
-      <div className="fixed inset-0 z-50 flex items-end" onClick={handleBackdrop}>
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
-        <div className="relative w-full max-w-md mx-auto bg-white dark:bg-stone-900 rounded-t-3xl shadow-2xl">
-          <div className="relative flex items-center justify-center pt-4 pb-1 px-5">
-            <div className="w-10 h-1 rounded-full bg-stone-200 dark:bg-stone-700" />
-            <button onClick={onClose} className="absolute right-5 top-4 text-xs text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
-              Annuleren
-            </button>
-          </div>
-          <div className="px-5 pt-3 pb-2">
-            <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">🔤 Grammatica groeperen</p>
-            <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Kies categorieën — AI groepeert alle zinnen op grammaticale structuur</p>
-          </div>
-          <div className="px-3 overflow-y-auto max-h-[45vh]">
-            <button onClick={toggleAll} className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left border-b border-stone-100 dark:border-stone-800 mb-1">
-              <span className="flex-1 text-sm font-medium text-stone-500 dark:text-stone-400">Alles selecteren</span>
-              <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${allSelected ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100" : "border-stone-200 dark:border-stone-600"}`}>
-                {allSelected && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
-              </span>
-            </button>
-            {allCategories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => toggleCat(cat.id)}
-                className="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors text-left"
-              >
-                <span className="text-xl shrink-0">{cat.icon}</span>
-                <span className="flex-1 text-sm font-medium text-stone-800 dark:text-stone-200">{cat.name}</span>
-                <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${
-                  selected.has(cat.id)
-                    ? "bg-stone-900 dark:bg-stone-100 border-stone-900 dark:border-stone-100"
-                    : "border-stone-200 dark:border-stone-600"
-                }`}>
-                  {selected.has(cat.id) && <span className="text-white dark:text-stone-900 text-[10px] leading-none">✓</span>}
-                </span>
-              </button>
-            ))}
-          </div>
-          <div className="px-5 pb-8 pt-3 border-t border-stone-100 dark:border-stone-700">
-            <button
-              onClick={handleGroepeer}
-              disabled={selected.size === 0}
-              className="w-full bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-xl py-3 text-sm font-medium disabled:opacity-30 active:scale-95 transition-all"
-            >
-              Groepeer ({selected.size} {selected.size === 1 ? "categorie" : "categorieën"})
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // ── Loading screen ─────────────────────────────────────────────────────────
-  if (mode === "loading") {
-    return (
-      <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col items-center justify-center gap-4">
-        <div className="w-8 h-8 rounded-full border-2 border-stone-300 dark:border-stone-600 border-t-stone-700 dark:border-t-stone-300 animate-spin" />
-        <p className="text-sm text-stone-400 dark:text-stone-500">Grammaticagroepen bepalen…</p>
-      </div>
-    );
-  }
-
-  // ── Result screen ──────────────────────────────────────────────────────────
-  const actieveZinnen = activeGroep
-    ? allPhrases.filter((p) => groups.find((g) => g.groep === activeGroep)?.zinIds.includes(p.id))
-    : [];
-
-  return (
-    <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
-      {/* Header */}
-      <div className="flex items-center justify-between px-5 pt-10 pb-4">
-        <button
-          onClick={onClose}
-          className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg"
-          aria-label="Sluiten"
-        >✕</button>
-        <p className="text-sm font-semibold text-stone-700 dark:text-stone-300">Grammaticagroepen</p>
-        <div className="w-9" />
-      </div>
-
-      {/* Tabs */}
-      <div className="px-5 pb-3">
-        <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-none">
-          {groups.map((g) => (
-            <button
-              key={g.groep}
-              onClick={() => setActiveGroep(g.groep)}
-              className={`shrink-0 px-3 py-1.5 rounded-xl text-xs font-medium transition-colors whitespace-nowrap ${
-                activeGroep === g.groep
-                  ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
-                  : "bg-white dark:bg-stone-800 text-stone-500 dark:text-stone-400 shadow-sm"
-              }`}
-            >
-              {g.groep}
-              <span className="ml-1.5 opacity-50">{g.zinIds.length}</span>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Phrases */}
-      <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-5 flex flex-col gap-1.5 pb-8">
-        {actieveZinnen.map((phrase) => (
-          <div key={phrase.id} className="shrink-0">
-            <PhraseCard phrase={phrase} showCategory />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 // ─── Sentence practice modal ──────────────────────────────────────────────────
 
@@ -895,31 +431,21 @@ export default function HomePage() {
   const { theme, toggle } = useTheme();
   const { language } = useLanguage();
   const [showNewCategory,      setShowNewCategory]      = useState(false);
-  const [showVocabPractice,    setShowVocabPractice]    = useState(false);
   const [sentenceModal,        setSentenceModal]        = useState<{ view: "new" | "saved"; autoStart: boolean } | null>(null);
-  const [showGrammarGroup,     setShowGrammarGroup]     = useState(false);
-  const [showGrammarScreen,    setShowGrammarScreen]    = useState(false);
-  const [showGrammarPath,      setShowGrammarPath]      = useState(false);
+  const [showGrammar,          setShowGrammar]          = useState(false);
   const [showReview,           setShowReview]           = useState(false);
   const [showProgress,         setShowProgress]         = useState(false);
   const [showPronunciation,    setShowPronunciation]    = useState(false);
+  const [wordDrillCats,        setWordDrillCats]        = useState<string[] | null>(null);
   const [activeTab,            setActiveTab]            = useState<"zinnen" | "verdiepen">("zinnen");
   const [reordering,           setReordering]           = useState(false);
   const [practiceSelection,    setPracticeSelection]    = useState<string[]>(() => {
     try { return JSON.parse(localStorage.getItem("phrasekit-cat-selection") ?? "[]"); } catch { return []; }
   });
-  const [difficulty,           setDifficulty]           = useState<Difficulty>(() => {
-    try { return (localStorage.getItem("phrasekit-difficulty") as Difficulty) || "basis"; } catch { return "basis"; }
-  });
 
   const handleSelectionChange = (ids: string[]) => {
     setPracticeSelection(ids);
     localStorage.setItem("phrasekit-cat-selection", JSON.stringify(ids));
-  };
-
-  const chooseDifficulty = (d: Difficulty) => {
-    setDifficulty(d);
-    localStorage.setItem("phrasekit-difficulty", d);
   };
 
   const userFavorieten   = userPhrases.filter((p) => p.isFavorite);
@@ -961,11 +487,6 @@ export default function HomePage() {
       .filter(Boolean) as { translatedText: string; romaji: string; sourceText: string }[];
   };
 
-  const getFullPhrasesForCategory = (catId: string): Phrase[] => {
-    const staticPhrases = getPhrasesByCategory(catId);
-    const userPhr = getUserPhrasesByCategory(catId);
-    return [...staticPhrases, ...userPhr];
-  };
 
   return (
     <div className="page-content">
@@ -1020,11 +541,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ── Inline vertaler ───────────────────────────────────────── */}
-      <div className="px-5 mb-4">
-        <InlineTranslator />
-      </div>
-
       {/* ── Tabs ──────────────────────────────────────────────────── */}
       <div className="px-5 mb-5">
         <div className="flex gap-1 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
@@ -1032,41 +548,52 @@ export default function HomePage() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`flex-1 py-2 rounded-lg text-xs font-semibold transition-all capitalize ${
+              className={`flex-1 py-2 rounded-lg text-xs font-semibold transition-all ${
                 activeTab === tab
                   ? "bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100 shadow-sm"
                   : "text-stone-400 dark:text-stone-500"
               }`}
             >
-              {tab === "zinnen" ? "Situaties" : "Verdiepen"}
+              {tab === "zinnen" ? "Situaties" : "Leren"}
             </button>
           ))}
         </div>
       </div>
 
-      {/* ── Tab: Zinnen ───────────────────────────────────────────── */}
+      {/* ── Tab: Situaties (reis) ─────────────────────────────────── */}
       {activeTab === "zinnen" && (
         <>
-          {user && (
-            <section className="px-5 mb-6 flex flex-col gap-2">
-              <TodayCard onStart={() => setShowReview(true)} />
-              <ProgressCard onOpen={() => setShowProgress(true)} />
-            </section>
-          )}
+          {/* Inline vertaler — snel iets opzoeken onderweg */}
+          <div className="px-5 mb-6">
+            <InlineTranslator />
+          </div>
 
           <section className="px-5 mb-8">
-            {user && allCategories.length > 1 && (
-              <div className="flex items-center justify-end mb-2">
-                <button
-                  onClick={() => setReordering((v) => !v)}
-                  className={`text-xs font-medium px-3 py-1.5 rounded-lg transition-colors ${
-                    reordering
-                      ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
-                      : "text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300"
-                  }`}
-                >
-                  {reordering ? "Klaar" : "↕ Herorden"}
-                </button>
+            {user && (
+              <div className="flex items-center justify-between mb-2.5">
+                <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">Situaties</p>
+                <div className="flex items-center gap-1">
+                  {allCategories.length > 1 && (
+                    <button
+                      onClick={() => setReordering((v) => !v)}
+                      aria-label={reordering ? "Klaar met herordenen" : "Herorden categorieën"}
+                      className={`w-7 h-7 rounded-full flex items-center justify-center text-sm transition-colors ${
+                        reordering
+                          ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
+                          : "text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300"
+                      }`}
+                    >
+                      {reordering ? "✓" : "↕"}
+                    </button>
+                  )}
+                  <button
+                    onClick={() => setShowNewCategory(true)}
+                    aria-label="Nieuwe categorie aanmaken"
+                    className="w-7 h-7 rounded-full flex items-center justify-center text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 text-base transition-colors"
+                  >
+                    +
+                  </button>
+                </div>
               </div>
             )}
 
@@ -1075,16 +602,6 @@ export default function HomePage() {
               reordering={reordering}
               onReorder={saveCategoryOrder}
             />
-
-            {user && !reordering && (
-              <button
-                onClick={() => setShowNewCategory(true)}
-                className="mt-1.5 flex items-center gap-3 bg-white/60 dark:bg-stone-900/60 border border-dashed border-stone-200 dark:border-stone-700 rounded-2xl px-4 py-3 active:opacity-70 transition-opacity text-left w-full"
-              >
-                <span className="w-7 h-7 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center text-stone-400 dark:text-stone-500 text-base shrink-0">+</span>
-                <span className="text-sm font-medium text-stone-400 dark:text-stone-500">Nieuwe categorie aanmaken</span>
-              </button>
-            )}
           </section>
 
           {opgeslagenZinnen.length > 0 && (
@@ -1119,12 +636,18 @@ export default function HomePage() {
         />
       )}
 
-      {/* ── Tab: Verdiepen ────────────────────────────────────────── */}
+      {/* ── Tab: Leren ────────────────────────────────────────────── */}
       {activeTab === "verdiepen" && (
         <section className="px-5 mb-8">
           {user ? (
             <div className="flex flex-col gap-5">
-              {/* ── Scope: kies eerst je categorieën ─────────────────── */}
+              {/* Vandaag + voortgang — de dagelijkse leerloop */}
+              <div className="flex flex-col gap-2">
+                <TodayCard onStart={() => setShowReview(true)} />
+                <ProgressCard onOpen={() => setShowProgress(true)} />
+              </div>
+
+              {/* ── Gericht oefenen: kies eerst je categorieën ───────── */}
               <div>
                 <div className="flex items-center justify-between mb-2.5">
                   <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">
@@ -1167,63 +690,35 @@ export default function HomePage() {
                   2 · Activiteit
                 </p>
                 <div className="flex flex-col gap-1.5">
-                  {/* Woorden oefenen */}
+                  {/* Woorden oefenen — gerichte SRS-sessie op de gekozen categorieën */}
                   <button
-                    onClick={() => setShowVocabPractice(true)}
+                    onClick={() => setWordDrillCats(practiceSelection)}
                     disabled={!hasScope}
                     className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-all disabled:opacity-40 disabled:active:opacity-40"
                   >
                     <span className="text-2xl shrink-0">🎯</span>
                     <div className="text-left">
                       <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Woorden oefenen</p>
-                      <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Flashcards van de woordenlijsten</p>
+                      <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Flashcards die je herhaalschema bijwerken</p>
                     </div>
                     <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
                   </button>
 
-                  {/* Zinnen oefenen — met moeilijkheidsgraad + opgeslagen sets */}
-                  <div className="bg-white dark:bg-stone-900 rounded-2xl px-4 py-4">
-                    <div className="flex items-center gap-3">
-                      <span className="text-2xl shrink-0">✍️</span>
-                      <div className="text-left">
-                        <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Zinnen oefenen</p>
-                        <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI genereert nieuwe oefenzinnen</p>
-                      </div>
+                  {/* Zinnen oefenen — niveau & opgeslagen sets kies je in de flow */}
+                  <button
+                    onClick={() => setSentenceModal({ view: "new", autoStart: false })}
+                    disabled={!hasScope}
+                    className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-all disabled:opacity-40 disabled:active:opacity-40"
+                  >
+                    <span className="text-2xl shrink-0">✍️</span>
+                    <div className="text-left">
+                      <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Zinnen oefenen</p>
+                      <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI-oefenzinnen op jouw niveau</p>
                     </div>
-                    <div className="flex flex-wrap gap-1.5 mt-3">
-                      {DIFFICULTIES.map((d) => (
-                        <button
-                          key={d.id}
-                          onClick={() => chooseDifficulty(d.id)}
-                          className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-medium transition-all active:scale-95 ${
-                            difficulty === d.id
-                              ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
-                              : "bg-stone-50 dark:bg-stone-800 text-stone-500 dark:text-stone-400"
-                          }`}
-                        >
-                          <span className={`w-1.5 h-1.5 rounded-full ${d.dot}`} />
-                          {d.label}
-                        </button>
-                      ))}
-                    </div>
-                    <div className="flex gap-2 mt-3">
-                      <button
-                        onClick={() => setSentenceModal({ view: "new", autoStart: true })}
-                        disabled={!hasScope}
-                        className="flex-1 bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-xl py-2.5 text-xs font-medium disabled:opacity-30 active:scale-95 transition-all"
-                      >
-                        Genereren ›
-                      </button>
-                      <button
-                        onClick={() => setSentenceModal({ view: "saved", autoStart: false })}
-                        className="px-3 py-2.5 rounded-xl bg-stone-50 dark:bg-stone-800 text-xs font-medium text-stone-500 dark:text-stone-400 active:scale-95 transition-all"
-                      >
-                        💾 Opgeslagen
-                      </button>
-                    </div>
-                  </div>
+                    <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+                  </button>
 
-                  {/* Uitspraak oefenen — mic-opname + AI-feedback, scope-gebonden */}
+                  {/* Uitspraak oefenen — mic-opname + AI-feedback */}
                   <button
                     onClick={() => setShowPronunciation(true)}
                     disabled={!hasScope}
@@ -1237,36 +732,12 @@ export default function HomePage() {
                     <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
                   </button>
 
-                  {/* Grammatica leerpad — vast N5→N4 pad, los van de selectie */}
-                  <button onClick={() => setShowGrammarPath(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
-                    <span className="text-2xl shrink-0">📚</span>
-                    <div className="text-left">
-                      <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica leerpad</p>
-                      <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Stap voor stap: JLPT N5 → N4</p>
-                    </div>
-                    <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-                  </button>
-
-                  {/* Grammatica groeperen */}
-                  <button
-                    onClick={() => setShowGrammarGroup(true)}
-                    disabled={!hasScope}
-                    className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-all disabled:opacity-40 disabled:active:opacity-40"
-                  >
-                    <span className="text-2xl shrink-0">🔤</span>
-                    <div className="text-left">
-                      <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica groeperen</p>
-                      <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Zinnen gegroepeerd op structuur</p>
-                    </div>
-                    <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-                  </button>
-
-                  {/* Grammatica uitleg — werkt op al je zinnen, los van de selectie */}
-                  <button onClick={() => setShowGrammarScreen(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
+                  {/* Grammatica — leerpad + ontdekt in jouw zinnen (los van de selectie) */}
+                  <button onClick={() => setShowGrammar(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
                     <span className="text-2xl shrink-0">📖</span>
                     <div className="text-left">
-                      <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica uitleg</p>
-                      <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">AI-lessen op basis van al je zinnen</p>
+                      <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica</p>
+                      <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Leerpad en wat er in jouw zinnen zit</p>
                     </div>
                     <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
                   </button>
@@ -1276,8 +747,8 @@ export default function HomePage() {
           ) : (
             <div className="text-center py-12">
               <p className="text-3xl mb-3">🔒</p>
-              <p className="text-sm font-medium text-stone-700 dark:text-stone-300 mb-1">Log in om te verdiepen</p>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mb-4">Oefenen en grammatica zijn beschikbaar na inloggen</p>
+              <p className="text-sm font-medium text-stone-700 dark:text-stone-300 mb-1">Log in om te leren</p>
+              <p className="text-xs text-stone-400 dark:text-stone-500 mb-4">Oefenen, voortgang en grammatica zijn beschikbaar na inloggen</p>
               <button onClick={signInWithGoogle} className="flex items-center gap-2 bg-white dark:bg-stone-800 rounded-xl px-4 py-2.5 shadow-sm active:opacity-70 transition-opacity mx-auto">
                 <span className="text-base">G</span>
                 <span className="text-xs text-stone-700 dark:text-stone-200 font-medium">Inloggen met Google</span>
@@ -1294,17 +765,6 @@ export default function HomePage() {
         </p>
       </div>
 
-      {showVocabPractice && (
-        <VocabPracticeModal
-          allCategories={allCategories}
-          getPhrasesForCategory={getPhrasesForCategory}
-          initialSelected={practiceSelection}
-          onSelectionChange={handleSelectionChange}
-          onClose={() => setShowVocabPractice(false)}
-          autoStart
-        />
-      )}
-
       {sentenceModal && (
         <SentencePracticeModal
           allCategories={allCategories}
@@ -1313,30 +773,11 @@ export default function HomePage() {
           onSelectionChange={handleSelectionChange}
           onClose={() => setSentenceModal(null)}
           autoStart={sentenceModal.autoStart}
-          initialDifficulty={difficulty}
           initialView={sentenceModal.view}
         />
       )}
 
-      {showGrammarGroup && (
-        <GrammarGroupModal
-          allCategories={allCategories}
-          getFullPhrasesForCategory={getFullPhrasesForCategory}
-          initialSelected={practiceSelection}
-          onSelectionChange={handleSelectionChange}
-          onClose={() => setShowGrammarGroup(false)}
-          autoStart
-        />
-      )}
-
-      {showGrammarScreen && (
-        <GrammarScreen
-          key={language}
-          allPhrases={allPhrases}
-          onClose={() => setShowGrammarScreen(false)}
-        />
-      )}
-
+      {/* Vandaag: herhalingen uit alle categorieën + nieuwe woorden */}
       {showReview && (
         <ReviewSession
           allCategories={allCategories}
@@ -1344,10 +785,20 @@ export default function HomePage() {
         />
       )}
 
-      {showGrammarPath && (
-        <GrammarPath
+      {/* Gerichte woordsessie op de gekozen categorieën (telt mee in de SRS) */}
+      {wordDrillCats && (
+        <ReviewSession
+          allCategories={allCategories}
+          scopeCategoryIds={wordDrillCats}
+          onClose={() => setWordDrillCats(null)}
+        />
+      )}
+
+      {showGrammar && (
+        <GrammarHub
           key={language}
-          onClose={() => setShowGrammarPath(false)}
+          allPhrases={allPhrases}
+          onClose={() => setShowGrammar(false)}
         />
       )}
 

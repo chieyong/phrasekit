@@ -8,6 +8,9 @@ import { getPhraseTranslation } from "@/utils/phrase";
 import { getLanguage } from "@/data/languages";
 import { Phrase } from "@/types";
 
+// Bouwstenen voor "Ontdekt in jouw zinnen" — grammaticamodules afgeleid uit de
+// eigen zinnen. Samengesteld door GrammarHub (schil + detail-navigatie).
+
 const NIVEAU_COLORS: Record<string, string> = {
   basis:     "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400",
   gemiddeld: "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400",
@@ -23,7 +26,7 @@ interface ModuleDetailProps {
   onBack: () => void;
 }
 
-function ModuleDetailScreen({ module, userPhrases, language, onBack }: ModuleDetailProps) {
+export function ModuleDetailScreen({ module, userPhrases, language, onBack }: ModuleDetailProps) {
   const { getModuleDetail, saveModuleDetail } = useGrammarModules();
   const [detail,  setDetail]  = useState<GrammarModuleDetail | null>(null);
   const [loading, setLoading] = useState(true);
@@ -110,24 +113,23 @@ function ModuleDetailScreen({ module, userPhrases, language, onBack }: ModuleDet
   );
 }
 
-// ─── Module list screen ────────────────────────────────────────────────────────
+// ─── Ontdekte-modules lijst (body, zonder schil) ────────────────────────────────
 
-interface GrammarScreenProps {
+interface DiscoveredListProps {
   allPhrases: Phrase[];
-  onClose: () => void;
+  onOpen: (m: GrammarModule) => void;
 }
 
-export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProps) {
-  const { language }                        = useLanguage();
-  const { getModules, saveModules }         = useGrammarModules();
-  const [modules,      setModules]          = useState<GrammarModule[] | null>(null);
-  const [cachedCount,  setCachedCount]      = useState<number | null>(null);
-  const [loading,      setLoading]          = useState(true);
-  const [refreshing,   setRefreshing]       = useState(false);
-  const [error,        setError]            = useState(false);
-  const [activeModule, setActiveModule]     = useState<GrammarModule | null>(null);
+export function DiscoveredModulesList({ allPhrases, onOpen }: DiscoveredListProps) {
+  const { language }                = useLanguage();
+  const { getModules, saveModules } = useGrammarModules();
+  const [modules,     setModules]   = useState<GrammarModule[] | null>(null);
+  const [cachedCount, setCachedCount] = useState<number | null>(null);
+  const [loading,     setLoading]   = useState(true);
+  const [refreshing,  setRefreshing] = useState(false);
+  const [error,       setError]     = useState(false);
 
-  // For Chinese: only phrases that have Chinese text
+  // Voor niet-Japans: alleen zinnen die een vertaling in de doeltaal hebben.
   const effectivePhrases = language !== "ja"
     ? allPhrases.filter((p) => !!getPhraseTranslation(p, language))
     : allPhrases;
@@ -170,7 +172,6 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
     let cancelled = false;
     setModules(null);
     setLoading(true);
-    setActiveModule(null);
 
     const load = async () => {
       const cached = await getModules(language).catch(() => null);
@@ -189,39 +190,8 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language]);
 
-  if (activeModule) {
-    return (
-      <ModuleDetailScreen
-        module={activeModule}
-        userPhrases={effectivePhrases}
-        language={language}
-        onBack={() => setActiveModule(null)}
-      />
-    );
-  }
-
   return (
-    <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
-      <div className="flex items-center gap-3 px-5 pt-10 pb-4 shrink-0">
-        <button onClick={onClose} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg" aria-label="Sluiten">✕</button>
-        <div className="flex-1">
-          <h2 className="text-base font-semibold text-stone-900 dark:text-stone-100">Grammatica uitleg</h2>
-          <p className="text-xs text-stone-400 dark:text-stone-500">
-            {`${getLanguage(language)?.label ?? ""} grammatica · gebaseerd op jouw zinnen`}
-          </p>
-        </div>
-        {modules && !loading && (
-          <button
-            onClick={() => fetchModules(true)}
-            disabled={refreshing}
-            className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-600 dark:hover:text-stone-300 transition-colors shadow-sm disabled:opacity-40 text-base"
-            aria-label="Vernieuwen"
-          >
-            {refreshing ? <span className="w-4 h-4 rounded-full border-2 border-stone-300 border-t-stone-600 animate-spin inline-block" /> : "↺"}
-          </button>
-        )}
-      </div>
-
+    <div className="flex-1 min-h-0 flex flex-col">
       {isStale && !loading && modules && (
         <div className="mx-5 mb-2 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/40 rounded-xl px-4 py-2.5 flex items-center justify-between gap-3">
           <p className="text-xs text-amber-700 dark:text-amber-400">Je hebt nieuwe zinnen — modules zijn mogelijk verouderd</p>
@@ -257,14 +227,22 @@ export default function GrammarScreen({ allPhrases, onClose }: GrammarScreenProp
             </div>
           ) : (
             <>
-              <p className="text-xs text-stone-400 dark:text-stone-500 mb-4">
-                {modules.length} modules · {phraseCount} zinnen
-              </p>
+              <div className="flex items-center justify-between mb-4">
+                <p className="text-xs text-stone-400 dark:text-stone-500">{modules.length} modules · {phraseCount} zinnen</p>
+                <button
+                  onClick={() => fetchModules(true)}
+                  disabled={refreshing}
+                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-600 dark:hover:text-stone-300 transition-colors shadow-sm disabled:opacity-40 text-sm"
+                  aria-label="Vernieuwen"
+                >
+                  {refreshing ? <span className="w-4 h-4 rounded-full border-2 border-stone-300 border-t-stone-600 animate-spin inline-block" /> : "↺"}
+                </button>
+              </div>
               <div className="flex flex-col gap-2">
                 {modules.map((m) => (
                   <button
                     key={m.naam}
-                    onClick={() => setActiveModule(m)}
+                    onClick={() => onOpen(m)}
                     className="w-full text-left bg-white dark:bg-stone-900 rounded-2xl px-5 py-4 shadow-sm active:opacity-70 transition-opacity flex items-start gap-4"
                   >
                     <div className="flex-1 min-w-0">

@@ -8,7 +8,10 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { getLanguage } from "@/data/languages";
 import { getCurriculum, CurriculumTopic, CurriculumLevel } from "@/data/grammarCurriculum";
 
-// ─── Lesweergave ────────────────────────────────────────────────────────────────
+// Bouwstenen voor het vaste grammatica-leerpad. Samengesteld door GrammarHub,
+// die de schil (segmented control + sluitknop) en de detail-navigatie beheert.
+
+// ─── Lesweergave (detail) ───────────────────────────────────────────────────────
 
 interface LessonViewProps {
   topic:    CurriculumTopic;
@@ -19,7 +22,7 @@ interface LessonViewProps {
   onBack:   () => void;
 }
 
-function LessonView({ topic, level, language, done, onToggle, onBack }: LessonViewProps) {
+export function LessonView({ topic, level, language, done, onToggle, onBack }: LessonViewProps) {
   const { getModuleDetail, saveModuleDetail } = useGrammarModules();
   const [detail,  setDetail]  = useState<GrammarModuleDetail | null>(null);
   const [loading, setLoading] = useState(true);
@@ -31,7 +34,7 @@ function LessonView({ topic, level, language, done, onToggle, onBack }: LessonVi
     const load = async () => {
       setLoading(true);
       setError(false);
-      // Zelfde cache als de "modules uit jouw zinnen": detail_{lang}_{naam}.
+      // Zelfde cache als "Ontdekt in jouw zinnen": detail_{lang}_{naam}.
       const cached = await getModuleDetail(topic.naam, language).catch(() => null);
       if (cached && !cancelled) { setDetail(cached); setLoading(false); return; }
 
@@ -109,107 +112,81 @@ function LessonView({ topic, level, language, done, onToggle, onBack }: LessonVi
   );
 }
 
-// ─── Leerpad-lijst ──────────────────────────────────────────────────────────────
+// ─── Leerpad-lijst (body, zonder schil) ─────────────────────────────────────────
 
-export default function GrammarPath({ onClose }: { onClose: () => void }) {
+export function CurriculumList({ onOpen }: { onOpen: (t: CurriculumTopic) => void }) {
   const { language } = useLanguage();
   const curriculum   = getCurriculum(language);
-  const { completedSet, isDone, toggle } = useGrammarProgress(language);
-  const [active, setActive] = useState<CurriculumTopic | null>(null);
+  const { completedSet } = useGrammarProgress(language);
 
   const langLabel = getLanguage(language)?.label ?? "";
   const topics    = curriculum?.topics ?? [];
-  const levelMap  = new Map((curriculum?.levels ?? []).map((l) => [l.id, l] as const));
 
-  if (active) {
+  if (!curriculum) {
     return (
-      <LessonView
-        topic={active}
-        level={levelMap.get(active.niveau)}
-        language={language}
-        done={isDone(active.id)}
-        onToggle={() => toggle(active.id)}
-        onBack={() => setActive(null)}
-      />
+      <div className="flex-1 flex flex-col items-center justify-center px-8 text-center gap-3">
+        <p className="text-3xl">🚧</p>
+        <p className="text-sm text-stone-500 dark:text-stone-400">
+          Er is nog geen vast leerpad voor het {langLabel}. Bekijk zolang &ldquo;Ontdekt in jouw zinnen&rdquo;.
+        </p>
+      </div>
     );
   }
 
   const doneTotal = topics.filter((t) => completedSet.has(t.id)).length;
 
   return (
-    <div className="fixed inset-0 z-50 bg-stone-50 dark:bg-stone-950 flex flex-col">
-      <div className="flex items-center gap-3 px-5 pt-10 pb-4 shrink-0">
-        <button onClick={onClose} className="w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-stone-800 text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors shadow-sm text-lg" aria-label="Sluiten">✕</button>
-        <div className="flex-1">
-          <h2 className="text-base font-semibold text-stone-900 dark:text-stone-100">Grammatica leerpad</h2>
-          <p className="text-xs text-stone-400 dark:text-stone-500">
-            {curriculum
-              ? `${langLabel} · ${curriculum.framework} · ${doneTotal}/${topics.length} afgerond`
-              : `${langLabel} grammatica`}
-          </p>
-        </div>
-      </div>
+    <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-5 pb-12">
+      <p className="text-xs text-stone-400 dark:text-stone-500 mt-1 mb-4">
+        {curriculum.framework} · {doneTotal}/{topics.length} afgerond
+      </p>
 
-      {!curriculum ? (
-        <div className="flex-1 flex flex-col items-center justify-center px-8 text-center gap-3">
-          <p className="text-3xl">🚧</p>
-          <p className="text-sm text-stone-500 dark:text-stone-400">
-            Er is nog geen vast leerpad voor het {langLabel}. Gebruik zolang &ldquo;Grammatica uitleg&rdquo; op basis van je eigen zinnen.
-          </p>
-          <button onClick={onClose} className="text-sm text-stone-400 underline">Sluiten</button>
-        </div>
-      ) : (
-        <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-5 pb-12">
-          {curriculum.levels.map((level) => {
-            const levelTopics = topics.filter((t) => t.niveau === level.id);
-            if (!levelTopics.length) return null;
-            const levelDone = levelTopics.filter((t) => completedSet.has(t.id)).length;
-            const pct = Math.round((levelDone / levelTopics.length) * 100);
+      {curriculum.levels.map((level) => {
+        const levelTopics = topics.filter((t) => t.niveau === level.id);
+        if (!levelTopics.length) return null;
+        const levelDone = levelTopics.filter((t) => completedSet.has(t.id)).length;
+        const pct = Math.round((levelDone / levelTopics.length) * 100);
 
-            return (
-              <section key={level.id} className="mb-8 first:mt-2">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-2">
-                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${level.color}`}>{level.label}</span>
-                    <span className="text-xs text-stone-400 dark:text-stone-500">{levelDone}/{levelTopics.length} afgerond</span>
-                  </div>
-                  <span className="text-xs font-medium text-stone-400 dark:text-stone-500 tabular-nums">{pct}%</span>
-                </div>
-                <div className="h-1 rounded-full bg-stone-200 dark:bg-stone-800 overflow-hidden mb-3">
-                  <div className="h-full bg-stone-700 dark:bg-stone-300 transition-all" style={{ width: `${pct}%` }} />
-                </div>
+        return (
+          <section key={level.id} className="mb-8">
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-2">
+                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${level.color}`}>{level.label}</span>
+                <span className="text-xs text-stone-400 dark:text-stone-500">{levelDone}/{levelTopics.length} afgerond</span>
+              </div>
+              <span className="text-xs font-medium text-stone-400 dark:text-stone-500 tabular-nums">{pct}%</span>
+            </div>
+            <div className="h-1 rounded-full bg-stone-200 dark:bg-stone-800 overflow-hidden mb-3">
+              <div className="h-full bg-stone-700 dark:bg-stone-300 transition-all" style={{ width: `${pct}%` }} />
+            </div>
 
-                <div className="flex flex-col gap-1.5">
-                  {levelTopics.map((topic) => {
-                    const done = completedSet.has(topic.id);
-                    return (
-                      <button
-                        key={topic.id}
-                        onClick={() => setActive(topic)}
-                        className="w-full text-left bg-white dark:bg-stone-900 rounded-2xl px-4 py-3.5 shadow-sm active:opacity-70 transition-opacity flex items-center gap-3"
-                      >
-                        <span className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-[11px] transition-colors ${
-                          done
-                            ? "bg-green-500 text-white"
-                            : "border-2 border-stone-200 dark:border-stone-700 text-transparent"
-                        }`}>✓</span>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-baseline gap-2">
-                            <p className="text-sm font-semibold text-stone-900 dark:text-stone-100 truncate">{topic.naam}</p>
-                            <span className="text-[11px] text-stone-400 dark:text-stone-500 shrink-0">{topic.romaji}</span>
-                          </div>
-                          <p className="text-xs text-stone-400 dark:text-stone-500 leading-snug truncate">{topic.tagline}</p>
-                        </div>
-                        <span className="text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </section>
-            );
-          })}
-        </div>
-      )}
+            <div className="flex flex-col gap-1.5">
+              {levelTopics.map((topic) => {
+                const done = completedSet.has(topic.id);
+                return (
+                  <button
+                    key={topic.id}
+                    onClick={() => onOpen(topic)}
+                    className="w-full text-left bg-white dark:bg-stone-900 rounded-2xl px-4 py-3.5 shadow-sm active:opacity-70 transition-opacity flex items-center gap-3"
+                  >
+                    <span className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-[11px] transition-colors ${
+                      done ? "bg-green-500 text-white" : "border-2 border-stone-200 dark:border-stone-700 text-transparent"
+                    }`}>✓</span>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-baseline gap-2">
+                        <p className="text-sm font-semibold text-stone-900 dark:text-stone-100 truncate">{topic.naam}</p>
+                        <span className="text-[11px] text-stone-400 dark:text-stone-500 shrink-0">{topic.romaji}</span>
+                      </div>
+                      <p className="text-xs text-stone-400 dark:text-stone-500 leading-snug truncate">{topic.tagline}</p>
+                    </div>
+                    <span className="text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }
