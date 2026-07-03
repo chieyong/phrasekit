@@ -10,6 +10,7 @@ import InlineTranslator from "@/components/ui/InlineTranslator";
 import CategoryPicker from "@/components/ui/CategoryPicker";
 import { categories, phrases as staticPhrases, getPhrasesByCategory } from "@/data/mockData";
 import GrammarScreen from "@/components/grammar/GrammarScreen";
+import GrammarPath from "@/components/grammar/GrammarPath";
 import { useUserPhrases } from "@/hooks/useUserPhrases";
 import { useAuth } from "@/contexts/AuthContext";
 import { useVocabulary, VocabWord, wordForLang } from "@/hooks/useVocabulary";
@@ -17,6 +18,10 @@ import { usePracticeSets, PracticeSentence, Difficulty, generateSetName } from "
 import AudioButton from "@/components/ui/AudioButton";
 import { useAudio } from "@/hooks/useAudio";
 import SpeedButton from "@/components/ui/SpeedButton";
+import TodayCard from "@/components/practice/TodayCard";
+import ReviewSession from "@/components/practice/ReviewSession";
+import ProgressCard from "@/components/practice/ProgressCard";
+import ProgressScreen from "@/components/practice/ProgressScreen";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/ui/LanguageSelector";
@@ -893,6 +898,9 @@ export default function HomePage() {
   const [sentenceModal,        setSentenceModal]        = useState<{ view: "new" | "saved"; autoStart: boolean } | null>(null);
   const [showGrammarGroup,     setShowGrammarGroup]     = useState(false);
   const [showGrammarScreen,    setShowGrammarScreen]    = useState(false);
+  const [showGrammarPath,      setShowGrammarPath]      = useState(false);
+  const [showReview,           setShowReview]           = useState(false);
+  const [showProgress,         setShowProgress]         = useState(false);
   const [activeTab,            setActiveTab]            = useState<"zinnen" | "verdiepen">("zinnen");
   const [reordering,           setReordering]           = useState(false);
   const [practiceSelection,    setPracticeSelection]    = useState<string[]>(() => {
@@ -1037,6 +1045,13 @@ export default function HomePage() {
       {/* ── Tab: Zinnen ───────────────────────────────────────────── */}
       {activeTab === "zinnen" && (
         <>
+          {user && (
+            <section className="px-5 mb-6 flex flex-col gap-2">
+              <TodayCard onStart={() => setShowReview(true)} />
+              <ProgressCard onOpen={() => setShowProgress(true)} />
+            </section>
+          )}
+
           <section className="px-5 mb-8">
             {user && allCategories.length > 1 && (
               <div className="flex items-center justify-end mb-2">
@@ -1206,6 +1221,16 @@ export default function HomePage() {
                     </div>
                   </div>
 
+                  {/* Grammatica leerpad — vast N5→N4 pad, los van de selectie */}
+                  <button onClick={() => setShowGrammarPath(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
+                    <span className="text-2xl shrink-0">📚</span>
+                    <div className="text-left">
+                      <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Grammatica leerpad</p>
+                      <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Stap voor stap: JLPT N5 → N4</p>
+                    </div>
+                    <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+                  </button>
+
                   {/* Grammatica groeperen */}
                   <button
                     onClick={() => setShowGrammarGroup(true)}
@@ -1293,6 +1318,27 @@ export default function HomePage() {
           key={language}
           allPhrases={allPhrases}
           onClose={() => setShowGrammarScreen(false)}
+        />
+      )}
+
+      {showReview && (
+        <ReviewSession
+          allCategories={allCategories}
+          onClose={() => setShowReview(false)}
+        />
+      )}
+
+      {showGrammarPath && (
+        <GrammarPath
+          key={language}
+          onClose={() => setShowGrammarPath(false)}
+        />
+      )}
+
+      {showProgress && (
+        <ProgressScreen
+          key={language}
+          onClose={() => setShowProgress(false)}
         />
       )}
     </div>
