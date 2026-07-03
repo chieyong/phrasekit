@@ -22,6 +22,7 @@ import TodayCard from "@/components/practice/TodayCard";
 import ReviewSession from "@/components/practice/ReviewSession";
 import ProgressCard from "@/components/practice/ProgressCard";
 import ProgressScreen from "@/components/practice/ProgressScreen";
+import PronunciationSession from "@/components/practice/PronunciationSession";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/ui/LanguageSelector";
@@ -901,6 +902,7 @@ export default function HomePage() {
   const [showGrammarPath,      setShowGrammarPath]      = useState(false);
   const [showReview,           setShowReview]           = useState(false);
   const [showProgress,         setShowProgress]         = useState(false);
+  const [showPronunciation,    setShowPronunciation]    = useState(false);
   const [activeTab,            setActiveTab]            = useState<"zinnen" | "verdiepen">("zinnen");
   const [reordering,           setReordering]           = useState(false);
   const [practiceSelection,    setPracticeSelection]    = useState<string[]>(() => {
@@ -1221,6 +1223,20 @@ export default function HomePage() {
                     </div>
                   </div>
 
+                  {/* Uitspraak oefenen — mic-opname + AI-feedback, scope-gebonden */}
+                  <button
+                    onClick={() => setShowPronunciation(true)}
+                    disabled={!hasScope}
+                    className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-all disabled:opacity-40 disabled:active:opacity-40"
+                  >
+                    <span className="text-2xl shrink-0">🎤</span>
+                    <div className="text-left">
+                      <p className="text-sm font-medium text-stone-800 dark:text-stone-200">Uitspraak oefenen</p>
+                      <p className="text-xs text-stone-400 dark:text-stone-500 mt-0.5">Spreek de zin in en krijg feedback</p>
+                    </div>
+                    <span className="ml-auto text-stone-300 dark:text-stone-600 text-sm shrink-0">›</span>
+                  </button>
+
                   {/* Grammatica leerpad — vast N5→N4 pad, los van de selectie */}
                   <button onClick={() => setShowGrammarPath(true)} className="w-full flex items-center gap-3 bg-white dark:bg-stone-900 rounded-2xl px-4 py-4 active:opacity-70 transition-opacity">
                     <span className="text-2xl shrink-0">📚</span>
@@ -1339,6 +1355,14 @@ export default function HomePage() {
         <ProgressScreen
           key={language}
           onClose={() => setShowProgress(false)}
+        />
+      )}
+
+      {showPronunciation && (
+        <PronunciationSession
+          getPhrasesForCategory={getPhrasesForCategory}
+          selectedCategoryIds={practiceSelection}
+          onClose={() => setShowPronunciation(false)}
         />
       )}
     </div>
