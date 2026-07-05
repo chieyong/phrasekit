@@ -1,0 +1,2797 @@
+{
+ "fr-a1-etre": {
+  "naam": "Het werkwoord 'être' in het Frans",
+  "tagline": "Ontdek de veelzijdigheid van 'être', een van de belangrijkste werkwoorden in het Frans.",
+  "niveau": "basis",
+  "kernregel": "'Être' is een onregelmatig werkwoord dat 'zijn' betekent en wordt gebruikt om toestanden, eigenschappen en identiteiten uit te drukken. Het is essentieel voor het vormen van samengestelde tijden en passieve constructies.",
+  "patroon": "Être + [subject]",
+  "uitleg": "Het werkwoord 'être' is een van de meest gebruikte werkwoorden in het Frans en komt overeen met het Nederlandse 'zijn'. Het wordt gebruikt om de identiteit, eigenschappen en toestanden van een onderwerp uit te drukken. In tegenstelling tot het Nederlands, waar 'zijn' regelmatig is, is 'être' onregelmatig en moet het in verschillende tijden en personen gememoriseerd worden. Het werkwoord wordt ook gebruikt in combinatie met andere werkwoorden om samengestelde tijden te vormen, zoals de passé composé. Daarnaast is 'être' essentieel in passieve zinnen, waar het de handeling beschrijft die op het onderwerp wordt uitgevoerd.",
+  "opbouw": [
+   {
+    "element": "Je suis",
+    "rol": "eerste persoon enkelvoud",
+    "voorbeeld": "Je suis étudiant."
+   },
+   {
+    "element": "Tu es",
+    "rol": "tweede persoon enkelvoud",
+    "voorbeeld": "Tu es mon ami."
+   },
+   {
+    "element": "Il/Elle est",
+    "rol": "derde persoon enkelvoud",
+    "voorbeeld": "Il est médecin."
+   },
+   {
+    "element": "Nous sommes",
+    "rol": "eerste persoon meervoud",
+    "voorbeeld": "Nous sommes heureux."
+   },
+   {
+    "element": "Vous êtes",
+    "rol": "tweede persoon meervoud",
+    "voorbeeld": "Vous êtes en retard."
+   }
+  ],
+  "tips": [
+   "Onthoud dat 'être' onregelmatig is en dat elke vervoeging uit het hoofd geleerd moet worden.",
+   "Gebruik 'être' om eigenschappen of toestanden te beschrijven, zoals 'Il est fatigué' (Hij is moe).",
+   "In samengestelde tijden zoals de passé composé, gebruik je 'être' als hulpwerkwoord voor sommige werkwoorden, vooral wederkerende werkwoorden en werkwoorden van beweging.",
+   "Let op de juiste overeenkomst in geslacht en aantal wanneer 'être' in passieve constructies wordt gebruikt."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'être' en 'avoir' als hulpwerkwoord: Correct: 'Je suis allé' (Ik ben gegaan), niet 'J'ai allé'.",
+   "Verkeerde vervoeging van 'être' in de derde persoon enkelvoud: Correct: 'Il est', niet 'Il es'.",
+   "Vergeten van de juiste overeenkomst in geslacht en aantal in passieve zinnen: Correct: 'Elle est aimée', niet 'Elle est aimé'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je suis content.",
+    "romaji": "ʒə sɥi kɔ̃tɑ̃",
+    "dutch": "Ik ben blij."
+   },
+   {
+    "japanese": "Ils sont en vacances.",
+    "romaji": "il sɔ̃ ɑ̃ vakɑ̃s",
+    "dutch": "Zij zijn op vakantie."
+   },
+   {
+    "japanese": "Elle est professeur.",
+    "romaji": "ɛl ɛ pʁɔfesœʁ",
+    "dutch": "Zij is lerares."
+   },
+   {
+    "japanese": "Nous sommes à Paris.",
+    "romaji": "nu sɔm a paʁi",
+    "dutch": "Wij zijn in Parijs."
+   },
+   {
+    "japanese": "Vous êtes prêts?",
+    "romaji": "vu zɛt pʁɛ?",
+    "dutch": "Zijn jullie klaar?"
+   },
+   {
+    "japanese": "Il est tard.",
+    "romaji": "il ɛ taʁ",
+    "dutch": "Het is laat."
+   }
+  ]
+ },
+ "fr-a1-avoir": {
+  "naam": "Het werkwoord 'avoir' in het Frans",
+  "tagline": "Beheers het gebruik van 'avoir' voor bezit en meer.",
+  "niveau": "basis",
+  "kernregel": "Het werkwoord 'avoir' betekent 'hebben' en wordt gebruikt om bezit aan te geven, maar ook in verschillende uitdrukkingen en als hulpwerkwoord in de passé composé. Het is een onregelmatig werkwoord en moet uit het hoofd geleerd worden.",
+  "patroon": "avoir + [object/uitdrukking]",
+  "uitleg": "In het Frans wordt 'avoir' gebruikt om aan te geven dat iemand iets bezit, net zoals 'hebben' in het Nederlands. Echter, 'avoir' wordt ook gebruikt in uitdrukkingen die in het Nederlands met 'zijn' worden vertaald, zoals 'avoir faim' (honger hebben) of 'avoir chaud' (het warm hebben). Daarnaast fungeert 'avoir' als hulpwerkwoord bij veel voltooide tijden, zoals de passé composé. Omdat 'avoir' onregelmatig is, wijkt de vervoeging af van de standaardregelmatige werkwoorden op -er, -ir en -re.",
+  "opbouw": [
+   {
+    "element": "ai",
+    "rol": "eerste persoon enkelvoud",
+    "voorbeeld": "J'ai un livre."
+   },
+   {
+    "element": "as",
+    "rol": "tweede persoon enkelvoud",
+    "voorbeeld": "Tu as une voiture."
+   },
+   {
+    "element": "a",
+    "rol": "derde persoon enkelvoud",
+    "voorbeeld": "Il a un chien."
+   },
+   {
+    "element": "avons",
+    "rol": "eerste persoon meervoud",
+    "voorbeeld": "Nous avons des amis."
+   },
+   {
+    "element": "ont",
+    "rol": "derde persoon meervoud",
+    "voorbeeld": "Ils ont des vélos."
+   }
+  ],
+  "tips": [
+   "Onthoud dat 'avoir' in sommige uitdrukkingen met 'zijn' wordt vertaald in het Nederlands.",
+   "Gebruik 'avoir' als hulpwerkwoord in de passé composé voor de meeste werkwoorden.",
+   "Let op de uitspraak van 'ont' en 'on', deze kunnen verwarrend zijn voor beginners.",
+   "Oefen de vervoegingen regelmatig, aangezien 'avoir' vaak voorkomt in het Frans."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'avoir' en 'être' in uitdrukkingen: Correct is 'J'ai faim' in plaats van 'Je suis faim'.",
+   "Verkeerde vervoeging: Correct is 'Nous avons' in plaats van 'Nous avons' voor 'we hebben'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "J'ai une maison.",
+    "romaji": "Zje een mazon.",
+    "dutch": "Ik heb een huis."
+   },
+   {
+    "japanese": "Tu as un chat.",
+    "romaji": "Tuu a un sja.",
+    "dutch": "Jij hebt een kat."
+   },
+   {
+    "japanese": "Elle a une idée.",
+    "romaji": "El a une idee.",
+    "dutch": "Zij heeft een idee."
+   },
+   {
+    "japanese": "Nous avons un problème.",
+    "romaji": "Noe zavon un probleem.",
+    "dutch": "Wij hebben een probleem."
+   },
+   {
+    "japanese": "Vous avez raison.",
+    "romaji": "Voez avez rezon.",
+    "dutch": "Jullie hebben gelijk."
+   },
+   {
+    "japanese": "Ils ont des enfants.",
+    "romaji": "Ilz on de zonfan.",
+    "dutch": "Zij hebben kinderen."
+   }
+  ]
+ },
+ "fr-a1-articles": {
+  "naam": "Franse Lidwoorden",
+  "tagline": "Leer de nuances van Franse lidwoorden voor vloeiend taalgebruik.",
+  "niveau": "basis",
+  "kernregel": "In het Frans worden lidwoorden gebruikt om zelfstandige naamwoorden te specificeren en te definiëren. Er zijn bepaalde en onbepaalde lidwoorden, en ze moeten overeenkomen met het geslacht en het aantal van het zelfstandig naamwoord.",
+  "patroon": "[lidwoord] + [zelfstandig naamwoord]",
+  "uitleg": "In het Frans zijn er drie soorten lidwoorden: bepaalde lidwoorden (le, la, l', les), onbepaalde lidwoorden (un, une, des) en delende lidwoorden (du, de la, de l', des). Bepaalde lidwoorden worden gebruikt om specifieke of bekende zaken aan te duiden, vergelijkbaar met 'de' en 'het' in het Nederlands. Onbepaalde lidwoorden worden gebruikt voor niet-gespecificeerde zaken, vergelijkbaar met 'een'. Delende lidwoorden worden gebruikt bij niet-telbare hoeveelheden, iets wat in het Nederlands vaak zonder lidwoord wordt uitgedrukt.",
+  "opbouw": [
+   {
+    "element": "le",
+    "rol": "Bepaald lidwoord voor mannelijke zelfstandige naamwoorden in enkelvoud.",
+    "voorbeeld": "le chien (de hond)"
+   },
+   {
+    "element": "la",
+    "rol": "Bepaald lidwoord voor vrouwelijke zelfstandige naamwoorden in enkelvoud.",
+    "voorbeeld": "la maison (het huis)"
+   },
+   {
+    "element": "l'",
+    "rol": "Bepaald lidwoord voor zelfstandige naamwoorden die beginnen met een klinker of stomme h.",
+    "voorbeeld": "l'école (de school)"
+   },
+   {
+    "element": "un",
+    "rol": "Onbepaald lidwoord voor mannelijke zelfstandige naamwoorden in enkelvoud.",
+    "voorbeeld": "un livre (een boek)"
+   },
+   {
+    "element": "une",
+    "rol": "Onbepaald lidwoord voor vrouwelijke zelfstandige naamwoorden in enkelvoud.",
+    "voorbeeld": "une pomme (een appel)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'le' of 'la' afhankelijk van het geslacht van het zelfstandig naamwoord.",
+   "Gebruik 'l'' voor woorden die beginnen met een klinker of stomme h, ongeacht het geslacht.",
+   "Onthoud dat 'des' zowel een onbepaald als delend lidwoord kan zijn, afhankelijk van de context.",
+   "Let op dat delende lidwoorden vaak worden gebruikt bij niet-telbare hoeveelheden, zoals 'du pain' (brood)."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'le' en 'la'. Correctie: Controleer het geslacht van het zelfstandig naamwoord.",
+   "Gebruik van 'un' in plaats van 'une' voor vrouwelijke woorden. Correctie: Onthoud dat 'une' voor vrouwelijke zelfstandige naamwoorden is.",
+   "Vergeten van 'l'' bij klinkers. Correctie: Gebruik 'l'' voor zelfstandige naamwoorden die beginnen met een klinker of stomme h."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "le chat",
+    "romaji": "le sha",
+    "dutch": "de kat"
+   },
+   {
+    "japanese": "la voiture",
+    "romaji": "la vwatyoor",
+    "dutch": "de auto"
+   },
+   {
+    "japanese": "l'ami",
+    "romaji": "l'ami",
+    "dutch": "de vriend"
+   },
+   {
+    "japanese": "un chien",
+    "romaji": "un shyen",
+    "dutch": "een hond"
+   },
+   {
+    "japanese": "une fleur",
+    "romaji": "une fler",
+    "dutch": "een bloem"
+   },
+   {
+    "japanese": "des enfants",
+    "romaji": "de zãfã",
+    "dutch": "kinderen"
+   }
+  ]
+ },
+ "fr-a1-genre": {
+  "naam": "Genre & Nombre",
+  "tagline": "Begrijp de basisregels van geslacht en getal in het Frans.",
+  "niveau": "basis",
+  "kernregel": "In het Frans moeten bijvoeglijke naamwoorden en zelfstandige naamwoorden overeenkomen in geslacht (mannelijk of vrouwelijk) en getal (enkelvoud of meervoud). Dit betekent dat de vorm van het woord kan veranderen afhankelijk van het geslacht en aantal van het zelfstandig naamwoord dat het beschrijft.",
+  "patroon": "[lidwoord] + [zelfstandig naamwoord] + [bijvoeglijk naamwoord]",
+  "uitleg": "In het Frans hebben zelfstandige naamwoorden een geslacht: ze zijn ofwel mannelijk of vrouwelijk. Dit geslacht bepaalt de vorm van het lidwoord en het bijvoeglijk naamwoord dat ermee gebruikt wordt. Daarnaast moeten deze woorden ook in getal overeenkomen: enkelvoud of meervoud. Bijvoorbeeld, 'un chien noir' (een zwarte hond) verandert in 'des chiens noirs' (zwarte honden) wanneer het meervoud is. Het is belangrijk om te onthouden dat het geslacht van Franse zelfstandige naamwoorden niet altijd logisch is en vaak uit het hoofd geleerd moet worden.",
+  "opbouw": [
+   {
+    "element": "[lidwoord]",
+    "rol": "Geeft aan of het zelfstandig naamwoord mannelijk of vrouwelijk is en of het enkelvoud of meervoud is.",
+    "voorbeeld": "un, une, des"
+   },
+   {
+    "element": "[zelfstandig naamwoord]",
+    "rol": "Het hoofdwoord dat het geslacht en getal bepaalt.",
+    "voorbeeld": "chien, maison"
+   },
+   {
+    "element": "[bijvoeglijk naamwoord]",
+    "rol": "Beschrijft het zelfstandig naamwoord en moet in geslacht en getal overeenkomen.",
+    "voorbeeld": "noir, grande"
+   }
+  ],
+  "tips": [
+   "Leer het geslacht van zelfstandige naamwoorden samen met het woord zelf.",
+   "Let op de uitzonderingen, zoals woorden die eindigen op -e die mannelijk kunnen zijn.",
+   "Bijvoeglijke naamwoorden komen meestal na het zelfstandig naamwoord, maar er zijn uitzonderingen.",
+   "Gebruik een woordenboek om het geslacht van onbekende woorden te controleren."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd geslacht gebruiken voor zelfstandige naamwoorden. Correctie: Leer het geslacht samen met het woord, bijvoorbeeld 'la table' in plaats van 'le table'.",
+   "Bijvoeglijke naamwoorden niet aanpassen aan het meervoud. Correctie: Voeg een -s toe, bijvoorbeeld 'des chiens noirs' in plaats van 'des chiens noir'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Le chat est noir.",
+    "romaji": "Le sha eh nwahr.",
+    "dutch": "De kat is zwart."
+   },
+   {
+    "japanese": "La maison est grande.",
+    "romaji": "La mezon eh grand.",
+    "dutch": "Het huis is groot."
+   },
+   {
+    "japanese": "Les fleurs sont belles.",
+    "romaji": "Le flur son bel.",
+    "dutch": "De bloemen zijn mooi."
+   },
+   {
+    "japanese": "Un homme intelligent.",
+    "romaji": "Un om antelijjan.",
+    "dutch": "Een intelligente man."
+   },
+   {
+    "japanese": "Des enfants heureux.",
+    "romaji": "Dez anfan eureuh.",
+    "dutch": "Gelukkige kinderen."
+   },
+   {
+    "japanese": "Une voiture rouge.",
+    "romaji": "Un vwatjoer roezj.",
+    "dutch": "Een rode auto."
+   }
+  ]
+ },
+ "fr-a1-preser": {
+  "naam": "Présent -er werkwoorden",
+  "tagline": "Leer hoe je regelmatige -er werkwoorden in de tegenwoordige tijd vervoegt.",
+  "niveau": "basis",
+  "kernregel": "In het Frans worden regelmatige werkwoorden die eindigen op -er op een voorspelbare manier vervoegd in de tegenwoordige tijd. Dit patroon is essentieel voor beginners omdat het de meest voorkomende werkwoordsgroep in het Frans betreft.",
+  "patroon": "stam + e, es, e, ons, ez, ent",
+  "uitleg": "Franse werkwoorden die eindigen op -er vormen de grootste groep regelmatige werkwoorden. Om deze werkwoorden in de tegenwoordige tijd te vervoegen, verwijder je de -er uitgang van het hele werkwoord om de stam te krijgen. Vervolgens voeg je de juiste uitgangen toe afhankelijk van het onderwerp. Deze uitgangen zijn: -e voor 'je', -es voor 'tu', -e voor 'il/elle/on', -ons voor 'nous', -ez voor 'vous', en -ent voor 'ils/elles'. In tegenstelling tot het Nederlands, waar de vervoeging vaak verandert afhankelijk van de klank, blijft de stam in het Frans consistent.",
+  "opbouw": [
+   {
+    "element": "stam",
+    "rol": "De basis van het werkwoord zonder de -er uitgang.",
+    "voorbeeld": "Parler -> parl"
+   },
+   {
+    "element": "-e",
+    "rol": "Uitgang voor de eerste persoon enkelvoud (je).",
+    "voorbeeld": "Je parle"
+   },
+   {
+    "element": "-es",
+    "rol": "Uitgang voor de tweede persoon enkelvoud (tu).",
+    "voorbeeld": "Tu parles"
+   },
+   {
+    "element": "-ons",
+    "rol": "Uitgang voor de eerste persoon meervoud (nous).",
+    "voorbeeld": "Nous parlons"
+   },
+   {
+    "element": "-ent",
+    "rol": "Uitgang voor de derde persoon meervoud (ils/elles).",
+    "voorbeeld": "Ils parlent"
+   }
+  ],
+  "tips": [
+   "Let op de uitspraak: de uitgangen -e, -es, en -ent klinken hetzelfde.",
+   "Gebruik de stam consistent voor alle vormen behalve de infinitief.",
+   "Oefen met veelvoorkomende -er werkwoorden zoals 'aimer', 'chanter' en 'jouer'.",
+   "Vergeet niet dat de 'nous' vorm vaak een klankverandering heeft door de toevoeging van -ons."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen de uitgangen -e en -es: 'Tu parle' is incorrect, het moet 'Tu parles' zijn.",
+   "Vergeten van de stille 'ent' in de derde persoon meervoud: 'Ils parle' is incorrect, het moet 'Ils parlent' zijn."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je danse",
+    "romaji": "ʒə dɑ̃s",
+    "dutch": "Ik dans"
+   },
+   {
+    "japanese": "Tu chantes",
+    "romaji": "ty ʃɑ̃t",
+    "dutch": "Jij zingt"
+   },
+   {
+    "japanese": "Il aime",
+    "romaji": "il ɛm",
+    "dutch": "Hij houdt van"
+   },
+   {
+    "japanese": "Nous jouons",
+    "romaji": "nu ʒwɔ̃",
+    "dutch": "Wij spelen"
+   },
+   {
+    "japanese": "Vous regardez",
+    "romaji": "vu ʁəɡaʁde",
+    "dutch": "Jullie kijken"
+   },
+   {
+    "japanese": "Elles parlent",
+    "romaji": "ɛl paʁl",
+    "dutch": "Zij praten"
+   }
+  ]
+ },
+ "fr-a1-presir": {
+  "naam": "Présent van -ir en -re werkwoorden",
+  "tagline": "Beheers de tegenwoordige tijd voor -ir en -re werkwoorden in het Frans.",
+  "niveau": "basis",
+  "kernregel": "In het Frans worden werkwoorden die eindigen op -ir en -re op een specifieke manier vervoegd in de tegenwoordige tijd. Het is essentieel om de juiste uitgangen te kennen om correcte zinnen te vormen.",
+  "patroon": "stam + uitgang (-is, -is, -it, -issons, -issez, -issent voor -ir; -s, -s, -, -ons, -ez, -ent voor -re)",
+  "uitleg": "Franse werkwoorden die eindigen op -ir en -re hebben hun eigen set uitgangen in de tegenwoordige tijd. Voor -ir werkwoorden zoals 'finir' voeg je de uitgangen -is, -is, -it, -issons, -issez, -issent toe aan de stam. Voor -re werkwoorden zoals 'vendre' gebruik je -s, -s, -, -ons, -ez, -ent. Deze uitgangen zijn vergelijkbaar met de Nederlandse vervoegingen, maar de Franse vormen zijn specifieker en vereisen dat je de stam correct identificeert. Let op dat de derde persoon enkelvoud van -re werkwoorden geen uitgang heeft.",
+  "opbouw": [
+   {
+    "element": "stam",
+    "rol": "De basis van het werkwoord zonder de -ir of -re uitgang.",
+    "voorbeeld": "finir -> fin-, vendre -> vend-"
+   },
+   {
+    "element": "uitgang -ir",
+    "rol": "Toegevoegd aan de stam voor -ir werkwoorden.",
+    "voorbeeld": "je finis, tu finis, il finit"
+   },
+   {
+    "element": "uitgang -re",
+    "rol": "Toegevoegd aan de stam voor -re werkwoorden.",
+    "voorbeeld": "je vends, tu vends, il vend"
+   },
+   {
+    "element": "meervoud -ir",
+    "rol": "Uitgangen voor de eerste, tweede en derde persoon meervoud.",
+    "voorbeeld": "nous finissons, vous finissez, ils finissent"
+   },
+   {
+    "element": "meervoud -re",
+    "rol": "Uitgangen voor de eerste, tweede en derde persoon meervoud.",
+    "voorbeeld": "nous vendons, vous vendez, ils vendent"
+   }
+  ],
+  "tips": [
+   "Identificeer altijd eerst de stam van het werkwoord.",
+   "Oefen regelmatig met verschillende werkwoorden om de patronen te onthouden.",
+   "Let op de uitspraak, vooral bij de derde persoon enkelvoud van -re werkwoorden.",
+   "Gebruik flashcards om de uitgangen te memoriseren."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de uitgangen van -ir en -re werkwoorden. Correctie: Oefen de specifieke uitgangen voor elk type werkwoord.",
+   "Vergeten van de stamverandering bij sommige onregelmatige werkwoorden. Correctie: Leer de onregelmatige vormen apart.",
+   "Het toevoegen van een uitgang aan de derde persoon enkelvoud van -re werkwoorden. Correctie: Onthoud dat er geen uitgang is voor deze vorm."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je finis mes devoirs.",
+    "romaji": "Je fini mes devoirs.",
+    "dutch": "Ik maak mijn huiswerk af."
+   },
+   {
+    "japanese": "Nous choisissons un film.",
+    "romaji": "Nous choisissons un film.",
+    "dutch": "Wij kiezen een film."
+   },
+   {
+    "japanese": "Ils vendent leur voiture.",
+    "romaji": "Ils vendent leur voiture.",
+    "dutch": "Zij verkopen hun auto."
+   },
+   {
+    "japanese": "Tu attends le bus.",
+    "romaji": "Tu attends le bus.",
+    "dutch": "Jij wacht op de bus."
+   },
+   {
+    "japanese": "Elle finit son livre.",
+    "romaji": "Elle finit son livre.",
+    "dutch": "Zij maakt haar boek af."
+   },
+   {
+    "japanese": "Vous entendez la musique.",
+    "romaji": "Vous entendez la musique.",
+    "dutch": "Jullie horen de muziek."
+   }
+  ]
+ },
+ "fr-a1-negation": {
+  "naam": "Negatie met 'ne...pas'",
+  "tagline": "Leer hoe je ontkenningen vormt in het Frans.",
+  "niveau": "basis",
+  "kernregel": "In het Frans gebruik je 'ne...pas' om een zin negatief te maken. Deze structuur omarmt het werkwoord en verandert de betekenis van de zin naar het tegenovergestelde.",
+  "patroon": "ne [werkwoord] pas",
+  "uitleg": "De Franse negatie 'ne...pas' is vergelijkbaar met het Nederlandse 'niet'. Het wordt gebruikt om een ontkennende zin te vormen. In tegenstelling tot het Nederlands, waar 'niet' vaak aan het einde van de zin staat, omringen 'ne' en 'pas' het werkwoord in het Frans. Het is belangrijk om te weten dat 'ne' vaak wordt ingekort tot 'n'' voor een klinker of een stomme 'h'. Let ook op dat in de spreektaal 'ne' soms wordt weggelaten, vooral in informele contexten.",
+  "opbouw": [
+   {
+    "element": "ne",
+    "rol": "Begin van de negatie, voor het werkwoord geplaatst.",
+    "voorbeeld": "Je ne parle pas."
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Het werkwoord dat ontkend wordt.",
+    "voorbeeld": "Je ne parle pas."
+   },
+   {
+    "element": "pas",
+    "rol": "Tweede deel van de negatie, na het werkwoord geplaatst.",
+    "voorbeeld": "Je ne parle pas."
+   }
+  ],
+  "tips": [
+   "Gebruik 'ne...pas' om een zin negatief te maken, ongeacht de tijd van het werkwoord.",
+   "In informele gesprekken kan 'ne' soms worden weggelaten, maar dit is niet correct in formeel Frans.",
+   "Let op de samentrekking van 'ne' tot 'n'' voor klinkers en stomme 'h'.",
+   "Bij samengestelde tijden zoals passé composé, omringen 'ne' en 'pas' het hulpwerkwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Het vergeten van 'ne' voor het werkwoord. Correct: Je ne sais pas.",
+   "Het plaatsen van 'pas' voor het werkwoord. Correct: Je ne parle pas.",
+   "Het weglaten van 'ne' in formele teksten. Correct: Il ne vient pas."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je ne comprends pas.",
+    "romaji": "Je ne comprends pas.",
+    "dutch": "Ik begrijp het niet."
+   },
+   {
+    "japanese": "Elle ne mange pas de viande.",
+    "romaji": "Elle ne mange pas de viande.",
+    "dutch": "Zij eet geen vlees."
+   },
+   {
+    "japanese": "Nous ne voulons pas partir.",
+    "romaji": "Nous ne voulons pas partir.",
+    "dutch": "Wij willen niet vertrekken."
+   },
+   {
+    "japanese": "Ils ne sont pas ici.",
+    "romaji": "Ils ne sont pas ici.",
+    "dutch": "Zij zijn niet hier."
+   },
+   {
+    "japanese": "Tu ne fais pas tes devoirs.",
+    "romaji": "Tu ne fais pas tes devoirs.",
+    "dutch": "Jij maakt je huiswerk niet."
+   },
+   {
+    "japanese": "Je n'aime pas le chocolat.",
+    "romaji": "Je n'aime pas le chocolat.",
+    "dutch": "Ik houd niet van chocolade."
+   }
+  ]
+ },
+ "fr-a1-questions": {
+  "naam": "Vragen stellen met 'est-ce que' in het Frans",
+  "tagline": "Leer hoe je vragen kunt stellen met 'est-ce que' in het Frans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 'est-ce que' wordt gebruikt om ja/nee-vragen te stellen in het Frans. Het is een eenvoudige manier om vragen te formuleren zonder de woordvolgorde te veranderen.",
+  "patroon": "est-ce que + onderwerp + werkwoord + rest van de zin",
+  "uitleg": "In het Frans kun je vragen stellen door gebruik te maken van 'est-ce que'. Dit patroon is handig omdat het de structuur van de zin niet verandert, in tegenstelling tot andere vraagvormen die inversie vereisen. 'Est-ce que' wordt voor het onderwerp en het werkwoord geplaatst. Het is vergelijkbaar met het gebruik van 'is het zo dat' in het Nederlands, hoewel het in het Frans veel gebruikelijker is. Het is belangrijk om te weten dat 'est-ce que' alleen wordt gebruikt voor ja/nee-vragen en niet voor vragen die beginnen met een vraagwoord zoals 'waarom' of 'hoe'.",
+  "opbouw": [
+   {
+    "element": "est-ce que",
+    "rol": "Inleidende vraagfrase die aangeeft dat er een vraag volgt.",
+    "voorbeeld": "Est-ce que tu aimes le chocolat?"
+   },
+   {
+    "element": "onderwerp",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "tu"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "aimes"
+   },
+   {
+    "element": "rest van de zin",
+    "rol": "Aanvullende informatie die de zin compleet maakt.",
+    "voorbeeld": "le chocolat"
+   }
+  ],
+  "tips": [
+   "Gebruik 'est-ce que' voor eenvoudige ja/nee-vragen zonder de woordvolgorde te veranderen.",
+   "Let op de uitspraak: 'est-ce que' klinkt als 'es-ke'.",
+   "Vermijd 'est-ce que' bij vragen met vraagwoorden zoals 'qui', 'quoi', 'où', etc.",
+   "Oefen met het herkennen van 'est-ce que' in gesproken Frans om je luistervaardigheid te verbeteren."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van inversie in plaats van 'est-ce que'. Correct: 'Est-ce que tu viens?' in plaats van 'Viens-tu?'",
+   "Vergeten 'est-ce que' toe te voegen. Correct: 'Est-ce que vous avez un stylo?' in plaats van 'Vous avez un stylo?'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Est-ce que vous parlez anglais?",
+    "romaji": "es-ke vu par-le aŋ-glɛ?",
+    "dutch": "Spreekt u Engels?"
+   },
+   {
+    "japanese": "Est-ce que nous allons au cinéma ce soir?",
+    "romaji": "es-ke nu a-lɔ̃ o si-ne-ma sə swaʁ?",
+    "dutch": "Gaan we vanavond naar de bioscoop?"
+   },
+   {
+    "japanese": "Est-ce que Marie est là?",
+    "romaji": "es-ke ma-ʁi ɛ la?",
+    "dutch": "Is Marie daar?"
+   },
+   {
+    "japanese": "Est-ce que tu as fini tes devoirs?",
+    "romaji": "es-ke ty a fi-ni te də-vwaʁ?",
+    "dutch": "Heb je je huiswerk af?"
+   },
+   {
+    "japanese": "Est-ce que c'est ton livre?",
+    "romaji": "es-ke sɛ tɔ̃ li-vʁ?",
+    "dutch": "Is dit jouw boek?"
+   },
+   {
+    "japanese": "Est-ce que vous avez faim?",
+    "romaji": "es-ke vu a-ve fɛ̃?",
+    "dutch": "Hebben jullie honger?"
+   }
+  ]
+ },
+ "fr-a1-adjectifs": {
+  "naam": "Adjectieven (overeenkomst in geslacht en getal)",
+  "tagline": "Leer hoe je Franse bijvoeglijke naamwoorden correct laat overeenkomen.",
+  "niveau": "basis",
+  "kernregel": "In het Frans moeten bijvoeglijke naamwoorden overeenkomen in geslacht en getal met het zelfstandig naamwoord dat ze beschrijven. Dit betekent dat je de vorm van het bijvoeglijk naamwoord aanpast afhankelijk van of het zelfstandig naamwoord mannelijk, vrouwelijk, enkelvoud of meervoud is.",
+  "patroon": "[Stam van het bijvoeglijk naamwoord] + [e (voor vrouwelijk)] + [s (voor meervoud)]",
+  "uitleg": "In het Frans verandert de vorm van bijvoeglijke naamwoorden om overeen te komen met het geslacht (mannelijk of vrouwelijk) en het aantal (enkelvoud of meervoud) van het zelfstandig naamwoord dat ze beschrijven. Een mannelijk enkelvoudig bijvoeglijk naamwoord is de basisvorm. Voor vrouwelijk enkelvoud voeg je meestal een 'e' toe. Voor mannelijk meervoud voeg je 's' toe, en voor vrouwelijk meervoud voeg je 'es' toe. Er zijn uitzonderingen, zoals bijvoeglijke naamwoorden die al eindigen op een stille 'e', die niet veranderen voor vrouwelijk enkelvoud.",
+  "opbouw": [
+   {
+    "element": "Stam van het bijvoeglijk naamwoord",
+    "rol": "De basisvorm van het bijvoeglijk naamwoord, gebruikt voor mannelijk enkelvoud.",
+    "voorbeeld": "grand (groot)"
+   },
+   {
+    "element": "+ e",
+    "rol": "Toegevoegd voor vrouwelijk enkelvoud.",
+    "voorbeeld": "grande (groot)"
+   },
+   {
+    "element": "+ s",
+    "rol": "Toegevoegd voor mannelijk meervoud.",
+    "voorbeeld": "grands (grote)"
+   },
+   {
+    "element": "+ es",
+    "rol": "Toegevoegd voor vrouwelijk meervoud.",
+    "voorbeeld": "grandes (grote)"
+   },
+   {
+    "element": "Uitzonderingen",
+    "rol": "Bijvoeglijke naamwoorden die eindigen op een stille 'e' of onregelmatige vormen.",
+    "voorbeeld": "jeune (jong), blijft jeune in vrouwelijk enkelvoud."
+   }
+  ],
+  "tips": [
+   "Controleer altijd het geslacht en het aantal van het zelfstandig naamwoord voordat je het bijvoeglijk naamwoord aanpast.",
+   "Onthoud dat sommige bijvoeglijke naamwoorden onregelmatige vormen hebben, zoals 'beau' dat 'belle' wordt in vrouwelijk enkelvoud.",
+   "Bijvoeglijke naamwoorden die eindigen op een stille 'e' veranderen niet in vrouwelijk enkelvoud.",
+   "Bijvoeglijke naamwoorden die eindigen op -eux veranderen in -euse voor vrouwelijk enkelvoud."
+  ],
+  "veelgemaaktefouten": [
+   "Het toevoegen van een 'e' aan een bijvoeglijk naamwoord dat al eindigt op een stille 'e'. Correctie: 'jeune' blijft 'jeune' in vrouwelijk enkelvoud.",
+   "Het vergeten van de 's' in meervoudsvormen. Correctie: 'grands' voor mannelijk meervoud.",
+   "Het toepassen van de verkeerde onregelmatige vorm, zoals 'beau' naar 'beaux' in plaats van 'belle' voor vrouwelijk enkelvoud."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Elle est intelligente.",
+    "romaji": "Elle est intelligente.",
+    "dutch": "Zij is intelligent."
+   },
+   {
+    "japanese": "Les voitures sont rapides.",
+    "romaji": "Les voitures sont rapides.",
+    "dutch": "De auto's zijn snel."
+   },
+   {
+    "japanese": "Un homme heureux.",
+    "romaji": "Un homme heureux.",
+    "dutch": "Een gelukkige man."
+   },
+   {
+    "japanese": "Une femme heureuse.",
+    "romaji": "Une femme heureuse.",
+    "dutch": "Een gelukkige vrouw."
+   },
+   {
+    "japanese": "Des enfants curieux.",
+    "romaji": "Des enfants curieux.",
+    "dutch": "Nieuwsgierige kinderen."
+   },
+   {
+    "japanese": "Des filles curieuses.",
+    "romaji": "Des filles curieuses.",
+    "dutch": "Nieuwsgierige meisjes."
+   }
+  ]
+ },
+ "fr-a1-possess": {
+  "naam": "Possessieve Voornaamwoorden in het Frans",
+  "tagline": "Beheers de kunst van bezit aangeven in het Frans!",
+  "niveau": "basis",
+  "kernregel": "Possessieve voornaamwoorden worden gebruikt om aan te geven dat iets toebehoort aan iemand. In het Frans zijn ze afhankelijk van het geslacht en het aantal van het zelfstandig naamwoord dat ze beschrijven.",
+  "patroon": "mon/ma/mes, ton/ta/tes, son/sa/ses, notre/nos, votre/vos, leur/leurs",
+  "uitleg": "In het Frans worden possessieve voornaamwoorden gebruikt om bezit aan te geven, net zoals in het Nederlands 'mijn', 'jouw', 'zijn', enzovoort. Het verschil is dat in het Frans het voornaamwoord verandert afhankelijk van het geslacht (mannelijk of vrouwelijk) en het aantal (enkelvoud of meervoud) van het zelfstandig naamwoord. Bijvoorbeeld, 'mon' wordt gebruikt voor mannelijke zelfstandige naamwoorden in het enkelvoud, zoals 'mon livre' (mijn boek), terwijl 'ma' voor vrouwelijke zelfstandige naamwoorden in het enkelvoud wordt gebruikt, zoals 'ma maison' (mijn huis). Voor meervoudige zelfstandige naamwoorden, ongeacht het geslacht, gebruik je 'mes', zoals in 'mes amis' (mijn vrienden).",
+  "opbouw": [
+   {
+    "element": "mon/ma/mes",
+    "rol": "Geeft bezit aan voor 'mijn'.",
+    "voorbeeld": "mon frère (mijn broer), ma sœur (mijn zus), mes parents (mijn ouders)"
+   },
+   {
+    "element": "ton/ta/tes",
+    "rol": "Geeft bezit aan voor 'jouw'.",
+    "voorbeeld": "ton chien (jouw hond), ta voiture (jouw auto), tes livres (jouw boeken)"
+   },
+   {
+    "element": "son/sa/ses",
+    "rol": "Geeft bezit aan voor 'zijn/haar'.",
+    "voorbeeld": "son chat (zijn/haar kat), sa maison (zijn/haar huis), ses enfants (zijn/haar kinderen)"
+   },
+   {
+    "element": "notre/nos",
+    "rol": "Geeft bezit aan voor 'ons/onze'.",
+    "voorbeeld": "notre école (onze school), nos amis (onze vrienden)"
+   },
+   {
+    "element": "votre/vos",
+    "rol": "Geeft bezit aan voor 'uw/jullie'.",
+    "voorbeeld": "votre idée (uw idee), vos projets (jullie projecten)"
+   }
+  ],
+  "tips": [
+   "Let op het geslacht van het zelfstandig naamwoord om het juiste possessieve voornaamwoord te kiezen.",
+   "Gebruik 'mon', 'ton', 'son' voor vrouwelijke zelfstandige naamwoorden die met een klinker beginnen om klinkerbotsing te vermijden.",
+   "Bij meervoudige zelfstandige naamwoorden gebruik je altijd 'mes', 'tes', 'ses', 'nos', 'vos', 'leurs', ongeacht het geslacht.",
+   "Oefen met het koppelen van possessieve voornaamwoorden aan zelfstandige naamwoorden om vertrouwd te raken met de regels."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'ma' en 'mon' bij vrouwelijke zelfstandige naamwoorden die met een klinker beginnen. Correct: 'mon amie' in plaats van 'ma amie'.",
+   "Het gebruik van 'sa' voor een mannelijk zelfstandig naamwoord. Correct: 'son livre' in plaats van 'sa livre'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Mon père est médecin.",
+    "romaji": "Mon père est médecin.",
+    "dutch": "Mijn vader is arts."
+   },
+   {
+    "japanese": "Ta sœur est très gentille.",
+    "romaji": "Ta sœur est très gentille.",
+    "dutch": "Jouw zus is erg aardig."
+   },
+   {
+    "japanese": "Ses enfants jouent dans le jardin.",
+    "romaji": "Ses enfants jouent dans le jardin.",
+    "dutch": "Zijn/haar kinderen spelen in de tuin."
+   },
+   {
+    "japanese": "Notre maison est grande.",
+    "romaji": "Notre maison est grande.",
+    "dutch": "Ons huis is groot."
+   },
+   {
+    "japanese": "Vos idées sont intéressantes.",
+    "romaji": "Vos idées sont intéressantes.",
+    "dutch": "Jullie ideeën zijn interessant."
+   },
+   {
+    "japanese": "Leurs amis viennent ce soir.",
+    "romaji": "Leurs amis viennent ce soir.",
+    "dutch": "Hun vrienden komen vanavond."
+   }
+  ]
+ },
+ "fr-a1-prep": {
+  "naam": "Prépositions à / de",
+  "tagline": "Begrijp het gebruik van 'à' en 'de' in het Frans.",
+  "niveau": "basis",
+  "kernregel": "De voorzetsels 'à' en 'de' worden veelvuldig gebruikt in het Frans om relaties tussen woorden aan te geven. 'À' kan onder andere richting, plaats of tijd aanduiden, terwijl 'de' vaak bezit, afkomst of oorzaak uitdrukt.",
+  "patroon": "nom + à + infinitief / nom + de + infinitief",
+  "uitleg": "In het Frans worden de voorzetsels 'à' en 'de' gebruikt om verschillende relaties en betekenissen tussen woorden aan te geven. 'À' kan bijvoorbeeld worden gebruikt om een bestemming of doel aan te geven, vergelijkbaar met 'naar' of 'bij' in het Nederlands. 'De' wordt vaak gebruikt om herkomst of bezit aan te geven, vergelijkbaar met 'van' in het Nederlands. Beide voorzetsels kunnen ook worden gebruikt in combinatie met werkwoorden om specifieke betekenissen te creëren. Het is belangrijk om te weten welk voorzetsel bij welk werkwoord hoort, omdat dit niet altijd overeenkomt met het Nederlands.",
+  "opbouw": [
+   {
+    "element": "à",
+    "rol": "Duidt richting, plaats of tijd aan.",
+    "voorbeeld": "Je vais à Paris."
+   },
+   {
+    "element": "de",
+    "rol": "Duidt bezit, afkomst of oorzaak aan.",
+    "voorbeeld": "Le livre de Marie."
+   },
+   {
+    "element": "infinitief",
+    "rol": "Het werkwoord in zijn basisvorm, vaak na 'à' of 'de'.",
+    "voorbeeld": "Il commence à travailler."
+   },
+   {
+    "element": "nom",
+    "rol": "Het zelfstandig naamwoord dat met 'à' of 'de' wordt verbonden.",
+    "voorbeeld": "La maison de Pierre."
+   },
+   {
+    "element": "verbindingswoord",
+    "rol": "Verbindt het zelfstandig naamwoord met het werkwoord of een ander zelfstandig naamwoord.",
+    "voorbeeld": "Il est important de comprendre."
+   }
+  ],
+  "tips": [
+   "Let op het verschil tussen 'à' en 'de' bij werkwoorden, sommige werkwoorden vereisen specifiek een van de twee.",
+   "Gebruik 'à' voor richtingen en bestemmingen, zoals 'aller à Paris'.",
+   "Gebruik 'de' om bezit aan te geven, zoals 'le livre de Jean'.",
+   "Oefen met zinnen om het juiste voorzetsel intuïtief te leren gebruiken."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'à' en 'de' bij werkwoorden. Correctie: 'Il pense à ses amis' in plaats van 'Il pense de ses amis'.",
+   "Verkeerd gebruik van 'de' voor richtingen. Correctie: 'Je vais à la plage' in plaats van 'Je vais de la plage'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je suis à l'école.",
+    "romaji": "Je suis à l'école.",
+    "dutch": "Ik ben op school."
+   },
+   {
+    "japanese": "Il parle de son voyage.",
+    "romaji": "Il parle de son voyage.",
+    "dutch": "Hij praat over zijn reis."
+   },
+   {
+    "japanese": "Elle pense à son avenir.",
+    "romaji": "Elle pense à son avenir.",
+    "dutch": "Zij denkt aan haar toekomst."
+   },
+   {
+    "japanese": "Nous venons de France.",
+    "romaji": "Nous venons de France.",
+    "dutch": "Wij komen uit Frankrijk."
+   },
+   {
+    "japanese": "Il est difficile de comprendre.",
+    "romaji": "Il est difficile de comprendre.",
+    "dutch": "Het is moeilijk te begrijpen."
+   },
+   {
+    "japanese": "Elle est à la maison.",
+    "romaji": "Elle est à la maison.",
+    "dutch": "Zij is thuis."
+   }
+  ]
+ },
+ "fr-a1-ilya": {
+  "naam": "Het gebruik van 'il y a' in het Frans",
+  "tagline": "Leer hoe je 'il y a' gebruikt om bestaan en tijd aan te duiden.",
+  "niveau": "basis",
+  "kernregel": "'Il y a' wordt gebruikt om aan te geven dat iets bestaat of aanwezig is, en om te verwijzen naar een bepaalde tijd in het verleden. Het is vergelijkbaar met 'er is/er zijn' in het Nederlands en 'ago' in tijdsaanduidingen.",
+  "patroon": "il y a + [zelfstandig naamwoord] / il y a + [tijd] + [werkwoord]",
+  "uitleg": "In het Frans gebruik je 'il y a' om te zeggen dat iets bestaat of aanwezig is, zoals 'er is' of 'er zijn' in het Nederlands. Het kan ook worden gebruikt om een tijdsperiode aan te geven die in het verleden begon, vergelijkbaar met '... geleden' in het Nederlands. Bijvoorbeeld, 'il y a trois jours' betekent 'drie dagen geleden'. Het is belangrijk om te weten dat 'il y a' onveranderlijk is en niet verandert met het aantal of de tijd, in tegenstelling tot sommige Nederlandse constructies.",
+  "opbouw": [
+   {
+    "element": "il",
+    "rol": "Onderwerp, een onpersoonlijk voornaamwoord dat vaak als 'het' wordt vertaald.",
+    "voorbeeld": "Il y a un chat dans le jardin."
+   },
+   {
+    "element": "y",
+    "rol": "Bijwoordelijke aanduiding van plaats, vergelijkbaar met 'daar'.",
+    "voorbeeld": "Il y a des livres sur la table."
+   },
+   {
+    "element": "a",
+    "rol": "Werkwoord 'avoir' in de derde persoon enkelvoud, betekent 'heeft'.",
+    "voorbeeld": "Il y a une fête ce soir."
+   },
+   {
+    "element": "[zelfstandig naamwoord]",
+    "rol": "Het onderwerp dat bestaat of aanwezig is.",
+    "voorbeeld": "Il y a un problème."
+   },
+   {
+    "element": "[tijd]",
+    "rol": "De tijdsperiode die aangeeft hoe lang geleden iets gebeurde.",
+    "voorbeeld": "Il y a deux semaines."
+   }
+  ],
+  "tips": [
+   "Gebruik 'il y a' altijd in deze volgorde; het verandert niet met enkelvoud of meervoud.",
+   "Voor tijdsaanduidingen, plaats de tijdsperiode direct na 'il y a'.",
+   "Verwar 'il y a' niet met 'il est' of 'c'est', die andere betekenissen hebben.",
+   "Gebruik 'il y a' ook om een situatie of toestand te beschrijven die nog steeds waar is."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 'il y a' met 'il est'. Correctie: Gebruik 'il y a' voor bestaan, 'il est' voor beschrijving.",
+   "Verkeerde volgorde van woorden. Correctie: Zorg ervoor dat 'il y a' altijd in dezelfde volgorde staat.",
+   "Vergeten van de tijdsperiode bij verleden tijd. Correctie: Voeg altijd een tijdsperiode toe na 'il y a' voor verleden tijd."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Il y a une pomme sur la table.",
+    "romaji": "Il y a une pomme sur la table.",
+    "dutch": "Er ligt een appel op de tafel."
+   },
+   {
+    "japanese": "Il y a beaucoup de monde ici.",
+    "romaji": "Il y a beaucoup de monde ici.",
+    "dutch": "Er zijn veel mensen hier."
+   },
+   {
+    "japanese": "Il y a dix ans, j'ai visité Paris.",
+    "romaji": "Il y a dix ans, j'ai visité Paris.",
+    "dutch": "Tien jaar geleden bezocht ik Parijs."
+   },
+   {
+    "japanese": "Il y a un chien dans le jardin.",
+    "romaji": "Il y a un chien dans le jardin.",
+    "dutch": "Er is een hond in de tuin."
+   },
+   {
+    "japanese": "Il y a trois jours, il a neigé.",
+    "romaji": "Il y a trois jours, il a neigé.",
+    "dutch": "Drie dagen geleden sneeuwde het."
+   },
+   {
+    "japanese": "Il y a un problème avec la voiture.",
+    "romaji": "Il y a un problème avec la voiture.",
+    "dutch": "Er is een probleem met de auto."
+   }
+  ]
+ },
+ "fr-a1-futproche": {
+  "naam": "Aller & Futur Proche",
+  "tagline": "Leer hoe je toekomstige acties in het Frans uitdrukt met de futur proche.",
+  "niveau": "basis",
+  "kernregel": "De futur proche wordt gebruikt om acties uit te drukken die in de nabije toekomst zullen plaatsvinden. Het is vergelijkbaar met de Nederlandse constructie 'gaan + infinitief'.",
+  "patroon": "sujet + aller (vervoegd) + infinitief",
+  "uitleg": "De futur proche is een veelgebruikte tijd in het Frans om aan te geven dat iets binnenkort gaat gebeuren. Het bestaat uit de vervoeging van het werkwoord 'aller' (gaan) gevolgd door een infinitief. Dit patroon is vergelijkbaar met het Nederlandse 'ik ga eten', waarbij 'ga' de vervoegde vorm van 'gaan' is en 'eten' de infinitief. Het gebruik van de futur proche maakt de zin minder formeel en geeft een gevoel van nabijheid aan de actie. In tegenstelling tot de futur simple, die meer afstandelijke of formele toekomstige gebeurtenissen beschrijft, is de futur proche directer en vaak gebruikt in gesproken Frans.",
+  "opbouw": [
+   {
+    "element": "sujet",
+    "rol": "Het onderwerp van de zin, degene die de actie zal uitvoeren.",
+    "voorbeeld": "Je (ik)"
+   },
+   {
+    "element": "aller (vervoegd)",
+    "rol": "Het werkwoord 'aller' vervoegd volgens het onderwerp.",
+    "voorbeeld": "vais (ga)"
+   },
+   {
+    "element": "infinitief",
+    "rol": "Het werkwoord dat de actie beschrijft in zijn basisvorm.",
+    "voorbeeld": "manger (eten)"
+   }
+  ],
+  "tips": [
+   "Gebruik de futur proche voor acties die je binnenkort van plan bent te doen.",
+   "De futur proche is minder formeel dan de futur simple en wordt vaak in gesproken taal gebruikt.",
+   "Let op de juiste vervoeging van 'aller' afhankelijk van het onderwerp.",
+   "De futur proche kan ook gebruikt worden om intenties of plannen uit te drukken."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de futur proche met de futur simple. Correctie: Gebruik 'aller' voor de futur proche.",
+   "Vergeten de infinitief te gebruiken na 'aller'. Correctie: Zorg ervoor dat het tweede werkwoord in de infinitief staat.",
+   "Onjuiste vervoeging van 'aller'. Correctie: Controleer de vervoeging van 'aller' voor het juiste onderwerp."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je vais partir demain.",
+    "romaji": "Je ve par-tir de-main.",
+    "dutch": "Ik ga morgen vertrekken."
+   },
+   {
+    "japanese": "Nous allons visiter Paris.",
+    "romaji": "Nou za-lon vi-zi-te Pa-ri.",
+    "dutch": "Wij gaan Parijs bezoeken."
+   },
+   {
+    "japanese": "Elle va acheter une voiture.",
+    "romaji": "El va a-sje-te une vwa-tyur.",
+    "dutch": "Zij gaat een auto kopen."
+   },
+   {
+    "japanese": "Ils vont jouer au football.",
+    "romaji": "Il von zjoe-e o foet-bol.",
+    "dutch": "Zij gaan voetballen."
+   },
+   {
+    "japanese": "Tu vas lire ce livre.",
+    "romaji": "Ty va lir se livr.",
+    "dutch": "Jij gaat dit boek lezen."
+   },
+   {
+    "japanese": "On va faire les courses.",
+    "romaji": "On va fer le koers.",
+    "dutch": "We gaan boodschappen doen."
+   }
+  ]
+ },
+ "fr-a1-partitif": {
+  "naam": "Articles Partitifs",
+  "tagline": "Leer hoe je onbepaalde hoeveelheden in het Frans uitdrukt.",
+  "niveau": "basis",
+  "kernregel": "Articles partitifs worden gebruikt om een onbepaalde hoeveelheid van iets aan te geven, vaak bij niet-telbare zelfstandige naamwoorden. Ze worden meestal vertaald als 'wat' of 'enige' in het Nederlands.",
+  "patroon": "du, de la, de l', des",
+  "uitleg": "In het Frans gebruik je articles partitifs om een onbepaalde hoeveelheid van een stof of een abstract begrip uit te drukken. Ze worden gebruikt voor niet-telbare zelfstandige naamwoorden zoals 'water', 'brood' of 'muziek'. In het Nederlands gebruiken we vaak 'wat' of 'enige' om een vergelijkbare betekenis te geven. Het partitivum verandert afhankelijk van het geslacht en de beginletter van het zelfstandig naamwoord: 'du' voor mannelijke woorden, 'de la' voor vrouwelijke woorden, 'de l'' voor woorden die beginnen met een klinker of stomme h, en 'des' voor meervoudsvormen.",
+  "opbouw": [
+   {
+    "element": "du",
+    "rol": "Wordt gebruikt voor mannelijke enkelvoudige zelfstandige naamwoorden.",
+    "voorbeeld": "du pain (wat brood)"
+   },
+   {
+    "element": "de la",
+    "rol": "Wordt gebruikt voor vrouwelijke enkelvoudige zelfstandige naamwoorden.",
+    "voorbeeld": "de la salade (wat salade)"
+   },
+   {
+    "element": "de l'",
+    "rol": "Wordt gebruikt voor zelfstandige naamwoorden die beginnen met een klinker of stomme h.",
+    "voorbeeld": "de l'eau (wat water)"
+   },
+   {
+    "element": "des",
+    "rol": "Wordt gebruikt voor meervoudige zelfstandige naamwoorden.",
+    "voorbeeld": "des fruits (wat fruit)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'du' voor mannelijke woorden, maar let op uitzonderingen zoals 'de l'' voor klinkers.",
+   "Bij ontkenningen verandert het partitivum vaak in 'de' of 'd'' ongeacht geslacht of aantal.",
+   "Let op het verschil tussen 'des' (partitief) en 'des' als bepaald lidwoord in het meervoud.",
+   "Gebruik geen partitivum voor telbare zelfstandige naamwoorden; gebruik in plaats daarvan 'un', 'une' of een getal."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'du' en 'de la' bij zelfstandige naamwoorden die in het Nederlands hetzelfde geslacht hebben. Correctie: Controleer het geslacht in het Frans.",
+   "Het gebruik van 'de' in plaats van 'du' in positieve zinnen. Correctie: Gebruik 'du', 'de la', 'de l'' of 'des' afhankelijk van het geslacht en aantal.",
+   "Het vergeten van de partitivum bij niet-telbare zelfstandige naamwoorden. Correctie: Voeg altijd een partitivum toe als er geen specifieke hoeveelheid is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je veux du café.",
+    "romaji": "Je veux du café.",
+    "dutch": "Ik wil wat koffie."
+   },
+   {
+    "japanese": "Elle mange de la soupe.",
+    "romaji": "Elle mange de la soupe.",
+    "dutch": "Zij eet wat soep."
+   },
+   {
+    "japanese": "Il boit de l'eau.",
+    "romaji": "Il boit de l'eau.",
+    "dutch": "Hij drinkt wat water."
+   },
+   {
+    "japanese": "Nous avons des amis ici.",
+    "romaji": "Nous avons des amis ici.",
+    "dutch": "We hebben hier wat vrienden."
+   },
+   {
+    "japanese": "Tu veux du chocolat?",
+    "romaji": "Tu veux du chocolat?",
+    "dutch": "Wil je wat chocolade?"
+   },
+   {
+    "japanese": "Ils ont des idées.",
+    "romaji": "Ils ont des idées.",
+    "dutch": "Zij hebben wat ideeën."
+   }
+  ]
+ },
+ "fr-a2-pcavoir": {
+  "naam": "Passé Composé met Avoir",
+  "tagline": "Beheers de kunst van het verleden met het passé composé.",
+  "niveau": "basis",
+  "kernregel": "Het passé composé is een veelgebruikte verleden tijd in het Frans, die vaak overeenkomt met de voltooid tegenwoordige tijd in het Nederlands. Het wordt gebruikt om acties uit het verleden te beschrijven die zijn afgerond.",
+  "patroon": "sujet + avoir (verbe auxiliaire) + participe passé",
+  "uitleg": "In het Frans wordt het passé composé gevormd door het hulpwerkwoord 'avoir' in de tegenwoordige tijd te combineren met het voltooid deelwoord van het hoofdwerkwoord. Dit patroon wordt gebruikt voor de meeste werkwoorden, behalve enkele die 'être' als hulpwerkwoord gebruiken. Het passé composé beschrijft afgeronde acties in het verleden, vergelijkbaar met de Nederlandse voltooid tegenwoordige tijd. Het is belangrijk om het juiste voltooid deelwoord te gebruiken, dat vaak eindigt op -é, -i of -u, afhankelijk van de werkwoordsgroep.",
+  "opbouw": [
+   {
+    "element": "sujet",
+    "rol": "Het onderwerp van de zin, dat de actie uitvoert.",
+    "voorbeeld": "Je"
+   },
+   {
+    "element": "avoir",
+    "rol": "Het hulpwerkwoord dat wordt vervoegd naar het onderwerp.",
+    "voorbeeld": "ai"
+   },
+   {
+    "element": "participe passé",
+    "rol": "Het voltooid deelwoord van het hoofdwerkwoord.",
+    "voorbeeld": "mangé"
+   },
+   {
+    "element": "verbe auxiliaire",
+    "rol": "Het hulpwerkwoord dat de tijd van de zin aangeeft.",
+    "voorbeeld": "avoir"
+   },
+   {
+    "element": "verbe principal",
+    "rol": "Het hoofdwerkwoord dat de actie beschrijft.",
+    "voorbeeld": "manger"
+   }
+  ],
+  "tips": [
+   "Let op de juiste vervoeging van 'avoir' afhankelijk van het onderwerp.",
+   "Controleer de juiste vorm van het voltooid deelwoord voor regelmatige en onregelmatige werkwoorden.",
+   "Gebruik 'avoir' voor de meeste werkwoorden, maar onthoud dat sommige werkwoorden 'être' gebruiken.",
+   "Oefen met veelvoorkomende onregelmatige voltooid deelwoorden zoals 'eu', 'fait', 'vu'."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde vervoeging van 'avoir': 'Je a mangé' moet zijn 'J'ai mangé'.",
+   "Verkeerd voltooid deelwoord: 'J'ai prendu' moet zijn 'J'ai pris'.",
+   "Verwarring met 'être': 'Je suis mangé' is incorrect, het moet zijn 'J'ai mangé'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "J'ai lu le livre.",
+    "romaji": "J'ai lu le livre.",
+    "dutch": "Ik heb het boek gelezen."
+   },
+   {
+    "japanese": "Tu as fini tes devoirs.",
+    "romaji": "Tu as fini tes devoirs.",
+    "dutch": "Jij hebt je huiswerk afgemaakt."
+   },
+   {
+    "japanese": "Il a pris une photo.",
+    "romaji": "Il a pris une photo.",
+    "dutch": "Hij heeft een foto genomen."
+   },
+   {
+    "japanese": "Nous avons vu un film.",
+    "romaji": "Nous avons vu un film.",
+    "dutch": "Wij hebben een film gezien."
+   },
+   {
+    "japanese": "Vous avez écrit une lettre.",
+    "romaji": "Vous avez écrit une lettre.",
+    "dutch": "Jullie hebben een brief geschreven."
+   },
+   {
+    "japanese": "Elles ont vendu leur voiture.",
+    "romaji": "Elles ont vendu leur voiture.",
+    "dutch": "Zij hebben hun auto verkocht."
+   }
+  ]
+ },
+ "fr-a2-pcetre": {
+  "naam": "Passé Composé met Être",
+  "tagline": "Leer hoe je het passé composé vormt met het hulpwerkwoord 'être'.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het passé composé wordt gebruikt om voltooide handelingen in het verleden te beschrijven. Sommige werkwoorden, voornamelijk werkwoorden van beweging en verandering van toestand, gebruiken 'être' als hulpwerkwoord in plaats van 'avoir'.",
+  "patroon": "sujet + être (vervoegd) + participe passé",
+  "uitleg": "In het Frans gebruik je het passé composé om te praten over gebeurtenissen die in het verleden zijn afgerond. Voor een specifieke groep werkwoorden, meestal die welke beweging of verandering van toestand aanduiden, gebruik je 'être' als hulpwerkwoord. Deze werkwoorden worden vaak onthouden met het acroniem 'DR MRS VANDERTRAMP'. Het voltooid deelwoord moet in geslacht en aantal overeenkomen met het onderwerp, wat betekent dat je een 'e' toevoegt voor vrouwelijke onderwerpen en een 's' voor meervoudige onderwerpen.",
+  "opbouw": [
+   {
+    "element": "sujet",
+    "rol": "Het onderwerp van de zin dat de handeling uitvoert.",
+    "voorbeeld": "Elle (zij)"
+   },
+   {
+    "element": "être (vervoegd)",
+    "rol": "Het hulpwerkwoord dat wordt vervoegd naar het onderwerp.",
+    "voorbeeld": "est (is)"
+   },
+   {
+    "element": "participe passé",
+    "rol": "Het voltooid deelwoord van het hoofdwerkwoord dat de handeling beschrijft.",
+    "voorbeeld": "allée (gegaan)"
+   },
+   {
+    "element": "overeenkomst",
+    "rol": "Het voltooid deelwoord moet overeenkomen in geslacht en aantal met het onderwerp.",
+    "voorbeeld": "Ils sont allés (Zij zijn gegaan)"
+   }
+  ],
+  "tips": [
+   "Onthoud de werkwoorden die 'être' gebruiken met het acroniem 'DR MRS VANDERTRAMP'.",
+   "Let op de overeenkomst van het voltooid deelwoord in geslacht en aantal.",
+   "Werkwoorden die reflexief zijn, gebruiken ook 'être' als hulpwerkwoord.",
+   "Controleer altijd of het onderwerp enkelvoud of meervoud is om de juiste vorm van 'être' te kiezen."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de overeenkomst in geslacht en aantal toe te passen. Correctie: 'Elle est allée' in plaats van 'Elle est allé'.",
+   "Het gebruik van 'avoir' in plaats van 'être' voor de DR MRS VANDERTRAMP werkwoorden. Correctie: 'Il est venu' in plaats van 'Il a venu'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je suis arrivé.",
+    "romaji": "Zje swee arivé.",
+    "dutch": "Ik ben aangekomen."
+   },
+   {
+    "japanese": "Tu es parti.",
+    "romaji": "Tü ee parti.",
+    "dutch": "Jij bent vertrokken."
+   },
+   {
+    "japanese": "Elle est née.",
+    "romaji": "El ee née.",
+    "dutch": "Zij is geboren."
+   },
+   {
+    "japanese": "Nous sommes montés.",
+    "romaji": "Noe som monté.",
+    "dutch": "Wij zijn naar boven gegaan."
+   },
+   {
+    "japanese": "Vous êtes tombés.",
+    "romaji": "Voe zet tombé.",
+    "dutch": "Jullie zijn gevallen."
+   },
+   {
+    "japanese": "Ils sont restés.",
+    "romaji": "Il son resté.",
+    "dutch": "Zij zijn gebleven."
+   }
+  ]
+ },
+ "fr-a2-imparfait": {
+  "naam": "Imparfait",
+  "tagline": "Beheers de kunst van het beschrijven van het verleden in het Frans.",
+  "niveau": "basis",
+  "kernregel": "Het imparfait wordt gebruikt om gewoontes, beschrijvingen en achtergrondinformatie in het verleden uit te drukken. Het geeft aan dat een actie in het verleden herhaaldelijk of gedurende een langere periode plaatsvond.",
+  "patroon": "stam van de nous-vorm in de tegenwoordige tijd + ais, ais, ait, ions, iez, aient",
+  "uitleg": "Het imparfait is een verleden tijd in het Frans die wordt gebruikt om situaties, gewoontes of omstandigheden in het verleden te beschrijven. In tegenstelling tot de passé composé, die specifieke afgeronde acties aanduidt, wordt het imparfait gebruikt voor acties die niet specifiek zijn afgerond of die een achtergrond vormen voor andere gebeurtenissen. De stam van het imparfait wordt gevormd door de nous-vorm van de tegenwoordige tijd van het werkwoord te nemen en de uitgang -ons te verwijderen. Vervolgens worden de imparfait-uitgangen toegevoegd: -ais, -ais, -ait, -ions, -iez, -aient. Deze uitgangen zijn voor alle werkwoorden hetzelfde, wat het imparfait relatief eenvoudig maakt om te leren.",
+  "opbouw": [
+   {
+    "element": "Stam",
+    "rol": "Basis van het werkwoord in de nous-vorm van de tegenwoordige tijd zonder -ons.",
+    "voorbeeld": "Parler -> parl-"
+   },
+   {
+    "element": "Uitgang -ais",
+    "rol": "Wordt toegevoegd voor je en tu.",
+    "voorbeeld": "Je parlais, Tu parlais"
+   },
+   {
+    "element": "Uitgang -ait",
+    "rol": "Wordt toegevoegd voor il/elle/on.",
+    "voorbeeld": "Il parlait"
+   },
+   {
+    "element": "Uitgang -ions",
+    "rol": "Wordt toegevoegd voor nous.",
+    "voorbeeld": "Nous parlions"
+   },
+   {
+    "element": "Uitgang -aient",
+    "rol": "Wordt toegevoegd voor ils/elles.",
+    "voorbeeld": "Ils parlaient"
+   }
+  ],
+  "tips": [
+   "Gebruik het imparfait om gewoontes of herhaalde acties in het verleden te beschrijven.",
+   "Het wordt vaak gebruikt in combinatie met de passé composé om achtergrondinformatie te geven.",
+   "Let op de uitspraak van de uitgangen, vooral bij -aient, die hetzelfde klinkt als -ais en -ait.",
+   "Er zijn geen onregelmatige werkwoorden in het imparfait, behalve être, dat de stam ét- heeft."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van imparfait met passé composé: 'J'ai parlé' (passé composé) in plaats van 'Je parlais' (imparfait).",
+   "Verkeerde stam gebruiken: 'Je finissais' (correct) in plaats van 'Je finissais' (verkeerd als stam niet correct is afgeleid)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je mangeais une pomme tous les jours.",
+    "romaji": "Je mangeais une pomme tous les jours.",
+    "dutch": "Ik at elke dag een appel."
+   },
+   {
+    "japanese": "Nous allions à la plage chaque été.",
+    "romaji": "Nous allions à la plage chaque été.",
+    "dutch": "We gingen elke zomer naar het strand."
+   },
+   {
+    "japanese": "Il pleuvait souvent en avril.",
+    "romaji": "Il pleuvait souvent en avril.",
+    "dutch": "Het regende vaak in april."
+   },
+   {
+    "japanese": "Elle lisait un livre quand je suis arrivé.",
+    "romaji": "Elle lisait un livre quand je suis arrivé.",
+    "dutch": "Ze was een boek aan het lezen toen ik aankwam."
+   },
+   {
+    "japanese": "Vous regardiez la télévision tous les soirs.",
+    "romaji": "Vous regardiez la télévision tous les soirs.",
+    "dutch": "Jullie keken elke avond televisie."
+   },
+   {
+    "japanese": "Ils jouaient au football chaque samedi.",
+    "romaji": "Ils jouaient au football chaque samedi.",
+    "dutch": "Ze speelden elke zaterdag voetbal."
+   }
+  ]
+ },
+ "fr-a2-futur": {
+  "naam": "Futur Simple",
+  "tagline": "Leer de toekomst te voorspellen met het futur simple.",
+  "niveau": "basis",
+  "kernregel": "Het futur simple wordt gebruikt om toekomstige handelingen of gebeurtenissen uit te drukken. Het is vergelijkbaar met 'zal' of 'zullen' in het Nederlands en wordt vaak gebruikt voor plannen, voorspellingen en beloftes.",
+  "patroon": "infinitief + uitgangen van avoir (ai, as, a, ons, ez, ont)",
+  "uitleg": "In het Frans wordt het futur simple gevormd door de infinitief van het werkwoord te nemen en daar de uitgangen van het werkwoord 'avoir' aan toe te voegen. Voor regelmatige werkwoorden op -er, -ir en -re is dit vrij eenvoudig, hoewel bij -re werkwoorden de laatste 'e' van de stam wordt verwijderd. Het futur simple wordt vaak gebruikt in formele contexten en geschreven taal, en kan worden vergeleken met het gebruik van 'zal' in het Nederlands. Het geeft een zekere zekerheid of vastberadenheid aan de toekomstige actie.",
+  "opbouw": [
+   {
+    "element": "Infinitief",
+    "rol": "De basisvorm van het werkwoord waarop de uitgangen worden toegevoegd.",
+    "voorbeeld": "parler, finir, vendre"
+   },
+   {
+    "element": "Uitgang -ai",
+    "rol": "Wordt toegevoegd voor de eerste persoon enkelvoud.",
+    "voorbeeld": "je parlerai"
+   },
+   {
+    "element": "Uitgang -as",
+    "rol": "Wordt toegevoegd voor de tweede persoon enkelvoud.",
+    "voorbeeld": "tu finiras"
+   },
+   {
+    "element": "Uitgang -a",
+    "rol": "Wordt toegevoegd voor de derde persoon enkelvoud.",
+    "voorbeeld": "il vendra"
+   },
+   {
+    "element": "Uitgang -ons, -ez, -ont",
+    "rol": "Wordt toegevoegd voor de eerste, tweede en derde persoon meervoud.",
+    "voorbeeld": "nous parlerons, vous finirez, ils vendront"
+   }
+  ],
+  "tips": [
+   "Onthoud dat voor -re werkwoorden de laatste 'e' van de stam wordt verwijderd voordat je de uitgang toevoegt.",
+   "Gebruik het futur simple voor formele situaties of wanneer je een zekere toekomst voorspelt.",
+   "Oefen met onregelmatige werkwoorden zoals 'être' (je serai), 'avoir' (j'aurai) en 'aller' (j'irai) om vertrouwd te raken met hun speciale stammen.",
+   "Let op de uitspraak van de uitgangen, vooral bij 'ons' en 'ont', die vaak verward worden."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van de stam bij -re werkwoorden: 'je vendrai' in plaats van 'je vendrai'.",
+   "Verwarring tussen futur simple en futur proche: 'je vais parler' (futur proche) in plaats van 'je parlerai' (futur simple).",
+   "Onjuiste uitgang voor de derde persoon meervoud: 'ils parleront' in plaats van 'ils parleront'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je mangerai une pomme demain.",
+    "romaji": "Je mangerai une pomme demain.",
+    "dutch": "Ik zal morgen een appel eten."
+   },
+   {
+    "japanese": "Nous visiterons Paris cet été.",
+    "romaji": "Nous visiterons Paris cet été.",
+    "dutch": "We zullen deze zomer Parijs bezoeken."
+   },
+   {
+    "japanese": "Elle finira ses devoirs ce soir.",
+    "romaji": "Elle finira ses devoirs ce soir.",
+    "dutch": "Zij zal haar huiswerk vanavond afmaken."
+   },
+   {
+    "japanese": "Ils iront à la plage samedi.",
+    "romaji": "Ils iront à la plage samedi.",
+    "dutch": "Zij zullen zaterdag naar het strand gaan."
+   },
+   {
+    "japanese": "Tu seras heureux de le voir.",
+    "romaji": "Tu seras heureux de le voir.",
+    "dutch": "Jij zult blij zijn hem te zien."
+   },
+   {
+    "japanese": "Vous aurez une surprise demain.",
+    "romaji": "Vous aurez une surprise demain.",
+    "dutch": "Jullie zullen morgen een verrassing hebben."
+   }
+  ]
+ },
+ "fr-a2-pronoms": {
+  "naam": "Pronoms COD / COI",
+  "tagline": "Beheers het gebruik van Franse voornaamwoorden voor directe en indirecte objecten.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Frans worden pronoms COD (Complément d'Objet Direct) en COI (Complément d'Objet Indirect) gebruikt om herhaling van zelfstandige naamwoorden te vermijden. Ze staan meestal voor het werkwoord en helpen zinnen korter en vloeiender te maken.",
+  "patroon": "Pronom COD/COI + verbe",
+  "uitleg": "In het Frans worden directe en indirecte objecten vaak vervangen door voornaamwoorden om herhaling te vermijden. Een COD is een direct object dat geen voorzetsel nodig heeft, terwijl een COI een indirect object is dat meestal een voorzetsel zoals 'à' vereist. De plaatsing van deze voornaamwoorden is belangrijk: ze staan meestal direct voor het werkwoord, behalve in de gebiedende wijs en bij infinitieven. Het gebruik van deze voornaamwoorden kan vergeleken worden met het Nederlandse 'hem', 'haar', 'het', enzovoort, maar de volgorde en het gebruik van voorzetsels verschillen.",
+  "opbouw": [
+   {
+    "element": "Pronom COD",
+    "rol": "Vervangt het directe object in de zin.",
+    "voorbeeld": "Je vois le chien -> Je le vois."
+   },
+   {
+    "element": "Pronom COI",
+    "rol": "Vervangt het indirecte object in de zin.",
+    "voorbeeld": "Je parle à Marie -> Je lui parle."
+   },
+   {
+    "element": "Plaatsing",
+    "rol": "Staat meestal voor het vervoegde werkwoord.",
+    "voorbeeld": "Je le mange."
+   },
+   {
+    "element": "Gebiedende wijs",
+    "rol": "In de positieve gebiedende wijs volgt het voornaamwoord het werkwoord.",
+    "voorbeeld": "Mange-le!"
+   },
+   {
+    "element": "Infinitieven",
+    "rol": "Bij infinitieven staat het voornaamwoord voor de infinitief.",
+    "voorbeeld": "Je vais le manger."
+   }
+  ],
+  "tips": [
+   "Identificeer eerst of het object direct of indirect is.",
+   "Let op de plaatsing van het voornaamwoord in de zin.",
+   "Bij samengestelde tijden zoals passé composé komt het voornaamwoord voor de hulpwerkwoorden.",
+   "Oefen met het omzetten van zinnen met zelfstandige naamwoorden naar zinnen met voornaamwoorden."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen COD en COI: 'Je lui vois' moet zijn 'Je le vois'.",
+   "Verkeerde plaatsing: 'Je mange le' moet zijn 'Je le mange'.",
+   "Gebiedende wijs fout: 'Le mange!' moet zijn 'Mange-le!'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je l'aime.",
+    "romaji": "ʒə lɛm",
+    "dutch": "Ik hou van hem/haar."
+   },
+   {
+    "japanese": "Nous les voyons.",
+    "romaji": "nu le vwajɔ̃",
+    "dutch": "Wij zien hen."
+   },
+   {
+    "japanese": "Elle lui téléphone.",
+    "romaji": "ɛl lɥi telefɔn",
+    "dutch": "Zij belt hem/haar."
+   },
+   {
+    "japanese": "Je vais te parler.",
+    "romaji": "ʒə vɛ tə parle",
+    "dutch": "Ik ga met je praten."
+   },
+   {
+    "japanese": "Il nous invite.",
+    "romaji": "il nu zɛ̃vit",
+    "dutch": "Hij nodigt ons uit."
+   },
+   {
+    "japanese": "Tu me comprends.",
+    "romaji": "ty mə kɔ̃prɑ̃",
+    "dutch": "Jij begrijpt mij."
+   }
+  ]
+ },
+ "fr-a2-pronom": {
+  "naam": "Verbes Pronominaux",
+  "tagline": "Leer de nuances van Franse wederkerende werkwoorden.",
+  "niveau": "gemiddeld",
+  "kernregel": "Verbes pronominaux zijn werkwoorden die een wederkerend voornaamwoord gebruiken om aan te geven dat de actie door het onderwerp op zichzelf wordt uitgevoerd. Ze worden vaak gebruikt om dagelijkse routines en persoonlijke acties te beschrijven.",
+  "patroon": "se + infinitief van het werkwoord",
+  "uitleg": "In het Frans worden wederkerende werkwoorden gebruikt om acties te beschrijven die het onderwerp op zichzelf uitvoert. Deze werkwoorden worden voorafgegaan door een wederkerend voornaamwoord dat overeenkomt met het onderwerp (me, te, se, nous, vous, se). Dit patroon is vergelijkbaar met het Nederlandse 'zich' in 'zich wassen'. Het wederkerend voornaamwoord verandert afhankelijk van de persoon en het getal van het onderwerp. In de passé composé wordt het hulpwerkwoord 'être' gebruikt, en het voltooid deelwoord moet overeenkomen in geslacht en getal met het onderwerp.",
+  "opbouw": [
+   {
+    "element": "se",
+    "rol": "Wederkerend voornaamwoord dat aangeeft dat de actie op het onderwerp zelf gericht is.",
+    "voorbeeld": "se laver (zich wassen)"
+   },
+   {
+    "element": "me, te, se, nous, vous, se",
+    "rol": "Vormen van het wederkerend voornaamwoord afhankelijk van de persoon.",
+    "voorbeeld": "Je me lève (ik sta op)"
+   },
+   {
+    "element": "infinitief",
+    "rol": "De basisvorm van het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "s'habiller (zich aankleden)"
+   },
+   {
+    "element": "être",
+    "rol": "Hulpwerkwoord gebruikt in de passé composé met wederkerende werkwoorden.",
+    "voorbeeld": "Elle s'est lavée (zij heeft zich gewassen)"
+   },
+   {
+    "element": "voltooid deelwoord",
+    "rol": "Verandert in geslacht en getal om overeen te komen met het onderwerp in de passé composé.",
+    "voorbeeld": "Ils se sont amusés (zij hebben zich vermaakt)"
+   }
+  ],
+  "tips": [
+   "Onthoud dat het wederkerend voornaamwoord altijd vóór het werkwoord komt.",
+   "In de passé composé moet je altijd 'être' gebruiken als hulpwerkwoord voor wederkerende werkwoorden.",
+   "Let op de overeenstemming van het voltooid deelwoord in geslacht en getal.",
+   "Niet alle werkwoorden die wederkerend lijken in het Nederlands zijn dat ook in het Frans."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten 'être' te gebruiken als hulpwerkwoord in de passé composé. Correctie: 'Elle s'est lavée' in plaats van 'Elle a lavé'.",
+   "Het voltooid deelwoord niet aanpassen aan het geslacht en getal van het onderwerp. Correctie: 'Ils se sont amusés' in plaats van 'Ils se sont amusé'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je me réveille à sept heures.",
+    "romaji": "Je me réveille à sept heures.",
+    "dutch": "Ik word om zeven uur wakker."
+   },
+   {
+    "japanese": "Tu te brosses les dents.",
+    "romaji": "Tu te brosses les dents.",
+    "dutch": "Jij poetst je tanden."
+   },
+   {
+    "japanese": "Il se rase tous les matins.",
+    "romaji": "Il se rase tous les matins.",
+    "dutch": "Hij scheert zich elke ochtend."
+   },
+   {
+    "japanese": "Nous nous promenons dans le parc.",
+    "romaji": "Nous nous promenons dans le parc.",
+    "dutch": "Wij wandelen in het park."
+   },
+   {
+    "japanese": "Vous vous reposez après le travail.",
+    "romaji": "Vous vous reposez après le travail.",
+    "dutch": "Jullie rusten uit na het werk."
+   },
+   {
+    "japanese": "Elles se maquillent avant de sortir.",
+    "romaji": "Elles se maquillent avant de sortir.",
+    "dutch": "Zij maken zich op voordat ze uitgaan."
+   }
+  ]
+ },
+ "fr-a2-comparatif": {
+  "naam": "Comparatif & Superlatif",
+  "tagline": "Vergelijkingen maken en extremen uitdrukken in het Frans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het comparatif wordt gebruikt om twee zaken met elkaar te vergelijken, terwijl het superlatif wordt gebruikt om een eigenschap als de hoogste of laagste binnen een groep aan te duiden. Beide vormen zijn essentieel voor het uitdrukken van nuances in beschrijvingen.",
+  "patroon": "Comparatif: plus/moins/aussi + adjectief + que; Superlatif: le/la/les plus/moins + adjectief",
+  "uitleg": "In het Frans gebruik je de comparatif om te zeggen dat iets meer, minder of evenveel is als iets anders. Bijvoorbeeld, 'plus grand que' betekent 'groter dan'. Het superlatif gebruik je om aan te geven dat iets het meest of minst is binnen een groep, zoals in 'le plus grand'. Anders dan in het Nederlands, waar we vaak '-er' en '-st' aan een bijvoeglijk naamwoord toevoegen, gebruik je in het Frans aparte woorden zoals 'plus' en 'le plus'. Let op dat het lidwoord in het superlatif overeenkomt met het geslacht en getal van het zelfstandig naamwoord.",
+  "opbouw": [
+   {
+    "element": "plus",
+    "rol": "Geeft aan dat iets meer is in de comparatif.",
+    "voorbeeld": "Il est plus rapide que son frère."
+   },
+   {
+    "element": "moins",
+    "rol": "Geeft aan dat iets minder is in de comparatif.",
+    "voorbeeld": "Elle est moins bavarde que sa sœur."
+   },
+   {
+    "element": "aussi",
+    "rol": "Geeft aan dat iets evenveel is in de comparatif.",
+    "voorbeeld": "Il est aussi intelligent que toi."
+   },
+   {
+    "element": "le/la/les plus",
+    "rol": "Geeft aan dat iets het meest is in de superlatif.",
+    "voorbeeld": "C'est la plus belle maison du quartier."
+   },
+   {
+    "element": "le/la/les moins",
+    "rol": "Geeft aan dat iets het minst is in de superlatif.",
+    "voorbeeld": "C'est le moins cher magasin."
+   }
+  ],
+  "tips": [
+   "Zorg ervoor dat het lidwoord in de superlatif overeenkomt met het geslacht en getal van het zelfstandig naamwoord.",
+   "Gebruik 'de' na de superlatif om de groep aan te geven waarbinnen de vergelijking wordt gemaakt.",
+   "Bij onregelmatige bijvoeglijke naamwoorden zoals 'bon', gebruik je 'meilleur' voor comparatif en 'le meilleur' voor superlatif.",
+   "Let op de plaatsing van het bijvoeglijk naamwoord; het kan voor of na het zelfstandig naamwoord komen, afhankelijk van het bijvoeglijk naamwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde lidwoord gebruiken in de superlatif. Correctie: Zorg dat het lidwoord overeenkomt met het geslacht en getal, zoals 'la plus grande' voor een vrouwelijk zelfstandig naamwoord.",
+   "Vergeten 'que' te gebruiken in de comparatif. Correctie: Vergeet niet 'que' te gebruiken, zoals in 'plus grand que'.",
+   "Onregelmatige bijvoeglijke naamwoorden verkeerd gebruiken. Correctie: Gebruik 'meilleur' in plaats van 'plus bon'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Il est plus grand que moi.",
+    "romaji": "Il eh plu grah keh mwa.",
+    "dutch": "Hij is groter dan ik."
+   },
+   {
+    "japanese": "Elle est moins fatiguée que toi.",
+    "romaji": "El eh mwah fah-tee-geh keh twa.",
+    "dutch": "Zij is minder moe dan jij."
+   },
+   {
+    "japanese": "Nous sommes aussi rapides qu'eux.",
+    "romaji": "Noe som oh-see rah-peed kuh.",
+    "dutch": "Wij zijn even snel als zij."
+   },
+   {
+    "japanese": "C'est le plus beau jardin de la ville.",
+    "romaji": "Seh le plu boe zjar-dan de la veel.",
+    "dutch": "Dit is de mooiste tuin van de stad."
+   },
+   {
+    "japanese": "C'est la moins chère option.",
+    "romaji": "Seh la mwahn shair op-syon.",
+    "dutch": "Dit is de goedkoopste optie."
+   },
+   {
+    "japanese": "Il est le meilleur joueur de l'équipe.",
+    "romaji": "Il eh le meh-yeur zjoe-eur de leh-keep.",
+    "dutch": "Hij is de beste speler van het team."
+   }
+  ]
+ },
+ "fr-a2-imperatif": {
+  "naam": "De impératif in het Frans",
+  "tagline": "Leer hoe je bevelen en verzoeken uitdrukt met de impératif.",
+  "niveau": "basis",
+  "kernregel": "De impératif wordt gebruikt om bevelen, verzoeken of instructies te geven. Het is een directe manier om iemand te vragen iets te doen of niet te doen.",
+  "patroon": "Verbe à l'impératif (tu/nous/vous)",
+  "uitleg": "In het Frans wordt de impératif gebruikt om directe bevelen, verzoeken of instructies te geven. Het wordt gevormd door de stam van het werkwoord te gebruiken, zonder het onderwerp. Voor regelmatige werkwoorden op -er laat je de -s weg in de tu-vorm, behalve als het gevolgd wordt door 'en' of 'y'. De impératif heeft drie vormen: tu, nous en vous, die overeenkomen met de tweede persoon enkelvoud, eerste persoon meervoud en tweede persoon meervoud. In tegenstelling tot het Nederlands, waar vaak een infinitief wordt gebruikt voor bevelen, gebruikt het Frans specifieke vormen.",
+  "opbouw": [
+   {
+    "element": "Werkwoordstam",
+    "rol": "De basis van het werkwoord zonder uitgang.",
+    "voorbeeld": "Parler -> Parle!"
+   },
+   {
+    "element": "Tu-vorm",
+    "rol": "Gebruik voor informele bevelen aan één persoon.",
+    "voorbeeld": "Mange!"
+   },
+   {
+    "element": "Nous-vorm",
+    "rol": "Gebruik voor suggesties of bevelen waar de spreker zelf ook deel van uitmaakt.",
+    "voorbeeld": "Allons!"
+   },
+   {
+    "element": "Vous-vorm",
+    "rol": "Gebruik voor formele bevelen of aan meerdere personen.",
+    "voorbeeld": "Écoutez!"
+   },
+   {
+    "element": "Negatie",
+    "rol": "Plaats 'ne' voor en 'pas' na het werkwoord om een negatief bevel te vormen.",
+    "voorbeeld": "Ne parle pas!"
+   }
+  ],
+  "tips": [
+   "Gebruik de tu-vorm zonder -s voor regelmatige -er werkwoorden, tenzij gevolgd door 'en' of 'y'.",
+   "De nous-vorm kan ook gebruikt worden om een suggestie te doen, vergelijkbaar met 'laten we' in het Nederlands.",
+   "Bij onregelmatige werkwoorden kunnen de vormen van de impératif afwijken, zoals bij 'avoir' en 'être'.",
+   "Gebruik de vous-vorm voor beleefde of formele situaties, of wanneer je meerdere mensen aanspreekt."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeet niet de -s weg te laten in de tu-vorm van regelmatige -er werkwoorden. Correct: 'Parle!' Incorrect: 'Parles!'",
+   "Gebruik niet de infinitief voor een bevel. Correct: 'Écoute!' Incorrect: 'Écouter!'",
+   "Vergeet niet de negatie correct te plaatsen. Correct: 'Ne mange pas!' Incorrect: 'Mange pas!'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Va à l'école!",
+    "romaji": "Ga naar school!",
+    "dutch": "Ga naar school!"
+   },
+   {
+    "japanese": "Prenons un café.",
+    "romaji": "Laten we een koffie nemen.",
+    "dutch": "Laten we een koffie nemen."
+   },
+   {
+    "japanese": "Ne touchez pas ça!",
+    "romaji": "Raak dat niet aan!",
+    "dutch": "Raak dat niet aan!"
+   },
+   {
+    "japanese": "Faites attention!",
+    "romaji": "Let op!",
+    "dutch": "Let op!"
+   },
+   {
+    "japanese": "Soyez calmes.",
+    "romaji": "Wees rustig.",
+    "dutch": "Wees rustig."
+   },
+   {
+    "japanese": "N'oublie pas tes clés.",
+    "romaji": "Vergeet je sleutels niet.",
+    "dutch": "Vergeet je sleutels niet."
+   }
+  ]
+ },
+ "fr-a2-adverbes": {
+  "naam": "Adverbes en -ment",
+  "tagline": "Leer hoe je Franse bijwoorden met '-ment' correct gebruikt.",
+  "niveau": "basis",
+  "kernregel": "Bijwoorden in het Frans die eindigen op '-ment' worden vaak gevormd door een bijvoeglijk naamwoord te veranderen. Ze worden gebruikt om werkwoorden, bijvoeglijke naamwoorden of andere bijwoorden nader te specificeren.",
+  "patroon": "[bijvoeglijk naamwoord (vrouwelijk)] + -ment",
+  "uitleg": "In het Frans worden veel bijwoorden gevormd door '-ment' toe te voegen aan het vrouwelijke vorm van een bijvoeglijk naamwoord. Dit is vergelijkbaar met het toevoegen van '-ly' in het Engels. Bijvoorbeeld, van 'heureux' (gelukkig) maak je 'heureusement' (gelukkig, als in 'gelukkig gebeurde het niet'). Als het bijvoeglijk naamwoord eindigt op een klinker, gebruik je de mannelijke vorm. Sommige bijwoorden hebben onregelmatige vormen en volgen deze regel niet.",
+  "opbouw": [
+   {
+    "element": "Bijvoeglijk naamwoord",
+    "rol": "De basisvorm die je nodig hebt om het bijwoord te vormen.",
+    "voorbeeld": "heureux"
+   },
+   {
+    "element": "Vrouwelijke vorm",
+    "rol": "De vrouwelijke vorm van het bijvoeglijk naamwoord, nodig voor de meeste bijwoorden.",
+    "voorbeeld": "heureuse"
+   },
+   {
+    "element": "-ment",
+    "rol": "Het achtervoegsel dat aan de vrouwelijke vorm wordt toegevoegd om het bijwoord te maken.",
+    "voorbeeld": "heureusement"
+   },
+   {
+    "element": "Mannelijke vorm",
+    "rol": "Gebruikt wanneer het bijvoeglijk naamwoord eindigt op een klinker.",
+    "voorbeeld": "poli"
+   },
+   {
+    "element": "Onregelmatige vormen",
+    "rol": "Sommige bijwoorden volgen niet de standaardregel en moeten apart geleerd worden.",
+    "voorbeeld": "gentiment"
+   }
+  ],
+  "tips": [
+   "Controleer altijd of je de vrouwelijke vorm van het bijvoeglijk naamwoord gebruikt voordat je '-ment' toevoegt.",
+   "Als het bijvoeglijk naamwoord eindigt op een klinker, gebruik dan de mannelijke vorm.",
+   "Onthoud dat sommige bijwoorden onregelmatig zijn en niet volgens de standaardregel worden gevormd.",
+   "Gebruik bijwoorden om je zinnen meer detail en precisie te geven."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de mannelijke vorm in plaats van de vrouwelijke vorm bij het toevoegen van '-ment'. Correctie: Gebruik de vrouwelijke vorm, bijvoorbeeld 'heureuse' in plaats van 'heureux'.",
+   "Vergeten dat sommige bijwoorden onregelmatig zijn en niet volgens de standaardregel worden gevormd. Correctie: Leer de onregelmatige vormen apart, zoals 'gentiment'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Il parle lentement.",
+    "romaji": "Il parle lentement.",
+    "dutch": "Hij spreekt langzaam."
+   },
+   {
+    "japanese": "Elle chante merveilleusement.",
+    "romaji": "Elle chante merveilleusement.",
+    "dutch": "Zij zingt prachtig."
+   },
+   {
+    "japanese": "Ils ont agi prudemment.",
+    "romaji": "Ils ont agi prudemment.",
+    "dutch": "Zij hebben voorzichtig gehandeld."
+   },
+   {
+    "japanese": "Nous avons répondu poliment.",
+    "romaji": "Nous avons répondu poliment.",
+    "dutch": "Wij hebben beleefd geantwoord."
+   },
+   {
+    "japanese": "Il a couru rapidement.",
+    "romaji": "Il a couru rapidement.",
+    "dutch": "Hij heeft snel gerend."
+   },
+   {
+    "japanese": "Elle a terminé facilement.",
+    "romaji": "Elle a terminé facilement.",
+    "dutch": "Zij heeft het gemakkelijk afgemaakt."
+   }
+  ]
+ },
+ "fr-a2-devoir": {
+  "naam": "Il faut / Devoir",
+  "tagline": "Essentiële Franse uitdrukkingen voor verplichtingen en noodzaak.",
+  "niveau": "basis",
+  "kernregel": "De uitdrukkingen 'il faut' en 'devoir' worden gebruikt om verplichtingen of noodzakelijkheid uit te drukken. 'Il faut' is onpersoonlijk en algemeen, terwijl 'devoir' persoonlijker is en zich richt op een specifiek onderwerp.",
+  "patroon": "Il faut + infinitief / Devoir + infinitief",
+  "uitleg": "'Il faut' wordt gebruikt om een algemene noodzaak of verplichting uit te drukken. Het is onpersoonlijk en wordt niet aangepast aan een specifiek onderwerp. Bijvoorbeeld, 'Il faut manger pour vivre' betekent 'Men moet eten om te leven'. Aan de andere kant wordt 'devoir' gebruikt met een onderwerp en wordt het vervoegd afhankelijk van dat onderwerp. Bijvoorbeeld, 'Je dois partir' betekent 'Ik moet vertrekken'. In het Nederlands gebruiken we vaak 'moeten' voor beide, maar in het Frans is het belangrijk om te kiezen tussen de algemene 'il faut' en de persoonlijke 'devoir'.",
+  "opbouw": [
+   {
+    "element": "Il faut",
+    "rol": "Drukt een algemene noodzaak uit",
+    "voorbeeld": "Il faut étudier pour réussir."
+   },
+   {
+    "element": "Devoir",
+    "rol": "Drukt een persoonlijke verplichting uit",
+    "voorbeeld": "Tu dois finir tes devoirs."
+   },
+   {
+    "element": "Infinitief",
+    "rol": "Het werkwoord dat volgt na 'il faut' of 'devoir'",
+    "voorbeeld": "Il faut dormir tôt."
+   },
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp dat 'devoir' vervoegt",
+    "voorbeeld": "Nous devons partir maintenant."
+   },
+   {
+    "element": "Vervoeging",
+    "rol": "De aanpassing van 'devoir' aan het onderwerp",
+    "voorbeeld": "Elle doit appeler sa mère."
+   }
+  ],
+  "tips": [
+   "Gebruik 'il faut' voor algemene adviezen of regels.",
+   "Gebruik 'devoir' wanneer je een specifieke persoon of groep aanspreekt.",
+   "Let op de vervoeging van 'devoir' afhankelijk van het onderwerp.",
+   "Gebruik altijd de infinitiefvorm van het werkwoord na 'il faut' en 'devoir'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'il faut' en 'devoir': Gebruik 'il faut' voor algemene situaties en 'devoir' voor persoonlijke verplichtingen.",
+   "Verkeerde vervoeging van 'devoir': Zorg ervoor dat 'devoir' correct wordt vervoegd afhankelijk van het onderwerp.",
+   "Vergeten van de infinitiefvorm: Na 'il faut' en 'devoir' moet altijd een werkwoord in de infinitief staan."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Il faut boire de l'eau chaque jour.",
+    "romaji": "Il fo bwaar duh loh shak zjoer.",
+    "dutch": "Men moet elke dag water drinken."
+   },
+   {
+    "japanese": "Je dois aller au supermarché.",
+    "romaji": "Zhuh dwa ah-ler oh supermar-shee.",
+    "dutch": "Ik moet naar de supermarkt gaan."
+   },
+   {
+    "japanese": "Il faut respecter les règles.",
+    "romaji": "Il fo res-pek-tay lay regluh.",
+    "dutch": "Men moet de regels respecteren."
+   },
+   {
+    "japanese": "Nous devons étudier pour l'examen.",
+    "romaji": "Noo duh-von ay-tu-dyay poor lek-sa-men.",
+    "dutch": "Wij moeten studeren voor het examen."
+   },
+   {
+    "japanese": "Il faut être à l'heure.",
+    "romaji": "Il fo et-ruh ah leur.",
+    "dutch": "Men moet op tijd zijn."
+   },
+   {
+    "japanese": "Elle doit finir son travail avant demain.",
+    "romaji": "El dwa fee-neer son tra-vai ah-von duh-man.",
+    "dutch": "Zij moet haar werk afmaken voor morgen."
+   }
+  ]
+ },
+ "fr-a2-vouloir": {
+  "naam": "Gebruik van 'vouloir' en 'pouvoir'",
+  "tagline": "Leer hoe je wensen en mogelijkheden uitdrukt in het Frans.",
+  "niveau": "basis",
+  "kernregel": "De werkwoorden 'vouloir' en 'pouvoir' worden gebruikt om respectievelijk wensen en mogelijkheden of toestemming uit te drukken. 'Vouloir' betekent 'willen', terwijl 'pouvoir' 'kunnen' of 'mogen' betekent.",
+  "patroon": "[onderwerp] + [vouloir/pouvoir] + [infinitief]",
+  "uitleg": "In het Frans gebruik je 'vouloir' om aan te geven wat je wilt doen, en 'pouvoir' om aan te geven wat je kunt of mag doen. Beide werkwoorden worden gevolgd door een infinitief. In tegenstelling tot het Nederlands, waar je vaak een hulpwerkwoord gebruikt, worden 'vouloir' en 'pouvoir' als zelfstandige werkwoorden gebruikt. Ze worden vervoegd afhankelijk van het onderwerp, en de infinitief blijft onveranderd.",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "Het onderwerp is degene die de actie uitvoert of ervaart.",
+    "voorbeeld": "Je (ik)"
+   },
+   {
+    "element": "vouloir",
+    "rol": "Drukt een wens of verlangen uit.",
+    "voorbeeld": "Je veux (ik wil)"
+   },
+   {
+    "element": "pouvoir",
+    "rol": "Drukt een mogelijkheid of toestemming uit.",
+    "voorbeeld": "Je peux (ik kan/mag)"
+   },
+   {
+    "element": "infinitief",
+    "rol": "Het werkwoord dat de actie beschrijft, blijft in de infinitiefvorm.",
+    "voorbeeld": "manger (eten)"
+   }
+  ],
+  "tips": [
+   "Let op de vervoeging van 'vouloir' en 'pouvoir' in de tegenwoordige tijd.",
+   "Gebruik 'vouloir' om beleefd iets te vragen door 'je voudrais' te gebruiken.",
+   "Gebruik 'pouvoir' om beleefd om toestemming te vragen door 'puis-je' te gebruiken.",
+   "Oefen met verschillende onderwerpen om de vervoegingen van deze werkwoorden te leren."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'vouloir' en 'pouvoir'. Onthoud dat 'vouloir' een wens uitdrukt en 'pouvoir' een mogelijkheid.",
+   "Vergeten de infinitief te gebruiken na 'vouloir' of 'pouvoir'. Zorg ervoor dat het werkwoord na 'vouloir' of 'pouvoir' niet wordt vervoegd."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je veux aller au cinéma.",
+    "romaji": "Zhuh vuh ah-lay oh see-nay-mah.",
+    "dutch": "Ik wil naar de bioscoop gaan."
+   },
+   {
+    "japanese": "Il peut venir avec nous.",
+    "romaji": "Eel puh vuh-neer ah-vek noo.",
+    "dutch": "Hij kan met ons meekomen."
+   },
+   {
+    "japanese": "Nous voulons manger maintenant.",
+    "romaji": "Noo voo-lon mahn-zhay mahn-tuh-nahn.",
+    "dutch": "Wij willen nu eten."
+   },
+   {
+    "japanese": "Vous pouvez utiliser mon téléphone.",
+    "romaji": "Voo poo-vay yoo-tee-lee-zay mon tay-lay-fon.",
+    "dutch": "U kunt mijn telefoon gebruiken."
+   },
+   {
+    "japanese": "Elle veut apprendre le français.",
+    "romaji": "El vuh ah-pron-druh luh frahn-say.",
+    "dutch": "Zij wil Frans leren."
+   },
+   {
+    "japanese": "Puis-je ouvrir la fenêtre?",
+    "romaji": "Pwee zhuh oo-vreer lah fuh-netr?",
+    "dutch": "Mag ik het raam openen?"
+   }
+  ]
+ },
+ "fr-a2-yen": {
+  "naam": "Gebruik van 'y' en 'en' in het Frans",
+  "tagline": "Leer hoe je 'y' en 'en' effectief gebruikt in Franse zinnen.",
+  "niveau": "gemiddeld",
+  "kernregel": "'Y' en 'en' zijn voornaamwoordelijke bijwoorden die worden gebruikt om plaats, hoeveelheid of objecten te vervangen. Ze helpen om herhaling te vermijden en maken zinnen vloeiender en beknopter.",
+  "patroon": "[Onderwerp] + [werkwoord] + [y/en]",
+  "uitleg": "In het Frans worden 'y' en 'en' gebruikt om bepaalde zinsdelen te vervangen. 'Y' vervangt een plaats of een ding dat wordt geïntroduceerd door een voorzetsel zoals 'à', 'chez', 'dans', 'en', of 'sur'. Bijvoorbeeld, in de zin 'Je vais à Paris', kan 'à Paris' worden vervangen door 'y': 'J'y vais'. 'En' vervangt een hoeveelheid of een ding dat wordt geïntroduceerd door 'de', zoals in 'Je veux du pain', waar 'du pain' wordt vervangen door 'en': 'J'en veux'. Beide woorden worden vóór het werkwoord geplaatst, behalve in de gebiedende wijs waar ze erachter komen.",
+  "opbouw": [
+   {
+    "element": "y",
+    "rol": "Vervangt plaats of ding met voorzetsel",
+    "voorbeeld": "Il pense à son travail -> Il y pense."
+   },
+   {
+    "element": "en",
+    "rol": "Vervangt hoeveelheid of ding met 'de'",
+    "voorbeeld": "Elle parle de ses vacances -> Elle en parle."
+   },
+   {
+    "element": "plaatsing",
+    "rol": "Voor het werkwoord",
+    "voorbeeld": "Nous y allons."
+   },
+   {
+    "element": "gebiedende wijs",
+    "rol": "Na het werkwoord",
+    "voorbeeld": "Vas-y!"
+   },
+   {
+    "element": "negatie",
+    "rol": "Tussen 'ne' en werkwoord",
+    "voorbeeld": "Je n'en veux pas."
+   }
+  ],
+  "tips": [
+   "Gebruik 'y' om te verwijzen naar plaatsen of dingen met 'à'.",
+   "Gebruik 'en' om te verwijzen naar hoeveelheden of dingen met 'de'.",
+   "In de gebiedende wijs komen 'y' en 'en' na het werkwoord met een koppelteken.",
+   "Bij negatie staan 'y' en 'en' tussen 'ne' en het werkwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'y' en 'en': 'J'y veux' (fout) -> 'J'en veux' (correct).",
+   "Verkeerde plaatsing: 'Je veux en' (fout) -> 'J'en veux' (correct)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Il va à la banque. -> Il y va.",
+    "romaji": "Il va à la banque. -> Il y va.",
+    "dutch": "Hij gaat naar de bank. -> Hij gaat erheen."
+   },
+   {
+    "japanese": "Nous avons des pommes. -> Nous en avons.",
+    "romaji": "Nous avons des pommes. -> Nous en avons.",
+    "dutch": "We hebben appels. -> We hebben er."
+   },
+   {
+    "japanese": "Elle pense à son avenir. -> Elle y pense.",
+    "romaji": "Elle pense à son avenir. -> Elle y pense.",
+    "dutch": "Ze denkt aan haar toekomst. -> Ze denkt eraan."
+   },
+   {
+    "japanese": "Tu veux du café? -> Tu en veux?",
+    "romaji": "Tu veux du café? -> Tu en veux?",
+    "dutch": "Wil je koffie? -> Wil je ervan?"
+   },
+   {
+    "japanese": "Ils parlent de leurs projets. -> Ils en parlent.",
+    "romaji": "Ils parlent de leurs projets. -> Ils en parlent.",
+    "dutch": "Ze praten over hun plannen. -> Ze praten erover."
+   },
+   {
+    "japanese": "Je vais chez Paul. -> J'y vais.",
+    "romaji": "Je vais chez Paul. -> J'y vais.",
+    "dutch": "Ik ga naar Paul. -> Ik ga erheen."
+   }
+  ]
+ },
+ "fr-b1-conditionnel": {
+  "naam": "Conditionnel",
+  "tagline": "Leer hoe je beleefdheid en hypothetische situaties uitdrukt in het Frans.",
+  "niveau": "gemiddeld",
+  "kernregel": "De conditionnel wordt gebruikt om beleefdheid uit te drukken, wensen te formuleren of hypothetische situaties te beschrijven. Het is vergelijkbaar met het gebruik van 'zou' in het Nederlands.",
+  "patroon": "Stam van de futur simple + uitgangen van de imparfait",
+  "uitleg": "De conditionnel in het Frans wordt gevormd door de stam van de futur simple te nemen en daar de uitgangen van de imparfait aan toe te voegen. Dit maakt het mogelijk om hypothetische situaties, beleefde verzoeken of wensen uit te drukken. In het Nederlands gebruiken we vaak 'zou' om deze betekenis over te brengen. Bijvoorbeeld, 'ik zou graag willen' vertaalt naar 'je voudrais'. De conditionnel kan ook gebruikt worden in samengestelde zinnen om voorwaarden aan te geven, vergelijkbaar met 'als... dan...' constructies in het Nederlands.",
+  "opbouw": [
+   {
+    "element": "Stam van de futur simple",
+    "rol": "Basis van het werkwoord in de conditionnel",
+    "voorbeeld": "parler -> parler-"
+   },
+   {
+    "element": "Uitgangen van de imparfait",
+    "rol": "Toevoegingen aan de stam om de conditionnel te vormen",
+    "voorbeeld": "-ais, -ais, -ait, -ions, -iez, -aient"
+   },
+   {
+    "element": "Eerste persoon enkelvoud",
+    "rol": "Ik-vorm in de conditionnel",
+    "voorbeeld": "je parlerais"
+   },
+   {
+    "element": "Derde persoon enkelvoud",
+    "rol": "Hij/zij-vorm in de conditionnel",
+    "voorbeeld": "il/elle parlerait"
+   },
+   {
+    "element": "Eerste persoon meervoud",
+    "rol": "Wij-vorm in de conditionnel",
+    "voorbeeld": "nous parlerions"
+   }
+  ],
+  "tips": [
+   "Gebruik de conditionnel om beleefdheid uit te drukken in verzoeken, zoals 'je voudrais' voor 'ik zou graag willen'.",
+   "Onthoud dat de stam van de futur simple vaak de infinitief is, maar let op onregelmatige werkwoorden.",
+   "Gebruik de conditionnel in combinatie met de imparfait in voorwaardelijke zinnen, bijvoorbeeld 'si j'avais de l'argent, je voyagerais'.",
+   "Let op de uitspraak van de conditionnel, die vaak lijkt op de imparfait, maar de context maakt het verschil duidelijk."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen de conditionnel en de futur simple. Correctie: Gebruik de juiste uitgangen voor de conditionnel (-ais, -ais, -ait, -ions, -iez, -aient).",
+   "Verkeerde stam gebruiken voor onregelmatige werkwoorden. Correctie: Controleer de stam van de futur simple voor onregelmatige werkwoorden.",
+   "Conditionnel gebruiken zonder context van beleefdheid of hypothetische situatie. Correctie: Zorg ervoor dat de context de gebruik van de conditionnel rechtvaardigt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je mangerais une pomme si j'avais faim.",
+    "romaji": "Je mangerais une pomme si j'avais faim.",
+    "dutch": "Ik zou een appel eten als ik honger had."
+   },
+   {
+    "japanese": "Nous irions à la plage s'il faisait beau.",
+    "romaji": "Nous irions à la plage s'il faisait beau.",
+    "dutch": "We zouden naar het strand gaan als het mooi weer was."
+   },
+   {
+    "japanese": "Elle aimerait visiter Paris un jour.",
+    "romaji": "Elle aimerait visiter Paris un jour.",
+    "dutch": "Zij zou graag op een dag Parijs willen bezoeken."
+   },
+   {
+    "japanese": "Vous pourriez m'aider, s'il vous plaît?",
+    "romaji": "Vous pourriez m'aider, s'il vous plaît?",
+    "dutch": "Zou u mij kunnen helpen, alstublieft?"
+   },
+   {
+    "japanese": "Ils devraient étudier plus pour réussir.",
+    "romaji": "Ils devraient étudier plus pour réussir.",
+    "dutch": "Zij zouden meer moeten studeren om te slagen."
+   },
+   {
+    "japanese": "Si tu étais là, je serais heureux.",
+    "romaji": "Si tu étais là, je serais heureux.",
+    "dutch": "Als je hier was, zou ik gelukkig zijn."
+   }
+  ]
+ },
+ "fr-b1-subjonctif": {
+  "naam": "Subjonctif Présent",
+  "tagline": "Beheers de nuances van het subjonctief in het Frans!",
+  "niveau": "gemiddeld",
+  "kernregel": "Het subjonctif présent wordt gebruikt om twijfel, wens, mogelijkheid, noodzaak of emotie uit te drukken. Het komt vaak voor in bijzinnen die beginnen met 'que'.",
+  "patroon": "que + onderwerp + werkwoord in subjonctif présent",
+  "uitleg": "Het subjonctif présent is een werkwoordstijd die in het Frans wordt gebruikt om subjectieve of hypothetische situaties uit te drukken. In tegenstelling tot het Nederlands, waar we vaak de indicatief gebruiken, vereist het Frans het subjonctief in bepaalde contexten, zoals na uitdrukkingen van twijfel, wens, of noodzaak. Het subjonctif wordt vaak geïntroduceerd door 'que', en de werkwoordsvormen verschillen van de indicatief. Het is belangrijk om de juiste context te herkennen waarin het subjonctif gebruikt moet worden, aangezien dit de betekenis van de zin kan veranderen.",
+  "opbouw": [
+   {
+    "element": "que",
+    "rol": "Inleidend voegwoord dat de bijzin introduceert.",
+    "voorbeeld": "Il faut que tu viennes."
+   },
+   {
+    "element": "onderwerp",
+    "rol": "Het onderwerp van de bijzin, vaak verschillend van het hoofdzinonderwerp.",
+    "voorbeeld": "Je veux que tu réussisses."
+   },
+   {
+    "element": "werkwoord in subjonctif",
+    "rol": "Het werkwoord dat de actie of toestand in de bijzin uitdrukt.",
+    "voorbeeld": "Il est important que nous finissions."
+   },
+   {
+    "element": "uitdrukking van wens of noodzaak",
+    "rol": "De hoofdzin die het gebruik van het subjonctif vereist.",
+    "voorbeeld": "Je souhaite que vous soyez heureux."
+   },
+   {
+    "element": "emotie of twijfel",
+    "rol": "Een reden om het subjonctif te gebruiken, zoals in 'Je crains qu'il ne pleuve.'",
+    "voorbeeld": "Je doute qu'il vienne."
+   }
+  ],
+  "tips": [
+   "Leer de onregelmatige vormen van het subjonctif, zoals 'être' en 'avoir', uit je hoofd.",
+   "Let op de context: het subjonctif wordt vaak gebruikt na uitdrukkingen van twijfel, wens, of noodzaak.",
+   "Oefen met het herkennen van zinnen die beginnen met 'que', omdat deze vaak het subjonctif vereisen.",
+   "Gebruik het subjonctif niet in situaties van zekerheid of feiten; daar gebruik je de indicatief."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de indicatief met het subjonctif: 'Je pense qu'il vient' (indicatief) in plaats van 'Je ne pense pas qu'il vienne' (subjonctif).",
+   "Het niet gebruiken van 'que' om de subjonctif bijzin in te leiden: 'Il faut tu viennes' in plaats van 'Il faut que tu viennes'.",
+   "Onjuiste vervoeging van onregelmatige werkwoorden: 'Il est important que tu es là' in plaats van 'Il est important que tu sois là'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Il est nécessaire que tu fasses tes devoirs.",
+    "romaji": "Il est nécessaire que tu fasses tes devoirs.",
+    "dutch": "Het is noodzakelijk dat je je huiswerk maakt."
+   },
+   {
+    "japanese": "Je veux que tu saches la vérité.",
+    "romaji": "Je veux que tu saches la vérité.",
+    "dutch": "Ik wil dat je de waarheid weet."
+   },
+   {
+    "japanese": "Il est possible qu'il pleuve demain.",
+    "romaji": "Il est possible qu'il pleuve demain.",
+    "dutch": "Het is mogelijk dat het morgen regent."
+   },
+   {
+    "japanese": "Je crains qu'elle ne parte bientôt.",
+    "romaji": "Je crains qu'elle ne parte bientôt.",
+    "dutch": "Ik vrees dat ze binnenkort vertrekt."
+   },
+   {
+    "japanese": "Bien que tu sois fatigué, tu dois continuer.",
+    "romaji": "Bien que tu sois fatigué, tu dois continuer.",
+    "dutch": "Hoewel je moe bent, moet je doorgaan."
+   },
+   {
+    "japanese": "Il est important que nous soyons à l'heure.",
+    "romaji": "Il est important que nous soyons à l'heure.",
+    "dutch": "Het is belangrijk dat we op tijd zijn."
+   }
+  ]
+ },
+ "fr-b1-si": {
+  "naam": "Phrases avec 'si'",
+  "tagline": "Leren hoe je voorwaardelijke zinnen in het Frans vormt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Voorwaardelijke zinnen met 'si' worden gebruikt om situaties te beschrijven die afhankelijk zijn van een bepaalde voorwaarde. Ze kunnen verschillende tijden en wijzen gebruiken, afhankelijk van de waarschijnlijkheid van de voorwaarde.",
+  "patroon": "Si + [présent/impératif/imparfait/plus-que-parfait], [futur simple/conditionnel présent/conditionnel passé].",
+  "uitleg": "In het Frans worden voorwaardelijke zinnen vaak gevormd met 'si', wat 'als' betekent. De keuze van de werkwoordstijd na 'si' hangt af van de waarschijnlijkheid van de voorwaarde. Als de voorwaarde waarschijnlijk is, gebruik je de tegenwoordige tijd na 'si' en de toekomende tijd in de hoofdzin. Voor minder waarschijnlijke voorwaarden gebruik je de imparfait na 'si' en de conditionnel présent in de hoofdzin. Voor onmogelijke voorwaarden (in het verleden) gebruik je de plus-que-parfait na 'si' en de conditionnel passé in de hoofdzin. Dit patroon helpt om verschillende niveaus van waarschijnlijkheid en tijd te communiceren.",
+  "opbouw": [
+   {
+    "element": "Si",
+    "rol": "Inleidend woord dat de voorwaardelijke zin introduceert.",
+    "voorbeeld": "Si tu viens, nous partirons ensemble."
+   },
+   {
+    "element": "Présent",
+    "rol": "Wordt gebruikt na 'si' voor waarschijnlijke voorwaarden.",
+    "voorbeeld": "Si tu veux, je peux t'aider."
+   },
+   {
+    "element": "Imparfait",
+    "rol": "Wordt gebruikt na 'si' voor minder waarschijnlijke voorwaarden.",
+    "voorbeeld": "Si j'avais de l'argent, je voyagerais."
+   },
+   {
+    "element": "Plus-que-parfait",
+    "rol": "Wordt gebruikt na 'si' voor onmogelijke voorwaarden in het verleden.",
+    "voorbeeld": "Si j'avais su, je serais venu."
+   },
+   {
+    "element": "Futur simple/Conditionnel",
+    "rol": "Wordt gebruikt in de hoofdzin om de uitkomst van de voorwaarde te beschrijven.",
+    "voorbeeld": "Si tu étudies, tu réussiras."
+   }
+  ],
+  "tips": [
+   "Gebruik de tegenwoordige tijd na 'si' voor voorwaarden die waarschijnlijk zijn.",
+   "Gebruik de imparfait na 'si' voor hypothetische situaties die minder waarschijnlijk zijn.",
+   "Gebruik de plus-que-parfait na 'si' voor situaties die in het verleden niet zijn gebeurd.",
+   "Vermijd het gebruik van de futur simple direct na 'si'."
+  ],
+  "veelgemaaktefouten": [
+   "Gebruik van futur simple na 'si': Correctie: Gebruik de tegenwoordige tijd na 'si'.",
+   "Verwarring tussen conditionnel présent en conditionnel passé: Correctie: Gebruik conditionnel présent voor huidige hypothetische situaties en conditionnel passé voor verleden situaties.",
+   "Verkeerde tijd in de hoofdzin: Correctie: Zorg ervoor dat de tijd in de hoofdzin overeenkomt met de tijd van de voorwaarde."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Si tu étudies, tu réussiras.",
+    "romaji": "Si tu étudies, tu réussiras.",
+    "dutch": "Als je studeert, zul je slagen."
+   },
+   {
+    "japanese": "Si j'avais su, je serais venu.",
+    "romaji": "Si j'avais su, je serais venu.",
+    "dutch": "Als ik het had geweten, was ik gekomen."
+   },
+   {
+    "japanese": "Si elle avait le temps, elle voyagerait.",
+    "romaji": "Si elle avait le temps, elle voyagerait.",
+    "dutch": "Als ze tijd had, zou ze reizen."
+   },
+   {
+    "japanese": "Si nous avions pris le train, nous serions arrivés à l'heure.",
+    "romaji": "Si nous avions pris le train, nous serions arrivés à l'heure.",
+    "dutch": "Als we de trein hadden genomen, waren we op tijd aangekomen."
+   },
+   {
+    "japanese": "Si je gagne à la loterie, j'achèterai une maison.",
+    "romaji": "Si je gagne à la loterie, j'achèterai une maison.",
+    "dutch": "Als ik de loterij win, koop ik een huis."
+   },
+   {
+    "japanese": "Si tu m'avais appelé, je t'aurais aidé.",
+    "romaji": "Si tu m'avais appelé, je t'aurais aidé.",
+    "dutch": "Als je me had gebeld, had ik je geholpen."
+   }
+  ]
+ },
+ "fr-b1-pqp": {
+  "naam": "Plus-que-parfait",
+  "tagline": "Beheers de kunst van het vertellen over het verleden van het verleden.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het plus-que-parfait wordt gebruikt om een handeling of toestand in het verleden aan te geven die voorafgaat aan een andere handeling of toestand in het verleden. Het is vergelijkbaar met de Nederlandse verleden voltooide tijd.",
+  "patroon": "sujet + auxiliaire à l'imparfait + participe passé",
+  "uitleg": "Het plus-que-parfait wordt gevormd door de imparfait van het hulpwerkwoord 'avoir' of 'être' te combineren met het voltooid deelwoord van het hoofdwerkwoord. Dit patroon wordt gebruikt om aan te geven dat een actie al was voltooid voordat een andere actie in het verleden plaatsvond. In het Nederlands gebruiken we vaak de verleden voltooide tijd om hetzelfde concept uit te drukken, zoals in 'ik had gegeten voordat hij aankwam'. Het is belangrijk om te weten welk hulpwerkwoord je moet gebruiken: 'être' wordt gebruikt met werkwoorden van beweging en reflexieve werkwoorden, terwijl 'avoir' met de meeste andere werkwoorden wordt gebruikt.",
+  "opbouw": [
+   {
+    "element": "sujet",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "Je (ik)"
+   },
+   {
+    "element": "auxiliaire à l'imparfait",
+    "rol": "Het hulpwerkwoord in de imparfait, 'avoir' of 'être'.",
+    "voorbeeld": "avais (had)"
+   },
+   {
+    "element": "participe passé",
+    "rol": "Het voltooid deelwoord van het hoofdwerkwoord.",
+    "voorbeeld": "mangé (gegeten)"
+   },
+   {
+    "element": "accord du participe passé",
+    "rol": "Overeenkomst van het voltooid deelwoord met het onderwerp als 'être' wordt gebruikt.",
+    "voorbeeld": "allée (gegaan, vrouwelijk enkelvoud)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'être' als hulpwerkwoord voor reflexieve werkwoorden en werkwoorden van beweging.",
+   "Zorg ervoor dat het voltooid deelwoord overeenkomt met het onderwerp als je 'être' gebruikt.",
+   "Oefen met het herkennen van de imparfait-vormen van 'avoir' en 'être'.",
+   "Gebruik het plus-que-parfait om duidelijk te maken dat een actie al was voltooid voordat een andere plaatsvond."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd hulpwerkwoord gebruiken: 'J'avais allé' moet zijn 'J'étais allé'.",
+   "Geen overeenkomst van het voltooid deelwoord: 'Elle était allé' moet zijn 'Elle était allée'.",
+   "Verwarring met de passé composé: 'J'ai mangé avant qu'il arrive' moet zijn 'J'avais mangé avant qu'il arrive'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "J'avais déjà fini mes devoirs quand il est arrivé.",
+    "romaji": "J'avais déjà fini mes devoirs quand il est arrivé.",
+    "dutch": "Ik had mijn huiswerk al af toen hij aankwam."
+   },
+   {
+    "japanese": "Elle était partie avant que je me réveille.",
+    "romaji": "Elle était partie avant que je me réveille.",
+    "dutch": "Zij was vertrokken voordat ik wakker werd."
+   },
+   {
+    "japanese": "Nous avions vu ce film avant de lire le livre.",
+    "romaji": "Nous avions vu ce film avant de lire le livre.",
+    "dutch": "Wij hadden de film gezien voordat we het boek lazen."
+   },
+   {
+    "japanese": "Ils avaient déjà pris leur petit déjeuner quand je suis arrivé.",
+    "romaji": "Ils avaient déjà pris leur petit déjeuner quand je suis arrivé.",
+    "dutch": "Zij hadden al ontbeten toen ik aankwam."
+   },
+   {
+    "japanese": "Tu avais dit que tu viendrais.",
+    "romaji": "Tu avais dit que tu viendrais.",
+    "dutch": "Jij had gezegd dat je zou komen."
+   },
+   {
+    "japanese": "Nous étions rentrés avant la pluie.",
+    "romaji": "Nous étions rentrés avant la pluie.",
+    "dutch": "Wij waren teruggekeerd voor de regen."
+   }
+  ]
+ },
+ "fr-b1-relatifs": {
+  "naam": "Pronoms Relatifs",
+  "tagline": "Verbind zinnen en voeg informatie toe met relatieve voornaamwoorden.",
+  "niveau": "gemiddeld",
+  "kernregel": "Pronoms relatifs worden gebruikt om twee zinnen te verbinden door een gemeenschappelijk element te benadrukken. Ze voegen extra informatie toe zonder de noodzaak van een nieuwe zin.",
+  "patroon": "qui, que, où, dont, lequel",
+  "uitleg": "In het Frans worden relatieve voornaamwoorden gebruikt om zinnen te verbinden en extra informatie te geven over een zelfstandig naamwoord. 'Qui' wordt gebruikt als het onderwerp van de bijzin, terwijl 'que' als lijdend voorwerp fungeert. 'Où' verwijst naar plaatsen of tijden. 'Dont' wordt gebruikt om bezit of een relatie aan te duiden, vaak vertaald als 'waarvan' of 'wiens'. 'Lequel' en zijn varianten worden gebruikt na voorzetsels om naar dingen te verwijzen. Deze voornaamwoorden helpen om zinnen vloeiend en informatief te maken, vergelijkbaar met het gebruik van 'die', 'dat', 'waar', 'waarvan' in het Nederlands.",
+  "opbouw": [
+   {
+    "element": "qui",
+    "rol": "Onderwerp van de bijzin",
+    "voorbeeld": "C'est l'homme qui parle."
+   },
+   {
+    "element": "que",
+    "rol": "Lijdend voorwerp van de bijzin",
+    "voorbeeld": "C'est le livre que j'ai lu."
+   },
+   {
+    "element": "où",
+    "rol": "Verwijst naar een plaats of tijd",
+    "voorbeeld": "C'est la ville où je suis né."
+   },
+   {
+    "element": "dont",
+    "rol": "Verwijst naar bezit of een relatie",
+    "voorbeeld": "C'est la femme dont je parle."
+   },
+   {
+    "element": "lequel",
+    "rol": "Verwijst naar dingen na een voorzetsel",
+    "voorbeeld": "C'est le stylo avec lequel j'écris."
+   }
+  ],
+  "tips": [
+   "Gebruik 'qui' wanneer het relatieve voornaamwoord het onderwerp van de bijzin is.",
+   "Gebruik 'que' wanneer het relatieve voornaamwoord het lijdend voorwerp van de bijzin is.",
+   "Gebruik 'dont' om relaties of bezit aan te duiden, vooral na werkwoorden die 'de' vereisen.",
+   "Vergeet niet de juiste vorm van 'lequel' te gebruiken afhankelijk van het geslacht en aantal van het zelfstandig naamwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'qui' en 'que': 'C'est le livre qui j'ai lu' moet zijn 'C'est le livre que j'ai lu'.",
+   "Verkeerd gebruik van 'dont': 'C'est l'homme que je parle' moet zijn 'C'est l'homme dont je parle'.",
+   "Verkeerde vorm van 'lequel': 'C'est la chaise lequel je m'assois' moet zijn 'C'est la chaise sur laquelle je m'assois'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "C'est la maison où j'ai grandi.",
+    "romaji": "Se la mezon u zje grandi.",
+    "dutch": "Dat is het huis waar ik ben opgegroeid."
+   },
+   {
+    "japanese": "Il a un frère qui est médecin.",
+    "romaji": "Il a œ frèr ki e medesin.",
+    "dutch": "Hij heeft een broer die arts is."
+   },
+   {
+    "japanese": "Voici le film que j'adore.",
+    "romaji": "Vwasi le film ke zjadòr.",
+    "dutch": "Hier is de film waar ik van hou."
+   },
+   {
+    "japanese": "C'est le projet dont je suis fier.",
+    "romaji": "Se le prozje dõ zje sui fier.",
+    "dutch": "Dat is het project waar ik trots op ben."
+   },
+   {
+    "japanese": "Les livres dont tu parles sont intéressants.",
+    "romaji": "Le livr dõ tü parl sõt ẽteresã.",
+    "dutch": "De boeken waar je over praat zijn interessant."
+   },
+   {
+    "japanese": "L'année où nous nous sommes rencontrés était spéciale.",
+    "romaji": "L'ané u nu nu som rãkõtre eté spesial.",
+    "dutch": "Het jaar waarin we elkaar ontmoetten was speciaal."
+   }
+  ]
+ },
+ "fr-b1-indirect": {
+  "naam": "Discours Indirect",
+  "tagline": "Leer hoe je indirecte rede in het Frans gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het discours indirect wordt gebruikt om iemands woorden of gedachten weer te geven zonder ze letterlijk te citeren. Het is handig voor het rapporteren van gesprekken en het vertellen van verhalen.",
+  "patroon": "sujet + verbe introducteur + que + proposition subordonnée",
+  "uitleg": "In het Frans wordt het discours indirect gebruikt om indirecte rede uit te drukken, waarbij de woorden van een spreker worden overgebracht zonder directe citaten. Dit patroon vereist vaak aanpassingen in de werkwoordstijden, voornaamwoorden en andere elementen van de zin. Bijvoorbeeld, als de hoofdzin in de verleden tijd staat, verschuiven de werkwoordstijden in de bijzin meestal naar het verleden. Het gebruik van 'que' is essentieel om de hoofdzin en de bijzin te verbinden. In tegenstelling tot het Nederlands, waar de structuur vaak direct kan worden overgenomen, vereist het Frans meer aanpassingen om de tijd en perspectief correct weer te geven.",
+  "opbouw": [
+   {
+    "element": "sujet",
+    "rol": "Het onderwerp van de hoofdzin, degene die de woorden rapporteert.",
+    "voorbeeld": "Il"
+   },
+   {
+    "element": "verbe introducteur",
+    "rol": "Het werkwoord dat de indirecte rede inleidt, zoals 'dire', 'penser', 'croire'.",
+    "voorbeeld": "a dit"
+   },
+   {
+    "element": "que",
+    "rol": "Een voegwoord dat de hoofdzin met de bijzin verbindt.",
+    "voorbeeld": "que"
+   },
+   {
+    "element": "proposition subordonnée",
+    "rol": "De bijzin die de gerapporteerde woorden of gedachten bevat.",
+    "voorbeeld": "il viendrait demain"
+   }
+  ],
+  "tips": [
+   "Let op de tijdverschuivingen: als de hoofdzin in de verleden tijd staat, verschuift de tijd in de bijzin vaak naar het verleden.",
+   "Gebruik 'que' om de hoofdzin en de bijzin te verbinden.",
+   "Pas voornaamwoorden aan om de perspectiefverandering weer te geven.",
+   "Let op de context om te bepalen welke tijdsvorm in de bijzin nodig is."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten van de tijdverschuiving: 'Il a dit qu'il vient demain' moet zijn 'Il a dit qu'il viendrait demain'.",
+   "Het weglaten van 'que': 'Il a dit il viendrait demain' moet zijn 'Il a dit qu'il viendrait demain'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Il a dit qu'il était fatigué.",
+    "romaji": "Il a dit keel etay fatigue.",
+    "dutch": "Hij zei dat hij moe was."
+   },
+   {
+    "japanese": "Elle a pensé que tu viendrais.",
+    "romaji": "Elle a pensee ke tu viendray.",
+    "dutch": "Ze dacht dat je zou komen."
+   },
+   {
+    "japanese": "Nous croyons qu'il a raison.",
+    "romaji": "Nous croyons keel a rayzon.",
+    "dutch": "Wij denken dat hij gelijk heeft."
+   },
+   {
+    "japanese": "Ils ont annoncé qu'ils partiraient bientôt.",
+    "romaji": "Ils ont annonce keel partirey byento.",
+    "dutch": "Ze kondigden aan dat ze binnenkort zouden vertrekken."
+   },
+   {
+    "japanese": "Je savais qu'elle avait un secret.",
+    "romaji": "Je savais kel avay un secret.",
+    "dutch": "Ik wist dat ze een geheim had."
+   },
+   {
+    "japanese": "Tu as dit que tu ferais les courses.",
+    "romaji": "Tu as dit ke tu feray les courses.",
+    "dutch": "Je zei dat je boodschappen zou doen."
+   }
+  ]
+ },
+ "fr-b1-gerondif": {
+  "naam": "Gérondif in het Frans",
+  "tagline": "Begrijp het gebruik en de vorming van het gérondif in het Frans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het gérondif wordt gebruikt om gelijktijdigheid of oorzaak aan te geven. Het wordt gevormd door 'en' te combineren met het participe présent van een werkwoord.",
+  "patroon": "en + participe présent",
+  "uitleg": "Het gérondif in het Frans wordt gebruikt om aan te geven dat twee acties tegelijkertijd plaatsvinden of om de oorzaak van een actie te verduidelijken. Het is vergelijkbaar met het gebruik van 'door te' of 'terwijl' in het Nederlands. Het gérondif wordt gevormd door 'en' te combineren met het participe présent van een werkwoord. Het participe présent wordt gevormd door de stam van de nous-vorm van de tegenwoordige tijd te nemen en '-ant' toe te voegen. Het gérondif kan niet worden gebruikt als het onderwerp van de zin verschilt van het onderwerp van de hoofdzin.",
+  "opbouw": [
+   {
+    "element": "en",
+    "rol": "Geeft aan dat het om een gérondif gaat.",
+    "voorbeeld": "en parlant"
+   },
+   {
+    "element": "participe présent",
+    "rol": "Geeft de actie aan die gelijktijdig of als oorzaak plaatsvindt.",
+    "voorbeeld": "parlant"
+   },
+   {
+    "element": "stam van nous-vorm",
+    "rol": "Basis voor het vormen van het participe présent.",
+    "voorbeeld": "parl-"
+   },
+   {
+    "element": "-ant",
+    "rol": "Uitgang die aan de stam wordt toegevoegd om het participe présent te vormen.",
+    "voorbeeld": "parlant"
+   }
+  ],
+  "tips": [
+   "Gebruik het gérondif om gelijktijdige acties aan te geven.",
+   "Gebruik het gérondif om een oorzaak aan te geven.",
+   "Zorg ervoor dat het onderwerp van het gérondif hetzelfde is als dat van de hoofdzin.",
+   "Let op de juiste vorming van het participe présent."
+  ],
+  "veelgemaaktefouten": [
+   "Het gérondif gebruiken met een ander onderwerp dan de hoofdzin. Correctie: Zorg ervoor dat het onderwerp hetzelfde is.",
+   "Verkeerde vorming van het participe présent. Correctie: Gebruik de stam van de nous-vorm en voeg '-ant' toe.",
+   "Verwarring tussen gérondif en infinitief. Correctie: Gebruik 'en' + participe présent voor het gérondif."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "En mangeant, il lit le journal.",
+    "romaji": "Ahn mahn-zhahn, il leet luh zjoor-nahl.",
+    "dutch": "Terwijl hij eet, leest hij de krant."
+   },
+   {
+    "japanese": "Elle a appris le français en vivant à Paris.",
+    "romaji": "El ah ah-pree luh frahn-sè ahn vee-vahn ah Pah-ree.",
+    "dutch": "Ze leerde Frans door in Parijs te wonen."
+   },
+   {
+    "japanese": "En écoutant de la musique, je me détends.",
+    "romaji": "Ahn ay-koo-tahn duh lah myu-zeek, zhuh muh day-tahn.",
+    "dutch": "Door naar muziek te luisteren, ontspan ik me."
+   },
+   {
+    "japanese": "Il a trouvé la solution en réfléchissant longtemps.",
+    "romaji": "Il ah troo-vay lah soh-loo-syon ahn ray-flay-shee-sahn lohn-tahn.",
+    "dutch": "Hij vond de oplossing door lang na te denken."
+   },
+   {
+    "japanese": "En travaillant dur, elle a réussi.",
+    "romaji": "Ahn tra-vah-yahn duur, el ah ray-oo-see.",
+    "dutch": "Door hard te werken, is ze geslaagd."
+   },
+   {
+    "japanese": "Ils ont résolu le problème en discutant.",
+    "romaji": "Ilz ohn ray-zo-loo luh proh-blem ahn dee-skuu-tahn.",
+    "dutch": "Ze losten het probleem op door te discussiëren."
+   }
+  ]
+ },
+ "fr-b1-futant": {
+  "naam": "Futur Antérieur",
+  "tagline": "De tijd van toekomstige voltooiing",
+  "niveau": "gevorderd",
+  "kernregel": "De futur antérieur wordt gebruikt om een actie in de toekomst te beschrijven die voltooid zal zijn vóór een andere toekomstige actie of tijdstip. Het benadrukt de voltooiing van een handeling in de toekomst.",
+  "patroon": "sujet + auxiliaire (être/avoir) au futur simple + participe passé",
+  "uitleg": "De futur antérieur is een samengestelde tijd die in het Frans wordt gebruikt om aan te geven dat een bepaalde actie in de toekomst voltooid zal zijn voordat een andere toekomstige actie plaatsvindt. Het is vergelijkbaar met de Nederlandse constructie 'zal hebben gedaan'. De futur antérieur wordt gevormd door het hulpwerkwoord 'être' of 'avoir' in de futur simple te combineren met het voltooid deelwoord van het hoofdwerkwoord. Welke van de twee hulpwerkwoorden je gebruikt, hangt af van het hoofdwerkwoord, net zoals in de passé composé. Het gebruik van de futur antérieur geeft vaak een gevoel van zekerheid of verwachting over de voltooiing van de actie.",
+  "opbouw": [
+   {
+    "element": "sujet",
+    "rol": "Het onderwerp van de zin, dat de handeling uitvoert.",
+    "voorbeeld": "Je (ik)"
+   },
+   {
+    "element": "auxiliaire au futur simple",
+    "rol": "Het hulpwerkwoord 'être' of 'avoir' in de toekomende tijd.",
+    "voorbeeld": "aurai (zal hebben)"
+   },
+   {
+    "element": "participe passé",
+    "rol": "Het voltooid deelwoord van het hoofdwerkwoord.",
+    "voorbeeld": "fini (afgemaakt)"
+   },
+   {
+    "element": "être/avoir",
+    "rol": "Keuze van het hulpwerkwoord afhankelijk van het hoofdwerkwoord.",
+    "voorbeeld": "serai parti (zal vertrokken zijn)"
+   },
+   {
+    "element": "concordance des temps",
+    "rol": "De tijdsrelatie tussen de futur antérieur en een andere toekomstige tijd.",
+    "voorbeeld": "Quand tu arriveras, j'aurai déjà mangé."
+   }
+  ],
+  "tips": [
+   "Gebruik 'être' als hulpwerkwoord voor werkwoorden die beweging of verandering van toestand uitdrukken, zoals 'aller' en 'naître'.",
+   "Zorg ervoor dat het voltooid deelwoord overeenkomt in geslacht en aantal met het onderwerp wanneer 'être' wordt gebruikt.",
+   "De futur antérieur wordt vaak voorafgegaan door tijdsuitdrukkingen zoals 'quand', 'lorsque', 'après que'.",
+   "Gebruik de futur antérieur om verwachtingen of voorspellingen over de toekomst uit te drukken."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd hulpwerkwoord gebruiken: 'J'aurai allé' in plaats van 'Je serai allé'.",
+   "Vergeten de juiste overeenkomst in geslacht en aantal toe te passen: 'Elle sera parti' in plaats van 'Elle sera partie'.",
+   "De futur antérieur verwarren met de futur simple: 'Je mangerai' in plaats van 'J'aurai mangé' voor een actie die voltooid zal zijn."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "J'aurai terminé mon travail avant midi.",
+    "romaji": "J'ore terminé mon travail avant midi.",
+    "dutch": "Ik zal mijn werk voor de middag hebben afgerond."
+   },
+   {
+    "japanese": "Ils seront arrivés avant le début du film.",
+    "romaji": "Ils seront arrivés avant le début du film.",
+    "dutch": "Zij zullen aangekomen zijn voor het begin van de film."
+   },
+   {
+    "japanese": "Nous aurons fini de dîner quand tu arriveras.",
+    "romaji": "Nous orons fini de dîner quand tu arriveras.",
+    "dutch": "Wij zullen klaar zijn met dineren als jij aankomt."
+   },
+   {
+    "japanese": "Elle aura lu le livre avant la réunion.",
+    "romaji": "Elle aura lu le livre avant la réunion.",
+    "dutch": "Zij zal het boek gelezen hebben voor de vergadering."
+   },
+   {
+    "japanese": "Vous aurez appris la leçon avant l'examen.",
+    "romaji": "Vous oré appris la leçon avant l'examen.",
+    "dutch": "Jullie zullen de les geleerd hebben voor het examen."
+   },
+   {
+    "japanese": "Quand il reviendra, j'aurai déjà quitté la maison.",
+    "romaji": "Quand il reviendra, j'ore déjà quitté la maison.",
+    "dutch": "Wanneer hij terugkomt, zal ik het huis al verlaten hebben."
+   }
+  ]
+ },
+ "fr-b1-passif": {
+  "naam": "Voix Passive",
+  "tagline": "Leer hoe je de passieve vorm in het Frans gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "De passieve vorm wordt gebruikt om de nadruk te leggen op de actie of het object dat de actie ondergaat, in plaats van op de uitvoerder van de actie. In het Frans wordt de passieve vorm vaak gebruikt in formele teksten en wanneer de uitvoerder van de actie onbekend of onbelangrijk is.",
+  "patroon": "Sujet + être (vervoegd) + participe passé (+ par + agent)",
+  "uitleg": "In het Frans wordt de passieve vorm gevormd door het hulpwerkwoord 'être' in de juiste tijd te vervoegen, gevolgd door het voltooid deelwoord van het hoofdwerkwoord. Het onderwerp van de actieve zin wordt het lijdend voorwerp in de passieve zin. Vaak wordt de uitvoerder van de actie, ook wel de 'agent', geïntroduceerd met 'par'. In tegenstelling tot het Nederlands, waar de passieve vorm minder frequent is, wordt in het Frans de passieve vorm vaak gebruikt in geschreven taal en formele contexten.",
+  "opbouw": [
+   {
+    "element": "Sujet",
+    "rol": "Het onderwerp van de passieve zin, dat de actie ondergaat.",
+    "voorbeeld": "Le livre"
+   },
+   {
+    "element": "Être (vervoegd)",
+    "rol": "Het hulpwerkwoord dat de tijd van de zin aangeeft.",
+    "voorbeeld": "est"
+   },
+   {
+    "element": "Participe passé",
+    "rol": "Het voltooid deelwoord van het hoofdwerkwoord dat de actie beschrijft.",
+    "voorbeeld": "écrit"
+   },
+   {
+    "element": "Par",
+    "rol": "Introduceert de uitvoerder van de actie, indien nodig.",
+    "voorbeeld": "par l'auteur"
+   },
+   {
+    "element": "Agent",
+    "rol": "De uitvoerder van de actie, vaak optioneel in de passieve vorm.",
+    "voorbeeld": "l'auteur"
+   }
+  ],
+  "tips": [
+   "Zorg ervoor dat het voltooid deelwoord overeenkomt in geslacht en aantal met het onderwerp.",
+   "Gebruik de passieve vorm om de nadruk te leggen op het object of de actie, niet op de uitvoerder.",
+   "In informele contexten kan de actieve vorm vaak de voorkeur hebben boven de passieve vorm.",
+   "Let op de juiste vervoeging van 'être' om de tijd van de zin correct weer te geven."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde vervoeging van 'être': Zorg ervoor dat 'être' correct is vervoegd in de tijd van de zin. Correctie: 'Le livre est écrit' in plaats van 'Le livre sont écrit'.",
+   "Verkeerde overeenstemming van het participe passé: Het voltooid deelwoord moet overeenkomen met het onderwerp. Correctie: 'Les lettres sont écrites' in plaats van 'Les lettres sont écrit'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Le gâteau a été mangé par les enfants.",
+    "romaji": "Le gâteau a été mangé par les enfants.",
+    "dutch": "De taart is door de kinderen opgegeten."
+   },
+   {
+    "japanese": "La maison sera construite par l'entreprise.",
+    "romaji": "La maison sera construite par l'entreprise.",
+    "dutch": "Het huis zal door het bedrijf worden gebouwd."
+   },
+   {
+    "japanese": "Les résultats ont été annoncés hier.",
+    "romaji": "Les résultats ont été annoncés hier.",
+    "dutch": "De resultaten zijn gisteren aangekondigd."
+   },
+   {
+    "japanese": "Une nouvelle école est ouverte chaque année.",
+    "romaji": "Une nouvelle école est ouverte chaque année.",
+    "dutch": "Elk jaar wordt er een nieuwe school geopend."
+   },
+   {
+    "japanese": "Le film a été tourné en France.",
+    "romaji": "Le film a été tourné en France.",
+    "dutch": "De film is in Frankrijk opgenomen."
+   },
+   {
+    "japanese": "Les décisions seront prises par le comité.",
+    "romaji": "Les décisions seront prises par le comité.",
+    "dutch": "De beslissingen zullen door het comité worden genomen."
+   }
+  ]
+ },
+ "fr-b1-demonstr": {
+  "naam": "Pronoms démonstratifs",
+  "tagline": "Leer hoe je specifieke personen of dingen aanwijst in het Frans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Pronoms démonstratifs worden gebruikt om specifieke personen of dingen aan te wijzen zonder hun naam te herhalen. Ze zijn handig om duidelijkheid te scheppen in gesprekken en teksten.",
+  "patroon": "celui, celle, ceux, celles",
+  "uitleg": "In het Frans worden pronoms démonstratifs gebruikt om te verwijzen naar een specifiek zelfstandig naamwoord dat eerder in de context is genoemd. Ze vervangen het zelfstandig naamwoord en passen zich aan in geslacht en aantal. In tegenstelling tot het Nederlands, waar we vaak 'deze' of 'die' gebruiken, hebben de Franse pronoms démonstratifs verschillende vormen afhankelijk van het geslacht (mannelijk of vrouwelijk) en het aantal (enkelvoud of meervoud).",
+  "opbouw": [
+   {
+    "element": "celui",
+    "rol": "Mannelijk enkelvoud",
+    "voorbeeld": "Celui qui parle est mon frère."
+   },
+   {
+    "element": "celle",
+    "rol": "Vrouwelijk enkelvoud",
+    "voorbeeld": "Celle que tu vois est ma sœur."
+   },
+   {
+    "element": "ceux",
+    "rol": "Mannelijk meervoud",
+    "voorbeeld": "Ceux qui arrivent sont mes amis."
+   },
+   {
+    "element": "celles",
+    "rol": "Vrouwelijk meervoud",
+    "voorbeeld": "Celles que j'ai invitées sont mes cousines."
+   },
+   {
+    "element": "ceci/cela",
+    "rol": "Onbepaald, voor ideeën of situaties",
+    "voorbeeld": "Cela est important."
+   }
+  ],
+  "tips": [
+   "Gebruik 'celui' en 'celle' voor enkelvoudige verwijzingen, afhankelijk van het geslacht.",
+   "Gebruik 'ceux' en 'celles' voor meervoudige verwijzingen.",
+   "Pronoms démonstratifs worden vaak gevolgd door een bijzin of voorzetsel om de verwijzing te verduidelijken.",
+   "In formele contexten kun je 'ceci' en 'cela' gebruiken voor abstracte ideeën of situaties."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 'celui' met 'ceux'. Correctie: 'celui' is enkelvoud, 'ceux' is meervoud.",
+   "Verkeerd geslacht gebruiken. Correctie: Zorg ervoor dat het pronomen overeenkomt met het geslacht van het zelfstandig naamwoord dat het vervangt.",
+   "Het weglaten van de verduidelijkende bijzin. Correctie: Voeg altijd een bijzin of voorzetsel toe om de verwijzing duidelijk te maken."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Celui-là est mon livre.",
+    "romaji": "Sə-lɥi-la ɛ mɔ̃ livʁ.",
+    "dutch": "Die daar is mijn boek."
+   },
+   {
+    "japanese": "Celle-ci est ma maison.",
+    "romaji": "Sɛl-si ɛ ma mɛzɔ̃.",
+    "dutch": "Deze hier is mijn huis."
+   },
+   {
+    "japanese": "Ceux que tu cherches sont partis.",
+    "romaji": "Sø kə ty ʃɛʁʃ sɔ̃ paʁti.",
+    "dutch": "Degenen die je zoekt, zijn vertrokken."
+   },
+   {
+    "japanese": "Celles qui chantent sont mes tantes.",
+    "romaji": "Sɛl ki ʃɑ̃t sɔ̃ mɛ tɑ̃t.",
+    "dutch": "Degenen die zingen, zijn mijn tantes."
+   },
+   {
+    "japanese": "Ceci est un problème.",
+    "romaji": "Sə-si ɛ ɛ̃ pʁɔblɛm.",
+    "dutch": "Dit is een probleem."
+   },
+   {
+    "japanese": "Cela me semble correct.",
+    "romaji": "Sə-la mə sɑ̃bl kɔʁɛkt.",
+    "dutch": "Dat lijkt me correct."
+   }
+  ]
+ },
+ "fr-b1-depuis": {
+  "naam": "Gebruik van 'depuis', 'pendant' en 'il y a' in het Frans",
+  "tagline": "Begrijp het verschil tussen 'depuis', 'pendant' en 'il y a' om tijdsaanduidingen correct te gebruiken.",
+  "niveau": "gemiddeld",
+  "kernregel": "'Depuis', 'pendant' en 'il y a' worden gebruikt om tijdsaanduidingen te maken in het Frans. Elk van deze uitdrukkingen heeft een specifieke functie en gebruikscontext, afhankelijk van of je een actie in het verleden, heden of toekomst wilt beschrijven.",
+  "patroon": "[depuis] + [tijdstip/duur], [pendant] + [duur], [il y a] + [tijdstip]",
+  "uitleg": "In het Frans gebruik je 'depuis' om aan te geven dat een actie in het verleden is begonnen en nog steeds doorgaat in het heden. 'Pendant' wordt gebruikt om de duur van een actie aan te geven die in het verleden, heden of toekomst plaatsvindt. 'Il y a' wordt gebruikt om een tijdstip in het verleden aan te geven waarop een actie plaatsvond. Dit is vergelijkbaar met het Nederlandse 'sinds', 'gedurende' en '... geleden'. Het is belangrijk om te onthouden dat 'depuis' vaak met de tegenwoordige tijd wordt gebruikt, terwijl 'il y a' meestal met de verleden tijd wordt gecombineerd.",
+  "opbouw": [
+   {
+    "element": "depuis",
+    "rol": "Geeft aan dat een actie in het verleden begon en nog steeds doorgaat.",
+    "voorbeeld": "Je travaille ici depuis 2010."
+   },
+   {
+    "element": "pendant",
+    "rol": "Geeft de duur van een actie aan, ongeacht of deze in het verleden, heden of toekomst plaatsvindt.",
+    "voorbeeld": "Nous avons voyagé pendant deux semaines."
+   },
+   {
+    "element": "il y a",
+    "rol": "Geeft aan dat een actie op een bepaald moment in het verleden plaatsvond.",
+    "voorbeeld": "Il a déménagé ici il y a trois ans."
+   }
+  ],
+  "tips": [
+   "Gebruik 'depuis' met de tegenwoordige tijd om aan te geven dat een actie nog steeds aan de gang is.",
+   "Gebruik 'pendant' om de totale duur van een actie aan te geven, ongeacht de tijd waarin deze plaatsvindt.",
+   "Gebruik 'il y a' met de verleden tijd om een specifieke tijd in het verleden aan te geven."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'depuis' met de verleden tijd in plaats van de tegenwoordige tijd. Correctie: Gebruik de tegenwoordige tijd met 'depuis'.",
+   "Verwarring tussen 'pendant' en 'pour' voor toekomstige acties. Correctie: Gebruik 'pendant' voor duur, niet 'pour'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Je vis à Paris depuis cinq ans.",
+    "romaji": "Je vis à Paris depuis cinq ans.",
+    "dutch": "Ik woon al vijf jaar in Parijs."
+   },
+   {
+    "japanese": "Elle a étudié pendant trois heures.",
+    "romaji": "Elle a étudié pendant trois heures.",
+    "dutch": "Zij heeft drie uur gestudeerd."
+   },
+   {
+    "japanese": "Nous avons rencontré Paul il y a deux jours.",
+    "romaji": "Nous avons rencontré Paul il y a deux jours.",
+    "dutch": "Wij hebben Paul twee dagen geleden ontmoet."
+   },
+   {
+    "japanese": "Ils habitent ici depuis leur enfance.",
+    "romaji": "Ils habitent ici depuis leur enfance.",
+    "dutch": "Zij wonen hier sinds hun kindertijd."
+   },
+   {
+    "japanese": "Je vais rester ici pendant une semaine.",
+    "romaji": "Je vais rester ici pendant une semaine.",
+    "dutch": "Ik blijf hier een week."
+   },
+   {
+    "japanese": "Il a terminé son travail il y a une heure.",
+    "romaji": "Il a terminé son travail il y a une heure.",
+    "dutch": "Hij heeft zijn werk een uur geleden afgemaakt."
+   }
+  ]
+ }
+}

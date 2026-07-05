@@ -25,6 +25,7 @@ import PronunciationSession from "@/components/practice/PronunciationSession";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "@/components/ui/LanguageSelector";
+import SpotlightTour, { TourStep } from "@/components/ui/SpotlightTour";
 import { getPhraseTranslation } from "@/utils/phrase";
 import { getLanguage } from "@/data/languages";
 
@@ -448,22 +449,108 @@ export default function HomePage() {
     localStorage.setItem("phrasekit-cat-selection", JSON.stringify(ids));
   };
 
+  // ── Rondleiding ────────────────────────────────────────────────────────────
+  // Start eenmalig automatisch bij het eerste bezoek; herstartbaar via de
+  // ?-knop in de header. De stappen wijzen naar data-tour-attributen hieronder.
+  const [showTour, setShowTour] = useState(false);
+  useEffect(() => {
+    if (loading || localStorage.getItem("phrasekit-tour-done")) return;
+    const t = setTimeout(() => setShowTour(true), 600);
+    return () => clearTimeout(t);
+  }, [loading]);
+  const closeTour = () => {
+    setShowTour(false);
+    localStorage.setItem("phrasekit-tour-done", "1");
+  };
+  const startTour = () => { setActiveTab("zinnen"); setShowTour(true); };
+
+  const showZinnen    = () => setActiveTab("zinnen");
+  const showVerdiepen = () => setActiveTab("verdiepen");
+
+  const tourSteps: TourStep[] = [
+    {
+      target: "taal",
+      title:  "Kies je taal",
+      text:   user
+        ? "Wissel hier van doeltaal — de hele app past zich direct aan."
+        : "Wissel hier van doeltaal. Zonder account kun je Japans en Mandarijns proberen; na inloggen komen alle talen vrij.",
+      onEnter: showZinnen,
+    },
+    {
+      target: "vertaler",
+      title:  "Vertaal direct",
+      text:   "Typ in het Nederlands wat je wilt zeggen en krijg meteen de vertaling, de uitspraak en audio om te beluisteren.",
+      onEnter: showZinnen,
+    },
+    {
+      target: "situaties",
+      title:  "Kant-en-klare thema's",
+      text:   user
+        ? "Zinnen en woorden per thema: reissituaties onder Onderweg, gespreksthema's onder Dagelijks leven. Open een thema voor de zinnen én de woordenlijst."
+        : "Reiszinnen per situatie: station, restaurant, hotel… Na inloggen komen er thema's over het dagelijks leven bij. Open een thema voor de zinnen én de woordenlijst.",
+      onEnter: showZinnen,
+    },
+    {
+      target: "tabs",
+      title:  "Leren",
+      text:   "Onder Leren oefen je gericht: flashcards, AI-oefenzinnen op jouw niveau, uitspraak met feedback en grammatica.",
+      onEnter: showZinnen,
+    },
+    // Ingelogd: laat de leerloop achter de Leren-tab zien.
+    ...(user ? [
+      {
+        target: "leren-vandaag",
+        title:  "Vandaag & streak",
+        text:   "Je dagelijkse leerloop: woorden komen terug vlak voordat je ze vergeet. Werk je herhalingen weg en houd je streak vast.",
+        onEnter: showVerdiepen,
+      },
+      {
+        target: "leren-oefenen",
+        title:  "Gericht oefenen",
+        text:   "Kies eerst hierboven je categorieën en start dan een activiteit: woorden, zinnen, uitspraak of grammatica.",
+        onEnter: showVerdiepen,
+      },
+    ] : [{
+      target: "account",
+      title:  "Meer met een account",
+      text:   "Log in om alle talen te gebruiken, eigen zinnen op te slaan en je voortgang bij te houden. Gratis.",
+      onEnter: showZinnen,
+    }]),
+  ];
+
   const userFavorieten   = userPhrases.filter((p) => p.isFavorite);
   const staticFavorieten = staticPhrases.filter((p) => staticFavoriteIds.includes(p.id));
   const allPhrases       = [...staticPhrases, ...userPhrases];
   const opgeslagenZinnen = [...userFavorieten, ...staticFavorieten].slice(0, 3);
 
+  // Demo ziet alleen de Onderweg-thema's; ingelogd ook Dagelijks leven.
+  const staticCats = user ? categories : categories.filter((c) => c.group === "onderweg");
+
   const allCategories = [
-    ...categories.map((c) => ({ id: c.id, name: c.name, icon: c.icon })),
+    ...staticCats.map((c) => ({ id: c.id, name: c.name, icon: c.icon })),
     ...userCategories.map((c) => ({ id: c.id, name: c.name, icon: c.icon })),
   ];
 
-  // Situaties-grid gesorteerd op de bewaarde volgorde; nieuwe/onbekende
+  // Thema-grid per groep, gesorteerd op de bewaarde volgorde; nieuwe/onbekende
   // categorieën vallen terug op de standaardvolgorde (stabiele sort).
   const orderIndex = new Map(categoryOrder.map((id, i) => [id, i] as const));
-  const gridCategories: GridCategory[] = [...allCategories].sort(
-    (a, b) => (orderIndex.get(a.id) ?? Infinity) - (orderIndex.get(b.id) ?? Infinity)
-  );
+  const byOrder = (a: GridCategory, b: GridCategory) =>
+    (orderIndex.get(a.id) ?? Infinity) - (orderIndex.get(b.id) ?? Infinity);
+  const toGrid = (c: { id: string; name: string; icon: string }): GridCategory =>
+    ({ id: c.id, name: c.name, icon: c.icon });
+
+  const gridOnderweg:  GridCategory[] = staticCats.filter((c) => c.group === "onderweg").map(toGrid).sort(byOrder);
+  const gridDagelijks: GridCategory[] = staticCats.filter((c) => c.group === "dagelijks").map(toGrid).sort(byOrder);
+  const gridEigen:     GridCategory[] = userCategories.map(toGrid).sort(byOrder);
+
+  // Herordenen gebeurt per groep; de bewaarde volgorde is de aaneenschakeling
+  // van de drie groepen, zodat één vlakke lijst volstaat.
+  const saveGroupOrder = (group: "onderweg" | "dagelijks" | "eigen") => (ids: string[]) =>
+    saveCategoryOrder([
+      ...(group === "onderweg"  ? ids : gridOnderweg.map((c) => c.id)),
+      ...(group === "dagelijks" ? ids : gridDagelijks.map((c) => c.id)),
+      ...(group === "eigen"     ? ids : gridEigen.map((c) => c.id)),
+    ]);
 
   const hasScope = practiceSelection.length > 0;
 
@@ -504,13 +591,20 @@ export default function HomePage() {
 
         {/* Theme toggle + taal + auth */}
         <div className="flex items-center gap-2">
-          <LanguageSelector />
+          <div data-tour="taal"><LanguageSelector /></div>
           <button
             onClick={toggle}
             aria-label="Wissel thema"
             className="w-8 h-8 rounded-full bg-white dark:bg-stone-800 flex items-center justify-center text-stone-500 dark:text-stone-400 shadow-sm active:scale-95 transition-all text-sm"
           >
             {theme === "dark" ? "☀" : "☾"}
+          </button>
+          <button
+            onClick={startTour}
+            aria-label="Rondleiding starten"
+            className="w-8 h-8 rounded-full bg-white dark:bg-stone-800 flex items-center justify-center text-stone-500 dark:text-stone-400 shadow-sm active:scale-95 transition-all text-sm"
+          >
+            ?
           </button>
         {!loading && (
           user ? (
@@ -531,6 +625,7 @@ export default function HomePage() {
           ) : (
             <button
               onClick={signInWithGoogle}
+              data-tour="account"
               className="flex items-center gap-2 bg-white dark:bg-stone-800 rounded-xl px-3 py-2 shadow-sm active:opacity-70 transition-opacity"
             >
               <span className="text-base">G</span>
@@ -543,7 +638,7 @@ export default function HomePage() {
 
       {/* ── Tabs ──────────────────────────────────────────────────── */}
       <div className="px-5 mb-5">
-        <div className="flex gap-1 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
+        <div data-tour="tabs" className="flex gap-1 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
           {(["zinnen", "verdiepen"] as const).map((tab) => (
             <button
               key={tab}
@@ -554,54 +649,84 @@ export default function HomePage() {
                   : "text-stone-400 dark:text-stone-500"
               }`}
             >
-              {tab === "zinnen" ? "Situaties" : "Leren"}
+              {tab === "zinnen" ? "Thema's" : "Leren"}
             </button>
           ))}
         </div>
       </div>
 
-      {/* ── Tab: Situaties (reis) ─────────────────────────────────── */}
+      {/* ── Tab: Thema's ──────────────────────────────────────────── */}
       {activeTab === "zinnen" && (
         <>
           {/* Inline vertaler — snel iets opzoeken onderweg */}
           <div className="px-5 mb-6">
-            <InlineTranslator />
+            <div data-tour="vertaler"><InlineTranslator /></div>
           </div>
 
           <section className="px-5 mb-8">
-            {user && (
-              <div className="flex items-center justify-between mb-2.5">
-                <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">Situaties</p>
-                <div className="flex items-center gap-1">
-                  {allCategories.length > 1 && (
-                    <button
-                      onClick={() => setReordering((v) => !v)}
-                      aria-label={reordering ? "Klaar met herordenen" : "Herorden categorieën"}
-                      className={`w-7 h-7 rounded-full flex items-center justify-center text-sm transition-colors ${
-                        reordering
-                          ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
-                          : "text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300"
-                      }`}
-                    >
-                      {reordering ? "✓" : "↕"}
-                    </button>
-                  )}
-                  <button
-                    onClick={() => setShowNewCategory(true)}
-                    aria-label="Nieuwe categorie aanmaken"
-                    className="w-7 h-7 rounded-full flex items-center justify-center text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 text-base transition-colors"
-                  >
-                    +
-                  </button>
-                </div>
-              </div>
-            )}
+            <div data-tour="situaties">
+              {user ? (
+                <>
+                  {/* Onderweg — transactionele reissituaties */}
+                  <div className="flex items-center justify-between mb-2.5">
+                    <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest">Onderweg</p>
+                    <div className="flex items-center gap-1">
+                      {allCategories.length > 1 && (
+                        <button
+                          onClick={() => setReordering((v) => !v)}
+                          aria-label={reordering ? "Klaar met herordenen" : "Herorden thema's"}
+                          className={`w-7 h-7 rounded-full flex items-center justify-center text-sm transition-colors ${
+                            reordering
+                              ? "bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900"
+                              : "text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300"
+                          }`}
+                        >
+                          {reordering ? "✓" : "↕"}
+                        </button>
+                      )}
+                      <button
+                        onClick={() => setShowNewCategory(true)}
+                        aria-label="Nieuw thema aanmaken"
+                        className="w-7 h-7 rounded-full flex items-center justify-center text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 text-base transition-colors"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <CategoryGrid
+                    categories={gridOnderweg}
+                    reordering={reordering}
+                    onReorder={saveGroupOrder("onderweg")}
+                  />
 
-            <CategoryGrid
-              categories={gridCategories}
-              reordering={reordering}
-              onReorder={saveCategoryOrder}
-            />
+                  {/* Dagelijks leven — gespreksthema's en woordvelden */}
+                  <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mt-6 mb-2.5">Dagelijks leven</p>
+                  <CategoryGrid
+                    categories={gridDagelijks}
+                    reordering={reordering}
+                    onReorder={saveGroupOrder("dagelijks")}
+                  />
+
+                  {/* Eigen thema's van de gebruiker */}
+                  {gridEigen.length > 0 && (
+                    <>
+                      <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mt-6 mb-2.5">Eigen thema&apos;s</p>
+                      <CategoryGrid
+                        categories={gridEigen}
+                        reordering={reordering}
+                        onReorder={saveGroupOrder("eigen")}
+                      />
+                    </>
+                  )}
+                </>
+              ) : (
+                <CategoryGrid
+                  categories={gridOnderweg}
+                  reordering={false}
+                  onReorder={() => {}}
+                />
+              )}
+            </div>
           </section>
 
           {opgeslagenZinnen.length > 0 && (
@@ -631,8 +756,8 @@ export default function HomePage() {
           onAddCategory={addCategory}
           onClose={() => setShowNewCategory(false)}
           initialMode="new"
-          title="Nieuwe categorie"
-          subtitle="Geef je categorie een naam en icoon"
+          title="Nieuw thema"
+          subtitle="Geef je thema een naam en icoon"
         />
       )}
 
@@ -642,7 +767,7 @@ export default function HomePage() {
           {user ? (
             <div className="flex flex-col gap-5">
               {/* Vandaag + voortgang — de dagelijkse leerloop */}
-              <div className="flex flex-col gap-2">
+              <div data-tour="leren-vandaag" className="flex flex-col gap-2">
                 <TodayCard onStart={() => setShowReview(true)} />
                 <ProgressCard onOpen={() => setShowProgress(true)} />
               </div>
@@ -685,7 +810,7 @@ export default function HomePage() {
               </div>
 
               {/* ── Activiteiten ─────────────────────────────────────── */}
-              <div>
+              <div data-tour="leren-oefenen">
                 <p className="text-[10px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-2.5">
                   2 · Activiteit
                 </p>
@@ -816,6 +941,9 @@ export default function HomePage() {
           onClose={() => setShowPronunciation(false)}
         />
       )}
+
+      {/* Rondleiding langs de belangrijkste functies */}
+      {showTour && <SpotlightTour steps={tourSteps} onClose={closeTour} />}
     </div>
   );
 }

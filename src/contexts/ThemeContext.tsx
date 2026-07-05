@@ -15,12 +15,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
+    // Standaard licht; donker alleen als de gebruiker dat zelf heeft gekozen.
     const saved = localStorage.getItem("phrasekit-theme") as Theme | null;
-    if (saved === "dark" || saved === "light") {
-      setTheme(saved);
-    } else {
-      setTheme(window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    }
+    if (saved === "dark" || saved === "light") setTheme(saved);
   }, []);
 
   useEffect(() => {

@@ -39,10 +39,10 @@ export default function RootLayout({
     <html lang="nl" className="h-full" suppressHydrationWarning>
       {/* Anti-flash: apply saved theme before hydration */}
       <head>
+        {/* Standaard licht; donker alleen bij expliciet opgeslagen keuze */}
         <script dangerouslySetInnerHTML={{ __html: `
           (function(){
-            var t=localStorage.getItem('phrasekit-theme');
-            if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){
+            if(localStorage.getItem('phrasekit-theme')==='dark'){
               document.documentElement.classList.add('dark');
             }
           })();

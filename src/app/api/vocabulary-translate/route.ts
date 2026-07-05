@@ -1,45 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getLanguage } from "@/data/languages";
-
-// Generieke vertaal-prompt voor talen zonder eigen prompt (bijv. Kantonees).
-function buildGenericPrompt(langCode: string): string {
-  const l = getLanguage(langCode);
-  const name    = l?.label ?? "de doeltaal";
-  const reading = l?.readingLabel ?? "lezing";
-  const script  = l?.scriptNote ?? "";
-  return `Je bent een woordenschatleraar ${name} voor Nederlandstalige reizigers. Vertaal elk gegeven Nederlands woord naar het ${name}.
-
-Regels:
-- Geef per woord de tekst ${script} en de ${reading}.
-- Werkwoorden: basisvorm.
-- Behoud de exacte Nederlandse invoer in het veld "dutch" en de VOLGORDE.
-
-Reageer met ALLEEN geldig JSON:
-{ "translations": [ { "dutch": "<Nederlands, exact zoals gegeven>", "text": "<tekst ${script}>", "reading": "<${reading}>" } ] }`;
-}
+import { vocabTranslateSystemPrompt } from "@/lib/vocabTranslatePrompt";
 
 // Vertaalt een lijst Nederlandse woorden naar de doeltaal (met lezing), zodat een
 // gedeelde conceptenlijst per taal kan worden aangevuld zonder opnieuw te genereren.
-
-const JA_PROMPT = `Je bent een Japanse woordenschatleraar voor Nederlandstalige reizigers. Vertaal elk gegeven Nederlands woord naar het Japans.
-
-Regels:
-- Geef per woord het Japans (kanji/kana) en de romaji-lezing.
-- Werkwoorden: woordenboek-vorm (辞書形).
-- Behoud de exacte Nederlandse invoer in het veld "dutch" en de VOLGORDE.
-
-Reageer met ALLEEN geldig JSON:
-{ "translations": [ { "dutch": "<Nederlands, exact zoals gegeven>", "text": "<kanji/kana>", "reading": "<romaji>" } ] }`;
-
-const ZH_PROMPT = `Je bent een Chinese woordenschatleraar voor Nederlandstalige reizigers. Vertaal elk gegeven Nederlands woord naar het Vereenvoudigd Chinees.
-
-Regels:
-- Geef per woord het Vereenvoudigd Chinees en de pinyin (met toonmarkeringen).
-- Werkwoorden: basisvorm.
-- Behoud de exacte Nederlandse invoer in het veld "dutch" en de VOLGORDE.
-
-Reageer met ALLEEN geldig JSON:
-{ "translations": [ { "dutch": "<Nederlands, exact zoals gegeven>", "text": "<Chinese karakters>", "reading": "<pinyin met toonmarkeringen>" } ] }`;
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.OPENAI_API_KEY;
@@ -72,7 +35,7 @@ export async function POST(request: NextRequest) {
         model: "gpt-4o-mini",
         response_format: { type: "json_object" },
         messages: [
-          { role: "system", content: language === "zh" ? ZH_PROMPT : language === "ja" ? JA_PROMPT : buildGenericPrompt(language) },
+          { role: "system", content: vocabTranslateSystemPrompt(language) },
           { role: "user",   content: list },
         ],
         temperature: 0.2,

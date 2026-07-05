@@ -81,6 +81,10 @@ function VraagInhoud() {
 
   // ── Demo-scherm voor niet-ingelogde gebruikers ──────────────────────────────
   if (!authLoading && !user) {
+    // Voorbeeld in de actieve demo-taal (alleen ja/zh zijn zonder inloggen actief).
+    const demoExample = language === "zh"
+      ? { text: "最近的车站在哪里？", reading: "Zuìjìn de chēzhàn zài nǎlǐ?" }
+      : { text: "一番近い駅はどこですか？", reading: "Ichiban chikai eki wa doko desu ka?" };
     return (
       <div className="page-content">
         <Header title="Vertaal" subtitle="AI-vertaling" showBack />
@@ -93,10 +97,10 @@ function VraagInhoud() {
               <div className="px-5 py-5">
                 <p className="text-xs text-stone-400 dark:text-stone-500 italic mb-3">"Waar is het dichtstbijzijnde station?"</p>
                 <p className="text-3xl font-bold text-stone-900 dark:text-stone-100 leading-tight mb-2">
-                  一番近い駅はどこですか？
+                  {demoExample.text}
                 </p>
                 <p className="text-base text-stone-400 dark:text-stone-500 italic mb-4">
-                  Ichiban chikai eki wa doko desu ka?
+                  {demoExample.reading}
                 </p>
                 <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed border-t border-stone-100 dark:border-stone-700 pt-3">
                   Een beleefde manier om naar de dichtstbijzijnde treinhalte te vragen.

@@ -27,6 +27,13 @@ export const LANGUAGES: LanguageDef[] = [
 export const ENABLED_LANGUAGES = LANGUAGES.filter((l) => l.enabled);
 export const DEFAULT_LANG: LangCode = "ja";
 
+// Talen die zonder inloggen (demo-modus) bruikbaar zijn. De vaste demo-zinnen
+// bevatten vertalingen voor precies deze talen; overige talen vereisen inloggen.
+export const DEMO_LANGUAGES: LangCode[] = ["ja", "zh"];
+
+export const isDemoLang = (code: string): code is LangCode =>
+  (DEMO_LANGUAGES as string[]).includes(code);
+
 export const getLanguage = (code: string): LanguageDef | undefined =>
   LANGUAGES.find((l) => l.code === code);
 

@@ -27,11 +27,14 @@ import { useUserPhrases, UserCategory } from "@/hooks/useUserPhrases";
 import CategoryPicker from "@/components/ui/CategoryPicker";
 import { useAudio } from "@/hooks/useAudio";
 import { useVocabulary, VocabWord, VocabConcept, VocabLang, wordForLang } from "@/hooks/useVocabulary";
+import { useAuth } from "@/contexts/AuthContext";
+import { staticVocab } from "@/data/staticVocab";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { getPhraseTranslation } from "@/utils/phrase";
 import { getLanguage } from "@/data/languages";
 import { Phrase } from "@/types";
 import InlineTranslator from "@/components/ui/InlineTranslator";
+import SpotlightTour, { TourStep } from "@/components/ui/SpotlightTour";
 import AudioButton from "@/components/ui/AudioButton";
 import SpeedButton from "@/components/ui/SpeedButton";
 import ReviewSession from "@/components/practice/ReviewSession";
@@ -56,8 +59,12 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
   onAddCategory: (name: string, icon: string) => Promise<UserCategory>;
 }) {
   const { getConcepts, saveConcepts } = useVocabulary();
+  const { user } = useAuth();
   const { language } = useLanguage();
   const lang = language as VocabLang;
+  // Demo-modus (niet ingelogd): geen Firestore, dus vaste demo-woorden tonen en
+  // de acties die opslaan/genereren/oefenen vereisen verbergen.
+  const demo = !user;
   const [concepts,  setConcepts]  = useState<VocabConcept[]>([]);
   const [status,    setStatus]    = useState<"loading" | "done" | "error">("loading");
   const [expanding, setExpanding] = useState(false);
@@ -151,9 +158,21 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
     let cancelled = false;
     setStatus("loading");
     setMsg(null);
+    // Demo: toon de vaste woorden bij deze categorie (bevatten al ja én zh).
+    if (demo) {
+      setConcepts(staticVocab[categoryId] ?? []);
+      setStatus("done");
+      return;
+    }
     (async () => {
       try {
         let cs = await getConcepts(categoryId);
+        // Eerste bezoek aan een statisch thema: seed met de vaste woordenlijst
+        // (direct resultaat, geen AI-extractie nodig).
+        if (!cs && staticVocab[categoryId]) {
+          cs = staticVocab[categoryId];
+          await saveConcepts(categoryId, cs);
+        }
         cs = cs ? await ensureLanguage(cs) : await generateFromSentences();
         if (cancelled) return;
         setConcepts(cs ?? []);
@@ -166,7 +185,7 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
     })();
     return () => { cancelled = true; };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [language]);
+  }, [language, demo]);
 
   const persist = (next: VocabConcept[]) => { setConcepts(next); saveConcepts(categoryId, next); };
 
@@ -326,7 +345,7 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
         <p className="text-xs text-stone-400 dark:text-stone-500">
           Sleutelwoorden uit de zinnen in deze categorie
         </p>
-        {status === "done" && (
+        {status === "done" && !demo && (
           <div className="flex items-center gap-3 shrink-0">
             {!selectMode && (
               <button
@@ -401,7 +420,7 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
               </div>
               <p className="flex-1 text-sm text-stone-500 dark:text-stone-400">{c.dutch}</p>
               {w?.japanese && <AudioButton text={w.japanese} iconOnly />}
-              {!selectMode && (
+              {!selectMode && !demo && (
                 <button
                   onClick={() => handleRemove(c)}
                   aria-label={`Verwijder ${c.dutch}`}
@@ -448,7 +467,13 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
         </div>
       )}
 
-      {status === "done" && !selectMode && concepts.length > 0 && (
+      {demo && status === "done" && concepts.length > 0 && (
+        <p className="text-xs text-stone-400 dark:text-stone-500 text-center mt-5">
+          🔒 Log in om woorden toe te voegen en te oefenen.
+        </p>
+      )}
+
+      {!demo && status === "done" && !selectMode && concepts.length > 0 && (
         <button
           onClick={() => setShowPractice(true)}
           className="w-full mt-5 py-3.5 bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2"
@@ -457,7 +482,7 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
         </button>
       )}
 
-      {status === "done" && !selectMode && (
+      {!demo && status === "done" && !selectMode && (
         <button
           onClick={handleExpand}
           disabled={expanding}
@@ -469,7 +494,7 @@ function VocabList({ phrases, categoryId, categoryName, userCategories, onAddCat
         </button>
       )}
 
-      {status === "done" && !selectMode && (
+      {!demo && status === "done" && !selectMode && (
         <div className="mt-2">
           <button
             onClick={() => setShowList((v) => !v)}
@@ -778,6 +803,26 @@ function SortableCard({ phrase }: { phrase: Phrase }) {
 
 // ─── Pagina ────────────────────────────────────────────────────────────────────
 
+// Mini-rondleiding bij het eerste bezoek aan een categoriepagina: wijst de
+// functies aan die gebruikers anders makkelijk missen.
+const CAT_TOUR_STEPS: TourStep[] = [
+  {
+    target: "cat-toggle",
+    title:  "Zinnen én woorden",
+    text:   "Elk thema heeft twee lijsten: hele zinnen en de belangrijkste losse woorden — allebei met audio.",
+  },
+  {
+    target: "cat-flashcards",
+    title:  "Flashcards",
+    text:   "Overhoor jezelf: Nederlands op de voorkant, tik om de vertaling te zien.",
+  },
+  {
+    target: "cat-grammatica",
+    title:  "Groepeer op grammatica",
+    text:   "Sorteer de zinnen op grammaticaal patroon, zodat je structuren leert herkennen.",
+  },
+];
+
 interface CategoryPageProps {
   params: Promise<{ id: string }>;
 }
@@ -786,6 +831,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const { id } = use(params);
   const router = useRouter();
   const { language } = useLanguage();
+  const { user, loading: authLoading, signInWithGoogle } = useAuth();
   const {
     getUserPhrasesByCategory,
     userCategories,
@@ -819,6 +865,20 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
   const [grammarGroups, setGrammarGroups] = useState<{ groep: string; zinIds: string[] }[] | null>(null);
   const [activeGroep,   setActiveGroep]   = useState<string | null>(null);
   const [groupLoading,  setGroupLoading]  = useState(false);
+  const [showTour,      setShowTour]      = useState(false);
+
+  // Mini-rondleiding: eenmalig, zodra er zinnen staan (doelwitten bestaan dan).
+  const hasPhrases = alleZinnen.length > 0;
+  useEffect(() => {
+    if (userLoading || !hasPhrases) return;
+    if (localStorage.getItem("phrasekit-tour-cat-done")) return;
+    const t = setTimeout(() => setShowTour(true), 600);
+    return () => clearTimeout(t);
+  }, [userLoading, hasPhrases]);
+  const closeTour = () => {
+    setShowTour(false);
+    localStorage.setItem("phrasekit-tour-cat-done", "1");
+  };
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
@@ -888,6 +948,26 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
 
   if (!category) notFound();
 
+  // Demo kent alleen de Onderweg-thema's; "Dagelijks leven" vereist inloggen.
+  if (!authLoading && !user && staticCategory && staticCategory.group !== "onderweg") {
+    return (
+      <div className="page-content">
+        <Header title={`${category.icon} ${category.name}`} subtitle={category.description} showBack />
+        <div className="text-center py-16 px-8">
+          <p className="text-3xl mb-3">🔒</p>
+          <p className="text-sm font-medium text-stone-700 dark:text-stone-300 mb-1">Log in voor dit thema</p>
+          <p className="text-xs text-stone-400 dark:text-stone-500 mb-4">
+            In de demo kun je de Onderweg-thema&apos;s proberen; de thema&apos;s over het dagelijks leven komen vrij na inloggen.
+          </p>
+          <button onClick={signInWithGoogle} className="flex items-center gap-2 bg-white dark:bg-stone-800 rounded-xl px-4 py-2.5 shadow-sm active:opacity-70 transition-opacity mx-auto">
+            <span className="text-base">G</span>
+            <span className="text-xs text-stone-700 dark:text-stone-200 font-medium">Inloggen met Google</span>
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   const basisLijst = grammarGroups && activeGroep
     ? alleZinnen.filter((p) => {
         const groep = grammarGroups.find((g) => g.groep === activeGroep);
@@ -930,7 +1010,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
       {/* ── Zinnen / Woorden toggle + afspeelsnelheid ─────────────── */}
       {alleZinnen.length > 0 && !editMode && (
         <div className="px-5 pb-1 flex items-center gap-2">
-          <div className="flex-1 flex gap-1 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
+          <div data-tour="cat-toggle" className="flex-1 flex gap-1 bg-stone-100 dark:bg-stone-800 rounded-xl p-1">
             {(["zinnen", "woorden"] as const).map((v) => (
               <button
                 key={v}
@@ -1072,6 +1152,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
         <div className="px-5 pt-6 pb-4 flex flex-col gap-2">
           <button
             onClick={() => setOefenModus(true)}
+            data-tour="cat-flashcards"
             className="w-full py-3.5 bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-2xl text-sm font-medium active:opacity-80 transition-opacity flex items-center justify-center gap-2"
           >
             <span>🃏</span>
@@ -1079,6 +1160,7 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
           </button>
           <button
             onClick={handleGroepeerGrammatica}
+            data-tour="cat-grammatica"
             disabled={groupLoading}
             className={`w-full py-3.5 rounded-2xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${
               grammarGroups
@@ -1129,6 +1211,9 @@ export default function CategoriePagina({ params }: CategoryPageProps) {
           onClose={() => setOefenModus(false)}
         />
       )}
+
+      {/* Mini-rondleiding bij het eerste bezoek */}
+      {showTour && <SpotlightTour steps={CAT_TOUR_STEPS} onClose={closeTour} />}
     </div>
   );
 }

@@ -1,0 +1,2362 @@
+{
+ "station": {
+  "kaartje": {
+   "yue": {
+    "text": "車票",
+    "reading": "ce1 piu3"
+   },
+   "ko": {
+    "text": "티켓",
+    "reading": "tiket"
+   },
+   "id": {
+    "text": "tiket",
+    "reading": "ti-ket"
+   },
+   "en": {
+    "text": "ticket",
+    "reading": "ki-tket"
+   },
+   "fr": {
+    "text": "billet",
+    "reading": "bi-jè"
+   },
+   "de": {
+    "text": "Fahrkarte",
+    "reading": "faar-kar-te"
+   },
+   "es": {
+    "text": "billete",
+    "reading": "bi-jè-te"
+   }
+  },
+  "station": {
+   "yue": {
+    "text": "車站",
+    "reading": "ce1 zaam6"
+   },
+   "ko": {
+    "text": "역",
+    "reading": "yeok"
+   },
+   "id": {
+    "text": "stasiun",
+    "reading": "sta-sjuun"
+   },
+   "en": {
+    "text": "station",
+    "reading": "stei-sjon"
+   },
+   "fr": {
+    "text": "gare",
+    "reading": "gar"
+   },
+   "de": {
+    "text": "Bahnhof",
+    "reading": "baan-hoof"
+   },
+   "es": {
+    "text": "estación",
+    "reading": "es-ta-sjon"
+   }
+  },
+  "trein": {
+   "yue": {
+    "text": "火車",
+    "reading": "fo2 ce1"
+   },
+   "ko": {
+    "text": "기차",
+    "reading": "gicha"
+   },
+   "id": {
+    "text": "kereta",
+    "reading": "ke-re-ta"
+   },
+   "en": {
+    "text": "train",
+    "reading": "trein"
+   },
+   "fr": {
+    "text": "train",
+    "reading": "tran"
+   },
+   "de": {
+    "text": "Zug",
+    "reading": "tsook"
+   },
+   "es": {
+    "text": "tren",
+    "reading": "tren"
+   }
+  },
+  "perron": {
+   "yue": {
+    "text": "月台",
+    "reading": "jyut6 toi4"
+   },
+   "ko": {
+    "text": "플랫폼",
+    "reading": "peullatepom"
+   },
+   "id": {
+    "text": "peron",
+    "reading": "pe-ron"
+   },
+   "en": {
+    "text": "platform",
+    "reading": "plat-form"
+   },
+   "fr": {
+    "text": "quai",
+    "reading": "kè"
+   },
+   "de": {
+    "text": "Gleis",
+    "reading": "glais"
+   },
+   "es": {
+    "text": "andén",
+    "reading": "an-dèn"
+   }
+  },
+  "uitgang": {
+   "yue": {
+    "text": "出口",
+    "reading": "ceot1 hau2"
+   },
+   "ko": {
+    "text": "출구",
+    "reading": "chulgu"
+   },
+   "id": {
+    "text": "keluar",
+    "reading": "ke-lu-ar"
+   },
+   "en": {
+    "text": "exit",
+    "reading": "eit-sit"
+   },
+   "fr": {
+    "text": "sortie",
+    "reading": "sor-ti"
+   },
+   "de": {
+    "text": "Ausgang",
+    "reading": "aus-gang"
+   },
+   "es": {
+    "text": "salida",
+    "reading": "sa-li-da"
+   }
+  },
+  "prijs": {
+   "yue": {
+    "text": "價格",
+    "reading": "gaa3 ge3"
+   },
+   "ko": {
+    "text": "가격",
+    "reading": "gagyeok"
+   },
+   "id": {
+    "text": "harga",
+    "reading": "har-ga"
+   },
+   "en": {
+    "text": "price",
+    "reading": "praijs"
+   },
+   "fr": {
+    "text": "prix",
+    "reading": "pri"
+   },
+   "de": {
+    "text": "Preis",
+    "reading": "prais"
+   },
+   "es": {
+    "text": "precio",
+    "reading": "prè-sio"
+   }
+  },
+  "gaan": {
+   "yue": {
+    "text": "去",
+    "reading": "heoi3"
+   },
+   "ko": {
+    "text": "가다",
+    "reading": "gada"
+   },
+   "id": {
+    "text": "pergi",
+    "reading": "per-gi"
+   },
+   "en": {
+    "text": "go",
+    "reading": "goh"
+   },
+   "fr": {
+    "text": "aller",
+    "reading": "a-lé"
+   },
+   "de": {
+    "text": "gehen",
+    "reading": "ge-heen"
+   },
+   "es": {
+    "text": "ir",
+    "reading": "ier"
+   }
+  },
+  "missen": {
+   "yue": {
+    "text": "錯過",
+    "reading": "co3 gwo3"
+   },
+   "ko": {
+    "text": "놓치다",
+    "reading": "nochida"
+   },
+   "id": {
+    "text": "ketinggal",
+    "reading": "ke-ting-gal"
+   },
+   "en": {
+    "text": "miss",
+    "reading": "mis"
+   },
+   "fr": {
+    "text": "rater",
+    "reading": "ra-té"
+   },
+   "de": {
+    "text": "verpassen",
+    "reading": "ver-pas-sen"
+   },
+   "es": {
+    "text": "perder",
+    "reading": "per-der"
+   }
+  }
+ },
+ "restaurant": {
+  "tafel": {
+   "yue": {
+    "text": "桌子",
+    "reading": "coek3 zi2"
+   },
+   "ko": {
+    "text": "테이블",
+    "reading": "teibeul"
+   },
+   "id": {
+    "text": "meja",
+    "reading": "mei-dja"
+   },
+   "en": {
+    "text": "table",
+    "reading": "taa-bel"
+   },
+   "fr": {
+    "text": "table",
+    "reading": "ta-bl"
+   },
+   "de": {
+    "text": "Tisch",
+    "reading": "tisch"
+   },
+   "es": {
+    "text": "mesa",
+    "reading": "mé-sa"
+   }
+  },
+  "rekening": {
+   "yue": {
+    "text": "帳單",
+    "reading": "zoeng3 daan1"
+   },
+   "ko": {
+    "text": "계산서",
+    "reading": "gyesanseo"
+   },
+   "id": {
+    "text": "tagihan",
+    "reading": "ta-gi-han"
+   },
+   "en": {
+    "text": "bill",
+    "reading": "bil"
+   },
+   "fr": {
+    "text": "addition",
+    "reading": "a-di-sjon"
+   },
+   "de": {
+    "text": "Rechnung",
+    "reading": "re-chnoeng"
+   },
+   "es": {
+    "text": "cuenta",
+    "reading": "kwen-ta"
+   }
+  },
+  "menu": {
+   "yue": {
+    "text": "菜單",
+    "reading": "coi3 daan1"
+   },
+   "ko": {
+    "text": "메뉴",
+    "reading": "menyu"
+   },
+   "id": {
+    "text": "menu",
+    "reading": "me-nu"
+   },
+   "en": {
+    "text": "menu",
+    "reading": "me-nu"
+   },
+   "fr": {
+    "text": "menu",
+    "reading": "me-nu"
+   },
+   "de": {
+    "text": "Speisekarte",
+    "reading": "spai-ze-kar-te"
+   },
+   "es": {
+    "text": "menú",
+    "reading": "me-nu"
+   }
+  },
+  "allergie": {
+   "yue": {
+    "text": "過敏",
+    "reading": "gwo3 man5"
+   },
+   "ko": {
+    "text": "알레르기",
+    "reading": "alleureugi"
+   },
+   "id": {
+    "text": "alergi",
+    "reading": "a-le-rgi"
+   },
+   "en": {
+    "text": "allergy",
+    "reading": "a-leer-gie"
+   },
+   "fr": {
+    "text": "allergie",
+    "reading": "a-leer-zji"
+   },
+   "de": {
+    "text": "Allergie",
+    "reading": "a-leer-gie"
+   },
+   "es": {
+    "text": "alergia",
+    "reading": "a-lèr-gia"
+   }
+  },
+  "engels": {
+   "yue": {
+    "text": "英語",
+    "reading": "jing1 jyu5"
+   },
+   "ko": {
+    "text": "영어",
+    "reading": "yeongeo"
+   },
+   "id": {
+    "text": "Inggris",
+    "reading": "ing-gris"
+   },
+   "en": {
+    "text": "English",
+    "reading": "in-gel-s"
+   },
+   "fr": {
+    "text": "anglais",
+    "reading": "on-glè"
+   },
+   "de": {
+    "text": "Englisch",
+    "reading": "en-gliesj"
+   },
+   "es": {
+    "text": "inglés",
+    "reading": "in-glès"
+   }
+  },
+  "lekker": {
+   "yue": {
+    "text": "好味",
+    "reading": "hou2 mei6"
+   },
+   "ko": {
+    "text": "맛있다",
+    "reading": "masitda"
+   },
+   "id": {
+    "text": "enak",
+    "reading": "e-nak"
+   },
+   "en": {
+    "text": "tasty",
+    "reading": "teis-ti"
+   },
+   "fr": {
+    "text": "délicieux",
+    "reading": "de-li-sjø"
+   },
+   "de": {
+    "text": "lecker",
+    "reading": "lek-ker"
+   },
+   "es": {
+    "text": "rico",
+    "reading": "ri-ko"
+   }
+  },
+  "bestellen": {
+   "yue": {
+    "text": "訂購",
+    "reading": "ding6 gau3"
+   },
+   "ko": {
+    "text": "주문하다",
+    "reading": "jumunhada"
+   },
+   "id": {
+    "text": "memesan",
+    "reading": "me-me-san"
+   },
+   "en": {
+    "text": "order",
+    "reading": "or-der"
+   },
+   "fr": {
+    "text": "commander",
+    "reading": "ko-man-dè"
+   },
+   "de": {
+    "text": "bestellen",
+    "reading": "be-stel-len"
+   },
+   "es": {
+    "text": "pedir",
+    "reading": "pe-dier"
+   }
+  }
+ },
+ "hotel": {
+  "reservering": {
+   "yue": {
+    "text": "預訂",
+    "reading": "jyu6 ding3"
+   },
+   "ko": {
+    "text": "예약",
+    "reading": "yeyak"
+   },
+   "id": {
+    "text": "reservasi",
+    "reading": "re-ser-va-si"
+   },
+   "en": {
+    "text": "reservation",
+    "reading": "re-ser-va-sjon"
+   },
+   "fr": {
+    "text": "réservation",
+    "reading": "ré-zèr-va-sjon"
+   },
+   "de": {
+    "text": "Reservierung",
+    "reading": "re-ser-vi-rung"
+   },
+   "es": {
+    "text": "reserva",
+    "reading": "re-ser-va"
+   }
+  },
+  "uitchecken": {
+   "yue": {
+    "text": "退房",
+    "reading": "teoi3 fong1"
+   },
+   "ko": {
+    "text": "체크아웃",
+    "reading": "chekeu-aut"
+   },
+   "id": {
+    "text": "check-out",
+    "reading": "tsjek-aut"
+   },
+   "en": {
+    "text": "check out",
+    "reading": "tsjek aut"
+   },
+   "fr": {
+    "text": "départ",
+    "reading": "dé-par"
+   },
+   "de": {
+    "text": "auschecken",
+    "reading": "aus-tsjek-ken"
+   },
+   "es": {
+    "text": "salida",
+    "reading": "sa-li-da"
+   }
+  },
+  "airconditioning": {
+   "yue": {
+    "text": "空調",
+    "reading": "hung1 tiu4"
+   },
+   "ko": {
+    "text": "에어컨",
+    "reading": "eeokeon"
+   },
+   "id": {
+    "text": "pendingin udara",
+    "reading": "pen-din-gin u-da-ra"
+   },
+   "en": {
+    "text": "air conditioning",
+    "reading": "air kon-di-sjon-ing"
+   },
+   "fr": {
+    "text": "climatisation",
+    "reading": "klima-ta-zi-on"
+   },
+   "de": {
+    "text": "Klimaanlage",
+    "reading": "kli-maan-la-ge"
+   },
+   "es": {
+    "text": "aire acondicionado",
+    "reading": "ai-re a-kon-di-sio-na-do"
+   }
+  },
+  "handdoek": {
+   "yue": {
+    "text": "毛巾",
+    "reading": "mou4 gan1"
+   },
+   "ko": {
+    "text": "수건",
+    "reading": "sugeon"
+   },
+   "id": {
+    "text": "handuk",
+    "reading": "han-doek"
+   },
+   "en": {
+    "text": "towel",
+    "reading": "tau-wel"
+   },
+   "fr": {
+    "text": "serviette",
+    "reading": "ser-vi-èt"
+   },
+   "de": {
+    "text": "Handtuch",
+    "reading": "hand-took"
+   },
+   "es": {
+    "text": "toalla",
+    "reading": "to-a-lla"
+   }
+  },
+  "kamer": {
+   "yue": {
+    "text": "房間",
+    "reading": "fong4 gaan1"
+   },
+   "ko": {
+    "text": "방",
+    "reading": "bang"
+   },
+   "id": {
+    "text": "kamar",
+    "reading": "ka-mar"
+   },
+   "en": {
+    "text": "room",
+    "reading": "roem"
+   },
+   "fr": {
+    "text": "chambre",
+    "reading": "sham-br"
+   },
+   "de": {
+    "text": "Zimmer",
+    "reading": "tsim-mer"
+   },
+   "es": {
+    "text": "habitación",
+    "reading": "a-bi-ta-cion"
+   }
+  },
+  "kapot": {
+   "yue": {
+    "text": "壞",
+    "reading": "waai6"
+   },
+   "ko": {
+    "text": "고장나다",
+    "reading": "gojangnada"
+   },
+   "id": {
+    "text": "rusak",
+    "reading": "roe-sak"
+   },
+   "en": {
+    "text": "break",
+    "reading": "breek"
+   },
+   "fr": {
+    "text": "casser",
+    "reading": "ka-sé"
+   },
+   "de": {
+    "text": "kaputt",
+    "reading": "ka-put"
+   },
+   "es": {
+    "text": "roto",
+    "reading": "ro-to"
+   }
+  }
+ },
+ "winkels": {
+  "maat": {
+   "yue": {
+    "text": "碼",
+    "reading": "maa5"
+   },
+   "ko": {
+    "text": "치수",
+    "reading": "chisoo"
+   },
+   "id": {
+    "text": "ukuran",
+    "reading": "oe-koe-ran"
+   },
+   "en": {
+    "text": "size",
+    "reading": "maat"
+   },
+   "fr": {
+    "text": "taille",
+    "reading": "ta-j"
+   },
+   "de": {
+    "text": "Maß",
+    "reading": "maas"
+   },
+   "es": {
+    "text": "tamaño",
+    "reading": "ta-ma-ño"
+   }
+  },
+  "prijs": {
+   "yue": {
+    "text": "價錢",
+    "reading": "gaa3 cin4"
+   },
+   "ko": {
+    "text": "가격",
+    "reading": "gagyeok"
+   },
+   "id": {
+    "text": "harga",
+    "reading": "har-ga"
+   },
+   "en": {
+    "text": "price",
+    "reading": "praijs"
+   },
+   "fr": {
+    "text": "prix",
+    "reading": "pri"
+   },
+   "de": {
+    "text": "Preis",
+    "reading": "praijs"
+   },
+   "es": {
+    "text": "precio",
+    "reading": "pre-sio"
+   }
+  },
+  "kaart": {
+   "yue": {
+    "text": "卡",
+    "reading": "kaa1"
+   },
+   "ko": {
+    "text": "카드",
+    "reading": "kadeu"
+   },
+   "id": {
+    "text": "peta",
+    "reading": "pe-ta"
+   },
+   "en": {
+    "text": "card",
+    "reading": "kaart"
+   },
+   "fr": {
+    "text": "carte",
+    "reading": "kart"
+   },
+   "de": {
+    "text": "Karte",
+    "reading": "kaar-te"
+   },
+   "es": {
+    "text": "tarjeta",
+    "reading": "tar-he-ta"
+   }
+  },
+  "belastingvrij": {
+   "yue": {
+    "text": "免稅",
+    "reading": "min5 seoi3"
+   },
+   "ko": {
+    "text": "면세",
+    "reading": "myeonse"
+   },
+   "id": {
+    "text": "bebas pajak",
+    "reading": "be-bas pa-jak"
+   },
+   "en": {
+    "text": "tax-free",
+    "reading": "be-las-ting-vrij"
+   },
+   "fr": {
+    "text": "exonéré d'impôts",
+    "reading": "ek-so-ne-re d'amp-o"
+   },
+   "de": {
+    "text": "steuerfrei",
+    "reading": "sjtou-er-frai"
+   },
+   "es": {
+    "text": "libre de impuestos",
+    "reading": "lee-bre de im-pwes-tos"
+   }
+  },
+  "groot": {
+   "yue": {
+    "text": "大",
+    "reading": "daai6"
+   },
+   "ko": {
+    "text": "큰",
+    "reading": "keun"
+   },
+   "id": {
+    "text": "besar",
+    "reading": "be-sar"
+   },
+   "en": {
+    "text": "big",
+    "reading": "groot"
+   },
+   "fr": {
+    "text": "grand",
+    "reading": "gran"
+   },
+   "de": {
+    "text": "groß",
+    "reading": "groos"
+   },
+   "es": {
+    "text": "grande",
+    "reading": "gran-de"
+   }
+  },
+  "betalen": {
+   "yue": {
+    "text": "支付",
+    "reading": "zi1 fu6"
+   },
+   "ko": {
+    "text": "지불하다",
+    "reading": "jibulhada"
+   },
+   "id": {
+    "text": "membayar",
+    "reading": "mem-ba-yar"
+   },
+   "en": {
+    "text": "pay",
+    "reading": "be-ta-len"
+   },
+   "fr": {
+    "text": "payer",
+    "reading": "pe-je"
+   },
+   "de": {
+    "text": "bezahlen",
+    "reading": "be-zaa-len"
+   },
+   "es": {
+    "text": "pagar",
+    "reading": "pa-gar"
+   }
+  }
+ },
+ "noodgeval": {
+  "ambulance": {
+   "yue": {
+    "text": "救護車",
+    "reading": "gau3 wu6 ce1"
+   },
+   "ko": {
+    "text": "앰뷸런스",
+    "reading": "aembyulleonseu"
+   },
+   "id": {
+    "text": "ambulans",
+    "reading": "am-bu-lans"
+   },
+   "en": {
+    "text": "ambulance",
+    "reading": "am-bu-lans"
+   },
+   "fr": {
+    "text": "ambulance",
+    "reading": "am-by-lans"
+   },
+   "de": {
+    "text": "Krankenwagen",
+    "reading": "kran-ken-vaa-gen"
+   },
+   "es": {
+    "text": "ambulancia",
+    "reading": "am-boe-lan-sia"
+   }
+  },
+  "dokter": {
+   "yue": {
+    "text": "醫生",
+    "reading": "ji1 saang1"
+   },
+   "ko": {
+    "text": "의사",
+    "reading": "uisa"
+   },
+   "id": {
+    "text": "dokter",
+    "reading": "dok-ter"
+   },
+   "en": {
+    "text": "doctor",
+    "reading": "dok-ter"
+   },
+   "fr": {
+    "text": "médecin",
+    "reading": "med-sin"
+   },
+   "de": {
+    "text": "Arzt",
+    "reading": "aartst"
+   },
+   "es": {
+    "text": "médico",
+    "reading": "mé-di-ko"
+   }
+  },
+  "politie": {
+   "yue": {
+    "text": "警察",
+    "reading": "ging2 caat3"
+   },
+   "ko": {
+    "text": "경찰",
+    "reading": "gyeongchal"
+   },
+   "id": {
+    "text": "polisi",
+    "reading": "po-li-si"
+   },
+   "en": {
+    "text": "police",
+    "reading": "po-li-tsie"
+   },
+   "fr": {
+    "text": "police",
+    "reading": "po-lies"
+   },
+   "de": {
+    "text": "Polizei",
+    "reading": "po-li-tsai"
+   },
+   "es": {
+    "text": "policía",
+    "reading": "po-li-sia"
+   }
+  },
+  "paspoort": {
+   "yue": {
+    "text": "護照",
+    "reading": "wu6 ziu3"
+   },
+   "ko": {
+    "text": "여권",
+    "reading": "yeogwon"
+   },
+   "id": {
+    "text": "paspor",
+    "reading": "pas-por"
+   },
+   "en": {
+    "text": "passport",
+    "reading": "pas-poort"
+   },
+   "fr": {
+    "text": "passeport",
+    "reading": "pas-por"
+   },
+   "de": {
+    "text": "Reisepass",
+    "reading": "rai-ze-pass"
+   },
+   "es": {
+    "text": "pasaporte",
+    "reading": "pa-sa-por-te"
+   }
+  },
+  "borst": {
+   "yue": {
+    "text": "胸部",
+    "reading": "hung1 bou6"
+   },
+   "ko": {
+    "text": "가슴",
+    "reading": "gaseum"
+   },
+   "id": {
+    "text": "dada",
+    "reading": "da-da"
+   },
+   "en": {
+    "text": "chest",
+    "reading": "borst"
+   },
+   "fr": {
+    "text": "poitrine",
+    "reading": "pwa-trin"
+   },
+   "de": {
+    "text": "Brust",
+    "reading": "broest"
+   },
+   "es": {
+    "text": "pecho",
+    "reading": "pe-tsjo"
+   }
+  },
+  "pijn": {
+   "yue": {
+    "text": "痛",
+    "reading": "tung3"
+   },
+   "ko": {
+    "text": "아픈",
+    "reading": "apeun"
+   },
+   "id": {
+    "text": "sakit",
+    "reading": "sa-kit"
+   },
+   "en": {
+    "text": "pain",
+    "reading": "pijn"
+   },
+   "fr": {
+    "text": "douleur",
+    "reading": "doo-leur"
+   },
+   "de": {
+    "text": "Schmerz",
+    "reading": "sjmerts"
+   },
+   "es": {
+    "text": "doloroso",
+    "reading": "do-lo-ro-so"
+   }
+  },
+  "roepen": {
+   "yue": {
+    "text": "叫",
+    "reading": "giu3"
+   },
+   "ko": {
+    "text": "부르다",
+    "reading": "bureuda"
+   },
+   "id": {
+    "text": "memanggil",
+    "reading": "me-mang-gil"
+   },
+   "en": {
+    "text": "call",
+    "reading": "roo-pen"
+   },
+   "fr": {
+    "text": "appeler",
+    "reading": "a-pe-lé"
+   },
+   "de": {
+    "text": "rufen",
+    "reading": "roo-fen"
+   },
+   "es": {
+    "text": "llamar",
+    "reading": "ja-mar"
+   }
+  }
+ },
+ "vrijetijd": {
+  "hobby": {
+   "yue": {
+    "text": "嗜好",
+    "reading": "si3 hou3"
+   },
+   "ko": {
+    "text": "취미",
+    "reading": "chwimi"
+   },
+   "id": {
+    "text": "hobi",
+    "reading": "ho-bi"
+   },
+   "en": {
+    "text": "hobby",
+    "reading": "ho-bbi"
+   },
+   "fr": {
+    "text": "loisir",
+    "reading": "loa-zier"
+   },
+   "de": {
+    "text": "Hobby",
+    "reading": "ho-bbi"
+   },
+   "es": {
+    "text": "hobby",
+    "reading": "ho-bbi"
+   }
+  },
+  "sport": {
+   "yue": {
+    "text": "運動",
+    "reading": "wan6 dung6"
+   },
+   "ko": {
+    "text": "스포츠",
+    "reading": "seupocheu"
+   },
+   "id": {
+    "text": "olahraga",
+    "reading": "o-la-ra-ga"
+   },
+   "en": {
+    "text": "sport",
+    "reading": "sport"
+   },
+   "fr": {
+    "text": "sport",
+    "reading": "sport"
+   },
+   "de": {
+    "text": "Sport",
+    "reading": "sport"
+   },
+   "es": {
+    "text": "deporte",
+    "reading": "de-por-te"
+   }
+  },
+  "voetbal": {
+   "yue": {
+    "text": "足球",
+    "reading": "zuk1 kau4"
+   },
+   "ko": {
+    "text": "축구",
+    "reading": "chukgu"
+   },
+   "id": {
+    "text": "sepak bola",
+    "reading": "se-pak bo-la"
+   },
+   "en": {
+    "text": "football",
+    "reading": "voet-bal"
+   },
+   "fr": {
+    "text": "football",
+    "reading": "foet-bol"
+   },
+   "de": {
+    "text": "Fußball",
+    "reading": "foes-bal"
+   },
+   "es": {
+    "text": "fútbol",
+    "reading": "fut-bol"
+   }
+  },
+  "muziek": {
+   "yue": {
+    "text": "音樂",
+    "reading": "jam1 ngok6"
+   },
+   "ko": {
+    "text": "음악",
+    "reading": "eumak"
+   },
+   "id": {
+    "text": "musik",
+    "reading": "mu-zik"
+   },
+   "en": {
+    "text": "music",
+    "reading": "mu-ziek"
+   },
+   "fr": {
+    "text": "musique",
+    "reading": "mu-ziek"
+   },
+   "de": {
+    "text": "Musik",
+    "reading": "moo-ziek"
+   },
+   "es": {
+    "text": "música",
+    "reading": "mù-si-ka"
+   }
+  },
+  "weekend": {
+   "yue": {
+    "text": "週末",
+    "reading": "zau1 mut6"
+   },
+   "ko": {
+    "text": "주말",
+    "reading": "jumal"
+   },
+   "id": {
+    "text": "akhir pekan",
+    "reading": "a-khir pe-kan"
+   },
+   "en": {
+    "text": "weekend",
+    "reading": "wee-kend"
+   },
+   "fr": {
+    "text": "week-end",
+    "reading": "week-end"
+   },
+   "de": {
+    "text": "Wochenende",
+    "reading": "vo-chen-en-de"
+   },
+   "es": {
+    "text": "fin de semana",
+    "reading": "fin de se-ma-na"
+   }
+  },
+  "zwemmen": {
+   "yue": {
+    "text": "游泳",
+    "reading": "jau4 wing6"
+   },
+   "ko": {
+    "text": "수영하다",
+    "reading": "suyeonghada"
+   },
+   "id": {
+    "text": "berenang",
+    "reading": "be-re-nang"
+   },
+   "en": {
+    "text": "swim",
+    "reading": "zwem-men"
+   },
+   "fr": {
+    "text": "nager",
+    "reading": "na-zje"
+   },
+   "de": {
+    "text": "schwimmen",
+    "reading": "schwiem-men"
+   },
+   "es": {
+    "text": "nadar",
+    "reading": "na-dar"
+   }
+  },
+  "lezen": {
+   "yue": {
+    "text": "閱讀",
+    "reading": "jyut6 duk6"
+   },
+   "ko": {
+    "text": "읽다",
+    "reading": "ikda"
+   },
+   "id": {
+    "text": "membaca",
+    "reading": "mem-ba-cha"
+   },
+   "en": {
+    "text": "read",
+    "reading": "lee-zen"
+   },
+   "fr": {
+    "text": "lire",
+    "reading": "li-re"
+   },
+   "de": {
+    "text": "lesen",
+    "reading": "lee-zen"
+   },
+   "es": {
+    "text": "leer",
+    "reading": "le-er"
+   }
+  },
+  "leuk vinden": {
+   "yue": {
+    "text": "喜歡",
+    "reading": "hei2 fun1"
+   },
+   "ko": {
+    "text": "좋아하다",
+    "reading": "joahada"
+   },
+   "id": {
+    "text": "menyukai",
+    "reading": "me-nju-kai"
+   },
+   "en": {
+    "text": "like",
+    "reading": "leuk vin-den"
+   },
+   "fr": {
+    "text": "aimer",
+    "reading": "e-me"
+   },
+   "de": {
+    "text": "mögen",
+    "reading": "mø-gen"
+   },
+   "es": {
+    "text": "gustar",
+    "reading": "gus-tar"
+   }
+  }
+ },
+ "thuis": {
+  "woonkamer": {
+   "yue": {
+    "text": "客廳",
+    "reading": "haak3 teng1"
+   },
+   "ko": {
+    "text": "거실",
+    "reading": "geosil"
+   },
+   "id": {
+    "text": "ruang tamu",
+    "reading": "roe-ang ta-moem"
+   },
+   "en": {
+    "text": "living room",
+    "reading": "li-ving roem"
+   },
+   "fr": {
+    "text": "salon",
+    "reading": "sa-lon"
+   },
+   "de": {
+    "text": "Wohnzimmer",
+    "reading": "voon-tsim-mer"
+   },
+   "es": {
+    "text": "salón",
+    "reading": "sa-lon"
+   }
+  },
+  "keuken": {
+   "yue": {
+    "text": "廚房",
+    "reading": "cyu4 fong2"
+   },
+   "ko": {
+    "text": "주방",
+    "reading": "jubang"
+   },
+   "id": {
+    "text": "dapur",
+    "reading": "da-poer"
+   },
+   "en": {
+    "text": "kitchen",
+    "reading": "ki-tshen"
+   },
+   "fr": {
+    "text": "cuisine",
+    "reading": "kwi-zi-n"
+   },
+   "de": {
+    "text": "Küche",
+    "reading": "kue-che"
+   },
+   "es": {
+    "text": "cocina",
+    "reading": "ko-si-na"
+   }
+  },
+  "badkamer": {
+   "yue": {
+    "text": "浴室",
+    "reading": "juk6 sat1"
+   },
+   "ko": {
+    "text": "욕실",
+    "reading": "yoksil"
+   },
+   "id": {
+    "text": "kamar mandi",
+    "reading": "ka-mar man-di"
+   },
+   "en": {
+    "text": "bathroom",
+    "reading": "ba-throom"
+   },
+   "fr": {
+    "text": "salle de bains",
+    "reading": "sal de bèn"
+   },
+   "de": {
+    "text": "Badezimmer",
+    "reading": "baa-de-tsim-mer"
+   },
+   "es": {
+    "text": "baño",
+    "reading": "ba-njo"
+   }
+  },
+  "slaapkamer": {
+   "yue": {
+    "text": "睡房",
+    "reading": "seoi6 fong2"
+   },
+   "ko": {
+    "text": "침실",
+    "reading": "chimsil"
+   },
+   "id": {
+    "text": "kamar tidur",
+    "reading": "ka-mar ti-doer"
+   },
+   "en": {
+    "text": "bedroom",
+    "reading": "bed-room"
+   },
+   "fr": {
+    "text": "chambre",
+    "reading": "sham-br"
+   },
+   "de": {
+    "text": "Schlafzimmer",
+    "reading": "shlaaf-tsim-mer"
+   },
+   "es": {
+    "text": "dormitorio",
+    "reading": "dor-mi-to-rio"
+   }
+  },
+  "sleutel": {
+   "yue": {
+    "text": "鎖匙",
+    "reading": "só2 si4"
+   },
+   "ko": {
+    "text": "열쇠",
+    "reading": "yeolsoe"
+   },
+   "id": {
+    "text": "kunci",
+    "reading": "koen-tsie"
+   },
+   "en": {
+    "text": "key",
+    "reading": "ki"
+   },
+   "fr": {
+    "text": "clé",
+    "reading": "klè"
+   },
+   "de": {
+    "text": "Schlüssel",
+    "reading": "shlue-sel"
+   },
+   "es": {
+    "text": "llave",
+    "reading": "ja-ve"
+   }
+  },
+  "afwassen": {
+   "yue": {
+    "text": "洗碗",
+    "reading": "sai2 wun2"
+   },
+   "ko": {
+    "text": "설거지하다",
+    "reading": "seolgejihada"
+   },
+   "id": {
+    "text": "mencuci",
+    "reading": "men-tsjoe-tsie"
+   },
+   "en": {
+    "text": "wash up",
+    "reading": "wosh ap"
+   },
+   "fr": {
+    "text": "faire la vaisselle",
+    "reading": "fèr la ve-sèl"
+   },
+   "de": {
+    "text": "abwaschen",
+    "reading": "ab-vash-en"
+   },
+   "es": {
+    "text": "fregar",
+    "reading": "fre-gar"
+   }
+  },
+  "de was doen": {
+   "yue": {
+    "text": "洗衣",
+    "reading": "sai2 ji1"
+   },
+   "ko": {
+    "text": "세탁하다",
+    "reading": "setakhada"
+   },
+   "id": {
+    "text": "mencuci pakaian",
+    "reading": "men-tsjoe-tsie pa-ka-i-an"
+   },
+   "en": {
+    "text": "do the laundry",
+    "reading": "doe dhe lon-dri"
+   },
+   "fr": {
+    "text": "faire la lessive",
+    "reading": "fèr la le-siv"
+   },
+   "de": {
+    "text": "Wäsche waschen",
+    "reading": "ve-sje vash-en"
+   },
+   "es": {
+    "text": "lavar la ropa",
+    "reading": "la-var la ro-pa"
+   }
+  },
+  "opruimen": {
+   "yue": {
+    "text": "整理",
+    "reading": "zing3 lei5"
+   },
+   "ko": {
+    "text": "정리하다",
+    "reading": "jeongrihada"
+   },
+   "id": {
+    "text": "merapikan",
+    "reading": "me-ra-pie-kan"
+   },
+   "en": {
+    "text": "tidy up",
+    "reading": "tai-di ap"
+   },
+   "fr": {
+    "text": "ranger",
+    "reading": "ran-jé"
+   },
+   "de": {
+    "text": "aufräumen",
+    "reading": "auw-roy-men"
+   },
+   "es": {
+    "text": "ordenar",
+    "reading": "or-de-nar"
+   }
+  }
+ },
+ "lichaam": {
+  "hoofd": {
+   "yue": {
+    "text": "頭",
+    "reading": "tau4"
+   },
+   "ko": {
+    "text": "머리",
+    "reading": "meori"
+   },
+   "id": {
+    "text": "kepala",
+    "reading": "ke-pa-la"
+   },
+   "en": {
+    "text": "head",
+    "reading": "hoofd"
+   },
+   "fr": {
+    "text": "tête",
+    "reading": "tèt"
+   },
+   "de": {
+    "text": "Kopf",
+    "reading": "kofp"
+   },
+   "es": {
+    "text": "cabeza",
+    "reading": "ka-be-za"
+   }
+  },
+  "oog": {
+   "yue": {
+    "text": "眼",
+    "reading": "ngaan5"
+   },
+   "ko": {
+    "text": "눈",
+    "reading": "nun"
+   },
+   "id": {
+    "text": "mata",
+    "reading": "ma-ta"
+   },
+   "en": {
+    "text": "eye",
+    "reading": "oog"
+   },
+   "fr": {
+    "text": "œil",
+    "reading": "oeil"
+   },
+   "de": {
+    "text": "Auge",
+    "reading": "au-ge"
+   },
+   "es": {
+    "text": "ojo",
+    "reading": "o-ho"
+   }
+  },
+  "oor": {
+   "yue": {
+    "text": "耳",
+    "reading": "ji5"
+   },
+   "ko": {
+    "text": "귀",
+    "reading": "gwi"
+   },
+   "id": {
+    "text": "telinga",
+    "reading": "te-lin-ga"
+   },
+   "en": {
+    "text": "ear",
+    "reading": "oor"
+   },
+   "fr": {
+    "text": "oreille",
+    "reading": "o-reil"
+   },
+   "de": {
+    "text": "Ohr",
+    "reading": "oor"
+   },
+   "es": {
+    "text": "oreja",
+    "reading": "o-re-ha"
+   }
+  },
+  "hand": {
+   "yue": {
+    "text": "手",
+    "reading": "sau2"
+   },
+   "ko": {
+    "text": "손",
+    "reading": "son"
+   },
+   "id": {
+    "text": "tangan",
+    "reading": "ta-ngan"
+   },
+   "en": {
+    "text": "hand",
+    "reading": "hand"
+   },
+   "fr": {
+    "text": "main",
+    "reading": "mè"
+   },
+   "de": {
+    "text": "Hand",
+    "reading": "hant"
+   },
+   "es": {
+    "text": "mano",
+    "reading": "ma-no"
+   }
+  },
+  "been": {
+   "yue": {
+    "text": "腿",
+    "reading": "teoi2"
+   },
+   "ko": {
+    "text": "다리",
+    "reading": "dari"
+   },
+   "id": {
+    "text": "kaki",
+    "reading": "ka-ki"
+   },
+   "en": {
+    "text": "leg",
+    "reading": "been"
+   },
+   "fr": {
+    "text": "jambe",
+    "reading": "jamb"
+   },
+   "de": {
+    "text": "Bein",
+    "reading": "bain"
+   },
+   "es": {
+    "text": "pierna",
+    "reading": "pier-na"
+   }
+  },
+  "voet": {
+   "yue": {
+    "text": "腳",
+    "reading": "goek3"
+   },
+   "ko": {
+    "text": "발",
+    "reading": "bal"
+   },
+   "id": {
+    "text": "kaki",
+    "reading": "ka-ki"
+   },
+   "en": {
+    "text": "foot",
+    "reading": "voet"
+   },
+   "fr": {
+    "text": "pied",
+    "reading": "pied"
+   },
+   "de": {
+    "text": "Fuß",
+    "reading": "foes"
+   },
+   "es": {
+    "text": "pie",
+    "reading": "pi-e"
+   }
+  },
+  "buik": {
+   "yue": {
+    "text": "肚",
+    "reading": "tou5"
+   },
+   "ko": {
+    "text": "배",
+    "reading": "bae"
+   },
+   "id": {
+    "text": "perut",
+    "reading": "pe-rut"
+   },
+   "en": {
+    "text": "belly",
+    "reading": "bouk"
+   },
+   "fr": {
+    "text": "ventre",
+    "reading": "van-tr"
+   },
+   "de": {
+    "text": "Bauch",
+    "reading": "bauch"
+   },
+   "es": {
+    "text": "vientre",
+    "reading": "vien-tre"
+   }
+  },
+  "rug": {
+   "yue": {
+    "text": "背",
+    "reading": "bui3"
+   },
+   "ko": {
+    "text": "등",
+    "reading": "deung"
+   },
+   "id": {
+    "text": "punggung",
+    "reading": "poeng-gung"
+   },
+   "en": {
+    "text": "back",
+    "reading": "rug"
+   },
+   "fr": {
+    "text": "dos",
+    "reading": "do"
+   },
+   "de": {
+    "text": "Rücken",
+    "reading": "ruk-ken"
+   },
+   "es": {
+    "text": "espalda",
+    "reading": "es-pal-da"
+   }
+  },
+  "pijn": {
+   "yue": {
+    "text": "痛",
+    "reading": "tung3"
+   },
+   "ko": {
+    "text": "아프다",
+    "reading": "apeuda"
+   },
+   "id": {
+    "text": "sakit",
+    "reading": "sa-kit"
+   },
+   "en": {
+    "text": "pain",
+    "reading": "pein"
+   },
+   "fr": {
+    "text": "douleur",
+    "reading": "doo-leur"
+   },
+   "de": {
+    "text": "Schmerz",
+    "reading": "sjmer-ts"
+   },
+   "es": {
+    "text": "dolor",
+    "reading": "do-lor"
+   }
+  },
+  "moe": {
+   "yue": {
+    "text": "累",
+    "reading": "leoi6"
+   },
+   "ko": {
+    "text": "피곤하다",
+    "reading": "pigonhada"
+   },
+   "id": {
+    "text": "lelah",
+    "reading": "le-lah"
+   },
+   "en": {
+    "text": "tired",
+    "reading": "moe"
+   },
+   "fr": {
+    "text": "fatigué",
+    "reading": "fa-ti-ge"
+   },
+   "de": {
+    "text": "müde",
+    "reading": "mü-de"
+   },
+   "es": {
+    "text": "cansado",
+    "reading": "kan-sa-do"
+   }
+  }
+ },
+ "tijd": {
+  "tijd": {
+   "yue": {
+    "text": "時間",
+    "reading": "si4 gaan1"
+   },
+   "ko": {
+    "text": "시간",
+    "reading": "sigan"
+   },
+   "id": {
+    "text": "waktu",
+    "reading": "wak-toe"
+   },
+   "en": {
+    "text": "time",
+    "reading": "taim"
+   },
+   "fr": {
+    "text": "temps",
+    "reading": "tã"
+   },
+   "de": {
+    "text": "Zeit",
+    "reading": "tsait"
+   },
+   "es": {
+    "text": "tiempo",
+    "reading": "tiem-po"
+   }
+  },
+  "klok": {
+   "yue": {
+    "text": "鐘",
+    "reading": "zung1"
+   },
+   "ko": {
+    "text": "시계",
+    "reading": "sigye"
+   },
+   "id": {
+    "text": "jam",
+    "reading": "jam"
+   },
+   "en": {
+    "text": "clock",
+    "reading": "klok"
+   },
+   "fr": {
+    "text": "horloge",
+    "reading": "or-lozj"
+   },
+   "de": {
+    "text": "Uhr",
+    "reading": "oe-r"
+   },
+   "es": {
+    "text": "reloj",
+    "reading": "re-loch"
+   }
+  },
+  "vandaag": {
+   "yue": {
+    "text": "今天",
+    "reading": "gam1 tin1"
+   },
+   "ko": {
+    "text": "오늘",
+    "reading": "oneul"
+   },
+   "id": {
+    "text": "hari ini",
+    "reading": "ha-ri i-ni"
+   },
+   "en": {
+    "text": "today",
+    "reading": "to-dei"
+   },
+   "fr": {
+    "text": "aujourd'hui",
+    "reading": "oezjoer-dwee"
+   },
+   "de": {
+    "text": "heute",
+    "reading": "ho-ite"
+   },
+   "es": {
+    "text": "hoy",
+    "reading": "oi"
+   }
+  },
+  "morgen": {
+   "yue": {
+    "text": "明天",
+    "reading": "ming4 tin1"
+   },
+   "ko": {
+    "text": "내일",
+    "reading": "naeil"
+   },
+   "id": {
+    "text": "besok",
+    "reading": "be-sok"
+   },
+   "en": {
+    "text": "tomorrow",
+    "reading": "to-mor-rou"
+   },
+   "fr": {
+    "text": "demain",
+    "reading": "de-mã"
+   },
+   "de": {
+    "text": "morgen",
+    "reading": "mor-gen"
+   },
+   "es": {
+    "text": "mañana",
+    "reading": "ma-nja-na"
+   }
+  },
+  "maand": {
+   "yue": {
+    "text": "月",
+    "reading": "jyut6"
+   },
+   "ko": {
+    "text": "달",
+    "reading": "dal"
+   },
+   "id": {
+    "text": "bulan",
+    "reading": "boe-lan"
+   },
+   "en": {
+    "text": "month",
+    "reading": "manth"
+   },
+   "fr": {
+    "text": "mois",
+    "reading": "mwa"
+   },
+   "de": {
+    "text": "Monat",
+    "reading": "mo-nat"
+   },
+   "es": {
+    "text": "mes",
+    "reading": "mes"
+   }
+  },
+  "seizoen": {
+   "yue": {
+    "text": "季節",
+    "reading": "gwai3 zit3"
+   },
+   "ko": {
+    "text": "계절",
+    "reading": "gyejeol"
+   },
+   "id": {
+    "text": "musim",
+    "reading": "moe-sim"
+   },
+   "en": {
+    "text": "season",
+    "reading": "si-zoen"
+   },
+   "fr": {
+    "text": "saison",
+    "reading": "se-zon"
+   },
+   "de": {
+    "text": "Jahreszeit",
+    "reading": "ja-res-tsait"
+   },
+   "es": {
+    "text": "estación",
+    "reading": "es-ta-sjon"
+   }
+  },
+  "lente": {
+   "yue": {
+    "text": "春天",
+    "reading": "ceon1 tin1"
+   },
+   "ko": {
+    "text": "봄",
+    "reading": "bom"
+   },
+   "id": {
+    "text": "musim semi",
+    "reading": "moe-sim se-mi"
+   },
+   "en": {
+    "text": "spring",
+    "reading": "spring"
+   },
+   "fr": {
+    "text": "printemps",
+    "reading": "prèn-tan"
+   },
+   "de": {
+    "text": "Frühling",
+    "reading": "frue-ling"
+   },
+   "es": {
+    "text": "primavera",
+    "reading": "pri-ma-ve-ra"
+   }
+  },
+  "zomer": {
+   "yue": {
+    "text": "夏天",
+    "reading": "haa6 tin1"
+   },
+   "ko": {
+    "text": "여름",
+    "reading": "yeoreum"
+   },
+   "id": {
+    "text": "musim panas",
+    "reading": "moe-sim pa-nas"
+   },
+   "en": {
+    "text": "summer",
+    "reading": "sam-mer"
+   },
+   "fr": {
+    "text": "été",
+    "reading": "e-té"
+   },
+   "de": {
+    "text": "Sommer",
+    "reading": "zo-mer"
+   },
+   "es": {
+    "text": "verano",
+    "reading": "ve-ra-no"
+   }
+  },
+  "herfst": {
+   "yue": {
+    "text": "秋天",
+    "reading": "cau1 tin1"
+   },
+   "ko": {
+    "text": "가을",
+    "reading": "ga-eul"
+   },
+   "id": {
+    "text": "musim gugur",
+    "reading": "moe-sim goo-goer"
+   },
+   "en": {
+    "text": "autumn",
+    "reading": "o-tum"
+   },
+   "fr": {
+    "text": "automne",
+    "reading": "o-to-n"
+   },
+   "de": {
+    "text": "Herbst",
+    "reading": "herpst"
+   },
+   "es": {
+    "text": "otoño",
+    "reading": "o-to-njo"
+   }
+  },
+  "winter": {
+   "yue": {
+    "text": "冬天",
+    "reading": "dung1 tin1"
+   },
+   "ko": {
+    "text": "겨울",
+    "reading": "gyeoul"
+   },
+   "id": {
+    "text": "musim dingin",
+    "reading": "moe-sim din-gin"
+   },
+   "en": {
+    "text": "winter",
+    "reading": "win-ter"
+   },
+   "fr": {
+    "text": "hiver",
+    "reading": "i-ver"
+   },
+   "de": {
+    "text": "Winter",
+    "reading": "vin-ter"
+   },
+   "es": {
+    "text": "invierno",
+    "reading": "in-vier-no"
+   }
+  }
+ },
+ "aantafel": {
+  "ontbijt": {
+   "yue": {
+    "text": "早餐",
+    "reading": "zou2 caan1"
+   },
+   "ko": {
+    "text": "아침식사",
+    "reading": "achim sigsa"
+   },
+   "id": {
+    "text": "sarapan",
+    "reading": "sa-ra-pan"
+   },
+   "en": {
+    "text": "breakfast",
+    "reading": "brek-fast"
+   },
+   "fr": {
+    "text": "petit déjeuner",
+    "reading": "pè-ti dè-jeuner"
+   },
+   "de": {
+    "text": "Frühstück",
+    "reading": "frühsjtük"
+   },
+   "es": {
+    "text": "desayuno",
+    "reading": "de-sa-jie-no"
+   }
+  },
+  "avondeten": {
+   "yue": {
+    "text": "晚餐",
+    "reading": "maan5 caan1"
+   },
+   "ko": {
+    "text": "저녁식사",
+    "reading": "jeonyeok sigsa"
+   },
+   "id": {
+    "text": "makan malam",
+    "reading": "ma-kan ma-lam"
+   },
+   "en": {
+    "text": "dinner",
+    "reading": "din-ner"
+   },
+   "fr": {
+    "text": "dîner",
+    "reading": "di-né"
+   },
+   "de": {
+    "text": "Abendessen",
+    "reading": "aa-bend-es-sen"
+   },
+   "es": {
+    "text": "cena",
+    "reading": "se-na"
+   }
+  },
+  "rijst": {
+   "yue": {
+    "text": "米飯",
+    "reading": "mai5 faan6"
+   },
+   "ko": {
+    "text": "밥",
+    "reading": "bap"
+   },
+   "id": {
+    "text": "nasi",
+    "reading": "na-si"
+   },
+   "en": {
+    "text": "rice",
+    "reading": "reis"
+   },
+   "fr": {
+    "text": "riz",
+    "reading": "ri"
+   },
+   "de": {
+    "text": "Reis",
+    "reading": "raijs"
+   },
+   "es": {
+    "text": "arroz",
+    "reading": "a-rros"
+   }
+  },
+  "zout": {
+   "yue": {
+    "text": "鹽",
+    "reading": "jim4"
+   },
+   "ko": {
+    "text": "소금",
+    "reading": "sogeum"
+   },
+   "id": {
+    "text": "garam",
+    "reading": "ga-ram"
+   },
+   "en": {
+    "text": "salt",
+    "reading": "sault"
+   },
+   "fr": {
+    "text": "sel",
+    "reading": "sèl"
+   },
+   "de": {
+    "text": "Salz",
+    "reading": "zalts"
+   },
+   "es": {
+    "text": "sal",
+    "reading": "sal"
+   }
+  },
+  "suiker": {
+   "yue": {
+    "text": "糖",
+    "reading": "tong4"
+   },
+   "ko": {
+    "text": "설탕",
+    "reading": "seoltang"
+   },
+   "id": {
+    "text": "gula",
+    "reading": "gu-la"
+   },
+   "en": {
+    "text": "sugar",
+    "reading": "sjoe-ger"
+   },
+   "fr": {
+    "text": "sucre",
+    "reading": "sy-kre"
+   },
+   "de": {
+    "text": "Zucker",
+    "reading": "tsu-ker"
+   },
+   "es": {
+    "text": "azúcar",
+    "reading": "a-thu-kar"
+   }
+  },
+  "lekker": {
+   "yue": {
+    "text": "好味",
+    "reading": "hou2 mei6"
+   },
+   "ko": {
+    "text": "맛있는",
+    "reading": "masitneun"
+   },
+   "id": {
+    "text": "enak",
+    "reading": "e-nak"
+   },
+   "en": {
+    "text": "tasty",
+    "reading": "tei-sti"
+   },
+   "fr": {
+    "text": "délicieux",
+    "reading": "dé-li-sjø"
+   },
+   "de": {
+    "text": "lecker",
+    "reading": "lek-ker"
+   },
+   "es": {
+    "text": "rico",
+    "reading": "ri-ko"
+   }
+  },
+  "eten": {
+   "yue": {
+    "text": "食",
+    "reading": "sik6"
+   },
+   "ko": {
+    "text": "먹다",
+    "reading": "meokda"
+   },
+   "id": {
+    "text": "makan",
+    "reading": "ma-kan"
+   },
+   "en": {
+    "text": "eat",
+    "reading": "iet"
+   },
+   "fr": {
+    "text": "manger",
+    "reading": "mon-zje"
+   },
+   "de": {
+    "text": "essen",
+    "reading": "es-sen"
+   },
+   "es": {
+    "text": "comer",
+    "reading": "ko-mer"
+   }
+  },
+  "drinken": {
+   "yue": {
+    "text": "飲",
+    "reading": "jam2"
+   },
+   "ko": {
+    "text": "마시다",
+    "reading": "masida"
+   },
+   "id": {
+    "text": "minum",
+    "reading": "mi-num"
+   },
+   "en": {
+    "text": "drink",
+    "reading": "drink"
+   },
+   "fr": {
+    "text": "boire",
+    "reading": "bwar"
+   },
+   "de": {
+    "text": "trinken",
+    "reading": "trin-ken"
+   },
+   "es": {
+    "text": "beber",
+    "reading": "be-ber"
+   }
+  }
+ }
+}

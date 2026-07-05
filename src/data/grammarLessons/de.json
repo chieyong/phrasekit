@@ -1,0 +1,2742 @@
+{
+ "de-a1-sein": {
+  "naam": "Het werkwoord 'sein' in het Duits",
+  "tagline": "Leer hoe je het essentiële werkwoord 'sein' correct gebruikt in het Duits.",
+  "niveau": "basis",
+  "kernregel": "Het werkwoord 'sein' is een van de belangrijkste en meest gebruikte werkwoorden in het Duits. Het betekent 'zijn' en wordt gebruikt om toestanden, eigenschappen en identiteiten uit te drukken.",
+  "patroon": "ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind",
+  "uitleg": "In het Duits is 'sein' een onregelmatig werkwoord dat in de tegenwoordige tijd op verschillende manieren wordt vervoegd, afhankelijk van het onderwerp. Het is vergelijkbaar met het Nederlandse 'zijn', maar de vervoegingen verschillen. Het werkwoord 'sein' wordt gebruikt om te beschrijven wie of wat iemand is, waar iemand is, of om een toestand of eigenschap te beschrijven. Het is essentieel voor het vormen van de tegenwoordige tijd en wordt vaak gebruikt in combinatie met bijvoeglijke naamwoorden, zelfstandige naamwoorden en voorzetsels.",
+  "opbouw": [
+   {
+    "element": "ich bin",
+    "rol": "eerste persoon enkelvoud",
+    "voorbeeld": "Ich bin müde."
+   },
+   {
+    "element": "du bist",
+    "rol": "tweede persoon enkelvoud",
+    "voorbeeld": "Du bist mein Freund."
+   },
+   {
+    "element": "er/sie/es ist",
+    "rol": "derde persoon enkelvoud",
+    "voorbeeld": "Er ist Lehrer."
+   },
+   {
+    "element": "wir sind",
+    "rol": "eerste persoon meervoud",
+    "voorbeeld": "Wir sind glücklich."
+   },
+   {
+    "element": "ihr seid",
+    "rol": "tweede persoon meervoud",
+    "voorbeeld": "Ihr seid willkommen."
+   },
+   {
+    "element": "sie/Sie sind",
+    "rol": "derde persoon meervoud en formele aanspreekvorm",
+    "voorbeeld": "Sie sind pünktlich."
+   }
+  ],
+  "tips": [
+   "Let op de hoofdletter bij de formele aanspreekvorm 'Sie'.",
+   "Gebruik 'sein' om toestanden en eigenschappen te beschrijven, net als in het Nederlands.",
+   "Oefen de vervoegingen regelmatig om ze goed in te prenten.",
+   "Verwar 'sein' niet met 'haben', dat 'hebben' betekent en anders wordt vervoegd."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde vervoeging: 'Du ist müde.' Correctie: 'Du bist müde.'",
+   "Verwarring tussen 'sie' (zij) en 'Sie' (u): 'sie sind' voor 'zij zijn' en 'Sie sind' voor 'u bent'.",
+   "Verkeerd gebruik van 'sein' in plaats van 'haben': 'Ich bin Hunger.' Correctie: 'Ich habe Hunger.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich bin glücklich.",
+    "romaji": "Ich bin glücklich.",
+    "dutch": "Ik ben gelukkig."
+   },
+   {
+    "japanese": "Du bist klug.",
+    "romaji": "Du bist klug.",
+    "dutch": "Jij bent slim."
+   },
+   {
+    "japanese": "Er ist stark.",
+    "romaji": "Er ist stark.",
+    "dutch": "Hij is sterk."
+   },
+   {
+    "japanese": "Wir sind bereit.",
+    "romaji": "Wir sind bereit.",
+    "dutch": "Wij zijn klaar."
+   },
+   {
+    "japanese": "Ihr seid lustig.",
+    "romaji": "Ihr seid lustig.",
+    "dutch": "Jullie zijn grappig."
+   },
+   {
+    "japanese": "Sie sind Lehrer.",
+    "romaji": "Sie sind Lehrer.",
+    "dutch": "Zij zijn leraren."
+   }
+  ]
+ },
+ "de-a1-haben": {
+  "naam": "Het werkwoord 'haben' in het Duits",
+  "tagline": "Beheers het gebruik van 'haben' voor bezit en hulpwerkwoord.",
+  "niveau": "basis",
+  "kernregel": "Het werkwoord 'haben' wordt in het Duits gebruikt om bezit aan te geven en als hulpwerkwoord in de voltooide tijd. Het is een van de meest voorkomende werkwoorden en essentieel voor basiscommunicatie.",
+  "patroon": "haben + [object] / haben + [voltooid deelwoord]",
+  "uitleg": "In het Duits wordt 'haben' gebruikt om aan te geven dat iemand iets bezit, vergelijkbaar met 'hebben' in het Nederlands. Daarnaast fungeert 'haben' als hulpwerkwoord bij het vormen van de voltooide tijd, vergelijkbaar met 'hebben' in het Nederlands. Het vervoegen van 'haben' is essentieel, omdat het in veel dagelijkse situaties voorkomt. Let op de juiste vervoeging afhankelijk van het onderwerp, zoals 'ich habe', 'du hast', 'er/sie/es hat', 'wir haben', 'ihr habt', en 'sie/Sie haben'.",
+  "opbouw": [
+   {
+    "element": "haben",
+    "rol": "Hoofdwerkwoord",
+    "voorbeeld": "Ich habe ein Buch."
+   },
+   {
+    "element": "ich",
+    "rol": "Onderwerp (1e persoon enkelvoud)",
+    "voorbeeld": "Ich habe Hunger."
+   },
+   {
+    "element": "du",
+    "rol": "Onderwerp (2e persoon enkelvoud)",
+    "voorbeeld": "Du hast eine Katze."
+   },
+   {
+    "element": "er/sie/es",
+    "rol": "Onderwerp (3e persoon enkelvoud)",
+    "voorbeeld": "Er hat einen Hund."
+   },
+   {
+    "element": "voltooid deelwoord",
+    "rol": "Deel van de voltooide tijd",
+    "voorbeeld": "Ich habe gegessen."
+   }
+  ],
+  "tips": [
+   "Let op de juiste vervoeging van 'haben' afhankelijk van het onderwerp.",
+   "Gebruik 'haben' als hulpwerkwoord voor de voltooide tijd, vergelijkbaar met 'hebben' in het Nederlands.",
+   "Oefen regelmatig met zinnen om de vervoegingen van 'haben' te automatiseren.",
+   "Verwar 'haben' niet met 'sein', dat ook als hulpwerkwoord kan fungeren, maar in andere contexten."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde vervoeging: 'Ich hast ein Auto.' Correctie: 'Ich habe ein Auto.'",
+   "Verkeerd hulpwerkwoord: 'Ich bin gegessen.' Correctie: 'Ich habe gegessen.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Wir haben ein neues Haus.",
+    "romaji": "Wir haben ein neues Haus.",
+    "dutch": "Wij hebben een nieuw huis."
+   },
+   {
+    "japanese": "Sie haben viele Freunde.",
+    "romaji": "Sie haben viele Freunde.",
+    "dutch": "Zij hebben veel vrienden."
+   },
+   {
+    "japanese": "Ihr habt Glück gehabt.",
+    "romaji": "Ihr habt Glück gehabt.",
+    "dutch": "Jullie hebben geluk gehad."
+   },
+   {
+    "japanese": "Hast du Zeit?",
+    "romaji": "Hast du Zeit?",
+    "dutch": "Heb jij tijd?"
+   },
+   {
+    "japanese": "Er hat seine Hausaufgaben gemacht.",
+    "romaji": "Er hat seine Hausaufgaben gemacht.",
+    "dutch": "Hij heeft zijn huiswerk gemaakt."
+   },
+   {
+    "japanese": "Ich habe keine Ahnung.",
+    "romaji": "Ich habe keine Ahnung.",
+    "dutch": "Ik heb geen idee."
+   }
+  ]
+ },
+ "de-a1-praesens": {
+  "naam": "Präsens in het Duits",
+  "tagline": "Leer hoe je het Duitse tegenwoordige tijd (Präsens) correct gebruikt.",
+  "niveau": "basis",
+  "kernregel": "Het Präsens wordt gebruikt om handelingen of toestanden in het heden uit te drukken. Het kan ook worden gebruikt om toekomstige gebeurtenissen aan te duiden, vooral als er een tijdsbepaling is.",
+  "patroon": "Onderwerp + vervoegd werkwoord in Präsens + rest van de zin",
+  "uitleg": "Het Präsens in het Duits is vergelijkbaar met de tegenwoordige tijd in het Nederlands. Het wordt gebruikt om acties of toestanden in het heden te beschrijven, maar ook om toekomstige gebeurtenissen aan te geven, vooral als er een tijdsbepaling is zoals 'morgen' of 'volgende week'. Net als in het Nederlands, wordt het werkwoord vervoegd afhankelijk van het onderwerp. De meeste Duitse werkwoorden volgen een regelmatig patroon, maar er zijn ook onregelmatige werkwoorden die speciale aandacht vereisen. Het is belangrijk om de juiste vervoeging te gebruiken om duidelijk te maken wie de actie uitvoert.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Geeft aan wie of wat de actie uitvoert.",
+    "voorbeeld": "Ich, du, er, sie, es, wir, ihr, sie"
+   },
+   {
+    "element": "Vervoegd werkwoord",
+    "rol": "Het werkwoord dat de actie of toestand beschrijft, aangepast aan het onderwerp.",
+    "voorbeeld": "Ich gehe, du gehst, er geht"
+   },
+   {
+    "element": "Rest van de zin",
+    "rol": "Biedt aanvullende informatie over de actie of toestand.",
+    "voorbeeld": "nach Hause, ins Kino, jeden Tag"
+   },
+   {
+    "element": "Tijdsbepaling",
+    "rol": "Geeft aan wanneer de actie plaatsvindt, vooral belangrijk voor toekomstige gebeurtenissen.",
+    "voorbeeld": "morgen, heute, nächste Woche"
+   }
+  ],
+  "tips": [
+   "Let op de juiste vervoeging van het werkwoord afhankelijk van het onderwerp.",
+   "Gebruik tijdsbepalingen om duidelijkheid te geven over wanneer een actie plaatsvindt.",
+   "Oefen met zowel regelmatige als onregelmatige werkwoorden om vertrouwd te raken met hun vervoegingen.",
+   "Gebruik het Präsens ook om over de toekomst te spreken als er een tijdsbepaling is."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde werkwoordvervoeging: 'Ich geht' moet zijn 'Ich gehe'.",
+   "Vergeten van de tijdsbepaling bij toekomstige gebeurtenissen: 'Ich gehe ins Kino' kan verwarrend zijn zonder 'morgen' of 'nächste Woche'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich lese ein Buch.",
+    "romaji": "Ich leze ayn Buch.",
+    "dutch": "Ik lees een boek."
+   },
+   {
+    "japanese": "Du spielst Fußball.",
+    "romaji": "Du spielst Fusbal.",
+    "dutch": "Jij speelt voetbal."
+   },
+   {
+    "japanese": "Er arbeitet jeden Tag.",
+    "romaji": "Er arbeitet jeden Tag.",
+    "dutch": "Hij werkt elke dag."
+   },
+   {
+    "japanese": "Wir gehen morgen ins Kino.",
+    "romaji": "Wir gehn morgen ins Kino.",
+    "dutch": "Wij gaan morgen naar de bioscoop."
+   },
+   {
+    "japanese": "Ihr esst zu Abend.",
+    "romaji": "Ihr est zu Abend.",
+    "dutch": "Jullie eten avondeten."
+   },
+   {
+    "japanese": "Sie kommen nächste Woche.",
+    "romaji": "Sie kommen nächste Woche.",
+    "dutch": "Zij komen volgende week."
+   }
+  ]
+ },
+ "de-a1-artikel": {
+  "naam": "Duitse Artikelen",
+  "tagline": "De basis van zelfstandige naamwoorden in het Duits",
+  "niveau": "basis",
+  "kernregel": "In het Duits zijn er drie bepaalde artikelen: 'der', 'die' en 'das', die afhankelijk zijn van het geslacht en het getal van het zelfstandig naamwoord. Onbepaalde artikelen zijn 'ein' en 'eine', die ook afhankelijk zijn van geslacht en getal.",
+  "patroon": "[Artikel] + [Zelfstandig Naamwoord]",
+  "uitleg": "In het Duits worden artikelen gebruikt om het geslacht en het getal van een zelfstandig naamwoord aan te geven. Er zijn drie geslachten: mannelijk (der), vrouwelijk (die) en onzijdig (das). Daarnaast zijn er meervoudige vormen die ook 'die' gebruiken. Onbepaalde artikelen zijn 'ein' voor mannelijke en onzijdige woorden en 'eine' voor vrouwelijke woorden. In tegenstelling tot het Nederlands, waar het lidwoord 'de' of 'het' kan zijn, hangt het Duitse artikel direct af van het geslacht van het zelfstandig naamwoord.",
+  "opbouw": [
+   {
+    "element": "Der",
+    "rol": "Bepaald lidwoord voor mannelijke zelfstandige naamwoorden.",
+    "voorbeeld": "Der Mann (De man)"
+   },
+   {
+    "element": "Die",
+    "rol": "Bepaald lidwoord voor vrouwelijke zelfstandige naamwoorden en voor meervoud.",
+    "voorbeeld": "Die Frau (De vrouw), Die Kinder (De kinderen)"
+   },
+   {
+    "element": "Das",
+    "rol": "Bepaald lidwoord voor onzijdige zelfstandige naamwoorden.",
+    "voorbeeld": "Das Kind (Het kind)"
+   },
+   {
+    "element": "Ein",
+    "rol": "Onbepaald lidwoord voor mannelijke en onzijdige zelfstandige naamwoorden.",
+    "voorbeeld": "Ein Hund (Een hond), Ein Buch (Een boek)"
+   },
+   {
+    "element": "Eine",
+    "rol": "Onbepaald lidwoord voor vrouwelijke zelfstandige naamwoorden.",
+    "voorbeeld": "Eine Katze (Een kat)"
+   }
+  ],
+  "tips": [
+   "Leer het geslacht van elk zelfstandig naamwoord samen met het woord zelf.",
+   "Gebruik ezelsbruggetjes om het geslacht van woorden te onthouden.",
+   "Let op uitzonderingen, zoals woorden die eindigen op -chen of -lein, die altijd onzijdig zijn.",
+   "Oefen regelmatig met het gebruik van artikelen in zinnen om vertrouwd te raken met de regels."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'der' voor een vrouwelijk woord. Correctie: Gebruik 'die' voor vrouwelijke woorden.",
+   "Verwarring tussen 'das' en 'die' in meervoud. Correctie: Gebruik 'die' voor alle meervouden.",
+   "Het gebruik van 'ein' voor een vrouwelijk woord. Correctie: Gebruik 'eine' voor vrouwelijke woorden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Der Apfel ist rot.",
+    "romaji": "Der Apfel ist rot.",
+    "dutch": "De appel is rood."
+   },
+   {
+    "japanese": "Die Blume ist schön.",
+    "romaji": "Die Blume ist schön.",
+    "dutch": "De bloem is mooi."
+   },
+   {
+    "japanese": "Das Auto ist schnell.",
+    "romaji": "Das Auto ist schnell.",
+    "dutch": "De auto is snel."
+   },
+   {
+    "japanese": "Ein Vogel singt.",
+    "romaji": "Ein Vogel singt.",
+    "dutch": "Een vogel zingt."
+   },
+   {
+    "japanese": "Eine Maus ist klein.",
+    "romaji": "Eine Maus ist klein.",
+    "dutch": "Een muis is klein."
+   },
+   {
+    "japanese": "Die Bücher sind interessant.",
+    "romaji": "Die Bücher sind interessant.",
+    "dutch": "De boeken zijn interessant."
+   }
+  ]
+ },
+ "de-a1-nom": {
+  "naam": "Nominativ in het Duits",
+  "tagline": "De basis van Duitse zinsbouw: het onderwerp in de nominatief.",
+  "niveau": "basis",
+  "kernregel": "De nominatief wordt gebruikt om het onderwerp van een zin aan te geven. Het onderwerp is het deel van de zin dat de handeling uitvoert of de toestand beschrijft.",
+  "patroon": "Onderwerp (Nominativ) + Werkwoord + (Overige zinsdelen)",
+  "uitleg": "In het Duits, net als in het Nederlands, is de nominatief de naamval die het onderwerp van de zin aangeeft. Het onderwerp is het centrale element dat de actie uitvoert of de toestand beschrijft. In tegenstelling tot het Nederlands, waar naamvallen nauwelijks worden gebruikt, is het in het Duits essentieel om de juiste naamval te kiezen, omdat dit de rol van een woord in de zin bepaalt. De nominatief wordt ook gebruikt na de werkwoorden 'sein', 'werden' en 'bleiben', die een toestand of verandering beschrijven. Het is belangrijk om te weten dat de nominatief ook invloed heeft op de vorm van het lidwoord en het bijvoeglijk naamwoord dat bij het zelfstandig naamwoord hoort.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp voert de handeling uit of beschrijft de toestand.",
+    "voorbeeld": "Der Hund bellt."
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord beschrijft de actie of toestand.",
+    "voorbeeld": "Der Hund bellt."
+   },
+   {
+    "element": "Lidwoord",
+    "rol": "Het lidwoord past zich aan de naamval aan.",
+    "voorbeeld": "Der Mann liest."
+   },
+   {
+    "element": "Bijvoeglijk naamwoord",
+    "rol": "Het bijvoeglijk naamwoord past zich aan de naamval aan.",
+    "voorbeeld": "Ein großer Hund bellt."
+   },
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het zelfstandig naamwoord is het centrale element in de nominatief.",
+    "voorbeeld": "Die Frau kocht."
+   }
+  ],
+  "tips": [
+   "Let op de verbuiging van lidwoorden en bijvoeglijke naamwoorden in de nominatief.",
+   "Gebruik de nominatief na de werkwoorden 'sein', 'werden' en 'bleiben'.",
+   "Oefen met eenvoudige zinnen om de nominatief te herkennen en correct toe te passen.",
+   "Controleer altijd of het onderwerp in de nominatief staat, vooral bij langere zinnen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de accusatief in plaats van de nominatief: Correctie: 'Der Hund bellt', niet 'Den Hund bellt'.",
+   "Verkeerde verbuiging van het lidwoord: Correctie: 'Das Kind spielt', niet 'Dem Kind spielt'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Der Lehrer erklärt die Aufgabe.",
+    "romaji": "Der Lehrer erklärt die Aufgabe.",
+    "dutch": "De leraar legt de taak uit."
+   },
+   {
+    "japanese": "Die Katze schläft.",
+    "romaji": "Die Katze schläft.",
+    "dutch": "De kat slaapt."
+   },
+   {
+    "japanese": "Ein Vogel singt.",
+    "romaji": "Ein Vogel singt.",
+    "dutch": "Een vogel zingt."
+   },
+   {
+    "japanese": "Das Kind lacht.",
+    "romaji": "Das Kind lacht.",
+    "dutch": "Het kind lacht."
+   },
+   {
+    "japanese": "Die Blumen blühen.",
+    "romaji": "Die Blumen blühen.",
+    "dutch": "De bloemen bloeien."
+   },
+   {
+    "japanese": "Ein Auto fährt schnell.",
+    "romaji": "Ein Auto fährt schnell.",
+    "dutch": "Een auto rijdt snel."
+   }
+  ]
+ },
+ "de-a1-akk": {
+  "naam": "De Akkusativ in het Duits",
+  "tagline": "Leer hoe je het lijdend voorwerp correct gebruikt in het Duits.",
+  "niveau": "basis",
+  "kernregel": "De Akkusativ wordt in het Duits gebruikt om het lijdend voorwerp van een zin aan te geven. Het is vergelijkbaar met het gebruik van het lijdend voorwerp in het Nederlands, maar vereist specifieke veranderingen in de lidwoorden en soms de naamwoorden.",
+  "patroon": "Onderwerp + werkwoord + Akkusativ (lijdend voorwerp)",
+  "uitleg": "In het Duits verandert de vorm van het lidwoord en soms het zelfstandig naamwoord wanneer het als lijdend voorwerp in de zin wordt gebruikt. Dit is de Akkusativ. De Akkusativ wordt vaak gebruikt na bepaalde werkwoorden die een direct object vereisen, zoals 'sehen' (zien), 'haben' (hebben), en 'kaufen' (kopen). In tegenstelling tot het Nederlands, waar de vorm van het lidwoord niet verandert, moet je in het Duits letten op de juiste vorm van het lidwoord in de Akkusativ. Voor mannelijke zelfstandige naamwoorden verandert 'der' in 'den', terwijl vrouwelijke ('die'), onzijdige ('das') en meervoudige ('die') lidwoorden gelijk blijven.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "Der Mann (de man)"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "kauft (koopt)"
+   },
+   {
+    "element": "Akkusativ",
+    "rol": "Het lijdend voorwerp dat de actie ondergaat.",
+    "voorbeeld": "den Apfel (de appel)"
+   },
+   {
+    "element": "Mannelijk lidwoord",
+    "rol": "Verandert van 'der' naar 'den' in de Akkusativ.",
+    "voorbeeld": "den Hund (de hond)"
+   },
+   {
+    "element": "Vrouwelijk/onzijdig/meervoud lidwoord",
+    "rol": "Blijft 'die', 'das' of 'die' in de Akkusativ.",
+    "voorbeeld": "die Frau (de vrouw), das Buch (het boek), die Kinder (de kinderen)"
+   }
+  ],
+  "tips": [
+   "Let op de verandering van 'der' naar 'den' voor mannelijke zelfstandige naamwoorden.",
+   "Oefen met veelvoorkomende werkwoorden die de Akkusativ vereisen, zoals 'sehen', 'haben' en 'kaufen'.",
+   "Gebruik context om te bepalen welk deel van de zin het lijdend voorwerp is.",
+   "Controleer altijd of het juiste lidwoord in de Akkusativ is gebruikt, vooral bij mannelijke zelfstandige naamwoorden."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen nominatief en Akkusativ: 'Der Hund sieht der Mann' moet zijn 'Der Hund sieht den Mann'.",
+   "Verkeerd lidwoord gebruiken: 'Ich sehe der Apfel' moet zijn 'Ich sehe den Apfel'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich sehe den Hund.",
+    "romaji": "Ikh zehe den Hund.",
+    "dutch": "Ik zie de hond."
+   },
+   {
+    "japanese": "Sie kauft das Buch.",
+    "romaji": "Zee kauft das Boek.",
+    "dutch": "Zij koopt het boek."
+   },
+   {
+    "japanese": "Wir haben die Karten.",
+    "romaji": "Wir haben die Karten.",
+    "dutch": "Wij hebben de kaarten."
+   },
+   {
+    "japanese": "Er isst den Apfel.",
+    "romaji": "Er isst den Apfel.",
+    "dutch": "Hij eet de appel."
+   },
+   {
+    "japanese": "Du trinkst das Wasser.",
+    "romaji": "Du trinkst das Wasser.",
+    "dutch": "Jij drinkt het water."
+   },
+   {
+    "japanese": "Die Kinder spielen den Ball.",
+    "romaji": "Die Kinder spielen den Ball.",
+    "dutch": "De kinderen spelen met de bal."
+   }
+  ]
+ },
+ "de-a1-neg": {
+  "naam": "Negatie met 'nicht' en 'kein'",
+  "tagline": "Leer hoe je ontkenningen vormt in het Duits.",
+  "niveau": "basis",
+  "kernregel": "In het Duits gebruik je 'nicht' om werkwoorden, bijvoeglijke naamwoorden en bijwoorden te ontkennen, en 'kein' om zelfstandige naamwoorden te ontkennen. Het juiste gebruik van 'nicht' en 'kein' hangt af van het type woord dat je wilt ontkennen.",
+  "patroon": "nicht + [werkwoord/bijvoeglijk naamwoord/bijwoord], kein + [zelfstandig naamwoord]",
+  "uitleg": "Het Duitse 'nicht' wordt gebruikt om werkwoorden, bijvoeglijke naamwoorden en bijwoorden te ontkennen. Het staat meestal direct voor het woord dat het ontkent, maar kan ook aan het einde van de zin staan om de hele zin te ontkennen. 'Kein' wordt gebruikt om zelfstandige naamwoorden te ontkennen en gedraagt zich als een lidwoord, wat betekent dat het zich aanpast aan het geslacht, getal en de naamval van het zelfstandig naamwoord. In tegenstelling tot het Nederlands, waar je vaak 'niet' gebruikt, moet je in het Duits goed opletten of je 'nicht' of 'kein' nodig hebt.",
+  "opbouw": [
+   {
+    "element": "nicht",
+    "rol": "Ontkent werkwoorden, bijvoeglijke naamwoorden en bijwoorden.",
+    "voorbeeld": "Ich gehe nicht."
+   },
+   {
+    "element": "kein",
+    "rol": "Ontkent zelfstandige naamwoorden.",
+    "voorbeeld": "Ich habe kein Auto."
+   },
+   {
+    "element": "plaatsing nicht",
+    "rol": "Staat meestal voor het woord dat het ontkent of aan het einde van de zin.",
+    "voorbeeld": "Er ist nicht glücklich."
+   },
+   {
+    "element": "plaatsing kein",
+    "rol": "Gedraagt zich als een lidwoord en past zich aan aan geslacht, getal en naamval.",
+    "voorbeeld": "Sie hat keinen Hund."
+   },
+   {
+    "element": "geslacht en naamval",
+    "rol": "Kein past zich aan aan het geslacht en de naamval van het zelfstandig naamwoord.",
+    "voorbeeld": "Das ist keine Katze."
+   }
+  ],
+  "tips": [
+   "Gebruik 'nicht' om werkwoorden, bijvoeglijke naamwoorden en bijwoorden te ontkennen.",
+   "Gebruik 'kein' om zelfstandige naamwoorden te ontkennen.",
+   "Let op de plaatsing van 'nicht' in de zin; het kan de betekenis veranderen.",
+   "Vergeet niet dat 'kein' zich aanpast aan het geslacht, getal en de naamval van het zelfstandig naamwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'nicht' in plaats van 'kein': 'Ich habe nicht Auto.' Correctie: 'Ich habe kein Auto.'",
+   "Verkeerde plaatsing van 'nicht': 'Ich nicht gehe.' Correctie: 'Ich gehe nicht.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich esse nicht.",
+    "romaji": "Ik eet niet."
+   },
+   {
+    "japanese": "Das ist nicht mein Buch.",
+    "romaji": "Dat is niet mijn boek."
+   },
+   {
+    "japanese": "Wir haben keine Zeit.",
+    "romaji": "Wij hebben geen tijd."
+   },
+   {
+    "japanese": "Er spricht nicht laut.",
+    "romaji": "Hij spreekt niet luid."
+   },
+   {
+    "japanese": "Sie hat keinen Bruder.",
+    "romaji": "Zij heeft geen broer."
+   },
+   {
+    "japanese": "Das ist kein Problem.",
+    "romaji": "Dat is geen probleem."
+   }
+  ]
+ },
+ "de-a1-fragen": {
+  "naam": "W-Fragen",
+  "tagline": "Leer hoe je informatieve vragen stelt in het Duits.",
+  "niveau": "basis",
+  "kernregel": "W-Fragen worden in het Duits gebruikt om specifieke informatie te verkrijgen. Ze beginnen altijd met een vraagwoord dat meestal met de letter 'W' begint.",
+  "patroon": "W-Woord + Werkwoord + Onderwerp + (overige zinsdelen)?",
+  "uitleg": "In het Duits worden W-Fragen gebruikt om vragen te stellen die meer informatie vereisen dan een simpel ja of nee. Deze vragen beginnen met een vraagwoord dat vaak met een 'W' begint, zoals 'wer', 'was', 'wo', 'wann', enzovoort. Het werkwoord volgt direct na het vraagwoord, wat anders is dan in het Nederlands, waar het onderwerp vaak direct na het vraagwoord komt. Het onderwerp volgt het werkwoord, en eventuele andere zinsdelen komen daarna. Dit patroon helpt om de focus van de vraag duidelijk te maken.",
+  "opbouw": [
+   {
+    "element": "W-Woord",
+    "rol": "Introduceert de vraag en bepaalt welke informatie wordt gevraagd.",
+    "voorbeeld": "Wer, Was, Wo, Wann, Warum"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Geeft de actie of toestand aan en volgt direct na het vraagwoord.",
+    "voorbeeld": "ist, macht, geht, kommt"
+   },
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp van de vraag, meestal degene die de actie uitvoert.",
+    "voorbeeld": "du, er, sie, das Auto"
+   },
+   {
+    "element": "Overige zinsdelen",
+    "rol": "Biedt aanvullende informatie zoals tijd, plaats of reden.",
+    "voorbeeld": "heute, im Park, um 8 Uhr"
+   }
+  ],
+  "tips": [
+   "Onthoud dat het werkwoord altijd direct na het W-woord komt.",
+   "Gebruik de juiste vorm van het werkwoord die bij het onderwerp past.",
+   "Let op de volgorde van de zinsdelen om verwarring te voorkomen.",
+   "Oefen met verschillende W-woorden om vertrouwd te raken met hun gebruik."
+  ],
+  "veelgemaaktefouten": [
+   "Het werkwoord na het onderwerp plaatsen. Correctie: Plaats het werkwoord direct na het W-woord.",
+   "Verkeerde werkwoordsvorm gebruiken. Correctie: Zorg ervoor dat het werkwoord overeenkomt met het onderwerp.",
+   "Verwarring tussen 'wer' en 'wen'. Correctie: 'Wer' gebruik je voor het onderwerp, 'wen' voor het lijdend voorwerp."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Wer ist das?",
+    "romaji": "Wer ist das?",
+    "dutch": "Wie is dat?"
+   },
+   {
+    "japanese": "Was machst du?",
+    "romaji": "Was machst du?",
+    "dutch": "Wat doe jij?"
+   },
+   {
+    "japanese": "Wo wohnst du?",
+    "romaji": "Wo wohnst du?",
+    "dutch": "Waar woon jij?"
+   },
+   {
+    "japanese": "Wann beginnt der Film?",
+    "romaji": "Wann beginnt der Film?",
+    "dutch": "Wanneer begint de film?"
+   },
+   {
+    "japanese": "Warum lernst du Deutsch?",
+    "romaji": "Warum lernst du Deutsch?",
+    "dutch": "Waarom leer je Duits?"
+   },
+   {
+    "japanese": "Wie spät ist es?",
+    "romaji": "Wie spät ist es?",
+    "dutch": "Hoe laat is het?"
+   }
+  ]
+ },
+ "de-a1-pron": {
+  "naam": "Personalpronomen in het Duits",
+  "tagline": "Leer hoe je persoonlijke voornaamwoorden correct gebruikt in het Duits.",
+  "niveau": "basis",
+  "kernregel": "Persoonlijke voornaamwoorden worden gebruikt om naar mensen of dingen te verwijzen zonder hun naam te noemen. Ze veranderen afhankelijk van de naamval, het geslacht en het aantal van het zelfstandig naamwoord dat ze vervangen.",
+  "patroon": "Personalpronomen: ich, du, er, sie, es, wir, ihr, sie, Sie",
+  "uitleg": "In het Duits worden persoonlijke voornaamwoorden gebruikt om zelfstandige naamwoorden te vervangen en zo herhaling te voorkomen. Ze moeten overeenkomen met het geslacht, het aantal en de naamval van het zelfstandig naamwoord dat ze vervangen. In tegenstelling tot het Nederlands, waar persoonlijke voornaamwoorden niet altijd veranderen, veranderen ze in het Duits afhankelijk van de grammaticale functie in de zin (onderwerp, lijdend voorwerp, meewerkend voorwerp, enz.). Het is belangrijk om de juiste vorm te kiezen om grammaticale fouten te vermijden.",
+  "opbouw": [
+   {
+    "element": "ich",
+    "rol": "eerste persoon enkelvoud, nominatief",
+    "voorbeeld": "Ich bin müde."
+   },
+   {
+    "element": "du",
+    "rol": "tweede persoon enkelvoud, nominatief",
+    "voorbeeld": "Du bist mein Freund."
+   },
+   {
+    "element": "er/sie/es",
+    "rol": "derde persoon enkelvoud, nominatief",
+    "voorbeeld": "Er ist Lehrer."
+   },
+   {
+    "element": "wir",
+    "rol": "eerste persoon meervoud, nominatief",
+    "voorbeeld": "Wir gehen ins Kino."
+   },
+   {
+    "element": "sie/Sie",
+    "rol": "derde persoon meervoud en formele aanspreekvorm, nominatief",
+    "voorbeeld": "Sie sind willkommen."
+   }
+  ],
+  "tips": [
+   "Let op de hoofdletter bij 'Sie' als formele aanspreekvorm.",
+   "Oefen met de naamvallen om de juiste vorm van het voornaamwoord te kiezen.",
+   "Gebruik 'es' voor onzijdige zelfstandige naamwoorden in het enkelvoud.",
+   "Verwar 'sie' (zij) niet met 'Sie' (u) in formele contexten."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 'sie' (zij) en 'Sie' (u). Correctie: Let op de context en hoofdlettergebruik.",
+   "Verkeerd gebruik van 'er' voor vrouwelijke zelfstandige naamwoorden. Correctie: Gebruik 'sie' voor vrouwelijke zelfstandige naamwoorden.",
+   "Gebruik van 'du' in formele situaties. Correctie: Gebruik 'Sie' in formele situaties."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich habe ein Buch.",
+    "romaji": "Ich habe ein Buch.",
+    "dutch": "Ik heb een boek."
+   },
+   {
+    "japanese": "Du liest die Zeitung.",
+    "romaji": "Du liest die Zeitung.",
+    "dutch": "Jij leest de krant."
+   },
+   {
+    "japanese": "Er spielt Fußball.",
+    "romaji": "Er spielt Fußball.",
+    "dutch": "Hij speelt voetbal."
+   },
+   {
+    "japanese": "Sie kocht das Abendessen.",
+    "romaji": "Sie kocht das Abendessen.",
+    "dutch": "Zij kookt het avondeten."
+   },
+   {
+    "japanese": "Es regnet heute.",
+    "romaji": "Es regnet heute.",
+    "dutch": "Het regent vandaag."
+   },
+   {
+    "japanese": "Wir fahren nach Berlin.",
+    "romaji": "Wir fahren nach Berlin.",
+    "dutch": "Wij rijden naar Berlijn."
+   }
+  ]
+ },
+ "de-a1-possess": {
+  "naam": "Possessivartikel in het Duits",
+  "tagline": "Leer hoe je bezit aangeeft in het Duits met Possessivartikel.",
+  "niveau": "basis",
+  "kernregel": "Possessivartikel worden gebruikt om bezit aan te geven in het Duits. Ze veranderen afhankelijk van het geslacht, getal en de naamval van het zelfstandig naamwoord dat ze beschrijven.",
+  "patroon": "[Possessivartikel] + [zelfstandig naamwoord]",
+  "uitleg": "In het Duits gebruik je Possessivartikel om aan te geven dat iets van iemand is, vergelijkbaar met 'mijn', 'jouw', 'zijn', etc. in het Nederlands. De Possessivartikel passen zich aan aan het geslacht (mannelijk, vrouwelijk, onzijdig) en het getal (enkelvoud, meervoud) van het zelfstandig naamwoord. Daarnaast veranderen ze ook afhankelijk van de naamval (nominatief, accusatief, datief, genitief). Dit maakt het gebruik iets complexer dan in het Nederlands, waar de vorm meestal gelijk blijft.",
+  "opbouw": [
+   {
+    "element": "mein",
+    "rol": "Possessivartikel voor 'mijn'",
+    "voorbeeld": "mein Auto (mijn auto)"
+   },
+   {
+    "element": "dein",
+    "rol": "Possessivartikel voor 'jouw'",
+    "voorbeeld": "dein Haus (jouw huis)"
+   },
+   {
+    "element": "sein/ihr",
+    "rol": "Possessivartikel voor 'zijn/haar'",
+    "voorbeeld": "sein Buch (zijn boek), ihr Buch (haar boek)"
+   },
+   {
+    "element": "unser",
+    "rol": "Possessivartikel voor 'ons/onze'",
+    "voorbeeld": "unser Garten (onze tuin)"
+   },
+   {
+    "element": "euer",
+    "rol": "Possessivartikel voor 'jullie'",
+    "voorbeeld": "euer Lehrer (jullie leraar)"
+   }
+  ],
+  "tips": [
+   "Let op de naamval: de vorm van het Possessivartikel verandert afhankelijk van de naamval.",
+   "Oefen met de verschillende geslachten en getallen om vertrouwd te raken met de veranderingen.",
+   "Gebruik een tabel om de verschillende vormen van Possessivartikel in de verschillende naamvallen te leren.",
+   "Vergeet niet dat 'sein' zowel 'zijn' als 'haar' kan betekenen, afhankelijk van de context."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'sein' en 'ihr'. Correctie: 'sein' voor mannelijk of onzijdig bezit, 'ihr' voor vrouwelijk bezit.",
+   "Verkeerde naamval gebruiken. Correctie: Controleer altijd de naamval van het zelfstandig naamwoord.",
+   "Het vergeten van de meervoudsvorm. Correctie: 'meine', 'deine', 'seine', etc. voor meervoud."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Das ist mein Hund.",
+    "romaji": "Das ist mein Hund.",
+    "dutch": "Dat is mijn hond."
+   },
+   {
+    "japanese": "Ist das dein Fahrrad?",
+    "romaji": "Ist das dein Fahrrad?",
+    "dutch": "Is dat jouw fiets?"
+   },
+   {
+    "japanese": "Sein Vater ist Arzt.",
+    "romaji": "Sein Vater ist Arzt.",
+    "dutch": "Zijn vader is arts."
+   },
+   {
+    "japanese": "Ihre Schwester wohnt in Berlin.",
+    "romaji": "Ihre Schwester wohnt in Berlin.",
+    "dutch": "Haar zus woont in Berlijn."
+   },
+   {
+    "japanese": "Unser Haus ist groß.",
+    "romaji": "Unser Haus ist groß.",
+    "dutch": "Ons huis is groot."
+   },
+   {
+    "japanese": "Wo ist euer Auto?",
+    "romaji": "Wo ist euer Auto?",
+    "dutch": "Waar is jullie auto?"
+   }
+  ]
+ },
+ "de-a1-modal": {
+  "naam": "Modalverben in het Duits",
+  "tagline": "Beheers de nuances van Duitse modalverben voor vloeiend spreken.",
+  "niveau": "gemiddeld",
+  "kernregel": "Modalverben worden gebruikt om de mogelijkheid, noodzaak, toestemming, verplichting of wens uit te drukken. Ze veranderen de betekenis van het hoofdwerkwoord in een zin en zijn essentieel voor het uitdrukken van nuances in communicatie.",
+  "patroon": "Modalverb + infinitief van het hoofdwerkwoord",
+  "uitleg": "In het Duits zijn modalverben werkwoorden die de betekenis van een hoofdwerkwoord aanpassen. De meest voorkomende modalverben zijn 'können' (kunnen), 'müssen' (moeten), 'dürfen' (mogen), 'sollen' (zullen), 'wollen' (willen) en 'mögen' (houden van). Deze werkwoorden worden vervoegd en staan meestal in de tweede positie van de zin, terwijl het hoofdwerkwoord in de infinitiefvorm aan het einde van de zin staat. In tegenstelling tot het Nederlands, waar soms geen modalverbum nodig is, is het in het Duits vaak verplicht om de juiste modalverbum te gebruiken om de intentie van de zin duidelijk te maken.",
+  "opbouw": [
+   {
+    "element": "Modalverb",
+    "rol": "Geeft de modaliteit van de zin aan, zoals mogelijkheid of noodzaak.",
+    "voorbeeld": "Ich kann schwimmen. (Ik kan zwemmen.)"
+   },
+   {
+    "element": "Hoofdwerkwoord",
+    "rol": "Het werkwoord dat de actie of toestand beschrijft.",
+    "voorbeeld": "Ich muss arbeiten. (Ik moet werken.)"
+   },
+   {
+    "element": "Infinitief",
+    "rol": "De basisvorm van het hoofdwerkwoord, geplaatst aan het einde van de zin.",
+    "voorbeeld": "Er will tanzen. (Hij wil dansen.)"
+   },
+   {
+    "element": "Vervoeging van modalverben",
+    "rol": "Modalverben worden vervoegd naar de persoon en het getal van het onderwerp.",
+    "voorbeeld": "Wir dürfen gehen. (Wij mogen gaan.)"
+   },
+   {
+    "element": "Plaatsing in de zin",
+    "rol": "Het modalverb staat meestal op de tweede plaats, het hoofdwerkwoord aan het einde.",
+    "voorbeeld": "Sie soll kommen. (Zij moet komen.)"
+   }
+  ],
+  "tips": [
+   "Leer de vervoegingen van de modalverben goed uit je hoofd, omdat ze onregelmatig zijn.",
+   "Gebruik modalverben om beleefdheid of verplichting uit te drukken, zoals in 'Könnten Sie mir helfen?' (Zou u mij kunnen helpen?).",
+   "Let op de volgorde van de zin: het modalverb komt na het onderwerp en het hoofdwerkwoord aan het einde.",
+   "Oefen met het combineren van modalverben met verschillende hoofdwerkwoorden om je begrip te verdiepen."
+  ],
+  "veelgemaaktefouten": [
+   "Het modalverb niet vervoegen: Correctie: 'Ich kann schwimmen' in plaats van 'Ich kann schwimmen'.",
+   "Het hoofdwerkwoord niet in de infinitiefvorm plaatsen: Correctie: 'Er will tanzen' in plaats van 'Er will tanzt'.",
+   "Verkeerde plaatsing van het modalverb: Correctie: 'Wir müssen gehen' in plaats van 'Müssen wir gehen'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich möchte ein Buch lesen.",
+    "romaji": "Ich möchte ein Buch lesen.",
+    "dutch": "Ik wil graag een boek lezen."
+   },
+   {
+    "japanese": "Du sollst die Hausaufgaben machen.",
+    "romaji": "Du sollst die Hausaufgaben machen.",
+    "dutch": "Jij moet het huiswerk maken."
+   },
+   {
+    "japanese": "Er kann gut kochen.",
+    "romaji": "Er kann gut kochen.",
+    "dutch": "Hij kan goed koken."
+   },
+   {
+    "japanese": "Wir dürfen hier nicht parken.",
+    "romaji": "Wir dürfen hier nicht parken.",
+    "dutch": "Wij mogen hier niet parkeren."
+   },
+   {
+    "japanese": "Sie wollen nach Berlin fahren.",
+    "romaji": "Sie wollen nach Berlin fahren.",
+    "dutch": "Zij willen naar Berlijn rijden."
+   },
+   {
+    "japanese": "Ich muss früh aufstehen.",
+    "romaji": "Ich muss früh aufstehen.",
+    "dutch": "Ik moet vroeg opstaan."
+   }
+  ]
+ },
+ "de-a1-v2": {
+  "naam": "Wortstellung (V2)",
+  "tagline": "Begrijp de volgorde van woorden in Duitse hoofdzinconstructies.",
+  "niveau": "basis",
+  "kernregel": "In een Duitse hoofdzin staat het werkwoord altijd op de tweede plaats (V2). Dit betekent dat het werkwoord direct na het eerste zinsdeel komt, ongeacht wat dat zinsdeel is.",
+  "patroon": "Subject + Verb + Object / Adverbial / Complement",
+  "uitleg": "In het Duits is de volgorde van woorden in een hoofdzin vrij strikt: het werkwoord moet altijd op de tweede plaats staan. Dit betekent dat het eerste zinsdeel, dat niet noodzakelijkerwijs het onderwerp hoeft te zijn, gevolgd wordt door het werkwoord. Deze structuur zorgt ervoor dat het werkwoord een prominente plaats inneemt, wat belangrijk is voor de duidelijkheid van de zin. In tegenstelling tot het Nederlands, waar de volgorde soms flexibeler is, vereist het Duits deze strikte volgorde om grammaticaal correct te zijn. Het eerste zinsdeel kan een onderwerp, een bijwoordelijke bepaling of een ander zinsdeel zijn.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Het onderwerp van de zin, vaak een zelfstandig naamwoord of voornaamwoord.",
+    "voorbeeld": "Der Hund"
+   },
+   {
+    "element": "Verb",
+    "rol": "Het werkwoord dat de actie of toestand aangeeft.",
+    "voorbeeld": "läuft"
+   },
+   {
+    "element": "Object",
+    "rol": "Het zinsdeel dat de actie van het werkwoord ondergaat.",
+    "voorbeeld": "den Ball"
+   },
+   {
+    "element": "Adverbial",
+    "rol": "Een bijwoordelijke bepaling die extra informatie geeft over tijd, plaats, manier, etc.",
+    "voorbeeld": "im Park"
+   },
+   {
+    "element": "Complement",
+    "rol": "Een aanvulling die de zin completeert, zoals een voorzetselvoorwerp.",
+    "voorbeeld": "mit Freude"
+   }
+  ],
+  "tips": [
+   "Begin een zin met een ander zinsdeel dan het onderwerp voor variatie, maar zorg ervoor dat het werkwoord altijd op de tweede plaats blijft.",
+   "Let op de inversie in vragen: het werkwoord komt dan op de eerste plaats.",
+   "Gebruik komma's om bijzinconstructies te scheiden, maar houd de V2-regel in de hoofdzin in acht.",
+   "Oefen met het herschikken van zinnen om te zien hoe de betekenis en nadruk veranderen."
+  ],
+  "veelgemaaktefouten": [
+   "Het werkwoord op de derde plaats zetten: Correctie: 'Heute geht er ins Kino.' in plaats van 'Heute er geht ins Kino.'",
+   "Het onderwerp altijd als eerste zinsdeel gebruiken: Correctie: 'Im Sommer schwimmen wir oft.' in plaats van 'Wir schwimmen oft im Sommer.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Der Lehrer erklärt die Grammatik.",
+    "romaji": "Dea Leera erklaert dee Grammatik.",
+    "dutch": "De leraar legt de grammatica uit."
+   },
+   {
+    "japanese": "Morgen fahren wir nach Berlin.",
+    "romaji": "Morgen faaren veer nach Berlin.",
+    "dutch": "Morgen gaan we naar Berlijn."
+   },
+   {
+    "japanese": "Im Winter schneit es oft.",
+    "romaji": "Im Vinter schneit es oft.",
+    "dutch": "In de winter sneeuwt het vaak."
+   },
+   {
+    "japanese": "Gestern habe ich einen Film gesehen.",
+    "romaji": "Gestern habe ich einen Film gesehen.",
+    "dutch": "Gisteren heb ik een film gezien."
+   },
+   {
+    "japanese": "Heute Abend kocht sie das Abendessen.",
+    "romaji": "Hoyte Abend kocht zie das Abendessen.",
+    "dutch": "Vanavond kookt zij het avondeten."
+   },
+   {
+    "japanese": "Im Park spielt das Kind.",
+    "romaji": "Im Park spielt das Kind.",
+    "dutch": "In het park speelt het kind."
+   }
+  ]
+ },
+ "de-a1-prepzeit": {
+  "naam": "Präpositionen (Zeit)",
+  "tagline": "Leer hoe je tijdsaanduidingen in het Duits correct gebruikt.",
+  "niveau": "basis",
+  "kernregel": "Präpositionen worden in het Duits gebruikt om tijdsaanduidingen te specificeren. Ze helpen om duidelijk te maken wanneer een actie plaatsvindt, plaatsvond of zal plaatsvinden.",
+  "patroon": "Präposition + tijdsaanduiding",
+  "uitleg": "In het Duits worden verschillende voorzetsels gebruikt om tijd aan te duiden, zoals 'am', 'um', 'im', 'seit', en 'von...bis'. Deze voorzetsels helpen om specifieke momenten of perioden in de tijd te beschrijven. 'Am' wordt gebruikt voor dagen en data, 'um' voor specifieke tijdstippen, 'im' voor maanden en seizoenen, 'seit' voor een periode die in het verleden begon en nog steeds doorgaat, en 'von...bis' om een tijdsduur aan te geven. Het gebruik van deze voorzetsels kan verschillen van het Nederlands, waar soms geen voorzetsel nodig is of een ander voorzetsel wordt gebruikt.",
+  "opbouw": [
+   {
+    "element": "am",
+    "rol": "Wordt gebruikt voor dagen en specifieke data.",
+    "voorbeeld": "Ich treffe ihn am Montag."
+   },
+   {
+    "element": "um",
+    "rol": "Wordt gebruikt voor specifieke tijdstippen.",
+    "voorbeeld": "Der Film beginnt um 20 Uhr."
+   },
+   {
+    "element": "im",
+    "rol": "Wordt gebruikt voor maanden en seizoenen.",
+    "voorbeeld": "Wir fahren im Juli in den Urlaub."
+   },
+   {
+    "element": "seit",
+    "rol": "Wordt gebruikt om een actie aan te geven die in het verleden begon en nog steeds doorgaat.",
+    "voorbeeld": "Er lernt seit zwei Jahren Deutsch."
+   },
+   {
+    "element": "von...bis",
+    "rol": "Wordt gebruikt om een tijdsduur aan te geven.",
+    "voorbeeld": "Der Kurs dauert von März bis Juni."
+   }
+  ],
+  "tips": [
+   "Gebruik 'am' voor dagen van de week en specifieke data.",
+   "Gebruik 'um' voor het aangeven van een specifiek tijdstip.",
+   "Gebruik 'im' voor maanden en seizoenen.",
+   "Gebruik 'seit' om een periode aan te geven die in het verleden begon en nog steeds doorgaat.",
+   "Gebruik 'von...bis' om een begin- en eindpunt van een tijdsperiode aan te geven."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'am' en 'im' bij het aangeven van data. Correctie: 'am' voor dagen en data, 'im' voor maanden en seizoenen.",
+   "Het weglaten van 'um' bij tijdstippen. Correctie: Voeg altijd 'um' toe bij specifieke tijdstippen.",
+   "Verkeerd gebruik van 'seit' voor toekomstige tijd. Correctie: 'seit' wordt alleen gebruikt voor acties die in het verleden begonnen zijn en nog steeds doorgaan."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich habe am Freitag frei.",
+    "romaji": "Ich habe am Freitag frei.",
+    "dutch": "Ik ben vrijdag vrij."
+   },
+   {
+    "japanese": "Wir treffen uns um 18 Uhr.",
+    "romaji": "Wir treffen uns um 18 Uhr.",
+    "dutch": "We ontmoeten elkaar om 18 uur."
+   },
+   {
+    "japanese": "Im Winter ist es kalt.",
+    "romaji": "Im Winter ist es kalt.",
+    "dutch": "In de winter is het koud."
+   },
+   {
+    "japanese": "Seit letztem Jahr wohne ich hier.",
+    "romaji": "Seit letztem Jahr wohne ich hier.",
+    "dutch": "Sinds vorig jaar woon ik hier."
+   },
+   {
+    "japanese": "Der Urlaub ist von Juli bis August.",
+    "romaji": "Der Urlaub ist von Juli bis August.",
+    "dutch": "De vakantie is van juli tot augustus."
+   },
+   {
+    "japanese": "Am Wochenende fahren wir nach Berlin.",
+    "romaji": "Am Wochenende fahren wir nach Berlin.",
+    "dutch": "In het weekend gaan we naar Berlijn."
+   }
+  ]
+ },
+ "de-a2-dativ": {
+  "naam": "Dativ",
+  "tagline": "Begrijp het gebruik van de derde naamval in het Duits.",
+  "niveau": "basis",
+  "kernregel": "De datief, of derde naamval, wordt in het Duits gebruikt om de ontvanger van een actie aan te geven. Het is essentieel voor het correct vervoegen van zelfstandige naamwoorden, voornaamwoorden en bijbehorende lidwoorden.",
+  "patroon": "[Onderwerp] + [Werkwoord] + [Indirect Object in Dativ] + [Direct Object in Akkusativ]",
+  "uitleg": "In het Duits wordt de datief gebruikt om het indirecte object van een zin aan te geven, dat wil zeggen de persoon of het ding dat de actie van het werkwoord ondergaat of ontvangt. Dit is vergelijkbaar met het gebruik van 'aan' of 'voor' in het Nederlands. De datief beïnvloedt de vorm van lidwoorden en voornaamwoorden. Bijvoorbeeld, 'der' verandert in 'dem', 'die' in 'der', en 'das' in 'dem'. Het is belangrijk om te onthouden dat sommige werkwoorden altijd een datiefobject vereisen, zoals 'helfen' (helpen) en 'danken' (danken).",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "De uitvoerder van de actie in de zin.",
+    "voorbeeld": "Der Mann gibt dem Kind das Buch."
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Geeft de actie aan die wordt uitgevoerd.",
+    "voorbeeld": "Der Mann gibt dem Kind das Buch."
+   },
+   {
+    "element": "Indirect Object in Dativ",
+    "rol": "De ontvanger van de actie, in de datief vervoegd.",
+    "voorbeeld": "Der Mann gibt dem Kind das Buch."
+   },
+   {
+    "element": "Direct Object in Akkusativ",
+    "rol": "Het object dat direct door de actie wordt beïnvloed.",
+    "voorbeeld": "Der Mann gibt dem Kind das Buch."
+   }
+  ],
+  "tips": [
+   "Let op werkwoorden die altijd een datiefobject vereisen, zoals 'helfen' en 'danken'.",
+   "Oefen met het vervoegen van lidwoorden en voornaamwoorden in de datief om fouten te voorkomen.",
+   "Gebruik ezelsbruggetjes om de veranderingen van lidwoorden in de datief te onthouden, zoals 'der' naar 'dem'.",
+   "Controleer altijd of het werkwoord een direct of indirect object vereist."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen datief en accusatief: Correctie: 'Ich gebe dem Mann das Buch' in plaats van 'Ich gebe den Mann das Buch'.",
+   "Verkeerd gebruik van lidwoorden: Correctie: 'Ich danke dem Lehrer' in plaats van 'Ich danke den Lehrer'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich gebe dem Hund einen Knochen.",
+    "romaji": "Ikh gebe dem Hund einen Knochen.",
+    "dutch": "Ik geef de hond een bot."
+   },
+   {
+    "japanese": "Sie schreibt ihrer Freundin einen Brief.",
+    "romaji": "Sie schrijft ihrer Freundin einen Brief.",
+    "dutch": "Ze schrijft haar vriendin een brief."
+   },
+   {
+    "japanese": "Wir schenken dem Lehrer ein Buch.",
+    "romaji": "Wir schenken dem Lehrer ein Buch.",
+    "dutch": "We geven de leraar een boek cadeau."
+   },
+   {
+    "japanese": "Er erzählt dem Kind eine Geschichte.",
+    "romaji": "Er erzählt dem Kind eine Geschichte.",
+    "dutch": "Hij vertelt het kind een verhaal."
+   },
+   {
+    "japanese": "Ich kaufe meiner Mutter Blumen.",
+    "romaji": "Ikh kaufe meiner Mutter Blumen.",
+    "dutch": "Ik koop bloemen voor mijn moeder."
+   },
+   {
+    "japanese": "Der Arzt gibt dem Patienten ein Rezept.",
+    "romaji": "Der Arzt gibt dem Patienten ein Rezept.",
+    "dutch": "De arts geeft de patiënt een recept."
+   }
+  ]
+ },
+ "de-a2-wechsel": {
+  "naam": "Wechselpräpositionen",
+  "tagline": "Beheers de kunst van de wisselvoorzetsels in het Duits!",
+  "niveau": "gemiddeld",
+  "kernregel": "Wechselpräpositionen zijn voorzetsels die zowel met de vierde als de derde naamval gebruikt kunnen worden. Ze geven aan of er sprake is van een beweging naar een plaats toe (vierde naamval) of een statische locatie (derde naamval).",
+  "patroon": "[Wechselpräposition] + [Substantiv] + [Kasus]",
+  "uitleg": "Wechselpräpositionen zijn voorzetsels die zowel met de vierde naamval (accusatief) als de derde naamval (dativ) gebruikt kunnen worden. Dit hangt af van de context: als er sprake is van een beweging of verandering van plaats, gebruik je de vierde naamval. Als er sprake is van een statische situatie, gebruik je de derde naamval. In het Nederlands kennen we een vergelijkbaar onderscheid, maar het gebruik van naamvallen is minder expliciet. Voorbeelden van Wechselpräpositionen zijn: 'an', 'auf', 'hinter', 'in', 'neben', 'über', 'unter', 'vor', en 'zwischen'.",
+  "opbouw": [
+   {
+    "element": "Wechselpräposition",
+    "rol": "Het voorzetsel dat de relatie tussen het werkwoord en het zelfstandig naamwoord aangeeft.",
+    "voorbeeld": "auf"
+   },
+   {
+    "element": "Substantiv",
+    "rol": "Het zelfstandig naamwoord dat de locatie of het object van de actie aangeeft.",
+    "voorbeeld": "den Tisch"
+   },
+   {
+    "element": "Kasus",
+    "rol": "De naamval die aangeeft of het om een beweging of een statische situatie gaat.",
+    "voorbeeld": "Akkusativ of Dativ"
+   }
+  ],
+  "tips": [
+   "Onthoud dat beweging of verandering van locatie de vierde naamval vereist.",
+   "Gebruik de derde naamval als er geen beweging is, maar een statische situatie.",
+   "Let op werkwoorden die vaak beweging impliceren, zoals 'stellen', 'legen', 'setzen'.",
+   "Oefen met zinnen om het onderscheid tussen beweging en statische situaties te herkennen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de naamval bij werkwoorden die geen duidelijke beweging aangeven. Correctie: Let op de context van de zin.",
+   "Het gebruik van de verkeerde naamval bij werkwoorden die zowel beweging als statische situaties kunnen beschrijven. Correctie: Analyseer of er een verandering van plaats is.",
+   "Verkeerd gebruik van het voorzetsel. Correctie: Leer de betekenis en het gebruik van elk voorzetsel uit je hoofd."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich stelle das Buch auf den Tisch.",
+    "romaji": "Ikh stelle das Buch auf den Tisch.",
+    "dutch": "Ik leg het boek op de tafel."
+   },
+   {
+    "japanese": "Das Bild hängt an der Wand.",
+    "romaji": "Das Bild hängt an der Wand.",
+    "dutch": "Het schilderij hangt aan de muur."
+   },
+   {
+    "japanese": "Wir gehen in das Kino.",
+    "romaji": "Wir gehen in das Kino.",
+    "dutch": "We gaan naar de bioscoop."
+   },
+   {
+    "japanese": "Der Stuhl steht neben dem Tisch.",
+    "romaji": "Der Stuhl steht neben dem Tisch.",
+    "dutch": "De stoel staat naast de tafel."
+   },
+   {
+    "japanese": "Er legt den Teppich unter den Tisch.",
+    "romaji": "Er legt den Teppich unter den Tisch.",
+    "dutch": "Hij legt het tapijt onder de tafel."
+   },
+   {
+    "japanese": "Die Katze schläft zwischen den Kissen.",
+    "romaji": "Die Katze schläft zwischen den Kissen.",
+    "dutch": "De kat slaapt tussen de kussens."
+   }
+  ]
+ },
+ "de-a2-perfekt": {
+  "naam": "Perfekt in het Duits",
+  "tagline": "Beheers het verleden met het Perfekt.",
+  "niveau": "basis",
+  "kernregel": "Het Perfekt wordt in het Duits gebruikt om voltooide handelingen in het verleden te beschrijven, vooral in gesproken taal. Het is vergelijkbaar met de Nederlandse voltooide tijd en wordt gevormd met een hulpwerkwoord en een voltooid deelwoord.",
+  "patroon": "hulpwerkwoord (haben/sein) + voltooid deelwoord",
+  "uitleg": "In het Duits wordt het Perfekt gebruikt om te praten over gebeurtenissen die in het verleden zijn afgerond. Het wordt vaak gebruikt in informele gesprekken, terwijl de verleden tijd (Präteritum) meer in geschreven taal voorkomt. Het Perfekt wordt gevormd met een hulpwerkwoord ('haben' of 'sein') en een voltooid deelwoord van het hoofdwerkwoord. Het hulpwerkwoord komt op de tweede plaats in de zin, terwijl het voltooid deelwoord aan het einde van de zin staat. Het gebruik van 'haben' of 'sein' hangt af van het werkwoord; over het algemeen gebruiken transitieve werkwoorden 'haben', terwijl intransitieve werkwoorden die een verandering van toestand of beweging aangeven 'sein' gebruiken.",
+  "opbouw": [
+   {
+    "element": "hulpwerkwoord",
+    "rol": "Geeft de tijd aan en helpt bij het vormen van het Perfekt.",
+    "voorbeeld": "Ich habe gegessen."
+   },
+   {
+    "element": "haben",
+    "rol": "Wordt gebruikt met de meeste werkwoorden, vooral transitieve.",
+    "voorbeeld": "Er hat das Buch gelesen."
+   },
+   {
+    "element": "sein",
+    "rol": "Wordt gebruikt met werkwoorden van beweging of verandering van toestand.",
+    "voorbeeld": "Sie ist nach Hause gegangen."
+   },
+   {
+    "element": "voltooid deelwoord",
+    "rol": "Geeft de hoofdactie aan en staat aan het einde van de zin.",
+    "voorbeeld": "Wir haben den Film gesehen."
+   },
+   {
+    "element": "plaatsing",
+    "rol": "Het hulpwerkwoord staat op de tweede plaats en het voltooid deelwoord aan het einde.",
+    "voorbeeld": "Du hast gestern viel gearbeitet."
+   }
+  ],
+  "tips": [
+   "Onthoud dat 'sein' vaak gebruikt wordt met werkwoorden van beweging zoals 'gehen', 'kommen', 'fahren'.",
+   "Controleer of het werkwoord een verandering van toestand aangeeft; dit kan bepalen of 'sein' nodig is.",
+   "Let op onregelmatige voltooid deelwoorden, die vaak een andere stam hebben dan de infinitief.",
+   "Gebruik het Perfekt vooral in informele gesprekken en het Präteritum in formele of geschreven contexten."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd hulpwerkwoord gebruiken: 'Ich bin das Buch gelesen.' Correctie: 'Ich habe das Buch gelesen.'",
+   "Voltooid deelwoord op de verkeerde plaats: 'Ich habe gestern gegessen Pizza.' Correctie: 'Ich habe gestern Pizza gegessen.'",
+   "Verkeerde vorm van het voltooid deelwoord: 'Er hat gesingen.' Correctie: 'Er hat gesungen.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich habe gestern Fußball gespielt.",
+    "romaji": "Ik habe gestern Fußball gespielt.",
+    "dutch": "Ik heb gisteren voetbal gespeeld."
+   },
+   {
+    "japanese": "Wir sind nach Berlin gefahren.",
+    "romaji": "Wir sind nach Berlin gefahren.",
+    "dutch": "We zijn naar Berlijn gereden."
+   },
+   {
+    "japanese": "Sie hat den Kuchen gebacken.",
+    "romaji": "Sie hat den Kuchen gebacken.",
+    "dutch": "Zij heeft de cake gebakken."
+   },
+   {
+    "japanese": "Er ist um 8 Uhr angekommen.",
+    "romaji": "Er ist um 8 Uhr angekommen.",
+    "dutch": "Hij is om 8 uur aangekomen."
+   },
+   {
+    "japanese": "Ich habe das Fenster geöffnet.",
+    "romaji": "Ich habe das Fenster geöffnet.",
+    "dutch": "Ik heb het raam geopend."
+   },
+   {
+    "japanese": "Wir haben im Park spaziert.",
+    "romaji": "Wir haben im Park spaziert.",
+    "dutch": "We hebben in het park gewandeld."
+   }
+  ]
+ },
+ "de-a2-perfsein": {
+  "naam": "Perfekt met 'sein'",
+  "tagline": "Leer hoe je het voltooide deelwoord met 'sein' gebruikt in het Duits.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het Perfekt met 'sein' wordt gebruikt voor werkwoorden die beweging of verandering van toestand uitdrukken. Het is een van de twee hulpwerkwoorden die in het Duits worden gebruikt om de voltooid tegenwoordige tijd te vormen.",
+  "patroon": "sein + voltooid deelwoord",
+  "uitleg": "In het Duits wordt de voltooid tegenwoordige tijd (Perfekt) gevormd met de hulpwerkwoorden 'haben' of 'sein'. Het hulpwerkwoord 'sein' wordt specifiek gebruikt bij werkwoorden die een verandering van plaats of toestand aangeven, zoals 'gehen' (gaan), 'kommen' (komen), en 'werden' (worden). Dit verschilt van het Nederlands, waar we meestal 'hebben' gebruiken, zelfs voor beweging. Let op dat sommige werkwoorden die in het Nederlands 'hebben' gebruiken, in het Duits 'sein' vereisen. Het voltooid deelwoord komt altijd aan het einde van de zin.",
+  "opbouw": [
+   {
+    "element": "sein",
+    "rol": "Hulpwerkwoord dat aangeeft dat het Perfekt wordt gevormd.",
+    "voorbeeld": "Ich bin gegangen."
+   },
+   {
+    "element": "voltooid deelwoord",
+    "rol": "Geeft de actie aan die is voltooid.",
+    "voorbeeld": "gegangen"
+   },
+   {
+    "element": "onderwerp",
+    "rol": "Degene die de actie uitvoert.",
+    "voorbeeld": "Ich"
+   },
+   {
+    "element": "tijdsbepaling",
+    "rol": "Geeft aan wanneer de actie heeft plaatsgevonden.",
+    "voorbeeld": "gestern"
+   },
+   {
+    "element": "plaatsbepaling",
+    "rol": "Geeft aan waar de actie heeft plaatsgevonden.",
+    "voorbeeld": "nach Hause"
+   }
+  ],
+  "tips": [
+   "Gebruik 'sein' alleen met werkwoorden die beweging of verandering van toestand uitdrukken.",
+   "Onthoud dat het voltooid deelwoord altijd aan het einde van de zin komt.",
+   "Let op de juiste vervoeging van 'sein' afhankelijk van het onderwerp.",
+   "Oefen met veelvoorkomende werkwoorden die 'sein' gebruiken om vertrouwd te raken met het patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd hulpwerkwoord gebruiken: 'Ich habe gegangen.' Correctie: 'Ich bin gegangen.'",
+   "Verkeerde plaatsing van het voltooid deelwoord: 'Ich bin nach Hause gegangen.' Correctie: 'Ich bin nach Hause gegangen.'",
+   "Verkeerde vervoeging van 'sein': 'Du ist gekommen.' Correctie: 'Du bist gekommen.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Er ist nach Berlin geflogen.",
+    "romaji": "Er ist nach Berlin geflogen.",
+    "dutch": "Hij is naar Berlijn gevlogen."
+   },
+   {
+    "japanese": "Wir sind früh aufgestanden.",
+    "romaji": "Wir sind früh aufgestanden.",
+    "dutch": "We zijn vroeg opgestaan."
+   },
+   {
+    "japanese": "Sie sind im Park geblieben.",
+    "romaji": "Sie sind im Park geblieben.",
+    "dutch": "Zij zijn in het park gebleven."
+   },
+   {
+    "japanese": "Ich bin ins Kino gegangen.",
+    "romaji": "Ich bin ins Kino gegangen.",
+    "dutch": "Ik ben naar de bioscoop gegaan."
+   },
+   {
+    "japanese": "Du bist schnell gelaufen.",
+    "romaji": "Du bist schnell gelaufen.",
+    "dutch": "Jij bent snel gelopen."
+   },
+   {
+    "japanese": "Das Kind ist eingeschlafen.",
+    "romaji": "Das Kind ist eingeschlafen.",
+    "dutch": "Het kind is in slaap gevallen."
+   }
+  ]
+ },
+ "de-a2-praet": {
+  "naam": "Präteritum van 'sein' en 'haben'",
+  "tagline": "Leer hoe je het verleden beschrijft met 'sein' en 'haben'.",
+  "niveau": "basis",
+  "kernregel": "Het Präteritum van 'sein' en 'haben' wordt gebruikt om over het verleden te spreken, vooral in geschreven taal. Het is essentieel voor het beschrijven van situaties en toestanden in het verleden.",
+  "patroon": "Präteritum: sein -> war, waren; haben -> hatte, hatten",
+  "uitleg": "In het Duits wordt het Präteritum vaak gebruikt in geschreven teksten, zoals verhalen en krantenartikelen, om gebeurtenissen in het verleden te beschrijven. 'Sein' en 'haben' zijn onregelmatige werkwoorden en hebben speciale vormen in het Präteritum. 'Sein' verandert in 'war' voor enkelvoud en 'waren' voor meervoud. 'Haben' verandert in 'hatte' voor enkelvoud en 'hatten' voor meervoud. Deze vormen worden gebruikt zonder hulpwerkwoorden, in tegenstelling tot het Perfekt dat vaak in gesproken taal wordt gebruikt.",
+  "opbouw": [
+   {
+    "element": "Sein (ik-vorm)",
+    "rol": "Verleden tijd enkelvoud",
+    "voorbeeld": "Ich war müde."
+   },
+   {
+    "element": "Sein (wij-vorm)",
+    "rol": "Verleden tijd meervoud",
+    "voorbeeld": "Wir waren im Park."
+   },
+   {
+    "element": "Haben (ik-vorm)",
+    "rol": "Verleden tijd enkelvoud",
+    "voorbeeld": "Ich hatte ein Buch."
+   },
+   {
+    "element": "Haben (zij-vorm)",
+    "rol": "Verleden tijd meervoud",
+    "voorbeeld": "Sie hatten viel Spaß."
+   },
+   {
+    "element": "Negatie",
+    "rol": "Ontkenning in verleden tijd",
+    "voorbeeld": "Er hatte kein Geld."
+   }
+  ],
+  "tips": [
+   "Gebruik 'war' en 'hatte' voor enkelvoudige onderwerpen.",
+   "Gebruik 'waren' en 'hatten' voor meervoudige onderwerpen.",
+   "Het Präteritum wordt vaker in geschreven taal gebruikt, terwijl het Perfekt meer in gesproken taal voorkomt.",
+   "Let op de context: 'sein' wordt vaak gebruikt voor toestanden, 'haben' voor bezit."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 'war' met 'waren'. Correctie: 'Ich war' vs. 'Wir waren'.",
+   "Verwarren van 'hatte' met 'hatten'. Correctie: 'Er hatte' vs. 'Sie hatten'.",
+   "Gebruik van Perfekt in plaats van Präteritum in formele teksten. Correctie: Gebruik 'war' en 'hatte' in plaats van 'ist gewesen' en 'hat gehabt'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Er war zu Hause.",
+    "romaji": "Er war zu Hause.",
+    "dutch": "Hij was thuis."
+   },
+   {
+    "japanese": "Wir hatten keine Zeit.",
+    "romaji": "Wir hatten keine Zeit.",
+    "dutch": "Wij hadden geen tijd."
+   },
+   {
+    "japanese": "Ich war glücklich.",
+    "romaji": "Ich war glücklich.",
+    "dutch": "Ik was gelukkig."
+   },
+   {
+    "japanese": "Sie waren in der Schule.",
+    "romaji": "Sie waren in der Schule.",
+    "dutch": "Zij waren op school."
+   },
+   {
+    "japanese": "Du hattest recht.",
+    "romaji": "Du hattest recht.",
+    "dutch": "Jij had gelijk."
+   },
+   {
+    "japanese": "Es hatte geregnet.",
+    "romaji": "Es hatte geregnet.",
+    "dutch": "Het had geregend."
+   }
+  ]
+ },
+ "de-a2-komp": {
+  "naam": "Komparativ & Superlativ",
+  "tagline": "Vergelijk en overtreffen in het Duits",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Duits gebruik je de Komparativ om twee zaken met elkaar te vergelijken en de Superlativ om iets als het meest of minst te beschrijven. Deze vormen worden vaak gebruikt om eigenschappen, hoeveelheden of kwaliteiten te vergelijken.",
+  "patroon": "[adjectief] + -er (Komparativ), [am] + [adjectief] + -sten (Superlativ)",
+  "uitleg": "De Komparativ wordt gevormd door '-er' aan het bijvoeglijk naamwoord toe te voegen, vergelijkbaar met 'meer' in het Nederlands. De Superlativ wordt gevormd door 'am' voor het bijvoeglijk naamwoord te plaatsen en '-sten' toe te voegen, vergelijkbaar met 'het meest' in het Nederlands. Bij sommige bijvoeglijke naamwoorden verandert de klinker in de Komparativ en Superlativ (Umlaut). Let op dat bijvoeglijke naamwoorden die eindigen op -el of -er vaak de laatste 'e' verliezen in de Komparativ.",
+  "opbouw": [
+   {
+    "element": "adjectief",
+    "rol": "Het basiswoord dat de eigenschap beschrijft.",
+    "voorbeeld": "schnell (snel)"
+   },
+   {
+    "element": "-er",
+    "rol": "Toevoeging voor de Komparativ.",
+    "voorbeeld": "schneller (sneller)"
+   },
+   {
+    "element": "am",
+    "rol": "Voorzetsel voor de Superlativ.",
+    "voorbeeld": "am schnellsten (het snelst)"
+   },
+   {
+    "element": "-sten",
+    "rol": "Toevoeging voor de Superlativ.",
+    "voorbeeld": "am schnellsten (het snelst)"
+   },
+   {
+    "element": "Umlaut",
+    "rol": "Verandering van klinker in sommige bijvoeglijke naamwoorden.",
+    "voorbeeld": "jung (jong) -> jünger (jonger)"
+   }
+  ],
+  "tips": [
+   "Let op de Umlaut bij bijvoeglijke naamwoorden zoals 'alt' (oud) -> 'älter' (ouder).",
+   "Bijvoeglijke naamwoorden die eindigen op -el of -er verliezen vaak de laatste 'e' in de Komparativ.",
+   "Gebruik 'als' na de Komparativ om een vergelijking te maken (bijv. 'größer als').",
+   "Gebruik 'am' en '-sten' voor de Superlativ, maar let op uitzonderingen zoals 'gut' -> 'am besten'."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'als' en 'wie' in vergelijkingen: Correct is 'größer als' in plaats van 'größer wie'.",
+   "Het vergeten van de Umlaut in de Komparativ: Correct is 'älter' in plaats van 'alter'.",
+   "Verkeerde volgorde in de Superlativ: Correct is 'am schnellsten' in plaats van 'schnellsten am'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dieser Berg ist höher als jener.",
+    "romaji": "Deze berg is hoger dan die.",
+    "dutch": "Dieser Berg ist höher als jener."
+   },
+   {
+    "japanese": "Er ist der klügste in der Klasse.",
+    "romaji": "Hij is de slimste van de klas.",
+    "dutch": "Er ist der klügste in der Klasse."
+   },
+   {
+    "japanese": "Heute ist es kälter als gestern.",
+    "romaji": "Vandaag is het kouder dan gisteren.",
+    "dutch": "Heute ist es kälter als gestern."
+   },
+   {
+    "japanese": "Sie läuft am schnellsten von allen.",
+    "romaji": "Zij rent het snelst van allemaal.",
+    "dutch": "Sie läuft am schnellsten von allen."
+   },
+   {
+    "japanese": "Dieses Buch ist interessanter als das andere.",
+    "romaji": "Dit boek is interessanter dan het andere.",
+    "dutch": "Dieses Buch ist interessanter als das andere."
+   },
+   {
+    "japanese": "Das ist der schönste Tag meines Lebens.",
+    "romaji": "Dit is de mooiste dag van mijn leven.",
+    "dutch": "Das ist der schönste Tag meines Lebens."
+   }
+  ]
+ },
+ "de-a2-imper": {
+  "naam": "Imperativ in het Duits",
+  "tagline": "Leer hoe je bevelen en verzoeken formuleert in het Duits.",
+  "niveau": "basis",
+  "kernregel": "De imperatief in het Duits wordt gebruikt om bevelen, verzoeken of instructies te geven. Het is een directe manier om iemand te vragen iets te doen of niet te doen.",
+  "patroon": "Imperativ: [stam van het werkwoord] + [eindiging afhankelijk van de persoon]",
+  "uitleg": "In het Duits wordt de imperatief gevormd door de stam van het werkwoord te gebruiken, soms met een specifieke eindiging afhankelijk van de persoon. Voor de 'du'-vorm laat je de uitgang '-st' weg en gebruik je alleen de stam. Voor de 'ihr'-vorm gebruik je de stam met '-t'. Voor de formele 'Sie'-vorm gebruik je de infinitief van het werkwoord gevolgd door 'Sie'. In tegenstelling tot het Nederlands, waar de imperatief vaak alleen de stam is, moet je in het Duits rekening houden met de persoon tot wie je spreekt.",
+  "opbouw": [
+   {
+    "element": "Werkwoordstam",
+    "rol": "Basis van de imperatief",
+    "voorbeeld": "Geh (van 'gehen')"
+   },
+   {
+    "element": "Du-vorm",
+    "rol": "Informele enkelvoudige vorm",
+    "voorbeeld": "Geh!"
+   },
+   {
+    "element": "Ihr-vorm",
+    "rol": "Informele meervoudige vorm",
+    "voorbeeld": "Geht!"
+   },
+   {
+    "element": "Sie-vorm",
+    "rol": "Formele vorm voor enkelvoud en meervoud",
+    "voorbeeld": "Gehen Sie!"
+   },
+   {
+    "element": "Negatie",
+    "rol": "Om een negatief bevel te geven",
+    "voorbeeld": "Geh nicht!"
+   }
+  ],
+  "tips": [
+   "Gebruik de 'du'-vorm voor vrienden, familie of kinderen.",
+   "Gebruik de 'ihr'-vorm wanneer je tegen een groep spreekt die je informeel aanspreekt.",
+   "Gebruik de 'Sie'-vorm in formele situaties of wanneer je beleefd wilt zijn.",
+   "Bij sterke werkwoorden kan de klinker in de stam veranderen, let hierop bij het vormen van de imperatief."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de 'e' toe te voegen bij sommige werkwoorden in de 'du'-vorm, zoals 'arbeite!' in plaats van 'arbeit!'.",
+   "De 'Sie'-vorm verwarren met de 'du'-vorm, zoals 'Geh Sie!' in plaats van 'Gehen Sie!'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Komm her!",
+    "romaji": "Kom hier!",
+    "dutch": "Kom hier!"
+   },
+   {
+    "japanese": "Lies das Buch!",
+    "romaji": "Lees het boek!",
+    "dutch": "Lees het boek!"
+   },
+   {
+    "japanese": "Schreibt die Antwort!",
+    "romaji": "Schrijf het antwoord!",
+    "dutch": "Schrijf het antwoord!"
+   },
+   {
+    "japanese": "Seien Sie bitte leise!",
+    "romaji": "Wees alstublieft stil!",
+    "dutch": "Wees alstublieft stil!"
+   },
+   {
+    "japanese": "Fahr nicht so schnell!",
+    "romaji": "Rijd niet zo snel!",
+    "dutch": "Rijd niet zo snel!"
+   },
+   {
+    "japanese": "Helft mir!",
+    "romaji": "Help mij!",
+    "dutch": "Help mij!"
+   }
+  ]
+ },
+ "de-a2-trennbar": {
+  "naam": "Trennbare Verben",
+  "tagline": "Leer hoe je scheidbare werkwoorden correct gebruikt in het Duits.",
+  "niveau": "gemiddeld",
+  "kernregel": "Trennbare Verben zijn werkwoorden die een voorvoegsel hebben dat in bepaalde zinsconstructies van de stam gescheiden wordt. Ze worden vaak gebruikt om specifieke acties of bewegingen aan te geven.",
+  "patroon": "[voorvoegsel] + [werkwoordsstam]",
+  "uitleg": "In het Duits zijn er werkwoorden die een voorvoegsel hebben dat in de hoofdzin van de werkwoordsstam wordt gescheiden. Dit gebeurt meestal in de tegenwoordige tijd en de verleden tijd. Het voorvoegsel komt dan aan het einde van de zin. In samengestelde tijden, zoals de voltooide tijd, blijft het voorvoegsel aan de stam vastzitten. Dit verschijnsel is vergelijkbaar met het Nederlands, waar we ook scheidbare werkwoorden hebben, zoals 'opstaan' of 'uitgaan'. Het is belangrijk om te weten wanneer het voorvoegsel gescheiden moet worden en wanneer niet.",
+  "opbouw": [
+   {
+    "element": "voorvoegsel",
+    "rol": "Geeft een specifieke betekenis aan het werkwoord en wordt in de hoofdzin gescheiden van de stam.",
+    "voorbeeld": "auf"
+   },
+   {
+    "element": "werkwoordsstam",
+    "rol": "De kern van het werkwoord die de basisbetekenis bevat.",
+    "voorbeeld": "stehen"
+   },
+   {
+    "element": "hoofdzin",
+    "rol": "De zin waarin het voorvoegsel van de werkwoordsstam wordt gescheiden.",
+    "voorbeeld": "Ich stehe um sieben Uhr auf."
+   },
+   {
+    "element": "samengestelde tijden",
+    "rol": "Tijden waarin het voorvoegsel aan de stam vast blijft zitten.",
+    "voorbeeld": "Ich habe aufgestanden."
+   },
+   {
+    "element": "bijzin",
+    "rol": "In bijzinnen blijft het voorvoegsel aan de stam vastzitten.",
+    "voorbeeld": "Ich weiß, dass du um sieben Uhr aufstehst."
+   }
+  ],
+  "tips": [
+   "Let op de positie van het voorvoegsel in de zin; het komt vaak aan het einde van de hoofdzin.",
+   "Oefen met het herkennen van scheidbare werkwoorden door naar het voorvoegsel te kijken.",
+   "In samengestelde tijden en bijzinnen blijft het voorvoegsel aan de stam vastzitten.",
+   "Gebruik context om te bepalen of een werkwoord scheidbaar is, aangezien sommige werkwoorden zowel scheidbaar als onscheidbaar kunnen zijn."
+  ],
+  "veelgemaaktefouten": [
+   "Het voorvoegsel niet scheiden in de hoofdzin. Correctie: 'Ich stehe um sieben Uhr auf.' in plaats van 'Ich aufstehe um sieben Uhr.'",
+   "Het voorvoegsel scheiden in samengestelde tijden. Correctie: 'Ich habe aufgestanden.' in plaats van 'Ich habe gestanden auf.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich rufe dich morgen an.",
+    "romaji": "Ich rufe dich morgen an.",
+    "dutch": "Ik bel je morgen op."
+   },
+   {
+    "japanese": "Er steht früh auf.",
+    "romaji": "Er steht früh auf.",
+    "dutch": "Hij staat vroeg op."
+   },
+   {
+    "japanese": "Wir kommen um acht Uhr an.",
+    "romaji": "Wir kommen um acht Uhr an.",
+    "dutch": "We komen om acht uur aan."
+   },
+   {
+    "japanese": "Sie zieht ihre Jacke aus.",
+    "romaji": "Sie zieht ihre Jacke aus.",
+    "dutch": "Ze doet haar jas uit."
+   },
+   {
+    "japanese": "Ich mache das Fenster zu.",
+    "romaji": "Ich mache das Fenster zu.",
+    "dutch": "Ik doe het raam dicht."
+   },
+   {
+    "japanese": "Du lädst mich zum Essen ein.",
+    "romaji": "Du lädst mich zum Essen ein.",
+    "dutch": "Je nodigt me uit voor het eten."
+   }
+  ]
+ },
+ "de-a2-konj": {
+  "naam": "Konjunktionen",
+  "tagline": "Verbind zinnen en ideeën met Duitse voegwoorden.",
+  "niveau": "basis",
+  "kernregel": "Konjunktionen zijn woorden die zinnen of zinsdelen met elkaar verbinden. Ze helpen om verbanden te leggen tussen ideeën en zorgen voor vloeiende overgangen in de tekst.",
+  "patroon": "Konjunktion + Hauptsatz, Nebensatz",
+  "uitleg": "In het Duits worden voegwoorden gebruikt om zinnen en zinsdelen te verbinden. Er zijn verschillende soorten voegwoorden, zoals nevenschikkende en onderschikkende voegwoorden. Nevenschikkende voegwoorden, zoals 'und', 'aber', en 'oder', verbinden twee hoofdzinnen zonder de woordvolgorde te veranderen. Onderschikkende voegwoorden, zoals 'weil', 'dass', en 'wenn', leiden een bijzin in, waarbij de werkwoordvolgorde verandert en het werkwoord naar het einde van de bijzin gaat. Dit is anders dan in het Nederlands, waar de volgorde vaak gelijk blijft.",
+  "opbouw": [
+   {
+    "element": "Konjunktion",
+    "rol": "Verbindt zinnen of zinsdelen.",
+    "voorbeeld": "'und' in 'Ich gehe einkaufen und ich koche das Abendessen.'"
+   },
+   {
+    "element": "Hauptsatz",
+    "rol": "Hoofdzin die zelfstandig kan staan.",
+    "voorbeeld": "'Ich gehe einkaufen.'"
+   },
+   {
+    "element": "Nebensatz",
+    "rol": "Bijzin die afhankelijk is van de hoofdzin.",
+    "voorbeeld": "'weil ich Hunger habe.'"
+   },
+   {
+    "element": "Verb am Ende",
+    "rol": "Werkwoord aan het einde van de bijzin bij onderschikkende voegwoorden.",
+    "voorbeeld": "'weil ich Hunger habe.'"
+   },
+   {
+    "element": "Satzstellung",
+    "rol": "Woordvolgorde die verandert bij onderschikkende voegwoorden.",
+    "voorbeeld": "'Ich gehe einkaufen, weil ich Hunger habe.'"
+   }
+  ],
+  "tips": [
+   "Gebruik 'und', 'aber', en 'oder' om hoofdzinnen te verbinden zonder de woordvolgorde te veranderen.",
+   "Plaats het werkwoord aan het einde van de bijzin bij onderschikkende voegwoorden zoals 'weil' en 'dass'.",
+   "Let op de komma vóór de bijzin wanneer je onderschikkende voegwoorden gebruikt.",
+   "Oefen met verschillende voegwoorden om de juiste verbanden te leggen tussen zinnen."
+  ],
+  "veelgemaaktefouten": [
+   "Het werkwoord niet aan het einde van de bijzin plaatsen: Correctie: 'Ich gehe einkaufen, weil ich Hunger habe.'",
+   "Geen komma gebruiken vóór de bijzin: Correctie: 'Ich gehe einkaufen, weil ich Hunger habe.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich lese ein Buch, weil es interessant ist.",
+    "romaji": "Ich lese ein Buch, weil es interessant ist.",
+    "dutch": "Ik lees een boek omdat het interessant is."
+   },
+   {
+    "japanese": "Er geht spazieren, obwohl es regnet.",
+    "romaji": "Er geht spazieren, obwohl es regnet.",
+    "dutch": "Hij gaat wandelen hoewel het regent."
+   },
+   {
+    "japanese": "Wir bleiben zu Hause, denn wir sind müde.",
+    "romaji": "Wir bleiben zu Hause, denn wir sind müde.",
+    "dutch": "We blijven thuis want we zijn moe."
+   },
+   {
+    "japanese": "Sie kocht das Abendessen, während er arbeitete.",
+    "romaji": "Sie kocht das Abendessen, während er arbeitete.",
+    "dutch": "Zij kookte het avondeten terwijl hij werkte."
+   },
+   {
+    "japanese": "Ich rufe dich an, wenn ich zu Hause bin.",
+    "romaji": "Ich rufe dich an, wenn ich zu Hause bin.",
+    "dutch": "Ik bel je als ik thuis ben."
+   },
+   {
+    "japanese": "Er lernt Deutsch, damit er in Deutschland arbeiten kann.",
+    "romaji": "Er lernt Deutsch, damit er in Deutschland arbeiten kann.",
+    "dutch": "Hij leert Duits zodat hij in Duitsland kan werken."
+   }
+  ]
+ },
+ "de-a2-nebensatz": {
+  "naam": "Nebensatz-Wortstellung",
+  "tagline": "Beheers de kunst van de bijzin in het Duits.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Duits verschilt de woordvolgorde in bijzinnen van die in hoofdzinnen. Het werkwoord staat altijd aan het einde van de bijzin.",
+  "patroon": "[Onderwerp] + [bijzin-inleidend woord] + [andere zinsdelen] + [werkwoord]",
+  "uitleg": "In het Duits is de woordvolgorde in bijzinnen anders dan in hoofdzinnen. Terwijl in hoofdzinnen het werkwoord meestal op de tweede plaats staat, verschuift het in bijzinnen naar het einde van de zin. Dit komt doordat bijzinnen vaak worden ingeleid door woorden zoals 'dass', 'weil', 'wenn', enzovoort. Deze structuur is essentieel voor het duidelijk maken van de relatie tussen de hoofdzin en de bijzin. In het Nederlands is de woordvolgorde in bijzinnen vaak vergelijkbaar, maar het gebruik van verbindingswoorden kan verschillen.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp van de bijzin, dat aangeeft wie of wat de actie uitvoert.",
+    "voorbeeld": "Der Mann"
+   },
+   {
+    "element": "Bijzin-inleidend woord",
+    "rol": "Een woord dat de bijzin inleidt en de relatie met de hoofdzin aangeeft.",
+    "voorbeeld": "dass"
+   },
+   {
+    "element": "Andere zinsdelen",
+    "rol": "Alle overige zinsdelen zoals objecten, bijwoorden, enzovoort.",
+    "voorbeeld": "er nach Hause geht"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord van de bijzin, dat altijd aan het einde staat.",
+    "voorbeeld": "geht"
+   }
+  ],
+  "tips": [
+   "Oefen met het herkennen van bijzin-inleidende woorden zoals 'weil', 'obwohl', 'wenn'.",
+   "Let op de positie van het werkwoord in de bijzin; het moet altijd aan het einde staan.",
+   "Gebruik leestekens zoals komma's om de bijzin van de hoofdzin te scheiden.",
+   "Probeer zinnen te maken met verschillende bijzin-inleidende woorden om vertrouwd te raken met de structuur."
+  ],
+  "veelgemaaktefouten": [
+   "Het werkwoord niet aan het einde van de bijzin plaatsen. Correctie: Plaats het werkwoord altijd aan het einde.",
+   "Verkeerd gebruik van bijzin-inleidende woorden. Correctie: Leer de betekenis en het gebruik van elk verbindingswoord.",
+   "Vergeten een komma te plaatsen tussen de hoofdzin en de bijzin. Correctie: Zorg ervoor dat je een komma gebruikt om de zinnen te scheiden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich glaube, dass er morgen kommt.",
+    "romaji": "Ich glaube, dass er morgen kommt.",
+    "dutch": "Ik geloof dat hij morgen komt."
+   },
+   {
+    "japanese": "Sie sagte, dass sie keine Zeit hat.",
+    "romaji": "Sie sagte, dass sie keine Zeit hat.",
+    "dutch": "Ze zei dat ze geen tijd heeft."
+   },
+   {
+    "japanese": "Wir wissen, dass du fleißig bist.",
+    "romaji": "Wir wissen, dass du fleißig bist.",
+    "dutch": "We weten dat je ijverig bent."
+   },
+   {
+    "japanese": "Ich frage mich, ob er die Wahrheit sagt.",
+    "romaji": "Ich frage mich, ob er die Wahrheit sagt.",
+    "dutch": "Ik vraag me af of hij de waarheid spreekt."
+   },
+   {
+    "japanese": "Es ist wichtig, dass du pünktlich bist.",
+    "romaji": "Es ist wichtig, dass du pünktlich bist.",
+    "dutch": "Het is belangrijk dat je op tijd bent."
+   },
+   {
+    "japanese": "Obwohl es regnet, gehen wir spazieren.",
+    "romaji": "Obwohl es regnet, gehen wir spazieren.",
+    "dutch": "Hoewel het regent, gaan we wandelen."
+   }
+  ]
+ },
+ "de-a2-adjdekl": {
+  "naam": "Adjektivdeklination",
+  "tagline": "Beheers de kunst van het verbuigen van bijvoeglijke naamwoorden in het Duits.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Duits worden bijvoeglijke naamwoorden verbogen afhankelijk van het geslacht, getal en de naamval van het zelfstandig naamwoord dat ze beschrijven. Deze verbuigingen zorgen ervoor dat de zin grammaticaal correct en betekenisvol blijft.",
+  "patroon": "[lidwoord] + [bijvoeglijk naamwoord] + [zelfstandig naamwoord]",
+  "uitleg": "In het Duits moeten bijvoeglijke naamwoorden worden verbogen om overeen te komen met het geslacht (mannelijk, vrouwelijk, onzijdig), het getal (enkelvoud of meervoud) en de naamval (nominatief, accusatief, datief, genitief) van het zelfstandig naamwoord dat ze beschrijven. Deze verbuigingen zijn belangrijk omdat ze de functie van het zelfstandig naamwoord in de zin aangeven. In tegenstelling tot het Nederlands, waar bijvoeglijke naamwoorden meestal onveranderd blijven, veranderen ze in het Duits afhankelijk van de context. Er zijn drie soorten verbuigingen: sterke, zwakke en gemengde verbuigingen, afhankelijk van het gebruik van bepaalde of onbepaalde lidwoorden.",
+  "opbouw": [
+   {
+    "element": "Lidwoord",
+    "rol": "Bepaalt de verbuiging van het bijvoeglijk naamwoord.",
+    "voorbeeld": "der, die, das, ein, eine"
+   },
+   {
+    "element": "Bijvoeglijk naamwoord",
+    "rol": "Wordt verbogen om overeen te komen met het zelfstandig naamwoord.",
+    "voorbeeld": "groß, klein, schön"
+   },
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het woord dat door het bijvoeglijk naamwoord wordt beschreven.",
+    "voorbeeld": "Hund, Katze, Haus"
+   },
+   {
+    "element": "Geslacht",
+    "rol": "Mannelijk, vrouwelijk of onzijdig, beïnvloedt de verbuiging.",
+    "voorbeeld": "der Hund (m), die Katze (f), das Haus (n)"
+   },
+   {
+    "element": "Naamval",
+    "rol": "Bepaalt de functie van het zelfstandig naamwoord in de zin.",
+    "voorbeeld": "nominatief, accusatief, datief, genitief"
+   }
+  ],
+  "tips": [
+   "Leer de lidwoorden en hun bijbehorende naamvallen goed uit je hoofd, omdat ze de basis vormen voor de verbuiging.",
+   "Oefen met het herkennen van het geslacht van zelfstandige naamwoorden, omdat dit de verbuiging van het bijvoeglijk naamwoord beïnvloedt.",
+   "Gebruik tabellen om de verschillende verbuigingspatronen te leren en te vergelijken.",
+   "Let op uitzonderingen en onregelmatige vormen, vooral bij veelgebruikte woorden."
+  ],
+  "veelgemaaktefouten": [
+   "Het bijvoeglijk naamwoord niet verbuigen na een bepaald lidwoord. Correctie: 'der große Hund' in plaats van 'der groß Hund'.",
+   "Verwarring tussen sterke en zwakke verbuiging. Correctie: 'ein guter Mann' (sterk) versus 'der gute Mann' (zwak).",
+   "Het vergeten van de juiste naamval. Correctie: 'mit dem kleinen Hund' (datief) in plaats van 'mit der kleine Hund'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Der große Baum steht im Garten.",
+    "romaji": "Der große Baum steht im Garten.",
+    "dutch": "De grote boom staat in de tuin."
+   },
+   {
+    "japanese": "Ich habe einen alten Freund getroffen.",
+    "romaji": "Ich habe einen alten Freund getroffen.",
+    "dutch": "Ik heb een oude vriend ontmoet."
+   },
+   {
+    "japanese": "Sie kauft eine schöne Bluse.",
+    "romaji": "Sie kauft eine schöne Bluse.",
+    "dutch": "Zij koopt een mooie blouse."
+   },
+   {
+    "japanese": "Das kleine Kind spielt draußen.",
+    "romaji": "Das kleine Kind spielt draußen.",
+    "dutch": "Het kleine kind speelt buiten."
+   },
+   {
+    "japanese": "Wir wohnen in einem großen Haus.",
+    "romaji": "Wir wohnen in einem großen Haus.",
+    "dutch": "Wij wonen in een groot huis."
+   },
+   {
+    "japanese": "Er schenkt der netten Frau Blumen.",
+    "romaji": "Er schenkt der netten Frau Blumen.",
+    "dutch": "Hij geeft de aardige vrouw bloemen."
+   }
+  ]
+ },
+ "de-a2-genitiv": {
+  "naam": "Genitiv in het Duits",
+  "tagline": "Begrijp het gebruik van de genitief in het Duits voor bezit en relaties.",
+  "niveau": "gemiddeld",
+  "kernregel": "De genitief wordt in het Duits gebruikt om bezit aan te geven of om een relatie tussen twee zelfstandige naamwoorden te beschrijven. Het wordt vaak vertaald als 'van' in het Nederlands.",
+  "patroon": "Substantief (bezit) + 's' of 'es' + Substantief (bezit) + Artikel (genitief) + Substantief",
+  "uitleg": "In het Duits gebruik je de genitief om aan te geven dat iets tot iemand of iets behoort. Dit is vergelijkbaar met het gebruik van 'van' in het Nederlands, zoals in 'het boek van de leraar'. In het Duits wordt dit 'das Buch des Lehrers'. De genitief wordt gevormd door een 's' of 'es' toe te voegen aan het zelfstandige naamwoord dat het bezit aangeeft, afhankelijk van de lengte van het woord. De lidwoorden veranderen ook in de genitief: 'der' wordt 'des', 'die' wordt 'der', en 'das' wordt 'des'.",
+  "opbouw": [
+   {
+    "element": "Substantief (bezit)",
+    "rol": "Geeft aan wie of wat het bezit heeft.",
+    "voorbeeld": "Lehrers (van de leraar)"
+   },
+   {
+    "element": "'s' of 'es'",
+    "rol": "Toegevoegd aan het zelfstandige naamwoord om de genitief aan te geven.",
+    "voorbeeld": "des Lehrers"
+   },
+   {
+    "element": "Substantief (bezit)",
+    "rol": "Het voorwerp dat in bezit is.",
+    "voorbeeld": "das Buch"
+   },
+   {
+    "element": "Artikel (genitief)",
+    "rol": "Verandert om de genitief aan te geven.",
+    "voorbeeld": "des"
+   },
+   {
+    "element": "Substantief",
+    "rol": "Het zelfstandige naamwoord dat het bezit beschrijft.",
+    "voorbeeld": "Lehrers"
+   }
+  ],
+  "tips": [
+   "Gebruik de genitief om formele teksten of geschreven taal te verrijken.",
+   "Let op de verandering van lidwoorden in de genitief.",
+   "Bij langere zelfstandige naamwoorden voeg je 'es' toe in plaats van 's'.",
+   "De genitief wordt minder vaak gebruikt in gesproken Duits, waar vaak de datief met 'von' wordt gebruikt."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen genitief en datief: Gebruik niet 'von' als je de genitief bedoelt.",
+   "Vergeten om de lidwoorden aan te passen in de genitief: 'der Mann' wordt 'des Mannes'.",
+   "Verkeerde uitgang bij zelfstandige naamwoorden: gebruik 'es' voor langere woorden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Das Auto des Mannes ist neu.",
+    "romaji": "Das Auto des Mannes ist neu.",
+    "dutch": "De auto van de man is nieuw."
+   },
+   {
+    "japanese": "Die Farbe der Blume ist schön.",
+    "romaji": "Die Farbe der Blume ist schön.",
+    "dutch": "De kleur van de bloem is mooi."
+   },
+   {
+    "japanese": "Der Titel des Buches ist interessant.",
+    "romaji": "Der Titel des Buches ist interessant.",
+    "dutch": "De titel van het boek is interessant."
+   },
+   {
+    "japanese": "Die Tür des Hauses ist offen.",
+    "romaji": "Die Tür des Hauses ist offen.",
+    "dutch": "De deur van het huis is open."
+   },
+   {
+    "japanese": "Das Ende des Films war überraschend.",
+    "romaji": "Das Ende des Films war überraschend.",
+    "dutch": "Het einde van de film was verrassend."
+   },
+   {
+    "japanese": "Die Meinung der Experten ist wichtig.",
+    "romaji": "Die Meinung der Experten ist wichtig.",
+    "dutch": "De mening van de experts is belangrijk."
+   }
+  ]
+ },
+ "de-b1-konj2": {
+  "naam": "Konjunktiv II",
+  "tagline": "Hypothetische situaties en beleefdheid in het Duits",
+  "niveau": "gemiddeld",
+  "kernregel": "De Konjunktiv II wordt gebruikt om hypothetische situaties, wensen en beleefde verzoeken uit te drukken. Het is vergelijkbaar met de Nederlandse constructies 'zou', 'had' en 'waren'.",
+  "patroon": "Konjunktiv II: würde + infinitief of verbogen vorm van sterke werkwoorden",
+  "uitleg": "De Konjunktiv II is een belangrijk deel van de Duitse grammatica, vooral als je hypothetische situaties, wensen of beleefde verzoeken wilt uitdrukken. Het kan worden gevormd met 'würde' plus de infinitief van het werkwoord, wat vergelijkbaar is met het Nederlandse 'zou'. Voor sterke werkwoorden wordt vaak de verbogen vorm gebruikt, die meestal een klinkerverandering en de uitgang '-e' heeft. Dit patroon wordt vaak gebruikt in combinatie met modale werkwoorden en in voorwaardelijke zinnen (als-zinnen).",
+  "opbouw": [
+   {
+    "element": "würde",
+    "rol": "Hulpwerkwoord voor de Konjunktiv II",
+    "voorbeeld": "Ich würde gehen."
+   },
+   {
+    "element": "Infinitief",
+    "rol": "Hoofdwerkwoord in de zin",
+    "voorbeeld": "gehen"
+   },
+   {
+    "element": "Sterke werkwoorden",
+    "rol": "Worden vaak direct verbogen in de Konjunktiv II",
+    "voorbeeld": "Ich käme."
+   },
+   {
+    "element": "Klinkerverandering",
+    "rol": "Verandering in de stam van sterke werkwoorden",
+    "voorbeeld": "fahren -> führe"
+   },
+   {
+    "element": "Modale werkwoorden",
+    "rol": "Worden vaak in de Konjunktiv II gebruikt voor beleefdheid",
+    "voorbeeld": "Ich könnte helfen."
+   }
+  ],
+  "tips": [
+   "Gebruik 'würde' + infinitief voor de meeste werkwoorden om het eenvoudig te houden.",
+   "Sterke werkwoorden hebben vaak een klinkerverandering, let op deze veranderingen.",
+   "Gebruik de Konjunktiv II om beleefde verzoeken te doen, zoals 'Könnten Sie mir helfen?'",
+   "Oefen met veelgebruikte werkwoorden zoals 'sein', 'haben', en modale werkwoorden."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van Konjunktiv II met de verleden tijd. Correctie: 'Ich würde gehen' in plaats van 'Ich ging'.",
+   "Verkeerde klinkerverandering bij sterke werkwoorden. Correctie: 'Ich käme' in plaats van 'Ich kam'.",
+   "Vergeten van 'würde' bij zwakke werkwoorden. Correctie: 'Ich würde machen' in plaats van 'Ich mache'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Wenn ich reich wäre, würde ich die Welt bereisen.",
+    "romaji": "Wenn ich reich wäre, würde ich die Welt bereisen.",
+    "dutch": "Als ik rijk was, zou ik de wereld rondreizen."
+   },
+   {
+    "japanese": "Könnten Sie mir bitte helfen?",
+    "romaji": "Könnten Sie mir bitte helfen?",
+    "dutch": "Zou u mij alstublieft kunnen helpen?"
+   },
+   {
+    "japanese": "Ich wünschte, ich hätte mehr Zeit.",
+    "romaji": "Ich wünschte, ich hätte mehr Zeit.",
+    "dutch": "Ik zou willen dat ik meer tijd had."
+   },
+   {
+    "japanese": "Er sagte, er käme später.",
+    "romaji": "Er sagte, er käme später.",
+    "dutch": "Hij zei dat hij later zou komen."
+   },
+   {
+    "japanese": "Wenn es nicht regnete, würden wir spazieren gehen.",
+    "romaji": "Wenn es nicht regnete, würden wir spazieren gehen.",
+    "dutch": "Als het niet regende, zouden we gaan wandelen."
+   },
+   {
+    "japanese": "Ich würde das nicht tun, wenn ich du wäre.",
+    "romaji": "Ich würde das nicht tun, wenn ich du wäre.",
+    "dutch": "Ik zou dat niet doen als ik jou was."
+   }
+  ]
+ },
+ "de-b1-futur": {
+  "naam": "Futur I",
+  "tagline": "Leer hoe je toekomstige gebeurtenissen in het Duits uitdrukt.",
+  "niveau": "basis",
+  "kernregel": "Het Futur I wordt in het Duits gebruikt om acties of gebeurtenissen in de toekomst uit te drukken. Het wordt vaak gebruikt om intenties, voorspellingen of plannen aan te geven.",
+  "patroon": "werden + infinitief",
+  "uitleg": "In het Duits wordt de toekomende tijd, Futur I, gevormd door het hulpwerkwoord 'werden' te combineren met het infinitief van het hoofdwerkwoord. Dit lijkt op de Nederlandse constructie met 'zullen'. Het hulpwerkwoord 'werden' wordt vervoegd volgens de persoon en het getal, terwijl het hoofdwerkwoord in zijn basisvorm aan het einde van de zin staat. Dit patroon wordt gebruikt om toekomstige gebeurtenissen, intenties of voorspellingen uit te drukken, en kan ook gebruikt worden om een zekere mate van zekerheid of onzekerheid over de toekomst aan te geven.",
+  "opbouw": [
+   {
+    "element": "werden",
+    "rol": "Hulpwerkwoord dat aangeeft dat de actie in de toekomst plaatsvindt.",
+    "voorbeeld": "Ich werde"
+   },
+   {
+    "element": "ich",
+    "rol": "Onderwerp van de zin, dat aangeeft wie de actie zal uitvoeren.",
+    "voorbeeld": "Ich werde"
+   },
+   {
+    "element": "infinitief",
+    "rol": "De basisvorm van het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "gehen"
+   },
+   {
+    "element": "zinnenstructuur",
+    "rol": "Het hulpwerkwoord 'werden' komt na het onderwerp en het infinitief aan het einde van de zin.",
+    "voorbeeld": "Ich werde morgen nach Berlin fahren."
+   },
+   {
+    "element": "tijdsbepaling",
+    "rol": "Optioneel element dat aangeeft wanneer de actie zal plaatsvinden.",
+    "voorbeeld": "morgen"
+   }
+  ],
+  "tips": [
+   "Gebruik 'werden' altijd in combinatie met een infinitief om de toekomende tijd te vormen.",
+   "Plaats het infinitief altijd aan het einde van de zin.",
+   "Vergeet niet 'werden' te vervoegen volgens het onderwerp van de zin.",
+   "Gebruik tijdsbepalingen zoals 'morgen', 'nächste Woche' of 'in einem Jahr' om de tijdscontext te verduidelijken."
+  ],
+  "veelgemaaktefouten": [
+   "Het vergeten van de vervoeging van 'werden'. Correctie: 'Ich werde' in plaats van 'Ich werden'.",
+   "Het plaatsen van het infinitief niet aan het einde van de zin. Correctie: 'Ich werde morgen nach Berlin fahren' in plaats van 'Ich werde fahren morgen nach Berlin'.",
+   "Verwarring met de tegenwoordige tijd. Correctie: Gebruik 'werden' voor toekomstige acties, niet 'sein' of 'haben'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Er wird bald ankommen.",
+    "romaji": "Er wird bald ankommen.",
+    "dutch": "Hij zal binnenkort aankomen."
+   },
+   {
+    "japanese": "Wir werden das Problem lösen.",
+    "romaji": "Wir werden das Problem lösen.",
+    "dutch": "Wij zullen het probleem oplossen."
+   },
+   {
+    "japanese": "Sie wird ein neues Auto kaufen.",
+    "romaji": "Sie wird ein neues Auto kaufen.",
+    "dutch": "Zij zal een nieuwe auto kopen."
+   },
+   {
+    "japanese": "Wirst du morgen kommen?",
+    "romaji": "Wirst du morgen kommen?",
+    "dutch": "Zal jij morgen komen?"
+   },
+   {
+    "japanese": "Ich werde im Sommer reisen.",
+    "romaji": "Ich werde im Sommer reisen.",
+    "dutch": "Ik zal in de zomer reizen."
+   },
+   {
+    "japanese": "Ihr werdet die Prüfung bestehen.",
+    "romaji": "Ihr werdet die Prüfung bestehen.",
+    "dutch": "Jullie zullen het examen halen."
+   }
+  ]
+ },
+ "de-b1-passiv": {
+  "naam": "Passief in het Duits",
+  "tagline": "Leer hoe je passieve zinnen in het Duits vormt en gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het passief wordt gebruikt om de nadruk te leggen op de actie of de ontvanger van de actie, in plaats van de uitvoerder. In het Duits wordt het passief vaak gevormd met het hulpwerkwoord 'werden' en het voltooid deelwoord van het hoofdwerkwoord.",
+  "patroon": "Subjekt + werden + Partizip II (+ von + Agent)",
+  "uitleg": "In het Duits gebruik je het passief om te benadrukken wat er met het onderwerp gebeurt, in plaats van wie de actie uitvoert. Dit is vergelijkbaar met het Nederlands, waar we ook het passief gebruiken om de focus te verleggen van de uitvoerder naar de actie zelf. Het Duitse passief wordt meestal gevormd met het hulpwerkwoord 'werden' in de juiste tijdsvorm, gevolgd door het voltooid deelwoord van het hoofdwerkwoord. De uitvoerder van de actie kan worden toegevoegd met 'von' als dat nodig is, maar vaak is deze niet belangrijk of onbekend en wordt weggelaten.",
+  "opbouw": [
+   {
+    "element": "Subjekt",
+    "rol": "Het onderwerp van de zin, dat de actie ondergaat.",
+    "voorbeeld": "Das Buch"
+   },
+   {
+    "element": "werden",
+    "rol": "Het hulpwerkwoord dat de passieve vorm aangeeft.",
+    "voorbeeld": "wird"
+   },
+   {
+    "element": "Partizip II",
+    "rol": "Het voltooid deelwoord van het hoofdwerkwoord.",
+    "voorbeeld": "gelesen"
+   },
+   {
+    "element": "von + Agent",
+    "rol": "Optioneel: de uitvoerder van de actie, geïntroduceerd door 'von'.",
+    "voorbeeld": "von dem Lehrer"
+   }
+  ],
+  "tips": [
+   "Gebruik 'werden' om de passieve vorm te maken; let op de juiste tijdsvorm.",
+   "Het voltooid deelwoord (Partizip II) komt altijd aan het einde van de zin.",
+   "De agent (uitvoerder) wordt vaak weggelaten als deze onbekend of onbelangrijk is.",
+   "In tegenstelling tot het Nederlands, gebruik je in het Duits 'werden' in plaats van 'worden' of 'zijn'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'werden' en 'sein'. Correctie: Gebruik 'werden' voor passieve zinnen, niet 'sein'.",
+   "Vergeten het voltooid deelwoord aan het einde van de zin te plaatsen. Correctie: Plaats altijd het Partizip II aan het einde.",
+   "Onjuiste vervoeging van 'werden'. Correctie: Zorg ervoor dat 'werden' correct is vervoegd volgens het onderwerp en de tijd."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Das Auto wird repariert.",
+    "romaji": "Das Auto wird repariert.",
+    "dutch": "De auto wordt gerepareerd."
+   },
+   {
+    "japanese": "Der Brief wurde geschrieben.",
+    "romaji": "Der Brief wurde geschrieben.",
+    "dutch": "De brief werd geschreven."
+   },
+   {
+    "japanese": "Die Fenster werden geputzt.",
+    "romaji": "Die Fenster werden geputzt.",
+    "dutch": "De ramen worden gepoetst."
+   },
+   {
+    "japanese": "Das Essen wird von der Köchin zubereitet.",
+    "romaji": "Das Essen wird von der Köchin zubereitet.",
+    "dutch": "Het eten wordt door de kokkin bereid."
+   },
+   {
+    "japanese": "Der Film wird nächste Woche gezeigt.",
+    "romaji": "Der Film wird nächste Woche gezeigt.",
+    "dutch": "De film wordt volgende week vertoond."
+   },
+   {
+    "japanese": "Die Blumen wurden von den Kindern gepflückt.",
+    "romaji": "Die Blumen wurden von den Kindern gepflückt.",
+    "dutch": "De bloemen werden door de kinderen geplukt."
+   }
+  ]
+ },
+ "de-b1-relativ": {
+  "naam": "Relativsätze",
+  "tagline": "Verbind zinnen met relatieve zinnen voor meer context.",
+  "niveau": "gemiddeld",
+  "kernregel": "Relativsätze worden gebruikt om extra informatie over een zelfstandig naamwoord te geven zonder een nieuwe zin te beginnen. Ze helpen om zinnen te verbinden en details toe te voegen, waardoor de tekst vloeiender en informatiever wordt.",
+  "patroon": "[Hoofdzijn] + [relatief voornaamwoord] + [bijzin]",
+  "uitleg": "In het Duits worden relatieve zinnen geïntroduceerd door relatieve voornaamwoorden zoals 'der', 'die', 'das', 'welcher', 'welche', 'welches'. Deze voornaamwoorden komen overeen met het geslacht, getal en de naamval van het zelfstandig naamwoord dat ze vervangen. In tegenstelling tot het Nederlands, waar we vaak 'die' of 'dat' gebruiken, moet in het Duits het juiste relatieve voornaamwoord worden gekozen. De bijzin die volgt op het relatieve voornaamwoord heeft de werkwoorden aan het einde van de zin, wat een belangrijk verschil is met het Nederlands.",
+  "opbouw": [
+   {
+    "element": "Hoofdzijn",
+    "rol": "De hoofdzin bevat het zelfstandig naamwoord waar de relatieve zin naar verwijst.",
+    "voorbeeld": "Das ist der Mann."
+   },
+   {
+    "element": "Relatief voornaamwoord",
+    "rol": "Het voornaamwoord dat het zelfstandig naamwoord vervangt en de relatieve zin inleidt.",
+    "voorbeeld": "der"
+   },
+   {
+    "element": "Bijzin",
+    "rol": "De bijzin geeft extra informatie over het zelfstandig naamwoord en eindigt met het werkwoord.",
+    "voorbeeld": "der in Berlin wohnt."
+   },
+   {
+    "element": "Geslacht en naamval",
+    "rol": "Het relatieve voornaamwoord moet overeenkomen met het geslacht en de naamval van het zelfstandig naamwoord.",
+    "voorbeeld": "Der Mann, der in Berlin wohnt, ist mein Freund."
+   },
+   {
+    "element": "Werkwoordpositie",
+    "rol": "In de relatieve bijzin staat het werkwoord aan het einde.",
+    "voorbeeld": "wohnt"
+   }
+  ],
+  "tips": [
+   "Let op het geslacht en de naamval van het zelfstandig naamwoord om het juiste relatieve voornaamwoord te kiezen.",
+   "Oefen met het plaatsen van het werkwoord aan het einde van de relatieve bijzin.",
+   "Gebruik relatieve zinnen om je zinnen vloeiender en gedetailleerder te maken.",
+   "Probeer verschillende relatieve voornaamwoorden te gebruiken om vertrouwd te raken met hun gebruik."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'die' voor alle geslachten en naamvallen. Correctie: Gebruik 'der', 'die', 'das' afhankelijk van geslacht en naamval.",
+   "Het plaatsen van het werkwoord aan het begin van de relatieve bijzin. Correctie: Plaats het werkwoord aan het einde van de bijzin.",
+   "Verwarring tussen 'welcher' en 'der'. Correctie: 'Welcher' is formeler en minder gebruikelijk, gebruik 'der', 'die', 'das' voor dagelijks gebruik."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Das Buch, das auf dem Tisch liegt, gehört mir.",
+    "romaji": "Das Buch, das auf dem Tisch liegt, gehört mir.",
+    "dutch": "Het boek dat op de tafel ligt, is van mij."
+   },
+   {
+    "japanese": "Die Frau, die im Park joggt, ist meine Nachbarin.",
+    "romaji": "Die Frau, die im Park joggt, ist meine Nachbarin.",
+    "dutch": "De vrouw die in het park jogt, is mijn buurvrouw."
+   },
+   {
+    "japanese": "Der Hund, der laut bellt, ist sehr freundlich.",
+    "romaji": "Der Hund, der laut bellt, ist sehr freundlich.",
+    "dutch": "De hond die hard blaft, is erg vriendelijk."
+   },
+   {
+    "japanese": "Das Auto, das ich gekauft habe, ist rot.",
+    "romaji": "Das Auto, das ich gekauft habe, ist rot.",
+    "dutch": "De auto die ik heb gekocht, is rood."
+   },
+   {
+    "japanese": "Der Lehrer, der uns Deutsch unterrichtet, ist sehr geduldig.",
+    "romaji": "Der Lehrer, der uns Deutsch unterrichtet, ist sehr geduldig.",
+    "dutch": "De leraar die ons Duits onderwijst, is erg geduldig."
+   },
+   {
+    "japanese": "Die Stadt, in der ich geboren wurde, ist sehr schön.",
+    "romaji": "Die Stadt, in der ich geboren wurde, ist sehr schön.",
+    "dutch": "De stad waar ik ben geboren, is erg mooi."
+   }
+  ]
+ },
+ "de-b1-reflexiv": {
+  "naam": "Reflexieve Werkwoorden in het Duits",
+  "tagline": "Begrijp hoe je jezelf in het Duits kunt uitdrukken met reflexieve werkwoorden.",
+  "niveau": "gemiddeld",
+  "kernregel": "Reflexieve werkwoorden zijn werkwoorden waarbij de actie wordt teruggekaatst naar de uitvoerder. Ze worden gebruikt wanneer de spreker en de ontvanger van de actie dezelfde persoon zijn.",
+  "patroon": "zich + werkwoord",
+  "uitleg": "In het Duits worden reflexieve werkwoorden gebruikt om aan te geven dat de actie van het werkwoord terugkeert naar de uitvoerder. Dit is vergelijkbaar met het gebruik van 'zich' in het Nederlands, zoals in 'zich wassen'. Het reflexieve voornaamwoord verandert afhankelijk van de persoon en de naamval. In de meeste gevallen wordt het reflexieve voornaamwoord in de accusatief gebruikt, maar soms ook in de datief, afhankelijk van de structuur van de zin. Het is belangrijk om te weten welk werkwoord reflexief is, omdat dit de betekenis van de zin kan veranderen.",
+  "opbouw": [
+   {
+    "element": "zich",
+    "rol": "Reflexief voornaamwoord dat de terugkeer van de actie naar de uitvoerder aangeeft.",
+    "voorbeeld": "Ich wasche mich."
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Het werkwoord dat de actie beschrijft die wordt uitgevoerd en terugkeert naar de uitvoerder.",
+    "voorbeeld": "sich freuen"
+   },
+   {
+    "element": "persoon",
+    "rol": "De uitvoerder van de actie, die ook de ontvanger is.",
+    "voorbeeld": "Du freust dich."
+   },
+   {
+    "element": "naamval",
+    "rol": "Bepaalt de vorm van het reflexieve voornaamwoord (accusatief of datief).",
+    "voorbeeld": "Ich ziehe mir die Jacke an."
+   },
+   {
+    "element": "tijd",
+    "rol": "De tijd waarin de actie plaatsvindt, beïnvloedt de vervoeging van het werkwoord.",
+    "voorbeeld": "Er hat sich gewaschen."
+   }
+  ],
+  "tips": [
+   "Leer welke werkwoorden reflexief zijn, omdat dit niet altijd intuïtief is.",
+   "Oefen met het vervoegen van reflexieve werkwoorden in verschillende tijden.",
+   "Let op de naamval van het reflexieve voornaamwoord; meestal is het accusatief, maar soms datief.",
+   "Gebruik context om te bepalen of een werkwoord reflexief is, vooral bij werkwoorden die zowel reflexief als niet-reflexief kunnen zijn."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van de naamval: 'Ich wasche mir' in plaats van 'Ich wasche mich'. Correctie: Gebruik 'mich' in de accusatief.",
+   "Vergeten van het reflexieve voornaamwoord: 'Ich freue' in plaats van 'Ich freue mich'. Correctie: Voeg het reflexieve voornaamwoord toe.",
+   "Verkeerde vervoeging van het werkwoord: 'Er freut sich' in plaats van 'Er freut sich'. Correctie: Zorg ervoor dat het werkwoord correct is vervoegd."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich erinnere mich an den Urlaub.",
+    "romaji": "Ik erinnere mich an den Urlaub.",
+    "dutch": "Ik herinner me de vakantie."
+   },
+   {
+    "japanese": "Du interessierst dich für Kunst.",
+    "romaji": "Du interessierst dich für Kunst.",
+    "dutch": "Jij interesseert je voor kunst."
+   },
+   {
+    "japanese": "Er hat sich verlaufen.",
+    "romaji": "Er hat sich verlaufen.",
+    "dutch": "Hij is verdwaald."
+   },
+   {
+    "japanese": "Wir treffen uns um acht Uhr.",
+    "romaji": "Wir treffen uns um acht Uhr.",
+    "dutch": "We ontmoeten elkaar om acht uur."
+   },
+   {
+    "japanese": "Ihr wascht euch die Hände.",
+    "romaji": "Ihr wascht euch die Hände.",
+    "dutch": "Jullie wassen je handen."
+   },
+   {
+    "japanese": "Sie entschuldigen sich für die Verspätung.",
+    "romaji": "Sie entschuldigen sich für die Verspätung.",
+    "dutch": "Zij verontschuldigen zich voor de vertraging."
+   }
+  ]
+ },
+ "de-b1-infzu": {
+  "naam": "Infinitiv mit zu",
+  "tagline": "Leer hoe je het Duitse infinitief met 'zu' gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 'Infinitiv mit zu' wordt gebruikt om een infinitief te verbinden met een ander werkwoord of een bijzin. Het is vergelijkbaar met het gebruik van 'om te' of 'te' in het Nederlands.",
+  "patroon": "[hoofdzin] + [werkwoord] + zu + [infinitief]",
+  "uitleg": "In het Duits wordt het 'Infinitiv mit zu' gebruikt om een actie aan te duiden die volgt op een andere actie of situatie. Het is vergelijkbaar met het Nederlandse 'om te' of 'te'. Het woord 'zu' wordt vóór het infinitief geplaatst. Dit patroon wordt vaak gebruikt na bepaalde werkwoorden, bijvoeglijke naamwoorden en zelfstandige naamwoorden. Het kan ook worden gebruikt om een doel of intentie uit te drukken. Anders dan in het Nederlands, waar 'om te' vaak wordt gebruikt, wordt in het Duits alleen 'zu' gebruikt zonder een extra voorzetsel.",
+  "opbouw": [
+   {
+    "element": "hoofdzin",
+    "rol": "Introduceert de context of de actie die de basis vormt voor de infinitiefconstructie.",
+    "voorbeeld": "Ich habe vor"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Het werkwoord dat de actie of intentie aangeeft.",
+    "voorbeeld": "habe"
+   },
+   {
+    "element": "zu",
+    "rol": "Het verbindingswoord dat de infinitief met de hoofdzin verbindt.",
+    "voorbeeld": "zu"
+   },
+   {
+    "element": "infinitief",
+    "rol": "De werkwoordsvorm die de actie beschrijft die moet worden uitgevoerd.",
+    "voorbeeld": "lernen"
+   }
+  ],
+  "tips": [
+   "Gebruik 'zu' altijd direct voor het infinitief.",
+   "Na modale werkwoorden zoals 'können', 'müssen', 'wollen', wordt 'zu' niet gebruikt.",
+   "Let op de plaatsing van 'zu' in samengestelde werkwoorden; het komt tussen het voorvoegsel en de stam.",
+   "Gebruik het 'Infinitiv mit zu' na werkwoorden zoals 'versuchen', 'hoffen', 'vergessen'."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde plaatsing van 'zu' in samengestelde werkwoorden. Correct: 'anzufangen', niet 'zu anfangen'.",
+   "Gebruik van 'zu' na modale werkwoorden. Correct: 'Ich kann schwimmen', niet 'Ich kann zu schwimmen'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich habe keine Zeit, um zu lesen.",
+    "romaji": "Ich habe keine Zeit, um zu lesen.",
+    "dutch": "Ik heb geen tijd om te lezen."
+   },
+   {
+    "japanese": "Er versucht, das Problem zu lösen.",
+    "romaji": "Er versucht, das Problem zu lösen.",
+    "dutch": "Hij probeert het probleem op te lossen."
+   },
+   {
+    "japanese": "Sie hat beschlossen, nach Deutschland zu reisen.",
+    "romaji": "Sie hat beschlossen, nach Deutschland zu reisen.",
+    "dutch": "Zij heeft besloten naar Duitsland te reizen."
+   },
+   {
+    "japanese": "Es ist wichtig, die Regeln zu verstehen.",
+    "romaji": "Es ist wichtig, die Regeln zu verstehen.",
+    "dutch": "Het is belangrijk de regels te begrijpen."
+   },
+   {
+    "japanese": "Wir hoffen, bald zu kommen.",
+    "romaji": "Wir hoffen, bald zu kommen.",
+    "dutch": "Wij hopen snel te komen."
+   },
+   {
+    "japanese": "Er hat vergessen, das Licht auszuschalten.",
+    "romaji": "Er hat vergessen, das Licht auszuschalten.",
+    "dutch": "Hij is vergeten het licht uit te doen."
+   }
+  ]
+ },
+ "de-b1-umzu": {
+  "naam": "Gebruik van 'um...zu' en 'damit'",
+  "tagline": "Leer hoe je doelen en intenties uitdrukt in het Duits.",
+  "niveau": "gemiddeld",
+  "kernregel": "'Um...zu' en 'damit' worden gebruikt om het doel of de intentie van een actie aan te geven. 'Um...zu' wordt gebruikt wanneer het onderwerp van beide zinnen hetzelfde is, terwijl 'damit' wordt gebruikt wanneer de onderwerpen verschillen.",
+  "patroon": "um + te + infinitief / damit + bijzin",
+  "uitleg": "In het Duits gebruik je 'um...zu' om een doel uit te drukken wanneer het onderwerp van de hoofdzin en de bijzin hetzelfde is. Het patroon bestaat uit 'um' gevolgd door een infinitiefconstructie met 'zu'. Als de onderwerpen van de zinnen verschillen, gebruik je 'damit' gevolgd door een bijzin met een vervoegd werkwoord aan het einde. In het Nederlands gebruiken we vaak 'om te' of 'zodat' om soortgelijke betekenissen uit te drukken. Let op dat 'um...zu' niet met een bijzin kan worden gebruikt, en dat 'damit' altijd een bijzin vereist.",
+  "opbouw": [
+   {
+    "element": "um",
+    "rol": "Geeft het doel aan en wordt gevolgd door 'zu' en een infinitief.",
+    "voorbeeld": "Ich lerne Deutsch, um in Deutschland zu studieren."
+   },
+   {
+    "element": "zu",
+    "rol": "Wordt gebruikt in combinatie met een infinitief om een doel uit te drukken.",
+    "voorbeeld": "Er spart Geld, um ein Auto zu kaufen."
+   },
+   {
+    "element": "infinitief",
+    "rol": "Het werkwoord in zijn basisvorm, gebruikt na 'zu'.",
+    "voorbeeld": "Sie trainiert, um fit zu bleiben."
+   },
+   {
+    "element": "damit",
+    "rol": "Wordt gebruikt om een doel uit te drukken wanneer de onderwerpen van de zinnen verschillen.",
+    "voorbeeld": "Er gibt ihr das Buch, damit sie es lesen kann."
+   },
+   {
+    "element": "bijzin",
+    "rol": "Een afhankelijke zin die het doel van de hoofdzin uitlegt.",
+    "voorbeeld": "Wir gehen früh ins Bett, damit wir morgen fit sind."
+   }
+  ],
+  "tips": [
+   "Gebruik 'um...zu' alleen als het onderwerp van beide zinnen hetzelfde is.",
+   "Gebruik 'damit' wanneer de onderwerpen van de hoofdzin en de bijzin verschillen.",
+   "Plaats het werkwoord aan het einde van de bijzin bij 'damit'.",
+   "In formele teksten wordt 'um...zu' vaak gebruikt om een elegante stijl te behouden."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'um...zu' met verschillende onderwerpen: Correctie: Gebruik 'damit' in plaats van 'um...zu'.",
+   "Vergeten 'zu' te gebruiken bij de infinitief: Correctie: Voeg altijd 'zu' toe voor het werkwoord.",
+   "Verkeerde plaatsing van het werkwoord in de bijzin met 'damit': Correctie: Plaats het werkwoord altijd aan het einde van de bijzin."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ich gehe ins Fitnessstudio, um Muskeln aufzubauen.",
+    "romaji": "Ich gehe ins Fitnessstudio, um Muskeln aufzubauen.",
+    "dutch": "Ik ga naar de sportschool om spieren op te bouwen."
+   },
+   {
+    "japanese": "Sie kauft ein Buch, um mehr über Geschichte zu lernen.",
+    "romaji": "Sie kauft ein Buch, um mehr über Geschichte zu lernen.",
+    "dutch": "Zij koopt een boek om meer over geschiedenis te leren."
+   },
+   {
+    "japanese": "Wir fahren nach Berlin, damit wir das Brandenburger Tor sehen können.",
+    "romaji": "Wir fahren nach Berlin, damit wir das Brandenburger Tor sehen können.",
+    "dutch": "Wij rijden naar Berlijn zodat we de Brandenburger Tor kunnen zien."
+   },
+   {
+    "japanese": "Er bleibt zu Hause, damit er sich ausruhen kann.",
+    "romaji": "Er bleibt zu Hause, damit er sich ausruhen kann.",
+    "dutch": "Hij blijft thuis zodat hij kan uitrusten."
+   },
+   {
+    "japanese": "Ich mache meine Hausaufgaben, um gute Noten zu bekommen.",
+    "romaji": "Ich mache meine Hausaufgaben, um gute Noten zu bekommen.",
+    "dutch": "Ik maak mijn huiswerk om goede cijfers te halen."
+   },
+   {
+    "japanese": "Sie kocht ein Geschenk, damit er sich freut.",
+    "romaji": "Sie kocht ein Geschenk, damit er sich freut.",
+    "dutch": "Zij koopt een cadeau zodat hij blij is."
+   }
+  ]
+ },
+ "de-b1-plusq": {
+  "naam": "Plusquamperfekt",
+  "tagline": "Het verleden voor het verleden in het Duits.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het Plusquamperfekt wordt gebruikt om aan te geven dat een bepaalde actie of toestand al was voltooid voordat een andere actie in het verleden plaatsvond. Het is vergelijkbaar met de Nederlandse voltooid verleden tijd.",
+  "patroon": "hulpwerkwoord 'hatte' of 'war' + voltooid deelwoord",
+  "uitleg": "Het Plusquamperfekt wordt in het Duits gebruikt om een gebeurtenis te beschrijven die al was afgerond voordat een andere gebeurtenis plaatsvond. Het is vergelijkbaar met de Nederlandse constructie 'had gedaan'. Het Plusquamperfekt wordt gevormd met het imperfectum van de hulpwerkwoorden 'haben' of 'sein' (hatte of war) en het voltooid deelwoord van het hoofdwerkwoord. De keuze tussen 'hatte' en 'war' hangt af van of het werkwoord transitief is (met 'haben') of intransitief en een beweging of verandering van toestand uitdrukt (met 'sein'). In tegenstelling tot het Nederlands, waar de voltooid verleden tijd vaak wordt weggelaten, is het in het Duits gebruikelijker om het Plusquamperfekt te gebruiken om de volgorde van gebeurtenissen te verduidelijken.",
+  "opbouw": [
+   {
+    "element": "hulpwerkwoord 'hatte'",
+    "rol": "Wordt gebruikt voor transitieve werkwoorden.",
+    "voorbeeld": "Ich hatte gegessen."
+   },
+   {
+    "element": "hulpwerkwoord 'war'",
+    "rol": "Wordt gebruikt voor intransitieve werkwoorden die beweging of verandering van toestand uitdrukken.",
+    "voorbeeld": "Er war gegangen."
+   },
+   {
+    "element": "voltooid deelwoord",
+    "rol": "Geeft de actie of toestand aan die is voltooid.",
+    "voorbeeld": "gegessen, gegangen"
+   },
+   {
+    "element": "hoofdwerkwoord",
+    "rol": "Het werkwoord dat de actie of toestand beschrijft.",
+    "voorbeeld": "essen, gehen"
+   },
+   {
+    "element": "tijdsbepaling",
+    "rol": "Kan de volgorde van gebeurtenissen verduidelijken.",
+    "voorbeeld": "bevor, nachdem"
+   }
+  ],
+  "tips": [
+   "Gebruik 'hatte' voor werkwoorden die een direct object hebben.",
+   "Gebruik 'war' voor werkwoorden die beweging of verandering van toestand aangeven.",
+   "Plaats de tijdsbepaling zoals 'bevor' of 'nachdem' om de volgorde van gebeurtenissen te verduidelijken.",
+   "Oefen met het herkennen van transitieve en intransitieve werkwoorden om de juiste hulpwerkwoord te kiezen."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd hulpwerkwoord gebruiken: 'Ich war gegessen' in plaats van 'Ich hatte gegessen'.",
+   "Vergeten het voltooid deelwoord te gebruiken: 'Ich hatte essen' in plaats van 'Ich hatte gegessen'.",
+   "Verkeerde volgorde van gebeurtenissen aangeven zonder tijdsbepaling: 'Ich hatte gegessen, er kam' zonder 'bevor' of 'nachdem'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Nachdem er das Buch gelesen hatte, verstand er die Geschichte besser.",
+    "romaji": "Nachdem er das Buch gelesen hatte, verstand er die Geschichte besser.",
+    "dutch": "Nadat hij het boek had gelezen, begreep hij het verhaal beter."
+   },
+   {
+    "japanese": "Sie hatte den Brief geschrieben, bevor sie ihn traf.",
+    "romaji": "Sie hatte den Brief geschrieben, bevor sie ihn traf.",
+    "dutch": "Ze had de brief geschreven voordat ze hem ontmoette."
+   },
+   {
+    "japanese": "Wir waren schon gegangen, als der Regen begann.",
+    "romaji": "Wir waren schon gegangen, als der Regen begann.",
+    "dutch": "We waren al vertrokken toen de regen begon."
+   },
+   {
+    "japanese": "Er hatte das Auto verkauft, bevor er umzog.",
+    "romaji": "Er hatte das Auto verkauft, bevor er umzog.",
+    "dutch": "Hij had de auto verkocht voordat hij verhuisde."
+   },
+   {
+    "japanese": "Nachdem sie die Prüfung bestanden hatte, feierte sie mit Freunden.",
+    "romaji": "Nachdem sie die Prüfung bestanden hatte, feierte sie mit Freunden.",
+    "dutch": "Nadat ze het examen had gehaald, vierde ze het met vrienden."
+   },
+   {
+    "japanese": "Ich hatte den Film schon gesehen, als er im Fernsehen lief.",
+    "romaji": "Ich hatte den Film schon gesehen, als er im Fernsehen lief.",
+    "dutch": "Ik had de film al gezien toen hij op televisie kwam."
+   }
+  ]
+ },
+ "de-b1-indirekt": {
+  "naam": "Indirekte Rede",
+  "tagline": "Leer hoe je indirecte rede in het Duits gebruikt om uitspraken van anderen weer te geven.",
+  "niveau": "gemiddeld",
+  "kernregel": "De indirecte rede in het Duits wordt gebruikt om uitspraken, gedachten of vragen van anderen weer te geven zonder hun exacte woorden te herhalen. Het is vooral nuttig in formele contexten zoals journalistiek en academisch schrijven.",
+  "patroon": "Konjunktiv I of Konjunktiv II van het werkwoord",
+  "uitleg": "In het Duits wordt de indirecte rede vaak gevormd met de Konjunktiv I, een speciale aanvoegende wijs. Als de Konjunktiv I-vorm hetzelfde is als de indicatief, wordt de Konjunktiv II gebruikt om verwarring te voorkomen. Dit patroon wordt gebruikt om te rapporteren wat iemand heeft gezegd zonder directe citaten te gebruiken. Het is vergelijkbaar met de indirecte rede in het Nederlands, maar vereist vaak een andere werkwoordsvorm. Het gebruik van de juiste Konjunktiv is cruciaal om de betekenis en de bron van de informatie duidelijk te maken.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp van de zin blijft hetzelfde als in de directe rede.",
+    "voorbeeld": "Er sagt, er habe keine Zeit."
+   },
+   {
+    "element": "Werkwoord in Konjunktiv I",
+    "rol": "Het werkwoord wordt meestal in de Konjunktiv I gezet om de indirecte rede aan te geven.",
+    "voorbeeld": "Sie sagt, sie komme morgen."
+   },
+   {
+    "element": "Konjunktiv II",
+    "rol": "Wordt gebruikt als de Konjunktiv I-vorm gelijk is aan de indicatief.",
+    "voorbeeld": "Er sagte, er würde kommen."
+   },
+   {
+    "element": "Datieve zinnen",
+    "rol": "Bij zinnen met indirecte rede kan de datief worden gebruikt om de ontvanger van de informatie aan te geven.",
+    "voorbeeld": "Er sagte mir, er habe es getan."
+   },
+   {
+    "element": "Aanhalingstekens",
+    "rol": "Aanhalingstekens worden niet gebruikt in de indirecte rede.",
+    "voorbeeld": "Sie behauptet, sie sei krank."
+   }
+  ],
+  "tips": [
+   "Gebruik altijd de Konjunktiv I voor de indirecte rede, tenzij deze gelijk is aan de indicatief.",
+   "Let op de tijd van de oorspronkelijke uitspraak; de tijd verandert meestal niet in de indirecte rede.",
+   "In informele contexten kan de indicatief soms worden gebruikt, maar dit wordt als minder correct beschouwd.",
+   "Oefen met het herkennen van de Konjunktiv I-vormen van veelvoorkomende werkwoorden."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de indicatief in plaats van de Konjunktiv I: Correctie: Gebruik 'habe' in plaats van 'hat' in 'Er sagt, er habe keine Zeit.'",
+   "Verkeerde tijdsvorm: Correctie: Gebruik de tijdsvorm van de oorspronkelijke uitspraak, bijvoorbeeld 'Er sagte, er habe es getan' in plaats van 'hatte'.",
+   "Verwarring tussen Konjunktiv I en II: Correctie: Gebruik 'komme' in plaats van 'würde kommen' als de Konjunktiv I-vorm niet gelijk is aan de indicatief."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Er sagt, er sei müde.",
+    "romaji": "Er sagt, er sei müde.",
+    "dutch": "Hij zegt dat hij moe is."
+   },
+   {
+    "japanese": "Sie behauptet, sie habe das Buch gelesen.",
+    "romaji": "Sie behauptet, sie habe das Buch gelesen.",
+    "dutch": "Zij beweert dat zij het boek heeft gelezen."
+   },
+   {
+    "japanese": "Er meinte, er könne nicht kommen.",
+    "romaji": "Er meinte, er könne nicht kommen.",
+    "dutch": "Hij zei dat hij niet kon komen."
+   },
+   {
+    "japanese": "Sie sagte, sie werde morgen anrufen.",
+    "romaji": "Sie sagte, sie werde morgen anrufen.",
+    "dutch": "Zij zei dat zij morgen zou bellen."
+   },
+   {
+    "japanese": "Er erklärte, er habe den Bericht geschrieben.",
+    "romaji": "Er erklärte, er habe den Bericht geschrieben.",
+    "dutch": "Hij legde uit dat hij het verslag had geschreven."
+   },
+   {
+    "japanese": "Sie versicherte, sie sei pünktlich.",
+    "romaji": "Sie versicherte, sie sei pünktlich.",
+    "dutch": "Zij verzekerde dat zij op tijd zou zijn."
+   }
+  ]
+ },
+ "de-b1-adjnomen": {
+  "naam": "Adjektiv als Nomen",
+  "tagline": "Gebruik bijvoeglijke naamwoorden als zelfstandige naamwoorden in het Duits.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Duits kunnen bijvoeglijke naamwoorden zelfstandig worden gebruikt om naar een groep mensen of dingen te verwijzen. Dit gebeurt vaak met een lidwoord of aanwijzend voornaamwoord en het bijvoeglijk naamwoord krijgt een passende naamvalsuitgang.",
+  "patroon": "[Lidwoord/aanwijzend voornaamwoord] + [bijvoeglijk naamwoord met naamvalsuitgang]",
+  "uitleg": "In het Duits kunnen bijvoeglijke naamwoorden zelfstandig worden gebruikt om naar een groep mensen of dingen te verwijzen. Dit gebeurt vaak met een lidwoord of aanwijzend voornaamwoord en het bijvoeglijk naamwoord krijgt een passende naamvalsuitgang. Bijvoorbeeld, 'der Alte' betekent 'de oude man' en 'die Schöne' betekent 'de mooie vrouw'. Dit gebruik is vergelijkbaar met het Nederlands, waar we ook bijvoeglijke naamwoorden zelfstandig kunnen gebruiken, zoals in 'de rijken' of 'de armen'. Het is belangrijk om de juiste naamvalsuitgang te gebruiken, afhankelijk van het geslacht, getal en de naamval van het zelfstandig gebruikte bijvoeglijk naamwoord.",
+  "opbouw": [
+   {
+    "element": "Lidwoord/aanwijzend voornaamwoord",
+    "rol": "Geeft aan naar welke specifieke groep of persoon het bijvoeglijk naamwoord verwijst.",
+    "voorbeeld": "der, die, das, dieser, jene"
+   },
+   {
+    "element": "Bijvoeglijk naamwoord",
+    "rol": "Wordt zelfstandig gebruikt om een groep of persoon te beschrijven.",
+    "voorbeeld": "alt, schön, reich"
+   },
+   {
+    "element": "Naamvalsuitgang",
+    "rol": "Geeft de naamval, het geslacht en het getal aan van het zelfstandig gebruikte bijvoeglijk naamwoord.",
+    "voorbeeld": "-e, -en, -er"
+   }
+  ],
+  "tips": [
+   "Let op de naamval van het bijvoeglijk naamwoord, deze moet overeenkomen met de functie in de zin.",
+   "Gebruik het juiste lidwoord of aanwijzend voornaamwoord om duidelijk te maken naar wie of wat je verwijst.",
+   "Oefen met verschillende bijvoeglijke naamwoorden en naamvallen om vertrouwd te raken met de uitgangen."
+  ],
+  "veelgemaaktefouten": [
+   "Het vergeten van de naamvalsuitgang. Correctie: Voeg de juiste uitgang toe, bijvoorbeeld 'der Alte' in plaats van 'der Alt'.",
+   "Het gebruik van een onjuist lidwoord. Correctie: Zorg ervoor dat het lidwoord overeenkomt met het geslacht en de naamval, bijvoorbeeld 'die Schöne' voor een vrouw.",
+   "Verwarring tussen enkelvoud en meervoud. Correctie: Gebruik de juiste uitgang voor enkelvoud of meervoud, bijvoorbeeld 'die Alten' voor meerdere oude mensen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Der Alte sitzt auf der Bank.",
+    "romaji": "Der Alte sitzt auf der Bank.",
+    "dutch": "De oude man zit op de bank."
+   },
+   {
+    "japanese": "Die Schöne lächelt.",
+    "romaji": "Die Schöne lächelt.",
+    "dutch": "De mooie vrouw glimlacht."
+   },
+   {
+    "japanese": "Das Gute siegt immer.",
+    "romaji": "Das Gute siegt immer.",
+    "dutch": "Het goede overwint altijd."
+   },
+   {
+    "japanese": "Ich helfe dem Kranken.",
+    "romaji": "Ich helfe dem Kranken.",
+    "dutch": "Ik help de zieke."
+   },
+   {
+    "japanese": "Wir besuchen die Alten im Heim.",
+    "romaji": "Wir besuchen die Alten im Heim.",
+    "dutch": "We bezoeken de ouderen in het tehuis."
+   },
+   {
+    "japanese": "Jeder kennt den Reichen.",
+    "romaji": "Jeder kennt den Reichen.",
+    "dutch": "Iedereen kent de rijke man."
+   }
+  ]
+ },
+ "de-b1-prepgen": {
+  "naam": "Präpositionen met Genitiv",
+  "tagline": "Leer hoe je genitiefvoorzetsels correct gebruikt in het Duits.",
+  "niveau": "gemiddeld",
+  "kernregel": "Präpositionen mit Genitiv worden gebruikt om relaties tussen woorden aan te geven, waarbij de genitiefvorm van het zelfstandig naamwoord wordt gebruikt. Ze geven vaak een gevoel van formaliteit of precisie in de taal.",
+  "patroon": "Präposition + Genitiv",
+  "uitleg": "In het Duits zijn er bepaalde voorzetsels die altijd de genitiefvorm van het zelfstandig naamwoord vereisen. Dit is anders dan in het Nederlands, waar voorzetsels meestal met de derde of vierde naamval worden gecombineerd. Het gebruik van de genitief na een voorzetsel kan een gevoel van formaliteit of precisie geven. Veelgebruikte voorzetsels die de genitief vereisen zijn 'während', 'wegen', 'trotz', 'anstatt' en 'innerhalb'. Hoewel het gebruik van de genitief in het gesproken Duits aan het afnemen is, blijft het in geschreven taal belangrijk.",
+  "opbouw": [
+   {
+    "element": "Präposition",
+    "rol": "Het voorzetsel dat de relatie tussen de woorden aangeeft.",
+    "voorbeeld": "während"
+   },
+   {
+    "element": "Genitivform",
+    "rol": "De naamval die wordt gebruikt na het voorzetsel.",
+    "voorbeeld": "des Mannes"
+   },
+   {
+    "element": "Substantiv",
+    "rol": "Het zelfstandig naamwoord dat in de genitiefvorm staat.",
+    "voorbeeld": "Mannes"
+   },
+   {
+    "element": "Artikel",
+    "rol": "Het lidwoord dat in de genitiefvorm wordt aangepast.",
+    "voorbeeld": "des"
+   }
+  ],
+  "tips": [
+   "Leer de genitiefvormen van de lidwoorden uit je hoofd, want ze verschillen van de nominatief en accusatief.",
+   "Gebruik genitiefvoorzetsels vooral in formele of geschreven contexten.",
+   "Let op de context waarin je het voorzetsel gebruikt; sommige voorzetsels kunnen ook met andere naamvallen worden gebruikt, afhankelijk van de betekenis.",
+   "Oefen met het herkennen van genitiefvoorzetsels in teksten om hun gebruik beter te begrijpen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de datief in plaats van de genitief na een voorzetsel. Correctie: 'wegen des Wetters' in plaats van 'wegen dem Wetter'.",
+   "Verkeerde lidwoordvormen gebruiken. Correctie: 'während der Nacht' in plaats van 'während die Nacht'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Wegen des schlechten Wetters wurde das Spiel abgesagt.",
+    "romaji": "Wegen des schlechten Wetters wurde das Spiel abgesagt.",
+    "dutch": "Vanwege het slechte weer werd de wedstrijd afgelast."
+   },
+   {
+    "japanese": "Trotz der Warnungen ging er weiter.",
+    "romaji": "Trotz der Warnungen ging er weiter.",
+    "dutch": "Ondanks de waarschuwingen ging hij verder."
+   },
+   {
+    "japanese": "Anstatt eines Briefes schickte er eine E-Mail.",
+    "romaji": "Anstatt eines Briefes schickte er eine E-Mail.",
+    "dutch": "In plaats van een brief stuurde hij een e-mail."
+   },
+   {
+    "japanese": "Innerhalb eines Jahres hat sich viel verändert.",
+    "romaji": "Innerhalb eines Jahres hat sich viel verändert.",
+    "dutch": "Binnen een jaar is er veel veranderd."
+   },
+   {
+    "japanese": "Während des Urlaubs haben wir viele Fotos gemacht.",
+    "romaji": "Während des Urlaubs haben wir viele Fotos gemacht.",
+    "dutch": "Tijdens de vakantie hebben we veel foto's gemaakt."
+   },
+   {
+    "japanese": "Außerhalb der Stadt gibt es viele Wälder.",
+    "romaji": "Außerhalb der Stadt gibt es viele Wälder.",
+    "dutch": "Buiten de stad zijn er veel bossen."
+   }
+  ]
+ }
+}

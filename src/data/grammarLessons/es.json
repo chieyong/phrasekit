@@ -1,0 +1,2817 @@
+{
+ "es-a1-ser": {
+  "naam": "Het werkwoord 'ser' in het Spaans",
+  "tagline": "Leer hoe je het essentiële werkwoord 'ser' correct gebruikt.",
+  "niveau": "basis",
+  "kernregel": "'Ser' is een van de belangrijkste werkwoorden in het Spaans en wordt gebruikt om permanente of essentiële eigenschappen te beschrijven. Het wordt vaak gebruikt om identiteit, afkomst, tijd, en eigenschappen te beschrijven.",
+  "patroon": "ser + [kenmerk/identiteit/tijd]",
+  "uitleg": "Het werkwoord 'ser' betekent 'zijn' in het Nederlands en wordt gebruikt om permanente of essentiële eigenschappen te beschrijven. In tegenstelling tot 'estar', dat tijdelijke toestanden of locaties beschrijft, gebruik je 'ser' voor zaken die niet snel veranderen. Bijvoorbeeld, je gebruikt 'ser' om te zeggen wat of wie iemand is, waar iemand vandaan komt, of om de tijd aan te geven. Het is belangrijk om te onthouden dat 'ser' onregelmatig is en in elke tijd anders wordt vervoegd.",
+  "opbouw": [
+   {
+    "element": "yo soy",
+    "rol": "eerste persoon enkelvoud",
+    "voorbeeld": "Yo soy estudiante."
+   },
+   {
+    "element": "tú eres",
+    "rol": "tweede persoon enkelvoud",
+    "voorbeeld": "Tú eres mi amigo."
+   },
+   {
+    "element": "él/ella/usted es",
+    "rol": "derde persoon enkelvoud",
+    "voorbeeld": "Él es médico."
+   },
+   {
+    "element": "nosotros/nosotras somos",
+    "rol": "eerste persoon meervoud",
+    "voorbeeld": "Nosotros somos hermanos."
+   },
+   {
+    "element": "ellos/ellas/ustedes son",
+    "rol": "derde persoon meervoud",
+    "voorbeeld": "Ellos son profesores."
+   }
+  ],
+  "tips": [
+   "Gebruik 'ser' om nationaliteit of afkomst te beschrijven, bijvoorbeeld: 'Soy de España'.",
+   "Gebruik 'ser' om de tijd aan te geven, bijvoorbeeld: 'Son las dos'.",
+   "Gebruik 'ser' om eigenschappen te beschrijven die als permanent worden gezien, zoals 'Ella es alta'.",
+   "Onthoud dat 'ser' onregelmatig is en oefen de vervoegingen regelmatig."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 'ser' met 'estar' bij het beschrijven van eigenschappen. Correct: 'Él es inteligente' (niet 'está').",
+   "Verkeerde vervoeging van 'ser' in de derde persoon meervoud. Correct: 'Ellos son' (niet 'Ellos es')."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Soy ingeniero.",
+    "romaji": "Soy ingeniero.",
+    "dutch": "Ik ben ingenieur."
+   },
+   {
+    "japanese": "Ella es mi hermana.",
+    "romaji": "Ella es mi hermana.",
+    "dutch": "Zij is mijn zus."
+   },
+   {
+    "japanese": "Nosotros somos de México.",
+    "romaji": "Nosotros somos de México.",
+    "dutch": "Wij komen uit Mexico."
+   },
+   {
+    "japanese": "Es importante estudiar.",
+    "romaji": "Es importante estudiar.",
+    "dutch": "Het is belangrijk om te studeren."
+   },
+   {
+    "japanese": "Son las tres de la tarde.",
+    "romaji": "Son las tres de la tarde.",
+    "dutch": "Het is drie uur 's middags."
+   },
+   {
+    "japanese": "Ustedes son muy amables.",
+    "romaji": "Ustedes son muy amables.",
+    "dutch": "U bent erg vriendelijk."
+   }
+  ]
+ },
+ "es-a1-estar": {
+  "naam": "Het gebruik van 'estar' in het Spaans",
+  "tagline": "Begrijp wanneer en hoe je 'estar' gebruikt voor tijdelijke toestanden en locaties.",
+  "niveau": "basis",
+  "kernregel": "'Estar' is een werkwoord dat wordt gebruikt om tijdelijke toestanden, gevoelens en locaties aan te geven. Het verschilt van 'ser', dat wordt gebruikt voor permanente eigenschappen.",
+  "patroon": "estar + [bijvoeglijk naamwoord/locatie]",
+  "uitleg": "In het Spaans gebruik je 'estar' om te praten over hoe iemand zich voelt, waar iets of iemand zich bevindt, of om een tijdelijke toestand te beschrijven. Dit is anders dan in het Nederlands, waar het werkwoord 'zijn' vaak voor zowel tijdelijke als permanente toestanden wordt gebruikt. 'Estar' wordt ook gebruikt in de context van progressieve tijden, zoals 'estoy comiendo' (ik ben aan het eten). Het is belangrijk om te onthouden dat 'estar' niet wordt gebruikt voor permanente eigenschappen, zoals nationaliteit of karaktereigenschappen, waarvoor 'ser' wordt gebruikt.",
+  "opbouw": [
+   {
+    "element": "Estar",
+    "rol": "Werkwoord dat de toestand of locatie aangeeft",
+    "voorbeeld": "Estoy cansado."
+   },
+   {
+    "element": "[Bijvoeglijk naamwoord]",
+    "rol": "Beschrijft de tijdelijke toestand",
+    "voorbeeld": "Estoy feliz."
+   },
+   {
+    "element": "[Locatie]",
+    "rol": "Geeft de plaats aan waar iets of iemand zich bevindt",
+    "voorbeeld": "Estamos en casa."
+   },
+   {
+    "element": "Estar + gerundio",
+    "rol": "Geeft een handeling aan die op dit moment plaatsvindt",
+    "voorbeeld": "Estoy estudiando."
+   }
+  ],
+  "tips": [
+   "Gebruik 'estar' voor emoties en tijdelijke toestanden, zoals 'estoy triste' (ik ben verdrietig).",
+   "Gebruik 'estar' voor locaties, bijvoorbeeld 'está en la oficina' (hij/zij is op kantoor).",
+   "Onthoud dat 'estar' verandert afhankelijk van de persoon: estoy, estás, está, estamos, estáis, están.",
+   "Gebruik 'estar' met gerundio om aan te geven dat iets nu gebeurt, zoals 'estoy leyendo' (ik ben aan het lezen)."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'ser' en 'estar'. Correctie: Gebruik 'ser' voor permanente eigenschappen en 'estar' voor tijdelijke toestanden.",
+   "Verkeerde vervoeging van 'estar'. Correctie: Zorg ervoor dat je de juiste vorm gebruikt, bijvoorbeeld 'estamos' voor wij zijn.",
+   "Vergeten van het gebruik van 'estar' voor locaties. Correctie: Gebruik altijd 'estar' om aan te geven waar iets of iemand zich bevindt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Estoy enfermo.",
+    "romaji": "Estoy enfermo.",
+    "dutch": "Ik ben ziek."
+   },
+   {
+    "japanese": "Ella está en el parque.",
+    "romaji": "Ella está en el parque.",
+    "dutch": "Zij is in het park."
+   },
+   {
+    "japanese": "Estamos contentos.",
+    "romaji": "Estamos contentos.",
+    "dutch": "Wij zijn blij."
+   },
+   {
+    "japanese": "¿Dónde estás?",
+    "romaji": "¿Dónde estás?",
+    "dutch": "Waar ben jij?"
+   },
+   {
+    "japanese": "El libro está sobre la mesa.",
+    "romaji": "El libro está sobre la mesa.",
+    "dutch": "Het boek ligt op de tafel."
+   },
+   {
+    "japanese": "Están cansados después del viaje.",
+    "romaji": "Están cansados después del viaje.",
+    "dutch": "Zij zijn moe na de reis."
+   }
+  ]
+ },
+ "es-a1-servs": {
+  "naam": "Ser vs Estar",
+  "tagline": "Het verschil tussen 'ser' en 'estar' begrijpen en correct gebruiken.",
+  "niveau": "basis",
+  "kernregel": "In het Spaans worden 'ser' en 'estar' beide vertaald als 'zijn' in het Nederlands, maar ze worden in verschillende contexten gebruikt. 'Ser' wordt gebruikt voor permanente of essentiële kenmerken, terwijl 'estar' wordt gebruikt voor tijdelijke toestanden of locaties.",
+  "patroon": "ser + [kenmerk] / estar + [toestand/locatie]",
+  "uitleg": "Het werkwoord 'ser' wordt gebruikt om eigenschappen te beschrijven die als inherent of permanent worden beschouwd, zoals identiteit, beroep, nationaliteit, en tijd. Daarentegen wordt 'estar' gebruikt voor toestanden die veranderlijk zijn, zoals emoties, gezondheid, en locaties. In het Nederlands gebruiken we vaak 'zijn' voor beide situaties, maar in het Spaans is het belangrijk om het juiste werkwoord te kiezen om de juiste betekenis over te brengen. Bijvoorbeeld, 'soy médico' betekent 'ik ben arts' (een permanente toestand), terwijl 'estoy cansado' betekent 'ik ben moe' (een tijdelijke toestand).",
+  "opbouw": [
+   {
+    "element": "ser",
+    "rol": "beschrijft permanente of essentiële kenmerken",
+    "voorbeeld": "Ella es alta."
+   },
+   {
+    "element": "estar",
+    "rol": "beschrijft tijdelijke toestanden of locaties",
+    "voorbeeld": "Él está en casa."
+   },
+   {
+    "element": "[kenmerk]",
+    "rol": "een eigenschap die als permanent wordt beschouwd",
+    "voorbeeld": "Soy español."
+   },
+   {
+    "element": "[toestand/locatie]",
+    "rol": "een toestand of locatie die tijdelijk is",
+    "voorbeeld": "Estamos felices."
+   }
+  ],
+  "tips": [
+   "Gebruik 'ser' voor zaken die niet snel veranderen, zoals beroep, afkomst, en tijd.",
+   "Gebruik 'estar' voor gevoelens, tijdelijke situaties, en locaties.",
+   "Denk aan 'ser' als 'essentie' en 'estar' als 'staat' om het verschil te onthouden.",
+   "Let op context: 'ser' kan ook gebruikt worden voor evenementen (La fiesta es en mi casa)."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'ser' en 'estar' bij emoties: Correct is 'estoy feliz', niet 'soy feliz'.",
+   "Gebruik van 'ser' voor locaties: Correct is 'está en el parque', niet 'es en el parque'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Soy estudiante.",
+    "romaji": "Soy estudiante.",
+    "dutch": "Ik ben student."
+   },
+   {
+    "japanese": "Estamos en la playa.",
+    "romaji": "Estamos en la playa.",
+    "dutch": "We zijn op het strand."
+   },
+   {
+    "japanese": "Ella es inteligente.",
+    "romaji": "Ella es inteligente.",
+    "dutch": "Zij is intelligent."
+   },
+   {
+    "japanese": "Estoy enfermo.",
+    "romaji": "Estoy enfermo.",
+    "dutch": "Ik ben ziek."
+   },
+   {
+    "japanese": "La reunión es a las tres.",
+    "romaji": "La reunión es a las tres.",
+    "dutch": "De vergadering is om drie uur."
+   },
+   {
+    "japanese": "El libro está sobre la mesa.",
+    "romaji": "El libro está sobre la mesa.",
+    "dutch": "Het boek ligt op de tafel."
+   }
+  ]
+ },
+ "es-a1-articulos": {
+  "naam": "Artículos & Género",
+  "tagline": "Begrijp de basis van Spaanse lidwoorden en geslachten.",
+  "niveau": "basis",
+  "kernregel": "In het Spaans zijn zelfstandige naamwoorden mannelijk of vrouwelijk en dit beïnvloedt het lidwoord dat ervoor wordt gebruikt. Het juiste gebruik van lidwoorden is essentieel voor grammaticale overeenstemming in zinnen.",
+  "patroon": "<artículo definido/indefinido> + <sustantivo> [género: masculino/femenino]",
+  "uitleg": "In het Spaans worden zelfstandige naamwoorden voorafgegaan door lidwoorden die overeenkomen met hun geslacht en aantal. Er zijn bepaalde lidwoorden voor mannelijke en vrouwelijke zelfstandige naamwoorden, zowel in de bepaalde (el, la) als onbepaalde vorm (un, una). De meeste mannelijke zelfstandige naamwoorden eindigen op '-o' en vrouwelijke op '-a', maar er zijn uitzonderingen. Het is belangrijk om het geslacht van een zelfstandig naamwoord te kennen om de juiste grammaticale structuur te gebruiken.",
+  "opbouw": [
+   {
+    "element": "artículo definido",
+    "rol": "Geeft aan dat het zelfstandig naamwoord specifiek is.",
+    "voorbeeld": "el libro, la casa"
+   },
+   {
+    "element": "artículo indefinido",
+    "rol": "Geeft aan dat het zelfstandig naamwoord niet specifiek is.",
+    "voorbeeld": "un libro, una casa"
+   },
+   {
+    "element": "género masculino",
+    "rol": "Zelfstandige naamwoorden die als mannelijk worden beschouwd.",
+    "voorbeeld": "el hombre, un coche"
+   },
+   {
+    "element": "género femenino",
+    "rol": "Zelfstandige naamwoorden die als vrouwelijk worden beschouwd.",
+    "voorbeeld": "la mujer, una mesa"
+   },
+   {
+    "element": "pluralización",
+    "rol": "Verandert het lidwoord en zelfstandig naamwoord naar meervoud.",
+    "voorbeeld": "los libros, unas casas"
+   }
+  ],
+  "tips": [
+   "Let op uitzonderingen zoals 'el agua' (vrouwelijk maar met mannelijk lidwoord vanwege uitspraak).",
+   "Zelfstandige naamwoorden die eindigen op '-ma' zijn vaak mannelijk, zoals 'el problema'.",
+   "Gebruik 'unos' en 'unas' voor onbepaalde meervoudsvormen.",
+   "Oefen met het herkennen van het geslacht van zelfstandige naamwoorden door veel te lezen en luisteren."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'la' voor mannelijke woorden zoals 'el día'. Correctie: Gebruik 'el día'.",
+   "Verkeerd gebruik van 'un' voor vrouwelijke woorden zoals 'una manzana'. Correctie: Gebruik 'una manzana'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "El gato está en el jardín.",
+    "romaji": "El gato está en el jardín.",
+    "dutch": "De kat is in de tuin."
+   },
+   {
+    "japanese": "Una niña juega en el parque.",
+    "romaji": "Una niña juega en el parque.",
+    "dutch": "Een meisje speelt in het park."
+   },
+   {
+    "japanese": "Los estudiantes estudian en la biblioteca.",
+    "romaji": "Los estudiantes estudian en la biblioteca.",
+    "dutch": "De studenten studeren in de bibliotheek."
+   },
+   {
+    "japanese": "Un coche rojo está aparcado afuera.",
+    "romaji": "Un coche rojo está aparcado afuera.",
+    "dutch": "Een rode auto staat buiten geparkeerd."
+   },
+   {
+    "japanese": "La profesora enseña matemáticas.",
+    "romaji": "La profesora enseña matemáticas.",
+    "dutch": "De lerares geeft wiskunde."
+   },
+   {
+    "japanese": "Unos amigos vienen a cenar.",
+    "romaji": "Unos amigos vienen a cenar.",
+    "dutch": "Enkele vrienden komen dineren."
+   }
+  ]
+ },
+ "es-a1-plural": {
+  "naam": "Meervoudsvormen in het Spaans",
+  "tagline": "Leer hoe je zelfstandige naamwoorden in het meervoud zet.",
+  "niveau": "basis",
+  "kernregel": "In het Spaans worden zelfstandige naamwoorden in het meervoud gezet door meestal '-s' of '-es' toe te voegen. De keuze hangt af van de eindletter van het enkelvoudige woord.",
+  "patroon": "[enkelvoudig zelfstandig naamwoord] + '-s' of '-es'",
+  "uitleg": "In het Spaans maak je een zelfstandig naamwoord meervoud door '-s' toe te voegen als het woord eindigt op een klinker (a, e, i, o, u). Eindigt het woord op een medeklinker, dan voeg je '-es' toe. Woorden die eindigen op een 'z' veranderen de 'z' in een 'c' en krijgen '-es'. Dit lijkt op het Nederlands, waar vaak '-en' of '-s' wordt toegevoegd, maar de regels verschillen iets, vooral bij woorden die eindigen op een medeklinker.",
+  "opbouw": [
+   {
+    "element": "klinker",
+    "rol": "Eindigt het woord op een klinker, voeg '-s' toe.",
+    "voorbeeld": "libro -> libros"
+   },
+   {
+    "element": "medeklinker",
+    "rol": "Eindigt het woord op een medeklinker, voeg '-es' toe.",
+    "voorbeeld": "papel -> papeles"
+   },
+   {
+    "element": "z",
+    "rol": "Eindigt het woord op een 'z', verander 'z' in 'c' en voeg '-es' toe.",
+    "voorbeeld": "luz -> luces"
+   },
+   {
+    "element": "accent",
+    "rol": "Let op accenten; soms verschuift het accent bij het meervoud.",
+    "voorbeeld": "joven -> jóvenes"
+   },
+   {
+    "element": "onregelmatig",
+    "rol": "Sommige woorden hebben onregelmatige meervoudsvormen.",
+    "voorbeeld": "el -> los"
+   }
+  ],
+  "tips": [
+   "Controleer altijd de laatste letter van het zelfstandig naamwoord om de juiste meervoudsvorm te kiezen.",
+   "Let op woorden die eindigen op 'z'; ze vereisen een spellingverandering.",
+   "Houd rekening met accenten; ze kunnen verschuiven in het meervoud.",
+   "Onthoud dat sommige woorden onregelmatige meervoudsvormen hebben, zoals 'el' naar 'los'."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '-s' bij woorden die eindigen op een medeklinker: Correct is 'papeles', niet 'papels'.",
+   "Vergeten de 'z' te veranderen in 'c': Correct is 'luces', niet 'luzes'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "casa -> casas",
+    "romaji": "casa -> casas",
+    "dutch": "huis -> huizen"
+   },
+   {
+    "japanese": "flor -> flores",
+    "romaji": "flor -> flores",
+    "dutch": "bloem -> bloemen"
+   },
+   {
+    "japanese": "ciudad -> ciudades",
+    "romaji": "ciudad -> ciudades",
+    "dutch": "stad -> steden"
+   },
+   {
+    "japanese": "rey -> reyes",
+    "romaji": "rey -> reyes",
+    "dutch": "koning -> koningen"
+   },
+   {
+    "japanese": "pez -> peces",
+    "romaji": "pez -> peces",
+    "dutch": "vis -> vissen"
+   },
+   {
+    "japanese": "mujer -> mujeres",
+    "romaji": "mujer -> mujeres",
+    "dutch": "vrouw -> vrouwen"
+   }
+  ]
+ },
+ "es-a1-presar": {
+  "naam": "Presente -ar werkwoorden",
+  "tagline": "Leer hoe je regelmatige -ar werkwoorden in de tegenwoordige tijd vervoegt.",
+  "niveau": "basis",
+  "kernregel": "In het Spaans worden regelmatige werkwoorden die eindigen op -ar op een specifieke manier vervoegd in de tegenwoordige tijd. Deze vervoegingen zijn essentieel voor het beschrijven van dagelijkse activiteiten en handelingen die in het heden plaatsvinden.",
+  "patroon": "stam + o, as, a, amos, áis, an",
+  "uitleg": "In het Spaans worden werkwoorden die eindigen op -ar in de tegenwoordige tijd vervoegd door de uitgang -ar te verwijderen en te vervangen door de juiste uitgang afhankelijk van het onderwerp. Deze uitgangen zijn: -o voor yo (ik), -as voor tú (jij), -a voor él/ella/usted (hij/zij/u), -amos voor nosotros/nosotras (wij), -áis voor vosotros/vosotras (jullie), en -an voor ellos/ellas/ustedes (zij/u meervoud). Dit patroon is vergelijkbaar met de Nederlandse tegenwoordige tijd, maar in het Spaans is de vervoeging afhankelijk van het onderwerp, terwijl in het Nederlands vaak alleen de stam wordt gebruikt.",
+  "opbouw": [
+   {
+    "element": "stam",
+    "rol": "De basis van het werkwoord zonder de -ar uitgang.",
+    "voorbeeld": "habl- van hablar"
+   },
+   {
+    "element": "-o",
+    "rol": "Uitgang voor de eerste persoon enkelvoud (yo).",
+    "voorbeeld": "yo hablo"
+   },
+   {
+    "element": "-as",
+    "rol": "Uitgang voor de tweede persoon enkelvoud (tú).",
+    "voorbeeld": "tú hablas"
+   },
+   {
+    "element": "-a",
+    "rol": "Uitgang voor de derde persoon enkelvoud (él/ella/usted).",
+    "voorbeeld": "él habla"
+   },
+   {
+    "element": "-amos",
+    "rol": "Uitgang voor de eerste persoon meervoud (nosotros/nosotras).",
+    "voorbeeld": "nosotros hablamos"
+   }
+  ],
+  "tips": [
+   "Oefen met regelmatige -ar werkwoorden zoals 'hablar', 'estudiar', en 'trabajar' om het patroon te onthouden.",
+   "Let op de accenten in de tweede persoon meervoud: vosotros/vosotras 'habláis'.",
+   "Gebruik context om te bepalen welk onderwerp bij de vervoeging hoort, aangezien het onderwerp vaak weggelaten wordt in het Spaans.",
+   "Probeer zinnen te maken met elk van de vervoegingen om je begrip te versterken."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de infinitief in plaats van de vervoegde vorm: 'yo hablar' in plaats van 'yo hablo'.",
+   "Verwarring tussen de uitgangen van -ar, -er en -ir werkwoorden: 'tú hables' in plaats van 'tú hablas'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Yo canto en el coro.",
+    "romaji": "Yo kanto en el koro.",
+    "dutch": "Ik zing in het koor."
+   },
+   {
+    "japanese": "Tú bailas muy bien.",
+    "romaji": "Tú bailas muy bien.",
+    "dutch": "Jij danst heel goed."
+   },
+   {
+    "japanese": "Él trabaja en una oficina.",
+    "romaji": "Él trabaja en una oficina.",
+    "dutch": "Hij werkt op een kantoor."
+   },
+   {
+    "japanese": "Nosotros estudiamos español.",
+    "romaji": "Nosotros estudiamos español.",
+    "dutch": "Wij studeren Spaans."
+   },
+   {
+    "japanese": "Vosotros compráis pan cada día.",
+    "romaji": "Vosotros kompráis pan kada día.",
+    "dutch": "Jullie kopen elke dag brood."
+   },
+   {
+    "japanese": "Ellos escuchan música clásica.",
+    "romaji": "Ellos eskuçan música klásika.",
+    "dutch": "Zij luisteren naar klassieke muziek."
+   }
+  ]
+ },
+ "es-a1-preser": {
+  "naam": "Tegenwoordige tijd van -er en -ir werkwoorden",
+  "tagline": "Leer hoe je regelmatig -er en -ir werkwoorden vervoegt in de tegenwoordige tijd.",
+  "niveau": "basis",
+  "kernregel": "In het Spaans worden werkwoorden die eindigen op -er en -ir op een specifieke manier vervoegd in de tegenwoordige tijd. Deze vervoegingen zijn essentieel voor het beschrijven van acties die momenteel plaatsvinden.",
+  "patroon": "stam + o, es, e, emos/imos, éis/ís, en",
+  "uitleg": "De tegenwoordige tijd van regelmatige -er en -ir werkwoorden wordt gevormd door de stam van het werkwoord te nemen en specifieke uitgangen toe te voegen. Voor -er werkwoorden zijn de uitgangen: -o, -es, -e, -emos, -éis, -en. Voor -ir werkwoorden zijn de uitgangen: -o, -es, -e, -imos, -ís, -en. Dit patroon is vergelijkbaar met de Nederlandse tegenwoordige tijd, maar de uitgangen variëren afhankelijk van de persoon en het type werkwoord. Het is belangrijk om te onthouden dat de eerste persoon enkelvoud (ik-vorm) altijd eindigt op -o, ongeacht of het een -er of -ir werkwoord is.",
+  "opbouw": [
+   {
+    "element": "stam",
+    "rol": "De basis van het werkwoord zonder de -er of -ir uitgang.",
+    "voorbeeld": "comer -> com-, vivir -> viv-"
+   },
+   {
+    "element": "-o",
+    "rol": "Uitgang voor de eerste persoon enkelvoud.",
+    "voorbeeld": "Yo como, Yo vivo"
+   },
+   {
+    "element": "-es",
+    "rol": "Uitgang voor de tweede persoon enkelvoud.",
+    "voorbeeld": "Tú comes, Tú vives"
+   },
+   {
+    "element": "-e",
+    "rol": "Uitgang voor de derde persoon enkelvoud.",
+    "voorbeeld": "Él come, Ella vive"
+   },
+   {
+    "element": "-emos/-imos",
+    "rol": "Uitgang voor de eerste persoon meervoud, afhankelijk van het werkwoordtype.",
+    "voorbeeld": "Nosotros comemos, Nosotros vivimos"
+   }
+  ],
+  "tips": [
+   "Let op de verschillen tussen de uitgangen van -er en -ir werkwoorden in de eerste persoon meervoud.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de patronen.",
+   "Gebruik context om te bepalen welke vorm van het werkwoord je moet gebruiken.",
+   "Onthoud dat de eerste persoon enkelvoud altijd eindigt op -o, ongeacht het type werkwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de uitgangen van -er en -ir werkwoorden, zoals 'nosotros comimos' in plaats van 'nosotros comemos'.",
+   "Vergeten de stam correct te gebruiken, bijvoorbeeld 'yo comero' in plaats van 'yo como'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Nosotros bebemos agua.",
+    "romaji": "Nosotros bebemos agua.",
+    "dutch": "Wij drinken water."
+   },
+   {
+    "japanese": "Ellos escriben una carta.",
+    "romaji": "Ellos escriben una carta.",
+    "dutch": "Zij schrijven een brief."
+   },
+   {
+    "japanese": "Tú aprendes español.",
+    "romaji": "Tú aprendes español.",
+    "dutch": "Jij leert Spaans."
+   },
+   {
+    "japanese": "Yo abro la puerta.",
+    "romaji": "Yo abro la puerta.",
+    "dutch": "Ik open de deur."
+   },
+   {
+    "japanese": "Vosotros corréis rápido.",
+    "romaji": "Vosotros corréis rápido.",
+    "dutch": "Jullie rennen snel."
+   },
+   {
+    "japanese": "Ella vive en Madrid.",
+    "romaji": "Ella vive en Madrid.",
+    "dutch": "Zij woont in Madrid."
+   }
+  ]
+ },
+ "es-a1-neg": {
+  "naam": "Negación in het Spaans",
+  "tagline": "Leer hoe je ontkenningen correct formuleert in het Spaans.",
+  "niveau": "basis",
+  "kernregel": "In het Spaans wordt ontkenning meestal gevormd door het woord 'no' voor het werkwoord te plaatsen. Dit patroon is essentieel om negatieve zinnen te maken en komt vaak voor in dagelijkse gesprekken.",
+  "patroon": "No + werkwoord",
+  "uitleg": "In het Spaans wordt een ontkenning meestal gevormd door het woord 'no' direct voor het werkwoord te plaatsen. Dit is vergelijkbaar met het gebruik van 'niet' in het Nederlands, maar in het Spaans is de positie van 'no' altijd voor het werkwoord. Wanneer er een direct of indirect object aanwezig is, blijft 'no' nog steeds direct voor het werkwoord. In sommige gevallen kunnen dubbele ontkenningen voorkomen, vooral in combinatie met woorden zoals 'nunca' (nooit) of 'nadie' (niemand), wat in het Spaans grammaticaal correct is, in tegenstelling tot het Nederlands.",
+  "opbouw": [
+   {
+    "element": "No",
+    "rol": "Ontkenningswoord",
+    "voorbeeld": "No quiero (Ik wil niet)"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Actie of toestand",
+    "voorbeeld": "No como (Ik eet niet)"
+   },
+   {
+    "element": "Direct object",
+    "rol": "Ontvanger van de actie",
+    "voorbeeld": "No lo veo (Ik zie het niet)"
+   },
+   {
+    "element": "Indirect object",
+    "rol": "Ontvanger van de actie",
+    "voorbeeld": "No le hablo (Ik spreek niet met hem/haar)"
+   },
+   {
+    "element": "Dubbele ontkenning",
+    "rol": "Versterking van de ontkenning",
+    "voorbeeld": "No tengo nada (Ik heb niets)"
+   }
+  ],
+  "tips": [
+   "Plaats altijd 'no' direct voor het werkwoord om een ontkenning te maken.",
+   "Gebruik dubbele ontkenningen om de zin te versterken, zoals in 'No hay nadie' (Er is niemand).",
+   "Let op de volgorde van woorden in de zin; 'no' moet altijd voor het werkwoord staan.",
+   "Bij gebruik van woorden zoals 'nunca' of 'nadie', kan 'no' nog steeds worden gebruikt voor extra nadruk."
+  ],
+  "veelgemaaktefouten": [
+   "Het plaatsen van 'no' na het werkwoord. Correctie: 'No entiendo' in plaats van 'Entiendo no'.",
+   "Vergeten van 'no' bij het maken van een ontkenning. Correctie: 'No tengo' in plaats van 'Tengo no'.",
+   "Onjuiste volgorde bij dubbele ontkenning. Correctie: 'No veo a nadie' in plaats van 'Veo a nadie no'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "No tengo dinero.",
+    "romaji": "No tengo dinero.",
+    "dutch": "Ik heb geen geld."
+   },
+   {
+    "japanese": "No sé la respuesta.",
+    "romaji": "No sé la respuesta.",
+    "dutch": "Ik weet het antwoord niet."
+   },
+   {
+    "japanese": "No quiero ir.",
+    "romaji": "No quiero ir.",
+    "dutch": "Ik wil niet gaan."
+   },
+   {
+    "japanese": "No hay problema.",
+    "romaji": "No hay problema.",
+    "dutch": "Er is geen probleem."
+   },
+   {
+    "japanese": "No me gusta eso.",
+    "romaji": "No me gusta eso.",
+    "dutch": "Ik vind dat niet leuk."
+   },
+   {
+    "japanese": "No puedo hacerlo.",
+    "romaji": "No puedo hacerlo.",
+    "dutch": "Ik kan het niet doen."
+   }
+  ]
+ },
+ "es-a1-preg": {
+  "naam": "Vragen stellen in het Spaans",
+  "tagline": "Leer hoe je effectief vragen stelt in het Spaans.",
+  "niveau": "basis",
+  "kernregel": "In het Spaans worden vragen vaak gevormd door de woordvolgorde te veranderen en vraagwoorden te gebruiken. Het gebruik van vraagtekens aan het begin en einde van de zin is essentieel.",
+  "patroon": "¿[Vraagwoord] + [Werkwoord] + [Onderwerp] + [Rest van de zin]?",
+  "uitleg": "In het Spaans worden vragen meestal gevormd door het omdraaien van de standaard woordvolgorde van een zin. In plaats van 'onderwerp + werkwoord', gebruik je 'werkwoord + onderwerp'. Vraagwoorden zoals 'qué' (wat), 'dónde' (waar), 'cuándo' (wanneer), 'por qué' (waarom), en 'cómo' (hoe) worden vaak gebruikt aan het begin van de vraag. In tegenstelling tot het Nederlands, waar de intonatie vaak voldoende is om een vraag aan te duiden, gebruikt het Spaans omgekeerde vraagtekens aan het begin van de zin om aan te geven dat het een vraag is.",
+  "opbouw": [
+   {
+    "element": "Vraagwoord",
+    "rol": "Introduceert de vraag en specificeert het type informatie dat wordt gevraagd.",
+    "voorbeeld": "¿Qué?"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Geeft de actie of toestand aan en volgt meestal direct na het vraagwoord.",
+    "voorbeeld": "¿Qué quieres?"
+   },
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp van de vraag, vaak na het werkwoord geplaatst.",
+    "voorbeeld": "¿Qué quieres tú?"
+   },
+   {
+    "element": "Rest van de zin",
+    "rol": "Biedt aanvullende informatie zoals tijd, plaats of reden.",
+    "voorbeeld": "¿Qué quieres tú para cenar?"
+   },
+   {
+    "element": "Vraagtekens",
+    "rol": "Markeren het begin en einde van een vraag in het Spaans.",
+    "voorbeeld": "¿Dónde está el baño?"
+   }
+  ],
+  "tips": [
+   "Begin altijd met een omgekeerd vraagteken (¿) om de vraag aan te duiden.",
+   "Gebruik vraagwoorden om duidelijkheid te geven over wat je wilt weten.",
+   "Let op de juiste volgorde: vraagwoord, werkwoord, onderwerp.",
+   "Oefen met intonatie, hoewel vraagtekens essentieel zijn, helpt de juiste intonatie om de vraag duidelijker te maken."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten het omgekeerde vraagteken aan het begin te plaatsen. Correctie: ¿Cómo te llamas?",
+   "Verkeerde volgorde van werkwoord en onderwerp. Correctie: ¿Dónde vive él?",
+   "Vraagwoorden zonder accent gebruiken. Correctie: ¿Qué hora es?"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "¿Cuándo es la fiesta?",
+    "romaji": "¿Kwándo es la fiesta?",
+    "dutch": "Wanneer is het feest?"
+   },
+   {
+    "japanese": "¿Por qué estudias español?",
+    "romaji": "¿Por ké estudias español?",
+    "dutch": "Waarom studeer je Spaans?"
+   },
+   {
+    "japanese": "¿Dónde está el restaurante?",
+    "romaji": "¿Dónde está el restaurante?",
+    "dutch": "Waar is het restaurant?"
+   },
+   {
+    "japanese": "¿Quién es tu amigo?",
+    "romaji": "¿Kyén es tu amigo?",
+    "dutch": "Wie is jouw vriend?"
+   },
+   {
+    "japanese": "¿Cómo llego a la estación?",
+    "romaji": "¿Kómo llego a la estación?",
+    "dutch": "Hoe kom ik bij het station?"
+   },
+   {
+    "japanese": "¿Cuánto cuesta esto?",
+    "romaji": "¿Kwánto kwesta esto?",
+    "dutch": "Hoeveel kost dit?"
+   }
+  ]
+ },
+ "es-a1-adj": {
+  "naam": "Concordancia van Bijvoeglijke Naamwoorden in het Spaans",
+  "tagline": "Leer hoe bijvoeglijke naamwoorden zich aanpassen aan zelfstandige naamwoorden in het Spaans.",
+  "niveau": "basis",
+  "kernregel": "In het Spaans moeten bijvoeglijke naamwoorden overeenkomen in geslacht en getal met het zelfstandige naamwoord dat ze beschrijven. Dit betekent dat de vorm van het bijvoeglijk naamwoord verandert afhankelijk van of het zelfstandig naamwoord mannelijk of vrouwelijk, enkelvoud of meervoud is.",
+  "patroon": "[Zelfstandig Naamwoord] + [Bijvoeglijk Naamwoord (geslacht en getal)]",
+  "uitleg": "In het Spaans passen bijvoeglijke naamwoorden zich aan het geslacht (mannelijk of vrouwelijk) en het getal (enkelvoud of meervoud) van het zelfstandige naamwoord aan. Dit betekent dat een bijvoeglijk naamwoord dat een mannelijk enkelvoudig zelfstandig naamwoord beschrijft, een andere vorm kan hebben dan wanneer het een vrouwelijk meervoudig zelfstandig naamwoord beschrijft. Bijvoorbeeld, 'rojo' wordt 'roja' voor een vrouwelijk zelfstandig naamwoord en 'rojos' of 'rojas' voor meervoud. Dit is anders dan in het Nederlands, waar bijvoeglijke naamwoorden meestal niet veranderen.",
+  "opbouw": [
+   {
+    "element": "Zelfstandig Naamwoord",
+    "rol": "Het woord dat wordt beschreven door het bijvoeglijk naamwoord.",
+    "voorbeeld": "casa (huis)"
+   },
+   {
+    "element": "Bijvoeglijk Naamwoord",
+    "rol": "Het woord dat het zelfstandig naamwoord beschrijft en zich aanpast aan geslacht en getal.",
+    "voorbeeld": "rojo (rood)"
+   },
+   {
+    "element": "Geslacht",
+    "rol": "Het bijvoeglijk naamwoord moet overeenkomen met het geslacht van het zelfstandig naamwoord.",
+    "voorbeeld": "casa roja (rood huis)"
+   },
+   {
+    "element": "Getal",
+    "rol": "Het bijvoeglijk naamwoord moet overeenkomen met het getal van het zelfstandig naamwoord.",
+    "voorbeeld": "casas rojas (rode huizen)"
+   },
+   {
+    "element": "Concordancia",
+    "rol": "De overeenstemming tussen het bijvoeglijk naamwoord en het zelfstandig naamwoord in geslacht en getal.",
+    "voorbeeld": "libro interesante (interessant boek)"
+   }
+  ],
+  "tips": [
+   "Controleer altijd het geslacht van het zelfstandig naamwoord voordat je het bijvoeglijk naamwoord kiest.",
+   "Bijvoeglijke naamwoorden die eindigen op -e of een medeklinker veranderen meestal niet van geslacht.",
+   "Bijvoeglijke naamwoorden komen meestal na het zelfstandig naamwoord, in tegenstelling tot het Nederlands.",
+   "Let op uitzonderingen zoals bijvoeglijke naamwoorden die voor het zelfstandig naamwoord komen, zoals 'buen' voor 'buen amigo'."
+  ],
+  "veelgemaaktefouten": [
+   "Het bijvoeglijk naamwoord niet aanpassen aan het geslacht: 'casa rojo' in plaats van 'casa roja'.",
+   "Het bijvoeglijk naamwoord niet aanpassen aan het meervoud: 'casas rojo' in plaats van 'casas rojas'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "El coche rápido",
+    "romaji": "El coche rápido",
+    "dutch": "De snelle auto"
+   },
+   {
+    "japanese": "Las flores bonitas",
+    "romaji": "Las flores bonitas",
+    "dutch": "De mooie bloemen"
+   },
+   {
+    "japanese": "Un libro interesante",
+    "romaji": "Un libro interesante",
+    "dutch": "Een interessant boek"
+   },
+   {
+    "japanese": "Los niños felices",
+    "romaji": "Los niños felices",
+    "dutch": "De blije kinderen"
+   },
+   {
+    "japanese": "Una mujer inteligente",
+    "romaji": "Una mujer inteligente",
+    "dutch": "Een intelligente vrouw"
+   },
+   {
+    "japanese": "Los gatos negros",
+    "romaji": "Los gatos negros",
+    "dutch": "De zwarte katten"
+   }
+  ]
+ },
+ "es-a1-poses": {
+  "naam": "Posesivos in het Spaans",
+  "tagline": "Beheers het gebruik van bezittelijke voornaamwoorden in het Spaans.",
+  "niveau": "basis",
+  "kernregel": "Posesivos worden gebruikt om bezit aan te geven in het Spaans, net zoals 'mijn', 'jouw', 'zijn', etc. in het Nederlands. Ze passen zich aan in geslacht en aantal aan het zelfstandig naamwoord dat ze beschrijven.",
+  "patroon": "[posesivo] + [zelfstandig naamwoord]",
+  "uitleg": "In het Spaans worden bezittelijke voornaamwoorden gebruikt om aan te geven van wie iets is. Net als in het Nederlands, veranderen ze afhankelijk van de persoon (eerste, tweede of derde persoon) en het aantal (enkelvoud of meervoud). Echter, in tegenstelling tot het Nederlands, passen Spaanse posesivos zich ook aan het geslacht van het zelfstandig naamwoord aan. Bijvoorbeeld, 'mi libro' (mijn boek) en 'mis libros' (mijn boeken) in het enkelvoud en meervoud. Voor de derde persoon enkelvoud en meervoud (zijn/haar/hun), is het belangrijk om uit de context op te maken over wie of wat het gaat, omdat 'su' zowel 'zijn', 'haar' als 'hun' kan betekenen.",
+  "opbouw": [
+   {
+    "element": "mi/mis",
+    "rol": "eerste persoon enkelvoud",
+    "voorbeeld": "mi casa, mis amigos"
+   },
+   {
+    "element": "tu/tus",
+    "rol": "tweede persoon enkelvoud",
+    "voorbeeld": "tu coche, tus ideas"
+   },
+   {
+    "element": "su/sus",
+    "rol": "derde persoon enkelvoud/meervoud",
+    "voorbeeld": "su perro, sus gatos"
+   },
+   {
+    "element": "nuestro/nuestra/nuestros/nuestras",
+    "rol": "eerste persoon meervoud",
+    "voorbeeld": "nuestra familia, nuestros libros"
+   },
+   {
+    "element": "vuestro/vuestra/vuestros/vuestras",
+    "rol": "tweede persoon meervoud",
+    "voorbeeld": "vuestra casa, vuestros amigos"
+   }
+  ],
+  "tips": [
+   "Let op het geslacht en aantal van het zelfstandig naamwoord bij het kiezen van de juiste vorm van 'nuestro' en 'vuestro'.",
+   "Gebruik 'su' en 'sus' zorgvuldig, aangezien ze meerdere betekenissen kunnen hebben afhankelijk van de context.",
+   "In formele situaties kan 'su' ook gebruikt worden voor de tweede persoon enkelvoud als beleefdheidsvorm.",
+   "Herhaal het bezittelijke voornaamwoord niet voor elk zelfstandig naamwoord in een reeks; één keer is voldoende als ze bij elkaar horen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'mi' in plaats van 'mis' bij meervoudige zelfstandige naamwoorden. Correctie: 'mis libros' in plaats van 'mi libros'.",
+   "Verwarring tussen 'su' en 'sus' bij enkelvoud en meervoud. Correctie: 'su libro' voor enkelvoud en 'sus libros' voor meervoud."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Mi hermana es muy simpática.",
+    "romaji": "Mi hermana es muy simpática.",
+    "dutch": "Mijn zus is erg aardig."
+   },
+   {
+    "japanese": "Tus zapatos están en la entrada.",
+    "romaji": "Tus zapatos están en la entrada.",
+    "dutch": "Jouw schoenen staan bij de ingang."
+   },
+   {
+    "japanese": "Su coche es nuevo.",
+    "romaji": "Su coche es nuevo.",
+    "dutch": "Zijn/haar auto is nieuw."
+   },
+   {
+    "japanese": "Nuestros amigos vienen a cenar.",
+    "romaji": "Nuestros amigos vienen a cenar.",
+    "dutch": "Onze vrienden komen dineren."
+   },
+   {
+    "japanese": "Vuestras ideas son interesantes.",
+    "romaji": "Vuestras ideas son interesantes.",
+    "dutch": "Jullie ideeën zijn interessant."
+   },
+   {
+    "japanese": "Sus hijos están en la escuela.",
+    "romaji": "Sus hijos están en la escuela.",
+    "dutch": "Hun kinderen zijn op school."
+   }
+  ]
+ },
+ "es-a1-gustar": {
+  "naam": "Het gebruik van 'gustar' in het Spaans",
+  "tagline": "Leer hoe je je voorkeuren uitdrukt met 'gustar'.",
+  "niveau": "basis",
+  "kernregel": "Het werkwoord 'gustar' wordt gebruikt om te zeggen dat iets iemand bevalt of dat iemand iets leuk vindt. In tegenstelling tot Nederlandse werkwoorden zoals 'houden van', wordt 'gustar' op een andere manier geconstrueerd en vereist het een specifiek zinsstructuur.",
+  "patroon": "me/te/le/nos/os/les + gusta(n) + zelfstandig naamwoord of werkwoord",
+  "uitleg": "In het Spaans wordt 'gustar' gebruikt om aan te geven dat iets iemand bevalt, maar de structuur is anders dan in het Nederlands. In plaats van 'ik houd van', zeg je eigenlijk 'het bevalt mij'. Het werkwoord 'gustar' wordt vervoegd op basis van het onderwerp dat bevalt, niet de persoon die het leuk vindt. Daarom gebruik je 'gusta' voor enkelvoudige zelfstandige naamwoorden en werkwoorden, en 'gustan' voor meervoudige zelfstandige naamwoorden. De indirecte voornaamwoorden (me, te, le, nos, os, les) geven aan wie het leuk vindt.",
+  "opbouw": [
+   {
+    "element": "me/te/le/nos/os/les",
+    "rol": "Indirect voornaamwoord dat aangeeft wie iets leuk vindt.",
+    "voorbeeld": "Me gusta el chocolate."
+   },
+   {
+    "element": "gusta",
+    "rol": "Vervoeging van 'gustar' voor enkelvoudige zelfstandige naamwoorden of werkwoorden.",
+    "voorbeeld": "Te gusta bailar."
+   },
+   {
+    "element": "gustan",
+    "rol": "Vervoeging van 'gustar' voor meervoudige zelfstandige naamwoorden.",
+    "voorbeeld": "Nos gustan los libros."
+   },
+   {
+    "element": "zelfstandig naamwoord of werkwoord",
+    "rol": "Het onderwerp dat bevalt of leuk gevonden wordt.",
+    "voorbeeld": "Les gusta la música."
+   }
+  ],
+  "tips": [
+   "Gebruik 'gusta' voor enkelvoudige zelfstandige naamwoorden en werkwoorden.",
+   "Gebruik 'gustan' voor meervoudige zelfstandige naamwoorden.",
+   "Vergeet niet het juiste indirecte voornaamwoord te gebruiken om aan te geven wie iets leuk vindt.",
+   "Bij twijfel, begin met het identificeren van het onderwerp dat leuk gevonden wordt om de juiste vervoeging van 'gustar' te kiezen."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde vervoeging van 'gustar' gebruiken: Correctie: Gebruik 'gusta' voor enkelvoudige onderwerpen en 'gustan' voor meervoudige.",
+   "Het onderwerp en het indirecte voornaamwoord verwarren: Correctie: Zorg ervoor dat het indirecte voornaamwoord overeenkomt met de persoon die iets leuk vindt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Me gusta el café.",
+    "romaji": "Me gusta el café.",
+    "dutch": "Ik houd van koffie."
+   },
+   {
+    "japanese": "Te gustan las flores.",
+    "romaji": "Te gustan las flores.",
+    "dutch": "Jij houdt van bloemen."
+   },
+   {
+    "japanese": "Le gusta viajar.",
+    "romaji": "Le gusta viajar.",
+    "dutch": "Hij/zij houdt van reizen."
+   },
+   {
+    "japanese": "Nos gusta la playa.",
+    "romaji": "Nos gusta la playa.",
+    "dutch": "Wij houden van het strand."
+   },
+   {
+    "japanese": "Os gustan los deportes.",
+    "romaji": "Os gustan los deportes.",
+    "dutch": "Jullie houden van sporten."
+   },
+   {
+    "japanese": "Les gusta el cine.",
+    "romaji": "Les gusta el cine.",
+    "dutch": "Zij houden van de bioscoop."
+   }
+  ]
+ },
+ "es-a1-hay": {
+  "naam": "Gebruik van 'hay' in het Spaans",
+  "tagline": "Leer hoe je 'er is' en 'er zijn' in het Spaans uitdrukt met 'hay'.",
+  "niveau": "basis",
+  "kernregel": "'Hay' wordt gebruikt om aan te geven dat iets bestaat of aanwezig is, vergelijkbaar met 'er is' en 'er zijn' in het Nederlands. Het is een onpersoonlijke vorm en verandert niet met het aantal of de persoon.",
+  "patroon": "hay + [zelfstandig naamwoord]",
+  "uitleg": "In het Spaans gebruik je 'hay' om te zeggen dat iets ergens is of zich ergens bevindt. Het is een onpersoonlijk werkwoord dat niet verandert met het onderwerp, of het nu enkelvoud of meervoud is. Dit is anders dan in het Nederlands, waar je 'er is' voor enkelvoud en 'er zijn' voor meervoud gebruikt. 'Hay' kan zowel in bevestigende als vragende zinnen worden gebruikt, en het kan ook in ontkennende zinnen worden gebruikt door simpelweg 'no' ervoor te plaatsen.",
+  "opbouw": [
+   {
+    "element": "hay",
+    "rol": "Onpersoonlijk werkwoord dat bestaan of aanwezigheid uitdrukt.",
+    "voorbeeld": "Hay un libro en la mesa."
+   },
+   {
+    "element": "[zelfstandig naamwoord]",
+    "rol": "Het onderwerp dat aanwezig is.",
+    "voorbeeld": "Hay flores en el jardín."
+   },
+   {
+    "element": "no",
+    "rol": "Ontkenning van de aanwezigheid.",
+    "voorbeeld": "No hay leche en el refrigerador."
+   },
+   {
+    "element": "vraagteken",
+    "rol": "Gebruikt om een vraag te vormen.",
+    "voorbeeld": "¿Hay alguien en casa?"
+   }
+  ],
+  "tips": [
+   "Gebruik 'hay' voor zowel enkelvoud als meervoud zonder aanpassing.",
+   "Plaats 'no' voor 'hay' om een ontkennende zin te maken.",
+   "Gebruik 'hay' ook in vragen door de intonatie te veranderen of vraagtekens te gebruiken.",
+   "Verwar 'hay' niet met 'está' of 'están', die specifieke locaties aangeven."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'hay' als 'está' of 'están'. Correctie: Gebruik 'hay' voor algemene aanwezigheid, niet voor specifieke locaties.",
+   "Vergeten 'no' toe te voegen voor ontkenning. Correctie: Voeg 'no' toe voor 'hay' om te zeggen dat iets er niet is.",
+   "Verwarring tussen enkelvoud en meervoud. Correctie: Onthoud dat 'hay' onveranderlijk is, ongeacht het aantal."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Hay una fiesta en la casa.",
+    "romaji": "Hay una fiesta en la casa.",
+    "dutch": "Er is een feest in het huis."
+   },
+   {
+    "japanese": "¿Hay un banco cerca de aquí?",
+    "romaji": "¿Hay un banco cerca de aquí?",
+    "dutch": "Is er een bank in de buurt?"
+   },
+   {
+    "japanese": "No hay problemas con el coche.",
+    "romaji": "No hay problemas con el coche.",
+    "dutch": "Er zijn geen problemen met de auto."
+   },
+   {
+    "japanese": "Hay muchos turistas en la ciudad.",
+    "romaji": "Hay muchos turistas en la ciudad.",
+    "dutch": "Er zijn veel toeristen in de stad."
+   },
+   {
+    "japanese": "¿Hay alguna pregunta?",
+    "romaji": "¿Hay alguna pregunta?",
+    "dutch": "Is er een vraag?"
+   },
+   {
+    "japanese": "No hay tiempo para descansar.",
+    "romaji": "No hay tiempo para descansar.",
+    "dutch": "Er is geen tijd om te rusten."
+   }
+  ]
+ },
+ "es-a1-ira": {
+  "naam": "Toekomstige acties met 'ir a + infinitivo'",
+  "tagline": "Leer hoe je toekomstige plannen en intenties in het Spaans uitdrukt.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 'ir a + infinitivo' wordt gebruikt om toekomstige acties of intenties uit te drukken, vergelijkbaar met 'gaan + infinitief' in het Nederlands. Het is een veelgebruikte manier om te praten over wat je van plan bent te doen.",
+  "patroon": "ir a + infinitivo",
+  "uitleg": "In het Spaans gebruik je 'ir a + infinitivo' om aan te geven dat je iets in de nabije toekomst gaat doen. Dit is vergelijkbaar met het Nederlandse 'gaan + infinitief'. Het werkwoord 'ir' wordt vervoegd volgens de persoon die de actie gaat uitvoeren, gevolgd door 'a' en het infinitief van het hoofdwerkwoord. Deze constructie is handig voor het uitdrukken van intenties of plannen zonder de noodzaak van een specifieke tijdsaanduiding.",
+  "opbouw": [
+   {
+    "element": "ir",
+    "rol": "Hulpwerkwoord dat vervoegd wordt naar de persoon.",
+    "voorbeeld": "Yo voy, tú vas, él/ella va, nosotros vamos, vosotros vais, ellos/ellas van."
+   },
+   {
+    "element": "a",
+    "rol": "Voorzetsel dat de infinitief verbindt met 'ir'.",
+    "voorbeeld": "Voy a estudiar."
+   },
+   {
+    "element": "infinitivo",
+    "rol": "Het werkwoord in de infinitieve vorm dat de geplande actie beschrijft.",
+    "voorbeeld": "Voy a comer."
+   }
+  ],
+  "tips": [
+   "Gebruik 'ir a + infinitivo' voor acties die je in de nabije toekomst gaat ondernemen.",
+   "Vervoeg 'ir' correct afhankelijk van de persoon die de actie uitvoert.",
+   "Dit patroon is informeel en wordt vaak gebruikt in gesproken Spaans.",
+   "Je kunt tijdsaanduidingen toevoegen voor meer context, zoals 'mañana' of 'la próxima semana'."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten om 'ir' te vervoegen: Correct is 'Yo voy a viajar', niet 'Yo ir a viajar'.",
+   "Het voorzetsel 'a' weglaten: Correct is 'Voy a comer', niet 'Voy comer'.",
+   "Verwarring met de toekomende tijd: 'Ir a + infinitivo' is voor nabije toekomst, terwijl de toekomende tijd formeel en minder direct is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Voy a leer un libro.",
+    "romaji": "Boi a leer oen libro.",
+    "dutch": "Ik ga een boek lezen."
+   },
+   {
+    "japanese": "Ellos van a jugar al fútbol.",
+    "romaji": "Ejos ban a choegar al foetbol.",
+    "dutch": "Zij gaan voetballen."
+   },
+   {
+    "japanese": "Nosotros vamos a visitar a nuestros abuelos.",
+    "romaji": "Nosotros bamos a bisitar a nuestros abuelos.",
+    "dutch": "Wij gaan onze grootouders bezoeken."
+   },
+   {
+    "japanese": "¿Vas a cocinar esta noche?",
+    "romaji": "Bas a kosinar esta noche?",
+    "dutch": "Ga jij vanavond koken?"
+   },
+   {
+    "japanese": "Ella va a aprender español.",
+    "romaji": "Eja ba a aprender espanjol.",
+    "dutch": "Zij gaat Spaans leren."
+   },
+   {
+    "japanese": "Voy a llamar a mi amigo.",
+    "romaji": "Boi a llamar a mi amigo.",
+    "dutch": "Ik ga mijn vriend bellen."
+   }
+  ]
+ },
+ "es-a2-reflex": {
+  "naam": "Reflexieve Werkwoorden in het Spaans",
+  "tagline": "Leer hoe je reflexieve werkwoorden correct gebruikt in het Spaans.",
+  "niveau": "basis",
+  "kernregel": "Reflexieve werkwoorden worden gebruikt wanneer de handeling van het werkwoord terugkeert naar de spreker. Ze zijn essentieel om dagelijkse routines en persoonlijke acties te beschrijven.",
+  "patroon": "me/te/se/nos/os/se + werkwoord",
+  "uitleg": "In het Spaans worden reflexieve werkwoorden gebruikt wanneer de actie van het werkwoord wordt uitgevoerd door en terugkeert naar dezelfde persoon. Dit wordt aangegeven door reflexieve voornaamwoorden zoals 'me', 'te', 'se', 'nos', 'os', en 'se'. In tegenstelling tot het Nederlands, waar we vaak een wederkerend voornaamwoord zoals 'zich' gebruiken, worden deze voornaamwoorden in het Spaans voor het werkwoord geplaatst. Reflexieve werkwoorden worden vaak gebruikt om dagelijkse routines zoals wassen, aankleden en scheren te beschrijven. Het is belangrijk om het juiste reflexieve voornaamwoord te kiezen dat overeenkomt met de persoon die de actie uitvoert.",
+  "opbouw": [
+   {
+    "element": "me",
+    "rol": "Reflexief voornaamwoord voor 'yo' (ik)",
+    "voorbeeld": "Me lavo (Ik was mezelf)"
+   },
+   {
+    "element": "te",
+    "rol": "Reflexief voornaamwoord voor 'tú' (jij)",
+    "voorbeeld": "Te despiertas (Jij wordt wakker)"
+   },
+   {
+    "element": "se",
+    "rol": "Reflexief voornaamwoord voor 'él/ella/usted' (hij/zij/u)",
+    "voorbeeld": "Se viste (Hij/Zij kleedt zich aan)"
+   },
+   {
+    "element": "nos",
+    "rol": "Reflexief voornaamwoord voor 'nosotros/nosotras' (wij)",
+    "voorbeeld": "Nos bañamos (Wij baden ons)"
+   },
+   {
+    "element": "os",
+    "rol": "Reflexief voornaamwoord voor 'vosotros/vosotras' (jullie)",
+    "voorbeeld": "Os peináis (Jullie kammen je haar)"
+   }
+  ],
+  "tips": [
+   "Zorg ervoor dat het reflexieve voornaamwoord overeenkomt met het onderwerp van de zin.",
+   "Gebruik reflexieve werkwoorden om acties te beschrijven die de spreker zelf uitvoert.",
+   "Let op de plaatsing van het reflexieve voornaamwoord; het komt meestal voor het vervoegde werkwoord.",
+   "In infinitiefconstructies kan het reflexieve voornaamwoord aan het einde van het werkwoord worden toegevoegd, zoals in 'lavarse'."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten het reflexieve voornaamwoord te gebruiken: Correctie: 'Me despierto' in plaats van 'Despierto'.",
+   "Verkeerd reflexief voornaamwoord gebruiken: Correctie: 'Nos lavamos' in plaats van 'Se lavamos' voor 'wij'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Me levanto temprano.",
+    "romaji": "Me levanto temprano.",
+    "dutch": "Ik sta vroeg op."
+   },
+   {
+    "japanese": "Te duchas por la mañana.",
+    "romaji": "Te duchas por la mañana.",
+    "dutch": "Jij doucht 's ochtends."
+   },
+   {
+    "japanese": "Se acuesta a las diez.",
+    "romaji": "Se acuesta a las diez.",
+    "dutch": "Hij/Zij gaat om tien uur naar bed."
+   },
+   {
+    "japanese": "Nos divertimos en la fiesta.",
+    "romaji": "Nos divertimos en la fiesta.",
+    "dutch": "Wij vermaken ons op het feest."
+   },
+   {
+    "japanese": "Os sentís cansados después del trabajo.",
+    "romaji": "Os sentís cansados después del trabajo.",
+    "dutch": "Jullie voelen je moe na het werk."
+   },
+   {
+    "japanese": "Se lavan las manos antes de comer.",
+    "romaji": "Se lavan las manos antes de comer.",
+    "dutch": "Zij wassen hun handen voor het eten."
+   }
+  ]
+ },
+ "es-a2-indef": {
+  "naam": "Pretérito Indefinido",
+  "tagline": "Het verleden in een notendop: gebeurtenissen en acties.",
+  "niveau": "basis",
+  "kernregel": "Het pretérito indefinido wordt gebruikt om acties en gebeurtenissen in het verleden te beschrijven die als afgerond worden beschouwd. Het is ideaal voor specifieke momenten of gebeurtenissen die niet meer voortduren.",
+  "patroon": "Verleden tijd van regelmatige en onregelmatige werkwoorden in de pretérito indefinido.",
+  "uitleg": "In het Spaans gebruik je de pretérito indefinido om te praten over gebeurtenissen die in het verleden zijn afgerond. Dit is vergelijkbaar met de Nederlandse verleden tijd, maar in het Spaans is het gebruik specifieker voor acties die niet meer voortduren. Regelmatige werkwoorden in deze tijd hebben specifieke uitgangen die afhankelijk zijn van de werkwoordgroep (-ar, -er, -ir). Onregelmatige werkwoorden hebben unieke vormen die uit het hoofd geleerd moeten worden. Het is belangrijk om te weten dat deze tijd vaak wordt gebruikt in combinatie met tijdsaanduidingen zoals 'ayer' (gisteren) of 'la semana pasada' (vorige week).",
+  "opbouw": [
+   {
+    "element": "-ar werkwoorden",
+    "rol": "Regelmatige werkwoorden eindigend op -ar",
+    "voorbeeld": "hablar: hablé, hablaste, habló, hablamos, hablasteis, hablaron"
+   },
+   {
+    "element": "-er werkwoorden",
+    "rol": "Regelmatige werkwoorden eindigend op -er",
+    "voorbeeld": "comer: comí, comiste, comió, comimos, comisteis, comieron"
+   },
+   {
+    "element": "-ir werkwoorden",
+    "rol": "Regelmatige werkwoorden eindigend op -ir",
+    "voorbeeld": "vivir: viví, viviste, vivió, vivimos, vivisteis, vivieron"
+   },
+   {
+    "element": "Onregelmatige werkwoorden",
+    "rol": "Werkwoorden met unieke vormen",
+    "voorbeeld": "tener: tuve, tuviste, tuvo, tuvimos, tuvisteis, tuvieron"
+   },
+   {
+    "element": "Tijdsaanduidingen",
+    "rol": "Woorden die vaak met deze tijd worden gebruikt",
+    "voorbeeld": "ayer, anoche, el año pasado"
+   }
+  ],
+  "tips": [
+   "Leer de uitgangen van regelmatige werkwoorden uit je hoofd, ze zijn essentieel voor correcte vervoeging.",
+   "Maak een lijst van de meest voorkomende onregelmatige werkwoorden en oefen deze regelmatig.",
+   "Gebruik tijdsaanduidingen om de context van je zinnen te verduidelijken.",
+   "Oefen met het herkennen van de pretérito indefinido in teksten om je begrip te versterken."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen pretérito indefinido en pretérito imperfecto: gebruik indefinido voor afgeronde acties.",
+   "Verkeerde uitgangen gebruiken voor de werkwoordgroepen: zorg ervoor dat je de juiste uitgang kiest voor -ar, -er, of -ir werkwoorden.",
+   "Onregelmatige werkwoorden behandelen als regelmatige: onthoud dat onregelmatige werkwoorden unieke vormen hebben."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ayer comí una pizza.",
+    "romaji": "Ayer komí una pizza.",
+    "dutch": "Gisteren at ik een pizza."
+   },
+   {
+    "japanese": "El año pasado viajamos a España.",
+    "romaji": "El año pasado bijamos a España.",
+    "dutch": "Vorig jaar reisden we naar Spanje."
+   },
+   {
+    "japanese": "Anoche vi una película.",
+    "romaji": "Anoche vi una película.",
+    "dutch": "Gisteravond keek ik een film."
+   },
+   {
+    "japanese": "Ellos hablaron con el profesor.",
+    "romaji": "Ejos hablaron kon el profesor.",
+    "dutch": "Zij spraken met de leraar."
+   },
+   {
+    "japanese": "Tú escribiste una carta.",
+    "romaji": "Tú escribiste una karta.",
+    "dutch": "Jij schreef een brief."
+   },
+   {
+    "japanese": "Nosotros fuimos al museo.",
+    "romaji": "Nosotros fuimos al museo.",
+    "dutch": "Wij gingen naar het museum."
+   }
+  ]
+ },
+ "es-a2-imperf": {
+  "naam": "Pretérito Imperfecto",
+  "tagline": "Verleden tijd voor gewoontes en beschrijvingen",
+  "niveau": "basis",
+  "kernregel": "Het pretérito imperfecto wordt gebruikt om gewoontes, herhalende acties of beschrijvingen in het verleden uit te drukken. Het geeft aan dat een actie in het verleden plaatsvond zonder een specifiek begin- of eindpunt.",
+  "patroon": "AR: -aba, -abas, -aba, -ábamos, -abais, -aban; ER/IR: -ía, -ías, -ía, -íamos, -íais, -ían",
+  "uitleg": "Het pretérito imperfecto wordt gebruikt om acties te beschrijven die regelmatig in het verleden plaatsvonden, zoals gewoontes of situaties. In tegenstelling tot het pretérito perfecto simple, dat een afgeronde actie in het verleden beschrijft, richt het imperfecto zich op de continuïteit of herhaling van de actie. Het wordt ook gebruikt voor beschrijvingen van mensen, plaatsen of dingen in het verleden, en om de achtergrondinformatie te geven in verhalen. In het Nederlands gebruiken we vaak de verleden tijd of constructies zoals 'ik was aan het...' om een vergelijkbare betekenis over te brengen.",
+  "opbouw": [
+   {
+    "element": "Stam",
+    "rol": "De stam van het werkwoord blijft hetzelfde als in de infinitiefvorm.",
+    "voorbeeld": "hablar -> habl-"
+   },
+   {
+    "element": "Uitgang -AR",
+    "rol": "Voor werkwoorden op -AR voeg je de uitgangen -aba, -abas, -aba, -ábamos, -abais, -aban toe.",
+    "voorbeeld": "yo hablaba"
+   },
+   {
+    "element": "Uitgang -ER/-IR",
+    "rol": "Voor werkwoorden op -ER en -IR voeg je de uitgangen -ía, -ías, -ía, -íamos, -íais, -ían toe.",
+    "voorbeeld": "yo comía"
+   },
+   {
+    "element": "Onregelmatige werkwoorden",
+    "rol": "Er zijn slechts drie onregelmatige werkwoorden in het imperfecto: ir, ser, ver.",
+    "voorbeeld": "yo iba, yo era, yo veía"
+   },
+   {
+    "element": "Accenttekens",
+    "rol": "Let op de accenttekens bij de uitgangen van -ER en -IR werkwoorden, die consistent zijn in alle vormen.",
+    "voorbeeld": "tú vivías"
+   }
+  ],
+  "tips": [
+   "Gebruik het imperfecto om gewoontes of herhalende acties in het verleden te beschrijven.",
+   "Gebruik het imperfecto voor achtergrondinformatie in verhalen, zoals weer of tijd.",
+   "Let op de drie onregelmatige werkwoorden: ir, ser, en ver.",
+   "Accenttekens zijn belangrijk voor de juiste uitspraak en betekenis, vooral bij -ER en -IR werkwoorden."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen pretérito imperfecto en pretérito perfecto simple. Correctie: Gebruik imperfecto voor herhalende acties, perfecto simple voor afgeronde acties.",
+   "Verkeerd gebruik van accenttekens. Correctie: Zorg ervoor dat alle vormen van -ER en -IR werkwoorden een accent hebben op de 'i'.",
+   "Verkeerde stam gebruiken voor onregelmatige werkwoorden. Correctie: Onthoud de stam van de onregelmatige werkwoorden ir (iba), ser (era), en ver (veía)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Cuando era niño, jugaba en el parque todos los días.",
+    "romaji": "Cuando era niño, jugaba en el parque todos los días.",
+    "dutch": "Toen ik een kind was, speelde ik elke dag in het park."
+   },
+   {
+    "japanese": "Ella siempre leía antes de dormir.",
+    "romaji": "Ella siempre leía antes de dormir.",
+    "dutch": "Zij las altijd voor het slapen gaan."
+   },
+   {
+    "japanese": "Nosotros vivíamos en una casa grande.",
+    "romaji": "Nosotros vivíamos en una casa grande.",
+    "dutch": "Wij woonden in een groot huis."
+   },
+   {
+    "japanese": "Ellos veían la televisión cada noche.",
+    "romaji": "Ellos veían la televisión cada noche.",
+    "dutch": "Zij keken elke avond televisie."
+   },
+   {
+    "japanese": "Tú ibas a la escuela en bicicleta.",
+    "romaji": "Tú ibas a la escuela en bicicleta.",
+    "dutch": "Jij ging met de fiets naar school."
+   },
+   {
+    "japanese": "Hacía frío y llovía mucho.",
+    "romaji": "Hacía frío y llovía mucho.",
+    "dutch": "Het was koud en het regende veel."
+   }
+  ]
+ },
+ "es-a2-indefvs": {
+  "naam": "Indefinido vs Imperfecto",
+  "tagline": "Begrijp het verschil tussen de verleden tijden in het Spaans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het Spaans gebruikt de tijden 'indefinido' en 'imperfecto' om verschillende soorten acties in het verleden te beschrijven. 'Indefinido' wordt gebruikt voor afgeronde acties, terwijl 'imperfecto' wordt gebruikt voor beschrijvingen en herhalende acties in het verleden.",
+  "patroon": "Indefinido: [werkwoordstam] + -é/-aste/-ó/-amos/-asteis/-aron (voor -ar werkwoorden) of -í/-iste/-ió/-imos/-isteis/-ieron (voor -er/-ir werkwoorden); Imperfecto: [werkwoordstam] + -aba/-abas/-aba/-ábamos/-abais/-aban (voor -ar werkwoorden) of -ía/-ías/-ía/-íamos/-íais/-ían (voor -er/-ir werkwoorden).",
+  "uitleg": "In het Spaans gebruiken we de 'indefinido' om specifieke, afgeronde gebeurtenissen in het verleden te beschrijven, vergelijkbaar met de Nederlandse voltooid verleden tijd. Bijvoorbeeld: 'Ayer comí una manzana' (Gisteren at ik een appel). De 'imperfecto' daarentegen wordt gebruikt voor beschrijvingen, gewoontes of herhalende acties in het verleden, vergelijkbaar met de Nederlandse onvoltooid verleden tijd. Bijvoorbeeld: 'Cuando era niño, jugaba al fútbol todos los días' (Toen ik een kind was, speelde ik elke dag voetbal). Het is belangrijk om het verschil te begrijpen, omdat het de betekenis van de zin kan veranderen.",
+  "opbouw": [
+   {
+    "element": "Indefinido",
+    "rol": "Verleden tijd voor afgeronde acties",
+    "voorbeeld": "Ayer comí una manzana."
+   },
+   {
+    "element": "Imperfecto",
+    "rol": "Verleden tijd voor beschrijvingen en gewoontes",
+    "voorbeeld": "Cuando era niño, jugaba al fútbol."
+   },
+   {
+    "element": "Werkwoordstam",
+    "rol": "Basis van het werkwoord zonder uitgang",
+    "voorbeeld": "Comer -> com-"
+   },
+   {
+    "element": "Uitgangen -ar (indefinido)",
+    "rol": "Specifieke uitgangen voor -ar werkwoorden in indefinido",
+    "voorbeeld": "hablé, hablaste, habló"
+   },
+   {
+    "element": "Uitgangen -er/-ir (imperfecto)",
+    "rol": "Specifieke uitgangen voor -er/-ir werkwoorden in imperfecto",
+    "voorbeeld": "comía, vivía"
+   }
+  ],
+  "tips": [
+   "Gebruik 'indefinido' voor gebeurtenissen die een specifiek begin en einde hebben.",
+   "Gebruik 'imperfecto' voor achtergrondinformatie of beschrijvingen in verhalen.",
+   "Let op signaalwoorden zoals 'ayer' (indefinido) en 'siempre' (imperfecto).",
+   "Oefen met het herkennen van de context om de juiste tijd te kiezen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 'indefinido' met 'imperfecto' bij beschrijvingen: Correctie: Gebruik 'imperfecto' voor beschrijvingen.",
+   "Gebruik van 'imperfecto' voor eenmalige gebeurtenissen: Correctie: Gebruik 'indefinido' voor eenmalige, afgeronde gebeurtenissen.",
+   "Verkeerde werkwoordsuitgangen: Correctie: Controleer de juiste uitgangen voor elke werkwoordsgroep."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ella cantó en el concierto anoche.",
+    "romaji": "Ella kantó en el concierto anoche.",
+    "dutch": "Zij zong gisteravond op het concert."
+   },
+   {
+    "japanese": "Nosotros íbamos al parque cada sábado.",
+    "romaji": "Nosotros íbamos al parque cada sábado.",
+    "dutch": "Wij gingen elke zaterdag naar het park."
+   },
+   {
+    "japanese": "Ellos vivieron en España por dos años.",
+    "romaji": "Ellos vivieron en España por dos años.",
+    "dutch": "Zij woonden twee jaar in Spanje."
+   },
+   {
+    "japanese": "Cuando era joven, leía muchos libros.",
+    "romaji": "Cuando era joven, leía muchos libros.",
+    "dutch": "Toen ik jong was, las ik veel boeken."
+   },
+   {
+    "japanese": "El año pasado viajamos a Perú.",
+    "romaji": "El año pasado viajamos a Perú.",
+    "dutch": "Vorig jaar reisden we naar Peru."
+   },
+   {
+    "japanese": "Siempre comíamos juntos los domingos.",
+    "romaji": "Siempre comíamos juntos los domingos.",
+    "dutch": "We aten altijd samen op zondag."
+   }
+  ]
+ },
+ "es-a2-futuro": {
+  "naam": "Futuro Simple",
+  "tagline": "Leer de toekomst te voorspellen in het Spaans!",
+  "niveau": "basis",
+  "kernregel": "Het 'futuro simple' wordt gebruikt om toekomstige acties of gebeurtenissen uit te drukken. Het is vergelijkbaar met 'zal' in het Nederlands.",
+  "patroon": "infinitief + é, ás, á, emos, éis, án",
+  "uitleg": "In het Spaans wordt de toekomende tijd vaak uitgedrukt met het 'futuro simple'. Dit patroon is eenvoudig omdat het begint met het volledige werkwoord (infinitief) en vervolgens specifieke uitgangen toevoegt. Deze uitgangen zijn voor alle regelmatige werkwoorden hetzelfde, ongeacht de werkwoordsgroep (-ar, -er, -ir). Dit maakt het leren van deze tijd relatief eenvoudig in vergelijking met andere tijden. In tegenstelling tot het Nederlands, waar we vaak 'zal' of 'zullen' gebruiken, voegt het Spaans de uitgang direct aan het werkwoord toe.",
+  "opbouw": [
+   {
+    "element": "infinitief",
+    "rol": "De basisvorm van het werkwoord waaraan de uitgangen worden toegevoegd.",
+    "voorbeeld": "hablar"
+   },
+   {
+    "element": "é",
+    "rol": "Uitgang voor de eerste persoon enkelvoud (yo).",
+    "voorbeeld": "hablaré"
+   },
+   {
+    "element": "ás",
+    "rol": "Uitgang voor de tweede persoon enkelvoud (tú).",
+    "voorbeeld": "hablarás"
+   },
+   {
+    "element": "á",
+    "rol": "Uitgang voor de derde persoon enkelvoud (él/ella/usted).",
+    "voorbeeld": "hablará"
+   },
+   {
+    "element": "emos",
+    "rol": "Uitgang voor de eerste persoon meervoud (nosotros/nosotras).",
+    "voorbeeld": "hablaremos"
+   }
+  ],
+  "tips": [
+   "Onthoud dat de uitgangen voor alle werkwoordstypen hetzelfde zijn.",
+   "Gebruik het 'futuro simple' om zekerheid over toekomstige gebeurtenissen uit te drukken.",
+   "Let op de klemtoon die op de uitgang valt, wat de uitspraak beïnvloedt.",
+   "Oefen met onregelmatige werkwoorden, want die hebben vaak afwijkende stammen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de uitgangen met die van de verleden tijd. Correct: 'hablaré' (futuro simple), niet 'hablé' (pretérito).",
+   "Vergeten de volledige infinitief te gebruiken voordat de uitgang wordt toegevoegd. Correct: 'comeré', niet 'comé'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Viviré en España el próximo año.",
+    "romaji": "Bibiré en España el próximo año.",
+    "dutch": "Ik zal volgend jaar in Spanje wonen."
+   },
+   {
+    "japanese": "Ellos viajarán a México en diciembre.",
+    "romaji": "Ejos bijarán a México en diciembre.",
+    "dutch": "Zij zullen in december naar Mexico reizen."
+   },
+   {
+    "japanese": "Nosotros comeremos en ese restaurante mañana.",
+    "romaji": "Nosotros komeremos en ese restaurante mañana.",
+    "dutch": "Wij zullen morgen in dat restaurant eten."
+   },
+   {
+    "japanese": "Tú estudiarás para el examen la próxima semana.",
+    "romaji": "Tú estudjarás para el examen la próxima semana.",
+    "dutch": "Jij zult volgende week voor het examen studeren."
+   },
+   {
+    "japanese": "Ella comprará un coche nuevo pronto.",
+    "romaji": "Eja komprará un coche nuevo pronto.",
+    "dutch": "Zij zal binnenkort een nieuwe auto kopen."
+   },
+   {
+    "japanese": "Ustedes aprenderán español rápidamente.",
+    "romaji": "Ustedes aprenderán español rápidamente.",
+    "dutch": "Jullie zullen snel Spaans leren."
+   }
+  ]
+ },
+ "es-a2-compar": {
+  "naam": "Vergelijkingen: Comparativo & Superlativo",
+  "tagline": "Leer hoe je vergelijkingen maakt in het Spaans.",
+  "niveau": "basis",
+  "kernregel": "In het Spaans gebruik je de comparativo om twee zaken te vergelijken en de superlativo om iets als het meest of minst te beschrijven. Deze structuren helpen je om eigenschappen en kwaliteiten te vergelijken en te benadrukken.",
+  "patroon": "más/menos + [bijvoeglijk naamwoord] + que; el/la/los/las + más/menos + [bijvoeglijk naamwoord] + de",
+  "uitleg": "In het Spaans gebruik je 'más' voor 'meer' en 'menos' voor 'minder' om vergelijkingen te maken. De comparativo-structuur 'más/menos + bijvoeglijk naamwoord + que' wordt gebruikt om twee zaken te vergelijken. Voor de superlativo gebruik je 'el/la/los/las + más/menos + bijvoeglijk naamwoord + de' om aan te geven dat iets het meest of minst is binnen een groep. In tegenstelling tot het Nederlands, waar we vaak '-er' en '-st' gebruiken, gebruik je in het Spaans deze vaste structuren.",
+  "opbouw": [
+   {
+    "element": "más",
+    "rol": "Vergelijkingswoord voor 'meer'",
+    "voorbeeld": "más alto que"
+   },
+   {
+    "element": "menos",
+    "rol": "Vergelijkingswoord voor 'minder'",
+    "voorbeeld": "menos interesante que"
+   },
+   {
+    "element": "que",
+    "rol": "Voegwoord voor vergelijking",
+    "voorbeeld": "más rápido que"
+   },
+   {
+    "element": "el/la/los/las",
+    "rol": "Bepaalde lidwoorden voor superlatieven",
+    "voorbeeld": "el más grande de"
+   },
+   {
+    "element": "de",
+    "rol": "Prepositie voor superlatiefvergelijkingen",
+    "voorbeeld": "el más inteligente de la clase"
+   }
+  ],
+  "tips": [
+   "Gebruik altijd 'que' na 'más' of 'menos' om te vergelijken.",
+   "Vergeet niet het juiste lidwoord te gebruiken voor superlatieven, afhankelijk van het geslacht en aantal.",
+   "Bijvoeglijke naamwoorden komen altijd na 'más' of 'menos'.",
+   "Oefen met verschillende bijvoeglijke naamwoorden om vertrouwd te raken met de structuur."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'de' in plaats van 'que' bij vergelijkingen. Correct: 'más alto que', niet 'más alto de'.",
+   "Vergeten het lidwoord te gebruiken bij superlatieven. Correct: 'el más rápido', niet 'más rápido'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ella es más alta que su hermana.",
+    "romaji": "Ella es más alta que su hermana.",
+    "dutch": "Zij is langer dan haar zus."
+   },
+   {
+    "japanese": "Este libro es menos interesante que el otro.",
+    "romaji": "Este libro es menos interesante que el otro.",
+    "dutch": "Dit boek is minder interessant dan het andere."
+   },
+   {
+    "japanese": "Juan es el más inteligente de la clase.",
+    "romaji": "Juan es el más inteligente de la clase.",
+    "dutch": "Juan is de slimste van de klas."
+   },
+   {
+    "japanese": "Esta es la película más divertida del año.",
+    "romaji": "Esta es la película más divertida del año.",
+    "dutch": "Dit is de grappigste film van het jaar."
+   },
+   {
+    "japanese": "Mi coche es más rápido que el tuyo.",
+    "romaji": "Mi coche es más rápido que el tuyo.",
+    "dutch": "Mijn auto is sneller dan de jouwe."
+   },
+   {
+    "japanese": "Ellos son los menos ruidosos del grupo.",
+    "romaji": "Ellos son los menos ruidosos del grupo.",
+    "dutch": "Zij zijn de minst luidruchtige van de groep."
+   }
+  ]
+ },
+ "es-a2-imper": {
+  "naam": "Imperativo",
+  "tagline": "Leer hoe je bevelen en verzoeken in het Spaans uitdrukt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het imperativo wordt gebruikt om bevelen, verzoeken of suggesties te geven. Het is een directe manier om iemand te vragen iets te doen of niet te doen.",
+  "patroon": "Imperativo: (tú) -a/-e, (usted) -e/-a, (vosotros) -ad/-ed, (ustedes) -en/-an",
+  "uitleg": "In het Spaans wordt de imperativo gebruikt om directe bevelen of verzoeken te geven. Het verschilt van het Nederlands, waar we vaak beleefdheidsvormen gebruiken. In het Spaans zijn er verschillende vormen afhankelijk van de persoon: tú, usted, vosotros en ustedes. Voor regelmatige werkwoorden eindigend op -ar, gebruik je -a voor tú en -e voor usted. Voor werkwoorden eindigend op -er en -ir, gebruik je -e voor tú en -a voor usted. De vosotros-vorm voegt een -d toe aan de stam, terwijl ustedes de tegenwoordige tijdsvorm van de derde persoon meervoud gebruikt.",
+  "opbouw": [
+   {
+    "element": "Tú-vorm",
+    "rol": "Informeel bevel",
+    "voorbeeld": "Habla (Spreek)"
+   },
+   {
+    "element": "Usted-vorm",
+    "rol": "Formeel bevel",
+    "voorbeeld": "Hable (Spreek)"
+   },
+   {
+    "element": "Vosotros-vorm",
+    "rol": "Informeel bevel meervoud",
+    "voorbeeld": "Hablad (Spreek)"
+   },
+   {
+    "element": "Ustedes-vorm",
+    "rol": "Formeel bevel meervoud",
+    "voorbeeld": "Hablen (Spreek)"
+   },
+   {
+    "element": "Negatieve vorm",
+    "rol": "Bevel niet te doen",
+    "voorbeeld": "No hables (Niet spreken)"
+   }
+  ],
+  "tips": [
+   "Gebruik de tú-vorm voor informele situaties met vrienden of familie.",
+   "Gebruik de usted-vorm voor formele situaties of wanneer je beleefd wilt zijn.",
+   "Vergeet niet dat de vosotros-vorm alleen in Spanje wordt gebruikt.",
+   "Negatieve bevelen gebruik je met 'no' en de subjuntivo-vorm."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van tú en usted: Gebruik 'habla' voor tú en 'hable' voor usted.",
+   "Vergeten van de -d in de vosotros-vorm: Het is 'hablad', niet 'habla'.",
+   "Negatieve bevelen met de indicativo: Gebruik 'no hables' in plaats van 'no habla'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Come la manzana.",
+    "romaji": "Eet de appel.",
+    "dutch": "Come la manzana."
+   },
+   {
+    "japanese": "No corras en el pasillo.",
+    "romaji": "Ren niet in de gang.",
+    "dutch": "No corras en el pasillo."
+   },
+   {
+    "japanese": "Escribid vuestros nombres.",
+    "romaji": "Schrijf jullie namen.",
+    "dutch": "Escribid vuestros nombres."
+   },
+   {
+    "japanese": "No hable tan rápido.",
+    "romaji": "Spreek niet zo snel.",
+    "dutch": "No hable tan rápido."
+   },
+   {
+    "japanese": "Vengan aquí, por favor.",
+    "romaji": "Kom hier, alstublieft.",
+    "dutch": "Vengan aquí, por favor."
+   },
+   {
+    "japanese": "No toquen eso.",
+    "romaji": "Raak dat niet aan.",
+    "dutch": "No toquen eso."
+   }
+  ]
+ },
+ "es-a2-pron": {
+  "naam": "Pronombres de Objeto Directo e Indirecto",
+  "tagline": "Leer hoe je directe en indirecte voornaamwoorden in het Spaans gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Spaans worden voornaamwoorden gebruikt om directe (OD) en indirecte objecten (OI) te vervangen, waardoor zinnen korter en vloeiender worden. Het is belangrijk om te weten welk voornaamwoord je moet gebruiken en waar het in de zin moet worden geplaatst.",
+  "patroon": "OD: me, te, lo/la, nos, os, los/las; OI: me, te, le, nos, os, les",
+  "uitleg": "In het Spaans worden directe en indirecte objecten vaak vervangen door voornaamwoorden om herhaling te vermijden en de zin te vereenvoudigen. Een direct object (OD) is het ding of de persoon die direct de actie van het werkwoord ontvangt, terwijl een indirect object (OI) de ontvanger van het directe object is. De plaatsing van deze voornaamwoorden is meestal vóór het vervoegde werkwoord, maar kan ook aan een infinitief of gerundium worden vastgemaakt. In zinnen met zowel OD als OI, komt het indirecte voornaamwoord eerst. Let op dat 'le' en 'les' veranderen in 'se' wanneer ze samen met 'lo', 'la', 'los', of 'las' worden gebruikt.",
+  "opbouw": [
+   {
+    "element": "Direct Object Pronouns",
+    "rol": "Vervangen directe objecten",
+    "voorbeeld": "Veo la película. -> La veo."
+   },
+   {
+    "element": "Indirect Object Pronouns",
+    "rol": "Vervangen indirecte objecten",
+    "voorbeeld": "Doy el libro a María. -> Le doy el libro."
+   },
+   {
+    "element": "Plaatsing",
+    "rol": "Voor het vervoegde werkwoord of vast aan infinitief/gerundium",
+    "voorbeeld": "Quiero verlo. / Lo quiero ver."
+   },
+   {
+    "element": "Combinatie van OD en OI",
+    "rol": "Beide voornaamwoorden in één zin",
+    "voorbeeld": "Te lo doy."
+   },
+   {
+    "element": "Verandering van 'le/les' naar 'se'",
+    "rol": "Vermijd dubbele 'l'-klank",
+    "voorbeeld": "Le lo doy. -> Se lo doy."
+   }
+  ],
+  "tips": [
+   "Identificeer eerst het directe en indirecte object in de zin voordat je ze vervangt.",
+   "Oefen met het combineren van OD en OI in zinnen om vertrouwd te raken met de volgorde.",
+   "Onthoud dat 'le' en 'les' veranderen in 'se' wanneer ze samen met OD voornaamwoorden worden gebruikt.",
+   "Gebruik OD en OI voornaamwoorden om herhaling te verminderen en zinnen vloeiender te maken."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde volgorde van OD en OI: Correct is 'Te lo doy', niet 'Lo te doy'.",
+   "Vergeten 'le/les' te veranderen in 'se': Correct is 'Se lo doy', niet 'Le lo doy'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ella me da el libro.",
+    "romaji": "Ella me da el libro.",
+    "dutch": "Zij geeft mij het boek."
+   },
+   {
+    "japanese": "Nos lo dijeron ayer.",
+    "romaji": "Nos lo dijeron ayer.",
+    "dutch": "Ze vertelden het ons gisteren."
+   },
+   {
+    "japanese": "Voy a comprártelo.",
+    "romaji": "Voy a comprártelo.",
+    "dutch": "Ik ga het voor je kopen."
+   },
+   {
+    "japanese": "Se lo expliqué.",
+    "romaji": "Se lo expliqué.",
+    "dutch": "Ik legde het hem/haar uit."
+   },
+   {
+    "japanese": "Te lo prometo.",
+    "romaji": "Te lo prometo.",
+    "dutch": "Ik beloof het je."
+   },
+   {
+    "japanese": "Ella nos lo envió.",
+    "romaji": "Ella nos lo envió.",
+    "dutch": "Zij stuurde het ons."
+   }
+  ]
+ },
+ "es-a2-irreg": {
+  "naam": "Verbos con Cambio Vocálico",
+  "tagline": "Ontdek de klankveranderingen in Spaanse werkwoorden.",
+  "niveau": "gemiddeld",
+  "kernregel": "Verbos con cambio vocálico zijn werkwoorden waarbij de klinker in de stam verandert wanneer ze vervoegd worden. Deze veranderingen komen vaak voor in de tegenwoordige tijd en zijn essentieel voor correcte communicatie.",
+  "patroon": "e > ie, o > ue, e > i, u > ue",
+  "uitleg": "In het Spaans zijn er werkwoorden die een klinkerverandering ondergaan in hun stam wanneer ze vervoegd worden, vooral in de tegenwoordige tijd. Deze veranderingen vinden plaats in alle vormen behalve de nosotros- en vosotros-vormen. Bijvoorbeeld, het werkwoord 'pensar' verandert van 'e' naar 'ie' in de vormen 'pienso', 'piensas', etc. Dit fenomeen komt niet voor in het Nederlands, waar de stam meestal onveranderd blijft. Het begrijpen van deze veranderingen is cruciaal om de juiste vervoegingen te gebruiken en te begrijpen wat er gezegd wordt.",
+  "opbouw": [
+   {
+    "element": "Stam",
+    "rol": "De basis van het werkwoord die verandert.",
+    "voorbeeld": "In 'pensar', is 'pens-' de stam."
+   },
+   {
+    "element": "Klinkerverandering",
+    "rol": "De specifieke verandering van de klinker in de stam.",
+    "voorbeeld": "De 'e' verandert in 'ie' in 'pienso'."
+   },
+   {
+    "element": "Vervoeging",
+    "rol": "De aanpassing van het werkwoord aan de persoon en tijd.",
+    "voorbeeld": "Yo pienso, tú piensas."
+   },
+   {
+    "element": "Uitzonderingen",
+    "rol": "Vormen die niet veranderen, zoals nosotros en vosotros.",
+    "voorbeeld": "Nosotros pensamos."
+   },
+   {
+    "element": "Tijd",
+    "rol": "De tegenwoordige tijd is waar deze veranderingen het meest voorkomen.",
+    "voorbeeld": "Yo duermo (o > ue)."
+   }
+  ],
+  "tips": [
+   "Let op de stamklinker in de infinitief om te bepalen welke verandering plaatsvindt.",
+   "Oefen regelmatig met verschillende werkwoorden om de patronen te herkennen.",
+   "Gebruik context om te bepalen welke vervoeging correct is.",
+   "Onthoud dat de nosotros- en vosotros-vormen geen klinkerverandering ondergaan."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de klinker te veranderen in de juiste vormen. Correctie: 'Yo pienso' in plaats van 'Yo penso'.",
+   "De verandering toepassen op de nosotros-vorm. Correctie: 'Nosotros dormimos' in plaats van 'Nosotros duermimos'.",
+   "Verwarring tussen verschillende klinkerveranderingen. Correctie: 'Yo pido' (e > i) in plaats van 'Yo piedo'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Yo empiezo a trabajar.",
+    "romaji": "Yo empiezo a trabajar.",
+    "dutch": "Ik begin te werken."
+   },
+   {
+    "japanese": "Ellos juegan al fútbol.",
+    "romaji": "Ellos juegan al fútbol.",
+    "dutch": "Zij spelen voetbal."
+   },
+   {
+    "japanese": "Nosotros preferimos el té.",
+    "romaji": "Nosotros preferimos el té.",
+    "dutch": "Wij geven de voorkeur aan thee."
+   },
+   {
+    "japanese": "Tú repites la pregunta.",
+    "romaji": "Tú repites la pregunta.",
+    "dutch": "Jij herhaalt de vraag."
+   },
+   {
+    "japanese": "Ella siente frío.",
+    "romaji": "Ella siente frío.",
+    "dutch": "Zij voelt zich koud."
+   },
+   {
+    "japanese": "Vosotros volvéis a casa.",
+    "romaji": "Vosotros volvéis a casa.",
+    "dutch": "Jullie gaan terug naar huis."
+   }
+  ]
+ },
+ "es-a2-gerundio": {
+  "naam": "Estar + Gerundio",
+  "tagline": "Leer hoe je acties in uitvoering beschrijft in het Spaans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 'estar + gerundio' wordt gebruikt om aan te geven dat een actie op dit moment aan de gang is. Het komt overeen met de Engelse present continuous en de Nederlandse tegenwoordige tijd van duurvorm.",
+  "patroon": "estar + gerundio",
+  "uitleg": "In het Spaans gebruik je 'estar + gerundio' om te beschrijven dat iets nu aan de gang is, vergelijkbaar met 'ik ben aan het eten' in het Nederlands. Het werkwoord 'estar' wordt vervoegd volgens de persoon, en het gerundium wordt gevormd door '-ando' toe te voegen aan de stam van -ar werkwoorden en '-iendo' aan de stam van -er en -ir werkwoorden. Dit patroon benadrukt de voortgang van een actie op het moment van spreken, in tegenstelling tot de gewone tegenwoordige tijd die een meer algemene tijdsindicatie geeft.",
+  "opbouw": [
+   {
+    "element": "estar",
+    "rol": "Hulpwerkwoord dat wordt vervoegd naar de juiste persoon en tijd.",
+    "voorbeeld": "Yo estoy, tú estás, él/ella está, nosotros estamos, vosotros estáis, ellos/ellas están."
+   },
+   {
+    "element": "gerundio van -ar werkwoorden",
+    "rol": "Wordt gevormd door '-ando' toe te voegen aan de stam.",
+    "voorbeeld": "hablar -> hablando"
+   },
+   {
+    "element": "gerundio van -er werkwoorden",
+    "rol": "Wordt gevormd door '-iendo' toe te voegen aan de stam.",
+    "voorbeeld": "comer -> comiendo"
+   },
+   {
+    "element": "gerundio van -ir werkwoorden",
+    "rol": "Wordt gevormd door '-iendo' toe te voegen aan de stam.",
+    "voorbeeld": "vivir -> viviendo"
+   },
+   {
+    "element": "onregelmatige gerundia",
+    "rol": "Sommige werkwoorden hebben onregelmatige gerundia.",
+    "voorbeeld": "leer -> leyendo, ir -> yendo"
+   }
+  ],
+  "tips": [
+   "Gebruik 'estar + gerundio' om te benadrukken dat een actie nu plaatsvindt.",
+   "Let op de juiste vervoeging van 'estar' voor de persoon die de actie uitvoert.",
+   "Oefen met het herkennen van onregelmatige gerundia om fouten te vermijden.",
+   "Gebruik dit patroon niet voor algemene waarheden of gewoonten, daarvoor gebruik je de gewone tegenwoordige tijd."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 'estar' met 'ser' in dit patroon. Correct: 'Estoy comiendo', niet 'Soy comiendo'.",
+   "Verkeerde vervoeging van 'estar'. Correct: 'Ellos están trabajando', niet 'Ellos es trabajando'.",
+   "Verkeerde vorm van het gerundium. Correct: 'Nosotros estamos leyendo', niet 'Nosotros estamos leiendo'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Estoy estudiando para el examen.",
+    "romaji": "Estoy estudiando para el examen.",
+    "dutch": "Ik ben aan het studeren voor het examen."
+   },
+   {
+    "japanese": "Ella está cocinando la cena.",
+    "romaji": "Ella está cocinando la cena.",
+    "dutch": "Zij is het avondeten aan het koken."
+   },
+   {
+    "japanese": "Estamos viendo una película.",
+    "romaji": "Estamos viendo una película.",
+    "dutch": "Wij zijn een film aan het kijken."
+   },
+   {
+    "japanese": "Ellos están jugando al fútbol.",
+    "romaji": "Ellos están jugando al fútbol.",
+    "dutch": "Zij zijn aan het voetballen."
+   },
+   {
+    "japanese": "¿Qué estás haciendo ahora?",
+    "romaji": "¿Qué estás haciendo ahora?",
+    "dutch": "Wat ben je nu aan het doen?"
+   },
+   {
+    "japanese": "Mi hermano está durmiendo.",
+    "romaji": "Mi hermano está durmiendo.",
+    "dutch": "Mijn broer is aan het slapen."
+   }
+  ]
+ },
+ "es-a2-tenerque": {
+  "naam": "Het gebruik van 'tener que' en 'hay que'",
+  "tagline": "Leren hoe je verplichtingen en noodzaak uitdrukt in het Spaans.",
+  "niveau": "basis",
+  "kernregel": "'Tener que' en 'hay que' worden gebruikt om verplichtingen of noodzaak uit te drukken. 'Tener que' wordt gebruikt voor specifieke personen, terwijl 'hay que' algemeen wordt gebruikt zonder een specifiek onderwerp.",
+  "patroon": "[persoonlijk voornaamwoord] + tener que + [infinitief werkwoord] / hay que + [infinitief werkwoord]",
+  "uitleg": "In het Spaans gebruik je 'tener que' om aan te geven dat een specifieke persoon iets moet doen. Het is vergelijkbaar met 'moeten' in het Nederlands. Bijvoorbeeld, 'Ik moet werken' wordt 'Tengo que trabajar'. Aan de andere kant gebruik je 'hay que' wanneer je een algemene noodzaak of verplichting wilt uitdrukken, zonder een specifiek onderwerp. Dit kan worden vergeleken met 'men moet' of 'het is nodig om' in het Nederlands. Bijvoorbeeld, 'Men moet vroeg opstaan' wordt 'Hay que levantarse temprano'. Beide uitdrukkingen worden gevolgd door een werkwoord in de infinitiefvorm.",
+  "opbouw": [
+   {
+    "element": "persoonlijk voornaamwoord",
+    "rol": "Geeft aan wie de verplichting heeft bij 'tener que'.",
+    "voorbeeld": "Yo tengo que estudiar."
+   },
+   {
+    "element": "tener que",
+    "rol": "Drukt een specifieke verplichting uit voor een persoon.",
+    "voorbeeld": "Ella tiene que ir al médico."
+   },
+   {
+    "element": "hay que",
+    "rol": "Drukt een algemene noodzaak uit zonder specifiek onderwerp.",
+    "voorbeeld": "Hay que reciclar para proteger el medio ambiente."
+   },
+   {
+    "element": "infinitief werkwoord",
+    "rol": "Geeft de actie aan die moet worden uitgevoerd.",
+    "voorbeeld": "Tenemos que limpiar la casa."
+   }
+  ],
+  "tips": [
+   "Gebruik 'tener que' wanneer je de verplichting van een specifieke persoon wilt benadrukken.",
+   "Gebruik 'hay que' voor algemene adviezen of regels die voor iedereen gelden.",
+   "Onthoud dat 'tener que' altijd wordt vervoegd volgens het onderwerp, terwijl 'hay que' onveranderlijk blijft.",
+   "Let op de infinitiefvorm van het werkwoord na 'tener que' of 'hay que'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'tener que' en 'hay que': 'Tengo que estudiar' (correct) vs. 'Hay que estudiar' (correct, maar algemeen).",
+   "Vergeten het werkwoord 'tener' te vervoegen: 'Tener que ir' (incorrect) vs. 'Tengo que ir' (correct).",
+   "Gebruik van een vervoegd werkwoord na 'tener que' of 'hay que': 'Hay que vamos' (incorrect) vs. 'Hay que ir' (correct)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Tengo que llamar a mi madre.",
+    "romaji": "Tengo que llamar a mi madre.",
+    "dutch": "Ik moet mijn moeder bellen."
+   },
+   {
+    "japanese": "Hay que estudiar para el examen.",
+    "romaji": "Hay que estudiar para el examen.",
+    "dutch": "Men moet studeren voor het examen."
+   },
+   {
+    "japanese": "Ellos tienen que preparar la cena.",
+    "romaji": "Ellos tienen que preparar la cena.",
+    "dutch": "Zij moeten het avondeten bereiden."
+   },
+   {
+    "japanese": "Hay que respetar las señales de tráfico.",
+    "romaji": "Hay que respetar las señales de tráfico.",
+    "dutch": "Men moet de verkeersborden respecteren."
+   },
+   {
+    "japanese": "Tienes que terminar el proyecto hoy.",
+    "romaji": "Tienes que terminar el proyecto hoy.",
+    "dutch": "Je moet het project vandaag afmaken."
+   },
+   {
+    "japanese": "Hay que llevar paraguas, va a llover.",
+    "romaji": "Hay que llevar paraguas, va a llover.",
+    "dutch": "Men moet een paraplu meenemen, het gaat regenen."
+   }
+  ]
+ },
+ "es-a2-porpara": {
+  "naam": "Por vs Para",
+  "tagline": "Het juiste gebruik van 'por' en 'para' in het Spaans.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Spaans worden 'por' en 'para' beide vertaald als 'voor' in het Nederlands, maar ze worden in verschillende contexten gebruikt. 'Por' wordt vaak gebruikt om oorzaak, middel of tijdsduur aan te geven, terwijl 'para' eerder doel, bestemming of ontvanger aanduidt.",
+  "patroon": "[por/para] + [zelfstandig naamwoord/werkwoord]",
+  "uitleg": "Het gebruik van 'por' en 'para' kan verwarrend zijn omdat beide voorzetsels in het Nederlands vaak als 'voor' worden vertaald. 'Por' gebruik je wanneer je verwijst naar de oorzaak, reden of een ruil. Bijvoorbeeld, 'Gracias por la ayuda' betekent 'Dank voor de hulp'. 'Para' gebruik je wanneer je een doel, bestemming of ontvanger wilt aangeven. Bijvoorbeeld, 'Este regalo es para ti' betekent 'Dit cadeau is voor jou'. Het is belangrijk om de context te begrijpen om te bepalen welk voorzetsel je moet gebruiken.",
+  "opbouw": [
+   {
+    "element": "por",
+    "rol": "Geeft oorzaak, middel of tijdsduur aan.",
+    "voorbeeld": "Viajé por dos semanas."
+   },
+   {
+    "element": "para",
+    "rol": "Geeft doel, bestemming of ontvanger aan.",
+    "voorbeeld": "Estudio para ser médico."
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het woord dat volgt op 'por' of 'para'.",
+    "voorbeeld": "El libro es para Juan."
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Kan ook volgen op 'por' of 'para' in de infinitiefvorm.",
+    "voorbeeld": "Trabajo para ganar dinero."
+   }
+  ],
+  "tips": [
+   "Gebruik 'por' om een reden of oorzaak aan te geven, zoals in 'Lo hice por ti'.",
+   "Gebruik 'para' om een doel of bestemming aan te geven, zoals in 'Voy para Madrid'.",
+   "Onthoud dat 'por' vaak wordt gebruikt in uitdrukkingen van tijd en ruil, zoals 'por la mañana' of 'por cinco euros'.",
+   "Gebruik 'para' als je een ontvanger of bestemming wilt specificeren, zoals 'Este es para ti'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'por' en 'para' bij het aangeven van een doel: 'Estudio por ser médico' (fout) moet zijn 'Estudio para ser médico' (correct).",
+   "Gebruik van 'para' in plaats van 'por' bij tijdsduur: 'Viajé para dos semanas' (fout) moet zijn 'Viajé por dos semanas' (correct)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Gracias por venir.",
+    "romaji": "Gracias por venir.",
+    "dutch": "Dank voor het komen."
+   },
+   {
+    "japanese": "Salimos para la escuela.",
+    "romaji": "Salimos para la escuela.",
+    "dutch": "We vertrekken naar school."
+   },
+   {
+    "japanese": "Lo compré por diez euros.",
+    "romaji": "Lo compré por diez euros.",
+    "dutch": "Ik kocht het voor tien euro."
+   },
+   {
+    "japanese": "Este regalo es para ti.",
+    "romaji": "Este regalo es para ti.",
+    "dutch": "Dit cadeau is voor jou."
+   },
+   {
+    "japanese": "Estudio español para viajar.",
+    "romaji": "Estudio español para viajar.",
+    "dutch": "Ik studeer Spaans om te reizen."
+   },
+   {
+    "japanese": "El libro fue escrito por García Márquez.",
+    "romaji": "El libro fue escrito por García Márquez.",
+    "dutch": "Het boek is geschreven door García Márquez."
+   }
+  ]
+ },
+ "es-b1-perfecto": {
+  "naam": "Pretérito Perfecto",
+  "tagline": "De verbinding tussen verleden en heden in het Spaans.",
+  "niveau": "basis",
+  "kernregel": "Het pretérito perfecto wordt gebruikt om acties uit te drukken die in het verleden zijn begonnen en nog steeds relevant zijn of invloed hebben op het heden. Het is vergelijkbaar met de Nederlandse voltooide tijd.",
+  "patroon": "haber (in de tegenwoordige tijd) + voltooid deelwoord",
+  "uitleg": "In het Spaans gebruik je het pretérito perfecto om te praten over gebeurtenissen die recentelijk zijn gebeurd of die nog steeds invloed hebben op het heden. Het wordt gevormd door de tegenwoordige tijd van het werkwoord 'haber' te combineren met het voltooid deelwoord van het hoofdwerkwoord. Dit is vergelijkbaar met het Nederlandse gebruik van 'hebben' of 'zijn' met een voltooid deelwoord, zoals in 'ik heb gegeten'. In tegenstelling tot het Nederlands, waar je soms 'zijn' gebruikt, gebruik je in het Spaans altijd 'haber'.",
+  "opbouw": [
+   {
+    "element": "haber",
+    "rol": "hulpwerkwoord in de tegenwoordige tijd",
+    "voorbeeld": "he, has, ha, hemos, habéis, han"
+   },
+   {
+    "element": "voltooid deelwoord",
+    "rol": "hoofdwerkwoord in de voltooide vorm",
+    "voorbeeld": "hablado, comido, vivido"
+   },
+   {
+    "element": "onderwerp",
+    "rol": "persoon of ding dat de actie uitvoert",
+    "voorbeeld": "Yo, tú, él/ella, nosotros/as, vosotros/as, ellos/as"
+   },
+   {
+    "element": "tijdsaanduiding",
+    "rol": "optioneel, om de recentheid of relevantie aan te geven",
+    "voorbeeld": "hoy, esta semana, ya"
+   }
+  ],
+  "tips": [
+   "Gebruik 'haber' altijd in de tegenwoordige tijd, ongeacht het onderwerp.",
+   "Het voltooid deelwoord van regelmatige werkwoorden eindigt op -ado (voor -ar werkwoorden) of -ido (voor -er en -ir werkwoorden).",
+   "Let op onregelmatige voltooid deelwoorden zoals 'escrito' (geschreven) en 'visto' (gezien).",
+   "Gebruik het pretérito perfecto vaak met tijdsaanduidingen zoals 'hoy', 'esta semana' of 'ya' om de verbinding met het heden te benadrukken."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 'haber' met 'tener'. Correct: 'He comido', niet 'Tengo comido'.",
+   "Verkeerd gebruik van het voltooid deelwoord. Correct: 'He escrito', niet 'He escribido'.",
+   "Het vergeten van 'haber'. Correct: 'Hemos hablado', niet alleen 'Hablado'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "He visitado Madrid este año.",
+    "romaji": "He visitado Madrid este año.",
+    "dutch": "Ik heb Madrid dit jaar bezocht."
+   },
+   {
+    "japanese": "¿Has visto la nueva película?",
+    "romaji": "¿Has visto la nueva película?",
+    "dutch": "Heb je de nieuwe film gezien?"
+   },
+   {
+    "japanese": "Ellos han terminado el proyecto.",
+    "romaji": "Ellos han terminado el proyecto.",
+    "dutch": "Zij hebben het project afgerond."
+   },
+   {
+    "japanese": "Hemos comido en ese restaurante antes.",
+    "romaji": "Hemos comido en ese restaurante antes.",
+    "dutch": "We hebben eerder in dat restaurant gegeten."
+   },
+   {
+    "japanese": "Ya he leído ese libro.",
+    "romaji": "Ya he leído ese libro.",
+    "dutch": "Ik heb dat boek al gelezen."
+   },
+   {
+    "japanese": "No he recibido tu mensaje.",
+    "romaji": "No he recibido tu mensaje.",
+    "dutch": "Ik heb je bericht niet ontvangen."
+   }
+  ]
+ },
+ "es-b1-subj": {
+  "naam": "Presente de Subjuntivo",
+  "tagline": "Beheers de kunst van het uitdrukken van onzekerheid en wens in het Spaans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het presente de subjuntivo wordt gebruikt om onzekerheid, wensen, twijfels, en subjectieve oordelen uit te drukken. Het komt vaak voor na bepaalde uitdrukkingen en voegwoorden die een bepaalde mate van onzekerheid of subjectiviteit impliceren.",
+  "patroon": "que + [werkwoord in presente de subjuntivo]",
+  "uitleg": "In het Spaans wordt de subjunctieve wijs gebruikt om situaties te beschrijven die niet zeker zijn, zoals wensen, twijfels, of onzekere gebeurtenissen. Dit verschilt van het Nederlands, waar we vaak de indicatieve wijs gebruiken, zelfs in onzekere situaties. De presente de subjuntivo wordt vaak geïntroduceerd door voegwoorden zoals 'que', en volgt op werkwoorden of uitdrukkingen die onzekerheid of wens uitdrukken, zoals 'esperar que' (hopen dat) of 'dudar que' (twijfelen dat). Het is belangrijk om te herkennen wanneer de subjunctieve wijs vereist is, omdat het gebruik ervan de betekenis van de zin kan veranderen.",
+  "opbouw": [
+   {
+    "element": "que",
+    "rol": "Inleidend voegwoord dat de subjunctieve bijzin introduceert.",
+    "voorbeeld": "Espero que él venga."
+   },
+   {
+    "element": "werkwoord in presente de subjuntivo",
+    "rol": "Het werkwoord dat de onzekerheid of wens uitdrukt.",
+    "voorbeeld": "venga"
+   },
+   {
+    "element": "onderwerp",
+    "rol": "Het onderwerp van de bijzin, vaak verschillend van het hoofdzinonderwerp.",
+    "voorbeeld": "él"
+   },
+   {
+    "element": "hoofdzin",
+    "rol": "De zin die de context geeft voor de subjunctieve bijzin.",
+    "voorbeeld": "Espero"
+   },
+   {
+    "element": "uitdrukking van onzekerheid/wens",
+    "rol": "De uitdrukking die aangeeft dat de subjunctieve wijs nodig is.",
+    "voorbeeld": "Espero que"
+   }
+  ],
+  "tips": [
+   "Leer de werkwoorden en uitdrukkingen die vaak de subjunctieve wijs vereisen.",
+   "Oefen met het vervoegen van werkwoorden in de subjunctieve wijs, want de vormen verschillen van de indicatieve wijs.",
+   "Let op de context van de zin; de subjunctieve wijs wordt vaak gebruikt in hypothetische of niet-bevestigde situaties.",
+   "Gebruik de subjunctieve wijs na voegwoorden zoals 'cuando' (wanneer), 'aunque' (hoewel), en 'para que' (zodat) als er onzekerheid of voorwaardelijkheid is."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de indicatieve wijs in plaats van de subjunctieve wijs na uitdrukkingen van onzekerheid. Correctie: Gebruik 'venga' in plaats van 'viene' in 'Espero que él venga'.",
+   "Vergeten de subjunctieve wijs te gebruiken na voegwoorden die onzekerheid uitdrukken. Correctie: Gebruik 'haya' in plaats van 'hay' in 'Es posible que haya problemas'.",
+   "Het verwarren van de subjunctieve en indicatieve vormen van werkwoorden. Correctie: Oefen regelmatig met vervoegingen om de verschillen te onthouden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Es importante que estudies cada día.",
+    "romaji": "Es importante que estudies cada día.",
+    "dutch": "Het is belangrijk dat je elke dag studeert."
+   },
+   {
+    "japanese": "Dudo que él sepa la respuesta.",
+    "romaji": "Dudo que él sepa la respuesta.",
+    "dutch": "Ik betwijfel of hij het antwoord weet."
+   },
+   {
+    "japanese": "Quiero que me llames mañana.",
+    "romaji": "Quiero que me llames mañana.",
+    "dutch": "Ik wil dat je me morgen belt."
+   },
+   {
+    "japanese": "No creo que ellos lleguen a tiempo.",
+    "romaji": "No creo que ellos lleguen a tiempo.",
+    "dutch": "Ik denk niet dat ze op tijd aankomen."
+   },
+   {
+    "japanese": "Es posible que llueva esta tarde.",
+    "romaji": "Es posible que llueva esta tarde.",
+    "dutch": "Het is mogelijk dat het vanmiddag regent."
+   },
+   {
+    "japanese": "Ojalá que tengas un buen día.",
+    "romaji": "Ojalá que tengas un buen día.",
+    "dutch": "Hopelijk heb je een goede dag."
+   }
+  ]
+ },
+ "es-b1-condic": {
+  "naam": "De Spaanse Condicional",
+  "tagline": "Leer hoe je hypothetische situaties en beleefdheid uitdrukt in het Spaans.",
+  "niveau": "gemiddeld",
+  "kernregel": "De condicional wordt gebruikt om hypothetische situaties, beleefdheid en toekomstige acties vanuit een verleden perspectief uit te drukken. Het is vergelijkbaar met het Nederlandse 'zou' gevolgd door een werkwoord.",
+  "patroon": "infinitief + ía, ías, ía, íamos, íais, ían",
+  "uitleg": "De condicional in het Spaans wordt gevormd door de infinitief van het werkwoord te nemen en daar de juiste uitgang aan toe te voegen. Deze uitgangen zijn gelijk voor alle regelmatige werkwoorden, ongeacht of ze eindigen op -ar, -er of -ir. Dit maakt het patroon relatief eenvoudig te leren. De condicional wordt vaak gebruikt in combinatie met de verleden tijd om te spreken over acties die zouden plaatsvinden onder bepaalde voorwaarden. Het wordt ook gebruikt om beleefdheid uit te drukken, bijvoorbeeld bij verzoeken of suggesties.",
+  "opbouw": [
+   {
+    "element": "Infinitief",
+    "rol": "De basisvorm van het werkwoord waarop de uitgangen worden toegevoegd.",
+    "voorbeeld": "hablar, comer, vivir"
+   },
+   {
+    "element": "Uitgang -ía",
+    "rol": "Wordt toegevoegd aan de infinitief voor de eerste persoon enkelvoud en derde persoon enkelvoud.",
+    "voorbeeld": "hablaría, comería, viviría"
+   },
+   {
+    "element": "Uitgang -ías",
+    "rol": "Wordt toegevoegd aan de infinitief voor de tweede persoon enkelvoud.",
+    "voorbeeld": "hablarías, comerías, vivirías"
+   },
+   {
+    "element": "Uitgang -íamos",
+    "rol": "Wordt toegevoegd aan de infinitief voor de eerste persoon meervoud.",
+    "voorbeeld": "hablaríamos, comeríamos, viviríamos"
+   },
+   {
+    "element": "Uitgang -ían",
+    "rol": "Wordt toegevoegd aan de infinitief voor de derde persoon meervoud.",
+    "voorbeeld": "hablarían, comerían, vivirían"
+   }
+  ],
+  "tips": [
+   "Oefen met regelmatige werkwoorden om de uitgangen te automatiseren.",
+   "Gebruik de condicional om beleefdheid uit te drukken in vragen, zoals '¿Podrías ayudarme?' (Zou je me kunnen helpen?).",
+   "Onthoud dat sommige werkwoorden onregelmatig zijn in de condicional, zoals 'tener' dat 'tendría' wordt.",
+   "Combineer de condicional met de verleden tijd om hypothetische situaties te beschrijven, zoals 'Si tuviera dinero, viajaría a España.' (Als ik geld had, zou ik naar Spanje reizen.)"
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de condicional met de futuro simple. Correct: 'hablaría' (zou spreken) vs. 'hablaré' (zal spreken).",
+   "Vergeten van de uitgang toe te voegen aan de infinitief. Correct: 'comería' in plaats van 'comer'.",
+   "Onregelmatige werkwoorden behandelen als regelmatig. Correct: 'saldría' in plaats van 'saliría'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Me gustaría visitar México.",
+    "romaji": "Me gustara visitar México.",
+    "dutch": "Ik zou graag Mexico willen bezoeken."
+   },
+   {
+    "japanese": "¿Podrías pasarme la sal?",
+    "romaji": "¿Podrías pasarme la sal?",
+    "dutch": "Zou je me het zout kunnen aangeven?"
+   },
+   {
+    "japanese": "Ellos viajarían más si tuvieran tiempo.",
+    "romaji": "Ellos viajarían más si tuvieran tiempo.",
+    "dutch": "Zij zouden meer reizen als ze tijd hadden."
+   },
+   {
+    "japanese": "Nosotros comeríamos en ese restaurante.",
+    "romaji": "Nosotros comeríamos en ese restaurante.",
+    "dutch": "Wij zouden in dat restaurant eten."
+   },
+   {
+    "japanese": "¿Qué harías tú en mi lugar?",
+    "romaji": "¿Qué harías tú en mi lugar?",
+    "dutch": "Wat zou jij doen in mijn plaats?"
+   },
+   {
+    "japanese": "Ella diría la verdad.",
+    "romaji": "Ella diría la verdad.",
+    "dutch": "Zij zou de waarheid zeggen."
+   }
+  ]
+ },
+ "es-b1-si": {
+  "naam": "Oraciones Condicionales",
+  "tagline": "Leer hoe je voorwaardelijke zinnen in het Spaans vormt en gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Oraciones condicionales, of voorwaardelijke zinnen, worden gebruikt om situaties te beschrijven die afhankelijk zijn van een bepaalde voorwaarde. Ze worden vaak gebruikt om hypothetische situaties, wensen of mogelijkheden uit te drukken.",
+  "patroon": "Si + presente de indicativo, futuro simple",
+  "uitleg": "In het Spaans worden voorwaardelijke zinnen vaak ingeleid door 'si' (als). Er zijn verschillende soorten voorwaardelijke zinnen, afhankelijk van de waarschijnlijkheid of hypothetische aard van de situatie. Een veelvoorkomend patroon is het gebruik van de tegenwoordige tijd van de indicativo na 'si', gevolgd door de futuro simple in de hoofdzin. Dit patroon wordt gebruikt voor situaties die als reëel of mogelijk worden beschouwd. In tegenstelling tot het Nederlands, waar we vaak de tegenwoordige tijd gebruiken in beide zinsdelen, gebruikt het Spaans de toekomende tijd om de consequentie aan te geven.",
+  "opbouw": [
+   {
+    "element": "Si",
+    "rol": "Inleidend woord voor de voorwaarde",
+    "voorbeeld": "Si tienes tiempo,..."
+   },
+   {
+    "element": "Presente de indicativo",
+    "rol": "Werkwoordsvorm die de voorwaarde uitdrukt",
+    "voorbeeld": "Si estudias,..."
+   },
+   {
+    "element": "Futuro simple",
+    "rol": "Werkwoordsvorm die de consequentie uitdrukt",
+    "voorbeeld": "...aprobarás el examen."
+   },
+   {
+    "element": "Comma",
+    "rol": "Scheiding tussen voorwaarde en consequentie",
+    "voorbeeld": "Si llueve, no iremos al parque."
+   },
+   {
+    "element": "Hoofdzin",
+    "rol": "De zin die de consequentie of het resultaat beschrijft",
+    "voorbeeld": "...te llamaré."
+   }
+  ],
+  "tips": [
+   "Gebruik altijd 'si' zonder accent voor voorwaardelijke zinnen.",
+   "Oefen met verschillende werkwoorden in de presente de indicativo om vertrouwd te raken met het patroon.",
+   "Let op de volgorde: de voorwaardelijke zin kan voor of na de hoofdzin komen.",
+   "Gebruik de futuro simple om een duidelijke toekomstgerichte consequentie aan te geven."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'si' (als) en 'sí' (ja). Correct: Si vienes, te veré.",
+   "Het gebruik van de presente de indicativo in beide zinsdelen. Correct: Si estudias, aprobarás.",
+   "Verkeerd gebruik van de werkwoordstijden. Correct: Si hace sol, iremos a la playa."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Si hace buen tiempo, iremos a la playa.",
+    "romaji": "Si hace buen tiempo, iremos a la playa.",
+    "dutch": "Als het mooi weer is, gaan we naar het strand."
+   },
+   {
+    "japanese": "Si terminas tu trabajo, podrás salir.",
+    "romaji": "Si terminas tu trabajo, podrás salir.",
+    "dutch": "Als je je werk afmaakt, mag je uitgaan."
+   },
+   {
+    "japanese": "Si me ayudas, te invitaré a cenar.",
+    "romaji": "Si me ayudas, te invitaré a cenar.",
+    "dutch": "Als je me helpt, nodig ik je uit voor het diner."
+   },
+   {
+    "japanese": "Si estudias mucho, sacarás buenas notas.",
+    "romaji": "Si estudias mucho, sacarás buenas notas.",
+    "dutch": "Als je veel studeert, haal je goede cijfers."
+   },
+   {
+    "japanese": "Si no llueve, jugaremos al fútbol.",
+    "romaji": "Si no llueve, jugaremos al fútbol.",
+    "dutch": "Als het niet regent, gaan we voetballen."
+   },
+   {
+    "japanese": "Si vienes a mi casa, te mostraré mis fotos.",
+    "romaji": "Si vienes a mi casa, te mostraré mis fotos.",
+    "dutch": "Als je naar mijn huis komt, laat ik je mijn foto's zien."
+   }
+  ]
+ },
+ "es-b1-plusc": {
+  "naam": "Pluscuamperfecto",
+  "tagline": "Het verleden van het verleden in het Spaans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het pluscuamperfecto wordt gebruikt om een actie te beschrijven die plaatsvond vóór een andere actie in het verleden. Het geeft aan dat iets al was gebeurd op een bepaald moment in het verleden.",
+  "patroon": "había/habías/había/habíamos/habíais/habían + participio pasado",
+  "uitleg": "Het pluscuamperfecto in het Spaans wordt gebruikt om een actie te beschrijven die al voltooid was voordat een andere actie in het verleden plaatsvond. Dit komt overeen met het Nederlandse 'had gedaan', zoals in 'Ik had gegeten voordat hij aankwam'. Het wordt gevormd door de imperfecte vorm van 'haber' te combineren met het voltooid deelwoord van het hoofdwerkwoord. Net als in het Nederlands, benadrukt het de volgorde van gebeurtenissen in het verleden.",
+  "opbouw": [
+   {
+    "element": "había",
+    "rol": "eerste persoon enkelvoud van 'haber' in de imperfecto",
+    "voorbeeld": "Yo había comido."
+   },
+   {
+    "element": "habías",
+    "rol": "tweede persoon enkelvoud van 'haber' in de imperfecto",
+    "voorbeeld": "Tú habías salido."
+   },
+   {
+    "element": "había",
+    "rol": "derde persoon enkelvoud van 'haber' in de imperfecto",
+    "voorbeeld": "Él había visto."
+   },
+   {
+    "element": "habíamos",
+    "rol": "eerste persoon meervoud van 'haber' in de imperfecto",
+    "voorbeeld": "Nosotros habíamos terminado."
+   },
+   {
+    "element": "participio pasado",
+    "rol": "voltooid deelwoord van het hoofdwerkwoord",
+    "voorbeeld": "comido, salido, visto"
+   }
+  ],
+  "tips": [
+   "Gebruik het pluscuamperfecto om duidelijk te maken dat een actie al was voltooid voordat een andere plaatsvond.",
+   "Let op de juiste vorm van 'haber' afhankelijk van het onderwerp van de zin.",
+   "Het voltooid deelwoord blijft onveranderd, ongeacht het onderwerp.",
+   "Gebruik contextuele aanwijzingen om de tijdsvolgorde in het verleden te verduidelijken."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen pluscuamperfecto en pretérito perfecto. Correctie: Gebruik pluscuamperfecto voor acties die vóór een andere in het verleden plaatsvonden.",
+   "Verkeerde vervoeging van 'haber'. Correctie: Zorg ervoor dat de vorm van 'haber' overeenkomt met het onderwerp.",
+   "Verkeerd gebruik van het voltooid deelwoord. Correctie: Zorg ervoor dat het voltooid deelwoord correct is voor het werkwoord (bijvoorbeeld 'escribir' wordt 'escrito')."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Cuando llegué, ellos ya habían salido.",
+    "romaji": "Cuando llegué, ellos ya habían salido.",
+    "dutch": "Toen ik aankwam, waren zij al vertrokken."
+   },
+   {
+    "japanese": "Habíamos terminado el proyecto antes de la fecha límite.",
+    "romaji": "Habíamos terminado el proyecto antes de la fecha límite.",
+    "dutch": "We hadden het project voltooid voor de deadline."
+   },
+   {
+    "japanese": "Ella había aprendido a conducir antes de mudarse a la ciudad.",
+    "romaji": "Ella había aprendido a conducir antes de mudarse a la ciudad.",
+    "dutch": "Zij had leren autorijden voordat ze naar de stad verhuisde."
+   },
+   {
+    "japanese": "Yo había leído el libro antes de ver la película.",
+    "romaji": "Yo había leído el libro antes de ver la película.",
+    "dutch": "Ik had het boek gelezen voordat ik de film zag."
+   },
+   {
+    "japanese": "Nosotros habíamos comido antes de salir.",
+    "romaji": "Nosotros habíamos comido antes de salir.",
+    "dutch": "We hadden gegeten voordat we vertrokken."
+   },
+   {
+    "japanese": "Ellos habían visitado el museo antes de que cerrara.",
+    "romaji": "Ellos habían visitado el museo antes de que cerrara.",
+    "dutch": "Zij hadden het museum bezocht voordat het sloot."
+   }
+  ]
+ },
+ "es-b1-relativos": {
+  "naam": "Pronombres Relativos",
+  "tagline": "Verbind zinnen en voeg details toe met relatieve voornaamwoorden.",
+  "niveau": "gemiddeld",
+  "kernregel": "Pronombres relativos worden gebruikt om zinnen te verbinden en extra informatie over een zelfstandig naamwoord te geven. Ze helpen om herhaling te vermijden en maken de tekst vloeiender.",
+  "patroon": "[antecedente] + [pronombre relativo] + [oración subordinada]",
+  "uitleg": "Pronombres relativos in het Spaans, zoals 'que', 'quien', 'cuyo', en 'el cual', worden gebruikt om zinnen samen te voegen en meer informatie te geven over een zelfstandig naamwoord. Ze zijn vergelijkbaar met de Nederlandse woorden 'die', 'dat', 'wie', en 'wiens'. Het gebruik van deze voornaamwoorden hangt af van het geslacht, het aantal en de functie (onderwerp of object) van het antecedent. In tegenstelling tot het Nederlands, waar het gebruik van 'die' en 'dat' soms verwarrend kan zijn, is het in het Spaans vaak duidelijker vanwege de specifieke regels voor elk voornaamwoord.",
+  "opbouw": [
+   {
+    "element": "que",
+    "rol": "Verwijst naar zowel mensen als dingen, en kan onderwerp of object zijn.",
+    "voorbeeld": "El libro que leí es interesante."
+   },
+   {
+    "element": "quien/quienes",
+    "rol": "Verwijst specifiek naar mensen en wordt gebruikt na een voorzetsel of als onderwerp.",
+    "voorbeeld": "La persona con quien hablé es amable."
+   },
+   {
+    "element": "cuyo/cuya/cuyos/cuyas",
+    "rol": "Drukt bezit uit en stemt overeen met het geslacht en aantal van het bezittelijke zelfstandig naamwoord.",
+    "voorbeeld": "La casa cuya puerta es roja es mía."
+   },
+   {
+    "element": "el cual/la cual/los cuales/las cuales",
+    "rol": "Formeler alternatief voor 'que' en 'quien', vaak gebruikt na voorzetsels.",
+    "voorbeeld": "El proyecto en el cual trabajamos es complejo."
+   }
+  ],
+  "tips": [
+   "Gebruik 'que' als standaardkeuze voor zowel mensen als dingen, tenzij een voorzetsel of bezit vereist is.",
+   "Gebruik 'quien' of 'quienes' na voorzetsels wanneer je naar mensen verwijst.",
+   "Let op het geslacht en aantal bij het gebruik van 'cuyo' en zijn varianten.",
+   "Gebruik 'el cual' en zijn varianten voor meer formele contexten of om ambiguïteit te vermijden."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'que' en 'quien' bij verwijzing naar mensen. Correctie: Gebruik 'quien' na voorzetsels.",
+   "Onjuiste overeenstemming van 'cuyo' met het antecedent. Correctie: Zorg ervoor dat 'cuyo' overeenkomt met het geslacht en aantal van het bezittelijke zelfstandig naamwoord."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "La chica que canta es mi hermana.",
+    "romaji": "La chica que canta es mi hermana.",
+    "dutch": "Het meisje dat zingt is mijn zus."
+   },
+   {
+    "japanese": "El hombre a quien viste es mi profesor.",
+    "romaji": "El hombre a quien viste es mi profesor.",
+    "dutch": "De man die je zag is mijn leraar."
+   },
+   {
+    "japanese": "El coche cuyo motor es nuevo es caro.",
+    "romaji": "El coche cuyo motor es nuevo es caro.",
+    "dutch": "De auto waarvan de motor nieuw is, is duur."
+   },
+   {
+    "japanese": "Los libros que compré son interesantes.",
+    "romaji": "Los libros que compré son interesantes.",
+    "dutch": "De boeken die ik kocht zijn interessant."
+   },
+   {
+    "japanese": "La ciudad en la cual nací es hermosa.",
+    "romaji": "La ciudad en la cual nací es hermosa.",
+    "dutch": "De stad waarin ik geboren ben is mooi."
+   },
+   {
+    "japanese": "La mujer con la cual trabajo es muy eficiente.",
+    "romaji": "La mujer con la cual trabajo es muy eficiente.",
+    "dutch": "De vrouw met wie ik werk is zeer efficiënt."
+   }
+  ]
+ },
+ "es-b1-indirecto": {
+  "naam": "Estilo Indirecto",
+  "tagline": "Leer hoe je indirecte rede in het Spaans gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het 'estilo indirecto' of indirecte rede wordt gebruikt om te rapporteren wat iemand anders heeft gezegd, zonder de exacte woorden te herhalen. Het is handig voor het vertellen van verhalen of het delen van informatie die je van anderen hebt gehoord.",
+  "patroon": "Verbo introductorio + que + oración subordinada",
+  "uitleg": "In het Spaans gebruik je de indirecte rede om te vertellen wat iemand anders heeft gezegd, gedacht of gevraagd. Dit doe je door een inleidend werkwoord te gebruiken, gevolgd door 'que' en een bijzin. Het werkwoord in de bijzin kan van tijd veranderen, afhankelijk van de tijd van het inleidende werkwoord. Als het inleidende werkwoord in de verleden tijd staat, verschuift de tijd in de bijzin meestal ook naar de verleden tijd. Dit verschilt van het Nederlands, waar de tijd vaak hetzelfde blijft.",
+  "opbouw": [
+   {
+    "element": "Verbo introductorio",
+    "rol": "Het werkwoord dat de indirecte rede inleidt, zoals 'decir', 'comentar', 'explicar'.",
+    "voorbeeld": "Él dijo que..."
+   },
+   {
+    "element": "Que",
+    "rol": "Het voegwoord dat de hoofdzin met de bijzin verbindt.",
+    "voorbeeld": "Él dijo que..."
+   },
+   {
+    "element": "Oración subordinada",
+    "rol": "De bijzin die de gerapporteerde uitspraak bevat.",
+    "voorbeeld": "...iba a llegar tarde."
+   },
+   {
+    "element": "Cambio de tiempo",
+    "rol": "De tijd van het werkwoord in de bijzin verandert vaak als het inleidende werkwoord in de verleden tijd staat.",
+    "voorbeeld": "Presente naar imperfecto: 'dice que va' wordt 'dijo que iba'."
+   },
+   {
+    "element": "Pronombres y posesivos",
+    "rol": "Persoonlijke voornaamwoorden en bezittelijke voornaamwoorden kunnen veranderen om aan te passen aan de spreker.",
+    "voorbeeld": "'Yo' kan veranderen in 'él' of 'ella'."
+   }
+  ],
+  "tips": [
+   "Let op de tijdverschuivingen bij het gebruik van de verleden tijd.",
+   "Gebruik 'que' altijd om de hoofdzin en de bijzin te verbinden.",
+   "Pas persoonlijke voornaamwoorden aan aan de context van de spreker.",
+   "Oefen met verschillende inleidende werkwoorden om variatie in je zinnen te brengen."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de tijd aan te passen in de bijzin wanneer het inleidende werkwoord in de verleden tijd staat. Correctie: 'Él dijo que iba' in plaats van 'Él dijo que va'.",
+   "Het weglaten van 'que' tussen de hoofdzin en de bijzin. Correctie: Voeg 'que' toe: 'Él dijo que iba a llegar tarde'.",
+   "Het niet aanpassen van persoonlijke voornaamwoorden aan de context. Correctie: Zorg ervoor dat 'yo' verandert in 'él' of 'ella' als dat nodig is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ella comentó que estaba cansada.",
+    "romaji": "Ella comentó que estaba cansada.",
+    "dutch": "Zij zei dat ze moe was."
+   },
+   {
+    "japanese": "Nos dijeron que la reunión había sido cancelada.",
+    "romaji": "Nos dijeron que la reunión había sido cancelada.",
+    "dutch": "Ze vertelden ons dat de vergadering was afgelast."
+   },
+   {
+    "japanese": "Él explicó que no podía venir.",
+    "romaji": "Él explicó que no podía venir.",
+    "dutch": "Hij legde uit dat hij niet kon komen."
+   },
+   {
+    "japanese": "Mencionaron que el proyecto estaba terminado.",
+    "romaji": "Mencionaron que el proyecto estaba terminado.",
+    "dutch": "Ze vermeldden dat het project voltooid was."
+   },
+   {
+    "japanese": "Dijiste que ibas a llamar más tarde.",
+    "romaji": "Dijiste que ibas a llamar más tarde.",
+    "dutch": "Je zei dat je later zou bellen."
+   },
+   {
+    "japanese": "Afirmó que había visto la película.",
+    "romaji": "Afirmó que había visto la película.",
+    "dutch": "Hij beweerde dat hij de film had gezien."
+   }
+  ]
+ },
+ "es-b1-pasiva": {
+  "naam": "Voz Pasiva",
+  "tagline": "Leer hoe je de passieve vorm in het Spaans gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "De passieve vorm in het Spaans wordt gebruikt om de nadruk te leggen op de actie of het object dat de actie ondergaat, in plaats van op de uitvoerder van de actie. Het wordt vaak gebruikt in formele teksten of wanneer de uitvoerder onbekend of onbelangrijk is.",
+  "patroon": "ser + participio pasado (+ por + agente)",
+  "uitleg": "In het Spaans wordt de passieve vorm gevormd met een vorm van het werkwoord 'ser' gevolgd door een voltooid deelwoord (participio pasado). Optioneel kan de uitvoerder van de actie worden vermeld met 'por'. Dit verschilt van het Nederlands, waar de passieve vorm vaak met 'worden' of 'zijn' wordt gemaakt. In het Spaans is de passieve vorm minder gebruikelijk in gesproken taal en wordt vaak vervangen door de 'se'-constructie, die een meer algemene of onpersoonlijke betekenis geeft.",
+  "opbouw": [
+   {
+    "element": "ser",
+    "rol": "Hulpwerkwoord dat de tijd van de zin aangeeft.",
+    "voorbeeld": "El libro fue escrito."
+   },
+   {
+    "element": "participio pasado",
+    "rol": "Voltooid deelwoord dat de actie beschrijft.",
+    "voorbeeld": "escrito"
+   },
+   {
+    "element": "por",
+    "rol": "Geeft de uitvoerder van de actie aan.",
+    "voorbeeld": "por el autor"
+   },
+   {
+    "element": "agente",
+    "rol": "De uitvoerder van de actie, vaak een persoon of instantie.",
+    "voorbeeld": "el autor"
+   },
+   {
+    "element": "object",
+    "rol": "Het onderwerp dat de actie ondergaat.",
+    "voorbeeld": "El libro"
+   }
+  ],
+  "tips": [
+   "Gebruik de passieve vorm vooral in formele of geschreven teksten.",
+   "Vermeld de uitvoerder alleen als deze belangrijk is voor de context.",
+   "Let op de overeenstemming tussen het voltooid deelwoord en het onderwerp in geslacht en getal.",
+   "Overweeg de 'se'-constructie voor een natuurlijkere, minder formele toon in gesproken Spaans."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'ser': Gebruik 'ser' in de juiste tijdsvorm, niet 'estar'. Correct: 'El libro fue escrito', niet 'El libro está escrito'.",
+   "Verkeerde participio pasado: Zorg ervoor dat het voltooid deelwoord overeenkomt met het onderwerp in geslacht en getal. Correct: 'Las cartas fueron enviadas', niet 'Las cartas fueron enviado'.",
+   "Onnodig gebruik van 'por': Vermijd 'por' als de uitvoerder niet belangrijk is. Correct: 'La puerta fue abierta', niet 'La puerta fue abierta por alguien'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "La casa fue construida en 1990.",
+    "romaji": "La casa fue construida en mil novecientos noventa.",
+    "dutch": "Het huis werd in 1990 gebouwd."
+   },
+   {
+    "japanese": "El informe será revisado por el supervisor.",
+    "romaji": "El informe será revisado por el supervisor.",
+    "dutch": "Het rapport zal door de supervisor worden herzien."
+   },
+   {
+    "japanese": "Las cartas fueron enviadas ayer.",
+    "romaji": "Las cartas fueron enviadas ayer.",
+    "dutch": "De brieven werden gisteren verzonden."
+   },
+   {
+    "japanese": "La canción fue cantada por el coro.",
+    "romaji": "La canción fue cantada por el coro.",
+    "dutch": "Het lied werd gezongen door het koor."
+   },
+   {
+    "japanese": "El proyecto será terminado la próxima semana.",
+    "romaji": "El proyecto será terminado la próxima semana.",
+    "dutch": "Het project zal volgende week worden afgerond."
+   },
+   {
+    "japanese": "El cuadro fue pintado por un famoso artista.",
+    "romaji": "El cuadro fue pintado por un famoso artista.",
+    "dutch": "Het schilderij werd geschilderd door een beroemde kunstenaar."
+   }
+  ]
+ },
+ "es-b1-mandatosneg": {
+  "naam": "Mandatos Negativos",
+  "tagline": "Leer hoe je negatieve bevelen in het Spaans geeft.",
+  "niveau": "gemiddeld",
+  "kernregel": "Mandatos negativos worden gebruikt om iemand te vertellen iets niet te doen. Ze zijn essentieel voor het geven van instructies of bevelen op een beleefde of dringende manier.",
+  "patroon": "No + [subjuntivo presente van het werkwoord]",
+  "uitleg": "In het Spaans gebruik je mandatos negativos om iemand te vertellen iets niet te doen. Dit patroon verschilt van positieve bevelen, omdat het de subjuntivo presente gebruikt. In tegenstelling tot het Nederlands, waar je simpelweg 'niet' toevoegt voor een werkwoord, vereist het Spaans een specifieke vervoeging. Bijvoorbeeld, 'doe het niet' wordt 'no lo hagas'. Het is belangrijk om de juiste vorm van de subjuntivo te gebruiken, afhankelijk van de persoon tot wie je spreekt.",
+  "opbouw": [
+   {
+    "element": "No",
+    "rol": "Geeft aan dat het bevel negatief is.",
+    "voorbeeld": "No hables."
+   },
+   {
+    "element": "Subjuntivo presente",
+    "rol": "De vervoeging van het werkwoord in de tegenwoordige tijd van de subjuntivo.",
+    "voorbeeld": "No comas."
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord dat de actie beschrijft die niet moet worden uitgevoerd.",
+    "voorbeeld": "No escribas."
+   },
+   {
+    "element": "Pronomen",
+    "rol": "Kan worden toegevoegd om aan te geven wie de actie niet moet uitvoeren.",
+    "voorbeeld": "No te levantes."
+   }
+  ],
+  "tips": [
+   "Onthoud dat de subjuntivo vaak anders wordt vervoegd dan de indicativo, vooral bij onregelmatige werkwoorden.",
+   "Gebruik altijd 'no' aan het begin van de zin om de negatieve vorm aan te geven.",
+   "Oefen met veelvoorkomende onregelmatige werkwoorden zoals 'ir' (no vayas) en 'hacer' (no hagas).",
+   "Let op de plaatsing van object- en reflexieve voornaamwoorden; ze komen vóór het werkwoord in negatieve bevelen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de indicativo in plaats van de subjuntivo: Correctie: 'No hablas' moet 'No hables' zijn.",
+   "Vergeten 'no' aan het begin van de zin te zetten: Correctie: 'Hables' moet 'No hables' zijn.",
+   "Verkeerde vervoeging van onregelmatige werkwoorden: Correctie: 'No haces' moet 'No hagas' zijn."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "No corras en el pasillo.",
+    "romaji": "No corras en el pasillo.",
+    "dutch": "Ren niet in de gang."
+   },
+   {
+    "japanese": "No toques eso.",
+    "romaji": "No toques eso.",
+    "dutch": "Raak dat niet aan."
+   },
+   {
+    "japanese": "No digas mentiras.",
+    "romaji": "No digas mentiras.",
+    "dutch": "Vertel geen leugens."
+   },
+   {
+    "japanese": "No salgas tarde.",
+    "romaji": "No salgas tarde.",
+    "dutch": "Ga niet laat weg."
+   },
+   {
+    "japanese": "No te olvides de llamar.",
+    "romaji": "No te olvides de llamar.",
+    "dutch": "Vergeet niet te bellen."
+   },
+   {
+    "japanese": "No pongas los pies en la mesa.",
+    "romaji": "No pongas los pies en la mesa.",
+    "dutch": "Zet je voeten niet op de tafel."
+   }
+  ]
+ },
+ "es-b1-subjvs": {
+  "naam": "Subjuntivo vs Indicativo",
+  "tagline": "Het verschil tussen de subjunctief en de indicatief in het Spaans begrijpen.",
+  "niveau": "gemiddeld",
+  "kernregel": "De subjunctief wordt gebruikt om onzekerheid, wensen, twijfels of subjectieve meningen uit te drukken, terwijl de indicatief wordt gebruikt voor feiten, zekerheden en objectieve verklaringen. Het juiste gebruik van deze modi is cruciaal voor het correct overbrengen van de bedoeling in een zin.",
+  "patroon": "Subjuntivo: que + [werkwoord in subjuntivo]; Indicativo: [werkwoord in indicativo]",
+  "uitleg": "In het Spaans zijn er twee belangrijke modi om werkwoorden te vervoegen: de indicatief en de subjunctief. De indicatief wordt gebruikt voor zinnen die feiten of objectieve informatie beschrijven, zoals 'Hij eet' of 'Zij woont in Madrid'. De subjunctief daarentegen wordt gebruikt in zinnen die onzekerheid, wensen, of subjectieve meningen uitdrukken, zoals 'Ik hoop dat hij eet' of 'Het is mogelijk dat zij in Madrid woont'. In het Nederlands gebruiken we vaak dezelfde werkwoordsvorm voor beide situaties, maar in het Spaans is het onderscheid belangrijk om de juiste betekenis over te brengen.",
+  "opbouw": [
+   {
+    "element": "que",
+    "rol": "Verbindingswoord dat vaak de subjunctief introduceert.",
+    "voorbeeld": "Espero que vengas."
+   },
+   {
+    "element": "werkwoord in subjuntivo",
+    "rol": "Vervoeging die onzekerheid of wens uitdrukt.",
+    "voorbeeld": "vengas"
+   },
+   {
+    "element": "werkwoord in indicativo",
+    "rol": "Vervoeging die feiten of zekerheden uitdrukt.",
+    "voorbeeld": "comes"
+   },
+   {
+    "element": "onzekerheid",
+    "rol": "Concept dat de subjunctief vereist.",
+    "voorbeeld": "Es posible que..."
+   },
+   {
+    "element": "zekerheid",
+    "rol": "Concept dat de indicatief vereist.",
+    "voorbeeld": "Sé que..."
+   }
+  ],
+  "tips": [
+   "Gebruik de subjunctief na uitdrukkingen van wens, zoals 'Espero que' (Ik hoop dat).",
+   "Gebruik de indicatief voor zinnen die feiten of objectieve waarheden beschrijven.",
+   "Let op signaalwoorden zoals 'quizás' of 'tal vez', die vaak de subjunctief vereisen.",
+   "Onthoud dat de subjunctief vaak volgt na 'que', maar niet altijd; context is belangrijk."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de indicatief na 'Espero que'. Correctie: Gebruik de subjunctief, zoals in 'Espero que vengas'.",
+   "Het gebruik van de subjunctief voor feiten, zoals 'Sé que él venga'. Correctie: Gebruik de indicatief, zoals in 'Sé que él viene'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dudo que él tenga razón.",
+    "romaji": "Dudo que él tenga razón.",
+    "dutch": "Ik betwijfel of hij gelijk heeft."
+   },
+   {
+    "japanese": "Es cierto que ella estudia mucho.",
+    "romaji": "Es cierto que ella estudia mucho.",
+    "dutch": "Het is zeker dat zij veel studeert."
+   },
+   {
+    "japanese": "Ojalá que ganemos el partido.",
+    "romaji": "Ojalá que ganemos el partido.",
+    "dutch": "Hopelijk winnen we de wedstrijd."
+   },
+   {
+    "japanese": "Creo que él está en casa.",
+    "romaji": "Creo que él está en casa.",
+    "dutch": "Ik denk dat hij thuis is."
+   },
+   {
+    "japanese": "No pienso que sea una buena idea.",
+    "romaji": "No pienso que sea una buena idea.",
+    "dutch": "Ik denk niet dat het een goed idee is."
+   },
+   {
+    "japanese": "Es probable que llueva mañana.",
+    "romaji": "Es probable que llueva mañana.",
+    "dutch": "Het is waarschijnlijk dat het morgen regent."
+   }
+  ]
+ },
+ "es-b1-perifrasis": {
+  "naam": "Perífrasis Verbales",
+  "tagline": "Leer de kunst van samengestelde werkwoordsvormen in het Spaans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Perífrasis verbales zijn samengestelde werkwoordsvormen die bestaan uit een hulpwerkwoord en een hoofdwerkwoord. Ze worden gebruikt om nuances van tijd, aspect, modaliteit of intentie uit te drukken die niet met een enkel werkwoord kunnen worden weergegeven.",
+  "patroon": "<hulpwerkwoord> + <verbindingswoord> + <hoofdwerkwoord>",
+  "uitleg": "Perífrasis verbales zijn essentieel in het Spaans om specifieke betekenissen en nuances uit te drukken die niet mogelijk zijn met enkelvoudige werkwoorden. Ze kunnen bijvoorbeeld toekomstige intenties, verplichtingen of herhaalde acties aanduiden. In tegenstelling tot het Nederlands, waar vaak modale werkwoorden worden gebruikt, vereist het Spaans vaak een combinatie van werkwoorden en verbindingswoorden. Het hulpwerkwoord wordt meestal vervoegd, terwijl het hoofdwerkwoord in een bepaalde vorm zoals infinitief, gerundio of participio blijft.",
+  "opbouw": [
+   {
+    "element": "Hulpwerkwoord",
+    "rol": "Geeft de tijd, aspect of modaliteit aan.",
+    "voorbeeld": "Voy a (Ik ga)"
+   },
+   {
+    "element": "Verbindingswoord",
+    "rol": "Verbindt het hulpwerkwoord met het hoofdwerkwoord.",
+    "voorbeeld": "a (naar)"
+   },
+   {
+    "element": "Hoofdwerkwoord",
+    "rol": "Draagt de hoofdactie of betekenis.",
+    "voorbeeld": "comer (eten)"
+   },
+   {
+    "element": "Infinitief",
+    "rol": "Wordt vaak gebruikt als de vorm van het hoofdwerkwoord.",
+    "voorbeeld": "comer (eten)"
+   },
+   {
+    "element": "Gerundio",
+    "rol": "Wordt gebruikt om een voortdurende actie aan te geven.",
+    "voorbeeld": "comiendo (etend)"
+   }
+  ],
+  "tips": [
+   "Let op de vervoeging van het hulpwerkwoord; deze bepaalt de tijd en persoon.",
+   "Gebruik 'a' na werkwoorden van beweging zoals 'ir' om intentie aan te geven.",
+   "Oefen met verschillende hulpwerkwoorden om hun specifieke nuances te begrijpen.",
+   "Controleer altijd of het hoofdwerkwoord in de juiste vorm staat (infinitief, gerundio, participio)."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde vervoeging van het hulpwerkwoord: 'Voy comer' in plaats van 'Voy a comer'.",
+   "Verkeerd gebruik van het verbindingswoord: 'Voy en comer' in plaats van 'Voy a comer'.",
+   "Gebruik van een verkeerde werkwoordsvorm: 'Estoy a comer' in plaats van 'Estoy comiendo'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Voy a estudiar.",
+    "romaji": "Voy a estudiar.",
+    "dutch": "Ik ga studeren."
+   },
+   {
+    "japanese": "Tengo que trabajar.",
+    "romaji": "Tengo que trabajar.",
+    "dutch": "Ik moet werken."
+   },
+   {
+    "japanese": "Estoy leyendo un libro.",
+    "romaji": "Estoy leyendo un libro.",
+    "dutch": "Ik ben een boek aan het lezen."
+   },
+   {
+    "japanese": "Acabo de llegar.",
+    "romaji": "Acabo de llegar.",
+    "dutch": "Ik ben net aangekomen."
+   },
+   {
+    "japanese": "Sigo aprendiendo español.",
+    "romaji": "Sigo aprendiendo español.",
+    "dutch": "Ik blijf Spaans leren."
+   },
+   {
+    "japanese": "Debo salir ahora.",
+    "romaji": "Debo salir ahora.",
+    "dutch": "Ik moet nu vertrekken."
+   }
+  ]
+ }
+}

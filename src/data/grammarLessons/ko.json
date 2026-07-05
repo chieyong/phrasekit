@@ -1,0 +1,3409 @@
+{
+ "ko-t1-ida": {
+  "naam": "Het gebruik van '이다' (zijn) in het Koreaans",
+  "tagline": "Leer hoe je het Koreaanse werkwoord 'zijn' correct gebruikt.",
+  "niveau": "basis",
+  "kernregel": "Het werkwoord '이다' wordt gebruikt om een identiteit, eigenschap of toestand aan te geven, vergelijkbaar met 'zijn' in het Nederlands. Het is een essentieel werkwoord dat vaak wordt gebruikt om zinnen te vormen waarin een onderwerp wordt geïdentificeerd of beschreven.",
+  "patroon": "[Zelfstandig naamwoord] + 이다",
+  "uitleg": "In het Koreaans wordt '이다' gebruikt om te zeggen dat iets of iemand iets is. Het wordt direct aan een zelfstandig naamwoord toegevoegd zonder een spatie. In tegenstelling tot het Nederlands, waar 'zijn' als een apart woord wordt gebruikt, wordt '이다' aan het einde van het zelfstandig naamwoord geplakt. Wanneer het zelfstandig naamwoord eindigt op een klinker, wordt '이다' vaak verkort tot '예요' in informele situaties. Voor medeklinkers wordt '이에요' gebruikt. In formele situaties blijft '입니다' de correcte vorm.",
+  "opbouw": [
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het onderwerp van de zin dat geïdentificeerd of beschreven wordt.",
+    "voorbeeld": "학생 (haksaeng) - student"
+   },
+   {
+    "element": "이다",
+    "rol": "Het werkwoord dat 'zijn' betekent en het zelfstandig naamwoord verbindt met de rest van de zin.",
+    "voorbeeld": "학생이다 (haksaeng-ida) - is een student"
+   },
+   {
+    "element": "예요",
+    "rol": "Informele vorm van '이다' na een klinker.",
+    "voorbeeld": "의사예요 (uisa-yeyo) - is een dokter"
+   },
+   {
+    "element": "이에요",
+    "rol": "Informele vorm van '이다' na een medeklinker.",
+    "voorbeeld": "학생이에요 (haksaeng-ieyo) - is een student"
+   },
+   {
+    "element": "입니다",
+    "rol": "Formele vorm van '이다' voor beleefde situaties.",
+    "voorbeeld": "학생입니다 (haksaeng-imnida) - is een student"
+   }
+  ],
+  "tips": [
+   "Gebruik '입니다' in formele situaties zoals presentaties of zakelijke gesprekken.",
+   "Gebruik '예요' of '이에요' in informele gesprekken met vrienden of familie.",
+   "Let op de uitspraak van '이다' in snelle spraak; het kan klinken als '이야' of '야' in zeer informele contexten.",
+   "Oefen met het herkennen van de juiste vorm op basis van de laatste letter van het zelfstandig naamwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van '예요' en '이에요' door niet op de laatste letter van het zelfstandig naamwoord te letten. Correctie: Gebruik '예요' na klinkers en '이에요' na medeklinkers.",
+   "Het gebruik van '이다' in plaats van '입니다' in formele situaties. Correctie: Gebruik altijd '입니다' in formele contexten."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "선생님입니다",
+    "romaji": "seonsaengnim-imnida",
+    "dutch": "is een leraar"
+   },
+   {
+    "japanese": "학생이에요",
+    "romaji": "haksaeng-ieyo",
+    "dutch": "is een student"
+   },
+   {
+    "japanese": "의사예요",
+    "romaji": "uisa-yeyo",
+    "dutch": "is een dokter"
+   },
+   {
+    "japanese": "친구예요",
+    "romaji": "chingu-yeyo",
+    "dutch": "is een vriend"
+   },
+   {
+    "japanese": "책이에요",
+    "romaji": "chaek-ieyo",
+    "dutch": "is een boek"
+   },
+   {
+    "japanese": "고양이예요",
+    "romaji": "goyangi-yeyo",
+    "dutch": "is een kat"
+   }
+  ]
+ },
+ "ko-t1-eunneun": {
+  "naam": "Het gebruik van 은/는 als thema-markeerder",
+  "tagline": "Leer hoe je het thema van een zin in het Koreaans markeert.",
+  "niveau": "basis",
+  "kernregel": "In het Koreaans gebruik je 은/는 om het thema of onderwerp van een zin te markeren. Dit patroon helpt om de focus van de zin aan te geven en kan worden gebruikt om contrasten te benadrukken.",
+  "patroon": "Noun + 은/는",
+  "uitleg": "In het Koreaans gebruik je 은/는 om het thema van een zin aan te geven. Het is vergelijkbaar met het benadrukken van een onderwerp in het Nederlands, maar heeft geen directe vertaling. 은 wordt gebruikt na medeklinkers en 는 na klinkers. Dit patroon kan ook worden gebruikt om een contrast aan te geven tussen twee onderwerpen. Bijvoorbeeld, '사과는 맛있어요' betekent 'Wat betreft appels, ze zijn lekker', waarbij de focus op 'appels' ligt.",
+  "opbouw": [
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het onderwerp of thema van de zin",
+    "voorbeeld": "사과 (sagwa)"
+   },
+   {
+    "element": "은",
+    "rol": "Thema-markeerder na medeklinkers",
+    "voorbeeld": "책은 (chaek-eun)"
+   },
+   {
+    "element": "는",
+    "rol": "Thema-markeerder na klinkers",
+    "voorbeeld": "바나나는 (bananana)"
+   },
+   {
+    "element": "Zin",
+    "rol": "De rest van de zin die informatie over het thema geeft",
+    "voorbeeld": "맛있어요 (masisseoyo)"
+   }
+  ],
+  "tips": [
+   "Gebruik 은/는 om het onderwerp van de zin te benadrukken.",
+   "Gebruik 은 na medeklinkers en 는 na klinkers.",
+   "Gebruik 은/는 om contrasten te maken tussen twee onderwerpen.",
+   "Let op de context van de zin om te bepalen of 은/는 of een andere markeerder zoals 이/가 beter past."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 은/는 en 이/가: 은/는 markeert het thema, terwijl 이/가 vaak het onderwerp markeert.",
+   "Verkeerd gebruik van 은/는 na klinkers en medeklinkers: zorg ervoor dat je 은 na medeklinkers en 는 na klinkers gebruikt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "고양이는 귀여워요.",
+    "romaji": "Goyang-i-neun gwiyeowoyo.",
+    "dutch": "Wat betreft de kat, hij is schattig."
+   },
+   {
+    "japanese": "오늘은 날씨가 좋아요.",
+    "romaji": "Oneul-eun nalssiga joayo.",
+    "dutch": "Wat betreft vandaag, het weer is goed."
+   },
+   {
+    "japanese": "저는 학생이에요.",
+    "romaji": "Jeo-neun haksaeng-ieyo.",
+    "dutch": "Wat betreft mij, ik ben een student."
+   },
+   {
+    "japanese": "이 책은 재미있어요.",
+    "romaji": "I chaek-eun jaemiisseoyo.",
+    "dutch": "Wat betreft dit boek, het is interessant."
+   },
+   {
+    "japanese": "커피는 좋아해요.",
+    "romaji": "Keopi-neun joahaeyo.",
+    "dutch": "Wat betreft koffie, ik vind het lekker."
+   },
+   {
+    "japanese": "한국어는 어려워요.",
+    "romaji": "Hangug-eo-neun eoryeowoyo.",
+    "dutch": "Wat betreft Koreaans, het is moeilijk."
+   }
+  ]
+ },
+ "ko-t1-iga": {
+  "naam": "Onderwerpmarkeerder 이/가",
+  "tagline": "Leer hoe je het onderwerp van een zin in het Koreaans markeert.",
+  "niveau": "basis",
+  "kernregel": "In het Koreaans worden de partikels 이 (i) en 가 (ga) gebruikt om het onderwerp van een zin te markeren. 이 wordt gebruikt na medeklinkers en 가 na klinkers.",
+  "patroon": "[Zelfstandig naamwoord] + 이/가",
+  "uitleg": "In het Koreaans is het belangrijk om het onderwerp van een zin duidelijk te markeren, omdat de zinsstructuur anders is dan in het Nederlands. De partikels 이 en 가 helpen hierbij door aan te geven wat het onderwerp van de zin is. 이 wordt gebruikt na een zelfstandig naamwoord dat eindigt op een medeklinker, terwijl 가 wordt gebruikt na een zelfstandig naamwoord dat eindigt op een klinker. Dit is vergelijkbaar met het gebruik van 'de' en 'het' in het Nederlands, waarbij de keuze afhangt van het woord dat volgt. Het gebruik van 이/가 kan ook subtiele verschillen in betekenis of nadruk in een zin aangeven.",
+  "opbouw": [
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het onderwerp van de zin dat gemarkeerd wordt.",
+    "voorbeeld": "책 (chaek) - boek"
+   },
+   {
+    "element": "이",
+    "rol": "Onderwerpmarkeerder na medeklinkers.",
+    "voorbeeld": "책이 (chaek-i) - het boek"
+   },
+   {
+    "element": "가",
+    "rol": "Onderwerpmarkeerder na klinkers.",
+    "voorbeeld": "학교가 (hakgyo-ga) - de school"
+   },
+   {
+    "element": "Zin",
+    "rol": "De volledige zin waarin het onderwerp wordt gemarkeerd.",
+    "voorbeeld": "책이 있습니다 (chaek-i itsseumnida) - Er is een boek."
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord dat de actie of toestand van het onderwerp beschrijft.",
+    "voorbeeld": "있습니다 (itsseumnida) - is/er is"
+   }
+  ],
+  "tips": [
+   "Gebruik 이 na woorden die eindigen op een medeklinker en 가 na woorden die eindigen op een klinker.",
+   "Let op de uitspraak van het woord voordat je de juiste partikel kiest.",
+   "Gebruik 이/가 om duidelijkheid te scheppen over wat het onderwerp van de zin is.",
+   "Oefen met het maken van zinnen om vertrouwd te raken met het gebruik van 이/가."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 이/가: '학교이' in plaats van '학교가'. Correctie: Gebruik 가 na klinkers.",
+   "Vergeten van de onderwerpmarkeerder: '책 있습니다' in plaats van '책이 있습니다'. Correctie: Voeg 이 toe na medeklinkers."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "고양이가 귀엽습니다.",
+    "romaji": "goyangi-ga gwiyeopseumnida",
+    "dutch": "De kat is schattig."
+   },
+   {
+    "japanese": "사람이 많습니다.",
+    "romaji": "saram-i manhseumnida",
+    "dutch": "Er zijn veel mensen."
+   },
+   {
+    "japanese": "나무가 높습니다.",
+    "romaji": "namu-ga nopsseumnida",
+    "dutch": "De boom is hoog."
+   },
+   {
+    "japanese": "음식이 맛있습니다.",
+    "romaji": "eumsik-i masisseumnida",
+    "dutch": "Het eten is lekker."
+   },
+   {
+    "japanese": "바다가 아름답습니다.",
+    "romaji": "bada-ga areumdapssumnida",
+    "dutch": "De zee is mooi."
+   },
+   {
+    "japanese": "친구가 옵니다.",
+    "romaji": "chingu-ga omnida",
+    "dutch": "De vriend komt."
+   }
+  ]
+ },
+ "ko-t1-eulreul": {
+  "naam": "Gebruik van 을/를 voor het lijdend voorwerp",
+  "tagline": "Leer hoe je het lijdend voorwerp in een Koreaanse zin aangeeft.",
+  "niveau": "basis",
+  "kernregel": "In het Koreaans worden de partikels 을 (eul) en 를 (reul) gebruikt om het lijdend voorwerp in een zin aan te geven. Deze partikels helpen om de structuur van de zin te verduidelijken, vooral wanneer de woordvolgorde flexibel is.",
+  "patroon": "Zelfstandig naamwoord + 을/를",
+  "uitleg": "In het Koreaans markeren de partikels 을 en 를 het lijdend voorwerp van een zin. De keuze tussen 을 en 를 hangt af van de eindklank van het zelfstandig naamwoord: gebruik 을 na een medeklinker en 를 na een klinker. Dit is vergelijkbaar met het gebruik van 'de' en 'het' in het Nederlands, waar de keuze afhangt van het geslacht van het zelfstandig naamwoord. In tegenstelling tot het Nederlands, waar de woordvolgorde vaak de functie van een woord in de zin bepaalt, maakt het Koreaans gebruik van partikels om deze functie aan te geven, waardoor de zinsstructuur flexibeler wordt.",
+  "opbouw": [
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het woord dat het lijdend voorwerp van de zin is.",
+    "voorbeeld": "책 (chaek) - boek"
+   },
+   {
+    "element": "을",
+    "rol": "Partikel dat het lijdend voorwerp markeert na een medeklinker.",
+    "voorbeeld": "책을 (chaekeul) - het boek"
+   },
+   {
+    "element": "를",
+    "rol": "Partikel dat het lijdend voorwerp markeert na een klinker.",
+    "voorbeeld": "사과를 (sagwareul) - de appel"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord dat de actie beschrijft die op het lijdend voorwerp wordt uitgevoerd.",
+    "voorbeeld": "읽다 (ikda) - lezen"
+   }
+  ],
+  "tips": [
+   "Let op de eindklank van het zelfstandig naamwoord om te bepalen of je 을 of 를 moet gebruiken.",
+   "In gesproken Koreaans worden deze partikels soms weggelaten als de context duidelijk is, maar in geschreven Koreaans zijn ze essentieel.",
+   "Oefen met het herkennen van het lijdend voorwerp in zinnen om je begrip van de zinsstructuur te verbeteren.",
+   "Gebruik contextuele aanwijzingen in een zin om te bepalen welke rol een woord speelt als de partikels zijn weggelaten."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 을 na een klinker. Correctie: Gebruik 를 na een klinker.",
+   "Het weglaten van de partikel in formele geschreven teksten. Correctie: Zorg ervoor dat je altijd de juiste partikel gebruikt in formele contexten."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "나는 책을 읽어요.",
+    "romaji": "Naneun chaekeul ilgeoyo.",
+    "dutch": "Ik lees een boek."
+   },
+   {
+    "japanese": "그는 영화를 봐요.",
+    "romaji": "Geuneun yeonghwareul bwayo.",
+    "dutch": "Hij kijkt een film."
+   },
+   {
+    "japanese": "우리는 밥을 먹어요.",
+    "romaji": "Urineun babeul meogeoyo.",
+    "dutch": "Wij eten rijst."
+   },
+   {
+    "japanese": "그녀는 편지를 써요.",
+    "romaji": "Geunyeoneun pyeonjireul sseoyo.",
+    "dutch": "Zij schrijft een brief."
+   },
+   {
+    "japanese": "아이들은 공을 차요.",
+    "romaji": "Aideureun gong-eul chayo.",
+    "dutch": "De kinderen trappen de bal."
+   },
+   {
+    "japanese": "저는 음악을 들어요.",
+    "romaji": "Jeoneun eumageul deureoyo.",
+    "dutch": "Ik luister naar muziek."
+   }
+  ]
+ },
+ "ko-t1-e": {
+  "naam": "Gebruik van '에' voor tijd en plaats",
+  "tagline": "Leer hoe je '에' gebruikt om tijd en plaats aan te duiden in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "Het partikel '에' wordt gebruikt om specifieke tijdstippen en locaties aan te geven. Het helpt om duidelijk te maken wanneer of waar een actie plaatsvindt.",
+  "patroon": "tijd/plaats + 에",
+  "uitleg": "In het Koreaans gebruik je het partikel '에' om een specifiek tijdstip of een specifieke locatie aan te geven. Dit is vergelijkbaar met het gebruik van 'om' voor tijd en 'in' of 'op' voor plaats in het Nederlands. Bijvoorbeeld, 'om 3 uur' wordt '3시에' en 'in het park' wordt '공원에'. Het is belangrijk om te onthouden dat '에' niet wordt gebruikt voor algemene tijdsperiodes of voor het aangeven van beweging naar een plaats, waarvoor andere partikels zoals '에서' of '으로' worden gebruikt.",
+  "opbouw": [
+   {
+    "element": "tijd",
+    "rol": "Geeft aan wanneer een actie plaatsvindt.",
+    "voorbeeld": "3시에 (om 3 uur)"
+   },
+   {
+    "element": "plaats",
+    "rol": "Geeft aan waar een actie plaatsvindt.",
+    "voorbeeld": "학교에 (op school)"
+   },
+   {
+    "element": "에",
+    "rol": "Partikel dat tijd of plaats markeert.",
+    "voorbeeld": "집에 (thuis)"
+   },
+   {
+    "element": "specifiek tijdstip",
+    "rol": "Gebruik '에' voor specifieke tijdstippen, niet voor algemene periodes.",
+    "voorbeeld": "아침 7시에 (om 7 uur 's ochtends)"
+   },
+   {
+    "element": "specifieke locatie",
+    "rol": "Gebruik '에' voor specifieke locaties, niet voor beweging.",
+    "voorbeeld": "도서관에 (in de bibliotheek)"
+   }
+  ],
+  "tips": [
+   "Gebruik '에' alleen voor specifieke tijdstippen zoals uren en dagen, niet voor maanden of jaren.",
+   "Gebruik '에' voor vaste locaties waar een actie plaatsvindt, niet voor beweging naar een locatie.",
+   "Combineer '에' niet met tijdsuitdrukkingen die een duur aangeven, zoals 'gedurende de dag'.",
+   "Let op de context: '에' kan ook andere betekenissen hebben afhankelijk van het gebruik."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van '에' voor algemene tijdsperiodes zoals 'in de ochtend'. Correctie: gebruik '아침에' voor 'in de ochtend'.",
+   "Het gebruik van '에' voor beweging naar een plaats. Correctie: gebruik '으로' of '에 가다' voor beweging, zoals '학교로 가다' (naar school gaan)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "저녁에 친구를 만나요.",
+    "romaji": "Jeonyeoge chingureul mannayo.",
+    "dutch": "Ik ontmoet een vriend in de avond."
+   },
+   {
+    "japanese": "도서관에 책을 읽어요.",
+    "romaji": "Doseogwane chaegeul ilgeoyo.",
+    "dutch": "Ik lees een boek in de bibliotheek."
+   },
+   {
+    "japanese": "월요일에 회의가 있어요.",
+    "romaji": "Woryoire hoeiga isseoyo.",
+    "dutch": "Er is een vergadering op maandag."
+   },
+   {
+    "japanese": "오후 2시에 출발해요.",
+    "romaji": "Ohu 2sie chulbalhaeyo.",
+    "dutch": "Ik vertrek om 2 uur 's middags."
+   },
+   {
+    "japanese": "집에 있어요.",
+    "romaji": "Jibe isseoyo.",
+    "dutch": "Ik ben thuis."
+   },
+   {
+    "japanese": "공원에 산책해요.",
+    "romaji": "Gongwone sanchaekhaeyo.",
+    "dutch": "Ik maak een wandeling in het park."
+   }
+  ]
+ },
+ "ko-t1-eseo": {
+  "naam": "Gebruik van '에서' voor Plaats van Handeling",
+  "tagline": "Leer hoe je '에서' gebruikt om een locatie aan te duiden waar een actie plaatsvindt.",
+  "niveau": "basis",
+  "kernregel": "'에서' wordt gebruikt om de locatie aan te geven waar een actie of gebeurtenis plaatsvindt. Het is vergelijkbaar met het Nederlandse 'in' of 'bij' wanneer je spreekt over waar een activiteit gebeurt.",
+  "patroon": "Plaats + 에서 + Werkwoord",
+  "uitleg": "'에서' is een locatief partikel dat wordt gebruikt om de plaats aan te geven waar een actie plaatsvindt. In het Nederlands gebruiken we vaak 'in', 'op' of 'bij' om een vergelijkbare betekenis over te brengen. In tegenstelling tot '에', dat meer een statische locatie aanduidt (zoals 'naar' of 'in' zonder actie), impliceert '에서' dat er een activiteit of verandering plaatsvindt op die locatie. Bijvoorbeeld, '학교에서 공부해요' betekent 'Ik studeer op school', waarbij '에서' aangeeft dat de actie van studeren plaatsvindt op de school.",
+  "opbouw": [
+   {
+    "element": "Plaats",
+    "rol": "Geeft de locatie aan waar de actie plaatsvindt.",
+    "voorbeeld": "학교 (hakgyo) - school"
+   },
+   {
+    "element": "에서",
+    "rol": "Partikel dat de locatie van de actie aangeeft.",
+    "voorbeeld": "에서 (eseo)"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Geeft de actie aan die op de locatie plaatsvindt.",
+    "voorbeeld": "공부해요 (gongbuhaeyo) - studeren"
+   }
+  ],
+  "tips": [
+   "Gebruik '에서' altijd in combinatie met een plaatsnaam om de locatie van een actie aan te geven.",
+   "Verwar '에서' niet met '에', die meer een bestemming of statische locatie aanduidt.",
+   "Let op de context van de zin om te bepalen of '에서' of '에' moet worden gebruikt."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen '에' en '에서'. Correctie: Gebruik '에서' voor actieve handelingen, zoals '도서관에서 책을 읽어요' (Ik lees een boek in de bibliotheek).",
+   "Vergeten het partikel '에서' toe te voegen na de plaats. Correctie: Voeg altijd '에서' toe na de plaatsnaam, zoals in '공원에서 운동해요' (Ik sport in het park)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "식당에서 밥을 먹어요.",
+    "romaji": "Sikdang-eseo babeul meogeoyo.",
+    "dutch": "Ik eet in het restaurant."
+   },
+   {
+    "japanese": "공원에서 산책해요.",
+    "romaji": "Gongwon-eseo sanchaekhaeyo.",
+    "dutch": "Ik maak een wandeling in het park."
+   },
+   {
+    "japanese": "카페에서 커피를 마셔요.",
+    "romaji": "Kape-eseo keopireul masyeoyo.",
+    "dutch": "Ik drink koffie in het café."
+   },
+   {
+    "japanese": "도서관에서 공부해요.",
+    "romaji": "Doseogwan-eseo gongbuhaeyo.",
+    "dutch": "Ik studeer in de bibliotheek."
+   },
+   {
+    "japanese": "집에서 쉬어요.",
+    "romaji": "Jib-eseo swieoyo.",
+    "dutch": "Ik rust thuis uit."
+   },
+   {
+    "japanese": "회사에서 일해요.",
+    "romaji": "Hoesa-eseo ilhaeyo.",
+    "dutch": "Ik werk op kantoor."
+   }
+  ]
+ },
+ "ko-t1-do": {
+  "naam": "Gebruik van '도' in het Koreaans",
+  "tagline": "Leer hoe je '도' gebruikt om 'ook' of 'zelfs' aan te geven in zinnen.",
+  "niveau": "basis",
+  "kernregel": "'도' wordt gebruikt om aan te geven dat iets of iemand ook betrokken is bij een actie of situatie. Het kan ook worden gebruikt om een gevoel van inclusiviteit of nadruk te geven, vergelijkbaar met 'ook' of 'zelfs' in het Nederlands.",
+  "patroon": "[Substantief] + 도",
+  "uitleg": "In het Koreaans wordt '도' gebruikt om aan te geven dat een bepaald onderwerp of object ook betrokken is bij de actie of situatie die wordt beschreven. Het wordt direct na het substantief geplaatst dat het onderwerp of object van de zin is. Dit patroon lijkt op het gebruik van 'ook' in het Nederlands, maar kan ook 'zelfs' betekenen, afhankelijk van de context. Het is belangrijk om te weten dat '도' de betekenis van de zin kan veranderen door de nadruk te leggen op het inclusieve aspect.",
+  "opbouw": [
+   {
+    "element": "Substantief",
+    "rol": "Het onderwerp of object dat betrokken is bij de actie of situatie.",
+    "voorbeeld": "책 (chaek) - boek"
+   },
+   {
+    "element": "도",
+    "rol": "Partikel dat 'ook' of 'zelfs' betekent, toegevoegd na het substantief.",
+    "voorbeeld": "도 (do) - ook"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Beschrijft de actie of toestand in de zin.",
+    "voorbeeld": "읽다 (ikda) - lezen"
+   }
+  ],
+  "tips": [
+   "Gebruik '도' om een gevoel van inclusiviteit te creëren in je zinnen.",
+   "Plaats '도' direct na het substantief dat je wilt benadrukken.",
+   "Let op de context, want '도' kan ook 'zelfs' betekenen, wat de betekenis van de zin kan veranderen."
+  ],
+  "veelgemaaktefouten": [
+   "Het vergeten van '도' na het substantief, waardoor de inclusieve betekenis verloren gaat. Correctie: Voeg '도' toe na het substantief.",
+   "Verwarring tussen '도' en andere partikels zoals '만' (alleen). Correctie: Gebruik '도' voor inclusiviteit, niet exclusiviteit."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "나도 학생이에요.",
+    "romaji": "Nado haksaeng-ieyo.",
+    "dutch": "Ik ben ook een student."
+   },
+   {
+    "japanese": "그 책도 읽었어요.",
+    "romaji": "Geu chaekdo ilgeosseoyo.",
+    "dutch": "Ik heb dat boek ook gelezen."
+   },
+   {
+    "japanese": "오늘도 비가 와요.",
+    "romaji": "Oneuldo biga wayo.",
+    "dutch": "Vandaag regent het ook."
+   },
+   {
+    "japanese": "저도 가고 싶어요.",
+    "romaji": "Jeodo gago sipeoyo.",
+    "dutch": "Ik wil ook gaan."
+   },
+   {
+    "japanese": "이것도 맛있어요.",
+    "romaji": "Igeotdo masisseoyo.",
+    "dutch": "Dit is ook lekker."
+   },
+   {
+    "japanese": "그녀도 왔어요.",
+    "romaji": "Geunyeodo wasseoyo.",
+    "dutch": "Zij is ook gekomen."
+   }
+  ]
+ },
+ "ko-t1-ui": {
+  "naam": "Het gebruik van '의' voor bezit in het Koreaans",
+  "tagline": "Leer hoe je bezit uitdrukt in het Koreaans met '의'.",
+  "niveau": "basis",
+  "kernregel": "In het Koreaans wordt het partikel '의' gebruikt om bezit aan te geven, vergelijkbaar met de Nederlandse bezitsvorm 'van' of de Engelse 'of'. Het wordt geplaatst tussen de bezitter en het bezit.",
+  "patroon": "bezitter + 의 + bezit",
+  "uitleg": "Het Koreaanse partikel '의' wordt gebruikt om een bezitsrelatie aan te geven tussen twee zelfstandige naamwoorden. Dit komt overeen met het Nederlandse 'van' of de Engelse 'of'. In tegenstelling tot het Nederlands, waar de bezitter vaak achter het bezit komt, staat in het Koreaans de bezitter vóór het bezit. Dit patroon is essentieel voor het vormen van correcte zinnen waarin eigendom of relaties worden beschreven. Hoewel '의' formeel is, wordt het in gesproken Koreaans soms weggelaten als de context duidelijk is.",
+  "opbouw": [
+   {
+    "element": "bezitter",
+    "rol": "Het zelfstandig naamwoord dat aangeeft wie of wat iets bezit.",
+    "voorbeeld": "친구 (chingu) - vriend"
+   },
+   {
+    "element": "의",
+    "rol": "Het partikel dat de bezitsrelatie aangeeft.",
+    "voorbeeld": "의 (ui)"
+   },
+   {
+    "element": "bezit",
+    "rol": "Het zelfstandig naamwoord dat aangeeft wat er bezeten wordt.",
+    "voorbeeld": "책 (chaek) - boek"
+   }
+  ],
+  "tips": [
+   "In formele teksten en geschreven Koreaans wordt '의' altijd gebruikt om bezit aan te geven.",
+   "In informele gesprekken kan '의' soms worden weggelaten als de context duidelijk is.",
+   "Oefen met het herkennen van '의' in zinnen om je begrip van bezitsrelaties in het Koreaans te verbeteren."
+  ],
+  "veelgemaaktefouten": [
+   "Het plaatsen van '의' na het bezit in plaats van tussen de bezitter en het bezit. Correct: 친구의 책 (chingu-ui chaek), niet 책의 친구 (chaek-ui chingu).",
+   "Verwarring tussen '의' en andere partikels zoals '에' (e) die een andere functie hebben. Zorg ervoor dat je '의' alleen gebruikt voor bezit."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "나의 집",
+    "romaji": "na-ui jip",
+    "dutch": "mijn huis"
+   },
+   {
+    "japanese": "선생님의 차",
+    "romaji": "seonsaengnim-ui cha",
+    "dutch": "de auto van de leraar"
+   },
+   {
+    "japanese": "한국의 문화",
+    "romaji": "hanguk-ui munhwa",
+    "dutch": "de cultuur van Korea"
+   },
+   {
+    "japanese": "아버지의 전화",
+    "romaji": "abeoji-ui jeonhwa",
+    "dutch": "de telefoon van vader"
+   },
+   {
+    "japanese": "학생의 책상",
+    "romaji": "haksaeng-ui chaeksang",
+    "dutch": "de tafel van de student"
+   },
+   {
+    "japanese": "고양이의 장난감",
+    "romaji": "goyangi-ui jangnangam",
+    "dutch": "het speelgoed van de kat"
+   }
+  ]
+ },
+ "ko-t1-hago": {
+  "naam": "Gebruik van 하고・와/과 (en・met)",
+  "tagline": "Leer hoe je dingen en mensen kunt verbinden in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 하고・와/과 wordt gebruikt om twee of meer zelfstandige naamwoorden met elkaar te verbinden, vergelijkbaar met 'en' of 'met' in het Nederlands. Het is essentieel voor het maken van lijsten of het aangeven van gezelschap.",
+  "patroon": "Zelfstandig naamwoord + 하고/와/과 + zelfstandig naamwoord",
+  "uitleg": "In het Koreaans gebruik je 하고, 와 of 과 om 'en' of 'met' aan te geven tussen zelfstandige naamwoorden. 하고 is informeel en kan in zowel gesproken als geschreven taal worden gebruikt. 와 en 과 zijn formeler; 와 gebruik je na klinkers en 과 na medeklinkers. Dit patroon is vergelijkbaar met het Nederlandse 'en', maar kan ook 'met' betekenen, afhankelijk van de context. Bijvoorbeeld, '친구하고 영화 봤어요' betekent 'Ik heb een film gekeken met een vriend'.",
+  "opbouw": [
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het onderwerp of object dat je wilt verbinden.",
+    "voorbeeld": "사과 (appel)"
+   },
+   {
+    "element": "하고",
+    "rol": "Informele verbindingswoord dat 'en' of 'met' betekent.",
+    "voorbeeld": "사과하고 바나나 (appel en banaan)"
+   },
+   {
+    "element": "와",
+    "rol": "Formeel verbindingswoord na klinkers.",
+    "voorbeeld": "형과 (met broer)"
+   },
+   {
+    "element": "과",
+    "rol": "Formeel verbindingswoord na medeklinkers.",
+    "voorbeeld": "책과 연필 (boek en potlood)"
+   }
+  ],
+  "tips": [
+   "Gebruik 하고 in informele gesprekken voor een natuurlijke klank.",
+   "Gebruik 와 na woorden die eindigen op een klinker voor formele situaties.",
+   "Gebruik 과 na woorden die eindigen op een medeklinker voor formele situaties.",
+   "Let op de context om te bepalen of het 'en' of 'met' betekent."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 와/과: Gebruik 와 na klinkers en 과 na medeklinkers.",
+   "Gebruik van 하고 in formele teksten: Gebruik 와/과 voor een formelere toon.",
+   "Verwarring tussen 'en' en 'met': Let op de context om de juiste betekenis te bepalen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "우유하고 빵을 샀어요.",
+    "romaji": "Uyu hago ppang-eul sasseoyo.",
+    "dutch": "Ik heb melk en brood gekocht."
+   },
+   {
+    "japanese": "친구와 영화를 봤어요.",
+    "romaji": "Chingu wa yeonghwa-reul bwasseoyo.",
+    "dutch": "Ik heb een film gekeken met een vriend."
+   },
+   {
+    "japanese": "책과 연필이 필요해요.",
+    "romaji": "Chaek gwa yeonpil-i piryohayo.",
+    "dutch": "Ik heb een boek en een potlood nodig."
+   },
+   {
+    "japanese": "엄마하고 시장에 갔어요.",
+    "romaji": "Eomma hago sijang-e gasseoyo.",
+    "dutch": "Ik ben met mijn moeder naar de markt gegaan."
+   },
+   {
+    "japanese": "고양이와 강아지가 놀아요.",
+    "romaji": "Goyangi wa gangajiga norayo.",
+    "dutch": "De kat en de hond spelen."
+   },
+   {
+    "japanese": "형과 축구를 했어요.",
+    "romaji": "Hyeong gwa chukgu-reul haesseoyo.",
+    "dutch": "Ik heb voetbal gespeeld met mijn broer."
+   }
+  ]
+ },
+ "ko-t1-itda": {
+  "naam": "Gebruik van 있다 en 없다",
+  "tagline": "Leren hoe je 'er is' en 'hebben' uitdrukt in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "De werkwoorden 있다 en 없다 worden gebruikt om respectievelijk 'er is/er zijn' en 'er is niet/er zijn niet' uit te drukken. Ze kunnen ook betekenen 'hebben' en 'niet hebben' afhankelijk van de context.",
+  "patroon": "명사 + 이/가 + 있다/없다",
+  "uitleg": "In het Koreaans gebruik je 있다 om aan te geven dat iets of iemand aanwezig is of bestaat, vergelijkbaar met het Nederlandse 'er is' of 'hebben'. Om aan te geven dat iets of iemand niet aanwezig is of niet bestaat, gebruik je 없다. Het onderwerp van de zin wordt gemarkeerd met de partikels 이 of 가, afhankelijk van de eindklank van het zelfstandig naamwoord. Dit patroon is essentieel voor basiscommunicatie, omdat het helpt om te praten over bezit en aanwezigheid.",
+  "opbouw": [
+   {
+    "element": "명사 (zelfstandig naamwoord)",
+    "rol": "Het onderwerp van de zin dat aangeeft wat er is of wat iemand heeft.",
+    "voorbeeld": "책 (chaek) - boek"
+   },
+   {
+    "element": "이/가 (onderwerp partikel)",
+    "rol": "Markeert het onderwerp van de zin. 이 wordt gebruikt na medeklinkers, 가 na klinkers.",
+    "voorbeeld": "책이 (chaeki) - het boek"
+   },
+   {
+    "element": "있다 (is/hebben)",
+    "rol": "Drukt aanwezigheid of bezit uit.",
+    "voorbeeld": "책이 있다 (chaeki itda) - er is een boek"
+   },
+   {
+    "element": "없다 (is niet/hebben niet)",
+    "rol": "Drukt afwezigheid of gebrek aan bezit uit.",
+    "voorbeeld": "책이 없다 (chaeki eopda) - er is geen boek"
+   }
+  ],
+  "tips": [
+   "Gebruik 이 na een medeklinker en 가 na een klinker om het onderwerp correct te markeren.",
+   "Let op de context om te bepalen of 있다/없다 'er is' of 'hebben' betekent.",
+   "Oefen met verschillende zelfstandige naamwoorden om vertrouwd te raken met de structuur.",
+   "Onthoud dat 있다 en 없다 altijd aan het einde van de zin komen in deze constructie."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 이/가: Zorg ervoor dat je de juiste partikel gebruikt afhankelijk van de eindklank van het zelfstandig naamwoord.",
+   "Verwarring tussen 있다 en 없다: Onthoud dat 있다 aanwezigheid of bezit betekent, terwijl 없다 afwezigheid of gebrek aan bezit betekent."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "사람이 있다",
+    "romaji": "sarami itda",
+    "dutch": "Er is een persoon."
+   },
+   {
+    "japanese": "고양이가 없다",
+    "romaji": "goyangiga eopda",
+    "dutch": "Er is geen kat."
+   },
+   {
+    "japanese": "시간이 있다",
+    "romaji": "sigani itda",
+    "dutch": "Ik heb tijd."
+   },
+   {
+    "japanese": "돈이 없다",
+    "romaji": "doni eopda",
+    "dutch": "Ik heb geen geld."
+   },
+   {
+    "japanese": "친구가 있다",
+    "romaji": "chinguga itda",
+    "dutch": "Ik heb een vriend."
+   },
+   {
+    "japanese": "문제가 없다",
+    "romaji": "munjega eopda",
+    "dutch": "Er is geen probleem."
+   }
+  ]
+ },
+ "ko-t1-seumnida": {
+  "naam": "Formele Eindconstructie: ㅂ니다/습니다",
+  "tagline": "Leer hoe je formele zinnen in het Koreaans correct afsluit.",
+  "niveau": "basis",
+  "kernregel": "De formele eindconstructie ㅂ니다/습니다 wordt gebruikt om beleefdheid en formaliteit uit te drukken in het Koreaans. Het is vooral gebruikelijk in formele situaties zoals zakelijke bijeenkomsten, nieuwsuitzendingen en officiële toespraken.",
+  "patroon": "Stam van het werkwoord + ㅂ니다/습니다",
+  "uitleg": "In het Koreaans wordt de formele eindconstructie ㅂ니다/습니다 gebruikt om zinnen op een beleefde en formele manier af te sluiten. Het patroon hangt af van de laatste lettergreep van de stam van het werkwoord: als de stam eindigt op een klinker, voeg je ㅂ니다 toe, en als de stam eindigt op een medeklinker, voeg je 습니다 toe. Dit patroon is vergelijkbaar met het gebruik van 'u' in het Nederlands om beleefdheid uit te drukken, maar het is formeler en wordt breder toegepast in Koreaans. Het is belangrijk om deze constructie correct te gebruiken in formele settings om respect te tonen.",
+  "opbouw": [
+   {
+    "element": "Stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder de infinitief eindigend op 다.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "ㅂ니다",
+    "rol": "Toevoeging aan de stam als deze eindigt op een klinker.",
+    "voorbeeld": "가다 (gaan) -> 갑니다"
+   },
+   {
+    "element": "습니다",
+    "rol": "Toevoeging aan de stam als deze eindigt op een medeklinker.",
+    "voorbeeld": "먹다 (eten) -> 먹습니다"
+   },
+   {
+    "element": "Formele context",
+    "rol": "Situaties waarin formele taal vereist is.",
+    "voorbeeld": "Zakelijke bijeenkomsten, nieuwsuitzendingen"
+   },
+   {
+    "element": "Beleefdheid",
+    "rol": "Het tonen van respect en beleefdheid in communicatie.",
+    "voorbeeld": "Gebruik in formele toespraken"
+   }
+  ],
+  "tips": [
+   "Gebruik ㅂ니다/습니다 in formele situaties om beleefdheid te tonen.",
+   "Let op de laatste letter van de stam om te bepalen of je ㅂ니다 of 습니다 moet gebruiken.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de constructie.",
+   "Luister naar formele toespraken of nieuwsuitzendingen om het gebruik van ㅂ니다/습니다 in context te horen."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van ㅂ니다 na een medeklinker: Correct is 먹습니다, niet 먹ㅂ니다.",
+   "Vergeten de stam te controleren: Zorg ervoor dat je weet of de stam eindigt op een klinker of medeklinker voordat je ㅂ니다/습니다 toevoegt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "저는 학생입니다.",
+    "romaji": "jeoneun haksaengimnida.",
+    "dutch": "Ik ben een student."
+   },
+   {
+    "japanese": "이것은 책입니다.",
+    "romaji": "igeoseun chaegimnida.",
+    "dutch": "Dit is een boek."
+   },
+   {
+    "japanese": "날씨가 좋습니다.",
+    "romaji": "nalssiga johseumnida.",
+    "dutch": "Het weer is goed."
+   },
+   {
+    "japanese": "저는 한국어를 공부합니다.",
+    "romaji": "jeoneun hangugeoreul gongbuhamnida.",
+    "dutch": "Ik studeer Koreaans."
+   },
+   {
+    "japanese": "그는 회사원입니다.",
+    "romaji": "geuneun hoesawonimnida.",
+    "dutch": "Hij is een kantoormedewerker."
+   },
+   {
+    "japanese": "우리는 친구입니다.",
+    "romaji": "urineun chinguimnida.",
+    "dutch": "Wij zijn vrienden."
+   }
+  ]
+ },
+ "ko-t1-ayo": {
+  "naam": "Gebruik van 아요/어요 in het Koreaans",
+  "tagline": "Leer hoe je beleefdheid uitdrukt in het Koreaans met 아요/어요.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 아요/어요 wordt gebruikt om werkwoorden en bijvoeglijke naamwoorden beleefd te maken in informele situaties. Het is een veelgebruikte vorm in dagelijkse gesprekken om beleefdheid te tonen zonder al te formeel te zijn.",
+  "patroon": "Stam van het werkwoord/bijvoeglijk naamwoord + 아요/어요",
+  "uitleg": "In het Koreaans wordt beleefdheid vaak uitgedrukt door het aanpassen van de werkwoordsvorm. Het patroon 아요/어요 wordt gebruikt om een beleefde, maar niet al te formele toon aan te geven. Welke van de twee je gebruikt, hangt af van de klinker in de stam van het werkwoord of bijvoeglijk naamwoord. Als de laatste klinker van de stam een 'ㅏ' of 'ㅗ' is, gebruik je 아요. Voor alle andere klinkers gebruik je 어요. Dit patroon is vergelijkbaar met het gebruik van 'u' in het Nederlands om beleefdheid uit te drukken, maar het is minder formeel dan de formele eindiging '습니다'.",
+  "opbouw": [
+   {
+    "element": "Stam van het werkwoord/bijvoeglijk naamwoord",
+    "rol": "De basisvorm zonder de infinitief '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "아요",
+    "rol": "Toegevoegd aan stammen eindigend op 'ㅏ' of 'ㅗ'.",
+    "voorbeeld": "가다 (gaan) -> 가요"
+   },
+   {
+    "element": "어요",
+    "rol": "Toegevoegd aan stammen eindigend op andere klinkers.",
+    "voorbeeld": "먹다 (eten) -> 먹어요"
+   },
+   {
+    "element": "Beleefdheid",
+    "rol": "Drukt beleefdheid uit in informele contexten.",
+    "voorbeeld": "보다 (zien) -> 봐요"
+   },
+   {
+    "element": "Informele situaties",
+    "rol": "Gebruikt in informele, maar beleefde gesprekken.",
+    "voorbeeld": "공부하다 (studeren) -> 공부해요"
+   }
+  ],
+  "tips": [
+   "Controleer altijd de laatste klinker van de stam om te bepalen of je 아요 of 어요 moet gebruiken.",
+   "Gebruik 아요/어요 in informele gesprekken met mensen van dezelfde leeftijd of jonger.",
+   "Vermijd het gebruik van 아요/어요 in zeer formele situaties, gebruik dan liever de '습니다' vorm.",
+   "Oefen met het herkennen van de stam van werkwoorden en bijvoeglijke naamwoorden om snel de juiste vorm te kunnen gebruiken."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde klinker gebruiken: 가다 -> 가어요 (fout), correct is 가요.",
+   "Verwarren met de formele stijl: 가다 -> 갑니다 (formeel), correct voor informeel beleefd is 가요.",
+   "Vergeten de stam te gebruiken: 가다 -> 가아요 (fout), correct is 가요."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "읽어요",
+    "romaji": "ilgeoyo",
+    "dutch": "lezen"
+   },
+   {
+    "japanese": "마셔요",
+    "romaji": "masyeoyo",
+    "dutch": "drinken"
+   },
+   {
+    "japanese": "써요",
+    "romaji": "sseoyo",
+    "dutch": "schrijven"
+   },
+   {
+    "japanese": "들어요",
+    "romaji": "deureoyo",
+    "dutch": "luisteren"
+   },
+   {
+    "japanese": "만나요",
+    "romaji": "mannayo",
+    "dutch": "ontmoeten"
+   },
+   {
+    "japanese": "일해요",
+    "romaji": "ilhaeyo",
+    "dutch": "werken"
+   }
+  ]
+ },
+ "ko-t1-ieyo": {
+  "naam": "이에요/예요 (zijn, spreektaal)",
+  "tagline": "Leer hoe je 'zijn' in het Koreaans gebruikt in informele gesprekken.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 이에요/예요 wordt gebruikt om in informele situaties te zeggen dat iets of iemand iets is. Het is de spreektaalversie van het formele '입니다'.",
+  "patroon": "[zelfstandig naamwoord] + 이에요/예요",
+  "uitleg": "In het Koreaans gebruik je 이에요 of 예요 om te zeggen dat iets of iemand iets is, vergelijkbaar met het Nederlandse 'is' of 'zijn'. Welke je gebruikt, hangt af van de klank waarmee het voorafgaande woord eindigt: eindigt het woord op een medeklinker, dan gebruik je 이에요; eindigt het op een klinker, dan gebruik je 예요. Dit patroon is informeel en wordt vaak gebruikt in dagelijkse gesprekken. Het is belangrijk om te weten dat deze vorm niet geschikt is voor formele of zeer beleefde situaties, waar je '입니다' zou gebruiken.",
+  "opbouw": [
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het onderwerp of het ding dat je beschrijft.",
+    "voorbeeld": "책 (chaek) - boek"
+   },
+   {
+    "element": "이에요",
+    "rol": "Wordt gebruikt na een zelfstandig naamwoord dat eindigt op een medeklinker.",
+    "voorbeeld": "책이에요 (chaek-ieyo) - Het is een boek."
+   },
+   {
+    "element": "예요",
+    "rol": "Wordt gebruikt na een zelfstandig naamwoord dat eindigt op een klinker.",
+    "voorbeeld": "학교예요 (hakgyo-yeyo) - Het is een school."
+   },
+   {
+    "element": "informele situatie",
+    "rol": "De context waarin je deze vormen gebruikt.",
+    "voorbeeld": "Met vrienden of familie."
+   }
+  ],
+  "tips": [
+   "Gebruik 이에요 na woorden die eindigen op een medeklinker.",
+   "Gebruik 예요 na woorden die eindigen op een klinker.",
+   "Vermijd deze vormen in formele situaties; gebruik in plaats daarvan '입니다'.",
+   "Luister naar moedertaalsprekers om het juiste gebruik in context te horen."
+  ],
+  "veelgemaaktefouten": [
+   "Gebruik van 예요 na een medeklinker: Correctie: 책이에요, niet 책예요.",
+   "Gebruik van 이에요 na een klinker: Correctie: 학교예요, niet 학교이에요."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "사람이에요",
+    "romaji": "saram-ieyo",
+    "dutch": "Het is een persoon."
+   },
+   {
+    "japanese": "의사예요",
+    "romaji": "uisa-yeyo",
+    "dutch": "Hij/Zij is een dokter."
+   },
+   {
+    "japanese": "학생이에요",
+    "romaji": "haksaeng-ieyo",
+    "dutch": "Hij/Zij is een student."
+   },
+   {
+    "japanese": "친구예요",
+    "romaji": "chingu-yeyo",
+    "dutch": "Hij/Zij is een vriend."
+   },
+   {
+    "japanese": "가수예요",
+    "romaji": "gasu-yeyo",
+    "dutch": "Hij/Zij is een zanger."
+   },
+   {
+    "japanese": "선생님이에요",
+    "romaji": "seonsaengnim-ieyo",
+    "dutch": "Hij/Zij is een leraar."
+   }
+  ]
+ },
+ "ko-t1-anmot": {
+  "naam": "Ontkenning met '안' en '못'",
+  "tagline": "Leer hoe je ontkenning uitdrukt in het Koreaans met '안' en '못'.",
+  "niveau": "basis",
+  "kernregel": "In het Koreaans worden de woorden '안' en '못' gebruikt om ontkenning uit te drukken. '안' wordt gebruikt voor algemene ontkenning, terwijl '못' wordt gebruikt om onvermogen of onmogelijkheid aan te geven.",
+  "patroon": "안/못 + werkwoord",
+  "uitleg": "Het Koreaanse woord '안' wordt voor een werkwoord geplaatst om een algemene ontkenning uit te drukken, vergelijkbaar met 'niet' in het Nederlands. '못' daarentegen wordt gebruikt om aan te geven dat iets niet gedaan kan worden vanwege onvermogen of externe omstandigheden, vergelijkbaar met 'niet kunnen'. Beide woorden worden vóór het werkwoord geplaatst. Het gebruik van '안' en '못' is een directe manier om een zin negatief te maken zonder de werkwoordsvorm te veranderen, wat het eenvoudiger maakt dan sommige andere talen.",
+  "opbouw": [
+   {
+    "element": "안",
+    "rol": "Drukt algemene ontkenning uit.",
+    "voorbeeld": "안 가요 (an gayo) - Ik ga niet."
+   },
+   {
+    "element": "못",
+    "rol": "Drukt onvermogen of onmogelijkheid uit.",
+    "voorbeeld": "못 먹어요 (mot meogeoyo) - Ik kan het niet eten."
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Het werkwoord dat ontkend wordt.",
+    "voorbeeld": "가다 (gada) - gaan"
+   },
+   {
+    "element": "subject",
+    "rol": "Het onderwerp van de zin.",
+    "voorbeeld": "저 (jeo) - ik"
+   },
+   {
+    "element": "object",
+    "rol": "Het object van de zin, indien van toepassing.",
+    "voorbeeld": "책 (chaek) - boek"
+   }
+  ],
+  "tips": [
+   "Gebruik '안' voor simpele ontkenning zonder verdere uitleg.",
+   "Gebruik '못' wanneer je wilt aangeven dat je iets niet kunt doen vanwege een reden.",
+   "Plaats '안' of '못' direct voor het werkwoord voor een correcte ontkenning.",
+   "Let op de context om te bepalen of '안' of '못' geschikter is."
+  ],
+  "veelgemaaktefouten": [
+   "Het verwarren van '안' en '못'. Gebruik '안' voor algemene ontkenning en '못' voor onvermogen.",
+   "Het plaatsen van '안' of '못' na het werkwoord. Correcte plaatsing is vóór het werkwoord.",
+   "Vergeten om '안' of '못' te gebruiken, waardoor de zin niet negatief is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "안 먹어요",
+    "romaji": "an meogeoyo",
+    "dutch": "Ik eet niet."
+   },
+   {
+    "japanese": "못 가요",
+    "romaji": "mot gayo",
+    "dutch": "Ik kan niet gaan."
+   },
+   {
+    "japanese": "안 봐요",
+    "romaji": "an bwayo",
+    "dutch": "Ik kijk niet."
+   },
+   {
+    "japanese": "못 해요",
+    "romaji": "mot haeyo",
+    "dutch": "Ik kan het niet doen."
+   },
+   {
+    "japanese": "안 마셔요",
+    "romaji": "an masyeoyo",
+    "dutch": "Ik drink niet."
+   },
+   {
+    "japanese": "못 자요",
+    "romaji": "mot jayo",
+    "dutch": "Ik kan niet slapen."
+   }
+  ]
+ },
+ "ko-t1-past": {
+  "naam": "Verleden Tijd in het Koreaans: 았/었",
+  "tagline": "Leer hoe je acties in het verleden beschrijft met het Koreaans verleden tijd patroon.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 았/었 wordt gebruikt om werkwoorden in de verleden tijd te zetten in het Koreaans. Het is vergelijkbaar met de Nederlandse verleden tijd en wordt toegepast afhankelijk van de laatste klinker van de stam van het werkwoord.",
+  "patroon": "werkwoordstam + 았/었 + 어요",
+  "uitleg": "In het Koreaans wordt de verleden tijd gevormd door de werkwoordstam te combineren met 았 of 었, afhankelijk van de laatste klinker van de stam. Als de laatste klinker van de stam een ㅏ of ㅗ is, gebruik je 았. Voor alle andere klinkers gebruik je 었. Deze vormen worden vervolgens vaak gevolgd door 어요 om een beleefde vorm te maken. Dit is vergelijkbaar met het toevoegen van '-de' of '-te' in het Nederlands, afhankelijk van de werkwoordstam.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de infinitief eindiging 다.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "았",
+    "rol": "Toegevoegd aan werkwoordstammen die eindigen op ㅏ of ㅗ om de verleden tijd te vormen.",
+    "voorbeeld": "가다 (gaan) -> 갔다 (ging)"
+   },
+   {
+    "element": "었",
+    "rol": "Toegevoegd aan werkwoordstammen die eindigen op andere klinkers dan ㅏ of ㅗ.",
+    "voorbeeld": "먹다 (eten) -> 먹었다 (at)"
+   },
+   {
+    "element": "어",
+    "rol": "Een verbindingsklank die vaak wordt toegevoegd voor beleefdheid.",
+    "voorbeeld": "갔다 -> 갔어요"
+   },
+   {
+    "element": "요",
+    "rol": "Een beleefdheidsvorm die vaak aan het einde van de zin wordt toegevoegd.",
+    "voorbeeld": "먹었다 -> 먹었어요"
+   }
+  ],
+  "tips": [
+   "Controleer altijd de laatste klinker van de werkwoordstam om te bepalen of je 았 of 었 moet gebruiken.",
+   "Gebruik 어요 voor een beleefde toon in informele situaties.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de klinkerregels.",
+   "Let op uitzonderingen zoals 하다, dat verandert in 했어요 in de verleden tijd."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 았/었: Gebruik 았 voor stammen eindigend op ㅏ of ㅗ, en 었 voor alle andere.",
+   "Vergeten van 어요 voor beleefdheid: Voeg altijd 어요 toe voor een beleefde vorm in informele situaties."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "갔다",
+    "romaji": "gatda",
+    "dutch": "ging"
+   },
+   {
+    "japanese": "먹었어요",
+    "romaji": "meogeosseoyo",
+    "dutch": "at"
+   },
+   {
+    "japanese": "봤어요",
+    "romaji": "bwasseoyo",
+    "dutch": "zag"
+   },
+   {
+    "japanese": "마셨어요",
+    "romaji": "masyeosseoyo",
+    "dutch": "dronk"
+   },
+   {
+    "japanese": "했어요",
+    "romaji": "haesseoyo",
+    "dutch": "deed"
+   },
+   {
+    "japanese": "읽었어요",
+    "romaji": "ilgeosseoyo",
+    "dutch": "las"
+   }
+  ]
+ },
+ "ko-t1-question": {
+  "naam": "Vraagwoorden in het Koreaans: 뭐, 누구, 어디",
+  "tagline": "Leer hoe je vraagwoorden gebruikt om informatie te vragen in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "Vraagwoorden zoals 뭐 (wat), 누구 (wie), en 어디 (waar) worden gebruikt om vragen te stellen in het Koreaans. Ze staan meestal aan het begin van de vraagzin, gevolgd door de werkwoordsvorm.",
+  "patroon": "[vraagwoord] + [werkwoord] + ?",
+  "uitleg": "In het Koreaans worden vraagwoorden gebruikt om specifieke informatie te vragen, vergelijkbaar met het Nederlands. '뭐' betekent 'wat' en wordt gebruikt om naar dingen of acties te vragen. '누구' betekent 'wie' en wordt gebruikt om naar personen te vragen. '어디' betekent 'waar' en wordt gebruikt om naar locaties te vragen. Deze vraagwoorden worden vaak gevolgd door een werkwoord en de zin eindigt met een vraagteken. Het is belangrijk om de juiste vraagwoord te kiezen op basis van de informatie die je wilt verkrijgen.",
+  "opbouw": [
+   {
+    "element": "뭐",
+    "rol": "Vraagwoord voor dingen of acties",
+    "voorbeeld": "뭐 해요? (Mwo haeyo?) - Wat doe je?"
+   },
+   {
+    "element": "누구",
+    "rol": "Vraagwoord voor personen",
+    "voorbeeld": "누구예요? (Nugu-yeyo?) - Wie is het?"
+   },
+   {
+    "element": "어디",
+    "rol": "Vraagwoord voor locaties",
+    "voorbeeld": "어디에 가요? (Eodie gayo?) - Waar ga je heen?"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Geeft de actie of toestand aan",
+    "voorbeeld": "가요 (gayo) - gaan"
+   },
+   {
+    "element": "?",
+    "rol": "Geeft aan dat het een vraag is",
+    "voorbeeld": "?"
+   }
+  ],
+  "tips": [
+   "Gebruik '뭐' voor vragen over dingen of acties, zoals 'Wat is dit?' of 'Wat doe je?'",
+   "Gebruik '누구' wanneer je naar een persoon vraagt, bijvoorbeeld 'Wie is dat?'",
+   "Gebruik '어디' om naar een locatie te vragen, zoals 'Waar is het toilet?'",
+   "Let op de context van de vraag om het juiste vraagwoord te kiezen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen '뭐' en '누구'. Gebruik '뭐' voor dingen en '누구' voor personen.",
+   "Verkeerd gebruik van '어디' in plaats van '뭐' bij vragen over dingen. '어디' is voor locaties."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "뭐 먹어요?",
+    "romaji": "Mwo meogeoyo?",
+    "dutch": "Wat eet je?"
+   },
+   {
+    "japanese": "누구랑 갔어요?",
+    "romaji": "Nugurang gasseoyo?",
+    "dutch": "Met wie ben je gegaan?"
+   },
+   {
+    "japanese": "어디에서 만나요?",
+    "romaji": "Eodieseo mannayo?",
+    "dutch": "Waar ontmoeten we elkaar?"
+   },
+   {
+    "japanese": "뭐 사고 싶어요?",
+    "romaji": "Mwo sago sipeoyo?",
+    "dutch": "Wat wil je kopen?"
+   },
+   {
+    "japanese": "누구를 기다려요?",
+    "romaji": "Nugureul gidaryeoyo?",
+    "dutch": "Op wie wacht je?"
+   },
+   {
+    "japanese": "어디에 살아요?",
+    "romaji": "Eodie salayo?",
+    "dutch": "Waar woon je?"
+   }
+  ]
+ },
+ "ko-t1-counters": {
+  "naam": "Telwoorden in het Koreaans: 개 en 명",
+  "tagline": "Leer hoe je telwoorden correct gebruikt in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "In het Koreaans worden specifieke telwoorden gebruikt afhankelijk van wat je telt. '개' wordt gebruikt voor algemene objecten, terwijl '명' wordt gebruikt voor mensen.",
+  "patroon": "Aantal + 개/명",
+  "uitleg": "In het Koreaans is het gebruik van telwoorden essentieel om duidelijk te maken hoeveel van iets er is. Het telwoord '개' (gae) wordt gebruikt voor objecten en dingen die geen specifieke telwoorden hebben. Aan de andere kant wordt '명' (myeong) gebruikt om mensen te tellen. Dit is anders dan in het Nederlands, waar we vaak alleen een getal gebruiken zonder een specifiek telwoord. Het is belangrijk om het juiste telwoord te kiezen om misverstanden te voorkomen.",
+  "opbouw": [
+   {
+    "element": "Aantal",
+    "rol": "Geeft aan hoeveelheden in combinatie met een telwoord.",
+    "voorbeeld": "세 (se) voor drie."
+   },
+   {
+    "element": "개",
+    "rol": "Telwoord voor algemene objecten.",
+    "voorbeeld": "사과 세 개 (sagwa se gae) - drie appels."
+   },
+   {
+    "element": "명",
+    "rol": "Telwoord voor mensen.",
+    "voorbeeld": "학생 두 명 (haksaeng du myeong) - twee studenten."
+   },
+   {
+    "element": "Nomen",
+    "rol": "Het zelfstandig naamwoord dat je telt.",
+    "voorbeeld": "책 (chaek) - boek."
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord dat de actie beschrijft, vaak na het telwoord.",
+    "voorbeeld": "있다 (itda) - er zijn."
+   }
+  ],
+  "tips": [
+   "Gebruik '개' voor dingen zoals fruit, boeken, en andere objecten.",
+   "Gebruik '명' uitsluitend voor mensen.",
+   "Zorg ervoor dat het aantal in het Koreaans wordt uitgedrukt, niet in het Engels of Nederlands.",
+   "Let op de uitspraak van de telwoorden, want deze kunnen veranderen afhankelijk van het getal."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van '개' voor mensen. Correctie: Gebruik '명' voor mensen.",
+   "Vergeten het telwoord te gebruiken. Correctie: Voeg altijd een telwoord toe na het aantal.",
+   "Het gebruik van het verkeerde aantal. Correctie: Zorg ervoor dat je het juiste Koreaanse getal gebruikt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "고양이 한 마리",
+    "romaji": "goyangi han mari",
+    "dutch": "één kat"
+   },
+   {
+    "japanese": "커피 두 잔",
+    "romaji": "keopi du jan",
+    "dutch": "twee kopjes koffie"
+   },
+   {
+    "japanese": "책 네 권",
+    "romaji": "chaek ne gwon",
+    "dutch": "vier boeken"
+   },
+   {
+    "japanese": "친구 세 명",
+    "romaji": "chingu se myeong",
+    "dutch": "drie vrienden"
+   },
+   {
+    "japanese": "사람 다섯 명",
+    "romaji": "saram daseot myeong",
+    "dutch": "vijf mensen"
+   },
+   {
+    "japanese": "사과 여섯 개",
+    "romaji": "sagwa yeoseot gae",
+    "dutch": "zes appels"
+   }
+  ]
+ },
+ "ko-t2-gosipda": {
+  "naam": "고 싶다 (willen)",
+  "tagline": "Uitdrukken wat je wilt doen in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '고 싶다' wordt gebruikt om je verlangen of wens uit te drukken om een bepaalde actie te ondernemen. Het wordt vaak gebruikt in informele en semi-formele situaties om te zeggen wat je wilt doen.",
+  "patroon": "Werkwoordstam + 고 싶다",
+  "uitleg": "In het Koreaans gebruik je '고 싶다' om aan te geven dat je iets wilt doen. Dit patroon wordt gevormd door de stam van een werkwoord te combineren met '고 싶다'. Het is vergelijkbaar met het Nederlandse 'willen', maar het wordt direct aan de werkwoordstam toegevoegd. Dit patroon kan zowel in de eerste persoon als in de derde persoon worden gebruikt, maar de vervoeging verandert afhankelijk van de spreker of de persoon over wie je spreekt.",
+  "opbouw": [
+   {
+    "element": "Werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "고",
+    "rol": "Verbindt de werkwoordstam met '싶다'.",
+    "voorbeeld": "가 + 고"
+   },
+   {
+    "element": "싶다",
+    "rol": "Drukt verlangen of wens uit.",
+    "voorbeeld": "가고 싶다 (willen gaan)"
+   },
+   {
+    "element": "Subject",
+    "rol": "Het onderwerp dat de wens heeft.",
+    "voorbeeld": "나는 (ik)"
+   },
+   {
+    "element": "Vervoeging",
+    "rol": "Aanpassen van '싶다' afhankelijk van de tijd of beleefdheidsvorm.",
+    "voorbeeld": "싶어요 (beleefdheidsvorm)"
+   }
+  ],
+  "tips": [
+   "Gebruik '고 싶다' alleen voor je eigen wensen of die van iemand anders als je zeker weet dat ze die wens hebben.",
+   "In formele situaties kun je '고 싶습니다' gebruiken.",
+   "Voor de derde persoon gebruik je vaak '고 싶어하다' om aan te geven dat iemand anders iets wil.",
+   "Let op de juiste vervoeging van '싶다' afhankelijk van de context en beleefdheidsniveau."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde vervoeging: '가고 싶어요' in plaats van '가고 싶다' in informele context. Correctie: Gebruik de juiste vorm afhankelijk van de situatie.",
+   "Verwarring tussen eerste en derde persoon: '그는 가고 싶다' in plaats van '그는 가고 싶어하다'. Correctie: Gebruik '고 싶어하다' voor de derde persoon."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "나는 한국에 가고 싶어요.",
+    "romaji": "naneun hanguge gago sipeoyo.",
+    "dutch": "Ik wil naar Korea gaan."
+   },
+   {
+    "japanese": "그녀는 책을 읽고 싶어해요.",
+    "romaji": "geunyeoneun chaegeul ilggo sipeohaeyo.",
+    "dutch": "Zij wil een boek lezen."
+   },
+   {
+    "japanese": "우리는 영화를 보고 싶어요.",
+    "romaji": "urineun yeonghwareul bogo sipeoyo.",
+    "dutch": "Wij willen een film kijken."
+   },
+   {
+    "japanese": "아이들은 놀고 싶어해요.",
+    "romaji": "aideureun nolgo sipeohaeyo.",
+    "dutch": "De kinderen willen spelen."
+   },
+   {
+    "japanese": "저는 커피를 마시고 싶습니다.",
+    "romaji": "jeoneun keopireul masigo sipseumnida.",
+    "dutch": "Ik wil koffie drinken."
+   },
+   {
+    "japanese": "그는 집에 가고 싶어해요.",
+    "romaji": "geuneun jibe gago sipeohaeyo.",
+    "dutch": "Hij wil naar huis gaan."
+   }
+  ]
+ },
+ "ko-t2-go": {
+  "naam": "Gebruik van '고' voor opeenvolgende acties",
+  "tagline": "Leer hoe je opeenvolgende acties in het Koreaans kunt verbinden met '고'.",
+  "niveau": "basis",
+  "kernregel": "Het Koreaanse partikel '고' wordt gebruikt om twee of meer opeenvolgende acties of gebeurtenissen te verbinden. Het geeft aan dat de ene actie plaatsvindt na de andere, vergelijkbaar met 'en toen' in het Nederlands.",
+  "patroon": "Werkwoordstam + 고 + volgende zin",
+  "uitleg": "In het Koreaans gebruik je '고' om acties in een opeenvolgende volgorde te beschrijven. Dit partikel wordt aan de stam van een werkwoord toegevoegd en verbindt zo verschillende acties binnen een zin. In tegenstelling tot het Nederlands, waar je vaak meerdere zinnen zou gebruiken om opeenvolgende acties te beschrijven, kun je in het Koreaans met '고' meerdere acties in één zin combineren. Dit maakt zinnen korter en efficiënter. Het is belangrijk om te onthouden dat de acties in chronologische volgorde worden geplaatst, wat betekent dat de eerste actie eerst gebeurt, gevolgd door de tweede, enzovoort.",
+  "opbouw": [
+   {
+    "element": "Werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder '다' (de infinitief eindiging).",
+    "voorbeeld": "가다 (gaan) wordt 가."
+   },
+   {
+    "element": "고",
+    "rol": "Het verbindingspartikel dat opeenvolgende acties aanduidt.",
+    "voorbeeld": "가고 (en toen ging ik)."
+   },
+   {
+    "element": "Volgende zin",
+    "rol": "De zin die volgt op de eerste actie, vaak een nieuwe werkwoordstam met een eigen vervoeging.",
+    "voorbeeld": "먹었어요 (ik at)."
+   },
+   {
+    "element": "Chronologische volgorde",
+    "rol": "De volgorde waarin de acties plaatsvinden, van eerste naar laatste.",
+    "voorbeeld": "학교에 가고 친구를 만났어요 (Ik ging naar school en toen ontmoette ik een vriend)."
+   }
+  ],
+  "tips": [
+   "Gebruik '고' om acties die direct na elkaar plaatsvinden te verbinden.",
+   "Zorg ervoor dat de werkwoordstam correct is voordat je '고' toevoegt.",
+   "Let op de chronologische volgorde van de acties; de eerste actie moet eerst worden genoemd.",
+   "Gebruik '고' niet voor acties die tegelijkertijd plaatsvinden; daarvoor zijn andere grammaticale constructies nodig."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '고' voor gelijktijdige acties. Correctie: Gebruik '면서' voor gelijktijdige acties.",
+   "Vergeten de werkwoordstam correct te vormen. Correctie: Verwijder altijd '다' van de infinitiefvorm voordat je '고' toevoegt.",
+   "Acties in de verkeerde volgorde plaatsen. Correctie: Zorg ervoor dat de volgorde van de acties overeenkomt met de werkelijke volgorde van gebeurtenissen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "책을 읽고 잠을 잤어요.",
+    "romaji": "Chaeg-eul ilggo jam-eul jasseoyo.",
+    "dutch": "Ik las een boek en toen ging ik slapen."
+   },
+   {
+    "japanese": "아침을 먹고 학교에 갔어요.",
+    "romaji": "Achim-eul meokgo hakgyo-e gasseoyo.",
+    "dutch": "Ik at ontbijt en toen ging ik naar school."
+   },
+   {
+    "japanese": "영화를 보고 저녁을 먹었어요.",
+    "romaji": "Yeonghwa-reul bogo jeonyeog-eul meogeosseoyo.",
+    "dutch": "Ik keek een film en toen at ik avondeten."
+   },
+   {
+    "japanese": "운동을 하고 샤워를 했어요.",
+    "romaji": "Undong-eul hago syawo-reul haesseoyo.",
+    "dutch": "Ik deed aan sport en toen nam ik een douche."
+   },
+   {
+    "japanese": "친구를 만나고 커피를 마셨어요.",
+    "romaji": "Chingu-reul mannago keopi-reul masyeosseoyo.",
+    "dutch": "Ik ontmoette een vriend en toen dronk ik koffie."
+   },
+   {
+    "japanese": "편지를 쓰고 우체국에 갔어요.",
+    "romaji": "Pyeonjireul sseugo uchegug-e gasseoyo.",
+    "dutch": "Ik schreef een brief en toen ging ik naar het postkantoor."
+   }
+  ]
+ },
+ "ko-t2-aseo": {
+  "naam": "아서/어서 (reden・volgorde)",
+  "tagline": "Leer hoe je redenen en volgordes in het Koreaans uitdrukt met 아서/어서.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 아서/어서 wordt gebruikt om een reden of oorzaak aan te geven, of om een volgorde van gebeurtenissen te beschrijven. Het verbindt twee zinnen waarbij de eerste zin de reden of oorzaak is van de tweede zin.",
+  "patroon": "Stam van het werkwoord + 아서/어서",
+  "uitleg": "In het Koreaans gebruik je 아서/어서 om een reden of volgorde aan te geven tussen twee zinnen. De keuze tussen 아서 en 어서 hangt af van de klinker in de stam van het werkwoord: gebruik 아서 na een stam met ㅏ of ㅗ, en 어서 na andere klinkers. Dit patroon wordt veel gebruikt in informele en formele contexten, maar niet in de verleden tijd. Het is vergelijkbaar met het Nederlandse 'omdat' of 'dus', maar kan ook een opeenvolging van gebeurtenissen aangeven zoals 'en toen'.",
+  "opbouw": [
+   {
+    "element": "Stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder de infinitief '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "아서",
+    "rol": "Wordt toegevoegd aan werkwoorden met de stam eindigend op ㅏ of ㅗ.",
+    "voorbeeld": "가다 (gaan) -> 가서"
+   },
+   {
+    "element": "어서",
+    "rol": "Wordt toegevoegd aan werkwoorden met de stam eindigend op andere klinkers.",
+    "voorbeeld": "먹다 (eten) -> 먹어서"
+   },
+   {
+    "element": "Reden of volgorde",
+    "rol": "Geeft de reden of de volgorde van de actie aan.",
+    "voorbeeld": "배가 고파서 밥을 먹었어요. (Omdat ik honger had, at ik rijst.)"
+   },
+   {
+    "element": "Volledige zin",
+    "rol": "Combineert de reden of volgorde met de hoofdzin.",
+    "voorbeeld": "친구를 만나서 영화를 봤어요. (Ik ontmoette een vriend en toen keken we een film.)"
+   }
+  ],
+  "tips": [
+   "Gebruik 아서/어서 niet in de verleden tijd; het is altijd in het heden of de toekomst.",
+   "Zorg ervoor dat je de juiste vorm (아서 of 어서) kiest op basis van de klinker in de stam.",
+   "Dit patroon kan niet worden gebruikt om een bevel of verzoek uit te drukken.",
+   "Gebruik 아서/어서 om een logische volgorde van gebeurtenissen aan te geven."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde klinker gebruiken: 가다 -> 가어서 (fout), correct is 가서.",
+   "Gebruik in de verleden tijd: 갔어서 (fout), correct is 갔기 때문에.",
+   "Verwarring met andere verbindingspatronen zoals 고 (en): 가고 (fout voor reden), correct is 가서."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "비가 와서 우산을 썼어요.",
+    "romaji": "Biga waseo usaneul sseosseoyo.",
+    "dutch": "Omdat het regende, gebruikte ik een paraplu."
+   },
+   {
+    "japanese": "길이 막혀서 늦었어요.",
+    "romaji": "Giri makhyeoseo neujeosseoyo.",
+    "dutch": "Omdat er file was, was ik te laat."
+   },
+   {
+    "japanese": "돈이 없어서 집에 있었어요.",
+    "romaji": "Doni eopseoseo jibe isseosseoyo.",
+    "dutch": "Omdat ik geen geld had, bleef ik thuis."
+   },
+   {
+    "japanese": "아침에 일찍 일어나서 운동했어요.",
+    "romaji": "Achime iljjik il-eonaseo undonghaesseoyo.",
+    "dutch": "Ik stond vroeg op in de ochtend en deed toen aan sport."
+   },
+   {
+    "japanese": "친구를 만나서 저녁을 먹었어요.",
+    "romaji": "Chingureul mannaseo jeonyeogeul meogeosseoyo.",
+    "dutch": "Ik ontmoette een vriend en toen aten we avondeten."
+   },
+   {
+    "japanese": "책을 읽어서 기분이 좋아졌어요.",
+    "romaji": "Chaekeul ilgeoseo gibuni joajyeosseoyo.",
+    "dutch": "Omdat ik een boek las, werd ik vrolijk."
+   }
+  ]
+ },
+ "ko-t2-jiman": {
+  "naam": "Gebruik van '지만' in het Koreaans",
+  "tagline": "Leer hoe je contrasten en tegenstellingen kunt uitdrukken met '지만'.",
+  "niveau": "basis",
+  "kernregel": "Het Koreaanse voegwoord '지만' wordt gebruikt om een tegenstelling of contrast aan te geven tussen twee zinnen of ideeën. Het kan worden vertaald als 'maar' in het Nederlands.",
+  "patroon": "Stam van het werkwoord/zelfstandig naamwoord + 지만",
+  "uitleg": "In het Koreaans gebruik je '지만' om twee zinnen te verbinden die een tegenstelling of contrast uitdrukken. Net als in het Nederlands 'maar', plaats je '지만' na de stam van het werkwoord of zelfstandig naamwoord in de eerste zin. Het is belangrijk om te weten dat de eerste zin eindigt met een werkwoordstam of een zelfstandig naamwoord, gevolgd door '지만', waarna de tweede zin volgt. Dit patroon is vergelijkbaar met het gebruik van 'maar' in het Nederlands, maar in het Koreaans is de structuur iets anders omdat het voegwoord direct aan de stam wordt toegevoegd.",
+  "opbouw": [
+   {
+    "element": "Werkwoordstam",
+    "rol": "De basisvorm van het werkwoord waaraan '지만' wordt toegevoegd.",
+    "voorbeeld": "가다 (gaan) -> 가지만 (maar ik ga)"
+   },
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het zelfstandig naamwoord waaraan '지만' wordt toegevoegd.",
+    "voorbeeld": "학생 (student) -> 학생이지만 (maar ik ben een student)"
+   },
+   {
+    "element": "지만",
+    "rol": "Het voegwoord dat een tegenstelling of contrast aangeeft.",
+    "voorbeeld": "하지만 (maar)"
+   },
+   {
+    "element": "Eerste zin",
+    "rol": "De zin die eindigt met een werkwoordstam of zelfstandig naamwoord gevolgd door '지만'.",
+    "voorbeeld": "저는 먹고 싶지만 (Ik wil eten, maar...)"
+   },
+   {
+    "element": "Tweede zin",
+    "rol": "De zin die volgt na de tegenstelling aangegeven door '지만'.",
+    "voorbeeld": "돈이 없어요 (ik heb geen geld)."
+   }
+  ],
+  "tips": [
+   "Gebruik '지만' om een tegenstelling of onverwachte wending in de zin te introduceren.",
+   "Let op de juiste vervoeging van de werkwoordstam voordat je '지만' toevoegt.",
+   "Hoewel '지만' vaak vertaald wordt als 'maar', kan het ook 'hoewel' betekenen afhankelijk van de context.",
+   "Probeer zinnen te maken met '지만' om je begrip van contrasten in het Koreaans te verbeteren."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '지만' zonder de juiste werkwoordstam: Correct is '가지만' in plaats van '가지만다'.",
+   "Vergeten om de tweede zin na '지만' te voltooien: Zorg ervoor dat de zin na '지만' volledig is, bijvoorbeeld '하지만 시간이 없어요' in plaats van alleen '하지만'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "비가 오지만 축구를 할 거예요.",
+    "romaji": "Bi-ga o-jiman chukgu-reul hal geo-ye-yo.",
+    "dutch": "Het regent, maar ik ga voetballen."
+   },
+   {
+    "japanese": "저는 학생이지만 일을 해요.",
+    "romaji": "Jeo-neun haksaeng-i-jiman il-eul hae-yo.",
+    "dutch": "Ik ben een student, maar ik werk."
+   },
+   {
+    "japanese": "그는 친절하지만 가끔 화를 내요.",
+    "romaji": "Geu-neun chinjeol-ha-jiman gakkeum hwa-reul nae-yo.",
+    "dutch": "Hij is vriendelijk, maar soms wordt hij boos."
+   },
+   {
+    "japanese": "영화를 보고 싶지만 시간이 없어요.",
+    "romaji": "Yeonghwa-reul bogo sip-jiman sigani eob-seo-yo.",
+    "dutch": "Ik wil de film zien, maar ik heb geen tijd."
+   },
+   {
+    "japanese": "이 음식은 맛있지만 너무 매워요.",
+    "romaji": "I eumsik-eun masit-jiman neomu mae-wo-yo.",
+    "dutch": "Dit eten is lekker, maar te pittig."
+   },
+   {
+    "japanese": "그녀는 예쁘지만 성격이 안 좋아요.",
+    "romaji": "Geunyeo-neun yeppeu-jiman seonggyeogi an joa-yo.",
+    "dutch": "Zij is mooi, maar haar karakter is niet goed."
+   }
+  ]
+ },
+ "ko-t2-nikka": {
+  "naam": "Gebruik van het patroon (으)니까",
+  "tagline": "Leer hoe je oorzaken en redenen kunt uitdrukken in het Koreaans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon (으)니까 wordt gebruikt om een reden of oorzaak aan te geven voor een actie of situatie. Het is vergelijkbaar met 'omdat' in het Nederlands en wordt vaak gebruikt om een verklaring of rechtvaardiging te geven.",
+  "patroon": "Stam van het werkwoord + (으)니까",
+  "uitleg": "In het Koreaans gebruik je (으)니까 om een reden of oorzaak aan te geven. Dit patroon wordt vaak gebruikt in de spreektaal en kan worden toegepast op zowel werkwoorden als bijvoeglijke naamwoorden. Als de stam van het werkwoord eindigt op een medeklinker, behalve 'ㄹ', voeg je '으니까' toe. Eindigt de stam op een klinker of de medeklinker 'ㄹ', dan voeg je '니까' toe. Dit patroon benadrukt vaak de subjectieve reden van de spreker, in tegenstelling tot andere causale patronen zoals -아서/어서 die meer objectief zijn.",
+  "opbouw": [
+   {
+    "element": "Stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord waarop de suffix wordt toegevoegd.",
+    "voorbeeld": "가다 (gada) -> 가 (ga)"
+   },
+   {
+    "element": "(으)니까",
+    "rol": "De suffix die wordt toegevoegd om een reden of oorzaak aan te geven.",
+    "voorbeeld": "가니까 (ganikka)"
+   },
+   {
+    "element": "Medeklinkerregel",
+    "rol": "Als de stam eindigt op een medeklinker behalve 'ㄹ', gebruik je '으니까'.",
+    "voorbeeld": "먹다 (meokda) -> 먹으니까 (meogeunikka)"
+   },
+   {
+    "element": "Klinkerregel",
+    "rol": "Als de stam eindigt op een klinker of 'ㄹ', gebruik je '니까'.",
+    "voorbeeld": "살다 (salda) -> 사니까 (sanikka)"
+   },
+   {
+    "element": "Gebruik met bijvoeglijke naamwoorden",
+    "rol": "Het patroon kan ook worden toegepast op bijvoeglijke naamwoorden.",
+    "voorbeeld": "춥다 (chubda) -> 추우니까 (chuunikka)"
+   }
+  ],
+  "tips": [
+   "Gebruik (으)니까 wanneer je een persoonlijke reden of mening wilt benadrukken.",
+   "Dit patroon kan ook worden gebruikt om een oorzaak-gevolg relatie aan te geven in een verhaal.",
+   "Wees voorzichtig met het gebruik in formele situaties; het kan soms te informeel overkomen.",
+   "Verwar (으)니까 niet met -아서/어서, die meer objectieve oorzaken aangeven."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '으' na een klinker: '가으니까' moet '가니까' zijn.",
+   "Gebruik van (으)니까 in zeer formele documenten: gebruik in plaats daarvan -기 때문에.",
+   "Verwarring met -아서/어서: '비가 와서' (omdat het regent) is objectiever dan '비가 오니까'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "비가 오니까 우산을 가져가세요.",
+    "romaji": "Biga onikka usan-eul gajyeogaseyo.",
+    "dutch": "Omdat het regent, neem een paraplu mee."
+   },
+   {
+    "japanese": "피곤하니까 일찍 자야 해요.",
+    "romaji": "Pigonnanikka iljjik jaya haeyo.",
+    "dutch": "Omdat ik moe ben, moet ik vroeg naar bed."
+   },
+   {
+    "japanese": "시간이 없으니까 빨리 가자.",
+    "romaji": "Sigani eopseunikka ppalli gaja.",
+    "dutch": "Omdat we geen tijd hebben, laten we snel gaan."
+   },
+   {
+    "japanese": "돈이 없으니까 집에 있을게요.",
+    "romaji": "Doni eopseunikka jibe isseulgeyo.",
+    "dutch": "Omdat ik geen geld heb, blijf ik thuis."
+   },
+   {
+    "japanese": "날씨가 좋으니까 산책하자.",
+    "romaji": "Nalssiga joeunikka sanchaeghaja.",
+    "dutch": "Omdat het weer goed is, laten we wandelen."
+   },
+   {
+    "japanese": "바쁘니까 나중에 전화할게요.",
+    "romaji": "Bappeunikka najunge jeonhwahalgeyo.",
+    "dutch": "Omdat ik het druk heb, bel ik later."
+   }
+  ]
+ },
+ "ko-t2-goitda": {
+  "naam": "고 있다 (bezig zijn met)",
+  "tagline": "Leer hoe je acties in uitvoering beschrijft in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '고 있다' wordt gebruikt om aan te geven dat iemand momenteel bezig is met een actie. Het komt overeen met de Nederlandse tegenwoordige tijd 'aan het ... zijn'.",
+  "patroon": "stam van het werkwoord + 고 있다",
+  "uitleg": "In het Koreaans gebruik je '고 있다' om aan te geven dat een actie op dit moment plaatsvindt, vergelijkbaar met de Nederlandse constructie 'aan het ... zijn'. Dit patroon wordt gevormd door de stam van een werkwoord te nemen en daar '고 있다' aan toe te voegen. Het werkwoord '있다' wordt vervoegd afhankelijk van de tijd (tegenwoordige, verleden, toekomstige tijd) en de beleefdheidsvorm. Dit patroon kan zowel in informele als formele situaties worden gebruikt, afhankelijk van de vervoeging van '있다'.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder '다'.",
+    "voorbeeld": "먹다 (eten) -> 먹"
+   },
+   {
+    "element": "고",
+    "rol": "Een verbindingspartikel dat de actie in uitvoering aangeeft.",
+    "voorbeeld": "먹고"
+   },
+   {
+    "element": "있다",
+    "rol": "Het werkwoord dat 'zijn' betekent en de voortgang van de actie aangeeft.",
+    "voorbeeld": "먹고 있다"
+   },
+   {
+    "element": "vervoeging van 있다",
+    "rol": "Aanpassen aan de tijd en beleefdheidsvorm.",
+    "voorbeeld": "먹고 있어요 (ik ben aan het eten)"
+   },
+   {
+    "element": "beleefdheidsvorm",
+    "rol": "Afhankelijk van de context, formeel of informeel.",
+    "voorbeeld": "먹고 있습니다 (formeel)"
+   }
+  ],
+  "tips": [
+   "Gebruik '고 있다' om een actie te beschrijven die op dit moment plaatsvindt.",
+   "Let op de vervoeging van '있다' om de juiste tijd en beleefdheidsvorm te gebruiken.",
+   "In informele situaties kun je '있다' vervangen door '있어' voor een meer casual toon.",
+   "Dit patroon kan ook in de verleden tijd worden gebruikt, bijvoorbeeld '고 있었다' voor 'was aan het ...'."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de stam van het werkwoord te gebruiken: '먹다고 있다' is incorrect, het moet '먹고 있다' zijn.",
+   "Onjuiste vervoeging van '있다' in formele situaties: gebruik '있습니다' in plaats van '있어요' als je formeel moet zijn."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "저는 책을 읽고 있어요.",
+    "romaji": "jeoneun chaegeul ilgo isseoyo.",
+    "dutch": "Ik ben een boek aan het lezen."
+   },
+   {
+    "japanese": "그는 음악을 듣고 있어요.",
+    "romaji": "geuneun eumageul deutgo isseoyo.",
+    "dutch": "Hij is naar muziek aan het luisteren."
+   },
+   {
+    "japanese": "우리는 영화를 보고 있어요.",
+    "romaji": "urineun yeonghwareul bogo isseoyo.",
+    "dutch": "Wij zijn een film aan het kijken."
+   },
+   {
+    "japanese": "그녀는 요리를 하고 있어요.",
+    "romaji": "geunyeoneun yorireul hago isseoyo.",
+    "dutch": "Zij is aan het koken."
+   },
+   {
+    "japanese": "아이들이 놀고 있어요.",
+    "romaji": "aideuri nolgo isseoyo.",
+    "dutch": "De kinderen zijn aan het spelen."
+   },
+   {
+    "japanese": "저는 지금 공부하고 있습니다.",
+    "romaji": "jeoneun jigeum gongbuhago itseumnida.",
+    "dutch": "Ik ben nu aan het studeren."
+   }
+  ]
+ },
+ "ko-t2-future": {
+  "naam": "(으)ㄹ 거예요 (toekomst)",
+  "tagline": "Leer hoe je toekomstige acties en plannen in het Koreaans uitdrukt.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '(으)ㄹ 거예요' wordt gebruikt om toekomstige acties of intenties uit te drukken. Het is vergelijkbaar met het Nederlandse 'zal' of 'gaat' in de toekomstvorm.",
+  "patroon": "stam van het werkwoord + (으)ㄹ 거예요",
+  "uitleg": "In het Koreaans gebruik je '(으)ㄹ 거예요' om aan te geven dat iets in de toekomst zal gebeuren. Dit patroon is vergelijkbaar met het gebruik van 'zal' of 'gaat' in het Nederlands. De keuze tussen '을' en 'ㄹ' hangt af van de eindklank van de stam van het werkwoord: als de stam eindigt op een medeklinker, gebruik je '을', en als de stam eindigt op een klinker, gebruik je 'ㄹ'. Dit patroon is informeel en wordt vaak gebruikt in alledaagse gesprekken.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder de infinitiefuitgang '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "(으)ㄹ",
+    "rol": "Marker voor de toekomstige tijd, afhankelijk van de eindklank van de stam.",
+    "voorbeeld": "먹다 (eten) -> 먹을"
+   },
+   {
+    "element": "거예요",
+    "rol": "Geeft aan dat het om een toekomstige actie gaat.",
+    "voorbeeld": "할 거예요 (zal doen)"
+   }
+  ],
+  "tips": [
+   "Gebruik '을' na medeklinkers en 'ㄹ' na klinkers.",
+   "Dit patroon is informeel; gebruik het in gesprekken met vrienden of familie.",
+   "Voor formele situaties gebruik je '(으)ㄹ 것입니다'."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '을' en 'ㄹ': '가을 거예요' is incorrect, het moet '갈 거예요' zijn.",
+   "Verwarring met verleden tijd: '했어요' is verleden tijd, niet toekomst.",
+   "Verkeerd gebruik in formele situaties: gebruik '(으)ㄹ 것입니다' in plaats van '(으)ㄹ 거예요'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "내일 학교에 갈 거예요.",
+    "romaji": "Naeil hakgyoe gal geoyeyo.",
+    "dutch": "Ik ga morgen naar school."
+   },
+   {
+    "japanese": "저녁에 영화 볼 거예요.",
+    "romaji": "Jeonyeoge yeonghwa bol geoyeyo.",
+    "dutch": "Ik ga vanavond een film kijken."
+   },
+   {
+    "japanese": "주말에 친구를 만날 거예요.",
+    "romaji": "Jumare chingureul mannarl geoyeyo.",
+    "dutch": "Ik ga in het weekend een vriend ontmoeten."
+   },
+   {
+    "japanese": "다음 주에 여행할 거예요.",
+    "romaji": "Daeum jue yeohaenghal geoyeyo.",
+    "dutch": "Ik ga volgende week op reis."
+   },
+   {
+    "japanese": "비가 올 거예요.",
+    "romaji": "Biga ol geoyeyo.",
+    "dutch": "Het gaat regenen."
+   },
+   {
+    "japanese": "그 책을 읽을 거예요.",
+    "romaji": "Geu chaegeul ilgeul geoyeyo.",
+    "dutch": "Ik ga dat boek lezen."
+   }
+  ]
+ },
+ "ko-t2-get": {
+  "naam": "겠 (voornemen・vermoeden)",
+  "tagline": "Leer hoe je intenties en vermoedens uitdrukt in het Koreaans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het grammaticale patroon '겠' wordt gebruikt om intenties of voornemens uit te drukken, evenals vermoedens of verwachtingen over de toekomst. Het kan zowel in de eerste persoon als in de derde persoon worden gebruikt, afhankelijk van de context.",
+  "patroon": "stam van het werkwoord + 겠",
+  "uitleg": "In het Koreaans wordt '겠' gebruikt om aan te geven wat iemand van plan is te doen of wat men verwacht dat er zal gebeuren. Het is vergelijkbaar met het Nederlandse 'zal' of 'zou'. Wanneer je '겠' gebruikt, voeg je het toe aan de stam van het werkwoord. Dit patroon kan zowel in de eerste persoon worden gebruikt om je eigen intenties uit te drukken, als in de derde persoon om een verwachting of vermoeden over iemand anders te uiten. Het is belangrijk om te begrijpen dat '겠' niet altijd een definitieve belofte of voorspelling is, maar eerder een indicatie van intentie of verwachting.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord waaraan '겠' wordt toegevoegd.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "겠",
+    "rol": "Marker voor intentie of vermoeden, toegevoegd aan de stam.",
+    "voorbeeld": "가겠 (zal gaan)"
+   },
+   {
+    "element": "eindigen met 요",
+    "rol": "Formele beleefdheidsvorm, vaak gebruikt in gesprekken.",
+    "voorbeeld": "가겠어요 (ik zal gaan)"
+   },
+   {
+    "element": "eindigen met 다",
+    "rol": "Informele of neutrale vorm, vaak gebruikt in geschreven taal.",
+    "voorbeeld": "가겠다 (ik zal gaan)"
+   }
+  ],
+  "tips": [
+   "Gebruik '겠' om beleefd je intenties aan te geven in formele situaties.",
+   "Wanneer je een vermoeden uitdrukt over iemand anders, gebruik je '겠' om voorzichtig te zijn met je uitspraken.",
+   "Let op de context; '겠' kan zowel voornemens als vermoedens uitdrukken, afhankelijk van de situatie.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met het patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen '겠' en '을 것이다' voor toekomstige tijd. '겠' is meer voor intentie of vermoeden, terwijl '을 것이다' meer een voorspelling is.",
+   "Verkeerd gebruik van '겠' in de verleden tijd. '겠' wordt alleen gebruikt voor toekomstige intenties of vermoedens."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "먹겠어요",
+    "romaji": "meokgesseoyo",
+    "dutch": "Ik zal eten."
+   },
+   {
+    "japanese": "가겠어요",
+    "romaji": "gaggesseoyo",
+    "dutch": "Ik zal gaan."
+   },
+   {
+    "japanese": "보겠어요",
+    "romaji": "bogesseoyo",
+    "dutch": "Ik zal kijken."
+   },
+   {
+    "japanese": "하겠어요",
+    "romaji": "hagesseoyo",
+    "dutch": "Ik zal het doen."
+   },
+   {
+    "japanese": "오겠어요",
+    "romaji": "ogesseoyo",
+    "dutch": "Hij/Zij zal komen."
+   },
+   {
+    "japanese": "알겠어요",
+    "romaji": "algesseoyo",
+    "dutch": "Ik begrijp het."
+   }
+  ]
+ },
+ "ko-t2-juseyo": {
+  "naam": "Verzoek met 아/어 주세요",
+  "tagline": "Leer hoe je beleefd om een gunst vraagt in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 아/어 주세요 wordt gebruikt om beleefd om een gunst of dienst te vragen. Het is een veelgebruikte constructie in het dagelijks leven om verzoeken op een respectvolle manier te uiten.",
+  "patroon": "stam van het werkwoord + 아/어 주세요",
+  "uitleg": "In het Koreaans gebruik je 아/어 주세요 om beleefd te vragen of iemand iets voor je wil doen. De keuze tussen 아 en 어 hangt af van de klinker in de stam van het werkwoord. Als de laatste klinker van de stam een 'a' of 'o' is, gebruik je 아 주세요. Voor andere klinkers gebruik je 어 주세요. Dit patroon is vergelijkbaar met het Nederlandse 'alsjeblieft' of 'kunt u alstublieft'. Het is belangrijk om de juiste vorm te kiezen om beleefdheid en respect te tonen in gesprekken.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder de infinitief eindiging 다.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "아",
+    "rol": "Toegevoegd aan werkwoorden met een stam die eindigt op 'a' of 'o'.",
+    "voorbeeld": "가다 (gaan) -> 가 주세요"
+   },
+   {
+    "element": "어",
+    "rol": "Toegevoegd aan werkwoorden met een stam die eindigt op andere klinkers dan 'a' of 'o'.",
+    "voorbeeld": "먹다 (eten) -> 먹어 주세요"
+   },
+   {
+    "element": "주세요",
+    "rol": "Beleefde vraag om een gunst, vergelijkbaar met 'alstublieft'.",
+    "voorbeeld": "도와 주세요 (Help me alstublieft)"
+   }
+  ],
+  "tips": [
+   "Gebruik 아/어 주세요 in situaties waar je beleefdheid wilt tonen, zoals in winkels of restaurants.",
+   "Let op de laatste klinker van de stam om te bepalen of je 아 of 어 moet gebruiken.",
+   "Deze constructie is beleefd, maar niet formeel. Gebruik het in informele tot semi-formele situaties.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de klinkerregel."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde klinker gebruiken: 가다 -> 가어 주세요 (fout), correct is 가 주세요.",
+   "Vergeten de stam van het werkwoord te gebruiken: 가다 주세요 (fout), correct is 가 주세요."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "문을 닫아 주세요.",
+    "romaji": "Muneul dadeo juseyo.",
+    "dutch": "Kunt u alstublieft de deur sluiten?"
+   },
+   {
+    "japanese": "사진을 찍어 주세요.",
+    "romaji": "Sajineul jjigeo juseyo.",
+    "dutch": "Kunt u alstublieft een foto maken?"
+   },
+   {
+    "japanese": "조용히 해 주세요.",
+    "romaji": "Joyonghi hae juseyo.",
+    "dutch": "Kunt u alstublieft stil zijn?"
+   },
+   {
+    "japanese": "창문을 열어 주세요.",
+    "romaji": "Changmuneul yeoreo juseyo.",
+    "dutch": "Kunt u alstublieft het raam openen?"
+   },
+   {
+    "japanese": "이것을 설명해 주세요.",
+    "romaji": "Igeoseul seolmyeonghae juseyo.",
+    "dutch": "Kunt u alstublieft dit uitleggen?"
+   },
+   {
+    "japanese": "길을 가르쳐 주세요.",
+    "romaji": "Gireul gareuchyeo juseyo.",
+    "dutch": "Kunt u alstublieft de weg wijzen?"
+   }
+  ]
+ },
+ "ko-t2-dodoeda": {
+  "naam": "Gebruik van 아/어도 되다 (mogen)",
+  "tagline": "Leer hoe je toestemming vraagt of geeft in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 아/어도 되다 wordt gebruikt om toestemming te vragen of te geven in het Koreaans. Het betekent 'mogen' en wordt toegepast om beleefd te vragen of iets toegestaan is.",
+  "patroon": "Stam van het werkwoord + 아/어도 되다",
+  "uitleg": "In het Koreaans gebruik je 아/어도 되다 om te vragen of iets is toegestaan of om toestemming te geven. Dit patroon lijkt op het Nederlandse 'mogen'. De keuze tussen 아 en 어 hangt af van de klinker in de stam van het werkwoord: gebruik 아 na een stam met een 'a' of 'o' klank, en 어 na andere klinkers. Dit patroon is beleefd en wordt vaak gebruikt in alledaagse situaties om beleefdheid uit te drukken. Het is vergelijkbaar met het Engelse 'May I...?' of 'Is it okay if I...?'.",
+  "opbouw": [
+   {
+    "element": "Stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder de infinitief '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "아/어",
+    "rol": "Voeg 아 toe na een 'a' of 'o' klank, en 어 na andere klinkers.",
+    "voorbeeld": "가다 (gaan) -> 가 + 아 = 가아 (gaat samen tot 가)"
+   },
+   {
+    "element": "도",
+    "rol": "Betekent 'ook' of 'zelfs', maar in dit patroon wordt het gebruikt als onderdeel van de constructie.",
+    "voorbeeld": "가도 (zelfs als je gaat)"
+   },
+   {
+    "element": "되다",
+    "rol": "Betekent 'worden' of 'zijn', maar in dit patroon betekent het 'mogen'.",
+    "voorbeeld": "가도 되다 (je mag gaan)"
+   }
+  ],
+  "tips": [
+   "Let op de klinker in de stam van het werkwoord om te bepalen of je 아 of 어 gebruikt.",
+   "Gebruik dit patroon in beleefde situaties om toestemming te vragen.",
+   "Dit patroon kan ook gebruikt worden om toestemming te geven, bijvoorbeeld als antwoord op een vraag.",
+   "Wees bewust van de context waarin je dit patroon gebruikt, want het kan beleefdheid of toestemming impliceren."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde klinker gebruiken: 가다 -> 가어도 되다 (fout) moet zijn 가도 되다.",
+   "Vergeten 되다 toe te voegen: 가도 (fout) moet zijn 가도 되다.",
+   "Gebruik van 아/어 zonder te letten op de stamklinker: 먹다 -> 먹아도 되다 (fout) moet zijn 먹어도 되다."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "여기 앉아도 돼요?",
+    "romaji": "yeogi anjado dwaeyo?",
+    "dutch": "Mag ik hier zitten?"
+   },
+   {
+    "japanese": "사진을 찍어도 돼요?",
+    "romaji": "sajineul jjigeodo dwaeyo?",
+    "dutch": "Mag ik een foto maken?"
+   },
+   {
+    "japanese": "이 책을 빌려도 돼요?",
+    "romaji": "i chaegeul billyeodo dwaeyo?",
+    "dutch": "Mag ik dit boek lenen?"
+   },
+   {
+    "japanese": "문을 열어도 돼요?",
+    "romaji": "muneul yeoreodo dwaeyo?",
+    "dutch": "Mag ik de deur openen?"
+   },
+   {
+    "japanese": "여기서 먹어도 돼요?",
+    "romaji": "yeogiseo meogeodo dwaeyo?",
+    "dutch": "Mag ik hier eten?"
+   },
+   {
+    "japanese": "전화해도 돼요?",
+    "romaji": "jeonhwahaedo dwaeyo?",
+    "dutch": "Mag ik bellen?"
+   }
+  ]
+ },
+ "ko-t2-m07andoe": {
+  "naam": "(으)면 안 되다",
+  "tagline": "Leer hoe je verbod uitdrukt in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '(으)면 안 되다' wordt gebruikt om aan te geven dat iets niet toegestaan is of verboden is. Het is een veelgebruikte constructie om regels en beperkingen uit te drukken.",
+  "patroon": "stam van het werkwoord + (으)면 안 되다",
+  "uitleg": "In het Koreaans gebruik je '(으)면 안 되다' om te zeggen dat iets niet mag of niet toegestaan is. Het is vergelijkbaar met 'je mag niet' of 'het is verboden om' in het Nederlands. De keuze tussen '으면' en '면' hangt af van de eindklank van de stam van het werkwoord: als de stam eindigt op een medeklinker, gebruik je '으면', en als de stam eindigt op een klinker, gebruik je '면'. Het werkwoord '되다' betekent 'worden' of 'zijn', en in deze context geeft het aan dat de actie niet uitgevoerd mag worden.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder de infinitief eindiging '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "(으)면",
+    "rol": "Geeft de voorwaardelijke betekenis 'als' of 'wanneer' aan.",
+    "voorbeeld": "먹다 (eten) -> 먹으면"
+   },
+   {
+    "element": "안",
+    "rol": "Geeft ontkenning aan, vergelijkbaar met 'niet' in het Nederlands.",
+    "voorbeeld": "안 가다 (niet gaan)"
+   },
+   {
+    "element": "되다",
+    "rol": "Betekent 'worden' of 'zijn', en in deze context 'toegestaan zijn'.",
+    "voorbeeld": "되다 (worden)"
+   },
+   {
+    "element": "(으)면 안 되다",
+    "rol": "Complete constructie om verbod uit te drukken.",
+    "voorbeeld": "여기에서 담배를 피우면 안 됩니다 (Je mag hier niet roken)."
+   }
+  ],
+  "tips": [
+   "Gebruik '(으)면 안 되다' om beleefd een verbod of regel aan te geven.",
+   "Let op de eindklank van de stam om te bepalen of je '으면' of '면' gebruikt.",
+   "Deze constructie is formeel en wordt vaak gebruikt in geschreven regels en borden.",
+   "Je kunt '(으)면 안 돼요' gebruiken voor een iets informelere toon, bijvoorbeeld in gesprekken."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '으면' en '면'. Correctie: Controleer de eindklank van de stam.",
+   "Vergeten van '안' in de constructie. Correctie: Zorg ervoor dat '안' altijd voor '되다' staat om de ontkenning aan te geven."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "여기에서 사진을 찍으면 안 됩니다.",
+    "romaji": "yeogieseo sajin-eul jjigeumyeon an doemnida.",
+    "dutch": "Je mag hier geen foto's maken."
+   },
+   {
+    "japanese": "수업 중에 전화하면 안 돼요.",
+    "romaji": "sueop jung-e jeonhwahamyeon an dwaeyo.",
+    "dutch": "Je mag niet bellen tijdens de les."
+   },
+   {
+    "japanese": "이 길을 건너면 안 됩니다.",
+    "romaji": "i gil-eul geonneomyeon an doemnida.",
+    "dutch": "Je mag deze weg niet oversteken."
+   },
+   {
+    "japanese": "음식을 남기면 안 돼요.",
+    "romaji": "eumsig-eul namgimyeon an dwaeyo.",
+    "dutch": "Je mag geen eten laten liggen."
+   },
+   {
+    "japanese": "여기서 뛰면 안 됩니다.",
+    "romaji": "yeogiseo ttwimyeon an doemnida.",
+    "dutch": "Je mag hier niet rennen."
+   },
+   {
+    "japanese": "밤에 큰 소리로 음악을 들으면 안 돼요.",
+    "romaji": "bam-e keun soriro eumag-eul deureumyeon an dwaeyo.",
+    "dutch": "Je mag 's nachts geen harde muziek luisteren."
+   }
+  ]
+ },
+ "ko-t2-yadoeda": {
+  "naam": "Het gebruik van 아/어야 되다 in het Koreaans",
+  "tagline": "Leer hoe je verplichtingen en noodzaak uitdrukt in het Koreaans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 아/어야 되다 wordt gebruikt om verplichtingen of noodzaak uit te drukken, vergelijkbaar met 'moeten' in het Nederlands. Het geeft aan dat een bepaalde actie noodzakelijk is om een doel te bereiken of een situatie te handhaven.",
+  "patroon": "stam van het werkwoord + 아/어야 되다",
+  "uitleg": "In het Koreaans gebruik je 아/어야 되다 om aan te geven dat iets moet gebeuren. De keuze tussen 아 en 어 hangt af van de laatste klinker van de stam van het werkwoord: gebruik 아 als de stam eindigt op ㅏ of ㅗ, en 어 voor alle andere klinkers. Dit patroon is vergelijkbaar met het Nederlandse 'moeten', maar het heeft een iets formelere toon. Het werkwoord 되다 kan ook vervangen worden door 하다, wat een subtiele verandering in nuance geeft, waarbij 하다 vaak iets meer nadruk legt op de persoonlijke verplichting.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder de infinitieve eindigen.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "아/어",
+    "rol": "Voeg 아 toe als de stam eindigt op ㅏ of ㅗ, anders voeg 어 toe.",
+    "voorbeeld": "가다 (gaan) -> 가야"
+   },
+   {
+    "element": "되다",
+    "rol": "Wordt toegevoegd om de verplichting of noodzaak uit te drukken.",
+    "voorbeeld": "가야 되다 (moeten gaan)"
+   },
+   {
+    "element": "하다 (optioneel)",
+    "rol": "Kan worden gebruikt in plaats van 되다 voor een iets andere nuance.",
+    "voorbeeld": "가야 하다 (moeten gaan)"
+   }
+  ],
+  "tips": [
+   "Gebruik 아/어야 되다 om formele verplichtingen uit te drukken, zoals in zakelijke of officiële contexten.",
+   "Vervang 되다 door 하다 als je de nadruk wilt leggen op persoonlijke verplichting.",
+   "Let op de klinker van de stam om te bepalen of je 아 of 어 moet gebruiken.",
+   "Gebruik dit patroon niet voor vrijblijvende suggesties; het drukt een duidelijke noodzaak uit."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 아/어: Gebruik 아 als de stam eindigt op ㅏ of ㅗ, anders gebruik 어.",
+   "Verwarring tussen 되다 en 하다: Beide kunnen worden gebruikt, maar ze hebben subtiele verschillen in nuance."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "집에 가야 돼요.",
+    "romaji": "jibe gaya dwaeyo.",
+    "dutch": "Ik moet naar huis gaan."
+   },
+   {
+    "japanese": "숙제를 해야 돼요.",
+    "romaji": "sukjereul haeya dwaeyo.",
+    "dutch": "Ik moet mijn huiswerk maken."
+   },
+   {
+    "japanese": "일찍 일어나야 돼요.",
+    "romaji": "iljjik ireonaya dwaeyo.",
+    "dutch": "Ik moet vroeg opstaan."
+   },
+   {
+    "japanese": "약을 먹어야 돼요.",
+    "romaji": "yageul meogeoya dwaeyo.",
+    "dutch": "Ik moet medicijnen innemen."
+   },
+   {
+    "japanese": "회의에 참석해야 돼요.",
+    "romaji": "hoeuie chamseokhaeya dwaeyo.",
+    "dutch": "Ik moet de vergadering bijwonen."
+   },
+   {
+    "japanese": "비자를 받아야 돼요.",
+    "romaji": "bijareul badaya dwaeyo.",
+    "dutch": "Ik moet een visum krijgen."
+   }
+  ]
+ },
+ "ko-t2-suitda": {
+  "naam": "(으)ㄹ 수 있다/없다",
+  "tagline": "Leren hoe je 'kunnen' en 'niet kunnen' uitdrukt in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '(으)ㄹ 수 있다' wordt gebruikt om aan te geven dat iemand in staat is om iets te doen, oftewel 'kunnen'. Het tegenovergestelde, '(으)ㄹ 수 없다', geeft aan dat iemand iets niet kan doen.",
+  "patroon": "Stam van het werkwoord + (으)ㄹ 수 있다/없다",
+  "uitleg": "In het Koreaans gebruik je '(으)ㄹ 수 있다' om te zeggen dat je iets kunt doen, vergelijkbaar met het Nederlandse 'kunnen'. Als de stam van het werkwoord eindigt op een medeklinker, voeg je '을' toe, en als het eindigt op een klinker, voeg je 'ㄹ' toe. Voor het uitdrukken van onvermogen gebruik je '(으)ㄹ 수 없다'. Dit patroon is essentieel voor het beschrijven van vaardigheden en mogelijkheden in alledaagse situaties.",
+  "opbouw": [
+   {
+    "element": "Stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord waaraan je de grammaticale elementen toevoegt.",
+    "voorbeeld": "가다 (gada) - gaan"
+   },
+   {
+    "element": "(으)ㄹ",
+    "rol": "Marker die aangeeft dat het om een mogelijkheid of vaardigheid gaat.",
+    "voorbeeld": "먹다 (meokda) -> 먹을 (meogeul)"
+   },
+   {
+    "element": "수",
+    "rol": "Betekent 'manier' of 'mogelijkheid'.",
+    "voorbeeld": "수 (su) - manier"
+   },
+   {
+    "element": "있다",
+    "rol": "Werkwoord dat 'zijn' of 'hebben' betekent, hier gebruikt om 'kunnen' uit te drukken.",
+    "voorbeeld": "있다 (itda) - zijn/hebben"
+   },
+   {
+    "element": "없다",
+    "rol": "Werkwoord dat 'niet zijn' of 'niet hebben' betekent, hier gebruikt om 'niet kunnen' uit te drukken.",
+    "voorbeeld": "없다 (eopda) - niet zijn/hebben"
+   }
+  ],
+  "tips": [
+   "Gebruik '(으)ㄹ 수 있다' voor positieve mogelijkheden en '(으)ㄹ 수 없다' voor negatieve.",
+   "Let op de stam van het werkwoord: eindigt het op een klinker, gebruik dan 'ㄹ'.",
+   "Bij onregelmatige werkwoorden kunnen er uitzonderingen zijn, controleer altijd de stamvorm.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de structuur."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '을' bij werkwoorden die eindigen op een klinker. Correctie: gebruik 'ㄹ'.",
+   "Verwarring tussen '있다' en '없다'. Correctie: '있다' voor kunnen, '없다' voor niet kunnen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "저는 한국어를 할 수 있어요.",
+    "romaji": "Jeoneun hangugeoreul hal su isseoyo.",
+    "dutch": "Ik kan Koreaans spreken."
+   },
+   {
+    "japanese": "그는 수영을 할 수 없어요.",
+    "romaji": "Geuneun suyeongeul hal su eopseoyo.",
+    "dutch": "Hij kan niet zwemmen."
+   },
+   {
+    "japanese": "우리는 내일 만날 수 있어요.",
+    "romaji": "Urineun naeil mannalsu isseoyo.",
+    "dutch": "Wij kunnen elkaar morgen ontmoeten."
+   },
+   {
+    "japanese": "이 책을 읽을 수 있어요?",
+    "romaji": "I chaegeul ilgeul su isseoyo?",
+    "dutch": "Kun je dit boek lezen?"
+   },
+   {
+    "japanese": "그녀는 피아노를 칠 수 없어요.",
+    "romaji": "Geunyeoneun pianoreul chil su eopseoyo.",
+    "dutch": "Zij kan geen piano spelen."
+   },
+   {
+    "japanese": "나는 지금 갈 수 있어요.",
+    "romaji": "Naneun jigeum gal su isseoyo.",
+    "dutch": "Ik kan nu gaan."
+   }
+  ]
+ },
+ "ko-t2-attr": {
+  "naam": "Bijvoeglijke bijzinnen met 는/(으)ㄴ",
+  "tagline": "Leer hoe je bijvoeglijke bijzinnen in het Koreaans vormt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 는/(으)ㄴ wordt gebruikt om een bijvoeglijke bijzin te vormen die een zelfstandig naamwoord nader beschrijft. Het gebruik van 는 of (으)ㄴ hangt af van de tijd en of het werkwoord een actiewerkwoord of een beschrijvend werkwoord is.",
+  "patroon": "stam van het werkwoord + 는/(으)ㄴ + zelfstandig naamwoord",
+  "uitleg": "In het Koreaans worden bijvoeglijke bijzinnen gevormd door werkwoorden aan te passen met 는 of (으)ㄴ, afhankelijk van de context. Voor actiewerkwoorden in de tegenwoordige tijd gebruik je 는. Voor beschrijvende werkwoorden en actiewerkwoorden in de verleden tijd gebruik je (으)ㄴ. Dit patroon is vergelijkbaar met het gebruik van 'die' of 'dat' in het Nederlands om een bijzin te introduceren, maar in het Koreaans komt de bijzin voor het zelfstandig naamwoord.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder eindigend '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "는",
+    "rol": "Toegevoegd aan de stam van een actiewerkwoord in de tegenwoordige tijd.",
+    "voorbeeld": "가는 사람 (de persoon die gaat)"
+   },
+   {
+    "element": "(으)ㄴ",
+    "rol": "Toegevoegd aan de stam van een beschrijvend werkwoord of een actiewerkwoord in de verleden tijd.",
+    "voorbeeld": "작은 집 (het kleine huis), 간 사람 (de persoon die ging)"
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het woord dat door de bijzin wordt beschreven.",
+    "voorbeeld": "사람 (persoon)"
+   }
+  ],
+  "tips": [
+   "Gebruik 는 voor actiewerkwoorden in de tegenwoordige tijd.",
+   "Gebruik (으)ㄴ voor beschrijvende werkwoorden en actiewerkwoorden in de verleden tijd.",
+   "Let op de stam van het werkwoord; sommige vereisen een extra '으' voor (으)ㄴ.",
+   "Oefen met het herkennen van werkwoordstammen om het patroon snel te kunnen toepassen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 는 en (으)ㄴ: Gebruik 는 niet voor beschrijvende werkwoorden.",
+   "Vergeten van de '으' bij werkwoorden die eindigen op een medeklinker: Correct is '먹은' niet '먹ㄴ'.",
+   "Gebruik van (으)ㄴ voor actiewerkwoorden in de tegenwoordige tijd: Correct is '가는' niet '간'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "읽는 책",
+    "romaji": "ilkneun chaek",
+    "dutch": "het boek dat (iemand) leest"
+   },
+   {
+    "japanese": "좋은 날씨",
+    "romaji": "joheun nalssi",
+    "dutch": "het goede weer"
+   },
+   {
+    "japanese": "마신 커피",
+    "romaji": "masin keopi",
+    "dutch": "de koffie die (iemand) dronk"
+   },
+   {
+    "japanese": "사는 집",
+    "romaji": "saneun jip",
+    "dutch": "het huis waar (iemand) woont"
+   },
+   {
+    "japanese": "본 영화",
+    "romaji": "bon yeonghwa",
+    "dutch": "de film die (iemand) zag"
+   },
+   {
+    "japanese": "예쁜 꽃",
+    "romaji": "yeppeun kkot",
+    "dutch": "de mooie bloem"
+   }
+  ]
+ },
+ "ko-t2-myeon": {
+  "naam": "Voorwaardelijke Zinnen met (으)면",
+  "tagline": "Leer hoe je voorwaardelijke zinnen in het Koreaans vormt met (으)면.",
+  "niveau": "basis",
+  "kernregel": "Het patroon (으)면 wordt gebruikt om voorwaardelijke zinnen te maken, vergelijkbaar met 'als' in het Nederlands. Het geeft een voorwaarde aan die moet worden vervuld voordat een bepaalde actie of situatie plaatsvindt.",
+  "patroon": "Stam van het werkwoord + (으)면",
+  "uitleg": "In het Koreaans gebruik je (으)면 om een voorwaardelijke zin te vormen, die vergelijkbaar is met 'als' in het Nederlands. Als de stam van het werkwoord eindigt op een medeklinker, behalve 'ㄹ', voeg je '으면' toe. Eindigt de stam op een klinker of 'ㄹ', dan voeg je '면' toe. Dit patroon wordt vaak gebruikt om te spreken over situaties die afhankelijk zijn van een bepaalde voorwaarde. Het is belangrijk om te weten dat de werkwoordstijd in de hoofdzin wordt aangegeven, niet in de voorwaardelijke zin.",
+  "opbouw": [
+   {
+    "element": "Stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "(으)면",
+    "rol": "Voegt de betekenis 'als' toe aan de stam van het werkwoord.",
+    "voorbeeld": "가다 (gaan) -> 가면 (als je gaat)"
+   },
+   {
+    "element": "Medeklinkerregel",
+    "rol": "Gebruik '으면' na medeklinkers behalve 'ㄹ'.",
+    "voorbeeld": "먹다 (eten) -> 먹으면 (als je eet)"
+   },
+   {
+    "element": "Klinkerregel",
+    "rol": "Gebruik '면' na klinkers of 'ㄹ'.",
+    "voorbeeld": "살다 (leven) -> 살면 (als je leeft)"
+   },
+   {
+    "element": "Hoofdzin",
+    "rol": "De zin die het resultaat of de actie beschrijft die volgt op de voorwaarde.",
+    "voorbeeld": "비가 오면, 집에 있을 거예요. (Als het regent, blijf ik thuis.)"
+   }
+  ],
+  "tips": [
+   "Let op de stam van het werkwoord om te bepalen of je '으면' of '면' moet gebruiken.",
+   "De tijd van de werkwoordsvorm wordt aangegeven in de hoofdzin, niet in de voorwaardelijke zin.",
+   "Gebruik dit patroon om hypothetische situaties of voorwaarden te beschrijven.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de regels voor medeklinkers en klinkers."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '으면' na een klinker. Correctie: Gebruik '면' na een klinker.",
+   "Verwarring over de tijdsvorm in de voorwaardelijke zin. Correctie: De tijdsvorm wordt in de hoofdzin aangegeven."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "날씨가 좋으면, 산책하러 갈 거예요.",
+    "romaji": "Nalssiga joheumyeon, sanchaekhareo gal geoyeyo.",
+    "dutch": "Als het weer goed is, ga ik wandelen."
+   },
+   {
+    "japanese": "시간이 있으면, 도와줄게요.",
+    "romaji": "Sigani isseumyeon, dowajulgeyo.",
+    "dutch": "Als ik tijd heb, zal ik helpen."
+   },
+   {
+    "japanese": "돈이 많으면, 여행을 갈 거예요.",
+    "romaji": "Doni maneumyeon, yeohaengeul gal geoyeyo.",
+    "dutch": "Als ik veel geld heb, ga ik op reis."
+   },
+   {
+    "japanese": "배가 고프면, 밥을 먹어요.",
+    "romaji": "Baega gopeumyeon, babeul meogeoyo.",
+    "dutch": "Als ik honger heb, eet ik rijst."
+   },
+   {
+    "japanese": "책을 읽으면, 똑똑해져요.",
+    "romaji": "Chaekeul ilgeumyeon, ttokttokhaejyeoyo.",
+    "dutch": "Als je boeken leest, word je slimmer."
+   },
+   {
+    "japanese": "음악을 들으면, 기분이 좋아져요.",
+    "romaji": "Eumageul deureumyeon, gibuni joajyeoyo.",
+    "dutch": "Als ik naar muziek luister, voel ik me beter."
+   }
+  ]
+ },
+ "ko-t2-boda": {
+  "naam": "Vergelijkingen maken met '보다'",
+  "tagline": "Leer hoe je dingen kunt vergelijken in het Koreaans met '보다'.",
+  "niveau": "basis",
+  "kernregel": "In het Koreaans gebruik je '보다' om vergelijkingen te maken tussen twee zaken. Het woord '보다' betekent 'dan' in het Nederlands en wordt gebruikt om aan te geven dat iets meer of minder is dan iets anders.",
+  "patroon": "A + 보다 + B",
+  "uitleg": "Het patroon 'A보다 B' wordt gebruikt om te zeggen dat B meer of minder is dan A. In tegenstelling tot het Nederlands, waar we vaak 'meer dan' of 'minder dan' gebruiken, komt '보다' direct na het eerste element dat je vergelijkt. Dit patroon is eenvoudig en wordt veel gebruikt in alledaagse gesprekken om voorkeuren, verschillen en vergelijkingen uit te drukken.",
+  "opbouw": [
+   {
+    "element": "A",
+    "rol": "Het eerste element dat je wilt vergelijken, dat minder is dan B.",
+    "voorbeeld": "사과 (sagwa) - appel"
+   },
+   {
+    "element": "보다",
+    "rol": "Het woord dat 'dan' betekent en de vergelijking introduceert.",
+    "voorbeeld": "보다 (boda)"
+   },
+   {
+    "element": "B",
+    "rol": "Het tweede element dat je wilt vergelijken, dat meer is dan A.",
+    "voorbeeld": "바나나 (banana) - banaan"
+   }
+  ],
+  "tips": [
+   "Gebruik '보다' direct na het eerste element dat je vergelijkt.",
+   "Zorg ervoor dat de volgorde correct is: het element dat minder is komt eerst.",
+   "Dit patroon kan ook worden gebruikt voor abstracte vergelijkingen, zoals voorkeuren of meningen.",
+   "Let op de context, want '보다' kan ook 'zien' betekenen in andere zinnen."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde volgorde: '바나나보다 사과가 더 맛있어요' in plaats van '사과보다 바나나가 더 맛있어요'.",
+   "Vergeten '보다' te gebruiken, wat de vergelijking onduidelijk maakt.",
+   "Gebruik van '보다' zonder context, waardoor het verwarrend kan zijn of als 'zien' kan worden geïnterpreteerd."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "사과보다 바나나가 더 달아요.",
+    "romaji": "Sagwabo-da bananaga deo dalayo.",
+    "dutch": "Bananen zijn zoeter dan appels."
+   },
+   {
+    "japanese": "고양이보다 개가 더 커요.",
+    "romaji": "Goyang-iboda gaega deo keoyo.",
+    "dutch": "Honden zijn groter dan katten."
+   },
+   {
+    "japanese": "이 책보다 저 책이 더 재미있어요.",
+    "romaji": "I chaekboda jeo chaegi deo jaemiisseoyo.",
+    "dutch": "Dat boek is interessanter dan dit boek."
+   },
+   {
+    "japanese": "한국어보다 일본어가 더 어려워요.",
+    "romaji": "Hangug-eoboda ilbon-eoga deo eoryeowoyo.",
+    "dutch": "Japans is moeilijker dan Koreaans."
+   },
+   {
+    "japanese": "커피보다 차가 더 좋아요.",
+    "romaji": "Keopiboda chaga deo joh-ayo.",
+    "dutch": "Ik hou meer van thee dan van koffie."
+   },
+   {
+    "japanese": "여름보다 겨울이 더 추워요.",
+    "romaji": "Yeoreumboda gyeouri deo chuwoyo.",
+    "dutch": "De winter is kouder dan de zomer."
+   }
+  ]
+ },
+ "ko-t3-jeogi": {
+  "naam": "(으)ㄴ 적이 있다",
+  "tagline": "Uitdrukken van ervaring in het verleden.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon '(으)ㄴ 적이 있다' wordt gebruikt om aan te geven dat iemand een bepaalde ervaring heeft gehad in het verleden. Het benadrukt dat de spreker een bepaalde actie ooit heeft uitgevoerd.",
+  "patroon": "동사 + (으)ㄴ 적이 있다",
+  "uitleg": "In het Koreaans wordt '(으)ㄴ 적이 있다' gebruikt om te zeggen dat je iets ooit hebt gedaan, vergelijkbaar met het Nederlandse 'ik heb ooit... gedaan'. Het werkwoord wordt eerst in de verleden tijd gezet door de stam te combineren met '(으)ㄴ'. Als de stam eindigt op een klinker, gebruik je 'ㄴ', en als het eindigt op een medeklinker, gebruik je '은'. Daarna voeg je '적이 있다' toe, wat letterlijk 'er is een ervaring' betekent. Dit patroon wordt vaak gebruikt om persoonlijke ervaringen te delen of om te vragen naar de ervaringen van anderen.",
+  "opbouw": [
+   {
+    "element": "동사 (werkwoord)",
+    "rol": "Het werkwoord dat de actie beschrijft die je hebt ervaren.",
+    "voorbeeld": "가다 (gaan)"
+   },
+   {
+    "element": "(으)ㄴ",
+    "rol": "Verleden tijd markering die aan de stam van het werkwoord wordt toegevoegd.",
+    "voorbeeld": "간 (gegaan)"
+   },
+   {
+    "element": "적",
+    "rol": "Betekent 'ervaring' of 'geval'.",
+    "voorbeeld": "적 (ervaring)"
+   },
+   {
+    "element": "이",
+    "rol": "Onderwerpsmarkeerder die '적' verbindt met '있다'.",
+    "voorbeeld": "적이"
+   },
+   {
+    "element": "있다",
+    "rol": "Werkwoord dat 'er is' betekent, gebruikt om de aanwezigheid van de ervaring aan te geven.",
+    "voorbeeld": "있다 (er is)"
+   }
+  ],
+  "tips": [
+   "Gebruik '(으)ㄴ 적이 있다' om te praten over ervaringen, niet om te zeggen dat iets net is gebeurd.",
+   "Vergeet niet de juiste verleden tijdsvorm '(으)ㄴ' te gebruiken afhankelijk van de laatste letter van de werkwoordstam.",
+   "Dit patroon kan ook in negatieve vorm worden gebruikt door '없다' te gebruiken in plaats van '있다'.",
+   "Gebruik context om duidelijk te maken over welke specifieke ervaring je het hebt."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'ㄴ' en '은'. Correctie: gebruik 'ㄴ' na klinkers en '은' na medeklinkers.",
+   "Verwarring tussen '(으)ㄴ 적이 있다' en '(으)ㄴ 적이 없다'. Correctie: '있다' voor positieve ervaringen, '없다' voor negatieve."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "한국에 간 적이 있다.",
+    "romaji": "Hanguke gan jeogi itda.",
+    "dutch": "Ik ben ooit naar Korea geweest."
+   },
+   {
+    "japanese": "그 영화를 본 적이 있다.",
+    "romaji": "Geu yeonghwareul bon jeogi itda.",
+    "dutch": "Ik heb die film ooit gezien."
+   },
+   {
+    "japanese": "김치를 먹은 적이 있다.",
+    "romaji": "Gimchireul meogeun jeogi itda.",
+    "dutch": "Ik heb ooit kimchi gegeten."
+   },
+   {
+    "japanese": "일본어를 배운 적이 있다.",
+    "romaji": "Ilboneoreul baeun jeogi itda.",
+    "dutch": "Ik heb ooit Japans geleerd."
+   },
+   {
+    "japanese": "그곳에 가 본 적이 없다.",
+    "romaji": "Geugose ga bon jeogi eopda.",
+    "dutch": "Ik ben daar nog nooit geweest."
+   },
+   {
+    "japanese": "이 책을 읽은 적이 있다.",
+    "romaji": "I chaegeul ilgeun jeogi itda.",
+    "dutch": "Ik heb dit boek ooit gelezen."
+   }
+  ]
+ },
+ "ko-t3-lkkayo": {
+  "naam": "(으)ㄹ까요? (voorstel・gis)",
+  "tagline": "Maak voorstellen of uit je onzekerheid in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '(으)ㄹ까요?' wordt gebruikt om een voorstel te doen of om je onzekerheid over een situatie uit te drukken. Het kan vertaald worden als 'Zullen we...?' of 'Zou het...?' afhankelijk van de context.",
+  "patroon": "stam van het werkwoord + (으)ㄹ까요?",
+  "uitleg": "In het Koreaans gebruik je '(으)ㄹ까요?' om een voorstel te doen of om je onzekerheid over iets te uiten. Wanneer de stam van het werkwoord eindigt op een medeklinker, voeg je '을까요?' toe. Eindigt de stam op een klinker, dan voeg je 'ㄹ까요?' toe. Dit patroon is vergelijkbaar met het Nederlandse 'Zullen we...?' voor voorstellen, en 'Zou het...?' voor gissingen. Het is een beleefde manier om suggesties te doen of om te vragen naar de mening of het advies van iemand anders.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder de infinitief eindiging '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "(으)ㄹ",
+    "rol": "Marker voor toekomstige tijd of voorstel, afhankelijk van de context.",
+    "voorbeeld": "가 + ㄹ -> 갈"
+   },
+   {
+    "element": "까요?",
+    "rol": "Vraagt naar instemming of bevestiging, of drukt onzekerheid uit.",
+    "voorbeeld": "갈까요?"
+   }
+  ],
+  "tips": [
+   "Gebruik '(으)ㄹ까요?' om beleefd een voorstel te doen, vooral in informele situaties.",
+   "Let op de eindletter van de stam om te bepalen of je '을까요?' of 'ㄹ까요?' moet gebruiken.",
+   "Dit patroon kan ook gebruikt worden om te speculeren over een situatie, vergelijkbaar met 'Zou het...?' in het Nederlands."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '을까요?' na een klinker: Correct is 'ㄹ까요?'. Bijvoorbeeld, '가을까요?' is fout, het moet '갈까요?' zijn.",
+   "Vergeten de stam van het werkwoord te gebruiken: Zorg ervoor dat je de werkwoordstam gebruikt zonder de '다' eindiging."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "우리가 영화 볼까요?",
+    "romaji": "Uriga yeonghwa bolkkayo?",
+    "dutch": "Zullen we een film kijken?"
+   },
+   {
+    "japanese": "내일 비가 올까요?",
+    "romaji": "Naeil biga olkkayo?",
+    "dutch": "Zou het morgen regenen?"
+   },
+   {
+    "japanese": "점심 먹을까요?",
+    "romaji": "Jeomsim meogeulkkayo?",
+    "dutch": "Zullen we lunchen?"
+   },
+   {
+    "japanese": "이 책을 읽을까요?",
+    "romaji": "I chaegeul ilg-eulkkayo?",
+    "dutch": "Zullen we dit boek lezen?"
+   },
+   {
+    "japanese": "그가 올까요?",
+    "romaji": "Geuga olkkayo?",
+    "dutch": "Zou hij komen?"
+   },
+   {
+    "japanese": "어디로 갈까요?",
+    "romaji": "Eodiro galkkayo?",
+    "dutch": "Waar zullen we naartoe gaan?"
+   }
+  ]
+ },
+ "ko-t3-psida": {
+  "naam": "(으)ㅂ시다 (laten we)",
+  "tagline": "Leer hoe je voorstellen doet in het Koreaans met '(으)ㅂ시다'.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '(으)ㅂ시다' wordt gebruikt om voorstellen te doen of suggesties te maken in het Koreaans. Het is vergelijkbaar met het Nederlandse 'laten we'.",
+  "patroon": "stam van het werkwoord + (으)ㅂ시다",
+  "uitleg": "In het Koreaans gebruik je '(으)ㅂ시다' om een voorstel te doen, zoals 'laten we gaan' of 'laten we eten'. Als de stam van het werkwoord eindigt op een klinker, gebruik je 'ㅂ시다'. Als de stam eindigt op een medeklinker, gebruik je '읍시다'. Dit patroon is formeel en wordt vaak gebruikt in situaties waar beleefdheid vereist is. In informele situaties kun je '자' gebruiken in plaats van '(으)ㅂ시다'.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "(으)ㅂ시다",
+    "rol": "De toevoeging die aangeeft dat het een voorstel is.",
+    "voorbeeld": "가 + ㅂ시다 -> 갑시다 (laten we gaan)"
+   },
+   {
+    "element": "klinker",
+    "rol": "Als de stam eindigt op een klinker, gebruik je 'ㅂ시다'.",
+    "voorbeeld": "보다 (zien) -> 봅시다 (laten we zien)"
+   },
+   {
+    "element": "medeklinker",
+    "rol": "Als de stam eindigt op een medeklinker, gebruik je '읍시다'.",
+    "voorbeeld": "먹다 (eten) -> 먹읍시다 (laten we eten)"
+   },
+   {
+    "element": "beleefdheid",
+    "rol": "Dit patroon is beleefd en formeel.",
+    "voorbeeld": "함께 갑시다 (laten we samen gaan)"
+   }
+  ],
+  "tips": [
+   "Gebruik '(으)ㅂ시다' in formele situaties of wanneer je beleefd wilt zijn.",
+   "In informele situaties kun je '자' gebruiken in plaats van '(으)ㅂ시다'.",
+   "Let op de laatste letter van de stam om te bepalen of je 'ㅂ시다' of '읍시다' moet gebruiken.",
+   "Dit patroon wordt vaak gebruikt in groepssituaties of wanneer je een gezamenlijke actie wilt voorstellen."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'ㅂ시다' na een medeklinker. Correctie: Gebruik '읍시다' na een medeklinker.",
+   "Verwarring tussen formele en informele vormen. Correctie: Gebruik '(으)ㅂ시다' voor formele situaties en '자' voor informele."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "공부합시다",
+    "romaji": "gongbu-hapsida",
+    "dutch": "Laten we studeren."
+   },
+   {
+    "japanese": "영화를 봅시다",
+    "romaji": "yeonghwa-reul bopsida",
+    "dutch": "Laten we een film kijken."
+   },
+   {
+    "japanese": "책을 읽읍시다",
+    "romaji": "chaeg-eul ilg-eupsida",
+    "dutch": "Laten we een boek lezen."
+   },
+   {
+    "japanese": "노래합시다",
+    "romaji": "norae-hapsida",
+    "dutch": "Laten we zingen."
+   },
+   {
+    "japanese": "산책합시다",
+    "romaji": "sanchaek-hapsida",
+    "dutch": "Laten we wandelen."
+   },
+   {
+    "japanese": "커피를 마십시다",
+    "romaji": "keopi-reul masipsida",
+    "dutch": "Laten we koffie drinken."
+   }
+  ]
+ },
+ "ko-t3-neungeot": {
+  "naam": "Nominalisatie met '는 것'",
+  "tagline": "Verander werkwoorden in zelfstandige naamwoorden met '는 것'.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het Koreaanse patroon '는 것' wordt gebruikt om werkwoorden om te zetten in zelfstandige naamwoorden. Dit maakt het mogelijk om acties of toestanden te beschrijven als dingen of concepten.",
+  "patroon": "Werkwoordstam + 는 것",
+  "uitleg": "In het Koreaans kan '는 것' worden gebruikt om een werkwoord om te zetten in een zelfstandig naamwoord, vergelijkbaar met het gebruik van 'het' + infinitief in het Nederlands. Dit patroon wordt vaak gebruikt om te praten over gewoonten, hobby's of abstracte concepten. Bijvoorbeeld, 'lopen' kan worden omgezet in 'het lopen'. Het is belangrijk om te weten dat '것' letterlijk 'ding' betekent, maar in deze context dient het als een nominalisator. De constructie kan ook worden gebruikt om zinnen te maken waarin een actie als onderwerp of object fungeert.",
+  "opbouw": [
+   {
+    "element": "Werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder eindigend deel.",
+    "voorbeeld": "가다 (gada) -> 가 (ga)"
+   },
+   {
+    "element": "는",
+    "rol": "Een partikel dat de werkwoordstam verbindt met '것' om de actie te beschrijven.",
+    "voorbeeld": "가는 (ganeun)"
+   },
+   {
+    "element": "것",
+    "rol": "Betekent 'ding' en fungeert als nominalisator.",
+    "voorbeeld": "가는 것 (ganeun geot)"
+   },
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp van de zin dat de nominalisatie beschrijft.",
+    "voorbeeld": "걷는 것은 (geodneun geoseun)"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord dat de actie of toestand beschrijft.",
+    "voorbeeld": "좋다 (jota)"
+   }
+  ],
+  "tips": [
+   "Gebruik '는 것' om acties te beschrijven als concepten of dingen.",
+   "Let op de context; '것' kan ook 'ding' betekenen in andere zinsconstructies.",
+   "Probeer te oefenen met verschillende werkwoorden om vertrouwd te raken met de nominalisatie.",
+   "Gebruik '는 것' om je mening over een actie uit te drukken, zoals in 'Ik vind het leuk om te lezen'."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de werkwoordstam correct te identificeren. Correctie: Zorg ervoor dat je de stam correct afleidt van het werkwoord.",
+   "Verwarring tussen '는 것' en andere nominalisatiepatronen zoals '기'. Correctie: Onthoud dat '는 것' meer de nadruk legt op het beschrijven van de actie zelf."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "읽는 것",
+    "romaji": "ilgneun geot",
+    "dutch": "het lezen"
+   },
+   {
+    "japanese": "먹는 것",
+    "romaji": "meogneun geot",
+    "dutch": "het eten"
+   },
+   {
+    "japanese": "공부하는 것",
+    "romaji": "gongbuhaneun geot",
+    "dutch": "het studeren"
+   },
+   {
+    "japanese": "운동하는 것",
+    "romaji": "undonghaneun geot",
+    "dutch": "het sporten"
+   },
+   {
+    "japanese": "노래하는 것",
+    "romaji": "noraehaneun geot",
+    "dutch": "het zingen"
+   },
+   {
+    "japanese": "사는 것",
+    "romaji": "saneun geot",
+    "dutch": "het leven"
+   }
+  ]
+ },
+ "ko-t3-ttaemune": {
+  "naam": "Gebruik van '기 때문에' in het Koreaans",
+  "tagline": "Leer hoe je oorzaken en redenen kunt uitdrukken met '기 때문에'.",
+  "niveau": "basis",
+  "kernregel": "'기 때문에' wordt gebruikt om een reden of oorzaak aan te geven voor een actie of situatie. Het is vergelijkbaar met 'omdat' in het Nederlands en wordt vaak gebruikt in formele en geschreven contexten.",
+  "patroon": "Werkwoordstam + 기 때문에",
+  "uitleg": "In het Koreaans gebruik je '기 때문에' om aan te geven waarom iets gebeurt of waarom iemand iets doet. Het patroon wordt gevormd door de stam van een werkwoord te nemen en daar '기 때문에' aan toe te voegen. Dit patroon is formeel en wordt vaak gebruikt in geschreven teksten of in situaties waar een meer formele toon vereist is. In informele gesprekken kan '니까' of '서' worden gebruikt voor dezelfde betekenis. Het is belangrijk om te onthouden dat '기 때문에' niet alleen een reden aangeeft, maar ook een zekere causaliteit impliceert.",
+  "opbouw": [
+   {
+    "element": "Werkwoordstam",
+    "rol": "De basisvorm van een werkwoord zonder de infinitiefuitgang.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "기",
+    "rol": "Voegt een nominale functie toe aan de werkwoordstam, waardoor het als een zelfstandig naamwoord kan functioneren.",
+    "voorbeeld": "가기 (het gaan)"
+   },
+   {
+    "element": "때문에",
+    "rol": "Betekent 'omdat' en geeft de reden of oorzaak aan.",
+    "voorbeeld": "가기 때문에 (omdat ik ga)"
+   }
+  ],
+  "tips": [
+   "Gebruik '기 때문에' in formele situaties of geschreven teksten.",
+   "Voor informele gesprekken kun je '니까' of '서' gebruiken voor dezelfde betekenis.",
+   "Zorg ervoor dat je de werkwoordstam correct identificeert voordat je '기 때문에' toevoegt.",
+   "Let op de context waarin je '기 때문에' gebruikt, omdat het een zekere mate van formaliteit impliceert."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde werkwoordstam gebruiken: '가다 때문에' in plaats van '가기 때문에'. Correctie: Gebruik altijd de stam met '기'.",
+   "Gebruik van '기 때문에' in informele situaties waar '니까' beter zou passen. Correctie: Gebruik '니까' of '서' in informele gesprekken."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "비가 오기 때문에 우산을 가져왔어요.",
+    "romaji": "Biga ogi ttaemune usaneul gajyeowasseoyo.",
+    "dutch": "Omdat het regent, heb ik een paraplu meegenomen."
+   },
+   {
+    "japanese": "길이 막히기 때문에 늦었어요.",
+    "romaji": "Giri makhigi ttaemune neujeosseoyo.",
+    "dutch": "Omdat er file was, was ik te laat."
+   },
+   {
+    "japanese": "시험이 있기 때문에 공부해야 해요.",
+    "romaji": "Siheomi itgi ttaemune gongbuhaeya haeyo.",
+    "dutch": "Omdat er een examen is, moet ik studeren."
+   },
+   {
+    "japanese": "건강에 좋기 때문에 매일 운동해요.",
+    "romaji": "Geongange jokgi ttaemune maeil undonghaeyo.",
+    "dutch": "Omdat het goed is voor de gezondheid, sport ik elke dag."
+   },
+   {
+    "japanese": "돈이 없기 때문에 여행을 못 가요.",
+    "romaji": "Doni eopgi ttaemune yeohaengeul mot gayo.",
+    "dutch": "Omdat ik geen geld heb, kan ik niet op reis."
+   },
+   {
+    "japanese": "바빠기 때문에 못 갔어요.",
+    "romaji": "Bappagi ttaemune mot gasseoyo.",
+    "dutch": "Omdat ik het druk had, kon ik niet gaan."
+   }
+  ]
+ },
+ "ko-t3-ryeogo": {
+  "naam": "Gebruik van het patroon (으)려고",
+  "tagline": "Leer hoe je intenties en doelen kunt uitdrukken in het Koreaans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon (으)려고 wordt gebruikt om een intentie of doel van een actie aan te geven. Het is vergelijkbaar met het Nederlandse 'om te' en wordt vaak gebruikt om te laten zien waarom iemand iets doet.",
+  "patroon": "Werkwoordstam + (으)려고",
+  "uitleg": "In het Koreaans gebruik je het patroon (으)려고 om aan te geven dat je iets doet met een specifiek doel of intentie. Als de werkwoordstam eindigt op een klinker, gebruik je '려고'. Als de werkwoordstam eindigt op een medeklinker, voeg je '으려고' toe. Dit patroon is vergelijkbaar met het Nederlandse 'om te', maar het benadrukt meer de intentie achter een actie. Het wordt vaak gevolgd door een werkwoord dat de actie beschrijft die je onderneemt om je doel te bereiken.",
+  "opbouw": [
+   {
+    "element": "Werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder '다'.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "(으)려고",
+    "rol": "Voegt de betekenis 'om te' toe aan de werkwoordstam.",
+    "voorbeeld": "가려고 (om te gaan)"
+   },
+   {
+    "element": "Actie werkwoord",
+    "rol": "Het werkwoord dat de actie beschrijft die je onderneemt om het doel te bereiken.",
+    "voorbeeld": "공부하다 (studeren)"
+   },
+   {
+    "element": "Zinsstructuur",
+    "rol": "Het patroon wordt meestal gevolgd door een werkwoord dat de actie beschrijft.",
+    "voorbeeld": "한국어를 배우려고 공부해요 (Ik studeer om Koreaans te leren)."
+   }
+  ],
+  "tips": [
+   "Gebruik (으)려고 wanneer je een duidelijke intentie of doel hebt voor je actie.",
+   "Let op de laatste letter van de werkwoordstam om te bepalen of je '으려고' of '려고' moet gebruiken.",
+   "Dit patroon kan niet worden gebruikt met werkwoorden die een verplichting of noodzaak uitdrukken, zoals 'moeten'.",
+   "Combineer het met andere zinsdelen om meer context en details aan je intentie toe te voegen."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '으려고' na een klinker. Correctie: Gebruik '려고' na een klinker.",
+   "Gebruik van (으)려고 zonder een duidelijk doel of intentie. Correctie: Zorg ervoor dat de zin een duidelijke intentie uitdrukt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "친구를 만나려고 카페에 갔어요.",
+    "romaji": "Chingureul mannaryeogo kape-e gasseoyo.",
+    "dutch": "Ik ging naar het café om een vriend te ontmoeten."
+   },
+   {
+    "japanese": "운동하려고 일찍 일어났어요.",
+    "romaji": "Undongharyeogo iljjik ireonasseoyo.",
+    "dutch": "Ik stond vroeg op om te sporten."
+   },
+   {
+    "japanese": "사진을 찍으려고 카메라를 샀어요.",
+    "romaji": "Sajineul jjigeuryeogo kamerareul sasseoyo.",
+    "dutch": "Ik kocht een camera om foto's te maken."
+   },
+   {
+    "japanese": "한국어를 배우려고 한국에 갔어요.",
+    "romaji": "Hangugeoreul baeuryogo hangug-e gasseoyo.",
+    "dutch": "Ik ging naar Korea om Koreaans te leren."
+   },
+   {
+    "japanese": "책을 읽으려고 도서관에 갔어요.",
+    "romaji": "Chaekeul ilgeuryeogo doseogwan-e gasseoyo.",
+    "dutch": "Ik ging naar de bibliotheek om een boek te lezen."
+   },
+   {
+    "japanese": "요리를 배우려고 요리 수업을 들었어요.",
+    "romaji": "Yorireul baeuryogo yori sueobeul deureosseoyo.",
+    "dutch": "Ik volgde een kookles om te leren koken."
+   }
+  ]
+ },
+ "ko-t3-gedoeda": {
+  "naam": "Koreaans Veranderingspatroon: 게 되다",
+  "tagline": "Leer hoe je veranderingen en nieuwe situaties in het Koreaans uitdrukt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon '게 되다' wordt gebruikt om een verandering of nieuwe situatie aan te geven, vaak zonder dat de spreker daar direct invloed op heeft gehad. Het impliceert vaak een natuurlijke of onvermijdelijke verandering.",
+  "patroon": "Stam van een werkwoord + 게 되다",
+  "uitleg": "In het Koreaans gebruik je '게 되다' om aan te geven dat iets is veranderd of dat er een nieuwe situatie is ontstaan. Dit patroon wordt vaak gebruikt om te beschrijven hoe iets anders is geworden, vaak zonder actieve inspanning van de spreker. Het kan worden vergeleken met het Nederlandse 'het is zo gekomen dat...' of 'uiteindelijk is het zo dat...'. Dit patroon kan zowel in de verleden tijd als in de toekomstige tijd worden gebruikt, afhankelijk van de context. Het benadrukt vaak de onvermijdelijkheid of de natuurlijke gang van zaken van de verandering.",
+  "opbouw": [
+   {
+    "element": "Stam van een werkwoord",
+    "rol": "De basisvorm van het werkwoord dat de actie of toestand beschrijft.",
+    "voorbeeld": "가다 (gada) - gaan"
+   },
+   {
+    "element": "게",
+    "rol": "Een verbindingspartikel dat de verandering of het resultaat aangeeft.",
+    "voorbeeld": "가게 (gage) - om te gaan"
+   },
+   {
+    "element": "되다",
+    "rol": "Het werkwoord dat 'worden' of 'gebeuren' betekent, en de verandering of nieuwe situatie benadrukt.",
+    "voorbeeld": "되다 (doeda) - worden"
+   },
+   {
+    "element": "Tijdsaanduiding",
+    "rol": "Afhankelijk van de context kan '되다' in verschillende tijden worden vervoegd.",
+    "voorbeeld": "됐어요 (dwaesseoyo) - is geworden"
+   }
+  ],
+  "tips": [
+   "Gebruik '게 되다' om veranderingen te beschrijven die buiten je controle liggen.",
+   "Dit patroon kan ook gebruikt worden om beleefdheid of bescheidenheid uit te drukken, door te suggereren dat de verandering niet volledig je eigen verdienste is.",
+   "Let op de tijdsvorm van '되다' om de juiste tijd van de verandering aan te geven.",
+   "Gebruik '게 되다' om onverwachte of onbedoelde veranderingen te beschrijven."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van '게 되다' met '게 하다', wat betekent 'iemand iets laten doen'. Correctie: Gebruik '게 되다' voor veranderingen zonder directe invloed.",
+   "Verkeerd gebruik van de tijdsvorm van '되다'. Correctie: Zorg ervoor dat '되다' correct wordt vervoegd naar de gewenste tijdsvorm, zoals verleden of toekomst."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "한국어를 배우게 되었어요.",
+    "romaji": "Hangug-eoreul baeuge doeeosseoyo.",
+    "dutch": "Ik ben Koreaans gaan leren."
+   },
+   {
+    "japanese": "그 사람을 좋아하게 됐어요.",
+    "romaji": "Geu sarameul johahage dwaesseoyo.",
+    "dutch": "Ik ben die persoon leuk gaan vinden."
+   },
+   {
+    "japanese": "일찍 일어나게 되었어요.",
+    "romaji": "Iljjik ireonage doeeosseoyo.",
+    "dutch": "Ik ben vroeg op gaan staan."
+   },
+   {
+    "japanese": "운전을 하게 되었어요.",
+    "romaji": "Unjeoneul hage doeeosseoyo.",
+    "dutch": "Ik ben gaan autorijden."
+   },
+   {
+    "japanese": "그 책을 읽게 되었어요.",
+    "romaji": "Geu chaegeul ilkge doeeosseoyo.",
+    "dutch": "Ik ben dat boek gaan lezen."
+   },
+   {
+    "japanese": "다이어트를 하게 되었어요.",
+    "romaji": "Daieoteureul hage doeeosseoyo.",
+    "dutch": "Ik ben gaan diëten."
+   }
+  ]
+ },
+ "ko-t3-eoboda": {
+  "naam": "Gebruik van 아/어 보다",
+  "tagline": "Leer hoe je 'proberen' uitdrukt in het Koreaans",
+  "niveau": "basis",
+  "kernregel": "Het patroon 아/어 보다 wordt gebruikt om aan te geven dat iemand iets probeert of ervaart. Het kan zowel fysiek als mentaal proberen betekenen.",
+  "patroon": "stam van het werkwoord + 아/어 보다",
+  "uitleg": "In het Koreaans gebruik je 아/어 보다 om aan te geven dat je iets probeert. Dit patroon is vergelijkbaar met het Nederlandse 'proberen'. De keuze tussen 아 en 어 hangt af van de laatste klinker van de stam van het werkwoord. Als de stam eindigt op een ㅏ of ㅗ, gebruik je 아. Voor alle andere klinkers gebruik je 어. Dit patroon kan ook in de verleden tijd worden gebruikt door het toevoegen van de verleden tijdsvorm van 보다, namelijk 봤다.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder de infinitief eindiging 다.",
+    "voorbeeld": "먹다 (eten) → 먹"
+   },
+   {
+    "element": "아",
+    "rol": "Wordt toegevoegd aan de stam als deze eindigt op ㅏ of ㅗ.",
+    "voorbeeld": "가다 (gaan) → 가 + 아 보다 → 가 보다"
+   },
+   {
+    "element": "어",
+    "rol": "Wordt toegevoegd aan de stam als deze eindigt op andere klinkers dan ㅏ of ㅗ.",
+    "voorbeeld": "먹다 (eten) → 먹 + 어 보다 → 먹어 보다"
+   },
+   {
+    "element": "보다",
+    "rol": "Het werkwoord dat 'zien' betekent, maar in deze context 'proberen'.",
+    "voorbeeld": "보다 (zien) → 보다"
+   },
+   {
+    "element": "verleden tijd",
+    "rol": "Om het proberen in het verleden uit te drukken.",
+    "voorbeeld": "먹어 보다 (proberen te eten) → 먹어 봤다"
+   }
+  ],
+  "tips": [
+   "Controleer altijd de laatste klinker van de stam om te bepalen of je 아 of 어 moet gebruiken.",
+   "Gebruik dit patroon om nieuwe ervaringen of activiteiten uit te drukken.",
+   "Dit patroon kan ook in de verleden tijd worden gebruikt door 봤다 toe te voegen.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de variaties."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 아/어: Gebruik 아 bij stammen die eindigen op ㅏ of ㅗ, en 어 voor alle andere.",
+   "Vergeten van de verleden tijdsvorm: Vergeet niet 봤다 te gebruiken voor de verleden tijd.",
+   "Verwarring met de betekenis van 보다: In deze context betekent 보다 'proberen', niet 'zien'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "이 책을 읽어 봤어요.",
+    "romaji": "I chaegeul ilgeo bwasseoyo.",
+    "dutch": "Ik heb geprobeerd dit boek te lezen."
+   },
+   {
+    "japanese": "한번 해 보세요.",
+    "romaji": "Hanbeon hae boseyo.",
+    "dutch": "Probeer het eens."
+   },
+   {
+    "japanese": "한국 음식을 먹어 보고 싶어요.",
+    "romaji": "Hanguk eumsigeul meogeo bogo sipeoyo.",
+    "dutch": "Ik wil graag Koreaans eten proberen."
+   },
+   {
+    "japanese": "그 영화를 봐 봤어요?",
+    "romaji": "Geu yeonghwareul bwa bwasseoyo?",
+    "dutch": "Heb je die film geprobeerd te kijken?"
+   },
+   {
+    "japanese": "이 옷을 입어 봐도 돼요?",
+    "romaji": "I oseul ibeo bwado dwaeyo?",
+    "dutch": "Mag ik deze kleding proberen aan te trekken?"
+   },
+   {
+    "japanese": "다른 길로 가 봅시다.",
+    "romaji": "Dareun gillo ga bopsida.",
+    "dutch": "Laten we een andere weg proberen."
+   }
+  ]
+ },
+ "ko-t3-myeonseo": {
+  "naam": "(으)면서",
+  "tagline": "Leren hoe je gelijktijdige acties in het Koreaans uitdrukt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon (으)면서 wordt gebruikt om aan te geven dat twee acties tegelijkertijd plaatsvinden. Het is vergelijkbaar met het Nederlandse 'terwijl'.",
+  "patroon": "stam van het werkwoord + (으)면서",
+  "uitleg": "In het Koreaans gebruik je (으)면서 om aan te geven dat twee handelingen tegelijkertijd plaatsvinden. Dit patroon is vergelijkbaar met het Nederlandse 'terwijl'. Als de stam van het werkwoord eindigt op een medeklinker, gebruik je '으면서'. Als de stam eindigt op een klinker, gebruik je '면서'. Dit patroon kan zowel voor acties als voor beschrijvingen gebruikt worden. Het is belangrijk om te onthouden dat beide acties door dezelfde persoon worden uitgevoerd.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder '다'.",
+    "voorbeeld": "먹다 (eten) -> 먹"
+   },
+   {
+    "element": "(으)면서",
+    "rol": "Voegt de betekenis van 'terwijl' toe aan de stam.",
+    "voorbeeld": "먹으면서 (terwijl ik eet)"
+   },
+   {
+    "element": "medeklinker eindigend",
+    "rol": "Gebruik '으면서' als de stam eindigt op een medeklinker.",
+    "voorbeeld": "읽다 (lezen) -> 읽으면서"
+   },
+   {
+    "element": "klinker eindigend",
+    "rol": "Gebruik '면서' als de stam eindigt op een klinker.",
+    "voorbeeld": "가다 (gaan) -> 가면서"
+   },
+   {
+    "element": "context",
+    "rol": "Bepaalt de gelijktijdigheid van de acties.",
+    "voorbeeld": "음악을 들으면서 공부해요 (Ik studeer terwijl ik naar muziek luister)."
+   }
+  ],
+  "tips": [
+   "Gebruik (으)면서 alleen als beide acties door dezelfde persoon worden uitgevoerd.",
+   "Probeer de acties die je beschrijft logisch te combineren, zoals 'eten' en 'praten'.",
+   "Let op de stam van het werkwoord om te bepalen of je '으면서' of '면서' moet gebruiken.",
+   "Gebruik dit patroon om je zinnen dynamischer en levendiger te maken."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van (으)면서 voor acties die door verschillende personen worden uitgevoerd. Correctie: Gebruik in plaats daarvan '동안' voor verschillende onderwerpen.",
+   "Verkeerd gebruik van '으면서' na een klinker. Correctie: Gebruik '면서' na een klinker.",
+   "Vergeten de stam van het werkwoord correct te identificeren. Correctie: Verwijder altijd '다' om de stam te vinden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "노래를 부르면서 춤을 춰요.",
+    "romaji": "Noraereul bureumyeonseo chumeul chwoyo.",
+    "dutch": "Ik zing terwijl ik dans."
+   },
+   {
+    "japanese": "책을 읽으면서 커피를 마셔요.",
+    "romaji": "Chaekeul ilgeumyeonseo keopireul masyeoyo.",
+    "dutch": "Ik drink koffie terwijl ik een boek lees."
+   },
+   {
+    "japanese": "운전하면서 전화하지 마세요.",
+    "romaji": "Unjeonhamyeonseo jeonhwahaji maseyo.",
+    "dutch": "Bel niet terwijl je rijdt."
+   },
+   {
+    "japanese": "TV를 보면서 저녁을 먹어요.",
+    "romaji": "TVreul bomyeonseo jeonyeogeul meogeoyo.",
+    "dutch": "Ik eet avondeten terwijl ik TV kijk."
+   },
+   {
+    "japanese": "음악을 들으면서 산책해요.",
+    "romaji": "Eumageul deureumyeonseo sanchaekhaeyo.",
+    "dutch": "Ik maak een wandeling terwijl ik naar muziek luister."
+   },
+   {
+    "japanese": "일하면서 공부해요.",
+    "romaji": "Ilhamyeonseo gongbuhaeyo.",
+    "dutch": "Ik studeer terwijl ik werk."
+   }
+  ]
+ },
+ "ko-t3-jianta": {
+  "naam": "Formele ontkenning met '지 않다'",
+  "tagline": "Leer hoe je formele ontkenning in het Koreaans uitdrukt met '지 않다'.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '지 않다' wordt gebruikt om formele ontkenning in het Koreaans uit te drukken. Het is vergelijkbaar met het gebruik van 'niet' in het Nederlands en wordt toegepast op werkwoorden en bijvoeglijke naamwoorden.",
+  "patroon": "stam van het werkwoord/bijvoeglijk naamwoord + 지 않다",
+  "uitleg": "In het Koreaans gebruik je '지 않다' om een formele ontkenning te maken. Dit patroon wordt toegepast door de stam van een werkwoord of bijvoeglijk naamwoord te nemen en daar '지 않다' aan toe te voegen. Het is vergelijkbaar met het Nederlandse 'niet', maar het gebruik is formeler dan de informele ontkenning met '안'. Het patroon kan in verschillende tijden worden vervoegd, zoals verleden tijd (지 않았다) of toekomende tijd (지 않을 것이다). In tegenstelling tot het Nederlandse 'niet', dat vaak voor het werkwoord staat, volgt '지 않다' direct na de stam.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord/bijvoeglijk naamwoord",
+    "rol": "De basisvorm waarop de ontkenning wordt toegepast.",
+    "voorbeeld": "가다 (gada) -> 가 (ga)"
+   },
+   {
+    "element": "지",
+    "rol": "De eerste component van de ontkenning, die direct na de stam komt.",
+    "voorbeeld": "가 (ga) + 지"
+   },
+   {
+    "element": "않다",
+    "rol": "De tweede component van de ontkenning, die het werkwoord 'niet doen' of 'niet zijn' vormt.",
+    "voorbeeld": "가지 않다 (gaji anta)"
+   },
+   {
+    "element": "tijdsvorm",
+    "rol": "Vervoeging van '않다' om de tijd aan te geven, zoals verleden of toekomst.",
+    "voorbeeld": "가지 않았다 (gaji anatta)"
+   },
+   {
+    "element": "formele stijl",
+    "rol": "Gebruik in formele situaties, zoals in geschreven teksten of formele gesprekken.",
+    "voorbeeld": "가지 않습니다 (gaji anseumnida)"
+   }
+  ],
+  "tips": [
+   "Gebruik '지 않다' in formele situaties of wanneer je beleefd wilt zijn.",
+   "Vervoeg '않다' naar de gewenste tijdsvorm om de juiste betekenis over te brengen.",
+   "Let op de context waarin je '지 않다' gebruikt; het kan te formeel zijn voor informele gesprekken.",
+   "Oefen met verschillende werkwoorden en bijvoeglijke naamwoorden om vertrouwd te raken met het patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van '지 않다' met '안'. '안' is informeler en wordt voor de stam geplaatst.",
+   "Vergeten om '않다' correct te vervoegen in de juiste tijdsvorm. Bijvoorbeeld, '가지 않다' in plaats van '가지 않았다' voor verleden tijd."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "먹지 않다",
+    "romaji": "meokji anta",
+    "dutch": "niet eten"
+   },
+   {
+    "japanese": "공부하지 않다",
+    "romaji": "gongbuhaji anta",
+    "dutch": "niet studeren"
+   },
+   {
+    "japanese": "좋아하지 않다",
+    "romaji": "joahaji anta",
+    "dutch": "niet leuk vinden"
+   },
+   {
+    "japanese": "가지 않다",
+    "romaji": "gaji anta",
+    "dutch": "niet gaan"
+   },
+   {
+    "japanese": "일하지 않다",
+    "romaji": "ilhaji anta",
+    "dutch": "niet werken"
+   },
+   {
+    "japanese": "기쁘지 않다",
+    "romaji": "gippeuji anta",
+    "dutch": "niet blij zijn"
+   }
+  ]
+ },
+ "ko-t3-passive": {
+  "naam": "Passieve en causatieve werkwoorden met 이/히/리/기",
+  "tagline": "Leer hoe je passieve en causatieve vormen in het Koreaans gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Koreaans worden de achtervoegsels 이, 히, 리 en 기 gebruikt om werkwoorden passief of causatief te maken. Deze vormen veranderen de betekenis van het werkwoord, waardoor de actie door iemand anders wordt uitgevoerd of veroorzaakt.",
+  "patroon": "Stam van het werkwoord + 이/히/리/기",
+  "uitleg": "In het Koreaans kunnen werkwoorden passief of causatief worden gemaakt door specifieke achtervoegsels toe te voegen aan de stam van het werkwoord. Het passieve gebruik impliceert dat de actie door een ander wordt uitgevoerd, terwijl het causatieve gebruik aangeeft dat iemand de actie laat uitvoeren. Dit is vergelijkbaar met het verschil in het Nederlands tussen 'worden gedaan' en 'laten doen'. Het juiste achtervoegsel kiezen hangt af van het werkwoord en kan niet altijd worden voorspeld, dus het is belangrijk om deze vormen te leren als onderdeel van de woordenschat.",
+  "opbouw": [
+   {
+    "element": "이",
+    "rol": "Passief/causatief achtervoegsel",
+    "voorbeeld": "보다 (boda) -> 보이다 (boida) - gezien worden"
+   },
+   {
+    "element": "히",
+    "rol": "Passief/causatief achtervoegsel",
+    "voorbeeld": "닫다 (datda) -> 닫히다 (dachida) - gesloten worden"
+   },
+   {
+    "element": "리",
+    "rol": "Passief/causatief achtervoegsel",
+    "voorbeeld": "열다 (yeolda) -> 열리다 (yeollida) - geopend worden"
+   },
+   {
+    "element": "기",
+    "rol": "Passief/causatief achtervoegsel",
+    "voorbeeld": "안다 (anda) -> 안기다 (angida) - omarmd worden"
+   },
+   {
+    "element": "Stam van het werkwoord",
+    "rol": "Basisvorm van het werkwoord",
+    "voorbeeld": "먹다 (meokda) - eten"
+   }
+  ],
+  "tips": [
+   "Leer de passieve en causatieve vormen van veelvoorkomende werkwoorden uit je hoofd.",
+   "Let op de context om te bepalen of een werkwoord passief of causatief is.",
+   "Oefen met zinnen om het gebruik van deze vormen te internaliseren.",
+   "Gebruik een woordenboek om te controleren welk achtervoegsel bij een werkwoord hoort."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd achtervoegsel gebruiken: bijvoorbeeld 열하다 in plaats van 열리다. Controleer altijd welk achtervoegsel correct is.",
+   "Verwarring tussen passief en causatief: bijvoorbeeld denken dat 보이다 altijd 'laten zien' betekent in plaats van 'gezien worden'. Let op de context.",
+   "Vergeten de stam van het werkwoord correct te identificeren, wat leidt tot onjuiste vormen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "문이 열리다",
+    "romaji": "muni yeollida",
+    "dutch": "De deur wordt geopend."
+   },
+   {
+    "japanese": "책이 읽히다",
+    "romaji": "chaegi ilkhida",
+    "dutch": "Het boek wordt gelezen."
+   },
+   {
+    "japanese": "음식이 먹히다",
+    "romaji": "eumsigi meokhida",
+    "dutch": "Het eten wordt gegeten."
+   },
+   {
+    "japanese": "아이를 울리다",
+    "romaji": "aireul ullida",
+    "dutch": "Het kind laten huilen."
+   },
+   {
+    "japanese": "그림이 보이다",
+    "romaji": "geurimi boida",
+    "dutch": "Het schilderij is te zien."
+   },
+   {
+    "japanese": "문제가 풀리다",
+    "romaji": "munjega pullida",
+    "dutch": "Het probleem wordt opgelost."
+   }
+  ]
+ },
+ "ko-t3-banmal": {
+  "naam": "반말 (Informele Taal)",
+  "tagline": "Leer hoe je informeel kunt communiceren in het Koreaans.",
+  "niveau": "basis",
+  "kernregel": "반말 is een informele manier van spreken in het Koreaans, vaak gebruikt onder vrienden, familieleden van dezelfde leeftijd, of jongere mensen. Het is belangrijk om te weten wanneer je 반말 kunt gebruiken om beleefdheidsnormen te respecteren.",
+  "patroon": "Stam van het werkwoord + 아/어/여",
+  "uitleg": "In het Koreaans wordt 반말 gebruikt om informeel te communiceren, vooral met mensen die je goed kent of die jonger zijn. Het is vergelijkbaar met het gebruik van 'jij' en 'jou' in het Nederlands, in plaats van 'u'. 반말 wordt gevormd door de stam van het werkwoord te nemen en daar 아, 어, of 여 aan toe te voegen, afhankelijk van de laatste klinker van de stam. Het is belangrijk om te letten op de context en de relatie met de persoon met wie je spreekt, omdat het gebruik van 반말 ongepast kan zijn in formele situaties of met mensen die ouder zijn of een hogere status hebben.",
+  "opbouw": [
+   {
+    "element": "Stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord zonder de '다' uitgang.",
+    "voorbeeld": "가다 (gaan) -> 가"
+   },
+   {
+    "element": "아",
+    "rol": "Toevoeging bij werkwoorden waarvan de stam eindigt op ㅏ of ㅗ.",
+    "voorbeeld": "가다 (gaan) -> 가 + 아 = 가"
+   },
+   {
+    "element": "어",
+    "rol": "Toevoeging bij werkwoorden waarvan de stam eindigt op andere klinkers dan ㅏ of ㅗ.",
+    "voorbeeld": "먹다 (eten) -> 먹 + 어 = 먹어"
+   },
+   {
+    "element": "여",
+    "rol": "Specifiek voor werkwoorden zoals 하다.",
+    "voorbeeld": "하다 (doen) -> 하 + 여 = 해"
+   },
+   {
+    "element": "Context",
+    "rol": "De sociale situatie waarin 반말 gepast is.",
+    "voorbeeld": "Gebruik 반말 met vrienden of jongere familieleden."
+   }
+  ],
+  "tips": [
+   "Gebruik 반말 alleen met mensen die je goed kent en die jonger zijn of van dezelfde leeftijd.",
+   "Let op de context; in formele situaties is 반말 ongepast.",
+   "Luister naar hoe anderen 반말 gebruiken om het beter te begrijpen.",
+   "Wees voorzichtig met het gebruik van 반말 in professionele omgevingen."
+  ],
+  "veelgemaaktefouten": [
+   "Gebruik van 반말 met ouderen of in formele situaties. Correctie: Gebruik 존댓말 (beleefde taal) in deze gevallen.",
+   "Verkeerde vervoeging van werkwoorden. Correctie: Controleer de laatste klinker van de stam om de juiste toevoeging te kiezen.",
+   "Verwarring tussen 반말 en 존댓말. Correctie: Leer de verschillen en oefen met beide vormen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "너 뭐 해?",
+    "romaji": "Neo mwo hae?",
+    "dutch": "Wat ben je aan het doen?"
+   },
+   {
+    "japanese": "밥 먹었어?",
+    "romaji": "Bap meogeosseo?",
+    "dutch": "Heb je gegeten?"
+   },
+   {
+    "japanese": "어디 가?",
+    "romaji": "Eodi ga?",
+    "dutch": "Waar ga je heen?"
+   },
+   {
+    "japanese": "잘 자.",
+    "romaji": "Jal ja.",
+    "dutch": "Slaap lekker."
+   },
+   {
+    "japanese": "이거 봐.",
+    "romaji": "Igeo bwa.",
+    "dutch": "Kijk hiernaar."
+   },
+   {
+    "japanese": "나도 갈래.",
+    "romaji": "Nado gallae.",
+    "dutch": "Ik wil ook gaan."
+   }
+  ]
+ },
+ "ko-t3-si": {
+  "naam": "Beleefdheid in het Koreaans: Het gebruik van (으)시",
+  "tagline": "Leer hoe je beleefdheid uitdrukt in het Koreaans met het patroon (으)시.",
+  "niveau": "basis",
+  "kernregel": "Het patroon (으)시 wordt gebruikt om beleefdheid uit te drukken in het Koreaans, vooral wanneer je spreekt over of tegen iemand die ouder is of een hogere status heeft. Het wordt toegevoegd aan de stam van een werkwoord of bijvoeglijk naamwoord.",
+  "patroon": "Werkwoord/Adjectief stam + (으)시 + vervoeging",
+  "uitleg": "In het Koreaans is beleefdheid een belangrijk aspect van de taal, en het gebruik van (으)시 is een veelvoorkomend middel om respect te tonen. Wanneer de stam van een werkwoord of bijvoeglijk naamwoord eindigt op een medeklinker, voeg je '으시' toe. Eindigt de stam op een klinker, dan voeg je '시' toe. Dit patroon wordt vaak gebruikt in combinatie met formele eindes zoals -습니다 of -어요 om de beleefdheid verder te versterken. Het is vergelijkbaar met het gebruik van 'u' in het Nederlands, maar het is veel uitgebreider geïntegreerd in de grammaticale structuur van het Koreaans.",
+  "opbouw": [
+   {
+    "element": "Stam van het werkwoord/bijvoeglijk naamwoord",
+    "rol": "De basisvorm waaraan de beleefdheidsuitdrukking wordt toegevoegd.",
+    "voorbeeld": "가다 (gada) - gaan"
+   },
+   {
+    "element": "(으)시",
+    "rol": "Het beleefdheidselement dat respect uitdrukt.",
+    "voorbeeld": "가시다 (gasida) - gaat (beleefd)"
+   },
+   {
+    "element": "Vervoeging",
+    "rol": "De tijd of modaliteit van de zin aangeven.",
+    "voorbeeld": "가십니다 (gasimnida) - gaat (formeel beleefd)"
+   }
+  ],
+  "tips": [
+   "Gebruik (으)시 altijd wanneer je spreekt met of over iemand die ouder of hoger in status is.",
+   "Let op de eindklank van de stam om te bepalen of je '으시' of '시' moet gebruiken.",
+   "Combineer (으)시 met formele eindes voor extra beleefdheid, zoals -습니다 of -어요.",
+   "Oefen met veelgebruikte werkwoorden om vertrouwd te raken met dit patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten (으)시 toe te voegen bij het spreken over een oudere of hogere persoon. Correctie: Voeg altijd (으)시 toe in dergelijke situaties.",
+   "Verkeerd gebruik van '으시' na een klinker. Correctie: Gebruik '시' na een klinker, niet '으시'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "선생님이 오십니다.",
+    "romaji": "Seonsaengnim-i osimnida.",
+    "dutch": "De leraar komt (beleefd)."
+   },
+   {
+    "japanese": "어머니가 드십니다.",
+    "romaji": "Eomeoni-ga deusimnida.",
+    "dutch": "Moeder eet (beleefd)."
+   },
+   {
+    "japanese": "할아버지가 주무십니다.",
+    "romaji": "Harabeoji-ga jumusimnida.",
+    "dutch": "Grootvader slaapt (beleefd)."
+   },
+   {
+    "japanese": "사장님이 말씀하십니다.",
+    "romaji": "Sajangnim-i malsseumhasimnida.",
+    "dutch": "De directeur spreekt (beleefd)."
+   },
+   {
+    "japanese": "의사 선생님이 진찰하십니다.",
+    "romaji": "Uisa seonsaengnim-i jinchalhasimnida.",
+    "dutch": "De dokter onderzoekt (beleefd)."
+   },
+   {
+    "japanese": "교수님이 가르치십니다.",
+    "romaji": "Gyosunim-i gareuchisimnida.",
+    "dutch": "De professor onderwijst (beleefd)."
+   }
+  ]
+ }
+}
