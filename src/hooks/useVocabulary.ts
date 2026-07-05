@@ -4,6 +4,7 @@ import { useCallback } from "react";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useAuth } from "@/contexts/AuthContext";
+import { enrichFromStatic } from "@/data/staticVocab";
 import { LangCode } from "@/data/languages";
 
 export type VocabLang = LangCode;
@@ -60,7 +61,14 @@ export function useVocabulary() {
     if (!user) return null;
 
     const allSnap = await getDoc(doc(db, "users", user.uid, "vocab", `${categoryId}_all`));
-    if (allSnap.exists()) return (allSnap.data().concepts as VocabConcept[]) ?? [];
+    if (allSnap.exists()) {
+      // Ontbrekende talen aanvullen vanuit de statische lijst (gratis en direct);
+      // alleen terugschrijven als er echt iets bij kwam.
+      const cs = (allSnap.data().concepts as VocabConcept[]) ?? [];
+      const enriched = enrichFromStatic(categoryId, cs);
+      if (enriched.changed) await saveConcepts(categoryId, enriched.concepts);
+      return enriched.concepts;
+    }
 
     // ── Migratie vanuit oude per-taal-documenten ──────────────────────────────
     const byDutch = new Map<string, VocabConcept>();
@@ -85,7 +93,7 @@ export function useVocabulary() {
     await merge(jaSnap.exists() ? `${categoryId}_ja` : categoryId, "ja");
     await merge(`${categoryId}_zh`, "zh");
 
-    const concepts = [...byDutch.values()];
+    const concepts = enrichFromStatic(categoryId, [...byDutch.values()]).concepts;
     if (!concepts.length) return null;
     await saveConcepts(categoryId, concepts);
     return concepts;

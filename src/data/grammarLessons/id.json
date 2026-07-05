@@ -1,0 +1,2611 @@
+{
+ "id-b-zijn": {
+  "naam": "Het gebruik van 'adalah' in het Indonesisch",
+  "tagline": "Leer hoe je 'adalah' gebruikt om te zeggen wat iets is.",
+  "niveau": "basis",
+  "kernregel": "'Adalah' wordt gebruikt in het Indonesisch om een verklaring of definitie te geven, vergelijkbaar met het Nederlandse 'is' of 'zijn'. Het wordt vaak gebruikt in formele contexten en om duidelijkheid te verschaffen in zinnen die een onderwerp en een beschrijving of definitie bevatten.",
+  "patroon": "Onderwerp + adalah + beschrijving/definitie",
+  "uitleg": "In het Indonesisch wordt 'adalah' gebruikt om een onderwerp te verbinden met een beschrijving of definitie. Dit is vergelijkbaar met het gebruik van 'is' in het Nederlands, maar 'adalah' wordt meestal in formele contexten gebruikt. In informele situaties wordt 'adalah' vaak weggelaten, omdat de betekenis duidelijk is zonder het gebruik van een koppelwerkwoord. Het is belangrijk om te weten dat 'adalah' niet wordt gebruikt met bijvoeglijke naamwoorden, maar alleen met zelfstandige naamwoorden of zinsdelen die als zelfstandige naamwoorden functioneren.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp van de zin, datgene waarover een uitspraak wordt gedaan.",
+    "voorbeeld": "Buku ini (Dit boek)"
+   },
+   {
+    "element": "adalah",
+    "rol": "Het koppelwerkwoord dat het onderwerp verbindt met de beschrijving of definitie.",
+    "voorbeeld": "adalah"
+   },
+   {
+    "element": "Beschrijving/definitie",
+    "rol": "Het deel van de zin dat het onderwerp beschrijft of definieert.",
+    "voorbeeld": "sebuah novel (een roman)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'adalah' in formele teksten of wanneer je een definitie wilt geven.",
+   "Vermijd 'adalah' in informele gesprekken; het kan vaak worden weggelaten.",
+   "Gebruik 'adalah' niet met bijvoeglijke naamwoorden, alleen met zelfstandige naamwoorden of zinsdelen.",
+   "Let op de context waarin je 'adalah' gebruikt om te bepalen of het nodig is."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'adalah' met bijvoeglijke naamwoorden. Correctie: Laat 'adalah' weg als je een bijvoeglijk naamwoord gebruikt.",
+   "Het weglaten van 'adalah' in formele teksten waar het wel nodig is. Correctie: Voeg 'adalah' toe om de zin formeel en correct te maken."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia adalah dokter.",
+    "romaji": "Dia adalah dokter.",
+    "dutch": "Hij/zij is een dokter."
+   },
+   {
+    "japanese": "Ini adalah rumah saya.",
+    "romaji": "Ini adalah rumah saya.",
+    "dutch": "Dit is mijn huis."
+   },
+   {
+    "japanese": "Mereka adalah teman baik.",
+    "romaji": "Mereka adalah teman baik.",
+    "dutch": "Zij zijn goede vrienden."
+   },
+   {
+    "japanese": "Buku ini adalah ensiklopedia.",
+    "romaji": "Buku ini adalah ensiklopedia.",
+    "dutch": "Dit boek is een encyclopedie."
+   },
+   {
+    "japanese": "Kucing itu adalah hewan peliharaan.",
+    "romaji": "Kucing itu adalah hewan peliharaan.",
+    "dutch": "Die kat is een huisdier."
+   },
+   {
+    "japanese": "Ini adalah masalah besar.",
+    "romaji": "Ini adalah masalah besar.",
+    "dutch": "Dit is een groot probleem."
+   }
+  ]
+ },
+ "id-b-svo": {
+  "naam": "Woordvolgorde in het Indonesisch",
+  "tagline": "Begrijp de basisstructuur van Indonesische zinnen.",
+  "niveau": "basis",
+  "kernregel": "In het Indonesisch is de standaard woordvolgorde Subject-Verb-Object (SVO), vergelijkbaar met het Nederlands. Deze structuur helpt om zinnen duidelijk en begrijpelijk te maken.",
+  "patroon": "Subject + Verb + Object",
+  "uitleg": "De basiswoordvolgorde in het Indonesisch is Subject-Verb-Object (SVO), wat betekent dat de zin begint met het onderwerp, gevolgd door het werkwoord en dan het lijdend voorwerp. Dit lijkt op de Nederlandse structuur, maar het Indonesisch heeft geen vervoegingen voor werkwoorden, wat het eenvoudiger maakt. Bijvoeglijke naamwoorden volgen het zelfstandig naamwoord dat ze beschrijven, en bijwoorden komen meestal na het werkwoord. Het is belangrijk om deze volgorde te respecteren om misverstanden te voorkomen.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "Ali"
+   },
+   {
+    "element": "Verb",
+    "rol": "Het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "makan"
+   },
+   {
+    "element": "Object",
+    "rol": "Het lijdend voorwerp dat de actie ondergaat.",
+    "voorbeeld": "apel"
+   },
+   {
+    "element": "Bijvoeglijk naamwoord",
+    "rol": "Geeft extra informatie over het zelfstandig naamwoord en volgt het.",
+    "voorbeeld": "merah"
+   },
+   {
+    "element": "Bijwoord",
+    "rol": "Geeft extra informatie over het werkwoord en volgt het meestal.",
+    "voorbeeld": "cepat"
+   }
+  ],
+  "tips": [
+   "Onthoud dat bijvoeglijke naamwoorden altijd na het zelfstandig naamwoord komen.",
+   "Werkwoorden worden niet vervoegd naar tijd of persoon, wat de structuur vereenvoudigt.",
+   "Gebruik persoonlijke voornaamwoorden zoals 'saya' (ik) of 'dia' (hij/zij) om het onderwerp te verduidelijken.",
+   "Bijwoorden kunnen aan het einde van de zin worden geplaatst voor extra nadruk."
+  ],
+  "veelgemaaktefouten": [
+   "Het plaatsen van bijvoeglijke naamwoorden vóór het zelfstandig naamwoord. Correct: 'apel merah', niet 'merah apel'.",
+   "Verkeerde plaatsing van bijwoorden. Correct: 'Ali makan cepat', niet 'cepat Ali makan'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Budi membaca buku.",
+    "romaji": "Budi membaca buku.",
+    "dutch": "Budi leest een boek."
+   },
+   {
+    "japanese": "Mereka menonton film.",
+    "romaji": "Mereka menonton film.",
+    "dutch": "Zij kijken een film."
+   },
+   {
+    "japanese": "Anak itu bermain bola.",
+    "romaji": "Anak itu bermain bola.",
+    "dutch": "Dat kind speelt met een bal."
+   },
+   {
+    "japanese": "Saya minum kopi.",
+    "romaji": "Saya minum kopi.",
+    "dutch": "Ik drink koffie."
+   },
+   {
+    "japanese": "Dia menulis surat.",
+    "romaji": "Dia menulis surat.",
+    "dutch": "Hij/zij schrijft een brief."
+   },
+   {
+    "japanese": "Kami belajar bahasa Indonesia.",
+    "romaji": "Kami belajar bahasa Indonesia.",
+    "dutch": "Wij leren Indonesisch."
+   }
+  ]
+ },
+ "id-b-pron": {
+  "naam": "Voornaamwoorden in het Indonesisch",
+  "tagline": "Leer hoe je voornaamwoorden in het Indonesisch correct gebruikt.",
+  "niveau": "basis",
+  "kernregel": "Voornaamwoorden in het Indonesisch worden gebruikt om personen, dingen of plaatsen aan te duiden zonder hun naam te herhalen. Ze zijn essentieel voor vloeiende communicatie en variëren afhankelijk van de beleefdheidsvorm en context.",
+  "patroon": "Voornaamwoord + werkwoord + object",
+  "uitleg": "In het Indonesisch zijn voornaamwoorden vergelijkbaar met die in het Nederlands, maar er zijn enkele verschillen. Indonesisch kent geen onderscheid tussen mannelijke en vrouwelijke voornaamwoorden zoals 'hij' of 'zij'. In plaats daarvan wordt 'dia' gebruikt voor beide. Er zijn ook beleefdheidsvormen zoals 'Anda' voor formele situaties. Het gebruik van voornaamwoorden kan variëren afhankelijk van de sociale context en de relatie tussen de sprekers. In informele situaties worden vaak verkorte vormen gebruikt, zoals 'aku' in plaats van 'saya' voor 'ik'.",
+  "opbouw": [
+   {
+    "element": "Saya",
+    "rol": "Eerste persoon enkelvoud (ik)",
+    "voorbeeld": "Saya pergi ke sekolah."
+   },
+   {
+    "element": "Kamu",
+    "rol": "Tweede persoon enkelvoud informeel (jij)",
+    "voorbeeld": "Kamu suka kopi?"
+   },
+   {
+    "element": "Dia",
+    "rol": "Derde persoon enkelvoud (hij/zij)",
+    "voorbeeld": "Dia membaca buku."
+   },
+   {
+    "element": "Kami",
+    "rol": "Eerste persoon meervoud exclusief (wij, zonder aangesprokene)",
+    "voorbeeld": "Kami akan datang."
+   },
+   {
+    "element": "Mereka",
+    "rol": "Derde persoon meervoud (zij/hen)",
+    "voorbeeld": "Mereka bermain sepak bola."
+   }
+  ],
+  "tips": [
+   "Gebruik 'Anda' voor formele situaties en 'kamu' voor informele situaties.",
+   "Onthoud dat 'dia' zowel voor 'hij' als 'zij' wordt gebruikt.",
+   "Gebruik 'kami' als je de aangesprokene niet bij de groep betrekt, en 'kita' als je dat wel doet.",
+   "In informele gesprekken kun je 'aku' gebruiken in plaats van 'saya' voor 'ik'."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'dia' voor zowel 'hij' als 'zij' kan verwarrend zijn. Zorg ervoor dat de context duidelijk is.",
+   "Verwarring tussen 'kami' en 'kita'. Gebruik 'kami' als de aangesprokene niet bij de groep hoort.",
+   "Het gebruik van 'Anda' in informele situaties kan te formeel overkomen. Gebruik 'kamu' in plaats daarvan."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Saya makan nasi.",
+    "romaji": "Saya makan nasi.",
+    "dutch": "Ik eet rijst."
+   },
+   {
+    "japanese": "Kamu pergi ke pasar?",
+    "romaji": "Kamu pergi ke pasar?",
+    "dutch": "Ga jij naar de markt?"
+   },
+   {
+    "japanese": "Dia senang bermain gitar.",
+    "romaji": "Dia senang bermain gitar.",
+    "dutch": "Hij/Zij houdt van gitaar spelen."
+   },
+   {
+    "japanese": "Kami tidak suka hujan.",
+    "romaji": "Kami tidak suka hujan.",
+    "dutch": "Wij houden niet van regen."
+   },
+   {
+    "japanese": "Mereka tinggal di Jakarta.",
+    "romaji": "Mereka tinggal di Jakarta.",
+    "dutch": "Zij wonen in Jakarta."
+   },
+   {
+    "japanese": "Aku ingin tidur.",
+    "romaji": "Aku ingin tidur.",
+    "dutch": "Ik wil slapen."
+   }
+  ]
+ },
+ "id-b-bezit": {
+  "naam": "Bezit in het Indonesisch: -ku en -mu",
+  "tagline": "Leer hoe je bezit aangeeft met -ku en -mu in het Indonesisch.",
+  "niveau": "basis",
+  "kernregel": "In het Indonesisch kun je bezit aangeven door achtervoegsels toe te voegen aan een zelfstandig naamwoord. De achtervoegsels -ku en -mu worden gebruikt om respectievelijk 'mijn' en 'jouw' aan te geven.",
+  "patroon": "zelfstandig naamwoord + -ku / -mu",
+  "uitleg": "In het Indonesisch worden de achtervoegsels -ku en -mu gebruikt om bezit aan te geven. Dit is vergelijkbaar met het Nederlandse 'mijn' en 'jouw'. Het achtervoegsel -ku wordt gebruikt voor de eerste persoon enkelvoud ('mijn'), terwijl -mu wordt gebruikt voor de tweede persoon enkelvoud ('jouw'). Deze achtervoegsels worden direct aan het zelfstandig naamwoord vastgeplakt zonder spaties. Dit is anders dan in het Nederlands, waar 'mijn' en 'jouw' als aparte woorden voor het zelfstandig naamwoord staan.",
+  "opbouw": [
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het woord dat bezit aangeeft, zoals 'boek' of 'huis'.",
+    "voorbeeld": "buku (boek)"
+   },
+   {
+    "element": "-ku",
+    "rol": "Achtervoegsel dat 'mijn' aangeeft.",
+    "voorbeeld": "bukuku (mijn boek)"
+   },
+   {
+    "element": "-mu",
+    "rol": "Achtervoegsel dat 'jouw' aangeeft.",
+    "voorbeeld": "bukumu (jouw boek)"
+   }
+  ],
+  "tips": [
+   "Gebruik -ku voor de eerste persoon enkelvoud om 'mijn' aan te geven.",
+   "Gebruik -mu voor de tweede persoon enkelvoud om 'jouw' aan te geven.",
+   "Er is geen spatie tussen het zelfstandig naamwoord en het achtervoegsel.",
+   "Let op de context, want in sommige gevallen kan de betekenis van een woord veranderen afhankelijk van het achtervoegsel."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van een spatie tussen het zelfstandig naamwoord en het achtervoegsel. Correct: 'bukuku', niet 'buku ku'.",
+   "Verwarring tussen -ku en -mu. Zorg ervoor dat je de juiste persoon aanduidt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "rumahku",
+    "romaji": "rumahku",
+    "dutch": "mijn huis"
+   },
+   {
+    "japanese": "mobilmu",
+    "romaji": "mobilmu",
+    "dutch": "jouw auto"
+   },
+   {
+    "japanese": "sepatuku",
+    "romaji": "sepatuku",
+    "dutch": "mijn schoenen"
+   },
+   {
+    "japanese": "tasmu",
+    "romaji": "tasmu",
+    "dutch": "jouw tas"
+   },
+   {
+    "japanese": "kamarku",
+    "romaji": "kamarku",
+    "dutch": "mijn kamer"
+   },
+   {
+    "japanese": "bukumu",
+    "romaji": "bukumu",
+    "dutch": "jouw boek"
+   }
+  ]
+ },
+ "id-b-neg": {
+  "naam": "Ontkenning in het Indonesisch: 'tidak' en 'bukan'",
+  "tagline": "Leer het verschil tussen 'tidak' en 'bukan' voor correcte ontkenning.",
+  "niveau": "basis",
+  "kernregel": "In het Indonesisch gebruik je 'tidak' om werkwoorden en bijvoeglijke naamwoorden te ontkennen, terwijl 'bukan' wordt gebruikt om zelfstandige naamwoorden en zinnen te ontkennen. Het juiste gebruik van deze ontkenningen is essentieel voor het correct overbrengen van je boodschap.",
+  "patroon": "tidak + werkwoord/bijvoeglijk naamwoord | bukan + zelfstandig naamwoord/zin",
+  "uitleg": "In het Indonesisch zijn er twee hoofdwoorden voor ontkenning: 'tidak' en 'bukan'. 'Tidak' wordt gebruikt om werkwoorden en bijvoeglijke naamwoorden te ontkennen, vergelijkbaar met 'niet' in het Nederlands. Bijvoorbeeld, 'Saya tidak makan' betekent 'Ik eet niet'. Aan de andere kant wordt 'bukan' gebruikt om zelfstandige naamwoorden en zinnen te ontkennen, wat vergelijkbaar is met 'geen' of 'niet' in combinatie met een zelfstandig naamwoord in het Nederlands. Bijvoorbeeld, 'Ini bukan buku saya' betekent 'Dit is niet mijn boek'. Het is belangrijk om het juiste ontkenningswoord te kiezen om misverstanden te voorkomen.",
+  "opbouw": [
+   {
+    "element": "tidak",
+    "rol": "Ontkenning van werkwoorden en bijvoeglijke naamwoorden",
+    "voorbeeld": "Saya tidak suka kopi."
+   },
+   {
+    "element": "bukan",
+    "rol": "Ontkenning van zelfstandige naamwoorden en zinnen",
+    "voorbeeld": "Itu bukan rumah saya."
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Actie of toestand die ontkend wordt",
+    "voorbeeld": "Dia tidak pergi ke sekolah."
+   },
+   {
+    "element": "bijvoeglijk naamwoord",
+    "rol": "Eigenschap die ontkend wordt",
+    "voorbeeld": "Makanan ini tidak enak."
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Object of concept dat ontkend wordt",
+    "voorbeeld": "Ini bukan mobil saya."
+   }
+  ],
+  "tips": [
+   "Gebruik 'tidak' altijd voor werkwoorden en bijvoeglijke naamwoorden.",
+   "Gebruik 'bukan' voor zelfstandige naamwoorden en om volledige zinnen te ontkennen.",
+   "Let op de context van de zin om te bepalen welk ontkenningswoord je moet gebruiken.",
+   "Oefen met het maken van zinnen om het verschil tussen 'tidak' en 'bukan' te begrijpen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'tidak' in plaats van 'bukan' bij zelfstandige naamwoorden. Correctie: 'Ini bukan buku saya' in plaats van 'Ini tidak buku saya'.",
+   "Het gebruik van 'bukan' in plaats van 'tidak' bij werkwoorden. Correctie: 'Saya tidak makan' in plaats van 'Saya bukan makan'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia tidak tidur.",
+    "romaji": "Dia tidak tidur.",
+    "dutch": "Hij slaapt niet."
+   },
+   {
+    "japanese": "Ini bukan tas saya.",
+    "romaji": "Ini bukan tas saya.",
+    "dutch": "Dit is niet mijn tas."
+   },
+   {
+    "japanese": "Mereka tidak senang.",
+    "romaji": "Mereka tidak senang.",
+    "dutch": "Zij zijn niet blij."
+   },
+   {
+    "japanese": "Itu bukan masalah besar.",
+    "romaji": "Itu bukan masalah besar.",
+    "dutch": "Dat is geen groot probleem."
+   },
+   {
+    "japanese": "Saya tidak mengerti.",
+    "romaji": "Saya tidak mengerti.",
+    "dutch": "Ik begrijp het niet."
+   },
+   {
+    "japanese": "Ini bukan ide yang baik.",
+    "romaji": "Ini bukan ide yang baik.",
+    "dutch": "Dit is geen goed idee."
+   }
+  ]
+ },
+ "id-b-vraag": {
+  "naam": "Vraagwoorden in het Indonesisch",
+  "tagline": "Leer hoe je vragen stelt met Indonesische vraagwoorden.",
+  "niveau": "basis",
+  "kernregel": "Vraagwoorden in het Indonesisch worden gebruikt om informatie op te vragen en zijn essentieel voor dagelijkse communicatie. Ze komen meestal aan het begin van de vraagzin en helpen om specifieke details zoals wie, wat, waar, wanneer, waarom en hoe te achterhalen.",
+  "patroon": "[Vraagwoord] + [Onderwerp] + [Werkwoord] + [Eventuele extra informatie]",
+  "uitleg": "In het Indonesisch worden vraagwoorden gebruikt om vragen te stellen die specifieke informatie vereisen. Net als in het Nederlands, staan vraagwoorden meestal aan het begin van de zin. Het Indonesisch kent vraagwoorden zoals 'siapa' (wie), 'apa' (wat), 'di mana' (waar), 'kapan' (wanneer), 'mengapa' (waarom), en 'bagaimana' (hoe). Anders dan in het Nederlands, veranderen werkwoorden niet van vorm afhankelijk van de tijd of het onderwerp, wat het eenvoudiger maakt om vragen te formuleren. Het is belangrijk om de juiste volgorde van woorden aan te houden om duidelijkheid te behouden.",
+  "opbouw": [
+   {
+    "element": "Vraagwoord",
+    "rol": "Het woord dat aangeeft welke informatie je zoekt.",
+    "voorbeeld": "'Apa' betekent 'wat' en wordt gebruikt om te vragen naar dingen of acties."
+   },
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp van de vraag, degene of datgene waarover de vraag gaat.",
+    "voorbeeld": "In de zin 'Siapa nama Anda?' is 'nama Anda' het onderwerp."
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord dat de actie of toestand beschrijft.",
+    "voorbeeld": "In 'Apa yang Anda lakukan?' is 'lakukan' het werkwoord."
+   },
+   {
+    "element": "Eventuele extra informatie",
+    "rol": "Aanvullende details die de vraag specifieker maken.",
+    "voorbeeld": "In 'Di mana Anda tinggal?' geeft 'tinggal' aan dat het om wonen gaat."
+   }
+  ],
+  "tips": [
+   "Gebruik 'siapa' voor vragen over personen.",
+   "Gebruik 'apa' voor vragen over dingen of acties.",
+   "Plaats het vraagwoord aan het begin van de zin voor duidelijkheid.",
+   "Onthoud dat werkwoorden in het Indonesisch niet veranderen op basis van tijd of onderwerp."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'apa' en 'siapa'. Correctie: Gebruik 'siapa' voor personen, 'apa' voor dingen.",
+   "Verkeerde woordvolgorde. Correctie: Begin altijd met het vraagwoord.",
+   "Vergeten van het vraagwoord. Correctie: Begin de vraag altijd met een vraagwoord om duidelijk te maken dat het een vraag is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Siapa nama Anda?",
+    "romaji": "Siapa nama Anda?",
+    "dutch": "Wat is uw naam?"
+   },
+   {
+    "japanese": "Apa yang Anda makan?",
+    "romaji": "Apa yang Anda makan?",
+    "dutch": "Wat eet u?"
+   },
+   {
+    "japanese": "Di mana Anda bekerja?",
+    "romaji": "Di mana Anda bekerja?",
+    "dutch": "Waar werkt u?"
+   },
+   {
+    "japanese": "Kapan Anda datang?",
+    "romaji": "Kapan Anda datang?",
+    "dutch": "Wanneer komt u?"
+   },
+   {
+    "japanese": "Mengapa Anda pergi?",
+    "romaji": "Mengapa Anda pergi?",
+    "dutch": "Waarom gaat u weg?"
+   },
+   {
+    "japanese": "Bagaimana cuaca hari ini?",
+    "romaji": "Bagaimana cuaca hari ini?",
+    "dutch": "Hoe is het weer vandaag?"
+   }
+  ]
+ },
+ "id-b-ada": {
+  "naam": "Het gebruik van 'ada' in het Indonesisch",
+  "tagline": "Leer hoe je 'ada' gebruikt om te zeggen dat iets bestaat of aanwezig is.",
+  "niveau": "basis",
+  "kernregel": "Het woord 'ada' wordt in het Indonesisch gebruikt om aan te geven dat iets bestaat of ergens aanwezig is. Het kan worden vertaald als 'er is' of 'er zijn' in het Nederlands.",
+  "patroon": "ada + [object] + [plaats]",
+  "uitleg": "In het Indonesisch gebruik je 'ada' om te zeggen dat iets of iemand ergens is. Het is vergelijkbaar met het Nederlandse 'er is' of 'er zijn'. Anders dan in het Nederlands, waar de werkwoordsvorm verandert afhankelijk van het onderwerp (is/zijn), blijft 'ada' altijd hetzelfde, ongeacht of het onderwerp enkelvoud of meervoud is. Dit maakt het gebruik van 'ada' relatief eenvoudig. Het wordt vaak gevolgd door een object en een plaats om aan te geven waar iets zich bevindt. In sommige gevallen kan 'ada' ook worden gebruikt zonder een specifieke plaats te noemen, als het duidelijk is uit de context.",
+  "opbouw": [
+   {
+    "element": "ada",
+    "rol": "Werkwoord dat bestaan of aanwezigheid aangeeft.",
+    "voorbeeld": "Ada buku di meja."
+   },
+   {
+    "element": "[object]",
+    "rol": "Het ding of de persoon die aanwezig is.",
+    "voorbeeld": "buku"
+   },
+   {
+    "element": "[plaats]",
+    "rol": "De locatie waar het object zich bevindt.",
+    "voorbeeld": "di meja"
+   },
+   {
+    "element": "di",
+    "rol": "Voorzetsel dat 'in', 'op' of 'bij' betekent, gebruikt om de locatie aan te geven.",
+    "voorbeeld": "di meja"
+   }
+  ],
+  "tips": [
+   "Gebruik 'ada' altijd in combinatie met een object en eventueel een plaats om duidelijk te maken wat en waar iets is.",
+   "Vergeet niet dat 'ada' onveranderlijk is en niet verandert met enkelvoud of meervoud.",
+   "Als de locatie al duidelijk is uit de context, kun je 'ada' gebruiken zonder een specifieke plaats te noemen.",
+   "Gebruik 'di' om een locatie aan te geven na 'ada'."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van 'di' bij het noemen van een plaats. Correct: 'Ada buku di meja.'",
+   "Verwarring over enkelvoud en meervoud. 'Ada' blijft hetzelfde, ongeacht het aantal. Correct: 'Ada buku' en 'Ada banyak buku.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Ada orang di taman.",
+    "romaji": "Ada orang di taman.",
+    "dutch": "Er is iemand in het park."
+   },
+   {
+    "japanese": "Ada kucing di bawah meja.",
+    "romaji": "Ada kucing di bawah meja.",
+    "dutch": "Er is een kat onder de tafel."
+   },
+   {
+    "japanese": "Ada banyak bintang di langit malam ini.",
+    "romaji": "Ada banyak bintang di langit malam ini.",
+    "dutch": "Er zijn veel sterren aan de hemel vanavond."
+   },
+   {
+    "japanese": "Ada surat untukmu di meja.",
+    "romaji": "Ada surat untukmu di meja.",
+    "dutch": "Er is een brief voor jou op de tafel."
+   },
+   {
+    "japanese": "Ada masalah dengan komputer ini.",
+    "romaji": "Ada masalah dengan komputer ini.",
+    "dutch": "Er is een probleem met deze computer."
+   },
+   {
+    "japanese": "Ada toko baru di sebelah rumah saya.",
+    "romaji": "Ada toko baru di sebelah rumah saya.",
+    "dutch": "Er is een nieuwe winkel naast mijn huis."
+   }
+  ]
+ },
+ "id-b-iniitu": {
+  "naam": "Het gebruik van 'ini' en 'itu' in het Indonesisch",
+  "tagline": "Leer hoe je 'dit' en 'dat' correct gebruikt in het Indonesisch.",
+  "niveau": "basis",
+  "kernregel": "'Ini' en 'itu' worden in het Indonesisch gebruikt om respectievelijk 'dit' en 'dat' aan te duiden. Deze woorden helpen om de nabijheid van een object of persoon ten opzichte van de spreker te beschrijven.",
+  "patroon": "[ini/itu] + zelfstandig naamwoord",
+  "uitleg": "In het Indonesisch worden 'ini' en 'itu' gebruikt om de afstand van een object of persoon ten opzichte van de spreker aan te geven, vergelijkbaar met 'dit' en 'dat' in het Nederlands. 'Ini' gebruik je voor iets dat dichtbij is, terwijl 'itu' wordt gebruikt voor iets dat verder weg is. Anders dan in het Nederlands, waar we vaak lidwoorden gebruiken, zijn 'ini' en 'itu' voldoende om de betekenis over te brengen. Ze worden direct voor of na het zelfstandig naamwoord geplaatst, afhankelijk van de context.",
+  "opbouw": [
+   {
+    "element": "ini",
+    "rol": "Duidt iets aan dat dichtbij de spreker is.",
+    "voorbeeld": "Buku ini (Dit boek)"
+   },
+   {
+    "element": "itu",
+    "rol": "Duidt iets aan dat verder weg is van de spreker.",
+    "voorbeeld": "Rumah itu (Dat huis)"
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het object of de persoon dat wordt aangeduid.",
+    "voorbeeld": "Kucing (Kat)"
+   },
+   {
+    "element": "plaatsing",
+    "rol": "Ini en itu kunnen zowel voor als na het zelfstandig naamwoord staan.",
+    "voorbeeld": "Ini buku (Dit is een boek) of Buku ini (Dit boek)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'ini' voor objecten of personen die fysiek dichtbij zijn.",
+   "Gebruik 'itu' voor objecten of personen die verder weg zijn of al eerder genoemd zijn.",
+   "Plaats 'ini' of 'itu' na het zelfstandig naamwoord voor meer nadruk.",
+   "In vragen kan 'ini' of 'itu' de betekenis van de vraag verduidelijken."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'ini' en 'itu' kan leiden tot misverstanden over de afstand. Zorg ervoor dat je de juiste term gebruikt afhankelijk van de nabijheid.",
+   "Het gebruik van 'ini' of 'itu' zonder een zelfstandig naamwoord kan verwarrend zijn. Voeg altijd een zelfstandig naamwoord toe voor duidelijkheid."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Mobil ini baru.",
+    "romaji": "Mobil ini baru.",
+    "dutch": "Deze auto is nieuw."
+   },
+   {
+    "japanese": "Itu adalah rumah saya.",
+    "romaji": "Itu adalah rumah saya.",
+    "dutch": "Dat is mijn huis."
+   },
+   {
+    "japanese": "Apakah ini buku Anda?",
+    "romaji": "Apakah ini buku Anda?",
+    "dutch": "Is dit uw boek?"
+   },
+   {
+    "japanese": "Saya suka baju itu.",
+    "romaji": "Saya suka baju itu.",
+    "dutch": "Ik vind dat shirt leuk."
+   },
+   {
+    "japanese": "Ini kucing saya.",
+    "romaji": "Ini kucing saya.",
+    "dutch": "Dit is mijn kat."
+   },
+   {
+    "japanese": "Itu adalah teman saya.",
+    "romaji": "Itu adalah teman saya.",
+    "dutch": "Dat is mijn vriend."
+   }
+  ]
+ },
+ "id-b-aspect": {
+  "naam": "Tijdsaanduidingen in het Indonesisch: sudah, sedang, akan",
+  "tagline": "Leer hoe je verleden, heden en toekomst uitdrukt in het Indonesisch.",
+  "niveau": "basis",
+  "kernregel": "In het Indonesisch gebruik je 'sudah', 'sedang' en 'akan' om respectievelijk de voltooid verleden tijd, de tegenwoordige tijd en de toekomende tijd aan te geven. Deze woorden helpen je om de tijdscontext van een actie of gebeurtenis te verduidelijken.",
+  "patroon": "[sudah/sedang/akan] + werkwoord",
+  "uitleg": "In het Indonesisch worden tijdsaanduidingen niet door werkwoordvervoegingen aangegeven, zoals in het Nederlands, maar door specifieke woorden voor de tijdscontext. 'Sudah' betekent 'al' of 'reeds' en geeft aan dat een actie in het verleden is voltooid. 'Sedang' betekent 'bezig met' en wordt gebruikt om aan te geven dat een actie op dit moment plaatsvindt. 'Akan' betekent 'zullen' of 'gaan' en duidt op een toekomstige actie. Deze woorden staan direct voor het werkwoord en veranderen niet, ongeacht de persoon of het getal.",
+  "opbouw": [
+   {
+    "element": "sudah",
+    "rol": "Geeft aan dat een actie in het verleden is voltooid.",
+    "voorbeeld": "Saya sudah makan."
+   },
+   {
+    "element": "sedang",
+    "rol": "Geeft aan dat een actie momenteel plaatsvindt.",
+    "voorbeeld": "Saya sedang makan."
+   },
+   {
+    "element": "akan",
+    "rol": "Geeft aan dat een actie in de toekomst zal plaatsvinden.",
+    "voorbeeld": "Saya akan makan."
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "makan"
+   },
+   {
+    "element": "subject",
+    "rol": "De persoon of het ding dat de actie uitvoert.",
+    "voorbeeld": "Saya"
+   }
+  ],
+  "tips": [
+   "Gebruik 'sudah' om te benadrukken dat een actie is afgerond.",
+   "Gebruik 'sedang' om te benadrukken dat iets nu gebeurt.",
+   "Gebruik 'akan' om plannen of voorspellingen voor de toekomst uit te drukken.",
+   "Plaats deze tijdsaanduidingen altijd direct voor het werkwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van 'sudah', 'sedang' of 'akan' kan leiden tot verwarring over de tijdscontext. Zorg ervoor dat je deze woorden gebruikt om duidelijkheid te scheppen.",
+   "Het verkeerd plaatsen van 'sudah', 'sedang' of 'akan'. Deze woorden moeten direct voor het werkwoord staan.",
+   "Verwarring tussen 'sedang' en 'akan'. Onthoud dat 'sedang' voor huidige acties is en 'akan' voor toekomstige."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia sudah pergi ke pasar.",
+    "romaji": "Dia sudah pergi ke pasar.",
+    "dutch": "Hij/zij is al naar de markt gegaan."
+   },
+   {
+    "japanese": "Mereka sedang belajar bahasa Indonesia.",
+    "romaji": "Mereka sedang belajar bahasa Indonesia.",
+    "dutch": "Zij zijn Indonesisch aan het leren."
+   },
+   {
+    "japanese": "Kami akan berlibur ke Bali.",
+    "romaji": "Kami akan berlibur ke Bali.",
+    "dutch": "Wij gaan op vakantie naar Bali."
+   },
+   {
+    "japanese": "Anak-anak sudah tidur.",
+    "romaji": "Anak-anak sudah tidur.",
+    "dutch": "De kinderen slapen al."
+   },
+   {
+    "japanese": "Saya sedang membaca buku.",
+    "romaji": "Saya sedang membaca buku.",
+    "dutch": "Ik ben een boek aan het lezen."
+   },
+   {
+    "japanese": "Dia akan membeli mobil baru.",
+    "romaji": "Dia akan membeli mobil baru.",
+    "dutch": "Hij/zij gaat een nieuwe auto kopen."
+   }
+  ]
+ },
+ "id-b-counters": {
+  "naam": "Telwoorden in het Indonesisch",
+  "tagline": "Leer hoe je telwoorden correct gebruikt in het Indonesisch.",
+  "niveau": "basis",
+  "kernregel": "Telwoorden, of 'kata bantu', worden in het Indonesisch gebruikt om hoeveelheden aan te geven en om objecten, mensen of dieren te tellen. Ze zijn essentieel voor het correct uitdrukken van aantallen en het specificeren van hoeveelheden.",
+  "patroon": "telwoord + zelfstandig naamwoord",
+  "uitleg": "In het Indonesisch worden telwoorden gebruikt in combinatie met zelfstandige naamwoorden om aantallen aan te geven. Anders dan in het Nederlands, waar telwoorden direct voor het zelfstandig naamwoord komen, worden in het Indonesisch vaak specifieke telwoorden gebruikt afhankelijk van het type object dat geteld wordt. Bijvoorbeeld, het telwoord 'buah' wordt vaak gebruikt voor algemene objecten, terwijl 'orang' specifiek is voor mensen. Het juiste gebruik van telwoorden is belangrijk voor duidelijkheid en precisie in communicatie.",
+  "opbouw": [
+   {
+    "element": "Telwoord",
+    "rol": "Geeft het aantal aan van het zelfstandig naamwoord dat volgt.",
+    "voorbeeld": "dua (twee)"
+   },
+   {
+    "element": "Kata Bantu",
+    "rol": "Specifiek telwoord dat het type object specificeert dat geteld wordt.",
+    "voorbeeld": "buah (voor algemene objecten)"
+   },
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het object, persoon of dier dat geteld wordt.",
+    "voorbeeld": "apel (appel)"
+   },
+   {
+    "element": "Volgorde",
+    "rol": "Telwoord komt eerst, gevolgd door kata bantu en dan het zelfstandig naamwoord.",
+    "voorbeeld": "dua buah apel"
+   },
+   {
+    "element": "Context",
+    "rol": "Bepaalt welk telwoord of kata bantu gebruikt moet worden.",
+    "voorbeeld": "tiga orang guru (drie leraren)"
+   }
+  ],
+  "tips": [
+   "Leer de meest voorkomende kata bantu uit je hoofd, zoals 'buah', 'orang', en 'ekor'.",
+   "Gebruik 'buah' voor algemene objecten als je niet zeker weet welk telwoord te gebruiken.",
+   "Let op de context om te bepalen welk telwoord het meest geschikt is.",
+   "Oefen met het tellen van verschillende soorten objecten om vertrouwd te raken met de juiste telwoorden."
+  ],
+  "veelgemaaktefouten": [
+   "Het vergeten van een kata bantu, bijvoorbeeld 'dua apel' in plaats van 'dua buah apel'.",
+   "Verkeerd kata bantu gebruiken, zoals 'dua ekor apel' in plaats van 'dua buah apel'.",
+   "Het plaatsen van het telwoord na het zelfstandig naamwoord, zoals 'apel dua buah' in plaats van 'dua buah apel'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "satu ekor kucing",
+    "romaji": "satu ekor kucing",
+    "dutch": "één kat"
+   },
+   {
+    "japanese": "lima orang anak",
+    "romaji": "lima orang anak",
+    "dutch": "vijf kinderen"
+   },
+   {
+    "japanese": "tiga buah buku",
+    "romaji": "tiga buah buku",
+    "dutch": "drie boeken"
+   },
+   {
+    "japanese": "empat ekor ayam",
+    "romaji": "empat ekor ayam",
+    "dutch": "vier kippen"
+   },
+   {
+    "japanese": "sepuluh buah rumah",
+    "romaji": "sepuluh buah rumah",
+    "dutch": "tien huizen"
+   },
+   {
+    "japanese": "dua belas orang siswa",
+    "romaji": "dua belas orang siswa",
+    "dutch": "twaalf studenten"
+   }
+  ]
+ },
+ "id-b-adj": {
+  "naam": "Bijvoeglijk Naamwoord in het Indonesisch",
+  "tagline": "Leer hoe je bijvoeglijke naamwoorden correct gebruikt in het Indonesisch.",
+  "niveau": "basis",
+  "kernregel": "Bijvoeglijke naamwoorden in het Indonesisch worden gebruikt om een zelfstandig naamwoord te beschrijven of te kwalificeren. Ze staan meestal na het zelfstandig naamwoord dat ze beschrijven.",
+  "patroon": "Zelfstandig Naamwoord + Bijvoeglijk Naamwoord",
+  "uitleg": "In tegenstelling tot het Nederlands, waar bijvoeglijke naamwoorden meestal vóór het zelfstandig naamwoord staan, komen ze in het Indonesisch erna. Dit betekent dat je eerst het zelfstandig naamwoord noemt en dan het bijvoeglijk naamwoord. Er zijn geen geslachten of verbuigingen voor bijvoeglijke naamwoorden in het Indonesisch, wat het eenvoudiger maakt om ze te gebruiken. Bijvoeglijke naamwoorden kunnen ook worden gebruikt om vergelijkingen te maken, vaak met behulp van woorden zoals 'lebih' (meer) of 'paling' (meest).",
+  "opbouw": [
+   {
+    "element": "Zelfstandig Naamwoord",
+    "rol": "Het onderwerp dat wordt beschreven door het bijvoeglijk naamwoord.",
+    "voorbeeld": "rumah (huis)"
+   },
+   {
+    "element": "Bijvoeglijk Naamwoord",
+    "rol": "Geeft een eigenschap of kwaliteit van het zelfstandig naamwoord aan.",
+    "voorbeeld": "besar (groot)"
+   },
+   {
+    "element": "Volgorde",
+    "rol": "Het bijvoeglijk naamwoord volgt altijd het zelfstandig naamwoord.",
+    "voorbeeld": "rumah besar (groot huis)"
+   },
+   {
+    "element": "Vergelijking",
+    "rol": "Woorden zoals 'lebih' en 'paling' worden gebruikt om vergelijkingen te maken.",
+    "voorbeeld": "lebih besar (groter)"
+   },
+   {
+    "element": "Intensiteit",
+    "rol": "Woorden zoals 'sangat' (erg) kunnen worden toegevoegd voor intensiteit.",
+    "voorbeeld": "sangat besar (erg groot)"
+   }
+  ],
+  "tips": [
+   "Onthoud dat bijvoeglijke naamwoorden altijd na het zelfstandig naamwoord komen.",
+   "Gebruik 'lebih' voor vergelijkingen en 'paling' voor superlatieven.",
+   "Bijvoeglijke naamwoorden veranderen niet van vorm, ongeacht het geslacht of aantal van het zelfstandig naamwoord.",
+   "Gebruik 'sangat' voor extra nadruk op het bijvoeglijk naamwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Het bijvoeglijk naamwoord vóór het zelfstandig naamwoord plaatsen, zoals in het Nederlands. Correct: 'mobil merah', niet 'merah mobil'.",
+   "Vergeten 'lebih' of 'paling' te gebruiken bij vergelijkingen. Correct: 'lebih cepat', niet alleen 'cepat'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "buku tebal",
+    "romaji": "boek dik",
+    "dutch": "dik boek"
+   },
+   {
+    "japanese": "kucing lucu",
+    "romaji": "kat schattig",
+    "dutch": "schattige kat"
+   },
+   {
+    "japanese": "jalan panjang",
+    "romaji": "weg lang",
+    "dutch": "lange weg"
+   },
+   {
+    "japanese": "pohon tinggi",
+    "romaji": "boom hoog",
+    "dutch": "hoge boom"
+   },
+   {
+    "japanese": "anak pintar",
+    "romaji": "kind slim",
+    "dutch": "slim kind"
+   },
+   {
+    "japanese": "kopi panas",
+    "romaji": "koffie heet",
+    "dutch": "hete koffie"
+   }
+  ]
+ },
+ "id-b-mau": {
+  "naam": "Het gebruik van 'mau' en 'ingin' in het Indonesisch",
+  "tagline": "Leer hoe je je wensen en intenties uitdrukt met 'mau' en 'ingin'.",
+  "niveau": "basis",
+  "kernregel": "'Mau' en 'ingin' worden beide gebruikt om wensen of intenties uit te drukken in het Indonesisch. 'Mau' is informeler en wordt vaker in alledaagse gesprekken gebruikt, terwijl 'ingin' formeler is en vaak in geschreven taal of formele situaties voorkomt.",
+  "patroon": "[subject] + mau/ingin + [werkwoord/zelfstandig naamwoord]",
+  "uitleg": "In het Indonesisch gebruik je 'mau' en 'ingin' om aan te geven dat je iets wilt doen of iets wilt hebben. 'Mau' is vergelijkbaar met het Nederlandse 'willen' en wordt vaak in informele contexten gebruikt. 'Ingin' heeft een iets formelere toon en kan worden vergeleken met 'verlangen naar' of 'wensen'. Beide woorden worden direct gevolgd door een werkwoord of zelfstandig naamwoord zonder dat er een voorzetsel nodig is, wat verschilt van het Nederlands waar vaak 'om te' of 'naar' wordt gebruikt.",
+  "opbouw": [
+   {
+    "element": "subject",
+    "rol": "De persoon of het ding dat de wens of intentie heeft.",
+    "voorbeeld": "Saya (ik)"
+   },
+   {
+    "element": "mau",
+    "rol": "Drukt een informele wens of intentie uit.",
+    "voorbeeld": "mau makan (wil eten)"
+   },
+   {
+    "element": "ingin",
+    "rol": "Drukt een formelere wens of verlangen uit.",
+    "voorbeeld": "ingin pergi (wil gaan)"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Geeft de actie aan die gewenst is.",
+    "voorbeeld": "makan (eten)"
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Geeft het object van de wens aan.",
+    "voorbeeld": "kopi (koffie)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'mau' in informele gesprekken met vrienden of familie.",
+   "Gebruik 'ingin' in formele situaties of wanneer je beleefd wilt zijn.",
+   "Let op de context om te bepalen welk woord het meest geschikt is.",
+   "Beide woorden kunnen zowel met werkwoorden als zelfstandige naamwoorden worden gebruikt."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'mau' in een formele brief: vervang 'mau' door 'ingin' voor een formelere toon.",
+   "Verwarring tussen 'mau' en 'ingin' in een gesprek: onthoud dat 'mau' informeler is en 'ingin' formeler.",
+   "Verkeerd gebruik van voorzetsels: in het Indonesisch zijn geen voorzetsels nodig na 'mau' of 'ingin'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Saya mau minum teh.",
+    "romaji": "Saya mau minum teh.",
+    "dutch": "Ik wil thee drinken."
+   },
+   {
+    "japanese": "Dia ingin belajar bahasa Inggris.",
+    "romaji": "Dia ingin belajar bahasa Inggris.",
+    "dutch": "Hij/zij wil Engels leren."
+   },
+   {
+    "japanese": "Kami mau pergi ke pantai.",
+    "romaji": "Kami mau pergi ke pantai.",
+    "dutch": "Wij willen naar het strand gaan."
+   },
+   {
+    "japanese": "Mereka ingin membeli rumah baru.",
+    "romaji": "Mereka ingin membeli rumah baru.",
+    "dutch": "Zij willen een nieuw huis kopen."
+   },
+   {
+    "japanese": "Apakah kamu mau makan siang?",
+    "romaji": "Apakah kamu mau makan siang?",
+    "dutch": "Wil je lunchen?"
+   },
+   {
+    "japanese": "Saya ingin menjadi dokter.",
+    "romaji": "Saya ingin menjadi dokter.",
+    "dutch": "Ik wil dokter worden."
+   }
+  ]
+ },
+ "id-b-bisa": {
+  "naam": "Gebruik van 'bisa' en 'boleh' in het Indonesisch",
+  "tagline": "Leer het verschil tussen 'bisa' en 'boleh' voor het uitdrukken van kunnen.",
+  "niveau": "basis",
+  "kernregel": "'Bisa' en 'boleh' worden beide gebruikt om het concept van 'kunnen' uit te drukken in het Indonesisch, maar ze hebben verschillende nuances. 'Bisa' verwijst naar de mogelijkheid of bekwaamheid om iets te doen, terwijl 'boleh' toestemming of toestemming impliceert.",
+  "patroon": "Subject + bisa/boleh + werkwoord",
+  "uitleg": "In het Indonesisch gebruik je 'bisa' wanneer je wilt aangeven dat iemand in staat is om iets te doen, vergelijkbaar met 'kunnen' in het Nederlands. 'Boleh' gebruik je wanneer je toestemming vraagt of geeft om iets te doen, vergelijkbaar met 'mogen'. Het is belangrijk om het verschil te begrijpen, omdat het verkeerd gebruik van deze woorden kan leiden tot misverstanden. In tegenstelling tot het Nederlands, waar 'kunnen' zowel bekwaamheid als toestemming kan betekenen, maakt het Indonesisch een duidelijk onderscheid tussen deze twee concepten.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "De persoon of het ding dat de actie uitvoert.",
+    "voorbeeld": "Saya (Ik)"
+   },
+   {
+    "element": "Bisa",
+    "rol": "Geeft aan dat de subject in staat is iets te doen.",
+    "voorbeeld": "bisa berenang (kan zwemmen)"
+   },
+   {
+    "element": "Boleh",
+    "rol": "Geeft aan dat de subject toestemming heeft om iets te doen.",
+    "voorbeeld": "boleh pergi (mag gaan)"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "De actie die uitgevoerd wordt.",
+    "voorbeeld": "makan (eten)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'bisa' voor fysieke of mentale capaciteiten.",
+   "Gebruik 'boleh' wanneer je vraagt of iemand iets mag doen.",
+   "Let op de context om te bepalen of 'bisa' of 'boleh' correct is.",
+   "In informele situaties kan 'boleh' ook gebruikt worden om beleefdheid uit te drukken."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'bisa' in plaats van 'boleh' wanneer toestemming wordt bedoeld. Correctie: Gunakan 'boleh' saat meminta izin.",
+   "Het gebruik van 'boleh' in plaats van 'bisa' voor vaardigheden. Correctie: Gunakan 'bisa' untuk menunjukkan kemampuan."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Saya bisa berbicara bahasa Inggris.",
+    "romaji": "Saya bisa berbicara bahasa Inggris.",
+    "dutch": "Ik kan Engels spreken."
+   },
+   {
+    "japanese": "Dia boleh pergi ke pesta.",
+    "romaji": "Dia boleh pergi ke pesta.",
+    "dutch": "Hij mag naar het feest gaan."
+   },
+   {
+    "japanese": "Kami bisa menyelesaikan tugas ini.",
+    "romaji": "Kami bisa menyelesaikan tugas ini.",
+    "dutch": "Wij kunnen deze taak voltooien."
+   },
+   {
+    "japanese": "Boleh saya duduk di sini?",
+    "romaji": "Boleh saya duduk di sini?",
+    "dutch": "Mag ik hier zitten?"
+   },
+   {
+    "japanese": "Anak-anak bisa bermain di taman.",
+    "romaji": "Anak-anak bisa bermain di taman.",
+    "dutch": "De kinderen kunnen in het park spelen."
+   },
+   {
+    "japanese": "Anda boleh meminjam buku ini.",
+    "romaji": "Anda boleh meminjam buku ini.",
+    "dutch": "U mag dit boek lenen."
+   }
+  ]
+ },
+ "id-b-preps": {
+  "naam": "Gebruik van 'di', 'ke' en 'dari' in Indonesisch",
+  "tagline": "Locaties en richtingen aangeven met 'di', 'ke' en 'dari'.",
+  "niveau": "basis",
+  "kernregel": "In het Indonesisch worden de voorzetsels 'di', 'ke' en 'dari' gebruikt om respectievelijk een locatie, richting en herkomst aan te geven. Deze voorzetsels helpen bij het beschrijven waar iets of iemand zich bevindt, waarheen iets of iemand gaat, en waar iets of iemand vandaan komt.",
+  "patroon": "di + locatie | ke + bestemming | dari + herkomst",
+  "uitleg": "In het Indonesisch zijn 'di', 'ke' en 'dari' essentiële voorzetsels voor het aangeven van plaats en richting. 'Di' wordt gebruikt om een locatie aan te geven, vergelijkbaar met 'in' of 'op' in het Nederlands. 'Ke' geeft een richting of bestemming aan, vergelijkbaar met 'naar'. 'Dari' betekent 'van' of 'uit' en wordt gebruikt om de herkomst te beschrijven. Anders dan in het Nederlands, waar de context soms bepaalt welk voorzetsel wordt gebruikt, zijn deze Indonesische voorzetsels vrij consistent in hun gebruik.",
+  "opbouw": [
+   {
+    "element": "di",
+    "rol": "Locatie aangeven",
+    "voorbeeld": "Saya tinggal di Jakarta."
+   },
+   {
+    "element": "ke",
+    "rol": "Richting of bestemming aangeven",
+    "voorbeeld": "Saya pergi ke sekolah."
+   },
+   {
+    "element": "dari",
+    "rol": "Herkomst of vertrekpunt aangeven",
+    "voorbeeld": "Dia datang dari Surabaya."
+   },
+   {
+    "element": "locatie",
+    "rol": "Plaats of locatie",
+    "voorbeeld": "di rumah"
+   },
+   {
+    "element": "bestemming",
+    "rol": "Doel of bestemming",
+    "voorbeeld": "ke pasar"
+   }
+  ],
+  "tips": [
+   "Gebruik 'di' altijd voor een statische locatie, waar geen beweging naartoe of vandaan is.",
+   "Gebruik 'ke' wanneer je aangeeft dat iemand of iets naar een bepaalde plek beweegt.",
+   "Gebruik 'dari' om aan te geven waar iemand of iets vandaan komt.",
+   "Let op de context van de zin om te bepalen welk voorzetsel het meest geschikt is."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'di' en 'ke': 'Saya pergi di sekolah' moet zijn 'Saya pergi ke sekolah'.",
+   "Verkeerd gebruik van 'dari' in plaats van 'ke': 'Saya datang ke Surabaya' als je bedoelt 'Ik kom uit Surabaya' moet zijn 'Saya datang dari Surabaya'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia bekerja di kantor.",
+    "romaji": "Dia bekerja di kantor.",
+    "dutch": "Hij werkt op kantoor."
+   },
+   {
+    "japanese": "Kami akan ke Bali besok.",
+    "romaji": "Kami akan ke Bali besok.",
+    "dutch": "We gaan morgen naar Bali."
+   },
+   {
+    "japanese": "Buku ini dari perpustakaan.",
+    "romaji": "Buku ini dari perpustakaan.",
+    "dutch": "Dit boek komt uit de bibliotheek."
+   },
+   {
+    "japanese": "Anak-anak bermain di taman.",
+    "romaji": "Anak-anak bermain di taman.",
+    "dutch": "De kinderen spelen in het park."
+   },
+   {
+    "japanese": "Saya pulang dari kantor.",
+    "romaji": "Saya pulang dari kantor.",
+    "dutch": "Ik kom thuis van kantoor."
+   },
+   {
+    "japanese": "Mereka pergi ke bioskop.",
+    "romaji": "Mereka pergi ke bioskop.",
+    "dutch": "Zij gaan naar de bioscoop."
+   }
+  ]
+ },
+ "id-m-ber": {
+  "naam": "Het Voorvoegsel 'ber-' in het Indonesisch",
+  "tagline": "Leer hoe je het voorvoegsel 'ber-' gebruikt om werkwoorden te vormen en hun betekenis te veranderen.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het voorvoegsel 'ber-' wordt in het Indonesisch gebruikt om werkwoorden te vormen die een toestand, bezit of een actie aangeven. Het kan ook een wederkerend karakter aan een werkwoord geven, vergelijkbaar met het Nederlandse 'hebben', 'zijn' of 'doen'.",
+  "patroon": "ber- + stamwoord",
+  "uitleg": "Het voorvoegsel 'ber-' wordt toegevoegd aan een stamwoord om een werkwoord te vormen dat vaak een toestand of activiteit beschrijft. In tegenstelling tot het Nederlands, waar werkwoorden vaak een specifieke vervoeging nodig hebben, blijft het Indonesische werkwoord met 'ber-' onveranderd, ongeacht de tijd of het onderwerp. Het gebruik van 'ber-' kan ook een wederkerend of reflexief aspect aan het werkwoord geven, zoals in 'berbicara' (spreken) wat een wederzijdse actie kan impliceren. Het is belangrijk om te weten dat niet elk werkwoord met 'ber-' een directe Nederlandse tegenhanger heeft, waardoor context essentieel is voor de juiste interpretatie.",
+  "opbouw": [
+   {
+    "element": "ber-",
+    "rol": "Voorvoegsel dat een werkwoord vormt of een toestand aangeeft.",
+    "voorbeeld": "bermain (spelen)"
+   },
+   {
+    "element": "stamwoord",
+    "rol": "Het basiswoord dat de kernbetekenis draagt.",
+    "voorbeeld": "main (spel)"
+   },
+   {
+    "element": "toestand",
+    "rol": "Geeft aan dat het onderwerp zich in een bepaalde toestand bevindt.",
+    "voorbeeld": "berdiri (staan)"
+   },
+   {
+    "element": "bezit",
+    "rol": "Geeft aan dat het onderwerp iets bezit of heeft.",
+    "voorbeeld": "beruang (geld hebben)"
+   },
+   {
+    "element": "actie",
+    "rol": "Geeft een actie of wederkerigheid aan.",
+    "voorbeeld": "berbicara (spreken)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'ber-' om een werkwoord te vormen dat een toestand of activiteit beschrijft.",
+   "Let op de context om de specifieke betekenis van een 'ber-' werkwoord te begrijpen.",
+   "Niet alle Indonesische werkwoorden met 'ber-' hebben een directe Nederlandse vertaling.",
+   "Oefen met verschillende stamwoorden om vertrouwd te raken met de variaties in betekenis."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 'ber-' met 'me-', wat een ander voorvoegsel is dat vaak een actieve handeling aanduidt. Correctie: 'bermain' (spelen) vs. 'memainkan' (iets spelen).",
+   "Het gebruik van 'ber-' bij woorden die al een werkwoord zijn zonder voorvoegsel. Correctie: Gebruik 'ber-' alleen als het werkwoord een specifieke toestand of wederkerigheid aangeeft."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "berjalan",
+    "romaji": "berjalan",
+    "dutch": "lopen"
+   },
+   {
+    "japanese": "berbicara",
+    "romaji": "berbicara",
+    "dutch": "spreken"
+   },
+   {
+    "japanese": "bermain",
+    "romaji": "bermain",
+    "dutch": "spelen"
+   },
+   {
+    "japanese": "berpikir",
+    "romaji": "berpikir",
+    "dutch": "denken"
+   },
+   {
+    "japanese": "bertemu",
+    "romaji": "bertemu",
+    "dutch": "ontmoeten"
+   },
+   {
+    "japanese": "bercermin",
+    "romaji": "bercermin",
+    "dutch": "zichzelf in de spiegel bekijken"
+   }
+  ]
+ },
+ "id-m-men": {
+  "naam": "Het gebruik van het voorvoegsel me(N)- in het Indonesisch",
+  "tagline": "Leer hoe je werkwoorden kunt vormen met het voorvoegsel me(N)-",
+  "niveau": "gemiddeld",
+  "kernregel": "Het voorvoegsel me(N)- wordt gebruikt om werkwoorden te vormen die een actieve handeling aangeven. Het verandert zelfstandig naamwoorden of basisvormen in werkwoorden en geeft aan dat de spreker of het onderwerp de actie uitvoert.",
+  "patroon": "me(N)- + stamwoord",
+  "uitleg": "In het Indonesisch wordt het voorvoegsel me(N)- gebruikt om werkwoorden te vormen die een actieve handeling beschrijven. De keuze van de juiste vorm van me(N)- hangt af van de eerste letter van de stam. Bijvoorbeeld, 'menulis' betekent 'schrijven', waarbij 'tulis' de stam is. De 'N' in me(N)- verandert afhankelijk van de eerste letter van de stam: het kan me-, mem-, men-, meng-, of meny- worden. Dit is vergelijkbaar met het Nederlandse gebruik van werkwoordsvormen om een actie aan te duiden, maar in het Indonesisch is het voorvoegsel cruciaal voor de betekenis.",
+  "opbouw": [
+   {
+    "element": "me-",
+    "rol": "Basisvorm voor stamwoorden die beginnen met l, m, n, r, w, y",
+    "voorbeeld": "melihat (zien)"
+   },
+   {
+    "element": "mem-",
+    "rol": "Gebruikt voor stamwoorden die beginnen met b, f, p (p wordt weggelaten)",
+    "voorbeeld": "membaca (lezen)"
+   },
+   {
+    "element": "men-",
+    "rol": "Gebruikt voor stamwoorden die beginnen met c, d, j, t (t wordt weggelaten)",
+    "voorbeeld": "menulis (schrijven)"
+   },
+   {
+    "element": "meng-",
+    "rol": "Gebruikt voor stamwoorden die beginnen met g, h, k (k wordt weggelaten), vokalen",
+    "voorbeeld": "mengambil (nemen)"
+   },
+   {
+    "element": "meny-",
+    "rol": "Gebruikt voor stamwoorden die beginnen met s (s wordt weggelaten)",
+    "voorbeeld": "menyapu (vegen)"
+   }
+  ],
+  "tips": [
+   "Let op de eerste letter van de stam om de juiste vorm van me(N)- te kiezen.",
+   "Oefen met verschillende stamwoorden om vertrouwd te raken met de veranderingen.",
+   "Onthoud dat sommige medeklinkers verdwijnen wanneer het voorvoegsel wordt toegevoegd.",
+   "Gebruik context om te bepalen of een werkwoord een actieve handeling beschrijft."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'mem' in plaats van 'meng' voor woorden die beginnen met een klinker. Correctie: gebruik 'meng'.",
+   "Vergeten de medeklinker te verwijderen die moet verdwijnen. Correctie: controleer altijd de eerste letter van de stam.",
+   "Het toepassen van de verkeerde vorm van me(N)-, zoals 'men' voor een woord dat begint met 'b'. Correctie: gebruik 'mem'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "memasak",
+    "romaji": "memasak",
+    "dutch": "koken"
+   },
+   {
+    "japanese": "mengerti",
+    "romaji": "mengerti",
+    "dutch": "begrijpen"
+   },
+   {
+    "japanese": "menari",
+    "romaji": "menari",
+    "dutch": "dansen"
+   },
+   {
+    "japanese": "menonton",
+    "romaji": "menonton",
+    "dutch": "kijken"
+   },
+   {
+    "japanese": "menyanyi",
+    "romaji": "menyanyi",
+    "dutch": "zingen"
+   },
+   {
+    "japanese": "membeli",
+    "romaji": "membeli",
+    "dutch": "kopen"
+   }
+  ]
+ },
+ "id-m-kan": {
+  "naam": "Het gebruik van het achtervoegsel -kan",
+  "tagline": "Beheers de nuances van het achtervoegsel -kan in het Indonesisch.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het achtervoegsel -kan wordt in het Indonesisch gebruikt om werkwoorden te vormen die een actie aangeven die op een object wordt uitgevoerd. Het benadrukt vaak het resultaat of het doel van de actie.",
+  "patroon": "stam van het werkwoord + -kan",
+  "uitleg": "In het Indonesisch wordt het achtervoegsel -kan toegevoegd aan de stam van een werkwoord om een causatief of benefactief effect aan te geven. Dit betekent dat de actie van het werkwoord wordt uitgevoerd ten behoeve van iemand anders of dat het een specifiek resultaat heeft. In tegenstelling tot het Nederlands, waar we vaak aparte woorden gebruiken om deze nuances uit te drukken, kan het Indonesisch dit met een enkel achtervoegsel doen. Bijvoorbeeld, 'membawa' betekent 'dragen', terwijl 'membawakan' betekent 'dragen voor iemand'. Het gebruik van -kan kan ook een verplichting of noodzaak impliceren, afhankelijk van de context.",
+  "opbouw": [
+   {
+    "element": "stam van het werkwoord",
+    "rol": "De basisvorm van het werkwoord waarop het achtervoegsel wordt toegepast.",
+    "voorbeeld": "bawa (dragen)"
+   },
+   {
+    "element": "-kan",
+    "rol": "Het achtervoegsel dat de actie causatief of benefactief maakt.",
+    "voorbeeld": "bawakan (dragen voor iemand)"
+   },
+   {
+    "element": "subject",
+    "rol": "Degene die de actie uitvoert.",
+    "voorbeeld": "Saya (ik)"
+   },
+   {
+    "element": "object",
+    "rol": "Degene voor wie de actie wordt uitgevoerd.",
+    "voorbeeld": "dia (hem/haar)"
+   },
+   {
+    "element": "doel",
+    "rol": "Het resultaat of doel van de actie.",
+    "voorbeeld": "hadiah (cadeau)"
+   }
+  ],
+  "tips": [
+   "Gebruik -kan om aan te geven dat een actie ten behoeve van iemand anders wordt uitgevoerd.",
+   "Let op de context om te bepalen of -kan een verplichting of noodzaak impliceert.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de nuances van -kan.",
+   "Verwar -kan niet met -i, dat vaak een andere betekenis heeft."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van -kan in plaats van -i: 'menuliskan' (opschrijven) in plaats van 'menulisi' (beschrijven).",
+   "Het vergeten van het object: 'membawakan hadiah' zonder te vermelden voor wie het is.",
+   "Het gebruik van -kan zonder de juiste context, waardoor de zin onduidelijk wordt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia membawakan saya buku.",
+    "romaji": "Dia membawakan saya buku.",
+    "dutch": "Hij/zij bracht mij een boek."
+   },
+   {
+    "japanese": "Tolong sampaikan pesan ini kepadanya.",
+    "romaji": "Tolong sampaikan pesan ini kepadanya.",
+    "dutch": "Breng deze boodschap alsjeblieft over aan hem/haar."
+   },
+   {
+    "japanese": "Saya akan membuatkan kopi untukmu.",
+    "romaji": "Saya akan membuatkan kopi untukmu.",
+    "dutch": "Ik zal koffie voor je maken."
+   },
+   {
+    "japanese": "Dia menuliskan surat untuk ibunya.",
+    "romaji": "Dia menuliskan surat untuk ibunya.",
+    "dutch": "Hij/zij schreef een brief voor zijn/haar moeder."
+   },
+   {
+    "japanese": "Kami mengirimkan paket itu kemarin.",
+    "romaji": "Kami mengirimkan paket itu kemarin.",
+    "dutch": "We hebben dat pakket gisteren verzonden."
+   },
+   {
+    "japanese": "Guru menjelaskan pelajaran kepada murid-murid.",
+    "romaji": "Guru menjelaskan pelajaran kepada murid-murid.",
+    "dutch": "De leraar legde de les uit aan de leerlingen."
+   }
+  ]
+ },
+ "id-m-i": {
+  "naam": "Het gebruik van het achtervoegsel -i in het Indonesisch",
+  "tagline": "Begrijp hoe het achtervoegsel -i de betekenis van werkwoorden verandert.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het achtervoegsel -i wordt in het Indonesisch gebruikt om werkwoorden te vormen die een herhaalde of voortdurende actie aanduiden, of om een actie te specificeren die op een specifieke locatie of richting plaatsvindt. Het kan ook een causatieve betekenis geven, waarbij de actie door iemand anders wordt uitgevoerd.",
+  "patroon": "stam + -i",
+  "uitleg": "In het Indonesisch wordt het achtervoegsel -i vaak gebruikt om werkwoorden te vormen die een specifieke richting of locatie van de actie benadrukken. Het kan ook een herhaalde of voortdurende actie aanduiden. Dit is anders dan in het Nederlands, waar dergelijke nuances vaak worden uitgedrukt door aparte woorden of zinsconstructies. Het gebruik van -i kan ook een causatieve betekenis hebben, wat betekent dat de actie door iemand anders wordt uitgevoerd, vergelijkbaar met het gebruik van 'laten' in het Nederlands.",
+  "opbouw": [
+   {
+    "element": "stam",
+    "rol": "De basisvorm van het werkwoord waarop het achtervoegsel wordt toegevoegd.",
+    "voorbeeld": "baca (lezen)"
+   },
+   {
+    "element": "-i",
+    "rol": "Het achtervoegsel dat de betekenis van het werkwoord verandert.",
+    "voorbeeld": "bacai (herhaaldelijk lezen of lezen op een specifieke plek)"
+   },
+   {
+    "element": "herhaalde actie",
+    "rol": "Geeft aan dat de actie meerdere keren wordt uitgevoerd.",
+    "voorbeeld": "cuci (wassen) -> cucii (herhaaldelijk wassen)"
+   },
+   {
+    "element": "specifieke locatie",
+    "rol": "Geeft aan dat de actie op een specifieke locatie plaatsvindt.",
+    "voorbeeld": "tulis (schrijven) -> tulisi (schrijven op een specifiek oppervlak)"
+   },
+   {
+    "element": "causatieve betekenis",
+    "rol": "Geeft aan dat de actie door iemand anders wordt uitgevoerd.",
+    "voorbeeld": "buka (openen) -> bukai (laten openen)"
+   }
+  ],
+  "tips": [
+   "Gebruik -i wanneer je de nadruk wilt leggen op de locatie of richting van de actie.",
+   "Let op de context om te bepalen of een herhaalde of causatieve betekenis bedoeld is.",
+   "Het achtervoegsel -i kan soms verwarring veroorzaken met -kan, dat ook een causatieve betekenis kan hebben.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de nuances van -i."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen -i en -kan: 'bacakan' betekent 'voorlezen', terwijl 'bacai' kan betekenen 'herhaaldelijk lezen'.",
+   "Verkeerde toepassing van -i bij werkwoorden die geen herhaling of locatie specificeren: 'makan' (eten) wordt niet 'makani'.",
+   "Het vergeten van de context: 'tulisi' kan verkeerd worden gebruikt als de locatie niet belangrijk is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia menulisi papan tulis.",
+    "romaji": "Dia menulisi papan tulis.",
+    "dutch": "Hij schrijft op het schoolbord."
+   },
+   {
+    "japanese": "Tolong cucii baju ini.",
+    "romaji": "Tolong cucii baju ini.",
+    "dutch": "Was dit kledingstuk alsjeblieft herhaaldelijk."
+   },
+   {
+    "japanese": "Saya akan mengisi botol ini.",
+    "romaji": "Saya akan mengisi botol ini.",
+    "dutch": "Ik zal deze fles vullen."
+   },
+   {
+    "japanese": "Dia membukai pintu untuk tamu.",
+    "romaji": "Dia membukai pintu untuk tamu.",
+    "dutch": "Hij laat de deur voor de gasten openen."
+   },
+   {
+    "japanese": "Kami menanami kebun dengan bunga.",
+    "romaji": "Kami menanami kebun dengan bunga.",
+    "dutch": "We planten de tuin vol met bloemen."
+   },
+   {
+    "japanese": "Guru itu mengajari murid-murid di kelas.",
+    "romaji": "Guru itu mengajari murid-murid di kelas.",
+    "dutch": "De leraar geeft les aan de leerlingen in de klas."
+   }
+  ]
+ },
+ "id-m-di": {
+  "naam": "De lijdende vorm met 'di-' in het Indonesisch",
+  "tagline": "Begrijp hoe je passieve zinnen vormt met het prefix 'di-'",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Indonesisch wordt de lijdende vorm gevormd door het prefix 'di-' toe te voegen aan een werkwoord. Dit patroon wordt gebruikt om de nadruk te leggen op de actie of het object dat de actie ondergaat, in plaats van de uitvoerder van de actie.",
+  "patroon": "di- + werkwoord",
+  "uitleg": "In tegenstelling tot het Nederlands, waar de lijdende vorm vaak met een vorm van 'worden' wordt gevormd, gebruikt het Indonesisch het prefix 'di-' direct voor het werkwoord. Dit maakt het Indonesisch vaak korter en directer. De uitvoerder van de actie kan worden weggelaten als deze niet belangrijk is, of worden toegevoegd met 'oleh' (door) als dat wel het geval is. Het gebruik van 'di-' geeft aan dat de focus ligt op het object dat de actie ondergaat, en niet op de uitvoerder.",
+  "opbouw": [
+   {
+    "element": "di-",
+    "rol": "Prefix dat aangeeft dat het werkwoord in de lijdende vorm staat.",
+    "voorbeeld": "Ditulis (geschreven)"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "Baca (lezen)"
+   },
+   {
+    "element": "object",
+    "rol": "Het object dat de actie ondergaat.",
+    "voorbeeld": "Buku (boek)"
+   },
+   {
+    "element": "oleh",
+    "rol": "Optioneel, geeft de uitvoerder van de actie aan.",
+    "voorbeeld": "Oleh guru (door de leraar)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'di-' alleen met werkwoorden die een actie beschrijven.",
+   "Als de uitvoerder van de actie belangrijk is, voeg dan 'oleh' toe gevolgd door de uitvoerder.",
+   "De lijdende vorm wordt vaak gebruikt in formele teksten en rapporten.",
+   "Let op dat 'di-' niet wordt verward met het voorzetsel 'di' dat een locatie aanduidt."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'di-' en 'di' als voorzetsel. Correctie: 'di-' voor werkwoorden, 'di' voor locaties.",
+   "Vergeten 'oleh' te gebruiken wanneer de uitvoerder van de actie belangrijk is. Correctie: Voeg 'oleh' toe als de uitvoerder moet worden vermeld.",
+   "Gebruik van 'di-' met werkwoorden die geen actie beschrijven. Correctie: Gebruik 'di-' alleen met actiegerichte werkwoorden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Rumah itu dibangun oleh ayah saya.",
+    "romaji": "Rumah itu dibangun oleh ayah saya.",
+    "dutch": "Dat huis is gebouwd door mijn vader."
+   },
+   {
+    "japanese": "Surat ini ditulis oleh dia.",
+    "romaji": "Surat ini ditulis oleh dia.",
+    "dutch": "Deze brief is geschreven door hem/haar."
+   },
+   {
+    "japanese": "Makanan sudah dimakan.",
+    "romaji": "Makanan sudah dimakan.",
+    "dutch": "Het eten is al opgegeten."
+   },
+   {
+    "japanese": "Film itu ditonton oleh banyak orang.",
+    "romaji": "Film itu ditonton oleh banyak orang.",
+    "dutch": "Die film is door veel mensen bekeken."
+   },
+   {
+    "japanese": "Pintu itu ditutup oleh angin.",
+    "romaji": "Pintu itu ditutup oleh angin.",
+    "dutch": "Die deur is door de wind dichtgedaan."
+   },
+   {
+    "japanese": "Lagu itu dinyanyikan oleh penyanyi terkenal.",
+    "romaji": "Lagu itu dinyanyikan oleh penyanyi terkenal.",
+    "dutch": "Dat lied is gezongen door een beroemde zanger."
+   }
+  ]
+ },
+ "id-m-redup": {
+  "naam": "Reduplicatie in het Indonesisch",
+  "tagline": "Herhaling voor nadruk en variatie",
+  "niveau": "basis",
+  "kernregel": "Reduplicatie in het Indonesisch wordt gebruikt om meervoud, intensiteit of variatie aan te geven. Het is een veelvoorkomend patroon waarbij een woord geheel of gedeeltelijk wordt herhaald.",
+  "patroon": "woord + woord",
+  "uitleg": "In het Indonesisch wordt reduplicatie gebruikt om verschillende betekenissen over te brengen, zoals meervoud, intensiteit of variatie. Dit patroon is anders dan in het Nederlands, waar meervoud vaak met een achtervoegsel wordt aangegeven. Bij reduplicatie wordt een woord volledig of gedeeltelijk herhaald. Het kan ook een speelse of informele toon toevoegen aan de communicatie. Het is belangrijk om de context te begrijpen, omdat de betekenis kan variëren afhankelijk van het herhaalde woord.",
+  "opbouw": [
+   {
+    "element": "Woord",
+    "rol": "Het basiswoord dat herhaald wordt.",
+    "voorbeeld": "buku (boek)"
+   },
+   {
+    "element": "Reduplicatie",
+    "rol": "Het proces van herhaling van het basiswoord.",
+    "voorbeeld": "buku-buku (boeken)"
+   },
+   {
+    "element": "Volledige herhaling",
+    "rol": "Het hele woord wordt herhaald.",
+    "voorbeeld": "anak-anak (kinderen)"
+   },
+   {
+    "element": "Gedeeltelijke herhaling",
+    "rol": "Een deel van het woord wordt herhaald, vaak bij werkwoorden.",
+    "voorbeeld": "lari-lari (rondrennen)"
+   },
+   {
+    "element": "Context",
+    "rol": "De betekenis kan variëren afhankelijk van de context waarin het woord wordt gebruikt.",
+    "voorbeeld": "orang-orang (mensen)"
+   }
+  ],
+  "tips": [
+   "Let op de context om de juiste betekenis van de reduplicatie te begrijpen.",
+   "Gebruik reduplicatie om een informele of speelse toon aan je zinnen toe te voegen.",
+   "Oefen met verschillende woorden om vertrouwd te raken met hun herhaalde vormen.",
+   "Wees je bewust van uitzonderingen waar reduplicatie niet de verwachte betekenis heeft."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van reduplicatie met enkelvoudsvormen. Correctie: 'buku' is enkelvoud, 'buku-buku' is meervoud.",
+   "Verkeerd gebruik van gedeeltelijke herhaling. Correctie: 'berjalan-jalan' betekent wandelen, niet 'berjalan'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "rumah-rumah",
+    "romaji": "rumah-rumah",
+    "dutch": "huizen"
+   },
+   {
+    "japanese": "mobil-mobil",
+    "romaji": "mobil-mobil",
+    "dutch": "auto's"
+   },
+   {
+    "japanese": "kecil-kecil",
+    "romaji": "kecil-kecil",
+    "dutch": "kleintjes"
+   },
+   {
+    "japanese": "makan-makan",
+    "romaji": "makan-makan",
+    "dutch": "eten (informeel)"
+   },
+   {
+    "japanese": "bunga-bunga",
+    "romaji": "bunga-bunga",
+    "dutch": "bloemen"
+   },
+   {
+    "japanese": "jalan-jalan",
+    "romaji": "jalan-jalan",
+    "dutch": "wandelen"
+   }
+  ]
+ },
+ "id-m-compar": {
+  "naam": "Vergelijken in het Indonesisch",
+  "tagline": "Leer hoe je vergelijkingen maakt in het Indonesisch.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Indonesisch gebruik je verschillende woorden en structuren om vergelijkingen te maken. Het is belangrijk om te weten welke woorden je moet gebruiken afhankelijk van het type vergelijking dat je wilt maken.",
+  "patroon": "lebih ... daripada, sama ... dengan, paling ...",
+  "uitleg": "In het Indonesisch zijn er verschillende manieren om vergelijkingen te maken, afhankelijk van de context. Voor een vergelijking van superioriteit gebruik je 'lebih ... daripada', wat 'meer ... dan' betekent. Voor gelijkheid gebruik je 'sama ... dengan', wat 'even ... als' betekent. Voor superlatieven gebruik je 'paling ...', wat 'het meest ...' betekent. Deze structuren zijn vergelijkbaar met het Nederlands, maar de volgorde en het gebruik van de woorden kunnen verschillen. Het is belangrijk om de juiste structuur te kiezen om je boodschap duidelijk over te brengen.",
+  "opbouw": [
+   {
+    "element": "lebih",
+    "rol": "Geeft aan dat iets meer is dan iets anders.",
+    "voorbeeld": "lebih tinggi (meer hoog)"
+   },
+   {
+    "element": "daripada",
+    "rol": "Wordt gebruikt na 'lebih' om de vergelijking te maken.",
+    "voorbeeld": "lebih tinggi daripada (hoger dan)"
+   },
+   {
+    "element": "sama",
+    "rol": "Geeft aan dat iets gelijk is aan iets anders.",
+    "voorbeeld": "sama besar (even groot)"
+   },
+   {
+    "element": "dengan",
+    "rol": "Wordt gebruikt na 'sama' om de vergelijking te maken.",
+    "voorbeeld": "sama besar dengan (even groot als)"
+   },
+   {
+    "element": "paling",
+    "rol": "Geeft aan dat iets het meest is in een bepaalde categorie.",
+    "voorbeeld": "paling tinggi (het hoogst)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'lebih' voor vergelijkingen waarbij iets meer of beter is.",
+   "Gebruik 'sama' voor vergelijkingen van gelijkheid.",
+   "Gebruik 'paling' voor superlatieven, wanneer je wilt zeggen dat iets het meest is.",
+   "Let op de volgorde van de woorden; deze kan verschillen van het Nederlands."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'dengan' in plaats van 'daripada'. Correctie: 'lebih besar daripada' in plaats van 'lebih besar dengan'.",
+   "Vergeten 'paling' te gebruiken voor superlatieven. Correctie: 'Dia paling pintar' in plaats van 'Dia pintar'.",
+   "Verwarring tussen 'sama' en 'lebih'. Correctie: 'sama tinggi dengan' in plaats van 'lebih tinggi dengan'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia lebih cepat daripada saya.",
+    "romaji": "Dia lebih cepat daripada saya.",
+    "dutch": "Hij is sneller dan ik."
+   },
+   {
+    "japanese": "Rumah ini sama besar dengan rumah itu.",
+    "romaji": "Rumah ini sama besar dengan rumah itu.",
+    "dutch": "Dit huis is even groot als dat huis."
+   },
+   {
+    "japanese": "Dia paling pandai di kelasnya.",
+    "romaji": "Dia paling pandai di kelasnya.",
+    "dutch": "Hij is de slimste in zijn klas."
+   },
+   {
+    "japanese": "Kue ini lebih manis daripada kue itu.",
+    "romaji": "Kue ini lebih manis daripada kue itu.",
+    "dutch": "Deze cake is zoeter dan die cake."
+   },
+   {
+    "japanese": "Mobil ini sama cepat dengan mobil itu.",
+    "romaji": "Mobil ini sama cepat dengan mobil itu.",
+    "dutch": "Deze auto is even snel als die auto."
+   },
+   {
+    "japanese": "Dia paling tinggi di keluarganya.",
+    "romaji": "Dia paling tinggi di keluarganya.",
+    "dutch": "Hij is de langste in zijn familie."
+   }
+  ]
+ },
+ "id-m-super": {
+  "naam": "Overtreffende Trap in het Indonesisch",
+  "tagline": "Leer hoe je de overtreffende trap in het Indonesisch vormt en gebruikt.",
+  "niveau": "basis",
+  "kernregel": "In het Indonesisch wordt de overtreffende trap gevormd door het woord 'paling' voor het bijvoeglijk naamwoord te plaatsen. Dit is vergelijkbaar met het gebruik van 'meest' in het Nederlands.",
+  "patroon": "paling + bijvoeglijk naamwoord",
+  "uitleg": "De overtreffende trap in het Indonesisch wordt eenvoudig gevormd door 'paling' voor een bijvoeglijk naamwoord te plaatsen. Dit is vergelijkbaar met het gebruik van 'meest' in het Nederlands, zoals in 'meest interessant'. In tegenstelling tot het Nederlands, waar soms ook de uitgang '-st(e)' wordt gebruikt, zoals in 'grootst', gebruikt het Indonesisch altijd 'paling'. Dit maakt het een eenvoudig en consistent patroon. Het is belangrijk om te onthouden dat 'paling' altijd voor het bijvoeglijk naamwoord komt te staan.",
+  "opbouw": [
+   {
+    "element": "paling",
+    "rol": "Geeft aan dat het bijvoeglijk naamwoord de overtreffende trap is.",
+    "voorbeeld": "paling tinggi (meest hoog)"
+   },
+   {
+    "element": "bijvoeglijk naamwoord",
+    "rol": "Beschrijft de eigenschap die in de overtreffende trap wordt gezet.",
+    "voorbeeld": "tinggi (hoog)"
+   }
+  ],
+  "tips": [
+   "Gebruik altijd 'paling' voor het bijvoeglijk naamwoord om de overtreffende trap te vormen.",
+   "Vergeet niet dat er geen verandering in de vorm van het bijvoeglijk naamwoord zelf is.",
+   "Oefen met verschillende bijvoeglijke naamwoorden om vertrouwd te raken met het patroon.",
+   "Let op dat 'paling' niet wordt gebruikt voor vergelijkingen tussen twee dingen; daarvoor gebruik je 'lebih'."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van 'paling' en alleen het bijvoeglijk naamwoord gebruiken. Correct: 'paling cepat', niet 'cepat'.",
+   "Het plaatsen van 'paling' na het bijvoeglijk naamwoord. Correct: 'paling besar', niet 'besar paling'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia adalah orang paling pintar di kelas.",
+    "romaji": "Dia adalah orang paling pintar di kelas.",
+    "dutch": "Hij/zij is de slimste in de klas."
+   },
+   {
+    "japanese": "Ini adalah buku paling menarik yang pernah saya baca.",
+    "romaji": "Ini adalah buku paling menarik yang pernah saya baca.",
+    "dutch": "Dit is het meest interessante boek dat ik ooit heb gelezen."
+   },
+   {
+    "japanese": "Gunung ini adalah gunung paling tinggi di Indonesia.",
+    "romaji": "Gunung ini adalah gunung paling tinggi di Indonesia.",
+    "dutch": "Deze berg is de hoogste berg in Indonesië."
+   },
+   {
+    "japanese": "Dia memiliki rumah paling besar di desa.",
+    "romaji": "Dia memiliki rumah paling besar di desa.",
+    "dutch": "Hij/zij heeft het grootste huis in het dorp."
+   },
+   {
+    "japanese": "Anjing ini adalah anjing paling cepat di lomba.",
+    "romaji": "Anjing ini adalah anjing paling cepat di lomba.",
+    "dutch": "Deze hond is de snelste hond in de wedstrijd."
+   },
+   {
+    "japanese": "Dia adalah penyanyi paling terkenal di negara ini.",
+    "romaji": "Dia adalah penyanyi paling terkenal di negara ini.",
+    "dutch": "Hij/zij is de beroemdste zanger(es) in dit land."
+   }
+  ]
+ },
+ "id-m-imper": {
+  "naam": "Gebiedende Wijs in het Indonesisch",
+  "tagline": "Leer hoe je opdrachten en verzoeken in het Indonesisch formuleert.",
+  "niveau": "basis",
+  "kernregel": "De gebiedende wijs in het Indonesisch wordt gebruikt om opdrachten, verzoeken of instructies te geven. Het is een directe manier om iemand te vragen iets te doen of niet te doen.",
+  "patroon": "[Werkwoord] + [Object/Doel] + [Optioneel: Beleefdheidsvorm]",
+  "uitleg": "In het Indonesisch is de gebiedende wijs eenvoudig te vormen door simpelweg het werkwoord aan het begin van de zin te plaatsen. Anders dan in het Nederlands, waar je vaak een onderwerp weglaat, behoudt het Indonesisch de structuur van de zin zonder onderwerp. Het werkwoord staat in de basisvorm, en je kunt een beleefdheidsvorm toevoegen zoals 'tolong' (alsjeblieft) om de zin vriendelijker te maken. Het gebruik van de gebiedende wijs is direct, maar kan worden verzacht door beleefdheidsvormen of door de context waarin het wordt gebruikt.",
+  "opbouw": [
+   {
+    "element": "Werkwoord",
+    "rol": "Geeft de actie aan die uitgevoerd moet worden.",
+    "voorbeeld": "Buka (Open)"
+   },
+   {
+    "element": "Object/Doel",
+    "rol": "Specificeert wat of wie de actie ondergaat.",
+    "voorbeeld": "pintu (de deur)"
+   },
+   {
+    "element": "Beleefdheidsvorm",
+    "rol": "Maakt de opdracht vriendelijker of beleefder.",
+    "voorbeeld": "tolong (alsjeblieft)"
+   },
+   {
+    "element": "Negatie",
+    "rol": "Geeft aan dat iets niet gedaan moet worden.",
+    "voorbeeld": "Jangan (Niet)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'tolong' voor beleefde verzoeken.",
+   "Plaats 'jangan' voor het werkwoord om een negatief bevel te geven.",
+   "Houd de zinnen kort en direct voor duidelijkheid.",
+   "Gebruik de gebiedende wijs in informele situaties of wanneer de context het toelaat."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van 'tolong' in formele situaties kan als onbeleefd worden ervaren. Voeg 'tolong' toe voor beleefdheid.",
+   "Verwarring tussen 'jangan' en 'tidak'. Gebruik 'jangan' voor gebiedende wijs en 'tidak' voor ontkenning in verklarende zinnen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Buka pintu.",
+    "romaji": "Buka pintu.",
+    "dutch": "Open de deur."
+   },
+   {
+    "japanese": "Tolong ambilkan air.",
+    "romaji": "Tolong ambilkan air.",
+    "dutch": "Alsjeblieft, pak wat water."
+   },
+   {
+    "japanese": "Jangan lupa kunci pintu.",
+    "romaji": "Jangan lupa kunci pintu.",
+    "dutch": "Vergeet niet de deur op slot te doen."
+   },
+   {
+    "japanese": "Duduk di sini.",
+    "romaji": "Duduk di sini.",
+    "dutch": "Ga hier zitten."
+   },
+   {
+    "japanese": "Tolong matikan lampu.",
+    "romaji": "Tolong matikan lampu.",
+    "dutch": "Alsjeblieft, doe het licht uit."
+   },
+   {
+    "japanese": "Jangan bicara keras-keras.",
+    "romaji": "Jangan bicara keras-keras.",
+    "dutch": "Praat niet te hard."
+   }
+  ]
+ },
+ "id-m-conj": {
+  "naam": "Gebruik van Voegwoorden in het Indonesisch",
+  "tagline": "Leer hoe je zinnen verbindt met Indonesische voegwoorden.",
+  "niveau": "basis",
+  "kernregel": "Voegwoorden in het Indonesisch worden gebruikt om zinnen of zinsdelen met elkaar te verbinden, net zoals in het Nederlands. Ze helpen om relaties zoals oorzaak-gevolg, tijd, en tegenstelling aan te geven.",
+  "patroon": "S1 [voegwoord] S2",
+  "uitleg": "In het Indonesisch zijn voegwoorden essentieel om complexe zinnen te vormen. Ze verbinden zinnen of zinsdelen en geven de relatie tussen deze delen aan. Net als in het Nederlands, zijn er verschillende soorten voegwoorden, zoals 'dan' (en), 'atau' (of), 'tetapi' (maar), 'karena' (omdat), en 'sehingga' (zodat). Het gebruik van het juiste voegwoord is cruciaal om de betekenis van de zin correct over te brengen. In tegenstelling tot het Nederlands, zijn er geen vervoegingen of aanpassingen nodig voor het werkwoord dat volgt op een voegwoord in het Indonesisch.",
+  "opbouw": [
+   {
+    "element": "S1",
+    "rol": "De eerste zin of zinsdeel dat je wilt verbinden.",
+    "voorbeeld": "Saya suka kopi"
+   },
+   {
+    "element": "[voegwoord]",
+    "rol": "Het verbindingswoord dat de relatie tussen de zinnen aangeeft.",
+    "voorbeeld": "dan"
+   },
+   {
+    "element": "S2",
+    "rol": "De tweede zin of zinsdeel dat je wilt verbinden.",
+    "voorbeeld": "saya suka teh"
+   },
+   {
+    "element": "dan",
+    "rol": "Een voegwoord dat 'en' betekent, gebruikt om gelijkwaardige zinnen te verbinden.",
+    "voorbeeld": "Saya suka kopi dan teh."
+   },
+   {
+    "element": "tetapi",
+    "rol": "Een voegwoord dat 'maar' betekent, gebruikt om een tegenstelling aan te geven.",
+    "voorbeeld": "Saya suka kopi tetapi tidak suka teh."
+   }
+  ],
+  "tips": [
+   "Gebruik 'dan' om twee gelijkwaardige zinnen of zinsdelen te verbinden.",
+   "Gebruik 'tetapi' om een tegenstelling aan te geven tussen twee zinnen.",
+   "Gebruik 'karena' om een reden of oorzaak aan te geven.",
+   "Gebruik 'sehingga' om een gevolg of resultaat aan te geven."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'karena' en 'sehingga'. Correctie: 'karena' voor oorzaak, 'sehingga' voor gevolg.",
+   "Verkeerd gebruik van 'tetapi' in plaats van 'dan'. Correctie: Gebruik 'dan' voor toevoegingen, 'tetapi' voor tegenstellingen.",
+   "Het vergeten van het voegwoord, waardoor de zin onvolledig is. Correctie: Zorg ervoor dat je altijd een voegwoord gebruikt om zinnen te verbinden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Saya lapar karena belum makan.",
+    "romaji": "Saya lapar karena belum makan.",
+    "dutch": "Ik ben hongerig omdat ik nog niet heb gegeten."
+   },
+   {
+    "japanese": "Dia pergi ke toko dan membeli roti.",
+    "romaji": "Dia pergi ke toko dan membeli roti.",
+    "dutch": "Hij ging naar de winkel en kocht brood."
+   },
+   {
+    "japanese": "Kami ingin pergi ke pantai atau ke gunung.",
+    "romaji": "Kami ingin pergi ke pantai atau ke gunung.",
+    "dutch": "We willen naar het strand of naar de bergen gaan."
+   },
+   {
+    "japanese": "Dia suka es krim tetapi tidak suka cokelat.",
+    "romaji": "Dia suka es krim tetapi tidak suka cokelat.",
+    "dutch": "Hij houdt van ijs, maar niet van chocolade."
+   },
+   {
+    "japanese": "Dia belajar keras sehingga lulus ujian.",
+    "romaji": "Dia belajar keras sehingga lulus ujian.",
+    "dutch": "Hij studeerde hard zodat hij slaagde voor het examen."
+   },
+   {
+    "japanese": "Mereka datang terlambat karena hujan.",
+    "romaji": "Mereka datang terlambat karena hujan.",
+    "dutch": "Ze kwamen te laat omdat het regende."
+   }
+  ]
+ },
+ "id-m-adv": {
+  "naam": "Bijwoorden in het Indonesisch",
+  "tagline": "Leer hoe bijwoorden de betekenis van zinnen kunnen veranderen en versterken.",
+  "niveau": "basis",
+  "kernregel": "Bijwoorden in het Indonesisch worden gebruikt om werkwoorden, bijvoeglijke naamwoorden of andere bijwoorden te beschrijven of te wijzigen. Ze geven extra informatie over hoe, wanneer, waar of in welke mate iets gebeurt.",
+  "patroon": "[Onderwerp] + [Werkwoord] + [Bijwoord]",
+  "uitleg": "In het Indonesisch worden bijwoorden vaak direct na het werkwoord geplaatst dat ze beschrijven. Ze kunnen ook aan het begin of einde van een zin staan, afhankelijk van de nadruk die je wilt leggen. Anders dan in het Nederlands, waar bijwoorden soms voor het werkwoord staan, is de positie in het Indonesisch flexibeler maar meestal na het werkwoord. Bijwoorden kunnen tijd, plaats, frequentie, wijze of graad aangeven en zijn essentieel voor het geven van context aan een zin.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "Dia (hij/zij)"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord dat de actie of toestand beschrijft.",
+    "voorbeeld": "berlari (rennen)"
+   },
+   {
+    "element": "Bijwoord",
+    "rol": "Het woord dat extra informatie geeft over het werkwoord, zoals hoe, waar of wanneer de actie plaatsvindt.",
+    "voorbeeld": "cepat (snel)"
+   },
+   {
+    "element": "Tijdsbepaling",
+    "rol": "Geeft aan wanneer de actie plaatsvindt.",
+    "voorbeeld": "kemarin (gisteren)"
+   },
+   {
+    "element": "Plaatsbepaling",
+    "rol": "Geeft aan waar de actie plaatsvindt.",
+    "voorbeeld": "di rumah (thuis)"
+   }
+  ],
+  "tips": [
+   "Plaats bijwoorden van tijd vaak aan het begin of einde van de zin voor duidelijkheid.",
+   "Gebruik bijwoorden van plaats na het werkwoord om de locatie van de actie aan te geven.",
+   "Bijwoorden van frequentie zoals 'selalu' (altijd) en 'kadang-kadang' (soms) kunnen zowel voor als na het werkwoord staan.",
+   "Experimenteer met de plaatsing van bijwoorden om de nadruk in je zin te veranderen."
+  ],
+  "veelgemaaktefouten": [
+   "Bijwoorden voor het werkwoord plaatsen, zoals in 'cepat berlari' in plaats van 'berlari cepat'. Correctie: Plaats het bijwoord na het werkwoord.",
+   "Verwarring tussen bijwoorden en bijvoeglijke naamwoorden. Correctie: Zorg ervoor dat bijwoorden werkwoorden beschrijven en bijvoeglijke naamwoorden zelfstandige naamwoorden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia berlari cepat.",
+    "romaji": "Dia berlari cepat.",
+    "dutch": "Hij/zij rent snel."
+   },
+   {
+    "japanese": "Kami makan di restoran tadi malam.",
+    "romaji": "Kami makan di restoran tadi malam.",
+    "dutch": "We aten gisteravond in het restaurant."
+   },
+   {
+    "japanese": "Mereka selalu datang tepat waktu.",
+    "romaji": "Mereka selalu datang tepat waktu.",
+    "dutch": "Zij komen altijd op tijd."
+   },
+   {
+    "japanese": "Anjing itu tidur di bawah meja.",
+    "romaji": "Anjing itu tidur di bawah meja.",
+    "dutch": "De hond slaapt onder de tafel."
+   },
+   {
+    "japanese": "Saya belajar bahasa Indonesia setiap hari.",
+    "romaji": "Saya belajar bahasa Indonesia setiap hari.",
+    "dutch": "Ik leer elke dag Indonesisch."
+   },
+   {
+    "japanese": "Dia berbicara dengan lembut.",
+    "romaji": "Dia berbicara dengan lembut.",
+    "dutch": "Hij/zij spreekt zachtjes."
+   }
+  ]
+ },
+ "id-g-kean": {
+  "naam": "Circumfix ke-…-an",
+  "tagline": "Leer hoe je abstracte zelfstandige naamwoorden en bijvoeglijke naamwoorden vormt met het circumfix ke-…-an.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het circumfix ke-…-an wordt in het Indonesisch gebruikt om abstracte zelfstandige naamwoorden en bijvoeglijke naamwoorden te vormen. Het kan ook een betekenis van 'overmatig' of 'te veel' toevoegen aan een woord.",
+  "patroon": "ke- + stamwoord + -an",
+  "uitleg": "Het circumfix ke-…-an wordt gebruikt om zelfstandige naamwoorden te creëren die abstracte concepten of eigenschappen aanduiden. Het kan ook bijvoeglijke naamwoorden vormen die een toestand of eigenschap beschrijven. In sommige gevallen geeft het een betekenis van 'overmatig' of 'te veel' aan, vergelijkbaar met het Nederlandse 'te' of 'overdreven'. Dit patroon is veelzijdig en kan toegepast worden op verschillende soorten stamwoorden, zoals werkwoorden, bijvoeglijke naamwoorden en zelfs andere zelfstandige naamwoorden.",
+  "opbouw": [
+   {
+    "element": "ke-",
+    "rol": "Prefix dat aangeeft dat het woord een abstract concept of eigenschap beschrijft.",
+    "voorbeeld": "keberanian (moed)"
+   },
+   {
+    "element": "stamwoord",
+    "rol": "Het basiswoord dat de kernbetekenis draagt.",
+    "voorbeeld": "berani (moedig)"
+   },
+   {
+    "element": "-an",
+    "rol": "Suffix dat het woord afsluit en de abstracte of eigenschapvorm completeert.",
+    "voorbeeld": "kebersihan (schoonheid)"
+   },
+   {
+    "element": "overmatig gebruik",
+    "rol": "Geeft een betekenis van 'te veel' aan het woord.",
+    "voorbeeld": "kemahalan (te duur)"
+   }
+  ],
+  "tips": [
+   "Gebruik ke-…-an om abstracte concepten te beschrijven, zoals gevoelens of eigenschappen.",
+   "Let op de context: soms kan ke-…-an een negatieve connotatie hebben, zoals 'te veel'.",
+   "Experimenteer met verschillende stamwoorden om te zien welke betekenisveranderingen optreden.",
+   "Oefen met het herkennen van ke-…-an woorden in teksten om hun betekenis in context te begrijpen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen ke-…-an en andere affixen zoals pe-…-an. Correct: kebersihan (schoonheid) vs. pembersihan (reiniging).",
+   "Verkeerd gebruik van het circumfix met stamwoorden die niet geschikt zijn. Correct: keindahan (schoonheid) niet keindah-an.",
+   "Het vergeten van de overmatige betekenis in contexten waar dit relevant is. Correct: kemahalan (te duur) in plaats van mahal (duur)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "kebahagiaan",
+    "romaji": "kebahagiaan",
+    "dutch": "geluk"
+   },
+   {
+    "japanese": "kesedihan",
+    "romaji": "kesedihan",
+    "dutch": "verdriet"
+   },
+   {
+    "japanese": "kecantikan",
+    "romaji": "kecantikan",
+    "dutch": "schoonheid"
+   },
+   {
+    "japanese": "ketinggian",
+    "romaji": "ketinggian",
+    "dutch": "hoogte"
+   },
+   {
+    "japanese": "kemiskinan",
+    "romaji": "kemiskinan",
+    "dutch": "armoede"
+   },
+   {
+    "japanese": "kebodohan",
+    "romaji": "kebodohan",
+    "dutch": "domheid"
+   }
+  ]
+ },
+ "id-g-pean": {
+  "naam": "Het gebruik van het circumfix pe(N)-…-an in het Indonesisch",
+  "tagline": "Leer hoe je handelingen en processen in het Indonesisch kunt uitdrukken met pe(N)-…-an.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het circumfix pe(N)-…-an wordt in het Indonesisch gebruikt om zelfstandige naamwoorden te vormen die een handeling, proces of het resultaat van een handeling beschrijven. Het is vergelijkbaar met het gebruik van het achtervoegsel '-ing' in het Engels of '-ing' in het Nederlands.",
+  "patroon": "pe(N)-…-an",
+  "uitleg": "Het circumfix pe(N)-…-an wordt toegevoegd aan werkwoorden om zelfstandige naamwoorden te creëren die een proces, handeling of het resultaat ervan beschrijven. De 'N' in de circumfix kan veranderen afhankelijk van de eerste letter van het werkwoord. Bijvoorbeeld, 'm' wordt 'pem-', 'b' wordt 'pem-', 'd' wordt 'pen-', en 't' wordt 'peny-'. Dit patroon is nuttig om abstracte concepten of activiteiten te beschrijven. Het is belangrijk om te weten dat niet alle werkwoorden met dit circumfix kunnen worden gecombineerd; sommige woorden hebben specifieke vormen of uitzonderingen.",
+  "opbouw": [
+   {
+    "element": "pe(N)-",
+    "rol": "Prefix dat aangeeft dat het om een proces of handeling gaat.",
+    "voorbeeld": "pekerjaan (werkzaamheden)"
+   },
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord waar het circumfix aan wordt toegevoegd.",
+    "voorbeeld": "kerja (werken)"
+   },
+   {
+    "element": "-an",
+    "rol": "Suffix dat het woord als zelfstandig naamwoord markeert.",
+    "voorbeeld": "pekerjaan (werkzaamheden)"
+   },
+   {
+    "element": "N-verandering",
+    "rol": "Aanpassing van de 'N' in het prefix afhankelijk van de beginletter van de stam.",
+    "voorbeeld": "pembayaran (betaling)"
+   }
+  ],
+  "tips": [
+   "Let op de verandering van de 'N' in het prefix afhankelijk van de beginletter van het werkwoord.",
+   "Niet alle werkwoorden kunnen met pe(N)-…-an worden gecombineerd; controleer een woordenboek voor correct gebruik.",
+   "Gebruik pe(N)-…-an om abstracte concepten of processen te beschrijven, zoals 'pengetahuan' (kennis).",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de veranderingen in het prefix."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde N-verandering toepassen, zoals 'penbayaran' in plaats van 'pembayaran'.",
+   "Het circumfix gebruiken met een werkwoord dat niet geschikt is, zoals 'pengmakan' in plaats van 'makanan' (eten)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "pendidikan",
+    "romaji": "pendidikan",
+    "dutch": "onderwijs"
+   },
+   {
+    "japanese": "penggunaan",
+    "romaji": "penggunaan",
+    "dutch": "gebruik"
+   },
+   {
+    "japanese": "penulisan",
+    "romaji": "penulisan",
+    "dutch": "schrijven"
+   },
+   {
+    "japanese": "pembicaraan",
+    "romaji": "pembicaraan",
+    "dutch": "gesprek"
+   },
+   {
+    "japanese": "penjualan",
+    "romaji": "penjualan",
+    "dutch": "verkoop"
+   },
+   {
+    "japanese": "pengiriman",
+    "romaji": "pengiriman",
+    "dutch": "verzending"
+   }
+  ]
+ },
+ "id-g-ter": {
+  "naam": "Het gebruik van het voorvoegsel 'ter-' in het Indonesisch",
+  "tagline": "Ontdek de veelzijdigheid van 'ter-' in de Indonesische taal.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het voorvoegsel 'ter-' wordt in het Indonesisch gebruikt om superlatieven aan te geven, onbedoelde of toevallige acties te beschrijven, en de mogelijkheid of toestand van iets uit te drukken. Het is een veelzijdig voorvoegsel dat de betekenis van een werkwoord of bijvoeglijk naamwoord kan veranderen.",
+  "patroon": "ter- + stamwoord",
+  "uitleg": "In het Indonesisch wordt 'ter-' gebruikt om verschillende betekenissen uit te drukken. Ten eerste kan het een superlatief aanduiden, vergelijkbaar met 'het meest' in het Nederlands, zoals in 'tertinggi' (het hoogst). Daarnaast kan 'ter-' een onbedoelde of toevallige actie beschrijven, zoals in 'terjatuh' (per ongeluk gevallen). Het kan ook de mogelijkheid of toestand van iets aangeven, zoals in 'terbuka' (geopend). In tegenstelling tot het Nederlands, waar vaak aparte woorden worden gebruikt om deze betekenissen uit te drukken, wordt in het Indonesisch het voorvoegsel 'ter-' aan de stam toegevoegd om de gewenste betekenis te creëren.",
+  "opbouw": [
+   {
+    "element": "ter-",
+    "rol": "Voorvoegsel dat de betekenis van het stamwoord verandert.",
+    "voorbeeld": "terbuka (geopend)"
+   },
+   {
+    "element": "stamwoord",
+    "rol": "Het basiswoord dat de kernbetekenis draagt.",
+    "voorbeeld": "buka (openen)"
+   },
+   {
+    "element": "superlatief",
+    "rol": "Geeft de hoogste graad van een eigenschap aan.",
+    "voorbeeld": "terbaik (het beste)"
+   },
+   {
+    "element": "toevallige actie",
+    "rol": "Beschrijft een actie die per ongeluk gebeurt.",
+    "voorbeeld": "terbakar (per ongeluk verbrand)"
+   },
+   {
+    "element": "toestand",
+    "rol": "Geeft de staat of conditie van iets aan.",
+    "voorbeeld": "terkunci (op slot)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'ter-' om een superlatief te vormen wanneer je iets als het meest of het minst wilt beschrijven.",
+   "Gebruik 'ter-' om een onbedoelde actie aan te geven, vooral als de actie onverwacht of per ongeluk is.",
+   "Let op de context om te bepalen of 'ter-' een toestand of een mogelijkheid uitdrukt.",
+   "Oefen met verschillende stamwoorden om vertrouwd te raken met de veelzijdigheid van 'ter-'."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'ter-' bij werkwoorden die geen onbedoelde actie beschrijven. Correctie: Gebruik 'ter-' alleen als de actie per ongeluk is.",
+   "Verwarring tussen 'ter-' en 'ber-' voorvoegsels. Correctie: 'ter-' wordt gebruikt voor superlatieven en toevallige acties, terwijl 'ber-' vaak een actieve handeling aanduidt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "terlambat",
+    "romaji": "terlambat",
+    "dutch": "te laat"
+   },
+   {
+    "japanese": "terlihat",
+    "romaji": "terlihat",
+    "dutch": "zichtbaar"
+   },
+   {
+    "japanese": "terdengar",
+    "romaji": "terdengar",
+    "dutch": "hoorbaar"
+   },
+   {
+    "japanese": "tercipta",
+    "romaji": "tercipta",
+    "dutch": "gecreëerd"
+   },
+   {
+    "japanese": "terkenal",
+    "romaji": "terkenal",
+    "dutch": "beroemd"
+   },
+   {
+    "japanese": "terpaksa",
+    "romaji": "terpaksa",
+    "dutch": "gedwongen"
+   }
+  ]
+ },
+ "id-g-se": {
+  "naam": "Het gebruik van het voorvoegsel 'se-' in het Indonesisch",
+  "tagline": "Leer hoe je het voorvoegsel 'se-' kunt gebruiken om vergelijkingen en totaliteit uit te drukken.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het voorvoegsel 'se-' wordt in het Indonesisch gebruikt om vergelijkingen aan te geven of om een idee van totaliteit of volledigheid uit te drukken. Het kan worden toegepast op bijvoeglijke naamwoorden, zelfstandige naamwoorden en werkwoorden om verschillende betekenissen te creëren.",
+  "patroon": "se- + [bijvoeglijk naamwoord/zelfstandig naamwoord/werkwoord]",
+  "uitleg": "Het voorvoegsel 'se-' kan verschillende betekenissen hebben, afhankelijk van het woord waarop het wordt toegepast. Wanneer het wordt gebruikt met bijvoeglijke naamwoorden, geeft het een vergelijking aan, vergelijkbaar met 'zo...als' in het Nederlands. Bij zelfstandige naamwoorden kan het totaliteit of volledigheid aangeven, vergelijkbaar met 'alle' of 'heel'. Bij werkwoorden kan het een eenmalige of volledige actie aanduiden. Het is belangrijk om de context te begrijpen om de juiste betekenis te interpreteren.",
+  "opbouw": [
+   {
+    "element": "se-",
+    "rol": "Voorvoegsel dat verschillende betekenissen kan hebben afhankelijk van de context.",
+    "voorbeeld": "sebesar (zo groot als)"
+   },
+   {
+    "element": "[bijvoeglijk naamwoord]",
+    "rol": "Geeft een eigenschap aan die wordt vergeleken.",
+    "voorbeeld": "sepanjang (zo lang als)"
+   },
+   {
+    "element": "[zelfstandig naamwoord]",
+    "rol": "Drukt totaliteit of volledigheid uit.",
+    "voorbeeld": "sekota (de hele stad)"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "Geeft een eenmalige of volledige actie aan.",
+    "voorbeeld": "sekali (één keer)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'se-' met bijvoeglijke naamwoorden om vergelijkingen te maken, zoals 'seindah' (zo mooi als).",
+   "Bij zelfstandige naamwoorden kan 'se-' totaliteit aanduiden, zoals 'sekeluarga' (het hele gezin).",
+   "Let op de context om de juiste betekenis van 'se-' te bepalen.",
+   "Oefen met verschillende woorden om vertrouwd te raken met de nuances van 'se-'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'se-' en 'satu'. 'Se-' betekent niet altijd 'één', het kan ook 'zo...als' betekenen.",
+   "Het vergeten van de context bij het interpreteren van 'se-'. Bijvoorbeeld, 'sebesar' kan zowel 'zo groot als' als 'de hele grootte' betekenen afhankelijk van de context."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Sebesar rumah ini.",
+    "romaji": "Sebesar rumah ini.",
+    "dutch": "Zo groot als dit huis."
+   },
+   {
+    "japanese": "Sekolah ini seindah taman.",
+    "romaji": "Sekolah ini seindah taman.",
+    "dutch": "Deze school is zo mooi als een tuin."
+   },
+   {
+    "japanese": "Sekeluarga pergi berlibur.",
+    "romaji": "Sekeluarga pergi berlibur.",
+    "dutch": "Het hele gezin ging op vakantie."
+   },
+   {
+    "japanese": "Sekali lagi, tolong.",
+    "romaji": "Sekali lagi, tolong.",
+    "dutch": "Nog één keer, alsjeblieft."
+   },
+   {
+    "japanese": "Semua siswa sekelas hadir.",
+    "romaji": "Semua siswa sekelas hadir.",
+    "dutch": "Alle leerlingen van de klas zijn aanwezig."
+   },
+   {
+    "japanese": "Sepanjang jalan ini.",
+    "romaji": "Sepanjang jalan ini.",
+    "dutch": "Zo lang als deze weg."
+   }
+  ]
+ },
+ "id-g-yang": {
+  "naam": "Betrekkelijke bijzin met 'yang'",
+  "tagline": "Leer hoe je betrekkelijke bijzinnen in het Indonesisch vormt met 'yang'.",
+  "niveau": "basis",
+  "kernregel": "Het woord 'yang' wordt in het Indonesisch gebruikt om betrekkelijke bijzinnen te vormen, vergelijkbaar met 'die' of 'dat' in het Nederlands. Het verbindt een zelfstandig naamwoord met extra informatie die het beschrijft.",
+  "patroon": "Zelfstandig naamwoord + 'yang' + bijzin",
+  "uitleg": "In het Indonesisch gebruik je 'yang' om een betrekkelijke bijzin te introduceren, net zoals 'die' of 'dat' in het Nederlands. Het helpt om meer informatie te geven over een zelfstandig naamwoord. Anders dan in het Nederlands, verandert 'yang' niet afhankelijk van het geslacht of aantal van het zelfstandig naamwoord. Het blijft altijd hetzelfde, ongeacht de context. Dit maakt het gebruik van 'yang' relatief eenvoudig, omdat je je geen zorgen hoeft te maken over verbuigingen. Het is belangrijk om te weten dat de bijzin na 'yang' altijd een werkwoord of een bijvoeglijk naamwoord bevat dat meer vertelt over het zelfstandig naamwoord.",
+  "opbouw": [
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het onderwerp of object dat nader wordt toegelicht.",
+    "voorbeeld": "buku (boek)"
+   },
+   {
+    "element": "'yang'",
+    "rol": "Verbindt het zelfstandig naamwoord met de beschrijvende bijzin.",
+    "voorbeeld": "yang"
+   },
+   {
+    "element": "Bijzin",
+    "rol": "Geeft extra informatie over het zelfstandig naamwoord.",
+    "voorbeeld": "saya baca (ik lees)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'yang' om extra informatie te geven over een persoon, plaats of ding.",
+   "Onthoud dat 'yang' onveranderlijk is en altijd hetzelfde blijft.",
+   "Plaats de bijzin direct na 'yang' voor een vloeiende zin.",
+   "Probeer te oefenen met verschillende zelfstandige naamwoorden om vertrouwd te raken met het patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van 'yang' tussen het zelfstandig naamwoord en de bijzin. Correctie: Voeg 'yang' toe.",
+   "Verwarring over het gebruik van 'yang' met meervoudsvormen. Correctie: Onthoud dat 'yang' niet verandert."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Anak yang bermain di taman adalah adik saya.",
+    "romaji": "Anak yang bermain di taman adalah adik saya.",
+    "dutch": "Het kind dat in het park speelt is mijn broertje."
+   },
+   {
+    "japanese": "Mobil yang diparkir di depan rumah itu milik ayah saya.",
+    "romaji": "Mobil yang diparkir di depan rumah itu milik ayah saya.",
+    "dutch": "De auto die voor het huis geparkeerd staat is van mijn vader."
+   },
+   {
+    "japanese": "Kue yang dibuat ibu sangat lezat.",
+    "romaji": "Kue yang dibuat ibu sangat lezat.",
+    "dutch": "De taart die moeder heeft gemaakt is erg lekker."
+   },
+   {
+    "japanese": "Film yang kita tonton tadi malam sangat menarik.",
+    "romaji": "Film yang kita tonton tadi malam sangat menarik.",
+    "dutch": "De film die we gisteravond keken was erg interessant."
+   },
+   {
+    "japanese": "Rumah yang dijual itu sangat besar.",
+    "romaji": "Rumah yang dijual itu sangat besar.",
+    "dutch": "Het huis dat te koop staat is erg groot."
+   },
+   {
+    "japanese": "Orang yang berbicara dengan guru adalah kakak saya.",
+    "romaji": "Orang yang berbicara dengan guru adalah kakak saya.",
+    "dutch": "De persoon die met de leraar praat is mijn oudere broer."
+   }
+  ]
+ },
+ "id-g-passief2": {
+  "naam": "Passieve zinnen met voornaamwoorden in het Indonesisch",
+  "tagline": "Leer hoe je passieve zinnen met voornaamwoorden correct vormt in het Indonesisch.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Indonesisch worden passieve zinnen vaak gebruikt om de nadruk te leggen op de ontvanger van de actie. Wanneer je een voornaamwoord gebruikt in een passieve zin, verandert de structuur van de zin om de ontvanger van de actie te benadrukken.",
+  "patroon": "Voornaamwoord + di-werkwoord + door + onderwerp",
+  "uitleg": "In het Indonesisch wordt de passieve vorm vaak gebruikt om de focus te leggen op de persoon of het object dat de actie ondergaat. Dit is anders dan in het Nederlands, waar de actieve vorm vaker wordt gebruikt. Bij het gebruik van voornaamwoorden in passieve zinnen, zoals 'ik', 'jij', 'hij', 'wij', enzovoort, wordt het voornaamwoord aan het begin van de zin geplaatst, gevolgd door het werkwoord in de passieve vorm (met het prefix 'di-'), en vervolgens het onderwerp dat de actie uitvoert, vaak voorafgegaan door 'oleh' (door). Dit patroon helpt om de ontvanger van de actie te benadrukken.",
+  "opbouw": [
+   {
+    "element": "Voornaamwoord",
+    "rol": "Geeft aan wie of wat de actie ondergaat.",
+    "voorbeeld": "Saya (ik)"
+   },
+   {
+    "element": "di-werkwoord",
+    "rol": "Het werkwoord in de passieve vorm dat de actie beschrijft.",
+    "voorbeeld": "dibaca (gelezen)"
+   },
+   {
+    "element": "oleh",
+    "rol": "Geeft aan door wie de actie wordt uitgevoerd.",
+    "voorbeeld": "oleh guru (door de leraar)"
+   },
+   {
+    "element": "Onderwerp",
+    "rol": "De persoon of het ding dat de actie uitvoert.",
+    "voorbeeld": "guru (leraar)"
+   }
+  ],
+  "tips": [
+   "Gebruik 'oleh' om aan te geven door wie de actie wordt uitgevoerd.",
+   "In informele contexten kan 'oleh' soms worden weggelaten als het duidelijk is wie de actie uitvoert.",
+   "Zorg ervoor dat het werkwoord correct is vervoegd in de passieve vorm met 'di-'.",
+   "Let op de volgorde van de zin: voornaamwoord, di-werkwoord, (oleh), onderwerp."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van 'oleh' wanneer het niet duidelijk is wie de actie uitvoert. Correctie: Voeg 'oleh' toe voor duidelijkheid.",
+   "Verkeerde volgorde van de zin. Correctie: Begin met het voornaamwoord, gevolgd door het di-werkwoord.",
+   "Verkeerd gebruik van het werkwoord zonder 'di-'. Correctie: Voeg 'di-' toe aan het werkwoord voor de passieve vorm."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Saya dibantu oleh teman.",
+    "romaji": "Saya dibantu oleh teman.",
+    "dutch": "Ik word geholpen door een vriend."
+   },
+   {
+    "japanese": "Dia dipanggil oleh ibunya.",
+    "romaji": "Dia dipanggil oleh ibunya.",
+    "dutch": "Hij wordt geroepen door zijn moeder."
+   },
+   {
+    "japanese": "Kami diajari oleh guru.",
+    "romaji": "Kami diajari oleh guru.",
+    "dutch": "Wij worden onderwezen door de leraar."
+   },
+   {
+    "japanese": "Kamu diundang oleh mereka.",
+    "romaji": "Kamu diundang oleh mereka.",
+    "dutch": "Jij wordt uitgenodigd door hen."
+   },
+   {
+    "japanese": "Buku itu dibaca oleh saya.",
+    "romaji": "Buku itu dibaca oleh saya.",
+    "dutch": "Dat boek wordt door mij gelezen."
+   },
+   {
+    "japanese": "Surat ini ditulis oleh dia.",
+    "romaji": "Surat ini ditulis oleh dia.",
+    "dutch": "Deze brief is door hem geschreven."
+   }
+  ]
+ },
+ "id-g-kalau": {
+  "naam": "Voorwaardelijke Zinnen in het Indonesisch",
+  "tagline": "Leer hoe je voorwaardelijke zinnen maakt met 'kalau' en 'jika'.",
+  "niveau": "basis",
+  "kernregel": "In het Indonesisch gebruik je 'kalau' of 'jika' om voorwaardelijke zinnen te maken. Deze woorden betekenen 'als' of 'indien' en worden gebruikt om een voorwaarde voor een actie of situatie aan te geven.",
+  "patroon": "Kalau/Jika + voorwaarde, dan + gevolg",
+  "uitleg": "Voorwaardelijke zinnen in het Indonesisch worden vaak ingeleid met 'kalau' of 'jika', wat beide 'als' of 'indien' betekent. Deze woorden worden gevolgd door een voorwaarde, waarna het gevolg van die voorwaarde wordt genoemd. In tegenstelling tot het Nederlands, waar we soms de volgorde van de zin omdraaien, blijft de volgorde in het Indonesisch meestal hetzelfde. 'Kalau' wordt in informele situaties vaker gebruikt, terwijl 'jika' formeler is. Het is belangrijk om de juiste volgorde en context te gebruiken om misverstanden te voorkomen.",
+  "opbouw": [
+   {
+    "element": "Kalau/Jika",
+    "rol": "Inleidend woord voor de voorwaarde",
+    "voorbeeld": "Kalau hujan, saya tidak pergi."
+   },
+   {
+    "element": "Voorwaarde",
+    "rol": "De situatie die moet plaatsvinden",
+    "voorbeeld": "hujan (het regent)"
+   },
+   {
+    "element": "Komma",
+    "rol": "Scheiding tussen voorwaarde en gevolg",
+    "voorbeeld": "Kalau hujan, saya tidak pergi."
+   },
+   {
+    "element": "Gevolg",
+    "rol": "De actie of situatie die volgt op de voorwaarde",
+    "voorbeeld": "saya tidak pergi (ik ga niet)"
+   },
+   {
+    "element": "Dan",
+    "rol": "Optioneel verbindingswoord voor het gevolg",
+    "voorbeeld": "Kalau hujan, (dan) saya tidak pergi."
+   }
+  ],
+  "tips": [
+   "Gebruik 'kalau' voor informele gesprekken en 'jika' voor formele situaties.",
+   "Het woord 'dan' is optioneel en wordt zelden gebruikt in informele spreektaal.",
+   "Zorg ervoor dat de voorwaarde en het gevolg logisch met elkaar verbonden zijn.",
+   "Oefen met het maken van zinnen door verschillende voorwaarden en gevolgen te combineren."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'kalau' in formele teksten. Correctie: Gebruik 'jika' in formele contexten.",
+   "Verkeerde volgorde van voorwaarde en gevolg. Correctie: Begin altijd met de voorwaarde gevolgd door het gevolg.",
+   "Verwarring tussen 'kalau' en 'kapan'. Correctie: Gebruik 'kalau' voor voorwaarden en 'kapan' voor tijdsaanduidingen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Kalau kamu lapar, makanlah.",
+    "romaji": "Kalau kamu lapar, makanlah.",
+    "dutch": "Als je honger hebt, eet dan."
+   },
+   {
+    "japanese": "Jika dia datang, beri tahu saya.",
+    "romaji": "Jika dia datang, beri tahu saya.",
+    "dutch": "Als hij komt, laat het me weten."
+   },
+   {
+    "japanese": "Kalau saya punya waktu, saya akan pergi.",
+    "romaji": "Kalau saya punya waktu, saya akan pergi.",
+    "dutch": "Als ik tijd heb, zal ik gaan."
+   },
+   {
+    "japanese": "Jika kamu belajar, kamu akan lulus.",
+    "romaji": "Jika kamu belajar, kamu akan lulus.",
+    "dutch": "Als je studeert, zul je slagen."
+   },
+   {
+    "japanese": "Kalau hujan, bawa payung.",
+    "romaji": "Kalau hujan, bawa payung.",
+    "dutch": "Als het regent, neem een paraplu mee."
+   },
+   {
+    "japanese": "Jika ada masalah, hubungi saya.",
+    "romaji": "Jika ada masalah, hubungi saya.",
+    "dutch": "Als er een probleem is, neem contact met me op."
+   }
+  ]
+ },
+ "id-g-untuk": {
+  "naam": "Gebruik van 'untuk' en 'supaya' voor doelen",
+  "tagline": "Leer hoe je doelen en intenties uitdrukt in het Indonesisch.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Indonesisch worden 'untuk' en 'supaya' gebruikt om doelen of intenties uit te drukken. 'Untuk' wordt vaak gebruikt voor meer algemene of objectieve doelen, terwijl 'supaya' meer persoonlijke of subjectieve intenties uitdrukt.",
+  "patroon": "[Hoofdzin] + untuk/supaya + [Doel/Intentie]",
+  "uitleg": "In het Indonesisch gebruik je 'untuk' en 'supaya' om een doel of intentie aan te geven. 'Untuk' is vergelijkbaar met het Nederlandse 'om te' en wordt gebruikt voor meer feitelijke of algemene doelen. 'Supaya' lijkt meer op 'zodat' en wordt gebruikt wanneer het doel een persoonlijke wens of intentie betreft. Hoewel beide woorden doelen aangeven, ligt het verschil in de mate van subjectiviteit en de context waarin ze worden gebruikt. Het is belangrijk om het juiste woord te kiezen om de juiste nuance in je zin over te brengen.",
+  "opbouw": [
+   {
+    "element": "Hoofdzin",
+    "rol": "De hoofdzin geeft de context of actie die leidt tot het doel.",
+    "voorbeeld": "Saya belajar keras."
+   },
+   {
+    "element": "Untuk",
+    "rol": "Wordt gebruikt om een objectief doel aan te geven.",
+    "voorbeeld": "Saya belajar keras untuk lulus ujian."
+   },
+   {
+    "element": "Supaya",
+    "rol": "Wordt gebruikt om een subjectief doel of wens aan te geven.",
+    "voorbeeld": "Saya belajar keras supaya orang tua saya bangga."
+   },
+   {
+    "element": "Doel/Intentie",
+    "rol": "Beschrijft het doel of de intentie van de actie in de hoofdzin.",
+    "voorbeeld": "lulus ujian"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Het werkwoord in de hoofdzin dat de actie beschrijft.",
+    "voorbeeld": "belajar"
+   }
+  ],
+  "tips": [
+   "Gebruik 'untuk' wanneer je een feitelijk of algemeen doel wilt aangeven.",
+   "Gebruik 'supaya' wanneer het doel meer persoonlijk of emotioneel geladen is.",
+   "Let op de context van de zin om te bepalen welk woord het meest geschikt is.",
+   "Oefen met verschillende zinsconstructies om het verschil tussen 'untuk' en 'supaya' beter te begrijpen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'supaya' in plaats van 'untuk' bij objectieve doelen. Correctie: 'Saya pergi ke toko untuk membeli makanan.'",
+   "Het gebruik van 'untuk' in plaats van 'supaya' bij persoonlijke wensen. Correctie: 'Dia belajar keras supaya dia een beur krijgt.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia bekerja keras untuk mendapatkan promosi.",
+    "romaji": "Dia bekerja keras untuk mendapatkan promosi.",
+    "dutch": "Hij werkt hard om promotie te krijgen."
+   },
+   {
+    "japanese": "Kami menabung uang supaya bisa pergi berlibur.",
+    "romaji": "Kami menabung uang supaya bisa pergi berlibur.",
+    "dutch": "We sparen geld zodat we op vakantie kunnen gaan."
+   },
+   {
+    "japanese": "Mereka belajar bahasa Inggris untuk berkomunikasi dengan turis.",
+    "romaji": "Mereka belajar bahasa Inggris untuk berkomunikasi dengan turis.",
+    "dutch": "Zij leren Engels om met toeristen te communiceren."
+   },
+   {
+    "japanese": "Saya makan sayur supaya sehat.",
+    "romaji": "Saya makan sayur supaya sehat.",
+    "dutch": "Ik eet groenten zodat ik gezond ben."
+   },
+   {
+    "japanese": "Anak-anak bermain di luar untuk bersenang-senang.",
+    "romaji": "Anak-anak bermain di luar untuk bersenang-senang.",
+    "dutch": "De kinderen spelen buiten om plezier te hebben."
+   },
+   {
+    "japanese": "Ibu memasak makanan enak supaya keluarga senang.",
+    "romaji": "Ibu memasak makanan enak supaya keluarga senang.",
+    "dutch": "Moeder kookt lekker eten zodat de familie blij is."
+   }
+  ]
+ },
+ "id-g-sambil": {
+  "naam": "Gebruik van 'sambil' en 'ketika' in het Indonesisch",
+  "tagline": "Leer hoe je gelijktijdige en opeenvolgende acties beschrijft.",
+  "niveau": "basis",
+  "kernregel": "'Sambil' en 'ketika' zijn Indonesische voegwoorden die worden gebruikt om acties in tijd te verbinden. 'Sambil' wordt gebruikt om gelijktijdige acties aan te geven, terwijl 'ketika' wordt gebruikt voor opeenvolgende of specifieke tijdstippen.",
+  "patroon": "sambil + [werkwoord] / ketika + [zin]",
+  "uitleg": "In het Indonesisch gebruik je 'sambil' om aan te geven dat twee acties tegelijkertijd plaatsvinden. Het kan worden vergeleken met 'terwijl' in het Nederlands. 'Ketika' daarentegen wordt gebruikt om een specifieke tijd aan te geven waarop iets gebeurt, vergelijkbaar met 'toen' of 'wanneer'. Het is belangrijk om het juiste voegwoord te kiezen om de juiste tijdsrelatie tussen de acties weer te geven.",
+  "opbouw": [
+   {
+    "element": "sambil",
+    "rol": "Voegwoord voor gelijktijdige acties",
+    "voorbeeld": "Dia bernyanyi sambil bermain gitar."
+   },
+   {
+    "element": "ketika",
+    "rol": "Voegwoord voor specifieke tijdstippen",
+    "voorbeeld": "Ketika saya tiba, dia sudah pergi."
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Geeft de actie aan",
+    "voorbeeld": "bernyanyi"
+   },
+   {
+    "element": "zin",
+    "rol": "Volledige zin voor context",
+    "voorbeeld": "Ketika saya makan, telepon berdering."
+   },
+   {
+    "element": "tijdstip",
+    "rol": "Specifieke tijd of gebeurtenis",
+    "voorbeeld": "saya tiba"
+   }
+  ],
+  "tips": [
+   "Gebruik 'sambil' als je twee acties tegelijkertijd wilt beschrijven.",
+   "Gebruik 'ketika' om een specifieke gebeurtenis of tijdstip te markeren.",
+   "Let op de werkwoordvormen die je gebruikt na 'sambil' en 'ketika'.",
+   "Probeer de context van de zin te begrijpen om het juiste voegwoord te kiezen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'sambil' voor opeenvolgende acties. Correctie: gebruik 'ketika'.",
+   "Verwarring tussen 'ketika' en 'kalau'. 'Ketika' is voor specifieke tijdstippen, 'kalau' voor voorwaarden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Dia membaca buku sambil mendengarkan musik.",
+    "romaji": "Dia membaca buku sambil mendengarkan musik.",
+    "dutch": "Hij leest een boek terwijl hij naar muziek luistert."
+   },
+   {
+    "japanese": "Saya makan es krim sambil berjalan di taman.",
+    "romaji": "Saya makan es krim sambil berjalan di taman.",
+    "dutch": "Ik eet ijs terwijl ik in het park wandel."
+   },
+   {
+    "japanese": "Ketika hujan turun, kami bermain di dalam huis.",
+    "romaji": "Ketika hujan turun, kami bermain di dalam huis.",
+    "dutch": "Toen het regende, speelden we binnen."
+   },
+   {
+    "japanese": "Ketika dia datang, saya sedang memasak.",
+    "romaji": "Ketika dia datang, saya sedang memasak.",
+    "dutch": "Toen hij kwam, was ik aan het koken."
+   },
+   {
+    "japanese": "Dia tertawa sambil menonton film lucu.",
+    "romaji": "Dia tertawa sambil menonton film lucu.",
+    "dutch": "Ze lacht terwijl ze een grappige film kijkt."
+   },
+   {
+    "japanese": "Ketika saya kecil, saya suka bermain di pantai.",
+    "romaji": "Ketika saya kecil, saya suka bermain di pantai.",
+    "dutch": "Toen ik klein was, speelde ik graag op het strand."
+   }
+  ]
+ },
+ "id-g-partikel": {
+  "naam": "Gebruik van de partikels -lah, -kah en pun in het Indonesisch",
+  "tagline": "Verfijn je Indonesisch met de juiste partikels!",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Indonesisch worden de partikels -lah, -kah en pun gebruikt om nadruk te leggen, vragen te stellen of inclusiviteit uit te drukken. Deze partikels veranderen de betekenis of functie van een zin subtiel maar effectief.",
+  "patroon": "[Stam] + -lah / -kah / pun",
+  "uitleg": "De partikels -lah, -kah en pun worden in het Indonesisch gebruikt om zinnen te modificeren. -Lah wordt vaak gebruikt om nadruk te geven of een beleefde aansporing te maken. -Kah wordt gebruikt om vragen te formuleren en maakt de zin formeel. Pun wordt gebruikt om inclusiviteit of zelfs een zekere mate van verrassing uit te drukken, vergelijkbaar met 'zelfs' in het Nederlands. Deze partikels worden direct aan de stam van een werkwoord, bijvoeglijk naamwoord of zelfstandig naamwoord toegevoegd.",
+  "opbouw": [
+   {
+    "element": "-lah",
+    "rol": "Nadruk of beleefde aansporing",
+    "voorbeeld": "Pergilah! (Ga!)"
+   },
+   {
+    "element": "-kah",
+    "rol": "Vormt een vraag",
+    "voorbeeld": "Apakah kamu suka kopi? (Hou je van koffie?)"
+   },
+   {
+    "element": "pun",
+    "rol": "Inclusiviteit of verrassing",
+    "voorbeeld": "Dia pun datang. (Zelfs hij kwam.)"
+   },
+   {
+    "element": "Stam",
+    "rol": "De basisvorm van een woord waaraan de partikel wordt toegevoegd",
+    "voorbeeld": "Datang (komen)"
+   }
+  ],
+  "tips": [
+   "Gebruik -lah om een zin beleefd te maken, vooral in instructies of bevelen.",
+   "Gebruik -kah in formele situaties om vragen te stellen.",
+   "Gebruik pun om te benadrukken dat iets onverwacht of inclusief is.",
+   "Let op de context waarin je deze partikels gebruikt, omdat ze de toon van de zin kunnen veranderen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van -lah in vragen: 'Apakah-lah?' is incorrect. Gebruik alleen -kah.",
+   "Het vergeten van de juiste context voor pun: 'Saya pun tidak tahu' kan verwarrend zijn als de context niet duidelijk is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Bukalah pintu.",
+    "romaji": "Bukalah pintu.",
+    "dutch": "Doe de deur open."
+   },
+   {
+    "japanese": "Maukah kamu datang?",
+    "romaji": "Maukah kamu datang?",
+    "dutch": "Wil je komen?"
+   },
+   {
+    "japanese": "Dia pun bisa melakukannya.",
+    "romaji": "Dia pun bisa melakukannya.",
+    "dutch": "Zelfs hij kan het doen."
+   },
+   {
+    "japanese": "Bacalah buku ini.",
+    "romaji": "Bacalah buku ini.",
+    "dutch": "Lees dit boek."
+   },
+   {
+    "japanese": "Apakah ini benar?",
+    "romaji": "Apakah ini benar?",
+    "dutch": "Is dit waar?"
+   },
+   {
+    "japanese": "Anak-anak pun tahu jawabannya.",
+    "romaji": "Anak-anak pun tahu jawabannya.",
+    "dutch": "Zelfs de kinderen weten het antwoord."
+   }
+  ]
+ }
+}

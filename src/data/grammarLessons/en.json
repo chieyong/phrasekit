@@ -1,0 +1,2497 @@
+{
+ "en-a1-tobe": {
+  "naam": "Het gebruik van 'to be' in het Engels",
+  "tagline": "Begrijp het fundament van Engelse zinnen met 'to be'.",
+  "niveau": "basis",
+  "kernregel": "'To be' is een van de meest fundamentele werkwoorden in het Engels en wordt gebruikt om de staat of conditie van een onderwerp te beschrijven. Het is essentieel voor het vormen van zinnen in de tegenwoordige tijd, verleden tijd en toekomstige tijd.",
+  "patroon": "[Subject] + [to be] + [complement]",
+  "uitleg": "Het werkwoord 'to be' is uniek omdat het niet alleen een werkwoord is, maar ook een koppelwerkwoord dat het onderwerp verbindt met aanvullende informatie. In het Nederlands wordt 'to be' vertaald als 'zijn'. Het wordt gebruikt om te zeggen wie of wat iemand is, hoe iemand zich voelt, of waar iemand zich bevindt. Het werkwoord verandert afhankelijk van het onderwerp en de tijd waarin de zin zich bevindt. In de tegenwoordige tijd zijn de vormen 'am', 'is', en 'are'. In de verleden tijd zijn de vormen 'was' en 'were'. Het is belangrijk om te weten welke vorm bij welk onderwerp hoort.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Het onderwerp van de zin, degene of datgene dat de actie ondergaat of in een bepaalde staat is.",
+    "voorbeeld": "I, you, he, she, it, we, they"
+   },
+   {
+    "element": "To be",
+    "rol": "Het werkwoord dat de staat of conditie van het onderwerp beschrijft.",
+    "voorbeeld": "am, is, are, was, were"
+   },
+   {
+    "element": "Complement",
+    "rol": "Extra informatie over het onderwerp, zoals een bijvoeglijk naamwoord, zelfstandig naamwoord of voorzetseluitdrukking.",
+    "voorbeeld": "happy, a teacher, in the park"
+   }
+  ],
+  "tips": [
+   "Gebruik 'am' met 'I', 'is' met 'he', 'she', 'it', en 'are' met 'you', 'we', 'they'.",
+   "In de verleden tijd gebruik je 'was' met 'I', 'he', 'she', 'it', en 'were' met 'you', 'we', 'they'.",
+   "Let op de juiste vorm van 'to be' bij het veranderen van de tijd van de zin.",
+   "Gebruik 'to be' ook voor passieve zinnen, waarbij de focus ligt op de actie in plaats van de uitvoerder."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde vorm van 'to be' gebruiken: 'He are happy' moet zijn 'He is happy'.",
+   "Vergeten 'to be' te gebruiken: 'She a teacher' moet zijn 'She is a teacher'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I am a student.",
+    "romaji": "I am a student.",
+    "dutch": "Ik ben een student."
+   },
+   {
+    "japanese": "She is tired.",
+    "romaji": "She is tired.",
+    "dutch": "Zij is moe."
+   },
+   {
+    "japanese": "They are at the park.",
+    "romaji": "They are at the park.",
+    "dutch": "Zij zijn in het park."
+   },
+   {
+    "japanese": "We were late.",
+    "romaji": "We were late.",
+    "dutch": "Wij waren te laat."
+   },
+   {
+    "japanese": "He was a doctor.",
+    "romaji": "He was a doctor.",
+    "dutch": "Hij was een dokter."
+   },
+   {
+    "japanese": "You are welcome.",
+    "romaji": "You are welcome.",
+    "dutch": "Graag gedaan."
+   }
+  ]
+ },
+ "en-a1-articles": {
+  "naam": "Artikelen in het Engels",
+  "tagline": "Begrijp het gebruik van 'a', 'an', en 'the' in het Engels.",
+  "niveau": "basis",
+  "kernregel": "Artikelen in het Engels zijn woorden die voor zelfstandige naamwoorden worden geplaatst om aan te geven of het zelfstandig naamwoord specifiek of algemeen is. 'A' en 'an' zijn onbepaalde artikelen die worden gebruikt voor niet-specifieke of onbekende zelfstandige naamwoorden, terwijl 'the' een bepaald artikel is dat wordt gebruikt voor specifieke of bekende zelfstandige naamwoorden.",
+  "patroon": "[Artikel] + [Zelfstandig naamwoord]",
+  "uitleg": "In het Engels worden artikelen gebruikt om aan te geven of we het over iets specifieks of iets algemeens hebben. 'A' wordt gebruikt voor woorden die beginnen met een medeklinkerklank, terwijl 'an' wordt gebruikt voor woorden die beginnen met een klinkerklank. Dit is vergelijkbaar met hoe we in het Nederlands 'een' gebruiken, maar in het Engels moet je letten op de klank waarmee het zelfstandig naamwoord begint. 'The' wordt gebruikt wanneer zowel de spreker als de luisteraar weten over welk specifiek ding ze het hebben, vergelijkbaar met het Nederlandse 'de' of 'het'.",
+  "opbouw": [
+   {
+    "element": "A",
+    "rol": "Onbepaald artikel voor woorden die beginnen met een medeklinkerklank.",
+    "voorbeeld": "a cat"
+   },
+   {
+    "element": "An",
+    "rol": "Onbepaald artikel voor woorden die beginnen met een klinkerklank.",
+    "voorbeeld": "an apple"
+   },
+   {
+    "element": "The",
+    "rol": "Bepaald artikel voor specifieke of bekende zelfstandige naamwoorden.",
+    "voorbeeld": "the book"
+   },
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Het woord dat door het artikel wordt gespecificeerd.",
+    "voorbeeld": "book"
+   },
+   {
+    "element": "Klank",
+    "rol": "Bepaalt of 'a' of 'an' wordt gebruikt, niet de letter zelf.",
+    "voorbeeld": "an hour"
+   }
+  ],
+  "tips": [
+   "Gebruik 'a' voor woorden die beginnen met een medeklinkerklank, zelfs als de eerste letter een klinker is.",
+   "Gebruik 'an' voor woorden die beginnen met een klinkerklank, zelfs als de eerste letter een medeklinker is.",
+   "Gebruik 'the' wanneer je verwijst naar iets dat al eerder is genoemd of duidelijk is in de context.",
+   "Let op de uitspraak van het woord na het artikel om te bepalen of je 'a' of 'an' moet gebruiken."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'a' in plaats van 'an' voor woorden die beginnen met een klinkerklank. Correctie: 'an umbrella' in plaats van 'a umbrella'.",
+   "Verkeerd gebruik van 'the' voor niet-specifieke zelfstandige naamwoorden. Correctie: 'a car' in plaats van 'the car' als het niet duidelijk is welke auto wordt bedoeld."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "A dog is barking.",
+    "romaji": "A dog is barking.",
+    "dutch": "Een hond blaft."
+   },
+   {
+    "japanese": "An elephant is large.",
+    "romaji": "An elephant is large.",
+    "dutch": "Een olifant is groot."
+   },
+   {
+    "japanese": "The sun is bright.",
+    "romaji": "The sun is bright.",
+    "dutch": "De zon is fel."
+   },
+   {
+    "japanese": "She has a unique idea.",
+    "romaji": "She has a unique idea.",
+    "dutch": "Ze heeft een uniek idee."
+   },
+   {
+    "japanese": "He is an honest man.",
+    "romaji": "He is an honest man.",
+    "dutch": "Hij is een eerlijke man."
+   },
+   {
+    "japanese": "The book on the table is mine.",
+    "romaji": "The book on the table is mine.",
+    "dutch": "Het boek op de tafel is van mij."
+   }
+  ]
+ },
+ "en-a1-plural": {
+  "naam": "Meervoudige zelfstandige naamwoorden",
+  "tagline": "Leer hoe je zelfstandige naamwoorden in het meervoud zet in het Engels.",
+  "niveau": "basis",
+  "kernregel": "Meervoudige zelfstandige naamwoorden worden gebruikt om meer dan één persoon, dier, ding of idee aan te duiden. In het Engels worden de meeste zelfstandige naamwoorden meervoudig gemaakt door '-s' of '-es' toe te voegen, maar er zijn uitzonderingen en onregelmatige vormen.",
+  "patroon": "singular noun + s/es",
+  "uitleg": "In het Engels wordt het meervoud van zelfstandige naamwoorden meestal gevormd door '-s' toe te voegen aan het enkelvoud. Als een zelfstandig naamwoord eindigt op -s, -sh, -ch, -x, of -z, voeg je '-es' toe. Sommige zelfstandige naamwoorden hebben onregelmatige meervoudsvormen, zoals 'child' naar 'children'. Er zijn ook zelfstandige naamwoorden die hetzelfde blijven in het enkelvoud en meervoud, zoals 'sheep'. Het is belangrijk om de juiste meervoudsvorm te gebruiken om duidelijkheid in communicatie te behouden.",
+  "opbouw": [
+   {
+    "element": "Basisregel",
+    "rol": "De meeste zelfstandige naamwoorden krijgen een '-s' in het meervoud.",
+    "voorbeeld": "book -> books"
+   },
+   {
+    "element": "Eindigend op -s, -sh, -ch, -x, -z",
+    "rol": "Voeg '-es' toe voor meervoud.",
+    "voorbeeld": "box -> boxes"
+   },
+   {
+    "element": "Onregelmatige meervouden",
+    "rol": "Sommige woorden veranderen volledig in het meervoud.",
+    "voorbeeld": "man -> men"
+   },
+   {
+    "element": "Zelfde vorm",
+    "rol": "Enkele zelfstandige naamwoorden veranderen niet in het meervoud.",
+    "voorbeeld": "sheep -> sheep"
+   },
+   {
+    "element": "Eindigend op -y",
+    "rol": "Verander '-y' in '-ies' als er een medeklinker voor staat.",
+    "voorbeeld": "city -> cities"
+   }
+  ],
+  "tips": [
+   "Controleer altijd of een zelfstandig naamwoord onregelmatig is voordat je het meervoud maakt.",
+   "Let op de uitspraakverandering bij het toevoegen van '-es'.",
+   "Gebruik context om te bepalen of een zelfstandig naamwoord in het enkelvoud of meervoud moet staan.",
+   "Oefen met lijsten van onregelmatige meervoudsvormen om ze te onthouden."
+  ],
+  "veelgemaaktefouten": [
+   "Het toevoegen van '-s' aan zelfstandige naamwoorden die '-es' nodig hebben. Correctie: 'bus' wordt 'buses', niet 'buss'.",
+   "Het niet veranderen van '-y' naar '-ies' bij zelfstandige naamwoorden die eindigen op een medeklinker. Correctie: 'baby' wordt 'babies', niet 'babys'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "The cats are playing in the garden.",
+    "romaji": "De katten spelen in de tuin.",
+    "dutch": "De katten spelen in de tuin."
+   },
+   {
+    "japanese": "There are many buses on the street.",
+    "romaji": "Er zijn veel bussen op straat.",
+    "dutch": "Er zijn veel bussen op straat."
+   },
+   {
+    "japanese": "Children love to play outside.",
+    "romaji": "Kinderen houden ervan om buiten te spelen.",
+    "dutch": "Kinderen houden ervan om buiten te spelen."
+   },
+   {
+    "japanese": "The sheep are grazing in the field.",
+    "romaji": "De schapen grazen in het veld.",
+    "dutch": "De schapen grazen in het veld."
+   },
+   {
+    "japanese": "I bought two loaves of bread.",
+    "romaji": "Ik kocht twee broden.",
+    "dutch": "Ik kocht twee broden."
+   },
+   {
+    "japanese": "The cities are growing rapidly.",
+    "romaji": "De steden groeien snel.",
+    "dutch": "De steden groeien snel."
+   }
+  ]
+ },
+ "en-a1-this": {
+  "naam": "Demonstratieve voornaamwoorden: this / that / these / those",
+  "tagline": "Leer hoe je voorwerpen en personen aanwijst in het Engels.",
+  "niveau": "basis",
+  "kernregel": "De woorden 'this', 'that', 'these' en 'those' worden gebruikt om voorwerpen of personen aan te wijzen en te onderscheiden op basis van nabijheid en aantal. 'This' en 'these' verwijzen naar iets dat dichtbij is, terwijl 'that' en 'those' verwijzen naar iets dat verder weg is.",
+  "patroon": "this / that / these / those + zelfstandig naamwoord",
+  "uitleg": "In het Engels worden demonstratieve voornaamwoorden gebruikt om specifieke voorwerpen of personen aan te wijzen. 'This' wordt gebruikt voor één voorwerp dat dichtbij is, terwijl 'that' wordt gebruikt voor één voorwerp dat verder weg is. 'These' is de meervoudsvorm van 'this' en wordt gebruikt voor meerdere voorwerpen dichtbij, terwijl 'those' de meervoudsvorm van 'that' is en wordt gebruikt voor meerdere voorwerpen verder weg. In het Nederlands gebruiken we vaak 'deze' en 'die' op een vergelijkbare manier, maar het Engels maakt een duidelijker onderscheid tussen enkelvoud en meervoud.",
+  "opbouw": [
+   {
+    "element": "this",
+    "rol": "Verwijst naar een enkelvoudig voorwerp of persoon dichtbij de spreker.",
+    "voorbeeld": "This is my book."
+   },
+   {
+    "element": "that",
+    "rol": "Verwijst naar een enkelvoudig voorwerp of persoon verder weg van de spreker.",
+    "voorbeeld": "That is your car."
+   },
+   {
+    "element": "these",
+    "rol": "Verwijst naar meerdere voorwerpen of personen dichtbij de spreker.",
+    "voorbeeld": "These are my keys."
+   },
+   {
+    "element": "those",
+    "rol": "Verwijst naar meerdere voorwerpen of personen verder weg van de spreker.",
+    "voorbeeld": "Those are her shoes."
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het voorwerp of de persoon dat wordt aangewezen door het demonstratieve voornaamwoord.",
+    "voorbeeld": "This apple is tasty."
+   }
+  ],
+  "tips": [
+   "Gebruik 'this' en 'these' wanneer je iets kunt aanraken of dichtbij is.",
+   "Gebruik 'that' en 'those' wanneer het voorwerp of de persoon verder weg is.",
+   "Let op het verschil tussen enkelvoud en meervoud: 'this' en 'that' zijn enkelvoud, 'these' en 'those' zijn meervoud.",
+   "Probeer het gebruik van demonstratieve voornaamwoorden te oefenen door voorwerpen in je omgeving aan te wijzen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'this' en 'these'. Correctie: Gebruik 'this' voor enkelvoud en 'these' voor meervoud.",
+   "Verwarring tussen 'that' en 'those'. Correctie: Gebruik 'that' voor enkelvoud en 'those' voor meervoud.",
+   "Verkeerd gebruik van nabijheid. Correctie: Zorg ervoor dat je 'this/these' gebruikt voor dingen dichtbij en 'that/those' voor dingen verder weg."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "This is my favorite song.",
+    "romaji": "This is my favorite song.",
+    "dutch": "Dit is mijn favoriete liedje."
+   },
+   {
+    "japanese": "That mountain is very tall.",
+    "romaji": "That mountain is very tall.",
+    "dutch": "Die berg is erg hoog."
+   },
+   {
+    "japanese": "These cookies are delicious.",
+    "romaji": "These cookies are delicious.",
+    "dutch": "Deze koekjes zijn heerlijk."
+   },
+   {
+    "japanese": "Those birds are flying south.",
+    "romaji": "Those birds are flying south.",
+    "dutch": "Die vogels vliegen naar het zuiden."
+   },
+   {
+    "japanese": "Is this your pen?",
+    "romaji": "Is this your pen?",
+    "dutch": "Is dit jouw pen?"
+   },
+   {
+    "japanese": "Are those your shoes?",
+    "romaji": "Are those your shoes?",
+    "dutch": "Zijn dat jouw schoenen?"
+   }
+  ]
+ },
+ "en-a1-havegot": {
+  "naam": "Gebruik van 'have got' in het Engels",
+  "tagline": "Begrijp het gebruik van 'have got' voor bezit en verplichtingen.",
+  "niveau": "basis",
+  "kernregel": "'Have got' wordt gebruikt om bezit of verplichtingen aan te geven. Het is een informele manier om 'have' te gebruiken, vooral in het Brits Engels.",
+  "patroon": "subject + have/has + got + object",
+  "uitleg": "In het Engels wordt 'have got' vaak gebruikt om aan te geven dat iemand iets bezit of dat er een verplichting is. Het is gebruikelijker in het Brits Engels dan in het Amerikaans Engels, waar 'have' zonder 'got' vaker voorkomt. 'Have got' is een informele constructie en wordt meestal in gesproken taal gebruikt. Het patroon wordt gevormd door een onderwerp, gevolgd door 'have' of 'has', dan 'got', en ten slotte het object dat in bezit is of de verplichting. Het is belangrijk om te weten dat 'have got' alleen in de tegenwoordige tijd wordt gebruikt.",
+  "opbouw": [
+   {
+    "element": "subject",
+    "rol": "Het onderwerp van de zin, degene die iets bezit of een verplichting heeft.",
+    "voorbeeld": "I, you, he, she, we, they"
+   },
+   {
+    "element": "have/has",
+    "rol": "Hulpwerkwoord dat aangeeft wie het bezit of de verplichting heeft.",
+    "voorbeeld": "I have, he has"
+   },
+   {
+    "element": "got",
+    "rol": "Geeft aan dat het om bezit of verplichting gaat.",
+    "voorbeeld": "I have got"
+   },
+   {
+    "element": "object",
+    "rol": "Het ding dat in bezit is of de verplichting die moet worden voldaan.",
+    "voorbeeld": "a car, a meeting"
+   }
+  ],
+  "tips": [
+   "Gebruik 'have got' om bezit aan te geven, vooral in informele situaties.",
+   "Vergeet niet om 'has' te gebruiken bij derde persoon enkelvoud (he, she, it).",
+   "In vragen en ontkenningen wordt 'have' of 'has' voor het onderwerp geplaatst, bijvoorbeeld: 'Have you got a pen?'",
+   "Gebruik 'haven't got' of 'hasn't got' om aan te geven dat er geen bezit of verplichting is."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'have' en 'have got'. Correct: 'I have got a car.' Incorrect: 'I have a got car.'",
+   "Vergeten 'got' toe te voegen. Correct: 'She has got a dog.' Incorrect: 'She has a dog.'",
+   "Gebruik van 'have got' in verleden tijd. Correct: 'I had a car.' Incorrect: 'I had got a car.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I have got a new phone.",
+    "romaji": "ai hæv gɒt ə njuː fəʊn",
+    "dutch": "Ik heb een nieuwe telefoon."
+   },
+   {
+    "japanese": "She has got two brothers.",
+    "romaji": "ʃi hæz gɒt tuː ˈbrʌðəz",
+    "dutch": "Zij heeft twee broers."
+   },
+   {
+    "japanese": "We have got a lot of work to do.",
+    "romaji": "wi hæv gɒt ə lɒt əv wɜːk tə duː",
+    "dutch": "Wij hebben veel werk te doen."
+   },
+   {
+    "japanese": "They have got a beautiful garden.",
+    "romaji": "ðeɪ hæv gɒt ə ˈbjuːtəfʊl ˈɡɑːdn",
+    "dutch": "Zij hebben een mooie tuin."
+   },
+   {
+    "japanese": "Have you got any questions?",
+    "romaji": "hæv juː gɒt ˈeni ˈkwɛsʧənz",
+    "dutch": "Heb je vragen?"
+   },
+   {
+    "japanese": "He hasn't got a car.",
+    "romaji": "hi ˈhæznt gɒt ə kɑː",
+    "dutch": "Hij heeft geen auto."
+   }
+  ]
+ },
+ "en-a1-pressimple": {
+  "naam": "Present Simple",
+  "tagline": "De tijdloze tijd voor feiten en gewoonten.",
+  "niveau": "basis",
+  "kernregel": "De present simple wordt gebruikt om feiten, gewoonten en algemene waarheden uit te drukken. Het is de meest eenvoudige tijdsvorm en wordt vaak gebruikt in dagelijkse gesprekken.",
+  "patroon": "[subject] + [base form of the verb] (+ s/es for third person singular)",
+  "uitleg": "De present simple tijd wordt gebruikt om acties of toestanden uit te drukken die regelmatig plaatsvinden of altijd waar zijn. In tegenstelling tot het Nederlands, waar we vaak de tegenwoordige tijd gebruiken, voegt het Engels een '-s' of '-es' toe aan het werkwoord voor de derde persoon enkelvoud (hij/zij/het). Dit patroon is essentieel voor het beschrijven van routines, schema's en universele waarheden. Let op dat er geen hulpwerkwoorden nodig zijn in bevestigende zinnen, behalve bij vragen en ontkenningen.",
+  "opbouw": [
+   {
+    "element": "subject",
+    "rol": "Geeft aan wie of wat de actie uitvoert.",
+    "voorbeeld": "I, you, he, she, it, we, they"
+   },
+   {
+    "element": "base form of the verb",
+    "rol": "Het werkwoord in zijn basisvorm, zonder toevoegingen.",
+    "voorbeeld": "run, eat, go"
+   },
+   {
+    "element": "s/es for third person singular",
+    "rol": "Toevoeging aan het werkwoord voor hij/zij/het.",
+    "voorbeeld": "He runs, she watches"
+   }
+  ],
+  "tips": [
+   "Gebruik de present simple voor gewoonten en routines, zoals 'I drink coffee every morning'.",
+   "Voeg '-s' of '-es' toe aan het werkwoord voor de derde persoon enkelvoud, zoals 'She reads books'.",
+   "Gebruik 'do' of 'does' voor vragen en ontkenningen, zoals 'Does he play tennis?' of 'I do not like tea'.",
+   "Onthoud dat sommige werkwoorden onregelmatig zijn in de derde persoon enkelvoud, zoals 'have' dat 'has' wordt."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten '-s' toe te voegen in de derde persoon enkelvoud: Correctie: 'He go' moet 'He goes' zijn.",
+   "Verwarring tussen present simple en present continuous: Correctie: 'I am going to school every day' moet 'I go to school every day' zijn.",
+   "Gebruik van 'do' in bevestigende zinnen: Correctie: 'He does plays football' moet 'He plays football' zijn."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "The sun rises in the east.",
+    "romaji": "De zon komt op in het oosten.",
+    "dutch": "De zon komt op in het oosten."
+   },
+   {
+    "japanese": "She loves chocolate.",
+    "romaji": "Zij houdt van chocolade.",
+    "dutch": "Zij houdt van chocolade."
+   },
+   {
+    "japanese": "They work in an office.",
+    "romaji": "Zij werken op een kantoor.",
+    "dutch": "Zij werken op een kantoor."
+   },
+   {
+    "japanese": "Water boils at 100 degrees Celsius.",
+    "romaji": "Water kookt bij 100 graden Celsius.",
+    "dutch": "Water kookt bij 100 graden Celsius."
+   },
+   {
+    "japanese": "He watches TV every evening.",
+    "romaji": "Hij kijkt elke avond tv.",
+    "dutch": "Hij kijkt elke avond tv."
+   },
+   {
+    "japanese": "We visit our grandparents on Sundays.",
+    "romaji": "Wij bezoeken onze grootouders op zondag.",
+    "dutch": "Wij bezoeken onze grootouders op zondag."
+   }
+  ]
+ },
+ "en-a1-dodoes": {
+  "naam": "Do / Does in Vragen en Ontkenning",
+  "tagline": "Leer hoe je vragen stelt en ontkenningen maakt met 'do' en 'does'.",
+  "niveau": "basis",
+  "kernregel": "In het Engels gebruiken we 'do' en 'does' om vragen te stellen en ontkenningen te maken in de tegenwoordige tijd. 'Do' wordt gebruikt met 'I', 'you', 'we', en 'they', terwijl 'does' wordt gebruikt met 'he', 'she', en 'it'.",
+  "patroon": "[Do/Does] + subject + base verb + ? / [Subject] + [do/does] + not + base verb.",
+  "uitleg": "In het Engels gebruiken we 'do' en 'does' om vragen te formuleren en om zinnen te ontkennen in de tegenwoordige tijd. 'Do' wordt gebruikt voor de eerste persoon enkelvoud (I), de tweede persoon enkelvoud en meervoud (you), en de eerste en derde persoon meervoud (we, they). 'Does' wordt gebruikt voor de derde persoon enkelvoud (he, she, it). In vragen komt 'do' of 'does' voor het onderwerp, gevolgd door het werkwoord in de basisvorm. In ontkenningen komt 'do not' of 'does not' na het onderwerp, gevolgd door het werkwoord in de basisvorm. Let op dat het werkwoord in de basisvorm blijft, ongeacht het onderwerp.",
+  "opbouw": [
+   {
+    "element": "Do",
+    "rol": "Hulpwerkwoord voor vragen en ontkenningen met 'I', 'you', 'we', 'they'.",
+    "voorbeeld": "Do you like pizza?"
+   },
+   {
+    "element": "Does",
+    "rol": "Hulpwerkwoord voor vragen en ontkenningen met 'he', 'she', 'it'.",
+    "voorbeeld": "Does she play tennis?"
+   },
+   {
+    "element": "Subject",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "Do they know the answer?"
+   },
+   {
+    "element": "Base verb",
+    "rol": "Het hoofdwerkwoord in zijn basisvorm, zonder vervoeging.",
+    "voorbeeld": "Do we need help?"
+   },
+   {
+    "element": "Not",
+    "rol": "Geeft ontkenning aan in de zin.",
+    "voorbeeld": "He does not like coffee."
+   }
+  ],
+  "tips": [
+   "Gebruik altijd de basisvorm van het werkwoord na 'do' of 'does'.",
+   "Vergeet niet dat 'does' alleen voor 'he', 'she', en 'it' wordt gebruikt.",
+   "In gesproken taal wordt 'do not' vaak afgekort tot 'don't' en 'does not' tot 'doesn't'.",
+   "Let op de woordvolgorde: in vragen komt 'do' of 'does' vóór het onderwerp."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'do' in plaats van 'does': Correct: 'Does he like it?'",
+   "Het werkwoord vervoegen na 'do' of 'does': Correct: 'Do they go?' in plaats van 'Do they goes?'",
+   "Vergeten 'not' in ontkenningen: Correct: 'She does not (doesn't) understand.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Do you have a pen?",
+    "romaji": "Do you have a pen?",
+    "dutch": "Heb jij een pen?"
+   },
+   {
+    "japanese": "Does he work here?",
+    "romaji": "Does he work here?",
+    "dutch": "Werkt hij hier?"
+   },
+   {
+    "japanese": "They do not want to go.",
+    "romaji": "They do not want to go.",
+    "dutch": "Zij willen niet gaan."
+   },
+   {
+    "japanese": "Does it rain often?",
+    "romaji": "Does it rain often?",
+    "dutch": "Regent het vaak?"
+   },
+   {
+    "japanese": "We do not eat meat.",
+    "romaji": "We do not eat meat.",
+    "dutch": "Wij eten geen vlees."
+   },
+   {
+    "japanese": "Do you understand the question?",
+    "romaji": "Do you understand the question?",
+    "dutch": "Begrijp jij de vraag?"
+   }
+  ]
+ },
+ "en-a1-can": {
+  "naam": "Gebruik van 'can' in het Engels",
+  "tagline": "Leer hoe je 'can' gebruikt om mogelijkheden en vaardigheden uit te drukken.",
+  "niveau": "basis",
+  "kernregel": "'Can' wordt gebruikt om mogelijkheden of vaardigheden aan te geven. Het is een modaal werkwoord dat aangeeft wat iemand kan doen of wat mogelijk is.",
+  "patroon": "[Subject] + can + [base form of the verb]",
+  "uitleg": "Het modale werkwoord 'can' wordt gebruikt om te praten over wat iemand in staat is te doen of wat mogelijk is. In tegenstelling tot het Nederlands, waar je 'kunnen' gebruikt, is 'can' in het Engels altijd gevolgd door de basisvorm van het werkwoord, zonder 'to'. Het werkwoord verandert niet, ongeacht het onderwerp. 'Can' heeft geen verleden tijdsvorm; daarvoor gebruik je 'could'. Let op dat 'can' ook gebruikt kan worden om toestemming te vragen of geven, vergelijkbaar met 'mogen' in het Nederlands.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Geeft aan wie de actie uitvoert.",
+    "voorbeeld": "I, you, he, she, we, they"
+   },
+   {
+    "element": "Can",
+    "rol": "Modaal werkwoord dat mogelijkheid of vaardigheid uitdrukt.",
+    "voorbeeld": "can"
+   },
+   {
+    "element": "Base form of the verb",
+    "rol": "Het werkwoord in zijn basisvorm, zonder 'to'.",
+    "voorbeeld": "go, eat, swim"
+   }
+  ],
+  "tips": [
+   "Gebruik altijd de basisvorm van het werkwoord na 'can'.",
+   "Vergeet niet dat 'can' geen verleden tijd heeft; gebruik 'could' voor verleden mogelijkheden.",
+   "Gebruik 'can't' of 'cannot' om onmogelijkheid of gebrek aan vaardigheid uit te drukken.",
+   "In vragen plaats je 'can' voor het onderwerp, bijvoorbeeld: 'Can you swim?'"
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd: He can to swim. Correct: He can swim.",
+   "Verkeerd: She cans play the piano. Correct: She can play the piano.",
+   "Verkeerd: Can you to help me? Correct: Can you help me?"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I can speak English.",
+    "romaji": "Ai kan supīku Ingurisshu.",
+    "dutch": "Ik kan Engels spreken."
+   },
+   {
+    "japanese": "She can drive a car.",
+    "romaji": "Shī kan doraibu ā kā.",
+    "dutch": "Zij kan autorijden."
+   },
+   {
+    "japanese": "We can finish the project by Friday.",
+    "romaji": "Wī kan finisshu za purojekuto bai Furaidē.",
+    "dutch": "Wij kunnen het project voor vrijdag afmaken."
+   },
+   {
+    "japanese": "They can come to the party.",
+    "romaji": "Zei kan kamu tu za pātī.",
+    "dutch": "Zij kunnen naar het feest komen."
+   },
+   {
+    "japanese": "Can you help me with this?",
+    "romaji": "Kan yū herupu mī wizu disu?",
+    "dutch": "Kun je me hiermee helpen?"
+   },
+   {
+    "japanese": "He can't find his keys.",
+    "romaji": "Hī kan't faindo hizu kīzu.",
+    "dutch": "Hij kan zijn sleutels niet vinden."
+   }
+  ]
+ },
+ "en-a1-thereis": {
+  "naam": "There is / There are",
+  "tagline": "Leer hoe je bestaan of aanwezigheid in het Engels aangeeft.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 'there is' en 'there are' wordt gebruikt om aan te geven dat iets bestaat of aanwezig is op een bepaalde plek. 'There is' wordt gebruikt voor enkelvoudige zelfstandige naamwoorden, terwijl 'there are' wordt gebruikt voor meervoudige zelfstandige naamwoorden.",
+  "patroon": "There is + enkelvoudig zelfstandig naamwoord / There are + meervoudig zelfstandig naamwoord",
+  "uitleg": "In het Engels gebruiken we 'there is' en 'there are' om te zeggen dat iets bestaat of ergens aanwezig is. Dit is vergelijkbaar met het Nederlandse 'er is' en 'er zijn'. 'There is' wordt gebruikt voor enkelvoudige zelfstandige naamwoorden, zoals 'there is a cat' (er is een kat). 'There are' wordt gebruikt voor meervoudige zelfstandige naamwoorden, zoals 'there are cats' (er zijn katten). Het is belangrijk om het juiste werkwoord te kiezen op basis van het aantal zelfstandige naamwoorden dat volgt.",
+  "opbouw": [
+   {
+    "element": "There",
+    "rol": "Duidt de aanwezigheid of het bestaan van iets aan.",
+    "voorbeeld": "There is a book on the table."
+   },
+   {
+    "element": "is",
+    "rol": "Wordt gebruikt met enkelvoudige zelfstandige naamwoorden.",
+    "voorbeeld": "There is a dog in the garden."
+   },
+   {
+    "element": "are",
+    "rol": "Wordt gebruikt met meervoudige zelfstandige naamwoorden.",
+    "voorbeeld": "There are three apples on the table."
+   },
+   {
+    "element": "enkelvoudig zelfstandig naamwoord",
+    "rol": "Het onderwerp dat in enkelvoud aanwezig is.",
+    "voorbeeld": "There is a car outside."
+   },
+   {
+    "element": "meervoudig zelfstandig naamwoord",
+    "rol": "Het onderwerp dat in meervoud aanwezig is.",
+    "voorbeeld": "There are many books on the shelf."
+   }
+  ],
+  "tips": [
+   "Gebruik 'there is' voor niet-telbare zelfstandige naamwoorden, zoals 'water' of 'milk'.",
+   "Let op het verschil tussen 'there is' en 'there are' om fouten te vermijden.",
+   "Gebruik 'there's' als samentrekking van 'there is' in informele situaties.",
+   "Oefen met het herkennen van enkelvoudige en meervoudige zelfstandige naamwoorden om de juiste vorm te kiezen."
+  ],
+  "veelgemaaktefouten": [
+   "Fout: There is two cats. Correctie: There are two cats.",
+   "Fout: There are a book on the table. Correctie: There is a book on the table.",
+   "Fout: There's many people here. Correctie: There are many people here."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "There is a pen on the desk.",
+    "romaji": "Er is een pen op het bureau."
+   },
+   {
+    "japanese": "There are five chairs in the room.",
+    "romaji": "Er zijn vijf stoelen in de kamer."
+   },
+   {
+    "japanese": "There is an apple in the basket.",
+    "romaji": "Er is een appel in de mand."
+   },
+   {
+    "japanese": "There are several cars parked outside.",
+    "romaji": "Er staan verschillende auto's geparkeerd buiten."
+   },
+   {
+    "japanese": "There is a problem we need to solve.",
+    "romaji": "Er is een probleem dat we moeten oplossen."
+   },
+   {
+    "japanese": "There are no tickets left for the concert.",
+    "romaji": "Er zijn geen kaartjes meer voor het concert."
+   }
+  ]
+ },
+ "en-a1-possess": {
+  "naam": "Possessives",
+  "tagline": "Bezit aangeven in het Engels.",
+  "niveau": "basis",
+  "kernregel": "Possessives worden gebruikt om aan te geven dat iets toebehoort aan iemand of iets. In het Engels gebruiken we meestal een apostrof gevolgd door een 's' ('s) of alleen een apostrof (') om bezit aan te geven.",
+  "patroon": "[bezitter] + 's + [bezit] of [bezitter] + ' + [bezit] (voor meervouden die eindigen op 's')",
+  "uitleg": "In het Engels worden possessives gebruikt om aan te geven dat iets van iemand is. Dit kan worden gedaan door een apostrof en een 's' toe te voegen aan de bezitter, zoals in 'John's book'. Als de bezitter in het meervoud staat en eindigt op een 's', voeg je alleen een apostrof toe, zoals in 'the teachers' lounge'. Dit verschilt van het Nederlands, waar we vaak 'van' gebruiken, zoals in 'het boek van John'. Let op dat bij namen die eindigen op een s-klank, zoals 'James', het gebruik van 's of alleen een apostrof kan variëren afhankelijk van persoonlijke of stilistische voorkeur.",
+  "opbouw": [
+   {
+    "element": "Bezitter",
+    "rol": "De persoon of het ding dat het bezit heeft.",
+    "voorbeeld": "John's"
+   },
+   {
+    "element": "'s",
+    "rol": "Wordt toegevoegd aan de bezitter om bezit aan te geven.",
+    "voorbeeld": "John's book"
+   },
+   {
+    "element": "apostrof",
+    "rol": "Wordt gebruikt bij meervouden die eindigen op 's' om bezit aan te geven.",
+    "voorbeeld": "teachers' lounge"
+   },
+   {
+    "element": "Bezittelijk voornaamwoord",
+    "rol": "Woorden zoals 'my', 'your', 'his', 'her', 'its', 'our', 'their' die bezit aangeven zonder apostrof.",
+    "voorbeeld": "my book"
+   }
+  ],
+  "tips": [
+   "Gebruik 's voor enkelvoudige bezittingen, zelfs als de naam eindigt op een s-klank.",
+   "Gebruik alleen een apostrof voor meervoudige bezittingen die eindigen op 's'.",
+   "Vermijd het gebruik van een apostrof bij bezittelijke voornaamwoorden zoals 'its'.",
+   "Bij twijfel over de uitspraak van 's na een naam die eindigt op een s-klank, kies consistentie binnen een tekst."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'it's' (het is) en 'its' (bezittelijk). Correctie: 'The cat licked its paw.'",
+   "Verkeerd gebruik van 's bij meervouden. Correctie: 'The dogs' owner was friendly.'",
+   "Onnodig gebruik van 's bij bezittelijke voornaamwoorden. Correctie: 'This is her book.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "The girl's dress is beautiful.",
+    "romaji": "De jurk van het meisje is mooi."
+   },
+   {
+    "japanese": "This is my brother's car.",
+    "romaji": "Dit is de auto van mijn broer."
+   },
+   {
+    "japanese": "The children's toys are scattered.",
+    "romaji": "Het speelgoed van de kinderen ligt verspreid."
+   },
+   {
+    "japanese": "Is this the manager's office?",
+    "romaji": "Is dit het kantoor van de manager?"
+   },
+   {
+    "japanese": "The cats' food bowls are empty.",
+    "romaji": "De voerbakken van de katten zijn leeg."
+   },
+   {
+    "japanese": "Her friend's advice was helpful.",
+    "romaji": "Het advies van haar vriend was nuttig."
+   }
+  ]
+ },
+ "en-a1-preps": {
+  "naam": "Prepositions: In, On, At",
+  "tagline": "Begrijp het gebruik van 'in', 'on' en 'at' voor tijd en plaats.",
+  "niveau": "basis",
+  "kernregel": "De voorzetsels 'in', 'on' en 'at' worden gebruikt om specifieke locaties en tijden aan te duiden. 'In' wordt vaak gebruikt voor grotere gebieden of langere periodes, 'on' voor oppervlakken en specifieke dagen, en 'at' voor precieze locaties of tijdstippen.",
+  "patroon": "in/on/at + [tijd/plaats]",
+  "uitleg": "In het Engels worden 'in', 'on' en 'at' gebruikt om zowel tijd als plaats aan te duiden, maar elk voorzetsel heeft zijn eigen specifieke gebruik. 'In' gebruik je voor grotere gebieden zoals landen of steden en langere periodes zoals maanden of jaren. 'On' gebruik je voor oppervlakken en specifieke dagen of datums. 'At' gebruik je voor specifieke locaties zoals adressen of tijdstippen. Dit verschilt van het Nederlands, waar je bijvoorbeeld 'op' kunt gebruiken voor zowel dagen als oppervlakken.",
+  "opbouw": [
+   {
+    "element": "in",
+    "rol": "Wordt gebruikt voor grotere gebieden of langere periodes.",
+    "voorbeeld": "I live in Amsterdam."
+   },
+   {
+    "element": "on",
+    "rol": "Wordt gebruikt voor oppervlakken en specifieke dagen.",
+    "voorbeeld": "The book is on the table."
+   },
+   {
+    "element": "at",
+    "rol": "Wordt gebruikt voor specifieke locaties of tijdstippen.",
+    "voorbeeld": "We will meet at 3 PM."
+   },
+   {
+    "element": "tijd",
+    "rol": "De tijdsaanduiding die volgt op het voorzetsel.",
+    "voorbeeld": "I was born in 1990."
+   },
+   {
+    "element": "plaats",
+    "rol": "De locatieaanduiding die volgt op het voorzetsel.",
+    "voorbeeld": "She is at the office."
+   }
+  ],
+  "tips": [
+   "Gebruik 'in' voor maanden, jaren, en seizoenen.",
+   "Gebruik 'on' voor specifieke dagen en datums.",
+   "Gebruik 'at' voor precieze tijdstippen en specifieke locaties.",
+   "Denk aan 'in' als binnen een groter geheel, 'on' als op een oppervlak, en 'at' als een specifiek punt."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'in' en 'on' voor dagen: Correct is 'on Monday', niet 'in Monday'.",
+   "Gebruik van 'at' voor grotere gebieden: Correct is 'in the park', niet 'at the park'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I will see you in the morning.",
+    "romaji": "Ai wil sii joe in de morning.",
+    "dutch": "Ik zie je in de ochtend."
+   },
+   {
+    "japanese": "The meeting is on Friday.",
+    "romaji": "De meeting is on Fraidei.",
+    "dutch": "De vergadering is op vrijdag."
+   },
+   {
+    "japanese": "She lives at 123 Main Street.",
+    "romaji": "Sjie livs at wan-twenti-trie Meen Striet.",
+    "dutch": "Zij woont op 123 Main Street."
+   },
+   {
+    "japanese": "We are going to Paris in July.",
+    "romaji": "Wie aar going toe Paris in Djoelai.",
+    "dutch": "We gaan naar Parijs in juli."
+   },
+   {
+    "japanese": "The cat is on the roof.",
+    "romaji": "De ket is on de roef.",
+    "dutch": "De kat is op het dak."
+   },
+   {
+    "japanese": "Let's meet at noon.",
+    "romaji": "Lets miet at nooen.",
+    "dutch": "Laten we om twaalf uur afspreken."
+   }
+  ]
+ },
+ "en-a1-wordorder": {
+  "naam": "Woordvolgorde in Engelse Zinnen",
+  "tagline": "Begrijp de basisstructuur van Engelse zinnen voor heldere communicatie.",
+  "niveau": "basis",
+  "kernregel": "De standaard woordvolgorde in Engelse zinnen is Onderwerp-werkwoord-voorwerp (SVO). Deze volgorde helpt om de betekenis van de zin duidelijk te maken en misverstanden te voorkomen.",
+  "patroon": "Subject + Verb + Object (SVO)",
+  "uitleg": "In het Engels is de basisvolgorde van een zin Subject-Verb-Object (SVO). Dit betekent dat je eerst het onderwerp noemt, gevolgd door het werkwoord, en dan het voorwerp. In tegenstelling tot het Nederlands, waar de volgorde soms kan variëren, is de Engelse volgorde vrij strikt, vooral in hoofdzinnen. Deze structuur helpt om de zin logisch en begrijpelijk te maken. Bij vragen en negatieve zinnen verandert de volgorde vaak, maar in positieve verklarende zinnen blijft de SVO-structuur meestal behouden.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "The cat"
+   },
+   {
+    "element": "Verb",
+    "rol": "Het werkwoord dat de actie beschrijft die het onderwerp uitvoert.",
+    "voorbeeld": "eats"
+   },
+   {
+    "element": "Object",
+    "rol": "Het voorwerp dat de actie van het werkwoord ondergaat.",
+    "voorbeeld": "the mouse"
+   },
+   {
+    "element": "Adverbial",
+    "rol": "Geeft extra informatie over de actie, zoals tijd, plaats of manier.",
+    "voorbeeld": "quickly"
+   },
+   {
+    "element": "Complement",
+    "rol": "Geeft extra informatie over het onderwerp of object, vaak na een koppelwerkwoord.",
+    "voorbeeld": "happy"
+   }
+  ],
+  "tips": [
+   "Begin altijd met het onderwerp van de zin om verwarring te voorkomen.",
+   "Gebruik de juiste vorm van het werkwoord die bij het onderwerp past.",
+   "Plaats bijvoeglijke bepalingen aan het einde van de zin voor extra informatie.",
+   "Let op de plaatsing van bijwoorden; ze kunnen de betekenis van de zin veranderen afhankelijk van hun positie."
+  ],
+  "veelgemaaktefouten": [
+   "Het werkwoord voor het onderwerp plaatsen in verklarende zinnen. Correct: 'She likes apples.'",
+   "Het object voor het werkwoord plaatsen. Correct: 'He reads the book.'",
+   "Vergeten het onderwerp te noemen. Correct: 'The dog barks loudly.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "The dog chased the cat.",
+    "romaji": "The dog chased the cat.",
+    "dutch": "De hond achtervolgde de kat."
+   },
+   {
+    "japanese": "She writes a letter.",
+    "romaji": "She writes a letter.",
+    "dutch": "Zij schrijft een brief."
+   },
+   {
+    "japanese": "They play soccer.",
+    "romaji": "They play soccer.",
+    "dutch": "Zij spelen voetbal."
+   },
+   {
+    "japanese": "He drinks coffee.",
+    "romaji": "He drinks coffee.",
+    "dutch": "Hij drinkt koffie."
+   },
+   {
+    "japanese": "We watch movies.",
+    "romaji": "We watch movies.",
+    "dutch": "Wij kijken films."
+   },
+   {
+    "japanese": "The teacher explains the lesson.",
+    "romaji": "The teacher explains the lesson.",
+    "dutch": "De leraar legt de les uit."
+   }
+  ]
+ },
+ "en-a2-prescont": {
+  "naam": "Present Continuous",
+  "tagline": "Gebruik de present continuous om aan te geven wat er nu gebeurt.",
+  "niveau": "basis",
+  "kernregel": "De present continuous wordt gebruikt om handelingen of situaties te beschrijven die op dit moment plaatsvinden of tijdelijk zijn. Het kan ook worden gebruikt om toekomstige plannen aan te geven.",
+  "patroon": "[subject] + [to be] + [verb] + -ing",
+  "uitleg": "De present continuous wordt gevormd door het werkwoord 'to be' in de tegenwoordige tijd te combineren met het hoofdwerkwoord dat eindigt op '-ing'. Dit patroon geeft aan dat de actie nu bezig is. In het Nederlands gebruiken we vaak de tegenwoordige tijd of een constructie met 'aan het' om dit uit te drukken. Bijvoorbeeld, 'I am eating' kan vertaald worden als 'Ik ben aan het eten'. In het Engels is het belangrijk om de juiste vorm van 'to be' te gebruiken, afhankelijk van het onderwerp.",
+  "opbouw": [
+   {
+    "element": "subject",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "I, you, he, she, it, we, they"
+   },
+   {
+    "element": "to be",
+    "rol": "Het hulpwerkwoord dat de tijd aangeeft, vervoegd naar het onderwerp.",
+    "voorbeeld": "am, is, are"
+   },
+   {
+    "element": "verb",
+    "rol": "Het hoofdwerkwoord dat de actie beschrijft.",
+    "voorbeeld": "eat, run, play"
+   },
+   {
+    "element": "-ing",
+    "rol": "De uitgang die aangeeft dat de actie momenteel plaatsvindt.",
+    "voorbeeld": "eating, running, playing"
+   }
+  ],
+  "tips": [
+   "Vergeet niet de juiste vorm van 'to be' te gebruiken afhankelijk van het onderwerp.",
+   "Gebruik de present continuous om te praten over acties die nu plaatsvinden of om toekomstige afspraken te beschrijven.",
+   "Let op de spelling van werkwoorden die eindigen op 'e'; vaak valt de 'e' weg bij het toevoegen van '-ing'.",
+   "Gebruik de present continuous niet voor feiten of gewoonten; gebruik daarvoor de simple present."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde vorm van 'to be' gebruiken: Correct is 'She is running', niet 'She are running'.",
+   "Vergeten '-ing' toe te voegen: Correct is 'They are playing', niet 'They are play'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I am reading a book.",
+    "romaji": "ai am riidingu a bukku",
+    "dutch": "Ik ben een boek aan het lezen."
+   },
+   {
+    "japanese": "She is cooking dinner.",
+    "romaji": "shi iz kukkingu dinā",
+    "dutch": "Zij is het avondeten aan het koken."
+   },
+   {
+    "japanese": "We are watching a movie.",
+    "romaji": "wii ar wotching a muuvii",
+    "dutch": "Wij zijn een film aan het kijken."
+   },
+   {
+    "japanese": "They are playing soccer.",
+    "romaji": "zei ar pureingu sakkā",
+    "dutch": "Zij zijn aan het voetballen."
+   },
+   {
+    "japanese": "He is writing an email.",
+    "romaji": "hii iz raitingu an iimeiru",
+    "dutch": "Hij is een e-mail aan het schrijven."
+   },
+   {
+    "japanese": "You are listening to music.",
+    "romaji": "yuu ar risuningu tu myuuzikku",
+    "dutch": "Jij bent naar muziek aan het luisteren."
+   }
+  ]
+ },
+ "en-a2-pastsimple": {
+  "naam": "Past Simple",
+  "tagline": "Verleden tijd voor afgeronde acties.",
+  "niveau": "basis",
+  "kernregel": "De past simple wordt gebruikt om acties of situaties te beschrijven die in het verleden zijn begonnen en zijn voltooid. Het is een van de meest voorkomende tijdsvormen in het Engels en helpt om verhalen of gebeurtenissen in chronologische volgorde te vertellen.",
+  "patroon": "[subject] + [verb in past form] + [object/complement]",
+  "uitleg": "De past simple tijd wordt gebruikt om te praten over gebeurtenissen die in het verleden zijn gebeurd en nu zijn afgerond. In het Engels wordt de past simple vaak gevormd door '-ed' toe te voegen aan het einde van regelmatige werkwoorden. Onregelmatige werkwoorden hebben unieke vormen die uit het hoofd geleerd moeten worden. In tegenstelling tot het Nederlands, waar vaak een hulpwerkwoord wordt gebruikt, staat in het Engels het werkwoord zelf in de verleden tijd.",
+  "opbouw": [
+   {
+    "element": "subject",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "I, You, He, She, We, They"
+   },
+   {
+    "element": "verb in past form",
+    "rol": "Het werkwoord in de verleden tijd. Regelmatige werkwoorden krijgen '-ed', onregelmatige werkwoorden hebben unieke vormen.",
+    "voorbeeld": "walked, went, saw"
+   },
+   {
+    "element": "object/complement",
+    "rol": "Het deel van de zin dat de actie ontvangt of aanvult.",
+    "voorbeeld": "a book, to the store, yesterday"
+   }
+  ],
+  "tips": [
+   "Leer de lijst van onregelmatige werkwoorden uit je hoofd, omdat deze vaak voorkomen.",
+   "Gebruik tijdsaanduidingen zoals 'yesterday', 'last week', 'in 2010' om duidelijk te maken dat de actie in het verleden plaatsvond.",
+   "Verwar de past simple niet met de present perfect, die wordt gebruikt voor acties die in het verleden zijn begonnen en nog steeds relevant zijn.",
+   "Let op de uitspraak van '-ed' bij regelmatige werkwoorden; het kan als /t/, /d/, of /ɪd/ klinken afhankelijk van de eindklank van het werkwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen regelmatige en onregelmatige werkwoorden. Correctie: Leer de onregelmatige vormen uit je hoofd.",
+   "Verkeerd gebruik van de present perfect in plaats van de past simple. Correctie: Gebruik de past simple voor acties die volledig in het verleden zijn afgerond.",
+   "Vergeten van '-ed' bij regelmatige werkwoorden. Correctie: Voeg altijd '-ed' toe aan regelmatige werkwoorden in de verleden tijd."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "He visited the museum yesterday.",
+    "romaji": "He visited the museum yesterday.",
+    "dutch": "Hij bezocht gisteren het museum."
+   },
+   {
+    "japanese": "They watched a movie last night.",
+    "romaji": "They watched a movie last night.",
+    "dutch": "Zij keken gisteravond een film."
+   },
+   {
+    "japanese": "I finished my homework before dinner.",
+    "romaji": "I finished my homework before dinner.",
+    "dutch": "Ik maakte mijn huiswerk af voor het avondeten."
+   },
+   {
+    "japanese": "We traveled to Paris in 2019.",
+    "romaji": "We traveled to Paris in 2019.",
+    "dutch": "Wij reisden naar Parijs in 2019."
+   },
+   {
+    "japanese": "She cooked a delicious meal.",
+    "romaji": "She cooked a delicious meal.",
+    "dutch": "Zij kookte een heerlijke maaltijd."
+   },
+   {
+    "japanese": "The concert started at 8 PM.",
+    "romaji": "The concert started at 8 PM.",
+    "dutch": "Het concert begon om 8 uur 's avonds."
+   }
+  ]
+ },
+ "en-a2-did": {
+  "naam": "Gebruik van 'did' in vragen en ontkenningen",
+  "tagline": "Leer hoe je 'did' gebruikt voor vragen en ontkenningen in de verleden tijd.",
+  "niveau": "basis",
+  "kernregel": "Het hulpwerkwoord 'did' wordt gebruikt om vragen en ontkenningen in de verleden tijd te vormen. Het maakt de zin verleden tijd zonder dat het hoofdwerkwoord verandert.",
+  "patroon": "did + subject + base form of the verb / subject + did not + base form of the verb",
+  "uitleg": "In het Engels wordt 'did' gebruikt als hulpwerkwoord om vragen en ontkenningen in de verleden tijd te maken. Dit is vergelijkbaar met hoe we in het Nederlands 'deed' of 'deden' gebruiken, maar in het Engels blijft het hoofdwerkwoord in zijn basisvorm. Bijvoorbeeld, in plaats van 'hij speelde niet', zeggen we 'he did not play'. Bij vragen gebruiken we 'did' aan het begin van de zin, gevolgd door het onderwerp en het werkwoord in de basisvorm, zoals in 'Did you see the movie?'. Dit maakt het eenvoudiger om de verleden tijd te herkennen en te gebruiken.",
+  "opbouw": [
+   {
+    "element": "did",
+    "rol": "Hulpwerkwoord dat aangeeft dat de zin in de verleden tijd is.",
+    "voorbeeld": "Did you go to the store?"
+   },
+   {
+    "element": "subject",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "Did she call you?"
+   },
+   {
+    "element": "base form of the verb",
+    "rol": "De basisvorm van het werkwoord, zonder vervoeging.",
+    "voorbeeld": "Did they eat breakfast?"
+   },
+   {
+    "element": "did not",
+    "rol": "Ontkenning in de verleden tijd, vaak afgekort tot 'didn't'.",
+    "voorbeeld": "He did not (didn't) finish his homework."
+   },
+   {
+    "element": "question structure",
+    "rol": "De volgorde van woorden in een vraagzin.",
+    "voorbeeld": "Did you see the new exhibit?"
+   }
+  ],
+  "tips": [
+   "Gebruik altijd de basisvorm van het werkwoord na 'did', ongeacht het onderwerp.",
+   "Vergeet niet dat 'did' al de verleden tijd aanduidt, dus het hoofdwerkwoord blijft onveranderd.",
+   "In informele situaties wordt 'did not' vaak afgekort tot 'didn't'.",
+   "Let op de volgorde van woorden in vragen: 'did' komt altijd voor het onderwerp."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van de verleden tijd van het hoofdwerkwoord: 'Did you went to the store?' moet zijn 'Did you go to the store?'.",
+   "Vergeten 'did' te gebruiken in vragen: 'You went to the store?' moet zijn 'Did you go to the store?'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "Did he finish the project?",
+    "romaji": "Did he finish the project?",
+    "dutch": "Heeft hij het project afgemaakt?"
+   },
+   {
+    "japanese": "Did they enjoy the concert?",
+    "romaji": "Did they enjoy the concert?",
+    "dutch": "Hebben zij van het concert genoten?"
+   },
+   {
+    "japanese": "She did not like the movie.",
+    "romaji": "She did not like the movie.",
+    "dutch": "Zij vond de film niet leuk."
+   },
+   {
+    "japanese": "We didn't see him yesterday.",
+    "romaji": "We didn't see him yesterday.",
+    "dutch": "Wij hebben hem gisteren niet gezien."
+   },
+   {
+    "japanese": "Did you understand the lesson?",
+    "romaji": "Did you understand the lesson?",
+    "dutch": "Heb je de les begrepen?"
+   },
+   {
+    "japanese": "He didn't call me back.",
+    "romaji": "He didn't call me back.",
+    "dutch": "Hij belde me niet terug."
+   }
+  ]
+ },
+ "en-a2-goingto": {
+  "naam": "Toekomstige plannen met 'going to'",
+  "tagline": "Leer hoe je toekomstige intenties en plannen uitdrukt met 'going to'.",
+  "niveau": "basis",
+  "kernregel": "'Going to' wordt gebruikt om toekomstige plannen of intenties uit te drukken. Het benadrukt dat de spreker al een besluit heeft genomen of dat er aanwijzingen zijn dat iets gaat gebeuren.",
+  "patroon": "[Subject] + [to be] + going to + [base form of verb]",
+  "uitleg": "Het patroon 'going to' wordt gebruikt om te praten over toekomstige gebeurtenissen die gepland of zeker zijn. In tegenstelling tot 'will', dat vaak wordt gebruikt voor spontane beslissingen of voorspellingen zonder bewijs, suggereert 'going to' dat er al een voornemen of plan is. In het Nederlands kan dit worden vergeleken met 'gaan' in de zin van 'ik ga iets doen'. Het helpt de luisteraar te begrijpen dat er al een zekere mate van zekerheid of voorbereiding is.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Het onderwerp van de zin, degene die de actie gaat uitvoeren.",
+    "voorbeeld": "I, You, He, She, We, They"
+   },
+   {
+    "element": "[to be]",
+    "rol": "De juiste vorm van het werkwoord 'to be' afhankelijk van het onderwerp.",
+    "voorbeeld": "am, are, is"
+   },
+   {
+    "element": "going to",
+    "rol": "Geeft aan dat er een toekomstig plan of intentie is.",
+    "voorbeeld": "going to"
+   },
+   {
+    "element": "[base form of verb]",
+    "rol": "Het werkwoord dat de actie beschrijft die in de toekomst zal plaatsvinden.",
+    "voorbeeld": "eat, visit, play"
+   }
+  ],
+  "tips": [
+   "Gebruik 'am' met 'I', 'is' met 'he', 'she', 'it', en 'are' met 'you', 'we', 'they'.",
+   "Gebruik 'going to' voor plannen die al zijn gemaakt, niet voor spontane beslissingen.",
+   "Let op de uitspraak: 'going to' wordt vaak informeel uitgesproken als 'gonna'.",
+   "Gebruik 'going to' ook voor voorspellingen gebaseerd op bewijs in het heden."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'going to' en 'will' - gebruik 'going to' voor geplande acties.",
+   "Verkeerd gebruik van 'to be' - zorg ervoor dat het overeenkomt met het onderwerp.",
+   "Vergeten van de basisvorm van het werkwoord - gebruik geen vervoegde werkwoorden na 'going to'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I am going to visit my grandparents this weekend.",
+    "romaji": "I am going to visit my grandparents this weekend.",
+    "dutch": "Ik ga dit weekend mijn grootouders bezoeken."
+   },
+   {
+    "japanese": "She is going to start a new job next month.",
+    "romaji": "She is going to start a new job next month.",
+    "dutch": "Zij gaat volgende maand een nieuwe baan beginnen."
+   },
+   {
+    "japanese": "They are going to move to a new house.",
+    "romaji": "They are going to move to a new house.",
+    "dutch": "Zij gaan naar een nieuw huis verhuizen."
+   },
+   {
+    "japanese": "We are going to have a party on Saturday.",
+    "romaji": "We are going to have a party on Saturday.",
+    "dutch": "Wij gaan zaterdag een feestje geven."
+   },
+   {
+    "japanese": "He is going to buy a new car.",
+    "romaji": "He is going to buy a new car.",
+    "dutch": "Hij gaat een nieuwe auto kopen."
+   },
+   {
+    "japanese": "You are going to love this movie.",
+    "romaji": "You are going to love this movie.",
+    "dutch": "Jij gaat van deze film houden."
+   }
+  ]
+ },
+ "en-a2-will": {
+  "naam": "Toekomst met 'will'",
+  "tagline": "Leer hoe je toekomstige acties en gebeurtenissen in het Engels uitdrukt met 'will'.",
+  "niveau": "basis",
+  "kernregel": "Het werkwoord 'will' wordt gebruikt om toekomstige acties of gebeurtenissen aan te geven. Het is een van de meest voorkomende manieren om over de toekomst te spreken in het Engels.",
+  "patroon": "subject + will + base verb",
+  "uitleg": "In het Engels gebruiken we 'will' om te praten over dingen die in de toekomst zullen gebeuren. Het is een eenvoudig patroon dat vaak wordt gebruikt voor spontane beslissingen, voorspellingen en beloftes. In tegenstelling tot het Nederlands, waar we vaak 'zal' of 'zullen' gebruiken, is 'will' in het Engels niet afhankelijk van de persoon (ik, jij, hij/zij, wij, jullie, zij) en blijft het altijd hetzelfde. Het werkwoord dat volgt op 'will' is altijd in de basisvorm, zonder enige aanpassing.",
+  "opbouw": [
+   {
+    "element": "subject",
+    "rol": "Het onderwerp van de zin, degene die de actie zal uitvoeren.",
+    "voorbeeld": "I, you, he, she, it, we, they"
+   },
+   {
+    "element": "will",
+    "rol": "Geeft aan dat de actie in de toekomst zal plaatsvinden.",
+    "voorbeeld": "will"
+   },
+   {
+    "element": "base verb",
+    "rol": "Het werkwoord in zijn basisvorm, zonder 'to' of andere aanpassingen.",
+    "voorbeeld": "go, eat, see"
+   }
+  ],
+  "tips": [
+   "Gebruik 'will' voor spontane beslissingen, zoals wanneer je ter plekke besluit iets te doen.",
+   "Gebruik 'will' voor voorspellingen die niet gebaseerd zijn op bewijs, maar op persoonlijke overtuiging.",
+   "Gebruik 'will' voor beloftes en aanbiedingen.",
+   "Onthoud dat 'will' niet verandert afhankelijk van het onderwerp; het blijft altijd 'will'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'will' en 'going to'. 'Will' is voor spontane beslissingen, terwijl 'going to' vaak wordt gebruikt voor geplande acties.",
+   "Verkeerd gebruik van de werkwoordsvorm na 'will'. Het moet altijd de basisvorm zijn, bijvoorbeeld 'will go', niet 'will goes'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I will call you tomorrow.",
+    "romaji": "Ai wɪl kɔːl ju təˈmɔːroʊ.",
+    "dutch": "Ik zal je morgen bellen."
+   },
+   {
+    "japanese": "She will visit her grandmother next week.",
+    "romaji": "ʃi wɪl ˈvɪzɪt hɜːr ˈgrændˌmʌðər nɛkst wiːk.",
+    "dutch": "Zij zal haar oma volgende week bezoeken."
+   },
+   {
+    "japanese": "They will finish the project by Friday.",
+    "romaji": "ðeɪ wɪl ˈfɪnɪʃ ðə ˈprɒʤɛkt baɪ ˈfraɪdeɪ.",
+    "dutch": "Zij zullen het project tegen vrijdag afronden."
+   },
+   {
+    "japanese": "We will have dinner at 7 PM.",
+    "romaji": "wi wɪl hæv ˈdɪnər æt 7 piːˈɛm.",
+    "dutch": "Wij zullen om 7 uur 's avonds dineren."
+   },
+   {
+    "japanese": "He will help you with your homework.",
+    "romaji": "hi wɪl hɛlp ju wɪð jɔːr ˈhoʊmˌwɜːrk.",
+    "dutch": "Hij zal je helpen met je huiswerk."
+   },
+   {
+    "japanese": "It will rain tomorrow.",
+    "romaji": "ɪt wɪl reɪn təˈmɔːroʊ.",
+    "dutch": "Het zal morgen regenen."
+   }
+  ]
+ },
+ "en-a2-compar": {
+  "naam": "Vergelijkende en overtreffende trap",
+  "tagline": "Vergelijk en overtreffen met gemak!",
+  "niveau": "basis",
+  "kernregel": "Vergelijkende en overtreffende trappen worden gebruikt om verschillen tussen twee of meer zaken aan te geven. Vergelijkende trappen worden gebruikt om twee zaken te vergelijken, terwijl overtreffende trappen worden gebruikt om iets te beschrijven dat het meest of minst is in een groep.",
+  "patroon": "adjective + -er/-est of more/most + adjective",
+  "uitleg": "In het Engels worden vergelijkende trappen meestal gevormd door '-er' toe te voegen aan het bijvoeglijk naamwoord, en overtreffende trappen door '-est' toe te voegen. Voor langere bijvoeglijke naamwoorden, meestal die van twee of meer lettergrepen, gebruik je 'more' voor de vergelijkende trap en 'most' voor de overtreffende trap. Dit verschilt van het Nederlands, waar vaak 'meer' en 'meest' worden gebruikt, ongeacht de lengte van het bijvoeglijk naamwoord. Let op uitzonderingen en onregelmatige vormen zoals 'good', 'better', 'best'.",
+  "opbouw": [
+   {
+    "element": "adjective",
+    "rol": "Het bijvoeglijk naamwoord dat je wilt vergelijken of overtreffen.",
+    "voorbeeld": "tall"
+   },
+   {
+    "element": "-er",
+    "rol": "Toevoeging aan het bijvoeglijk naamwoord om de vergelijkende trap te vormen.",
+    "voorbeeld": "taller"
+   },
+   {
+    "element": "-est",
+    "rol": "Toevoeging aan het bijvoeglijk naamwoord om de overtreffende trap te vormen.",
+    "voorbeeld": "tallest"
+   },
+   {
+    "element": "more",
+    "rol": "Wordt gebruikt voor langere bijvoeglijke naamwoorden in de vergelijkende trap.",
+    "voorbeeld": "more beautiful"
+   },
+   {
+    "element": "most",
+    "rol": "Wordt gebruikt voor langere bijvoeglijke naamwoorden in de overtreffende trap.",
+    "voorbeeld": "most beautiful"
+   }
+  ],
+  "tips": [
+   "Bijvoeglijke naamwoorden van één lettergreep krijgen meestal '-er' en '-est'.",
+   "Bijvoeglijke naamwoorden die eindigen op een 'y', veranderen vaak de 'y' in 'i' voordat '-er' of '-est' wordt toegevoegd.",
+   "Gebruik 'more' en 'most' voor bijvoeglijke naamwoorden van drie of meer lettergrepen.",
+   "Onthoud onregelmatige vormen zoals 'good', 'better', 'best' en 'bad', 'worse', 'worst'."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 'more' met korte bijvoeglijke naamwoorden: Correctie: 'taller' in plaats van 'more tall'.",
+   "Verkeerde volgorde van 'more' en 'most': Correctie: 'more interesting' in plaats van 'interesting more'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "This book is more interesting than that one.",
+    "romaji": "Dit boek is interessanter dan dat.",
+    "dutch": "Dit boek is interessanter dan dat."
+   },
+   {
+    "japanese": "She is the most talented singer in the group.",
+    "romaji": "Zij is de meest getalenteerde zangeres in de groep.",
+    "dutch": "Zij is de meest getalenteerde zangeres in de groep."
+   },
+   {
+    "japanese": "My car is faster than yours.",
+    "romaji": "Mijn auto is sneller dan die van jou.",
+    "dutch": "Mijn auto is sneller dan die van jou."
+   },
+   {
+    "japanese": "This is the best pizza I have ever had.",
+    "romaji": "Dit is de beste pizza die ik ooit heb gehad.",
+    "dutch": "Dit is de beste pizza die ik ooit heb gehad."
+   },
+   {
+    "japanese": "He is more experienced than his colleague.",
+    "romaji": "Hij is meer ervaren dan zijn collega.",
+    "dutch": "Hij is meer ervaren dan zijn collega."
+   },
+   {
+    "japanese": "Mount Everest is the highest mountain in the world.",
+    "romaji": "De Mount Everest is de hoogste berg ter wereld.",
+    "dutch": "De Mount Everest is de hoogste berg ter wereld."
+   }
+  ]
+ },
+ "en-a2-quant": {
+  "naam": "Gebruik van 'some', 'any', 'much', en 'many'",
+  "tagline": "Leer hoe je kwantoren correct gebruikt in het Engels.",
+  "niveau": "basis",
+  "kernregel": "'Some', 'any', 'much', en 'many' zijn kwantoren die worden gebruikt om hoeveelheden aan te geven. 'Some' en 'any' worden vaak gebruikt met meervoudige en ontelbare zelfstandige naamwoorden, terwijl 'much' en 'many' worden gebruikt om respectievelijk ontelbare en telbare zelfstandige naamwoorden te beschrijven.",
+  "patroon": "[some/any] + [plural noun/uncountable noun], [much/many] + [uncountable noun/countable plural noun]",
+  "uitleg": "In het Engels gebruik je 'some' meestal in bevestigende zinnen en 'any' in ontkennende zinnen en vragen. 'Much' gebruik je met ontelbare zelfstandige naamwoorden, zoals 'water' of 'informatie', vooral in ontkennende zinnen en vragen. 'Many' wordt gebruikt met telbare zelfstandige naamwoorden, zoals 'boeken' of 'mensen', en komt ook vaak voor in vragen en ontkennende zinnen. In het Nederlands gebruiken we vaak 'wat' voor 'some' en 'enige' of 'geen' voor 'any', terwijl 'veel' zowel 'much' als 'many' kan betekenen, afhankelijk van de context.",
+  "opbouw": [
+   {
+    "element": "some",
+    "rol": "Wordt gebruikt in bevestigende zinnen en biedt een onbepaalde hoeveelheid aan.",
+    "voorbeeld": "I have some apples."
+   },
+   {
+    "element": "any",
+    "rol": "Wordt gebruikt in vragen en ontkennende zinnen om een onbepaalde hoeveelheid aan te geven.",
+    "voorbeeld": "Do you have any apples?"
+   },
+   {
+    "element": "much",
+    "rol": "Wordt gebruikt met ontelbare zelfstandige naamwoorden, vooral in ontkennende zinnen en vragen.",
+    "voorbeeld": "I don't have much time."
+   },
+   {
+    "element": "many",
+    "rol": "Wordt gebruikt met telbare zelfstandige naamwoorden, vooral in ontkennende zinnen en vragen.",
+    "voorbeeld": "Are there many people at the party?"
+   },
+   {
+    "element": "noun",
+    "rol": "Het zelfstandig naamwoord dat de hoeveelheid beschrijft.",
+    "voorbeeld": "apples, time, people"
+   }
+  ],
+  "tips": [
+   "Gebruik 'some' in bevestigende zinnen, vooral als je iets aanbiedt of vraagt.",
+   "Gebruik 'any' in vragen en ontkennende zinnen om aan te geven dat er geen specifieke hoeveelheid is.",
+   "Gebruik 'much' in formele contexten of als je wilt benadrukken dat er weinig van iets is.",
+   "Gebruik 'many' als je over een grote hoeveelheid telbare items spreekt."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'some' en 'any' in vragen: Correct gebruik is 'Do you have any questions?' in plaats van 'Do you have some questions?'",
+   "Gebruik van 'much' met telbare zelfstandige naamwoorden: Correct is 'many books' in plaats van 'much books'.",
+   "Gebruik van 'many' met ontelbare zelfstandige naamwoorden: Correct is 'much information' in plaats van 'many information'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I need some help.",
+    "romaji": "I need some help.",
+    "dutch": "Ik heb wat hulp nodig."
+   },
+   {
+    "japanese": "Do you have any sugar?",
+    "romaji": "Do you have any sugar?",
+    "dutch": "Heb je wat suiker?"
+   },
+   {
+    "japanese": "There isn't much milk left.",
+    "romaji": "There isn't much milk left.",
+    "dutch": "Er is niet veel melk meer over."
+   },
+   {
+    "japanese": "How many chairs do we need?",
+    "romaji": "How many chairs do we need?",
+    "dutch": "Hoeveel stoelen hebben we nodig?"
+   },
+   {
+    "japanese": "She doesn't have many friends.",
+    "romaji": "She doesn't have many friends.",
+    "dutch": "Ze heeft niet veel vrienden."
+   },
+   {
+    "japanese": "I don't have any money.",
+    "romaji": "I don't have any money.",
+    "dutch": "Ik heb geen geld."
+   }
+  ]
+ },
+ "en-a2-freq": {
+  "naam": "Adverbs of Frequency",
+  "tagline": "Leer hoe je de frequentie van acties in het Engels uitdrukt.",
+  "niveau": "basis",
+  "kernregel": "Adverbs of frequency worden gebruikt om aan te geven hoe vaak een actie plaatsvindt. Ze worden meestal geplaatst vóór het hoofdwerkwoord in een zin, maar na het werkwoord 'to be'.",
+  "patroon": "[Subject] + [Adverb of Frequency] + [Main Verb] / [Subject] + [to be] + [Adverb of Frequency]",
+  "uitleg": "Adverbs of frequency geven aan hoe vaak iets gebeurt en zijn essentieel om de frequentie van acties in het dagelijks leven te beschrijven. In het Engels staan deze bijwoorden meestal vóór het hoofdwerkwoord, zoals in 'I always eat breakfast'. Echter, als het werkwoord 'to be' wordt gebruikt, volgt het bijwoord na het werkwoord, zoals in 'She is often late'. Dit verschilt van het Nederlands, waar de plaatsing van frequentie bijwoorden flexibeler kan zijn. Het is belangrijk om deze volgorde in acht te nemen om grammaticaal correcte zinnen te vormen.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "De persoon of het ding dat de actie uitvoert.",
+    "voorbeeld": "I, She, They"
+   },
+   {
+    "element": "Adverb of Frequency",
+    "rol": "Geeft aan hoe vaak de actie plaatsvindt.",
+    "voorbeeld": "always, usually, sometimes"
+   },
+   {
+    "element": "Main Verb",
+    "rol": "Het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "eat, go, play"
+   },
+   {
+    "element": "To be",
+    "rol": "Een koppelwerkwoord dat de toestand beschrijft.",
+    "voorbeeld": "am, is, are"
+   }
+  ],
+  "tips": [
+   "Plaats het bijwoord van frequentie vóór het hoofdwerkwoord, behalve bij 'to be'.",
+   "Gebruik 'always' voor acties die altijd gebeuren en 'never' voor acties die nooit gebeuren.",
+   "Onthoud dat 'sometimes' en 'often' flexibel zijn en aan het begin of einde van de zin kunnen staan voor nadruk.",
+   "Oefen met verschillende frequentie bijwoorden om je zinnen te variëren en preciezer te maken."
+  ],
+  "veelgemaaktefouten": [
+   "Plaatsing van het bijwoord na het hoofdwerkwoord: 'I eat always breakfast' moet zijn 'I always eat breakfast'.",
+   "Verkeerde plaatsing bij 'to be': 'She often is late' moet zijn 'She is often late'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I always drink coffee in the morning.",
+    "romaji": "I always drink coffee in the morning.",
+    "dutch": "Ik drink altijd koffie in de ochtend."
+   },
+   {
+    "japanese": "He usually goes to the gym after work.",
+    "romaji": "He usually goes to the gym after work.",
+    "dutch": "Hij gaat meestal naar de sportschool na het werk."
+   },
+   {
+    "japanese": "They sometimes visit their grandparents on weekends.",
+    "romaji": "They sometimes visit their grandparents on weekends.",
+    "dutch": "Ze bezoeken soms hun grootouders in het weekend."
+   },
+   {
+    "japanese": "She is never late for meetings.",
+    "romaji": "She is never late for meetings.",
+    "dutch": "Ze is nooit te laat voor vergaderingen."
+   },
+   {
+    "japanese": "We often eat out on Fridays.",
+    "romaji": "We often eat out on Fridays.",
+    "dutch": "We eten vaak buiten op vrijdagen."
+   },
+   {
+    "japanese": "You rarely see such beautiful sunsets.",
+    "romaji": "You rarely see such beautiful sunsets.",
+    "dutch": "Je ziet zelden zulke mooie zonsondergangen."
+   }
+  ]
+ },
+ "en-a2-haveto": {
+  "naam": "Gebruik van 'have to' en 'must'",
+  "tagline": "Begrijp het verschil tussen 'have to' en 'must' voor verplichtingen.",
+  "niveau": "basis",
+  "kernregel": "'Have to' en 'must' worden beide gebruikt om verplichtingen of noodzakelijkheid uit te drukken. 'Must' wordt vaak gebruikt voor persoonlijke verplichtingen of sterke aanbevelingen, terwijl 'have to' meer objectieve of externe verplichtingen aanduidt.",
+  "patroon": "[subject] + [have to/must] + [base form of verb]",
+  "uitleg": "In het Engels worden 'have to' en 'must' vaak door elkaar gebruikt, maar er zijn subtiele verschillen. 'Must' wordt meestal gebruikt voor subjectieve verplichtingen, zoals persoonlijke regels of adviezen. 'Have to' daarentegen wordt gebruikt voor verplichtingen die van buitenaf komen, zoals regels of wetten. In de verleden tijd wordt 'must' niet gebruikt; in plaats daarvan gebruiken we 'had to'. Het is belangrijk om te onthouden dat 'must' sterker en formeler klinkt dan 'have to'.",
+  "opbouw": [
+   {
+    "element": "subject",
+    "rol": "Het onderwerp van de zin, degene die de actie moet uitvoeren.",
+    "voorbeeld": "I, You, He, She, We, They"
+   },
+   {
+    "element": "have to/must",
+    "rol": "Geeft de verplichting of noodzakelijkheid aan.",
+    "voorbeeld": "have to, must"
+   },
+   {
+    "element": "base form of verb",
+    "rol": "Het werkwoord dat de actie beschrijft die moet worden uitgevoerd.",
+    "voorbeeld": "go, eat, finish"
+   }
+  ],
+  "tips": [
+   "Gebruik 'must' voor sterke persoonlijke verplichtingen of adviezen.",
+   "Gebruik 'have to' voor verplichtingen die van buitenaf komen, zoals regels of wetten.",
+   "In de verleden tijd gebruik je 'had to' in plaats van 'must'.",
+   "Vermijd het gebruik van 'must' in informele situaties; 'have to' is vaak geschikter."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'must' en 'have to' in informele contexten. Correctie: Gebruik 'have to' voor informele verplichtingen.",
+   "Gebruik van 'must' in de verleden tijd. Correctie: Gebruik 'had to' in plaats van 'must' voor verleden tijd.",
+   "Verkeerd gebruik van 'have to' voor persoonlijke verplichtingen. Correctie: Gebruik 'must' voor persoonlijke verplichtingen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I must finish my homework before dinner.",
+    "romaji": "Ai mast finish mai hoomwerk bifoor diner.",
+    "dutch": "Ik moet mijn huiswerk afmaken voor het avondeten."
+   },
+   {
+    "japanese": "You have to wear a uniform at school.",
+    "romaji": "Juu hev too weer a yuuniform et skuul.",
+    "dutch": "Je moet een uniform dragen op school."
+   },
+   {
+    "japanese": "We must be quiet in the library.",
+    "romaji": "Wie mast bie kwaaiet in de laibrari.",
+    "dutch": "We moeten stil zijn in de bibliotheek."
+   },
+   {
+    "japanese": "They have to leave early tomorrow.",
+    "romaji": "Dei hev too liev eerlie tumoroo.",
+    "dutch": "Ze moeten morgen vroeg vertrekken."
+   },
+   {
+    "japanese": "He must see a doctor immediately.",
+    "romaji": "Hie mast sie a dokter immedietlie.",
+    "dutch": "Hij moet onmiddellijk een dokter zien."
+   },
+   {
+    "japanese": "She has to attend the meeting.",
+    "romaji": "Sjie hes too etend de mieting.",
+    "dutch": "Zij moet de vergadering bijwonen."
+   }
+  ]
+ },
+ "en-a2-should": {
+  "naam": "Gebruik van 'should' in het Engels",
+  "tagline": "Begrijp hoe je 'should' kunt gebruiken om advies, verplichtingen en verwachtingen uit te drukken.",
+  "niveau": "basis",
+  "kernregel": "'Should' wordt gebruikt om advies te geven, verplichtingen uit te drukken en verwachtingen aan te geven. Het is een modaal werkwoord dat vaak wordt gebruikt om suggesties te doen of om te zeggen wat volgens jou de juiste actie is.",
+  "patroon": "[Subject] + should + [base form of the verb]",
+  "uitleg": "In het Engels gebruik je 'should' om advies of suggesties te geven. Het is vergelijkbaar met het Nederlandse 'zou moeten'. 'Should' wordt gevolgd door de basisvorm van het werkwoord, zonder 'to'. Het kan ook worden gebruikt om verwachtingen of verplichtingen uit te drukken, hoewel het minder sterk is dan 'must'. In vragen en ontkenningen blijft de structuur hetzelfde, waarbij 'should' voor het onderwerp komt in vragen en 'not' na 'should' in ontkenningen.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Het onderwerp van de zin, degene die de actie zou moeten uitvoeren.",
+    "voorbeeld": "You"
+   },
+   {
+    "element": "Should",
+    "rol": "Het modale werkwoord dat advies, verplichting of verwachting uitdrukt.",
+    "voorbeeld": "should"
+   },
+   {
+    "element": "Base form of the verb",
+    "rol": "Het werkwoord in zijn basisvorm, zonder 'to'.",
+    "voorbeeld": "go"
+   },
+   {
+    "element": "Object (optioneel)",
+    "rol": "Het doel of de ontvanger van de actie, indien van toepassing.",
+    "voorbeeld": "to the doctor"
+   }
+  ],
+  "tips": [
+   "Gebruik 'should' voor milde adviezen of suggesties, niet voor sterke verplichtingen.",
+   "In vragen komt 'should' voor het onderwerp: 'Should I call him?'",
+   "Gebruik 'should not' of 'shouldn't' om aan te geven dat iets niet gedaan moet worden.",
+   "Let op dat 'should' altijd gevolgd wordt door de basisvorm van het werkwoord, zonder 'to'."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd: You should to go. Correct: You should go.",
+   "Verkeerd: He should goes. Correct: He should go.",
+   "Verkeerd: Should not you be there? Correct: Shouldn't you be there?"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "You should see a doctor.",
+    "romaji": "You should see a doctor.",
+    "dutch": "Je zou naar een dokter moeten gaan."
+   },
+   {
+    "japanese": "They should arrive soon.",
+    "romaji": "They should arrive soon.",
+    "dutch": "Ze zouden snel moeten aankomen."
+   },
+   {
+    "japanese": "We should help them.",
+    "romaji": "We should help them.",
+    "dutch": "We zouden hen moeten helpen."
+   },
+   {
+    "japanese": "Should I bring an umbrella?",
+    "romaji": "Should I bring an umbrella?",
+    "dutch": "Zou ik een paraplu moeten meenemen?"
+   },
+   {
+    "japanese": "You shouldn't eat so much sugar.",
+    "romaji": "You shouldn't eat so much sugar.",
+    "dutch": "Je zou niet zoveel suiker moeten eten."
+   },
+   {
+    "japanese": "He should apologize.",
+    "romaji": "He should apologize.",
+    "dutch": "Hij zou zijn excuses moeten aanbieden."
+   }
+  ]
+ },
+ "en-a2-wouldlike": {
+  "naam": "Would Like",
+  "tagline": "Uitdrukken van beleefde wensen en verzoeken",
+  "niveau": "basis",
+  "kernregel": "Het patroon 'would like' wordt gebruikt om beleefd wensen, voorkeuren of verzoeken uit te drukken. Het is formeler en beleefder dan simpelweg 'want' te gebruiken.",
+  "patroon": "subject + would like + (to) + infinitive/noun",
+  "uitleg": "In het Engels gebruiken we 'would like' om beleefdheid uit te drukken wanneer we iets willen of wensen. Het is vergelijkbaar met 'zou graag willen' in het Nederlands. Dit patroon kan worden gevolgd door een zelfstandig naamwoord om een object aan te duiden dat gewenst is, of door 'to' gevolgd door een infinitief om een actie aan te geven. In tegenstelling tot 'want', dat directer en minder beleefd is, toont 'would like' meer respect en is het gebruikelijker in formele situaties.",
+  "opbouw": [
+   {
+    "element": "subject",
+    "rol": "Het onderwerp van de zin, degene die de wens of het verzoek uitdrukt.",
+    "voorbeeld": "I, you, he, she, we, they"
+   },
+   {
+    "element": "would like",
+    "rol": "Het kernpatroon dat beleefdheid en wens uitdrukt.",
+    "voorbeeld": "would like"
+   },
+   {
+    "element": "(to) + infinitive",
+    "rol": "Optioneel, geeft de actie aan die gewenst is.",
+    "voorbeeld": "to eat, to go, to see"
+   },
+   {
+    "element": "noun",
+    "rol": "Optioneel, geeft het object aan dat gewenst is.",
+    "voorbeeld": "a coffee, some help, a ticket"
+   }
+  ],
+  "tips": [
+   "Gebruik 'would like' in plaats van 'want' in formele situaties of wanneer je beleefd wilt zijn.",
+   "Vergeet niet 'to' te gebruiken wanneer je een werkwoord volgt met 'would like'.",
+   "Je kunt 'would like' ook in vragen gebruiken om beleefde verzoeken te doen, zoals 'Would you like a drink?'",
+   "Gebruik 'I'd like' als verkorte vorm van 'I would like' in informele situaties."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 'would like' met 'want'. Correct: 'I would like a coffee.' Fout: 'I want a coffee.'",
+   "Vergeten van 'to' voor een werkwoord. Correct: 'I would like to go.' Fout: 'I would like go.'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I would like a cup of tea.",
+    "romaji": "Ai wud laik a kap ov tii.",
+    "dutch": "Ik zou graag een kopje thee willen."
+   },
+   {
+    "japanese": "She would like to visit Paris.",
+    "romaji": "Sji wud laik to vizit Paris.",
+    "dutch": "Zij zou graag Parijs willen bezoeken."
+   },
+   {
+    "japanese": "Would you like some water?",
+    "romaji": "Wud joe laik som woter?",
+    "dutch": "Zou je wat water willen?"
+   },
+   {
+    "japanese": "They would like to join us for dinner.",
+    "romaji": "Dei wud laik to join us for diner.",
+    "dutch": "Zij zouden graag met ons mee willen dineren."
+   },
+   {
+    "japanese": "We would like a table for two, please.",
+    "romaji": "Wie wud laik a teibel for toe, plies.",
+    "dutch": "Wij zouden graag een tafel voor twee willen, alstublieft."
+   },
+   {
+    "japanese": "He would like to learn Spanish.",
+    "romaji": "Hie wud laik to lern Spenish.",
+    "dutch": "Hij zou graag Spaans willen leren."
+   }
+  ]
+ },
+ "en-b1-presperf": {
+  "naam": "Present Perfect Tense",
+  "tagline": "Verbind het verleden met het heden.",
+  "niveau": "gemiddeld",
+  "kernregel": "De present perfect tense wordt gebruikt om acties te beschrijven die in het verleden zijn begonnen en nog steeds relevant zijn of invloed hebben op het heden. Het benadrukt de ervaring, verandering of voltooiing van een actie zonder specifieke tijdsaanduiding.",
+  "patroon": "have/has + voltooid deelwoord",
+  "uitleg": "De present perfect tense in het Engels wordt gevormd met 'have' of 'has' gevolgd door het voltooid deelwoord van het werkwoord. Het wordt vaak gebruikt om te praten over ervaringen ('I have visited Paris'), veranderingen ('She has grown taller'), of acties die recent zijn afgerond met effect op het heden ('They have just finished their homework'). In tegenstelling tot het Nederlands, dat vaak de voltooid tegenwoordige tijd gebruikt met specifieke tijdsaanduidingen, wordt de present perfect in het Engels niet gebruikt met specifieke tijdsbepalingen zoals 'yesterday' of 'last year'.",
+  "opbouw": [
+   {
+    "element": "have/has",
+    "rol": "Hulpwerkwoord dat aangeeft wie de actie heeft uitgevoerd.",
+    "voorbeeld": "I have, She has"
+   },
+   {
+    "element": "voltooid deelwoord",
+    "rol": "Hoofdwerkwoord in de derde vorm dat de actie beschrijft.",
+    "voorbeeld": "eaten, gone, seen"
+   },
+   {
+    "element": "onderwerp",
+    "rol": "De persoon of het ding dat de actie uitvoert.",
+    "voorbeeld": "I, You, He, She, It, We, They"
+   }
+  ],
+  "tips": [
+   "Gebruik 'have' met I, you, we, they en 'has' met he, she, it.",
+   "Het voltooid deelwoord van regelmatige werkwoorden eindigt op -ed, zoals 'played' of 'watched'.",
+   "Onregelmatige werkwoorden hebben unieke voltooid deelwoorden, zoals 'gone', 'seen', 'done'.",
+   "Vermijd het gebruik van specifieke tijdsaanduidingen zoals 'yesterday' met de present perfect."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'have' en 'has'. Correctie: 'She have gone' moet zijn 'She has gone'.",
+   "Gebruik van de present perfect met specifieke tijdsaanduidingen. Correctie: 'I have seen him yesterday' moet zijn 'I saw him yesterday'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I have lived in Amsterdam for five years.",
+    "romaji": "Ik heb vijf jaar in Amsterdam gewoond.",
+    "dutch": "Ik woon al vijf jaar in Amsterdam."
+   },
+   {
+    "japanese": "They have just arrived at the station.",
+    "romaji": "Ze zijn net op het station aangekomen.",
+    "dutch": "Ze zijn net op het station aangekomen."
+   },
+   {
+    "japanese": "She has never tried sushi before.",
+    "romaji": "Ze heeft nog nooit sushi geprobeerd.",
+    "dutch": "Ze heeft nog nooit sushi geprobeerd."
+   },
+   {
+    "japanese": "We have visited the museum several times.",
+    "romaji": "We hebben het museum meerdere keren bezocht.",
+    "dutch": "We hebben het museum meerdere keren bezocht."
+   },
+   {
+    "japanese": "He has lost his keys.",
+    "romaji": "Hij is zijn sleutels kwijtgeraakt.",
+    "dutch": "Hij is zijn sleutels kwijtgeraakt."
+   },
+   {
+    "japanese": "You have grown since I last saw you.",
+    "romaji": "Je bent gegroeid sinds ik je voor het laatst zag.",
+    "dutch": "Je bent gegroeid sinds ik je voor het laatst zag."
+   }
+  ]
+ },
+ "en-b1-perfvssimple": {
+  "naam": "Present Perfect vs Past Simple",
+  "tagline": "Begrijp het verschil tussen voltooid tegenwoordige tijd en verleden tijd.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het present perfect wordt gebruikt om acties te beschrijven die in het verleden zijn begonnen en nog steeds relevant zijn, terwijl de past simple wordt gebruikt voor acties die volledig in het verleden zijn afgerond. Het juiste gebruik van deze tijden helpt om de tijdsrelatie van gebeurtenissen duidelijk te maken.",
+  "patroon": "[Subject] + [have/has] + [past participle] (present perfect) vs [Subject] + [verb in past form] (past simple)",
+  "uitleg": "In het Engels gebruiken we de present perfect om te praten over ervaringen, veranderingen of situaties die in het verleden zijn begonnen en nog steeds relevant zijn. Het wordt vaak gebruikt met tijdsbepalingen zoals 'ever', 'never', 'since', en 'for'. De past simple daarentegen wordt gebruikt voor acties die op een specifiek moment in het verleden zijn voltooid, vaak met tijdsbepalingen zoals 'yesterday', 'last year', of 'in 2010'. Het verschil tussen deze twee tijden kan worden vergeleken met het Nederlandse verschil tussen de voltooid tegenwoordige tijd en de verleden tijd, hoewel de nuances in gebruik verschillen.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Het onderwerp van de zin, dat de actie uitvoert.",
+    "voorbeeld": "I, You, He, She, We, They"
+   },
+   {
+    "element": "have/has",
+    "rol": "Hulpwerkwoord dat wordt gebruikt in de present perfect.",
+    "voorbeeld": "I have, He has"
+   },
+   {
+    "element": "Past Participle",
+    "rol": "De derde vorm van het werkwoord gebruikt in de present perfect.",
+    "voorbeeld": "eaten, gone, seen"
+   },
+   {
+    "element": "Verb in Past Form",
+    "rol": "De verleden tijdsvorm van het werkwoord gebruikt in de past simple.",
+    "voorbeeld": "ate, went, saw"
+   },
+   {
+    "element": "Time Expressions",
+    "rol": "Woorden of zinnen die de tijd aangeven en vaak de keuze van de tijd beïnvloeden.",
+    "voorbeeld": "yesterday, since 2010, for two years"
+   }
+  ],
+  "tips": [
+   "Gebruik de present perfect voor acties die nog steeds relevant zijn of een effect hebben op het heden.",
+   "Gebruik de past simple voor acties die volledig in het verleden zijn afgerond.",
+   "Let op tijdsbepalingen: 'since' en 'for' passen vaak bij present perfect, terwijl 'yesterday' en 'last week' bij past simple passen.",
+   "Als je twijfelt, vraag jezelf af of de actie nog steeds invloed heeft op het heden."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'have' en 'has' in de present perfect. Correctie: 'I have seen' vs 'He has seen'.",
+   "Gebruik van past simple met tijdsbepalingen die present perfect vereisen. Correctie: 'I have lived here since 2010' in plaats van 'I lived here since 2010'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I have visited Paris three times.",
+    "romaji": "ai hæv vɪzɪtɪd ˈpærɪs θri taɪmz",
+    "dutch": "Ik heb Parijs drie keer bezocht."
+   },
+   {
+    "japanese": "She has never eaten sushi.",
+    "romaji": "ʃi hæz ˈnɛvər ˈitən ˈsuʃi",
+    "dutch": "Zij heeft nog nooit sushi gegeten."
+   },
+   {
+    "japanese": "We went to the cinema last night.",
+    "romaji": "wi wɛnt tu ðə ˈsɪnəmə læst naɪt",
+    "dutch": "We gingen gisteravond naar de bioscoop."
+   },
+   {
+    "japanese": "They have lived here for five years.",
+    "romaji": "ðeɪ hæv lɪvd hɪr fɔr faɪv jɪrz",
+    "dutch": "Zij wonen hier al vijf jaar."
+   },
+   {
+    "japanese": "I saw that movie last week.",
+    "romaji": "aɪ sɔ ðæt ˈmuvi læst wik",
+    "dutch": "Ik zag die film vorige week."
+   },
+   {
+    "japanese": "He has just finished his homework.",
+    "romaji": "hi hæz dʒʌst ˈfɪnɪʃt hɪz ˈhoʊmˌwɜrk",
+    "dutch": "Hij heeft net zijn huiswerk afgemaakt."
+   }
+  ]
+ },
+ "en-b1-pastcont": {
+  "naam": "Past Continuous",
+  "tagline": "Beschrijf acties die in het verleden aan de gang waren.",
+  "niveau": "basis",
+  "kernregel": "De past continuous wordt gebruikt om aan te geven dat een actie op een bepaald moment in het verleden aan de gang was. Het benadrukt de duur of voortgang van de actie, vaak in contrast met een andere gebeurtenis.",
+  "patroon": "was/were + present participle",
+  "uitleg": "De past continuous wordt gevormd door de verleden tijd van 'to be' (was/were) te combineren met het tegenwoordig deelwoord (werkwoord + -ing). Het wordt vaak gebruikt om een achtergrondactie te beschrijven die werd onderbroken door een andere actie, die meestal in de past simple staat. In tegenstelling tot het Nederlands, waar we vaak de verleden tijd gebruiken, benadrukt de past continuous de voortgang van de actie. Bijvoorbeeld, 'Ik was aan het lezen toen de telefoon ging' wordt in het Engels 'I was reading when the phone rang'.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Geeft aan wie of wat de actie uitvoert.",
+    "voorbeeld": "I, You, He, She, It, We, They"
+   },
+   {
+    "element": "Was/Were",
+    "rol": "Hulpwerkwoord dat de verleden tijd aangeeft.",
+    "voorbeeld": "I was, You were, He was, We were"
+   },
+   {
+    "element": "Present Participle",
+    "rol": "Hoofdwerkwoord in de -ing vorm dat de actie beschrijft.",
+    "voorbeeld": "running, eating, reading"
+   },
+   {
+    "element": "Tijdsaanduiding",
+    "rol": "Optioneel element dat de tijd specificeert.",
+    "voorbeeld": "at 5 PM, when the phone rang"
+   }
+  ],
+  "tips": [
+   "Gebruik 'was' met enkelvoudige onderwerpen (I, he, she, it) en 'were' met meervoudige onderwerpen (you, we, they).",
+   "Gebruik de past continuous om een achtergrondactie te beschrijven die door een andere actie werd onderbroken.",
+   "Let op de juiste spelling van het tegenwoordig deelwoord, vooral bij werkwoorden die eindigen op -e (bijv. 'make' wordt 'making').",
+   "Gebruik de past continuous om een sfeer of setting in een verhaal te creëren."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 'was' en 'were'. Correctie: 'He were playing' moet zijn 'He was playing'.",
+   "Vergeten de -ing vorm te gebruiken. Correctie: 'I was read a book' moet zijn 'I was reading a book'.",
+   "Verkeerd gebruik van de past simple in plaats van past continuous. Correctie: 'I read when she called' moet zijn 'I was reading when she called'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I was watching TV when the doorbell rang.",
+    "romaji": "I was watching TV when the doorbell rang.",
+    "dutch": "Ik was tv aan het kijken toen de deurbel ging."
+   },
+   {
+    "japanese": "They were playing soccer while it was raining.",
+    "romaji": "They were playing soccer while it was raining.",
+    "dutch": "Zij waren aan het voetballen terwijl het regende."
+   },
+   {
+    "japanese": "She was cooking dinner when I arrived.",
+    "romaji": "She was cooking dinner when I arrived.",
+    "dutch": "Zij was aan het koken toen ik aankwam."
+   },
+   {
+    "japanese": "We were driving home when we saw the accident.",
+    "romaji": "We were driving home when we saw the accident.",
+    "dutch": "We waren naar huis aan het rijden toen we het ongeluk zagen."
+   },
+   {
+    "japanese": "He was reading a book at 8 PM.",
+    "romaji": "He was reading a book at 8 PM.",
+    "dutch": "Hij was een boek aan het lezen om 8 uur 's avonds."
+   },
+   {
+    "japanese": "The children were sleeping when the storm started.",
+    "romaji": "The children were sleeping when the storm started.",
+    "dutch": "De kinderen sliepen toen de storm begon."
+   }
+  ]
+ },
+ "en-b1-cond1": {
+  "naam": "First Conditional",
+  "tagline": "Voorwaardelijke zinnen voor mogelijke toekomstige situaties.",
+  "niveau": "basis",
+  "kernregel": "Het first conditional patroon wordt gebruikt om te praten over reële en mogelijke situaties in de toekomst. Het beschrijft wat er kan gebeuren als een bepaalde voorwaarde wordt vervuld.",
+  "patroon": "if + present simple, will + infinitive",
+  "uitleg": "Het first conditional patroon wordt gebruikt om een mogelijke toekomstige gebeurtenis en het resultaat daarvan te beschrijven. In het Engels gebruiken we 'if' gevolgd door de present simple om de voorwaarde aan te geven, en 'will' gevolgd door het infinitief om het gevolg te beschrijven. Dit is anders dan in het Nederlands, waar vaak de tegenwoordige tijd wordt gebruikt voor beide delen van de zin. Het is belangrijk om te onthouden dat het first conditional patroon alleen wordt gebruikt voor situaties die mogelijk en realistisch zijn.",
+  "opbouw": [
+   {
+    "element": "if",
+    "rol": "Geeft de voorwaarde aan.",
+    "voorbeeld": "If it rains, we will stay inside."
+   },
+   {
+    "element": "present simple",
+    "rol": "Wordt gebruikt na 'if' om de voorwaarde te beschrijven.",
+    "voorbeeld": "If you study, you will pass the exam."
+   },
+   {
+    "element": "will",
+    "rol": "Wordt gebruikt om het gevolg aan te geven.",
+    "voorbeeld": "If you call her, she will come."
+   },
+   {
+    "element": "infinitive",
+    "rol": "Het werkwoord dat volgt op 'will' zonder 'to'.",
+    "voorbeeld": "If they invite us, we will go."
+   }
+  ],
+  "tips": [
+   "Gebruik altijd de present simple na 'if' in het first conditional.",
+   "Gebruik 'will' om het gevolg of de actie aan te geven die volgt op de voorwaarde.",
+   "Het is mogelijk om de volgorde van de zinsdelen om te draaien, bijvoorbeeld: 'We will stay inside if it rains.'",
+   "Vermijd het gebruik van 'will' direct na 'if'; dit is een veelgemaakte fout."
+  ],
+  "veelgemaaktefouten": [
+   "Gebruik van 'will' na 'if': Correct is 'If it rains, we will stay inside.' in plaats van 'If it will rain, we will stay inside.'",
+   "Verwarring met de zero conditional: Gebruik de first conditional voor mogelijke toekomstige situaties, niet voor algemene waarheden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "If you leave now, you will catch the bus.",
+    "romaji": "If you leave now, you will catch the bus.",
+    "dutch": "Als je nu vertrekt, haal je de bus."
+   },
+   {
+    "japanese": "If she doesn't hurry, she will miss the train.",
+    "romaji": "If she doesn't hurry, she will miss the train.",
+    "dutch": "Als ze zich niet haast, mist ze de trein."
+   },
+   {
+    "japanese": "If we save enough money, we will go on vacation.",
+    "romaji": "If we save enough money, we will go on vacation.",
+    "dutch": "Als we genoeg geld sparen, gaan we op vakantie."
+   },
+   {
+    "japanese": "If they win the match, they will be champions.",
+    "romaji": "If they win the match, they will be champions.",
+    "dutch": "Als ze de wedstrijd winnen, worden ze kampioen."
+   },
+   {
+    "japanese": "If it gets colder, we will need our coats.",
+    "romaji": "If it gets colder, we will need our coats.",
+    "dutch": "Als het kouder wordt, hebben we onze jassen nodig."
+   },
+   {
+    "japanese": "If you tell me the truth, I will forgive you.",
+    "romaji": "If you tell me the truth, I will forgive you.",
+    "dutch": "Als je me de waarheid vertelt, vergeef ik je."
+   }
+  ]
+ },
+ "en-b1-cond2": {
+  "naam": "Second Conditional",
+  "tagline": "Hypothetische situaties en hun gevolgen in het heden of de toekomst.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het tweede voorwaardelijke patroon wordt gebruikt om hypothetische of onwaarschijnlijke situaties in het heden of de toekomst te beschrijven en hun mogelijke gevolgen. Het impliceert dat de situatie niet echt of erg onwaarschijnlijk is.",
+  "patroon": "If + past simple, ... would + base verb",
+  "uitleg": "De tweede voorwaardelijke zin bestaat uit twee delen: een 'if'-clausule en een hoofdclausule. De 'if'-clausule gebruikt de verleden tijd om een hypothetische situatie te beschrijven, terwijl de hoofdclausule 'would' gebruikt, gevolgd door het basiswerkwoord, om het gevolg van die situatie te beschrijven. In tegenstelling tot het Nederlands, waar je vaak de verleden tijd gebruikt voor beide delen, gebruik je in het Engels 'would' om het hypothetische karakter te benadrukken. Dit patroon wordt vaak gebruikt om te speculeren over situaties die niet waarschijnlijk zijn of om advies te geven.",
+  "opbouw": [
+   {
+    "element": "If-clause",
+    "rol": "Introduceert de hypothetische situatie met een werkwoord in de verleden tijd.",
+    "voorbeeld": "If I won the lottery,"
+   },
+   {
+    "element": "Past Simple",
+    "rol": "Gebruikt in de 'if'-clausule om de hypothetische situatie te beschrijven.",
+    "voorbeeld": "If I had more time,"
+   },
+   {
+    "element": "Main Clause",
+    "rol": "Beschrijft het gevolg van de hypothetische situatie met 'would' en het basiswerkwoord.",
+    "voorbeeld": "I would travel the world."
+   },
+   {
+    "element": "Would",
+    "rol": "Geeft aan dat het gevolg hypothetisch is en niet werkelijk gebeurt.",
+    "voorbeeld": "I would buy a new car."
+   },
+   {
+    "element": "Base Verb",
+    "rol": "Het werkwoord dat volgt op 'would' in de hoofdclausule.",
+    "voorbeeld": "would go"
+   }
+  ],
+  "tips": [
+   "Gebruik altijd de verleden tijd in de 'if'-clausule, zelfs als je over de toekomst spreekt.",
+   "Vergeet niet 'would' te gebruiken in de hoofdclausule om de hypothetische aard te benadrukken.",
+   "Je kunt 'could' of 'might' gebruiken in plaats van 'would' om mogelijkheid of onzekerheid uit te drukken.",
+   "Het is gebruikelijk om 'were' te gebruiken in plaats van 'was' in formele situaties, vooral met 'I'."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van de tegenwoordige tijd in de 'if'-clausule. Correctie: Gebruik de verleden tijd.",
+   "Het weglaten van 'would' in de hoofdclausule. Correctie: Voeg 'would' toe om het gevolg hypothetisch te maken.",
+   "Verwarring met de eerste voorwaardelijke zin. Correctie: Gebruik de tweede voorwaardelijke zin voor onwaarschijnlijke of hypothetische situaties."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "If I had a million dollars, I would buy a house.",
+    "romaji": "If I had a million dollars, I would buy a house.",
+    "dutch": "Als ik een miljoen dollar had, zou ik een huis kopen."
+   },
+   {
+    "japanese": "If she knew his number, she would call him.",
+    "romaji": "If she knew his number, she would call him.",
+    "dutch": "Als ze zijn nummer kende, zou ze hem bellen."
+   },
+   {
+    "japanese": "If it rained tomorrow, we would stay indoors.",
+    "romaji": "If it rained tomorrow, we would stay indoors.",
+    "dutch": "Als het morgen regende, zouden we binnen blijven."
+   },
+   {
+    "japanese": "If I were you, I would take the job.",
+    "romaji": "If I were you, I would take the job.",
+    "dutch": "Als ik jou was, zou ik de baan aannemen."
+   },
+   {
+    "japanese": "If they lived closer, we would visit them more often.",
+    "romaji": "If they lived closer, we would visit them more often.",
+    "dutch": "Als ze dichterbij woonden, zouden we hen vaker bezoeken."
+   },
+   {
+    "japanese": "If we had more information, we could make a better decision.",
+    "romaji": "If we had more information, we could make a better decision.",
+    "dutch": "Als we meer informatie hadden, zouden we een betere beslissing kunnen nemen."
+   }
+  ]
+ },
+ "en-b1-usedto": {
+  "naam": "Used to",
+  "tagline": "Leer hoe je gewoontes en toestanden uit het verleden beschrijft.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 'used to' wordt gebruikt om gewoontes of toestanden uit het verleden te beschrijven die niet langer waar zijn. Het helpt om duidelijk te maken dat een bepaalde actie of situatie regelmatig voorkwam, maar nu niet meer gebeurt.",
+  "patroon": "subject + used to + base form of the verb",
+  "uitleg": "'Used to' wordt gebruikt om te praten over gewoontes of toestanden die in het verleden regelmatig plaatsvonden, maar nu niet meer. In het Nederlands gebruiken we vaak 'vroeger' of 'gewoond te' om dit idee over te brengen. Het is belangrijk om te onthouden dat 'used to' alleen in de verleden tijd wordt gebruikt en dat het altijd gevolgd wordt door de basisvorm van het werkwoord. In tegenstelling tot het Nederlands, waar we vaak de verleden tijd zelf gebruiken, maakt 'used to' het expliciet dat de actie of toestand nu niet meer plaatsvindt.",
+  "opbouw": [
+   {
+    "element": "subject",
+    "rol": "Geeft aan wie de actie uitvoert of de toestand ervaart.",
+    "voorbeeld": "I, you, he, she, we, they"
+   },
+   {
+    "element": "used to",
+    "rol": "Duidt op een gewoonte of toestand in het verleden die nu niet meer bestaat.",
+    "voorbeeld": "used to"
+   },
+   {
+    "element": "base form of the verb",
+    "rol": "Beschrijft de actie of toestand die in het verleden regelmatig plaatsvond.",
+    "voorbeeld": "play, live, be"
+   }
+  ],
+  "tips": [
+   "Gebruik 'used to' alleen voor acties of toestanden die in het verleden regelmatig voorkwamen.",
+   "Verwar 'used to' niet met 'be used to', wat betekent dat iemand ergens aan gewend is.",
+   "Zorg ervoor dat je 'used to' niet in de tegenwoordige tijd probeert te gebruiken; het is altijd verleden tijd.",
+   "Let op de uitspraak: 'used to' klinkt vaak als 'yoost to'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'used to' en 'be used to'. Correctie: 'I used to play soccer' (Ik speelde vroeger voetbal) vs. 'I am used to playing soccer' (Ik ben gewend voetbal te spelen).",
+   "Het gebruik van 'used to' in de tegenwoordige tijd. Correctie: Gebruik in plaats daarvan de tegenwoordige tijdsvorm van het werkwoord.",
+   "Vergeten de basisvorm van het werkwoord te gebruiken. Correctie: Na 'used to' moet altijd de basisvorm van het werkwoord volgen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I used to play the piano.",
+    "romaji": "Ai yoost to plei thuh pi-a-noh.",
+    "dutch": "Ik speelde vroeger piano."
+   },
+   {
+    "japanese": "She used to live in Paris.",
+    "romaji": "Shii yoost to liv in Peh-ris.",
+    "dutch": "Zij woonde vroeger in Parijs."
+   },
+   {
+    "japanese": "They used to go to the beach every summer.",
+    "romaji": "They yoost to goh to thuh beech ev-ree suhm-er.",
+    "dutch": "Zij gingen vroeger elke zomer naar het strand."
+   },
+   {
+    "japanese": "We used to be best friends.",
+    "romaji": "Wee yoost to bee best frends.",
+    "dutch": "Wij waren vroeger beste vrienden."
+   },
+   {
+    "japanese": "He used to work at a bank.",
+    "romaji": "Hee yoost to werk at uh bank.",
+    "dutch": "Hij werkte vroeger bij een bank."
+   },
+   {
+    "japanese": "You used to love chocolate.",
+    "romaji": "Yoo yoost to luv chah-koh-lit.",
+    "dutch": "Jij hield vroeger van chocolade."
+   }
+  ]
+ },
+ "en-b1-passive": {
+  "naam": "Passive Voice",
+  "tagline": "Leer hoe je de passieve vorm in het Engels gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "De passieve vorm wordt gebruikt om de focus te leggen op de actie zelf of op het object van de actie, in plaats van op de uitvoerder van de actie. Het is nuttig wanneer de uitvoerder onbekend, onbelangrijk of voor de hand liggend is.",
+  "patroon": "Object + 'to be' + voltooid deelwoord (+ door + subject)",
+  "uitleg": "In het Engels wordt de passieve vorm vaak gebruikt wanneer de spreker de aandacht wil richten op de actie of het object van de actie, in plaats van op degene die de actie uitvoert. Dit is anders dan in het Nederlands, waar de actieve vorm vaker de voorkeur heeft. De passieve zin wordt gevormd door het object van de actieve zin naar voren te halen, gevolgd door een vorm van het werkwoord 'to be' en het voltooid deelwoord van het hoofdwerkwoord. Het subject van de actieve zin kan worden toegevoegd met 'by', maar dit is optioneel en vaak weggelaten als het niet belangrijk is.",
+  "opbouw": [
+   {
+    "element": "Object",
+    "rol": "Het object van de actieve zin wordt het onderwerp van de passieve zin.",
+    "voorbeeld": "The book was read by her."
+   },
+   {
+    "element": "'to be'",
+    "rol": "Het werkwoord 'to be' wordt vervoegd in de tijd van de actieve zin.",
+    "voorbeeld": "The song is sung by the artist."
+   },
+   {
+    "element": "Voltooid deelwoord",
+    "rol": "Het hoofdwerkwoord wordt omgezet naar de voltooid deelwoordvorm.",
+    "voorbeeld": "The cake was baked by John."
+   },
+   {
+    "element": "Door + subject",
+    "rol": "Optioneel: geeft aan wie de actie uitvoert, maar kan worden weggelaten als het niet belangrijk is.",
+    "voorbeeld": "The letter was written by Mary."
+   }
+  ],
+  "tips": [
+   "Gebruik de passieve vorm om de aandacht te vestigen op het object of de actie, niet op de uitvoerder.",
+   "Vervoeg 'to be' correct in de tijd van de oorspronkelijke actieve zin.",
+   "Het is niet altijd nodig om 'by' + subject toe te voegen, vooral als de uitvoerder niet belangrijk is.",
+   "De passieve vorm kan formeel klinken; gebruik hem spaarzaam in informele contexten."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde vervoeging van 'to be': 'The project is completed by the team' (correct) in plaats van 'The project are completed by the team' (incorrect).",
+   "Onjuist gebruik van het voltooid deelwoord: 'The window was broken by the storm' (correct) in plaats van 'The window was break by the storm' (incorrect)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "The house was built in 1990.",
+    "romaji": "De woning werd in 1990 gebouwd.",
+    "dutch": "Het huis werd in 1990 gebouwd."
+   },
+   {
+    "japanese": "The movie was directed by Spielberg.",
+    "romaji": "De film werd geregisseerd door Spielberg.",
+    "dutch": "De film werd geregisseerd door Spielberg."
+   },
+   {
+    "japanese": "The email was sent yesterday.",
+    "romaji": "De e-mail werd gisteren verzonden.",
+    "dutch": "De e-mail werd gisteren verzonden."
+   },
+   {
+    "japanese": "The cake will be eaten by the children.",
+    "romaji": "De taart zal door de kinderen worden gegeten.",
+    "dutch": "De taart zal door de kinderen worden gegeten."
+   },
+   {
+    "japanese": "The song has been recorded by the band.",
+    "romaji": "Het lied is opgenomen door de band.",
+    "dutch": "Het lied is opgenomen door de band."
+   },
+   {
+    "japanese": "The problem was solved quickly.",
+    "romaji": "Het probleem werd snel opgelost.",
+    "dutch": "Het probleem werd snel opgelost."
+   }
+  ]
+ },
+ "en-b1-relative": {
+  "naam": "Relative Clauses",
+  "tagline": "Verbind zinnen en voeg extra informatie toe met relatieve bijzinnen.",
+  "niveau": "gemiddeld",
+  "kernregel": "Relative clauses worden gebruikt om extra informatie over een zelfstandig naamwoord in een zin te geven zonder een nieuwe zin te beginnen. Ze helpen om zinnen te verbinden en details toe te voegen, waardoor de tekst vloeiender en informatiever wordt.",
+  "patroon": "zelfstandig naamwoord + relative pronoun + bijzin",
+  "uitleg": "Relative clauses zijn zinsdelen die extra informatie geven over een zelfstandig naamwoord in de hoofdzin. Ze beginnen meestal met een betrekkelijk voornaamwoord zoals 'who', 'whom', 'whose', 'which' of 'that'. In het Engels worden ze vaak gebruikt om zinnen te verbinden zonder dat er een nieuwe zin begint. Dit is vergelijkbaar met het gebruik van 'die' of 'dat' in het Nederlands. Relative clauses kunnen definiërend zijn, wat betekent dat ze essentiële informatie geven, of niet-definiërend, wat betekent dat ze extra, niet-essentiële informatie geven.",
+  "opbouw": [
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het zelfstandig naamwoord dat wordt beschreven of nader toegelicht door de relative clause.",
+    "voorbeeld": "The book that I read was fascinating."
+   },
+   {
+    "element": "relative pronoun",
+    "rol": "Het betrekkelijk voornaamwoord dat de relative clause inleidt.",
+    "voorbeeld": "The person who called me was my friend."
+   },
+   {
+    "element": "bijzin",
+    "rol": "De groep woorden die extra informatie over het zelfstandig naamwoord geeft.",
+    "voorbeeld": "The car, which was red, sped past us."
+   },
+   {
+    "element": "definiërende relative clause",
+    "rol": "Geeft essentiële informatie die nodig is om het zelfstandig naamwoord te identificeren.",
+    "voorbeeld": "The student who studies hard will succeed."
+   },
+   {
+    "element": "niet-definiërende relative clause",
+    "rol": "Geeft extra informatie die niet essentieel is voor de identificatie van het zelfstandig naamwoord.",
+    "voorbeeld": "My brother, who lives in New York, is visiting us next week."
+   }
+  ],
+  "tips": [
+   "Gebruik 'who' voor mensen en 'which' voor dingen in niet-definiërende relative clauses.",
+   "Gebruik geen komma's bij definiërende relative clauses.",
+   "Gebruik 'that' in definiërende relative clauses voor zowel mensen als dingen.",
+   "Vermijd het gebruik van 'that' in niet-definiërende relative clauses."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'who' en 'whom'. Gebruik 'who' als onderwerp en 'whom' als lijdend voorwerp.",
+   "Het gebruik van komma's in definiërende relative clauses. Correctie: Laat de komma's weg.",
+   "Het gebruik van 'which' in plaats van 'that' in definiërende relative clauses. Correctie: Gebruik 'that' voor essentiële informatie."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "The woman who lives next door is a doctor.",
+    "romaji": "De vrouw die naast woont is een dokter.",
+    "dutch": "De vrouw die naast woont is een dokter."
+   },
+   {
+    "japanese": "The cake that she baked was delicious.",
+    "romaji": "De cake die ze bakte was heerlijk.",
+    "dutch": "De cake die ze bakte was heerlijk."
+   },
+   {
+    "japanese": "The house, which was built in 1920, is still standing.",
+    "romaji": "Het huis, dat in 1920 werd gebouwd, staat nog steeds.",
+    "dutch": "Het huis, dat in 1920 werd gebouwd, staat nog steeds."
+   },
+   {
+    "japanese": "The movie that we watched was thrilling.",
+    "romaji": "De film die we keken was spannend.",
+    "dutch": "De film die we keken was spannend."
+   },
+   {
+    "japanese": "The teacher, whose class I attend, is very knowledgeable.",
+    "romaji": "De leraar, wiens klas ik bijwoon, is zeer deskundig.",
+    "dutch": "De leraar, wiens klas ik bijwoon, is zeer deskundig."
+   },
+   {
+    "japanese": "The artist whom we met was very talented.",
+    "romaji": "De kunstenaar die we ontmoetten was zeer getalenteerd.",
+    "dutch": "De kunstenaar die we ontmoetten was zeer getalenteerd."
+   }
+  ]
+ },
+ "en-b1-reported": {
+  "naam": "Reported Speech",
+  "tagline": "Leer hoe je indirecte rede gebruikt in het Engels.",
+  "niveau": "gemiddeld",
+  "kernregel": "Reported speech wordt gebruikt om te vertellen wat iemand anders heeft gezegd zonder hun exacte woorden te herhalen. Het is handig voor het overbrengen van informatie zonder directe citaten.",
+  "patroon": "[Subject] + [reporting verb] + (that) + [reported clause]",
+  "uitleg": "In het Engels gebruiken we reported speech om te beschrijven wat iemand anders heeft gezegd. Dit doen we vaak door de werkwoordstijden te veranderen en soms ook de plaats- en tijdsaanduidingen. Bijvoorbeeld, als iemand zegt: 'I am going to the store', kun je dat in reported speech veranderen naar: 'He said that he was going to the store'. Het woord 'that' is optioneel en kan worden weggelaten. Let op dat de werkwoordstijden vaak een stap teruggaan in de tijd: present simple wordt past simple, present continuous wordt past continuous, enzovoort.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "De persoon die de oorspronkelijke uitspraak rapporteert.",
+    "voorbeeld": "He, She, They"
+   },
+   {
+    "element": "Reporting verb",
+    "rol": "Het werkwoord dat aangeeft dat er iets gerapporteerd wordt.",
+    "voorbeeld": "said, told, asked"
+   },
+   {
+    "element": "That",
+    "rol": "Optioneel verbindingswoord dat de hoofdzin en de bijzin verbindt.",
+    "voorbeeld": "He said that he was tired."
+   },
+   {
+    "element": "Reported clause",
+    "rol": "De zin die de gerapporteerde uitspraak bevat, vaak met aangepaste werkwoordstijden.",
+    "voorbeeld": "he was going to the store"
+   },
+   {
+    "element": "Time expressions",
+    "rol": "Tijdsaanduidingen die vaak worden aangepast in reported speech.",
+    "voorbeeld": "'now' wordt 'then', 'today' wordt 'that day'"
+   }
+  ],
+  "tips": [
+   "Verander de werkwoordstijden in de gerapporteerde zin om aan te geven dat het in het verleden is gezegd.",
+   "Pas plaats- en tijdsaanduidingen aan om de context van de oorspronkelijke uitspraak weer te geven.",
+   "Gebruik 'that' om de zinnen te verbinden, maar het is niet verplicht.",
+   "Let op de context: sommige werkwoorden zoals 'told' vereisen een direct object (bijv. 'He told me')."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de werkwoordstijd aan te passen: 'He said he is coming' moet zijn 'He said he was coming'.",
+   "Het gebruik van 'say' in plaats van 'tell' met een direct object: 'He said me' moet zijn 'He told me'.",
+   "Verkeerd gebruik van tijdsaanduidingen: 'He said he will come tomorrow' moet zijn 'He said he would come the next day'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "She said she was tired.",
+    "romaji": "She said she was tired.",
+    "dutch": "Ze zei dat ze moe was."
+   },
+   {
+    "japanese": "They told us that they would arrive late.",
+    "romaji": "They told us that they would arrive late.",
+    "dutch": "Ze vertelden ons dat ze laat zouden aankomen."
+   },
+   {
+    "japanese": "He mentioned that he had seen the movie.",
+    "romaji": "He mentioned that he had seen the movie.",
+    "dutch": "Hij vermeldde dat hij de film had gezien."
+   },
+   {
+    "japanese": "She asked if I was coming to the party.",
+    "romaji": "She asked if I was coming to the party.",
+    "dutch": "Ze vroeg of ik naar het feest kwam."
+   },
+   {
+    "japanese": "He explained that he couldn't attend the meeting.",
+    "romaji": "He explained that he couldn't attend the meeting.",
+    "dutch": "Hij legde uit dat hij de vergadering niet kon bijwonen."
+   },
+   {
+    "japanese": "They said they had finished their homework.",
+    "romaji": "They said they had finished their homework.",
+    "dutch": "Ze zeiden dat ze hun huiswerk af hadden."
+   }
+  ]
+ },
+ "en-b1-gerinf": {
+  "naam": "Gerunds & Infinitives",
+  "tagline": "Begrijp het gebruik van gerunds en infinitives in het Engels.",
+  "niveau": "gemiddeld",
+  "kernregel": "Gerunds en infinitives zijn vormen van werkwoorden die vaak als zelfstandige naamwoorden functioneren. Ze worden vaak gebruikt na bepaalde werkwoorden, bijvoeglijke naamwoorden en voorzetsels.",
+  "patroon": "[werkwoord] + [gerund/infinitive]",
+  "uitleg": "In het Engels kunnen gerunds (werkwoord + '-ing') en infinitives ('to' + werkwoord) beide als zelfstandige naamwoorden functioneren. Gerunds worden vaak gebruikt na voorzetsels en bepaalde werkwoorden zoals 'enjoy' en 'avoid'. Infinitives worden vaak gebruikt na bijvoeglijke naamwoorden en andere werkwoorden zoals 'want' en 'decide'. Het kiezen tussen een gerund of een infinitive kan de betekenis van de zin veranderen, vergelijkbaar met hoe in het Nederlands bepaalde werkwoorden een specifieke vorm vereisen.",
+  "opbouw": [
+   {
+    "element": "Gerund",
+    "rol": "Functioneert als zelfstandig naamwoord, vaak gebruikt na voorzetsels en bepaalde werkwoorden.",
+    "voorbeeld": "I enjoy swimming."
+   },
+   {
+    "element": "Infinitive",
+    "rol": "Functioneert als zelfstandig naamwoord of bijwoord, vaak gebruikt na bijvoeglijke naamwoorden en bepaalde werkwoorden.",
+    "voorbeeld": "I want to swim."
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Bepaalt of een gerund of infinitive volgt.",
+    "voorbeeld": "He decided to leave."
+   },
+   {
+    "element": "Bijvoeglijk naamwoord",
+    "rol": "Kan een infinitive vereisen om de zin te completeren.",
+    "voorbeeld": "It is important to study."
+   },
+   {
+    "element": "Voorzetsel",
+    "rol": "Vereist vaak een gerund als object.",
+    "voorbeeld": "She is good at drawing."
+   }
+  ],
+  "tips": [
+   "Onthoud dat sommige werkwoorden altijd een gerund of infinitive vereisen, zoals 'enjoy' (gerund) en 'plan' (infinitive).",
+   "Gebruik gerunds na voorzetsels, bijvoorbeeld 'interested in learning'.",
+   "Infinitives worden vaak gebruikt om het doel of de intentie aan te geven, zoals 'to learn'.",
+   "Let op werkwoorden die beide vormen kunnen gebruiken, maar met verschillende betekenissen, zoals 'stop doing' versus 'stop to do'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen gerund en infinitive na bepaalde werkwoorden: Correct is 'I enjoy reading' (niet 'I enjoy to read').",
+   "Het gebruik van een gerund na een bijvoeglijk naamwoord: Correct is 'It is easy to understand' (niet 'It is easy understanding')."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "I love reading books.",
+    "romaji": "Ai rabu riidingu bukusu.",
+    "dutch": "Ik hou van boeken lezen."
+   },
+   {
+    "japanese": "She decided to travel to Japan.",
+    "romaji": "Shii disaidid tu travul tu Japan.",
+    "dutch": "Ze besloot naar Japan te reizen."
+   },
+   {
+    "japanese": "He is interested in learning Japanese.",
+    "romaji": "Hii iz intrestid in lurning Japanizu.",
+    "dutch": "Hij is geïnteresseerd in het leren van Japans."
+   },
+   {
+    "japanese": "They plan to visit the museum.",
+    "romaji": "Dei plan tu vizit the myooziam.",
+    "dutch": "Ze zijn van plan het museum te bezoeken."
+   },
+   {
+    "japanese": "We stopped to rest for a while.",
+    "romaji": "Wii stopt tu rest for a wail.",
+    "dutch": "We stopten om even te rusten."
+   },
+   {
+    "japanese": "She avoided talking to him.",
+    "romaji": "Shii avooidid toking tu him.",
+    "dutch": "Ze vermeed het om met hem te praten."
+   }
+  ]
+ },
+ "en-b1-modalprob": {
+  "naam": "Modals of Probability",
+  "tagline": "Gebruik modale werkwoorden om waarschijnlijkheid uit te drukken.",
+  "niveau": "gemiddeld",
+  "kernregel": "Modale werkwoorden van waarschijnlijkheid worden gebruikt om de waarschijnlijkheid of mogelijkheid van een gebeurtenis in het heden of de toekomst uit te drukken. Ze helpen ons om te communiceren hoe zeker we zijn over iets dat gaat gebeuren.",
+  "patroon": "[subject] + [modal verb] + [base form of verb]",
+  "uitleg": "In het Engels gebruiken we modale werkwoorden zoals 'might', 'may', 'could', 'must', en 'can't' om aan te geven hoe zeker we zijn over een bepaalde situatie. Deze werkwoorden veranderen niet afhankelijk van het onderwerp en worden altijd gevolgd door de basisvorm van het werkwoord. 'Must' en 'can't' worden gebruikt voor hoge waarschijnlijkheid, terwijl 'might', 'may', en 'could' voor lagere waarschijnlijkheid worden gebruikt. In tegenstelling tot het Nederlands, waar we vaak bijwoorden gebruiken om waarschijnlijkheid uit te drukken, gebruiken we in het Engels deze specifieke modale werkwoorden.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Het onderwerp van de zin dat de actie uitvoert of ondergaat.",
+    "voorbeeld": "She"
+   },
+   {
+    "element": "Modal Verb",
+    "rol": "Geeft de waarschijnlijkheid of mogelijkheid aan.",
+    "voorbeeld": "might"
+   },
+   {
+    "element": "Base Form of Verb",
+    "rol": "De basisvorm van het werkwoord die volgt op het modale werkwoord.",
+    "voorbeeld": "go"
+   },
+   {
+    "element": "Context",
+    "rol": "Geeft extra informatie over de situatie of tijd.",
+    "voorbeeld": "to the party"
+   },
+   {
+    "element": "Time Marker",
+    "rol": "Optioneel; geeft aan wanneer de actie plaatsvindt.",
+    "voorbeeld": "tomorrow"
+   }
+  ],
+  "tips": [
+   "Gebruik 'must' als je bijna zeker bent dat iets waar is.",
+   "Gebruik 'can't' om aan te geven dat je denkt dat iets onmogelijk is.",
+   "Gebruik 'might', 'may', of 'could' als je niet zeker bent en een mogelijkheid wilt aangeven.",
+   "Modale werkwoorden worden niet vervoegd; ze blijven altijd in dezelfde vorm."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'may' en 'can'. Gebruik 'may' voor mogelijkheid en 'can' voor vermogen.",
+   "Het gebruik van een vervoegde werkwoordsvorm na een modaal werkwoord. Correct: 'She might go', Incorrect: 'She might goes'.",
+   "Vergeten dat modale werkwoorden altijd de basisvorm van het werkwoord volgen. Correct: 'He must be', Incorrect: 'He must is'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "She might come to the meeting later.",
+    "romaji": "Zij komt misschien later naar de vergadering.",
+    "dutch": "Zij komt misschien later naar de vergadering."
+   },
+   {
+    "japanese": "He must be the new manager.",
+    "romaji": "Hij moet de nieuwe manager zijn.",
+    "dutch": "Hij moet de nieuwe manager zijn."
+   },
+   {
+    "japanese": "They can't be at home right now.",
+    "romaji": "Ze kunnen nu niet thuis zijn.",
+    "dutch": "Ze kunnen nu niet thuis zijn."
+   },
+   {
+    "japanese": "It could rain this afternoon.",
+    "romaji": "Het zou vanmiddag kunnen regenen.",
+    "dutch": "Het zou vanmiddag kunnen regenen."
+   },
+   {
+    "japanese": "You may need to call a doctor.",
+    "romaji": "Je moet misschien een dokter bellen.",
+    "dutch": "Je moet misschien een dokter bellen."
+   },
+   {
+    "japanese": "We might not have enough time.",
+    "romaji": "We hebben misschien niet genoeg tijd.",
+    "dutch": "We hebben misschien niet genoeg tijd."
+   }
+  ]
+ }
+}

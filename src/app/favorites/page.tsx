@@ -55,7 +55,7 @@ export default function OpgeslagenPagina() {
             href="/"
             className="bg-stone-900 text-white rounded-2xl px-5 py-3 text-sm font-medium active:scale-95 transition-transform"
           >
-            Bekijk situaties
+            Bekijk thema&apos;s
           </Link>
         </div>
       ) : (

@@ -1,0 +1,2353 @@
+{
+ "yue-b-hai": {
+  "naam": "Gebruik van '係' (zijn) in het Kantonees",
+  "tagline": "Leer hoe je het werkwoord 'zijn' correct gebruikt in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees wordt het werkwoord '係' gebruikt om een toestand, identiteit of eigenschap aan te geven. Het is vergelijkbaar met het Nederlandse 'zijn' en wordt vaak gebruikt om te zeggen wie of wat iemand is.",
+  "patroon": "Onderwerp + 係 + Naamwoord/Zinsdeel",
+  "uitleg": "Het werkwoord '係' fungeert als een koppelwerkwoord in het Kantonees, net als 'zijn' in het Nederlands. Het wordt gebruikt om een onderwerp te koppelen aan een naamwoord of een zinsdeel dat een eigenschap of identiteit beschrijft. In tegenstelling tot het Nederlands, waar 'zijn' ook als hulpwerkwoord kan worden gebruikt, wordt '係' uitsluitend gebruikt om een directe verbinding te maken tussen het onderwerp en een naamwoordelijke aanvulling. Het is belangrijk om te weten dat '係' niet wordt gebruikt in combinatie met bijvoeglijke naamwoorden, omdat bijvoeglijke naamwoorden in het Kantonees zonder koppelwerkwoord worden gebruikt.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp van de zin, degene of datgene waarover de zin gaat.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "係",
+    "rol": "Het koppelwerkwoord dat het onderwerp verbindt met een naamwoord of zinsdeel.",
+    "voorbeeld": "係 (hai6)"
+   },
+   {
+    "element": "Naamwoord/Zinsdeel",
+    "rol": "Het deel van de zin dat een eigenschap, identiteit of toestand van het onderwerp beschrijft.",
+    "voorbeeld": "學生 (hok6 saang1) - student"
+   }
+  ],
+  "tips": [
+   "Gebruik '係' alleen om een identiteit of rol aan te geven, niet voor bijvoeglijke naamwoorden.",
+   "Vergeet niet dat '係' niet als hulpwerkwoord wordt gebruikt, in tegenstelling tot 'zijn' in het Nederlands.",
+   "Bij het beschrijven van eigenschappen of toestanden zonder naamwoord, laat je '係' weg."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van '係' met bijvoeglijke naamwoorden, zoals in '我係高' (ngo5 hai6 gou1) in plaats van '我高' (ngo5 gou1) voor 'ik ben lang'.",
+   "Verkeerd gebruik van '係' als hulpwerkwoord, zoals in '我係做緊功課' (ngo5 hai6 zou6 gan2 gung1 fo3) in plaats van '我做緊功課' (ngo5 zou6 gan2 gung1 fo3) voor 'ik ben huiswerk aan het maken'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "佢係老師。",
+    "romaji": "keoi5 hai6 lou5 si1",
+    "dutch": "Hij/Zij is een leraar."
+   },
+   {
+    "japanese": "呢個係我嘅朋友。",
+    "romaji": "ni1 go3 hai6 ngo5 ge3 pang4 jau5",
+    "dutch": "Dit is mijn vriend."
+   },
+   {
+    "japanese": "我哋係學生。",
+    "romaji": "ngo5 dei6 hai6 hok6 saang1",
+    "dutch": "Wij zijn studenten."
+   },
+   {
+    "japanese": "呢度係我屋企。",
+    "romaji": "ni1 dou6 hai6 ngo5 uk1 kei2",
+    "dutch": "Dit is mijn huis."
+   },
+   {
+    "japanese": "佢係醫生。",
+    "romaji": "keoi5 hai6 ji1 sang1",
+    "dutch": "Hij/Zij is een dokter."
+   },
+   {
+    "japanese": "呢本書係佢嘅。",
+    "romaji": "ni1 bun2 syu1 hai6 keoi5 ge3",
+    "dutch": "Dit boek is van hem/haar."
+   }
+  ]
+ },
+ "yue-b-m": {
+  "naam": "Gebruik van '唔' (m4) voor ontkenning",
+  "tagline": "Leer hoe je ontkenning uitdrukt in het Kantonees met '唔'.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees wordt '唔' (m4) gebruikt om een werkwoord of bijvoeglijk naamwoord te ontkennen. Het is vergelijkbaar met het Nederlandse 'niet'.",
+  "patroon": "唔 + werkwoord/bijvoeglijk naamwoord",
+  "uitleg": "Het Kantonees gebruikt '唔' (m4) om een ontkenning uit te drukken, wat vergelijkbaar is met het gebruik van 'niet' in het Nederlands. Dit patroon wordt direct voor een werkwoord of bijvoeglijk naamwoord geplaatst. Anders dan in het Nederlands, waar de ontkenning vaak verderop in de zin komt, staat '唔' direct voor het woord dat ontkend wordt. Dit maakt de structuur van de zin eenvoudig en direct. Het is belangrijk om te onthouden dat '唔' alleen gebruikt wordt voor ontkenningen in de tegenwoordige en toekomstige tijd, en niet voor de verleden tijd.",
+  "opbouw": [
+   {
+    "element": "唔",
+    "rol": "Ontkenning",
+    "voorbeeld": "唔食 (m4 sik6) - niet eten"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Actie",
+    "voorbeeld": "食 (sik6) - eten"
+   },
+   {
+    "element": "bijvoeglijk naamwoord",
+    "rol": "Beschrijving",
+    "voorbeeld": "好 (hou2) - goed"
+   },
+   {
+    "element": "onderwerp",
+    "rol": "Degene die de actie uitvoert",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "object",
+    "rol": "Ontvanger van de actie",
+    "voorbeeld": "飯 (faan6) - rijst"
+   }
+  ],
+  "tips": [
+   "Plaats '唔' direct voor het werkwoord of bijvoeglijk naamwoord dat je wilt ontkennen.",
+   "Gebruik '唔' niet voor de verleden tijd; daarvoor gebruik je '冇' (mou5).",
+   "Let op de toon van '唔' (m4), want een verkeerde toon kan de betekenis veranderen.",
+   "Oefen met eenvoudige zinnen om vertrouwd te raken met de plaatsing van '唔'."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van '唔' in de verleden tijd. Correctie: gebruik '冇' (mou5) in plaats van '唔'.",
+   "Het plaatsen van '唔' na het werkwoord. Correctie: '唔' moet altijd vóór het werkwoord staan.",
+   "Verkeerde toon voor '唔'. Correctie: Zorg ervoor dat je de vierde toon (m4) gebruikt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我唔識佢。",
+    "romaji": "ngo5 m4 sik1 keoi5.",
+    "dutch": "Ik ken hem/haar niet."
+   },
+   {
+    "japanese": "佢唔開心。",
+    "romaji": "keoi5 m4 hoi1 sam1.",
+    "dutch": "Hij/zij is niet blij."
+   },
+   {
+    "japanese": "我唔去學校。",
+    "romaji": "ngo5 m4 heoi3 hok6 haau6.",
+    "dutch": "Ik ga niet naar school."
+   },
+   {
+    "japanese": "我唔想食。",
+    "romaji": "ngo5 m4 soeng2 sik6.",
+    "dutch": "Ik wil niet eten."
+   },
+   {
+    "japanese": "呢個唔貴。",
+    "romaji": "ni1 go3 m4 gwai3.",
+    "dutch": "Dit is niet duur."
+   },
+   {
+    "japanese": "佢唔係老師。",
+    "romaji": "keoi5 m4 hai6 lou5 si1.",
+    "dutch": "Hij/zij is geen leraar."
+   }
+  ]
+ },
+ "yue-b-ge": {
+  "naam": "Het gebruik van '嘅' voor bezit in het Kantonees",
+  "tagline": "Leer hoe je bezit uitdrukt met '嘅' in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees wordt het partikel '嘅' gebruikt om bezit aan te geven, vergelijkbaar met het Nederlandse 'van' of de bezittelijke voornaamwoorden zoals 'mijn' of 'jouw'. Het wordt geplaatst tussen de bezitter en het bezit.",
+  "patroon": "bezitter + 嘅 + bezit",
+  "uitleg": "Het partikel '嘅' is een essentieel onderdeel in het Kantonees om bezit aan te geven. Het fungeert als een verbindingswoord tussen de bezitter en het bezit. In tegenstelling tot het Nederlands, waar bezittelijke voornaamwoorden zoals 'mijn' of 'jouw' worden gebruikt, wordt in het Kantonees '嘅' gebruikt om een vergelijkbare relatie aan te geven. Dit partikel kan worden toegepast op zowel personen als objecten. Het is belangrijk om te onthouden dat '嘅' altijd tussen de bezitter en het bezit staat, en dat het niet wordt gebruikt als het bezit al duidelijk is uit de context.",
+  "opbouw": [
+   {
+    "element": "bezitter",
+    "rol": "De persoon of het object dat het bezit heeft.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "嘅",
+    "rol": "Het partikel dat bezit aangeeft.",
+    "voorbeeld": "嘅 (ge3)"
+   },
+   {
+    "element": "bezit",
+    "rol": "Het object of de persoon die wordt bezeten.",
+    "voorbeeld": "書 (syu1) - boek"
+   }
+  ],
+  "tips": [
+   "Gebruik '嘅' om bezit aan te geven tussen een persoon en een object.",
+   "Plaats '嘅' altijd direct na de bezitter.",
+   "Als de context al duidelijk maakt van wie het bezit is, kan '嘅' soms weggelaten worden.",
+   "Let op de uitspraak van '嘅' (ge3), die essentieel is voor de betekenis."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van '嘅' tussen bezitter en bezit: Correct: 我嘅書 (ngo5 ge3 syu1).",
+   "Verkeerde plaatsing van '嘅': Correct: 佢嘅車 (keoi5 ge3 ce1), niet 車嘅佢 (ce1 ge3 keoi5)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我嘅朋友",
+    "romaji": "ngo5 ge3 pang4 jau5",
+    "dutch": "mijn vriend"
+   },
+   {
+    "japanese": "佢嘅屋企",
+    "romaji": "keoi5 ge3 uk1 kei2",
+    "dutch": "zijn/haar huis"
+   },
+   {
+    "japanese": "老師嘅書",
+    "romaji": "lou5 si1 ge3 syu1",
+    "dutch": "het boek van de leraar"
+   },
+   {
+    "japanese": "媽媽嘅電話",
+    "romaji": "maa4 maa1 ge3 din6 waa2",
+    "dutch": "de telefoon van mama"
+   },
+   {
+    "japanese": "學生嘅筆",
+    "romaji": "hok6 saang1 ge3 bat1",
+    "dutch": "de pen van de student"
+   },
+   {
+    "japanese": "公司嘅地址",
+    "romaji": "gung1 si1 ge3 dei6 zi2",
+    "dutch": "het adres van het bedrijf"
+   }
+  ]
+ },
+ "yue-b-me": {
+  "naam": "Vragen stellen met 咩 en 嗎",
+  "tagline": "Leer hoe je vragen stelt in het Kantonees met behulp van de vraagpartikels 咩 en 嗎.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees worden de vraagpartikels 咩 (me1) en 嗎 (maa3) gebruikt om vragen te stellen. Ze worden aan het einde van een zin geplaatst om een vraag te vormen.",
+  "patroon": "[Stelling] + 咩/嗎",
+  "uitleg": "In het Kantonees worden vragen vaak gevormd door een stelling te maken en daar een vraagpartikel aan toe te voegen. Het partikel 咩 wordt meestal gebruikt in situaties waarin de spreker verrast is of iets niet begrijpt, vergelijkbaar met 'echt?' in het Nederlands. Het partikel 嗎 wordt gebruikt voor het stellen van ja/nee-vragen, vergelijkbaar met het Nederlandse 'toch?' of 'nietwaar?'. Beide partikels worden aan het einde van de zin geplaatst, maar ze hebben een iets andere nuance en gebruikscontext.",
+  "opbouw": [
+   {
+    "element": "Stelling",
+    "rol": "De basiszin die je wilt omzetten in een vraag.",
+    "voorbeeld": "你係學生。"
+   },
+   {
+    "element": "咩",
+    "rol": "Gebruikt om verbazing of ongeloof uit te drukken.",
+    "voorbeeld": "你係學生咩？"
+   },
+   {
+    "element": "嗎",
+    "rol": "Gebruikt om een ja/nee-vraag te stellen.",
+    "voorbeeld": "你係學生嗎？"
+   }
+  ],
+  "tips": [
+   "Gebruik 咩 als je verrast bent of iets niet begrijpt.",
+   "Gebruik 嗎 voor eenvoudige ja/nee-vragen.",
+   "Let op de toon van de vraag; het kan de betekenis veranderen.",
+   "Oefen met het herkennen van de context om te bepalen welk vraagpartikel het meest geschikt is."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 咩 in plaats van 嗎 voor eenvoudige ja/nee-vragen. Correctie: Gebruik 嗎 voor ja/nee-vragen.",
+   "Het weglaten van het vraagpartikel aan het einde van de zin. Correctie: Voeg altijd 咩 of 嗎 toe om de vraag te vormen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "你食飯咩？",
+    "romaji": "nei5 sik6 faan6 me1?",
+    "dutch": "Eet je rijst?"
+   },
+   {
+    "japanese": "佢係你朋友嗎？",
+    "romaji": "keoi5 hai6 nei5 pang4 jau5 maa3?",
+    "dutch": "Is hij jouw vriend?"
+   },
+   {
+    "japanese": "你唔鍾意佢咩？",
+    "romaji": "nei5 m4 zung1 ji3 keoi5 me1?",
+    "dutch": "Vind je hem niet leuk?"
+   },
+   {
+    "japanese": "今日落雨嗎？",
+    "romaji": "gam1 jat6 lok6 jyu5 maa3?",
+    "dutch": "Regent het vandaag?"
+   },
+   {
+    "japanese": "你識講廣東話咩？",
+    "romaji": "nei5 sik1 gong2 gwong2 dung1 waa2 me1?",
+    "dutch": "Spreek je Kantonees?"
+   },
+   {
+    "japanese": "佢哋去旅行嗎？",
+    "romaji": "keoi5 dei6 heoi3 leoi5 hang4 maa3?",
+    "dutch": "Gaan ze op reis?"
+   }
+  ]
+ },
+ "yue-b-ne": {
+  "naam": "Gebruik van 呢 (ne1) in vragen",
+  "tagline": "Leer hoe je 'en jij?' in het Kantonees gebruikt.",
+  "niveau": "basis",
+  "kernregel": "Het partikel 呢 (ne1) wordt in het Kantonees gebruikt om een vraag te stellen die een eerder gestelde vraag herhaalt voor een ander onderwerp. Het is vergelijkbaar met het Nederlandse 'en jij?' of 'en wat betreft...?'",
+  "patroon": "[Onderwerp] + 呢 (ne1)",
+  "uitleg": "In het Kantonees wordt 呢 (ne1) gebruikt om een vraag te herhalen voor een ander onderwerp zonder de hele vraag opnieuw te hoeven stellen. Dit is handig in gesprekken om de focus naar een ander persoon of onderwerp te verleggen. Bijvoorbeeld, als iemand vraagt 'Hoe gaat het met je?' en je wilt dezelfde vraag terugstellen, gebruik je gewoon '[Naam] 呢?' wat betekent 'En [Naam]?' In het Nederlands gebruiken we vaak 'en jij?' of 'en wat betreft...?' om hetzelfde effect te bereiken. Het gebruik van 呢 (ne1) maakt de conversatie vloeiender en vermijdt herhaling.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Het onderwerp waar de vraag over gaat.",
+    "voorbeeld": "你 (nei5) voor 'jij'."
+   },
+   {
+    "element": "呢 (ne1)",
+    "rol": "Het vraagpartikel dat aangeeft dat de vraag herhaald wordt voor het nieuwe onderwerp.",
+    "voorbeeld": "呢 (ne1) als in 'en jij?'."
+   }
+  ],
+  "tips": [
+   "Gebruik 呢 (ne1) om een gesprek vloeiend te houden zonder herhaling.",
+   "Zorg ervoor dat het onderwerp duidelijk is voordat je 呢 (ne1) gebruikt.",
+   "Dit patroon is vooral handig in informele gesprekken."
+  ],
+  "veelgemaaktefouten": [
+   "Het vergeten van het onderwerp voor 呢 (ne1), wat verwarring kan veroorzaken. Correct: 你呢? (nei5 ne1?)",
+   "Het gebruik van 呢 (ne1) zonder een voorafgaande context. Zorg ervoor dat er een eerdere vraag is gesteld."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "你呢？",
+    "romaji": "nei5 ne1?",
+    "dutch": "En jij?"
+   },
+   {
+    "japanese": "佢呢？",
+    "romaji": "keoi5 ne1?",
+    "dutch": "En hij/zij?"
+   },
+   {
+    "japanese": "我呢？",
+    "romaji": "ngo5 ne1?",
+    "dutch": "En ik?"
+   },
+   {
+    "japanese": "呢個呢？",
+    "romaji": "ni1 go3 ne1?",
+    "dutch": "En deze?"
+   },
+   {
+    "japanese": "呢度呢？",
+    "romaji": "ni1 dou6 ne1?",
+    "dutch": "En hier?"
+   },
+   {
+    "japanese": "呢啲呢？",
+    "romaji": "ni1 di1 ne1?",
+    "dutch": "En deze (meervoud)?"
+   }
+  ]
+ },
+ "yue-b-geido": {
+  "naam": "Gebruik van '幾多' (hoeveel) in het Kantonees",
+  "tagline": "Leer hoe je vragen stelt over hoeveelheden in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "'幾多' wordt gebruikt in het Kantonees om te vragen naar hoeveelheden van iets. Het is vergelijkbaar met het Nederlandse 'hoeveel' en wordt vaak gebruikt in informele gesprekken.",
+  "patroon": "幾多 + zelfstandig naamwoord",
+  "uitleg": "In het Kantonees gebruik je '幾多' om te vragen naar de hoeveelheid van iets, vergelijkbaar met 'hoeveel' in het Nederlands. Het wordt direct gevolgd door het zelfstandig naamwoord waar je naar vraagt. In tegenstelling tot het Nederlands, waar 'hoeveel' soms voorafgegaan kan worden door een voorzetsel, staat '幾多' altijd direct voor het zelfstandig naamwoord. Dit patroon is eenvoudig en direct, en wordt veel gebruikt in alledaagse situaties.",
+  "opbouw": [
+   {
+    "element": "幾多",
+    "rol": "Vraagwoord voor hoeveelheid",
+    "voorbeeld": "幾多錢？ (gei2 do1 cin2?) - Hoeveel geld?"
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het onderwerp waar je de hoeveelheid van vraagt",
+    "voorbeeld": "幾多書？ (gei2 do1 syu1?) - Hoeveel boeken?"
+   }
+  ],
+  "tips": [
+   "Gebruik '幾多' altijd direct voor het zelfstandig naamwoord.",
+   "Informeel en veel gebruikt in dagelijkse gesprekken.",
+   "Kan zowel voor telbare als ontelbare zelfstandige naamwoorden worden gebruikt."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van '幾多' zonder een zelfstandig naamwoord. Correct: '幾多本書？' (Hoeveel boeken?)",
+   "Verkeerd gebruik van '幾多' met een voorzetsel. Correct: '幾多錢？' in plaats van '幾多的錢？'"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "幾多個蘋果？",
+    "romaji": "gei2 do1 go3 ping4 gwo2?",
+    "dutch": "Hoeveel appels?"
+   },
+   {
+    "japanese": "幾多杯咖啡？",
+    "romaji": "gei2 do1 bui1 gaa3 fe1?",
+    "dutch": "Hoeveel kopjes koffie?"
+   },
+   {
+    "japanese": "幾多條魚？",
+    "romaji": "gei2 do1 tiu4 jyu2?",
+    "dutch": "Hoeveel vissen?"
+   },
+   {
+    "japanese": "幾多個人？",
+    "romaji": "gei2 do1 go3 jan4?",
+    "dutch": "Hoeveel mensen?"
+   },
+   {
+    "japanese": "幾多件衫？",
+    "romaji": "gei2 do1 gin6 saam1?",
+    "dutch": "Hoeveel kledingstukken?"
+   },
+   {
+    "japanese": "幾多張票？",
+    "romaji": "gei2 do1 zoeng1 piu3?",
+    "dutch": "Hoeveel kaartjes?"
+   }
+  ]
+ },
+ "yue-b-hai2": {
+  "naam": "Gebruik van '喺 (locatie)' in het Kantonees",
+  "tagline": "Leer hoe je locaties aanduidt met '喺' in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '喺 (locatie)' wordt gebruikt om aan te geven waar een actie plaatsvindt of waar iets zich bevindt. Het is vergelijkbaar met het Nederlandse voorzetsel 'in', 'op' of 'bij'.",
+  "patroon": "喺 + locatie",
+  "uitleg": "In het Kantonees gebruik je '喺' om de locatie van een actie of een object aan te geven. Dit voorzetsel komt overeen met het Nederlandse 'in', 'op' of 'bij', afhankelijk van de context. Het woord '喺' wordt altijd gevolgd door een locatie, die aangeeft waar iets zich bevindt of gebeurt. Dit patroon is essentieel voor het beschrijven van posities en het geven van richtingen. In tegenstelling tot het Nederlands, waar het voorzetsel kan variëren, blijft '喺' consistent in gebruik ongeacht de specifieke locatiecontext.",
+  "opbouw": [
+   {
+    "element": "喺",
+    "rol": "Voorzetsel dat de locatie aangeeft.",
+    "voorbeeld": "喺學校 (in de school)"
+   },
+   {
+    "element": "locatie",
+    "rol": "De plaats waar de actie plaatsvindt of het object zich bevindt.",
+    "voorbeeld": "學校 (school)"
+   }
+  ],
+  "tips": [
+   "Gebruik '喺' altijd direct voor de locatie zonder extra woorden ertussen.",
+   "Let op de context om te bepalen of '喺' als 'in', 'op' of 'bij' vertaald moet worden.",
+   "Oefen met verschillende locaties om vertrouwd te raken met het patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van '喺' zonder een locatie: '喺' moet altijd gevolgd worden door een locatie.",
+   "Verwarring met andere voorzetsels: '喺' is specifiek voor locaties en niet voor tijdsaanduidingen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "喺屋企",
+    "romaji": "hai1 uk1 kei2",
+    "dutch": "thuis"
+   },
+   {
+    "japanese": "喺公園",
+    "romaji": "hai1 gung1 jyun2",
+    "dutch": "in het park"
+   },
+   {
+    "japanese": "喺餐廳",
+    "romaji": "hai1 caan1 teng1",
+    "dutch": "in het restaurant"
+   },
+   {
+    "japanese": "喺圖書館",
+    "romaji": "hai1 tou4 syu1 gun2",
+    "dutch": "in de bibliotheek"
+   },
+   {
+    "japanese": "喺公司",
+    "romaji": "hai1 gung1 si1",
+    "dutch": "op kantoor"
+   },
+   {
+    "japanese": "喺車站",
+    "romaji": "hai1 ce1 zaam6",
+    "dutch": "bij het station"
+   }
+  ]
+ },
+ "yue-b-jau": {
+  "naam": "Gebruik van '有' en '冇' in het Kantonees",
+  "tagline": "Leer hoe je bezit en het ontbreken daarvan uitdrukt in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees worden '有' (jau5) en '冇' (mou5) gebruikt om respectievelijk bezit en het ontbreken van bezit uit te drukken. Deze werkwoorden zijn essentieel voor het vormen van basiszinnen die aangeven of iets aanwezig is of niet.",
+  "patroon": "主語 + 有/冇 + 目的語",
+  "uitleg": "In het Kantonees gebruik je '有' om aan te geven dat je iets hebt of dat iets bestaat. Het is vergelijkbaar met het Nederlandse werkwoord 'hebben'. Aan de andere kant gebruik je '冇' om aan te geven dat je iets niet hebt of dat iets niet bestaat. Dit is vergelijkbaar met 'niet hebben' of 'er is geen'. Het gebruik van deze werkwoorden is vrij direct en vereist geen extra hulpwerkwoorden zoals in sommige andere talen. Het onderwerp van de zin komt altijd voor '有' of '冇', gevolgd door het object dat je wel of niet hebt.",
+  "opbouw": [
+   {
+    "element": "主語 (onderwerp)",
+    "rol": "Geeft aan wie of wat iets heeft of niet heeft.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "有 (jau5)",
+    "rol": "Duidt aan dat iets aanwezig is of dat iemand iets heeft.",
+    "voorbeeld": "有錢 (jau5 cin2) - geld hebben"
+   },
+   {
+    "element": "冇 (mou5)",
+    "rol": "Duidt aan dat iets afwezig is of dat iemand iets niet heeft.",
+    "voorbeeld": "冇問題 (mou5 man6 tai4) - geen probleem"
+   },
+   {
+    "element": "目的語 (object)",
+    "rol": "Het ding dat wel of niet aanwezig is.",
+    "voorbeeld": "時間 (si4 gaan3) - tijd"
+   }
+  ],
+  "tips": [
+   "Gebruik '有' om bezit of aanwezigheid aan te geven, vergelijkbaar met 'hebben' in het Nederlands.",
+   "Gebruik '冇' om het ontbreken van bezit of aanwezigheid aan te geven, vergelijkbaar met 'niet hebben'.",
+   "Let op de uitspraak van '有' (jau5) en '冇' (mou5), aangezien de toonhoogte de betekenis kan veranderen.",
+   "Plaats het onderwerp altijd voor '有' of '冇' om duidelijk te maken wie of wat iets heeft of niet heeft."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van '有' en '冇'. Correctie: Gebruik '有' voor bezit en '冇' voor het ontbreken van bezit.",
+   "Vergeten het onderwerp te vermelden. Correctie: Begin de zin altijd met het onderwerp voordat je '有' of '冇' gebruikt.",
+   "Het object weglaten. Correctie: Zorg ervoor dat je duidelijk bent over wat er wel of niet is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我有一本書。",
+    "romaji": "ngo5 jau5 jat1 bun2 syu1.",
+    "dutch": "Ik heb een boek."
+   },
+   {
+    "japanese": "佢冇車。",
+    "romaji": "keoi5 mou5 ce1.",
+    "dutch": "Hij/zij heeft geen auto."
+   },
+   {
+    "japanese": "你有冇時間？",
+    "romaji": "nei5 jau5 mou5 si4 gaan3?",
+    "dutch": "Heb je tijd?"
+   },
+   {
+    "japanese": "我冇錢。",
+    "romaji": "ngo5 mou5 cin2.",
+    "dutch": "Ik heb geen geld."
+   },
+   {
+    "japanese": "學校有好多學生。",
+    "romaji": "hok6 haau6 jau5 hou2 do1 hok6 saang1.",
+    "dutch": "De school heeft veel studenten."
+   },
+   {
+    "japanese": "呢度冇水。",
+    "romaji": "ni1 dou6 mou5 seoi2.",
+    "dutch": "Hier is geen water."
+   }
+  ]
+ },
+ "yue-b-loengci": {
+  "naam": "Telwoorden in het Kantonees",
+  "tagline": "Leer hoe je telwoorden correct gebruikt in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees worden telwoorden gebruikt om de hoeveelheid van een zelfstandig naamwoord aan te geven. Ze zijn essentieel voor het correct tellen en specificeren van objecten.",
+  "patroon": "Aantal + Telwoord + Zelfstandig Naamwoord",
+  "uitleg": "In het Kantonees gebruik je telwoorden om een hoeveelheid aan te geven, net zoals in het Nederlands. Echter, in tegenstelling tot het Nederlands, waar je vaak direct een getal voor een zelfstandig naamwoord plaatst, gebruik je in het Kantonees een specifiek telwoord dat bij het zelfstandig naamwoord hoort. Dit telwoord hangt af van de categorie waartoe het zelfstandig naamwoord behoort, zoals mensen, dieren, lange objecten, enzovoort. Het is belangrijk om het juiste telwoord te kiezen om grammaticaal correcte zinnen te vormen.",
+  "opbouw": [
+   {
+    "element": "Aantal",
+    "rol": "Geeft de hoeveelheid aan.",
+    "voorbeeld": "三 (saam1) betekent 'drie'."
+   },
+   {
+    "element": "Telwoord",
+    "rol": "Specificeert de categorie van het zelfstandig naamwoord.",
+    "voorbeeld": "個 (go3) wordt vaak gebruikt voor algemene objecten."
+   },
+   {
+    "element": "Zelfstandig Naamwoord",
+    "rol": "Het object dat geteld wordt.",
+    "voorbeeld": "蘋果 (ping4 gwo2) betekent 'appel'."
+   }
+  ],
+  "tips": [
+   "Leer de meest voorkomende telwoorden voor verschillende categorieën van objecten.",
+   "Gebruik 個 (go3) als je niet zeker bent welk telwoord je moet gebruiken, maar wees je bewust dat dit niet altijd correct is.",
+   "Oefen met het combineren van getallen, telwoorden en zelfstandige naamwoorden om vloeiend te worden in het gebruik ervan.",
+   "Let op de uitspraak van telwoorden, want de toon kan de betekenis veranderen."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd telwoord gebruiken: Bijvoorbeeld, 一個狗 (jat1 go3 gau2) is incorrect, het moet zijn 一隻狗 (jat1 zek3 gau2).",
+   "Telwoord weglaten: In het Kantonees is het noodzakelijk om een telwoord te gebruiken, dus 一蘋果 (jat1 ping4 gwo2) moet zijn 一個蘋果 (jat1 go3 ping4 gwo2)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "一個蘋果",
+    "romaji": "jat1 go3 ping4 gwo2",
+    "dutch": "Eén appel"
+   },
+   {
+    "japanese": "兩隻貓",
+    "romaji": "loeng5 zek3 maau1",
+    "dutch": "Twee katten"
+   },
+   {
+    "japanese": "三本書",
+    "romaji": "saam1 bun2 syu1",
+    "dutch": "Drie boeken"
+   },
+   {
+    "japanese": "四杯茶",
+    "romaji": "sei3 bui1 caa4",
+    "dutch": "Vier kopjes thee"
+   },
+   {
+    "japanese": "五張桌",
+    "romaji": "ng5 zoeng1 coek3",
+    "dutch": "Vijf tafels"
+   },
+   {
+    "japanese": "六條魚",
+    "romaji": "luk6 tiu4 jyu4",
+    "dutch": "Zes vissen"
+   }
+  ]
+ },
+ "yue-b-soeng": {
+  "naam": "Gebruik van 想 en 要 in het Kantonees",
+  "tagline": "Leren hoe je 'willen' uitdrukt in het Kantonees met 想 en 要.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees worden 想 (soeng2) en 要 (jiu3) beide gebruikt om 'willen' uit te drukken, maar ze hebben verschillende nuances. 想 wordt gebruikt om een wens of verlangen uit te drukken, terwijl 要 meer een noodzaak of vastberadenheid aanduidt.",
+  "patroon": "[onderwerp] + 想/要 + [werkwoord] + [object]",
+  "uitleg": "In het Kantonees gebruik je 想 (soeng2) wanneer je iets wilt doen vanuit een persoonlijke wens of verlangen. Dit is vergelijkbaar met het Nederlandse 'willen'. Aan de andere kant gebruik je 要 (jiu3) wanneer er een gevoel van noodzaak of verplichting is, vergelijkbaar met 'moeten' of 'zullen'. Hoewel beide woorden vertaald kunnen worden als 'willen', geeft 想 een zachtere intentie aan, terwijl 要 een sterkere, meer vastberaden intentie of noodzaak uitdrukt. Het is belangrijk om het juiste woord te kiezen afhankelijk van de context, aangezien het de betekenis van de zin aanzienlijk kan veranderen.",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "De persoon of entiteit die de actie wil uitvoeren.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "想 (soeng2)",
+    "rol": "Drukt een wens of verlangen uit.",
+    "voorbeeld": "我想去旅行 (ngo5 soeng2 heoi3 leoi5 hang4) - Ik wil op reis gaan."
+   },
+   {
+    "element": "要 (jiu3)",
+    "rol": "Drukt een noodzaak of vastberadenheid uit.",
+    "voorbeeld": "我要去工作 (ngo5 jiu3 heoi3 gung1 zok3) - Ik moet gaan werken."
+   },
+   {
+    "element": "werkwoord",
+    "rol": "De actie die men wil uitvoeren.",
+    "voorbeeld": "去 (heoi3) - gaan"
+   },
+   {
+    "element": "object",
+    "rol": "Het doel of de bestemming van de actie.",
+    "voorbeeld": "旅行 (leoi5 hang4) - reizen"
+   }
+  ],
+  "tips": [
+   "Gebruik 想 (soeng2) voor persoonlijke wensen en verlangens.",
+   "Gebruik 要 (jiu3) wanneer er een gevoel van noodzaak of verplichting is.",
+   "Let op de context om te bepalen welk woord het meest geschikt is.",
+   "Oefen met verschillende zinnen om het verschil in nuance beter te begrijpen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 想 (soeng2) en 要 (jiu3) kan leiden tot misverstanden over de intentie. Bijvoorbeeld, '我想喝水' (ngo5 soeng2 hot3 seoi2) betekent 'Ik wil water drinken' (wens), terwijl '我要喝水' (ngo5 jiu3 hot3 seoi2) betekent 'Ik moet water drinken' (noodzaak).",
+   "Het weglaten van het werkwoord kan de zin onvolledig maken. Bijvoorbeeld, '我想' (ngo5 soeng2) zonder werkwoord is onduidelijk."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我想食飯",
+    "romaji": "ngo5 soeng2 sik6 faan6",
+    "dutch": "Ik wil eten."
+   },
+   {
+    "japanese": "我要買呢本書",
+    "romaji": "ngo5 jiu3 maai5 ni1 bun2 syu1",
+    "dutch": "Ik moet dit boek kopen."
+   },
+   {
+    "japanese": "佢想學廣東話",
+    "romaji": "keoi5 soeng2 hok6 gwong2 dung1 waa2",
+    "dutch": "Hij wil Kantonees leren."
+   },
+   {
+    "japanese": "我哋要去睇戲",
+    "romaji": "ngo5 dei6 jiu3 heoi3 tai2 hei3",
+    "dutch": "Wij moeten naar de film gaan."
+   },
+   {
+    "japanese": "你想唔想飲咖啡？",
+    "romaji": "nei5 soeng2 m4 soeng2 jam2 gaa3 fe1?",
+    "dutch": "Wil je koffie drinken?"
+   },
+   {
+    "japanese": "佢要返屋企",
+    "romaji": "keoi5 jiu3 faan1 uk1 kei2",
+    "dutch": "Hij moet naar huis gaan."
+   }
+  ]
+ },
+ "yue-b-sik": {
+  "naam": "Het gebruik van '識' en '可以' voor 'kunnen' in het Kantonees",
+  "tagline": "Leer hoe je 'kunnen' uitdrukt met '識' en '可以' in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees gebruik je '識' om te zeggen dat je een vaardigheid hebt geleerd, terwijl '可以' wordt gebruikt om toestemming of mogelijkheid aan te geven. Beide woorden vertalen naar 'kunnen' in het Nederlands, maar worden in verschillende contexten gebruikt.",
+  "patroon": "識 + werkwoord / 可以 + werkwoord",
+  "uitleg": "In het Kantonees gebruik je '識' om aan te geven dat je een bepaalde vaardigheid hebt geleerd, zoals zwemmen of een taal spreken. Dit komt overeen met het Nederlandse 'kunnen' in de zin van 'bekwaam zijn in'. Aan de andere kant gebruik je '可以' om aan te geven dat iets mogelijk is of dat je toestemming hebt om iets te doen. Dit gebruik lijkt op het Nederlandse 'mogen' of 'in staat zijn om'. Het is belangrijk om het verschil te begrijpen, omdat het gebruik van het verkeerde woord tot misverstanden kan leiden.",
+  "opbouw": [
+   {
+    "element": "識",
+    "rol": "Geeft aan dat iemand een vaardigheid heeft geleerd.",
+    "voorbeeld": "我識游水 (ngo5 sik1 jau4 seoi2) - Ik kan zwemmen."
+   },
+   {
+    "element": "可以",
+    "rol": "Geeft aan dat iets mogelijk is of dat er toestemming is.",
+    "voorbeeld": "我可以去廁所嗎？ (ngo5 ho2 ji5 heoi3 ci3 so2 maa3?) - Mag ik naar het toilet?"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Het werkwoord dat de actie beschrijft die je kunt uitvoeren.",
+    "voorbeeld": "游水 (jau4 seoi2) - zwemmen"
+   },
+   {
+    "element": "onderwerp",
+    "rol": "De persoon die de actie uitvoert.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "vraagpartikel",
+    "rol": "Wordt gebruikt om een vraag te vormen.",
+    "voorbeeld": "嗎？ (maa3?) - vraagpartikel"
+   }
+  ],
+  "tips": [
+   "Gebruik '識' alleen als je het hebt over een aangeleerde vaardigheid.",
+   "Gebruik '可以' als je toestemming vraagt of geeft.",
+   "Let op de context van het gesprek om te bepalen welk woord je moet gebruiken.",
+   "Oefen met het maken van zinnen om het verschil tussen '識' en '可以' beter te begrijpen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van '識' in plaats van '可以' voor toestemming. Correctie: Gebruik '可以' voor toestemming.",
+   "Het gebruik van '可以' in plaats van '識' voor een vaardigheid. Correctie: Gebruik '識' voor aangeleerde vaardigheden.",
+   "Verkeerd gebruik van de volgorde van woorden. Correctie: Plaats het werkwoord direct na '識' of '可以'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我識講廣東話。",
+    "romaji": "ngo5 sik1 gong2 gwong2 dung1 waa2.",
+    "dutch": "Ik kan Kantonees spreken."
+   },
+   {
+    "japanese": "你可以幫我嗎？",
+    "romaji": "nei5 ho2 ji5 bong1 ngo5 maa3?",
+    "dutch": "Kun je me helpen?"
+   },
+   {
+    "japanese": "佢識彈鋼琴。",
+    "romaji": "keoi5 sik1 daan6 gong3 kam4.",
+    "dutch": "Hij kan piano spelen."
+   },
+   {
+    "japanese": "我可以食呢個嗎？",
+    "romaji": "ngo5 ho2 ji5 sik6 ni1 go3 maa3?",
+    "dutch": "Mag ik dit eten?"
+   },
+   {
+    "japanese": "佢識寫字。",
+    "romaji": "keoi5 sik1 se2 zi6.",
+    "dutch": "Zij kan schrijven."
+   },
+   {
+    "japanese": "你可以借我錢嗎？",
+    "romaji": "nei5 ho2 ji5 ze3 ngo5 cin2 maa3?",
+    "dutch": "Kun je me geld lenen?"
+   }
+  ]
+ },
+ "yue-b-zungji": {
+  "naam": "Het gebruik van '鍾意' in het Kantonees",
+  "tagline": "Leer hoe je je voorkeuren en interesses uitdrukt in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "Het werkwoord '鍾意' wordt gebruikt om aan te geven dat je iets leuk vindt of ergens van houdt. Het kan zowel voor mensen als voor dingen worden gebruikt.",
+  "patroon": "Subject + 鍾意 + Object",
+  "uitleg": "In het Kantonees gebruik je '鍾意' om uit te drukken dat je iets leuk vindt, vergelijkbaar met het Nederlandse 'leuk vinden' of 'houden van'. Het is een veelzijdig werkwoord dat zowel voor materiële zaken als voor abstracte concepten kan worden gebruikt. In tegenstelling tot het Nederlands, waar je vaak een werkwoord als 'vinden' of 'houden van' gebruikt, is '鍾意' een enkelvoudig werkwoord dat beide betekenissen dekt. Het onderwerp van de zin kan zowel een persoon als een groep zijn, en het object kan variëren van een persoon tot een activiteit of een ding.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "De persoon of groep die iets leuk vindt.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "鍾意",
+    "rol": "Het werkwoord dat de voorkeur of interesse uitdrukt.",
+    "voorbeeld": "鍾意 (zung1 ji3) - leuk vinden"
+   },
+   {
+    "element": "Object",
+    "rol": "Het ding, de persoon of de activiteit die leuk gevonden wordt.",
+    "voorbeeld": "音樂 (jam1 ngok6) - muziek"
+   }
+  ],
+  "tips": [
+   "Gebruik '鍾意' om zowel materiële als immateriële voorkeuren uit te drukken.",
+   "Je kunt '鍾意' gebruiken in zowel formele als informele situaties.",
+   "Vergeet niet dat het object direct na '鍾意' komt zonder extra voorzetsels."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van een voorzetsel na '鍾意'. Correct: 我鍾意音樂 (ngo5 zung1 ji3 jam1 ngok6).",
+   "Verkeerd gebruik van tijdsaanduidingen. Correct: 我以前鍾意游泳 (ngo5 ji5 cin4 zung1 ji3 jau4 wing6) - Ik vond zwemmen vroeger leuk."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我鍾意睇書",
+    "romaji": "ngo5 zung1 ji3 tai2 syu1",
+    "dutch": "Ik vind het leuk om boeken te lezen."
+   },
+   {
+    "japanese": "佢鍾意食壽司",
+    "romaji": "keoi5 zung1 ji3 sik6 sau6 si1",
+    "dutch": "Hij houdt van sushi eten."
+   },
+   {
+    "japanese": "我哋鍾意去旅行",
+    "romaji": "ngo5 dei6 zung1 ji3 heoi3 leoi5 hang4",
+    "dutch": "Wij houden van reizen."
+   },
+   {
+    "japanese": "佢哋鍾意聽音樂",
+    "romaji": "keoi5 dei6 zung1 ji3 teng1 jam1 ngok6",
+    "dutch": "Zij vinden het leuk om naar muziek te luisteren."
+   },
+   {
+    "japanese": "我鍾意畫畫",
+    "romaji": "ngo5 zung1 ji3 waak6 waa2",
+    "dutch": "Ik vind het leuk om te schilderen."
+   },
+   {
+    "japanese": "你鍾意睇電影嗎？",
+    "romaji": "nei5 zung1 ji3 tai2 din6 jing2 maa3?",
+    "dutch": "Vind jij het leuk om films te kijken?"
+   }
+  ]
+ },
+ "yue-b-nigo": {
+  "naam": "Gebruik van '呢' en '嗰' in het Kantonees",
+  "tagline": "Leren onderscheiden tussen 'dit' en 'dat' in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "'呢' (ni1) en '嗰' (go2) worden gebruikt om respectievelijk 'dit' en 'dat' aan te duiden in het Kantonees. Ze helpen bij het specificeren van de nabijheid van een object of persoon ten opzichte van de spreker.",
+  "patroon": "呢/嗰 + maatwoord + zelfstandig naamwoord",
+  "uitleg": "In het Kantonees gebruik je '呢' (ni1) om te verwijzen naar iets dat dichtbij de spreker is, vergelijkbaar met 'dit' in het Nederlands. '嗰' (go2) wordt gebruikt voor iets dat verder weg is, vergelijkbaar met 'dat'. Beide woorden worden gevolgd door een maatwoord en vervolgens door het zelfstandig naamwoord. Dit patroon is essentieel voor het correct aangeven van de locatie of nabijheid van objecten en personen in een gesprek.",
+  "opbouw": [
+   {
+    "element": "呢 (ni1)",
+    "rol": "Duidt op iets dat dichtbij de spreker is.",
+    "voorbeeld": "呢本書 (ni1 bun2 syu1) - dit boek"
+   },
+   {
+    "element": "嗰 (go2)",
+    "rol": "Duidt op iets dat verder van de spreker is.",
+    "voorbeeld": "嗰張桌 (go2 zoeng1 coek3) - die tafel"
+   },
+   {
+    "element": "maatwoord",
+    "rol": "Specificeert het type object waarnaar verwezen wordt.",
+    "voorbeeld": "本 (bun2) voor boeken, 張 (zoeng1) voor tafels"
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het object of de persoon waarnaar verwezen wordt.",
+    "voorbeeld": "書 (syu1) - boek, 桌 (coek3) - tafel"
+   }
+  ],
+  "tips": [
+   "Onthoud dat '呢' (ni1) altijd dichtbij is en '嗰' (go2) verder weg.",
+   "Oefen met verschillende maatwoorden om vertrouwd te raken met het patroon.",
+   "Luister naar moedertaalsprekers om de nuances in uitspraak en gebruik te leren.",
+   "Gebruik visuele hulpmiddelen zoals kaarten of afbeeldingen om de concepten van nabijheid te versterken."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen '呢' en '嗰'. Onthoud dat '呢' dichtbij is en '嗰' verder weg.",
+   "Verkeerd maatwoord gebruiken. Zorg ervoor dat je het juiste maatwoord voor het zelfstandig naamwoord kiest.",
+   "Het weglaten van het maatwoord. Vergeet niet dat het maatwoord essentieel is in dit patroon."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "呢個蘋果",
+    "romaji": "ni1 go3 ping4 gwo2",
+    "dutch": "deze appel"
+   },
+   {
+    "japanese": "嗰隻狗",
+    "romaji": "go2 zek3 gau2",
+    "dutch": "die hond"
+   },
+   {
+    "japanese": "呢件衫",
+    "romaji": "ni1 gin6 saam1",
+    "dutch": "dit kledingstuk"
+   },
+   {
+    "japanese": "嗰間屋",
+    "romaji": "go2 gaan1 uk1",
+    "dutch": "dat huis"
+   },
+   {
+    "japanese": "呢杯水",
+    "romaji": "ni1 bui1 seoi2",
+    "dutch": "dit glas water"
+   },
+   {
+    "japanese": "嗰條路",
+    "romaji": "go2 tiu4 lou6",
+    "dutch": "die weg"
+   }
+  ]
+ },
+ "yue-b-tung": {
+  "naam": "Gebruik van '同' in het Kantonees",
+  "tagline": "Leer hoe je '同' gebruikt om 'en' of 'met' aan te geven.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees wordt '同' gebruikt om aan te geven dat iets samen gebeurt of om een opsomming te maken, vergelijkbaar met 'en' of 'met' in het Nederlands. Het is een verbindingswoord dat relaties tussen mensen, objecten of acties benadrukt.",
+  "patroon": "主語 + 同 + 名詞/動詞",
+  "uitleg": "Het woord '同' (tung4) wordt in het Kantonees gebruikt om relaties aan te geven tussen personen, objecten of handelingen, vergelijkbaar met het Nederlandse 'en' of 'met'. Het kan zowel gebruikt worden om een opsomming te maken als om aan te geven dat iets samen gebeurt. In tegenstelling tot het Nederlands, waar 'en' en 'met' verschillende woorden zijn, wordt in het Kantonees vaak hetzelfde woord '同' gebruikt. Dit maakt het een veelzijdig en belangrijk woord in alledaagse gesprekken. Het is belangrijk om de context goed te begrijpen om te bepalen of '同' als 'en' of 'met' moet worden vertaald.",
+  "opbouw": [
+   {
+    "element": "主語",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert of de staat ondergaat.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "同",
+    "rol": "Verbindingswoord dat 'en' of 'met' betekent.",
+    "voorbeeld": "同 (tung4)"
+   },
+   {
+    "element": "名詞",
+    "rol": "Zelfstandig naamwoord dat een persoon, plaats of ding beschrijft.",
+    "voorbeeld": "朋友 (pang4 jau5) - vriend"
+   },
+   {
+    "element": "動詞",
+    "rol": "Werkwoord dat een actie of toestand beschrijft.",
+    "voorbeeld": "食飯 (sik6 faan6) - eten"
+   }
+  ],
+  "tips": [
+   "Gebruik '同' om activiteiten of mensen te verbinden in een zin.",
+   "Let op de context om te bepalen of '同' als 'en' of 'met' moet worden vertaald.",
+   "In informele gesprekken kan '同' soms worden uitgesproken als '同埋' (tung4 maai4), wat ook 'en' betekent.",
+   "Oefen met het combineren van zinnen en woorden om vertrouwd te raken met het gebruik van '同'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen '同' en '同埋'. Beide kunnen 'en' betekenen, maar '同埋' is informeler.",
+   "Het vergeten van de juiste context, waardoor '同' verkeerd wordt vertaald als alleen 'en' of alleen 'met'.",
+   "Het gebruik van '同' zonder een duidelijk onderwerp of werkwoord, wat de zin onvolledig maakt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我同朋友去旅行。",
+    "romaji": "ngo5 tung4 pang4 jau5 heoi3 leoi5 hang4.",
+    "dutch": "Ik ga met mijn vriend op reis."
+   },
+   {
+    "japanese": "佢同我一齊食飯。",
+    "romaji": "keoi5 tung4 ngo5 jat1 cai4 sik6 faan6.",
+    "dutch": "Hij eet samen met mij."
+   },
+   {
+    "japanese": "我同佢都鍾意呢本書。",
+    "romaji": "ngo5 tung4 keoi5 dou1 zung1 ji3 ni1 bun2 syu1.",
+    "dutch": "Zij en ik houden allebei van dit boek."
+   },
+   {
+    "japanese": "呢個同嗰個唔一樣。",
+    "romaji": "ni1 go3 tung4 go2 go3 m4 jat1 joeng6.",
+    "dutch": "Dit en dat zijn niet hetzelfde."
+   },
+   {
+    "japanese": "我同家人一齊睇電視。",
+    "romaji": "ngo5 tung4 gaa1 jan4 jat1 cai4 tai2 din6 si6.",
+    "dutch": "Ik kijk samen met mijn familie televisie."
+   },
+   {
+    "japanese": "佢同我講咗呢件事。",
+    "romaji": "keoi5 tung4 ngo5 gong2 zo2 ni1 gin6 si6.",
+    "dutch": "Hij vertelde me over deze zaak."
+   }
+  ]
+ },
+ "yue-m-zo": {
+  "naam": "Gebruik van 咗 in het Kantonees",
+  "tagline": "Leer hoe je de voltooid verleden tijd in het Kantonees uitdrukt met 咗.",
+  "niveau": "basis",
+  "kernregel": "Het partikel 咗 wordt in het Kantonees gebruikt om aan te geven dat een handeling in het verleden is voltooid. Het wordt achter het werkwoord geplaatst om de voltooid verleden tijd te vormen.",
+  "patroon": "Werkwoord + 咗",
+  "uitleg": "In het Kantonees wordt het partikel 咗 gebruikt om aan te geven dat een actie is afgerond. Dit is vergelijkbaar met het gebruik van de voltooid verleden tijd in het Nederlands, zoals 'heeft gedaan' of 'is gegaan'. Het verschil is dat in het Kantonees het partikel 咗 direct na het werkwoord komt, in tegenstelling tot het Nederlands waar de tijd vaak door een hulpwerkwoord wordt aangegeven. Het gebruik van 咗 is essentieel om de tijdsaspecten van een zin correct over te brengen en misverstanden te voorkomen.",
+  "opbouw": [
+   {
+    "element": "Werkwoord",
+    "rol": "Geeft de actie aan die is voltooid.",
+    "voorbeeld": "食 (sik6) - eten"
+   },
+   {
+    "element": "咗",
+    "rol": "Geeft aan dat de actie in het verleden is voltooid.",
+    "voorbeeld": "食咗 (sik6 zo2) - heeft gegeten"
+   },
+   {
+    "element": "Onderwerp",
+    "rol": "De persoon of het ding dat de actie uitvoert.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "Object",
+    "rol": "Het doelwit van de actie, indien van toepassing.",
+    "voorbeeld": "飯 (faan6) - rijst"
+   },
+   {
+    "element": "Tijdsbepaling",
+    "rol": "Geeft aan wanneer de actie plaatsvond.",
+    "voorbeeld": "昨日 (zok3 jat6) - gisteren"
+   }
+  ],
+  "tips": [
+   "Zorg ervoor dat 咗 direct na het werkwoord komt.",
+   "Gebruik 咗 niet als de actie nog bezig is of in de toekomst plaatsvindt.",
+   "Combineer 咗 met tijdsbepalingen om de context van de actie te verduidelijken.",
+   "Let op de uitspraak van 咗, het klinkt als 'zo2'."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd: 我咗食飯 (ngo5 zo2 sik6 faan6). Correct: 我食咗飯 (ngo5 sik6 zo2 faan6).",
+   "Verkeerd: 佢去咗學校 (keoi5 heoi3 zo2 hok6 haau6) als hij nog op weg is. Correct: 佢去緊學校 (keoi5 heoi3 gan2 hok6 haau6) voor een lopende actie."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我睇咗書",
+    "romaji": "ngo5 tai2 zo2 syu1",
+    "dutch": "Ik heb een boek gelezen."
+   },
+   {
+    "japanese": "佢買咗車",
+    "romaji": "keoi5 maai5 zo2 ce1",
+    "dutch": "Hij heeft een auto gekocht."
+   },
+   {
+    "japanese": "我哋去咗旅行",
+    "romaji": "ngo5 dei6 heoi3 zo2 leoi5 hang4",
+    "dutch": "Wij zijn op reis geweest."
+   },
+   {
+    "japanese": "佢哋見咗電影",
+    "romaji": "keoi5 dei6 gin3 zo2 din6 jing2",
+    "dutch": "Zij hebben een film gezien."
+   },
+   {
+    "japanese": "你食咗飯未？",
+    "romaji": "nei5 sik6 zo2 faan6 mei6?",
+    "dutch": "Heb je al gegeten?"
+   },
+   {
+    "japanese": "我寫咗信",
+    "romaji": "ngo5 se2 zo2 seon3",
+    "dutch": "Ik heb een brief geschreven."
+   }
+  ]
+ },
+ "yue-m-gan": {
+  "naam": "Gebruik van '緊' in het Kantonees",
+  "tagline": "Leer hoe je '緊' gebruikt om aan te geven dat je ergens mee bezig bent.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees wordt '緊' gebruikt om aan te geven dat iemand momenteel bezig is met een activiteit. Het is vergelijkbaar met de Nederlandse tegenwoordige tijd, zoals 'aan het doen zijn'.",
+  "patroon": "Subject + Verb + 緊 + Object",
+  "uitleg": "Het gebruik van '緊' in het Kantonees is een manier om aan te geven dat een actie op dit moment plaatsvindt. Het lijkt op de Nederlandse constructie 'aan het ... zijn'. In tegenstelling tot het Nederlands, waar we vaak een hulpwerkwoord gebruiken, wordt in het Kantonees '緊' direct na het werkwoord geplaatst. Dit patroon is handig voor reizigers die willen aangeven dat ze momenteel met iets bezig zijn, zoals eten, lezen of werken.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "De persoon of het ding dat de actie uitvoert.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "Verb",
+    "rol": "Het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "食 (sik6) - eten"
+   },
+   {
+    "element": "緊",
+    "rol": "Geeft aan dat de actie momenteel plaatsvindt.",
+    "voorbeeld": "緊 (gan2)"
+   },
+   {
+    "element": "Object",
+    "rol": "Het voorwerp of de persoon waarop de actie gericht is.",
+    "voorbeeld": "飯 (faan6) - rijst"
+   }
+  ],
+  "tips": [
+   "Gebruik '緊' direct na het werkwoord om de voortgang van de actie aan te geven.",
+   "Let op de toon van '緊' (gan2) om misverstanden te voorkomen.",
+   "Dit patroon is vooral nuttig in informele gesprekken en dagelijkse situaties.",
+   "Combineer '緊' met tijdsaanduidingen voor meer context, zoals '而家' (ji4 gaa1) voor 'nu'."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten '緊' te gebruiken, waardoor de zin niet de voortgang van de actie aangeeft. Correct: 我食緊飯 (ngo5 sik6 gan2 faan6).",
+   "Het plaatsen van '緊' voor het werkwoord in plaats van erna. Correct: 我睇緊書 (ngo5 tai2 gan2 syu1)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "佢寫緊信。",
+    "romaji": "keoi5 se2 gan2 seon3.",
+    "dutch": "Hij/zij is een brief aan het schrijven."
+   },
+   {
+    "japanese": "我哋聽緊音樂。",
+    "romaji": "ngo5 dei6 teng1 gan2 jam1 ngok6.",
+    "dutch": "Wij zijn muziek aan het luisteren."
+   },
+   {
+    "japanese": "你做緊咩？",
+    "romaji": "nei5 zou6 gan2 me1?",
+    "dutch": "Wat ben jij aan het doen?"
+   },
+   {
+    "japanese": "佢哋睇緊電視。",
+    "romaji": "keoi5 dei6 tai2 gan2 din6 si6.",
+    "dutch": "Zij zijn televisie aan het kijken."
+   },
+   {
+    "japanese": "我學緊廣東話。",
+    "romaji": "ngo5 hok6 gan2 gwong2 dung1 waa2.",
+    "dutch": "Ik ben Kantonees aan het leren."
+   },
+   {
+    "japanese": "媽媽煮緊飯。",
+    "romaji": "maa4 maa1 zyu2 gan2 faan6.",
+    "dutch": "Mama is aan het koken."
+   }
+  ]
+ },
+ "yue-m-gwo": {
+  "naam": "Gebruik van '過' voor ervaring",
+  "tagline": "Leer hoe je ervaringen in het Kantonees uitdrukt met '過'.",
+  "niveau": "gemiddeld",
+  "kernregel": "'過' wordt gebruikt om aan te geven dat een bepaalde actie of ervaring in het verleden heeft plaatsgevonden. Het is vergelijkbaar met het gebruik van de voltooide tijd in het Nederlands.",
+  "patroon": "Subject + Verb + 過 + Object",
+  "uitleg": "In het Kantonees gebruik je '過' om aan te geven dat je iets ooit hebt gedaan of ervaren. Dit is vergelijkbaar met het gebruik van 'hebben' in de voltooide tijd in het Nederlands. Het werkwoord dat je gebruikt, blijft in zijn basisvorm, en '過' volgt direct na het werkwoord. Dit patroon benadrukt dat de actie of ervaring in het verleden is gebeurd, maar het zegt niets over wanneer precies. In tegenstelling tot het Nederlands, waar je vaak een tijdsaanduiding nodig hebt, is dat in het Kantonees niet altijd nodig.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "De persoon of het ding dat de actie uitvoert.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "Verb",
+    "rol": "Het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "食 (sik6) - eten"
+   },
+   {
+    "element": "過",
+    "rol": "Partikel dat aangeeft dat de actie in het verleden is gebeurd.",
+    "voorbeeld": "過 (gwo3)"
+   },
+   {
+    "element": "Object",
+    "rol": "Het ding waarop de actie wordt uitgevoerd.",
+    "voorbeeld": "蘋果 (ping4 gwo2) - appel"
+   }
+  ],
+  "tips": [
+   "Gebruik '過' om te praten over ervaringen die je ooit hebt gehad.",
+   "Het werkwoord blijft in zijn basisvorm; er is geen vervoeging zoals in het Nederlands.",
+   "Je kunt '過' gebruiken zonder een specifieke tijdsaanduiding.",
+   "Let op de context om te bepalen of '過' nodig is; het wordt niet gebruikt voor acties die nog steeds plaatsvinden."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd: 我過食蘋果 (ngo5 gwo3 sik6 ping4 gwo2). Correct: 我食過蘋果 (ngo5 sik6 gwo3 ping4 gwo2).",
+   "Verkeerd: 佢去過旅行 (keoi5 heoi3 gwo3 leoi5 hang4) zonder context. Correct: 佢去過旅行 (keoi5 heoi3 gwo3 leoi5 hang4) met context dat het in het verleden was."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我睇過嗰部電影。",
+    "romaji": "ngo5 tai2 gwo3 go2 bou6 din6 jing2.",
+    "dutch": "Ik heb die film gezien."
+   },
+   {
+    "japanese": "佢去過日本。",
+    "romaji": "keoi5 heoi3 gwo3 jat6 bun2.",
+    "dutch": "Hij is naar Japan geweest."
+   },
+   {
+    "japanese": "我食過壽司。",
+    "romaji": "ngo5 sik6 gwo3 sau6 si1.",
+    "dutch": "Ik heb sushi gegeten."
+   },
+   {
+    "japanese": "佢見過我。",
+    "romaji": "keoi5 gin3 gwo3 ngo5.",
+    "dutch": "Hij heeft mij gezien."
+   },
+   {
+    "japanese": "我學過法文。",
+    "romaji": "ngo5 hok6 gwo3 faat3 man4.",
+    "dutch": "Ik heb Frans geleerd."
+   },
+   {
+    "japanese": "佢聽過呢首歌。",
+    "romaji": "keoi5 teng1 gwo3 ni1 sau2 go1.",
+    "dutch": "Hij heeft dit lied gehoord."
+   }
+  ]
+ },
+ "yue-m-dak": {
+  "naam": "Gebruik van 得 (graad/kunnen)",
+  "tagline": "Leer hoe je vaardigheden en gradaties uitdrukt in het Kantonees.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon met 得 wordt gebruikt om de mate van een handeling of de vaardigheid waarmee iets wordt gedaan uit te drukken. Het kan zowel de kwaliteit als de kwantiteit van een actie beschrijven.",
+  "patroon": "Werkwoord + 得 + Bijwoord/Adjectief",
+  "uitleg": "In het Kantonees wordt 得 gebruikt om aan te geven hoe goed of slecht iemand iets doet. Dit patroon lijkt op het Nederlandse gebruik van bijwoorden om een handeling te beschrijven, zoals 'hij zingt goed'. Het werkwoord komt eerst, gevolgd door 得, en daarna een bijwoord of adjectief dat de kwaliteit van de actie beschrijft. Dit patroon is essentieel voor het uitdrukken van vaardigheden en gradaties in het Kantonees. Het kan ook worden gebruikt om een vergelijking te maken, zoals 'sneller dan'.",
+  "opbouw": [
+   {
+    "element": "Werkwoord",
+    "rol": "Geeft de actie aan die wordt beoordeeld.",
+    "voorbeeld": "唱 (coeng3) - zingen"
+   },
+   {
+    "element": "得 (dak1)",
+    "rol": "Marker die de graad of vaardigheid van de actie aangeeft.",
+    "voorbeeld": "得 (dak1)"
+   },
+   {
+    "element": "Bijwoord/Adjectief",
+    "rol": "Beschrijft hoe de actie wordt uitgevoerd.",
+    "voorbeeld": "好 (hou2) - goed"
+   }
+  ],
+  "tips": [
+   "Gebruik 得 om de kwaliteit van een actie te benadrukken.",
+   "Let op de volgorde: werkwoord komt altijd voor 得.",
+   "Gebruik bijwoorden of adjectieven na 得 om de actie te beschrijven.",
+   "Dit patroon kan ook worden gebruikt om vergelijkingen te maken, zoals 'sneller dan'."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde volgorde: Plaats het bijwoord niet vóór 得. Correct: 唱得好 (coeng3 dak1 hou2).",
+   "Verkeerd gebruik van 得 zonder werkwoord: Zorg ervoor dat er altijd een werkwoord voor 得 staat.",
+   "Verkeerd bijwoord: Gebruik een passend bijwoord of adjectief dat de actie beschrijft."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "佢跑得快。",
+    "romaji": "keoi5 paau2 dak1 faai3",
+    "dutch": "Hij rent snel."
+   },
+   {
+    "japanese": "我寫得靚。",
+    "romaji": "ngo5 se2 dak1 leng3",
+    "dutch": "Ik schrijf mooi."
+   },
+   {
+    "japanese": "佢講得清楚。",
+    "romaji": "keoi5 gong2 dak1 cing1co2",
+    "dutch": "Hij spreekt duidelijk."
+   },
+   {
+    "japanese": "你煮得好食。",
+    "romaji": "nei5 zyu2 dak1 hou2 sik6",
+    "dutch": "Jij kookt lekker."
+   },
+   {
+    "japanese": "佢跳得高。",
+    "romaji": "keoi5 tiu3 dak1 gou1",
+    "dutch": "Hij springt hoog."
+   },
+   {
+    "japanese": "我學得快。",
+    "romaji": "ngo5 hok6 dak1 faai3",
+    "dutch": "Ik leer snel."
+   }
+  ]
+ },
+ "yue-m-maai": {
+  "naam": "Gebruik van '埋' in het Kantonees",
+  "tagline": "Leer hoe je '埋' gebruikt om 'erbij' aan te geven in het Kantonees.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het Kantonees woord '埋' wordt gebruikt om aan te geven dat iets erbij komt of toegevoegd wordt aan een bestaande situatie. Het kan verwijzen naar zowel fysieke als abstracte toevoegingen.",
+  "patroon": "埋 + [object of actie]",
+  "uitleg": "'埋' in het Kantonees betekent letterlijk 'begraven', maar wordt vaak figuurlijk gebruikt om 'erbij' of 'toevoegen' aan te geven. Het is vergelijkbaar met het Nederlandse 'erbij' wanneer je iets toevoegt aan een bestaande situatie. In tegenstelling tot het Nederlands, waar 'erbij' vaak een apart woord is, wordt '埋' direct voor het object of de actie geplaatst die wordt toegevoegd. Dit gebruik is specifiek voor het Kantonees en verschilt van het Mandarijn, waar andere woorden worden gebruikt voor soortgelijke betekenissen.",
+  "opbouw": [
+   {
+    "element": "埋",
+    "rol": "Geeft aan dat iets wordt toegevoegd of erbij komt.",
+    "voorbeeld": "埋啲糖 (maai4 di1 tong4) - Voeg wat snoepjes toe."
+   },
+   {
+    "element": "[object]",
+    "rol": "Het ding dat wordt toegevoegd.",
+    "voorbeeld": "埋啲書 (maai4 di1 syu1) - Voeg wat boeken toe."
+   },
+   {
+    "element": "[actie]",
+    "rol": "De actie die wordt toegevoegd.",
+    "voorbeeld": "埋埋手 (maai4 maai4 sau2) - Help ook een handje."
+   }
+  ],
+  "tips": [
+   "Gebruik '埋' om aan te geven dat iets extra's wordt toegevoegd aan een bestaande situatie.",
+   "Plaats '埋' direct voor het object of de actie die je wilt toevoegen.",
+   "Let op de context: '埋' kan ook letterlijk 'begraven' betekenen, dus zorg ervoor dat de betekenis duidelijk is in de context van de zin."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring met het Mandarijn '加' (gaa1) dat 'toevoegen' betekent. Correct gebruik in Kantonees: '埋啲嘢' (maai4 di1 je5) in plaats van '加啲嘢'.",
+   "Verkeerd plaatsen van '埋' in de zin. Correct: '埋啲書' (maai4 di1 syu1), niet '啲書埋'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "埋啲餸",
+    "romaji": "maai4 di1 sung3",
+    "dutch": "Voeg wat gerechten toe."
+   },
+   {
+    "japanese": "埋多個位",
+    "romaji": "maai4 do1 go3 wai2",
+    "dutch": "Voeg nog een stoel toe."
+   },
+   {
+    "japanese": "埋啲錢",
+    "romaji": "maai4 di1 cin2",
+    "dutch": "Voeg wat geld toe."
+   },
+   {
+    "japanese": "埋埋心機",
+    "romaji": "maai4 maai4 sam1 gei1",
+    "dutch": "Besteed ook wat aandacht."
+   },
+   {
+    "japanese": "埋啲時間",
+    "romaji": "maai4 di1 si4 gaan3",
+    "dutch": "Voeg wat tijd toe."
+   },
+   {
+    "japanese": "埋埋力",
+    "romaji": "maai4 maai4 lik6",
+    "dutch": "Voeg ook wat kracht toe."
+   }
+  ]
+ },
+ "yue-m-saai": {
+  "naam": "Gebruik van '晒' in het Kantonees",
+  "tagline": "Leer hoe je '晒' gebruikt om 'allemaal' uit te drukken in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "Het woord '晒' wordt in het Kantonees gebruikt om aan te geven dat iets 'allemaal' of 'alles' betreft. Het wordt vaak gebruikt om te benadrukken dat een actie of toestand op iedereen of alles van toepassing is.",
+  "patroon": "Substantief/Voornaamwoord + 晒 + Werkwoord",
+  "uitleg": "In het Kantonees wordt '晒' gebruikt om te benadrukken dat een actie of toestand betrekking heeft op alle elementen binnen een bepaalde groep. Dit kan worden vergeleken met het Nederlandse 'allemaal' of 'alles'. Het gebruik van '晒' is vrij eenvoudig, maar het is belangrijk om het juiste onderwerp te kiezen dat betrekking heeft op de groep die je wilt benadrukken. In tegenstelling tot het Nederlands, waar je soms 'allemaal' of 'alles' aan het einde van de zin plaatst, komt '晒' direct na het onderwerp en voor het werkwoord.",
+  "opbouw": [
+   {
+    "element": "Substantief/Voornaamwoord",
+    "rol": "Geeft aan over wie of wat de actie gaat.",
+    "voorbeeld": "我哋 (ngo5 dei6) - wij"
+   },
+   {
+    "element": "晒",
+    "rol": "Geeft aan dat de actie op alle elementen van toepassing is.",
+    "voorbeeld": "晒 (saai3) - allemaal"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Beschrijft de actie die uitgevoerd wordt.",
+    "voorbeeld": "食 (sik6) - eten"
+   }
+  ],
+  "tips": [
+   "Gebruik '晒' om te benadrukken dat een actie op iedereen of alles van toepassing is.",
+   "Plaats '晒' direct na het onderwerp en voor het werkwoord.",
+   "Let op de context om te bepalen of '晒' de juiste keuze is voor 'allemaal' of 'alles'."
+  ],
+  "veelgemaaktefouten": [
+   "Het plaatsen van '晒' na het werkwoord. Correct: 我哋晒食 (ngo5 dei6 saai3 sik6).",
+   "Vergeten '晒' te gebruiken wanneer je 'allemaal' wilt benadrukken. Correct: 佢哋晒去 (keoi5 dei6 saai3 heoi3)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我哋晒去旅行。",
+    "romaji": "ngo5 dei6 saai3 heoi3 leoi5 hang4",
+    "dutch": "Wij gaan allemaal op reis."
+   },
+   {
+    "japanese": "佢哋晒食飯。",
+    "romaji": "keoi5 dei6 saai3 sik6 faan6",
+    "dutch": "Zij eten allemaal."
+   },
+   {
+    "japanese": "啲書晒賣晒。",
+    "romaji": "di1 syu1 saai3 maai6 saai3",
+    "dutch": "De boeken zijn allemaal verkocht."
+   },
+   {
+    "japanese": "我晒睇過。",
+    "romaji": "ngo5 saai3 tai2 gwo3",
+    "dutch": "Ik heb het allemaal gezien."
+   },
+   {
+    "japanese": "佢哋晒走咗。",
+    "romaji": "keoi5 dei6 saai3 zau2 zo2",
+    "dutch": "Zij zijn allemaal vertrokken."
+   },
+   {
+    "japanese": "啲學生晒準備好。",
+    "romaji": "di1 hok6 saang1 saai3 zeon2 bei6 hou2",
+    "dutch": "De studenten zijn allemaal klaar."
+   }
+  ]
+ },
+ "yue-m-jyuhei": {
+  "naam": "Toonpartikels in het Kantonees",
+  "tagline": "Leer hoe toonpartikels de betekenis en toon van zinnen in het Kantonees beïnvloeden.",
+  "niveau": "gemiddeld",
+  "kernregel": "Toonpartikels worden aan het einde van zinnen gebruikt om de toon, intentie of emotie van de spreker uit te drukken. Ze zijn essentieel voor het overbrengen van nuances in informele gesprekken.",
+  "patroon": "Zin + [toonpartikel]",
+  "uitleg": "In het Kantonees worden toonpartikels vaak aan het einde van een zin toegevoegd om verschillende emoties of intenties uit te drukken, zoals verrassing, bevestiging, twijfel of verzoek. Deze partikels zijn niet direct te vertalen naar het Nederlands, maar ze spelen een vergelijkbare rol als intonatie in gesproken taal. Het gebruik van de juiste toonpartikel kan de betekenis van een zin aanzienlijk veranderen, zelfs als de rest van de zin hetzelfde blijft. Het is belangrijk om te begrijpen welke toonpartikels in welke context gepast zijn, omdat ze de sociale dynamiek van een gesprek beïnvloeden.",
+  "opbouw": [
+   {
+    "element": "Zin",
+    "rol": "De basisuitspraak of vraag waarop de toonpartikel wordt toegepast.",
+    "voorbeeld": "你食咗飯"
+   },
+   {
+    "element": "Toonpartikel 啊 (aa)",
+    "rol": "Drukt bevestiging of instemming uit.",
+    "voorbeeld": "你食咗飯啊。"
+   },
+   {
+    "element": "Toonpartikel 呀 (aa3)",
+    "rol": "Wordt gebruikt om verrassing of nieuwsgierigheid uit te drukken.",
+    "voorbeeld": "你食咗飯呀？"
+   },
+   {
+    "element": "Toonpartikel 咩 (me1)",
+    "rol": "Drukt twijfel of ongeloof uit.",
+    "voorbeeld": "你食咗飯咩？"
+   },
+   {
+    "element": "Toonpartikel 喇 (laa3)",
+    "rol": "Geeft aan dat iets net is gebeurd of binnenkort zal gebeuren.",
+    "voorbeeld": "你食咗飯喇。"
+   }
+  ],
+  "tips": [
+   "Luister naar moedertaalsprekers om te horen hoe toonpartikels in verschillende contexten worden gebruikt.",
+   "Probeer niet te veel toonpartikels in één zin te gebruiken, omdat dit verwarrend kan zijn.",
+   "Experimenteer met verschillende toonpartikels om te zien hoe ze de betekenis van je zinnen veranderen.",
+   "Let op de intonatie van de toonpartikels, want die kan ook de betekenis beïnvloeden."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de verkeerde toonpartikel kan leiden tot misverstanden. Bijvoorbeeld, 啊 (aa) gebruiken in plaats van 呀 (aa3) kan de zin minder vriendelijk doen klinken.",
+   "Vergeten een toonpartikel toe te voegen aan een zin die om bevestiging vraagt, kan de zin onvolledig doen aanvoelen.",
+   "Het combineren van meerdere toonpartikels zonder te weten hoe ze samenwerken kan verwarrend zijn voor de luisteraar."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "你去唔去呀？",
+    "romaji": "nei5 heoi3 m4 heoi3 aa3?",
+    "dutch": "Ga je (nou) wel of niet?"
+   },
+   {
+    "japanese": "佢唔係老師喇。",
+    "romaji": "keoi5 m4 hai6 lou5 si1 laa3.",
+    "dutch": "Hij is geen leraar meer."
+   },
+   {
+    "japanese": "呢個好貴喎。",
+    "romaji": "ni1 go3 hou2 gwai3 wo3.",
+    "dutch": "Dit is duur, hoor."
+   },
+   {
+    "japanese": "你識唔識佢呀？",
+    "romaji": "nei5 sik1 m4 sik1 keoi5 aa3?",
+    "dutch": "Ken je hem/haar?"
+   },
+   {
+    "japanese": "我未食飯喎。",
+    "romaji": "ngo5 mei6 sik6 faan6 wo3.",
+    "dutch": "Ik heb nog niet gegeten, hoor."
+   },
+   {
+    "japanese": "佢啱啱走咗喇。",
+    "romaji": "keoi5 ngaam1 ngaam1 zau2 zo2 laa3.",
+    "dutch": "Hij/zij is net vertrokken."
+   }
+  ]
+ },
+ "yue-m-bei": {
+  "naam": "Gebruik van 畀 (bei2) in het Kantonees",
+  "tagline": "Leer hoe je 'geven' en 'door' uitdrukt met 畀 in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "Het woord 畀 (bei2) wordt in het Kantonees gebruikt om het idee van 'geven' of 'door' uit te drukken. Het kan zowel letterlijk als figuurlijk worden gebruikt, afhankelijk van de context.",
+  "patroon": "Onderwerp + 畀 + Ontvanger + Voorwerp",
+  "uitleg": "In het Kantonees wordt 畀 (bei2) gebruikt om aan te geven dat iets aan iemand wordt gegeven, vergelijkbaar met het Nederlandse 'geven'. Het kan ook worden gebruikt om aan te geven dat een actie door iemand wordt uitgevoerd, vergelijkbaar met 'door' in het Nederlands. In tegenstelling tot het Nederlands, waar de volgorde van woorden kan variëren, volgt het Kantonees een strikte volgorde: eerst het onderwerp, dan 畀, gevolgd door de ontvanger en ten slotte het voorwerp. Deze structuur helpt om duidelijk te maken wie de actie uitvoert en wie de ontvanger is.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Degene die de actie uitvoert.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "畀 (bei2)",
+    "rol": "Geeft aan dat iets wordt gegeven of doorgegeven.",
+    "voorbeeld": "畀 (bei2)"
+   },
+   {
+    "element": "Ontvanger",
+    "rol": "Degene die het voorwerp ontvangt.",
+    "voorbeeld": "你 (nei5) - jij"
+   },
+   {
+    "element": "Voorwerp",
+    "rol": "Het object dat wordt gegeven.",
+    "voorbeeld": "書 (syu1) - boek"
+   }
+  ],
+  "tips": [
+   "Gebruik 畀 (bei2) om duidelijk aan te geven wie de ontvanger is in een zin.",
+   "Let op de volgorde: onderwerp, 畀, ontvanger, voorwerp.",
+   "畀 (bei2) kan ook worden gebruikt in passieve constructies om aan te geven wie de actie uitvoert.",
+   "Oefen met verschillende ontvangers en voorwerpen om vertrouwd te raken met de structuur."
+  ],
+  "veelgemaaktefouten": [
+   "Het omdraaien van de ontvanger en het voorwerp. Correct: 我畀你書 (ngo5 bei2 nei5 syu1).",
+   "Vergeten 畀 (bei2) te gebruiken, waardoor de zin onduidelijk wordt. Correct: 佢畀我禮物 (keoi5 bei2 ngo5 lai5mat6)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我畀你一杯水。",
+    "romaji": "ngo5 bei2 nei5 jat1 bui1 seoi2.",
+    "dutch": "Ik geef je een glas water."
+   },
+   {
+    "japanese": "佢畀我一個禮物。",
+    "romaji": "keoi5 bei2 ngo5 jat1 go3 lai5mat6.",
+    "dutch": "Hij geeft mij een cadeau."
+   },
+   {
+    "japanese": "老師畀學生功課。",
+    "romaji": "lou5si1 bei2 hok6saang1 gung1fo3.",
+    "dutch": "De leraar geeft de studenten huiswerk."
+   },
+   {
+    "japanese": "媽媽畀我錢。",
+    "romaji": "maa4maa1 bei2 ngo5 cin2.",
+    "dutch": "Mama geeft mij geld."
+   },
+   {
+    "japanese": "我畀佢電話號碼。",
+    "romaji": "ngo5 bei2 keoi5 din6waa2 hou6maa5.",
+    "dutch": "Ik geef hem het telefoonnummer."
+   },
+   {
+    "japanese": "朋友畀我一個建議。",
+    "romaji": "pang4jau5 bei2 ngo5 jat1 go3 gin3ji5.",
+    "dutch": "Een vriend geeft mij een advies."
+   }
+  ]
+ },
+ "yue-m-janwai": {
+  "naam": "因為…所以 (omdat)",
+  "tagline": "Leer hoe je oorzaak en gevolg uitdrukt in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '因為…所以' wordt gebruikt om een oorzaak-gevolgrelatie aan te geven in een zin. Het is vergelijkbaar met het Nederlandse 'omdat', waarbij '因為' de oorzaak introduceert en '所以' het gevolg aangeeft.",
+  "patroon": "因為 [oorzaak] 所以 [gevolg]",
+  "uitleg": "In het Kantonees gebruik je '因為' om de reden of oorzaak van een situatie aan te geven, gevolgd door '所以' om het gevolg of resultaat te beschrijven. Dit patroon is vergelijkbaar met het Nederlandse 'omdat', maar in het Kantonees worden beide delen expliciet genoemd. Dit maakt de structuur helder en logisch, vooral in gesproken taal. Het gebruik van beide delen is belangrijk, omdat het weglaten van '所以' de zin onvolledig maakt. In tegenstelling tot het Nederlands, waar je soms het gevolg kunt impliceren, vereist het Kantonees expliciete vermelding van zowel oorzaak als gevolg.",
+  "opbouw": [
+   {
+    "element": "因為",
+    "rol": "Introduceert de oorzaak of reden.",
+    "voorbeeld": "因為天氣好 (Omdat het weer goed is)"
+   },
+   {
+    "element": "所以",
+    "rol": "Introduceert het gevolg of resultaat.",
+    "voorbeeld": "所以我去公園 (dus ik ga naar het park)"
+   },
+   {
+    "element": "[oorzaak]",
+    "rol": "De reden of oorzaak van de actie of situatie.",
+    "voorbeeld": "天氣好 (het weer is goed)"
+   },
+   {
+    "element": "[gevolg]",
+    "rol": "Het resultaat of gevolg van de oorzaak.",
+    "voorbeeld": "我去公園 (ik ga naar het park)"
+   }
+  ],
+  "tips": [
+   "Gebruik altijd zowel '因為' als '所以' om de zin compleet te maken.",
+   "Plaats de oorzaak direct na '因為' en het gevolg direct na '所以'.",
+   "Oefen met verschillende oorzaken en gevolgen om vertrouwd te raken met de structuur.",
+   "Let op de toon en uitspraak van '因為' (jan1 wai6) en '所以' (so2 ji5) om misverstanden te voorkomen."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van '所以' na '因為', wat de zin onvolledig maakt. Correctie: Voeg altijd '所以' toe om het gevolg aan te geven.",
+   "Verwarring tussen de volgorde van oorzaak en gevolg. Correctie: Zorg ervoor dat de oorzaak altijd na '因為' komt en het gevolg na '所以'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "因為我病了，所以我唔去學校。",
+    "romaji": "jan1 wai6 ngo5 beng6 liu5, so2 ji5 ngo5 m4 heoi3 hok6 haau6.",
+    "dutch": "Omdat ik ziek ben, ga ik niet naar school."
+   },
+   {
+    "japanese": "因為佢努力，所以佢成功。",
+    "romaji": "jan1 wai6 keoi5 nou5 lik6, so2 ji5 keoi5 sing4 gung1.",
+    "dutch": "Omdat hij hard werkt, is hij succesvol."
+   },
+   {
+    "japanese": "因為佢唔鍾意，所以佢唔買。",
+    "romaji": "jan1 wai6 keoi5 m4 zung1 ji3, so2 ji5 keoi5 m4 maai5.",
+    "dutch": "Omdat hij het niet leuk vindt, koopt hij het niet."
+   },
+   {
+    "japanese": "因為下雨，所以我帶遮。",
+    "romaji": "jan1 wai6 haa6 jyu5, so2 ji5 ngo5 daai3 ze1.",
+    "dutch": "Omdat het regent, neem ik een paraplu mee."
+   },
+   {
+    "japanese": "因為佢遲到，所以我等佢。",
+    "romaji": "jan1 wai6 keoi5 ci4 dou3, so2 ji5 ngo5 dang2 keoi5.",
+    "dutch": "Omdat hij te laat is, wacht ik op hem."
+   },
+   {
+    "japanese": "因為天氣冷，所以我著多件衫。",
+    "romaji": "jan1 wai6 tin1 hei3 laang5, so2 ji5 ngo5 zoek3 do1 gin6 saam1.",
+    "dutch": "Omdat het koud is, trek ik extra kleding aan."
+   }
+  ]
+ },
+ "yue-m-jatzau": {
+  "naam": "Gebruik van het patroon 一…就 in het Kantonees",
+  "tagline": "Leer hoe je opeenvolgende acties in het Kantonees kunt uitdrukken met 一…就",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 一…就 wordt gebruikt om aan te geven dat zodra een bepaalde actie of situatie plaatsvindt, er onmiddellijk een andere actie volgt. Het is vergelijkbaar met het Nederlandse 'zodra... dan'.",
+  "patroon": "一 + [actie 1] + 就 + [actie 2]",
+  "uitleg": "In het Kantonees gebruik je 一…就 om een directe opeenvolging van gebeurtenissen of acties uit te drukken. Het patroon benadrukt dat de tweede actie onmiddellijk volgt op de eerste. Dit is vergelijkbaar met het Nederlandse 'zodra... dan', maar in het Kantonees is de structuur strikter. De eerste actie wordt voorafgegaan door 一 (jat1), gevolgd door 就 (zau6) voor de tweede actie. Dit patroon wordt vaak gebruikt in dagelijkse gesprekken om snelle opeenvolgingen aan te geven.",
+  "opbouw": [
+   {
+    "element": "一 (jat1)",
+    "rol": "Geeft het begin van de eerste actie aan.",
+    "voorbeeld": "一見到 (jat1 gin3 dou3) - zodra ik zie"
+   },
+   {
+    "element": "[actie 1]",
+    "rol": "De eerste actie die plaatsvindt.",
+    "voorbeeld": "見到 (gin3 dou3) - zien"
+   },
+   {
+    "element": "就 (zau6)",
+    "rol": "Verbindt de eerste actie met de tweede actie.",
+    "voorbeeld": "就去 (zau6 heoi3) - dan ga ik"
+   },
+   {
+    "element": "[actie 2]",
+    "rol": "De actie die onmiddellijk volgt op de eerste.",
+    "voorbeeld": "去食飯 (heoi3 sik6 faan6) - ga eten"
+   }
+  ],
+  "tips": [
+   "Gebruik 一 (jat1) altijd voor de eerste actie om de volgorde aan te geven.",
+   "Zorg ervoor dat de tweede actie direct volgt op de eerste, zonder tussenliggende gebeurtenissen.",
+   "Dit patroon is ideaal voor het beschrijven van dagelijkse routines of gewoonten.",
+   "Let op de context; het patroon impliceert vaak een automatische of natuurlijke opeenvolging."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 就 (zau6) zonder een duidelijke opeenvolging. Correctie: Zorg ervoor dat de tweede actie direct volgt.",
+   "Vergeten 一 (jat1) te gebruiken voor de eerste actie. Correctie: Voeg altijd 一 (jat1) toe voor de eerste actie om de structuur compleet te maken.",
+   "Gebruik van het patroon voor niet-directe opeenvolgingen. Correctie: Beperk het gebruik tot situaties waarin de tweede actie onmiddellijk volgt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我一返屋企就沖涼。",
+    "romaji": "ngo5 jat1 faan1 uk1 kei2 zau6 cung1 loeng4.",
+    "dutch": "Zodra ik thuiskom, ga ik douchen."
+   },
+   {
+    "japanese": "佢一聽到消息就打電話。",
+    "romaji": "keoi5 jat1 teng1 dou3 siu1 sik1 zau6 daa2 din6 waa2.",
+    "dutch": "Zodra hij het nieuws hoort, belt hij."
+   },
+   {
+    "japanese": "天一黑就開燈。",
+    "romaji": "tin1 jat1 hak1 zau6 hoi1 dang1.",
+    "dutch": "Zodra het donker wordt, doe ik het licht aan."
+   },
+   {
+    "japanese": "我一食完飯就做功課。",
+    "romaji": "ngo5 jat1 sik6 jyun4 faan6 zau6 zou6 gung1 fo3.",
+    "dutch": "Zodra ik klaar ben met eten, maak ik mijn huiswerk."
+   },
+   {
+    "japanese": "佢一見到我就笑。",
+    "romaji": "keoi5 jat1 gin3 dou3 ngo5 zau6 siu3.",
+    "dutch": "Zodra hij mij ziet, lacht hij."
+   },
+   {
+    "japanese": "我一落車就去買嘢。",
+    "romaji": "ngo5 jat1 lok6 ce1 zau6 heoi3 maai5 je5.",
+    "dutch": "Zodra ik uit de auto stap, ga ik boodschappen doen."
+   }
+  ]
+ },
+ "yue-g-bei6": {
+  "naam": "Passieve Zinnen met 被 (bei6) en 畀 (bei2)",
+  "tagline": "Leer hoe je passieve zinnen vormt in het Kantonees.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Kantonees worden passieve zinnen vaak gevormd met het gebruik van 被 (bei6) of 畀 (bei2). Deze structuur benadrukt de actie die op het onderwerp wordt uitgevoerd, in plaats van wie de actie uitvoert.",
+  "patroon": "[Onderwerp] + 被/畀 + [Agent] + [Werkwoord] + [Object]",
+  "uitleg": "In het Kantonees gebruik je 被 (bei6) of 畀 (bei2) om passieve zinnen te vormen, vergelijkbaar met het gebruik van 'worden' in het Nederlands. 被 (bei6) wordt vaak gebruikt in formele contexten, terwijl 畀 (bei2) informeler is en meer in gesproken taal voorkomt. Het onderwerp van de zin is degene die de actie ondergaat, terwijl de agent degene is die de actie uitvoert. Het werkwoord beschrijft de actie die wordt uitgevoerd, en het object is optioneel afhankelijk van de zin.",
+  "opbouw": [
+   {
+    "element": "Onderwerp",
+    "rol": "Degene die de actie ondergaat.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "被/畀",
+    "rol": "Geeft aan dat de zin passief is.",
+    "voorbeeld": "被 (bei6) of 畀 (bei2)"
+   },
+   {
+    "element": "Agent",
+    "rol": "Degene die de actie uitvoert.",
+    "voorbeeld": "老師 (lou5 si1) - leraar"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "Beschrijft de actie die wordt uitgevoerd.",
+    "voorbeeld": "罰 (fat6) - straffen"
+   },
+   {
+    "element": "Object",
+    "rol": "Optioneel, wat de actie ondergaat.",
+    "voorbeeld": "作業 (zok3 jip6) - huiswerk"
+   }
+  ],
+  "tips": [
+   "Gebruik 被 (bei6) voor een formelere toon, zoals in geschreven teksten.",
+   "Gebruik 畀 (bei2) in informele gesprekken voor een natuurlijkere klank.",
+   "Het is niet altijd nodig om de agent te vermelden als deze duidelijk is uit de context.",
+   "Let op de context om te beslissen of een passieve zin nodig is, aangezien het Kantonees vaak actieve zinnen gebruikt."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 被 (bei6) en 畀 (bei2); zorg ervoor dat je de juiste kiest op basis van de context.",
+   "Het vergeten van het werkwoord na 被 (bei6) of 畀 (bei2), wat de zin onvolledig maakt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我被老師罰咗。",
+    "romaji": "ngo5 bei6 lou5 si1 fat6 zo2.",
+    "dutch": "Ik ben door de leraar gestraft."
+   },
+   {
+    "japanese": "佢畀人偷咗手機。",
+    "romaji": "keoi5 bei2 jan4 tau1 zo2 sau2 gei1.",
+    "dutch": "Zijn telefoon is gestolen."
+   },
+   {
+    "japanese": "呢本書被借走咗。",
+    "romaji": "ni1 bun2 syu1 bei6 ze3 zau2 zo2.",
+    "dutch": "Dit boek is geleend."
+   },
+   {
+    "japanese": "我畀佢叫咗去。",
+    "romaji": "ngo5 bei2 keoi5 giu3 zo2 heoi3.",
+    "dutch": "Ik ben door hem geroepen."
+   },
+   {
+    "japanese": "佢被公司解僱咗。",
+    "romaji": "keoi5 bei6 gung1 si1 gaai2 gu3 zo2.",
+    "dutch": "Hij is door het bedrijf ontslagen."
+   },
+   {
+    "japanese": "呢個問題畀學生解決咗。",
+    "romaji": "ni1 go3 man6 tai4 bei2 hok6 saang1 gaai2 kyut3 zo2.",
+    "dutch": "Dit probleem is door de studenten opgelost."
+   }
+  ]
+ },
+ "yue-g-sai": {
+  "naam": "Gebruik van '使' en '令' in het Kantonees",
+  "tagline": "Leren hoe je iemand iets laat doen in het Kantonees.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Kantonees worden de werkwoorden '使' (si2) en '令' (ling6) gebruikt om aan te geven dat iemand iets laat doen. Deze werkwoorden worden vaak gebruikt om een causatieve zin te vormen, waarbij de actie door een ander wordt uitgevoerd.",
+  "patroon": "Subject + 使/令 + Object + Werkwoord + Voorwerp",
+  "uitleg": "In het Kantonees gebruik je '使' (si2) of '令' (ling6) om aan te geven dat iemand anders een actie uitvoert op jouw verzoek of bevel. Dit lijkt op het Nederlandse gebruik van 'laten', maar in het Kantonees is er een duidelijker onderscheid tussen '使' en '令'. '使' wordt vaker gebruikt in informele contexten, terwijl '令' formeler is. Beide kunnen worden gebruikt om te zeggen dat iemand iets moet doen, maar de keuze hangt af van de context en de relatie tussen de spreker en de persoon die de actie uitvoert.",
+  "opbouw": [
+   {
+    "element": "Subject",
+    "rol": "Degene die de actie laat uitvoeren.",
+    "voorbeeld": "我 (ngo5) - ik"
+   },
+   {
+    "element": "使/令",
+    "rol": "Het werkwoord dat aangeeft dat de actie wordt veroorzaakt.",
+    "voorbeeld": "使 (si2) of 令 (ling6)"
+   },
+   {
+    "element": "Object",
+    "rol": "Degene die de actie uitvoert.",
+    "voorbeeld": "佢 (keoi5) - hij/zij"
+   },
+   {
+    "element": "Werkwoord",
+    "rol": "De actie die uitgevoerd moet worden.",
+    "voorbeeld": "做 (zou6) - doen"
+   },
+   {
+    "element": "Voorwerp",
+    "rol": "Optioneel, wat de actie beïnvloedt.",
+    "voorbeeld": "功課 (gung1 fo3) - huiswerk"
+   }
+  ],
+  "tips": [
+   "Gebruik '使' in informele situaties, zoals met vrienden of familie.",
+   "Gebruik '令' in formele situaties of wanneer je beleefd wilt zijn.",
+   "Zorg ervoor dat het werkwoord dat volgt duidelijk de actie aangeeft die uitgevoerd moet worden.",
+   "Let op de toon en context om te bepalen of '使' of '令' het meest geschikt is."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen '使' en '令'; gebruik '使' niet in formele brieven.",
+   "Vergeten het object te specificeren; altijd duidelijk maken wie de actie uitvoert.",
+   "Het werkwoord na '使' of '令' weglaten; altijd een duidelijke actie aangeven."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我使佢做功課。",
+    "romaji": "ngo5 si2 keoi5 zou6 gung1 fo3",
+    "dutch": "Ik laat hem zijn huiswerk maken."
+   },
+   {
+    "japanese": "老師令學生安靜。",
+    "romaji": "lou5 si1 ling6 hok6 saang1 on1 zing6",
+    "dutch": "De leraar laat de studenten stil zijn."
+   },
+   {
+    "japanese": "媽媽使我洗碗。",
+    "romaji": "maa4 maa1 si2 ngo5 sai2 wun2",
+    "dutch": "Mama laat mij de afwas doen."
+   },
+   {
+    "japanese": "公司令員工加班。",
+    "romaji": "gung1 si1 ling6 jyun4 gung1 gaa1 baan1",
+    "dutch": "Het bedrijf laat de medewerkers overwerken."
+   },
+   {
+    "japanese": "我使佢幫我買嘢。",
+    "romaji": "ngo5 si2 keoi5 bong1 ngo5 maai5 je5",
+    "dutch": "Ik laat hem iets voor mij kopen."
+   },
+   {
+    "japanese": "佢令我覺得開心。",
+    "romaji": "keoi5 ling6 ngo5 gok3 dak1 hoi1 sam1",
+    "dutch": "Hij laat me gelukkig voelen."
+   }
+  ]
+ },
+ "yue-g-jinggoi": {
+  "naam": "Gebruik van '應該' en '要' in het Kantonees",
+  "tagline": "Leer hoe je verplichtingen en noodzakelijkheid uitdrukt in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "In het Kantonees gebruik je '應該' (jing1 goi1) en '要' (jiu3) om verplichtingen en noodzakelijkheid uit te drukken. '應該' wordt meestal gebruikt voor aanbevelingen of verwachtingen, terwijl '要' meer urgentie of noodzaak aangeeft.",
+  "patroon": "[onderwerp] + 應該/要 + [werkwoord]",
+  "uitleg": "In het Kantonees gebruik je '應該' om aan te geven dat iets zou moeten gebeuren als een aanbeveling of verwachting. Het is vergelijkbaar met het Nederlandse 'zou moeten'. '要' daarentegen wordt gebruikt om te zeggen dat iets moet gebeuren, vaak met een gevoel van urgentie of noodzaak, vergelijkbaar met 'moet' in het Nederlands. Hoewel beide woorden verplichtingen kunnen uitdrukken, is '應該' minder dwingend dan '要'. Bijvoorbeeld, '你應該去' (nei5 jing1 goi1 heoi3) betekent 'je zou moeten gaan', terwijl '你要去' (nei5 jiu3 heoi3) betekent 'je moet gaan'.",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "Geeft aan wie de actie moet uitvoeren.",
+    "voorbeeld": "你 (nei5) - jij"
+   },
+   {
+    "element": "應該",
+    "rol": "Drukt een aanbeveling of verwachting uit.",
+    "voorbeeld": "應該 (jing1 goi1) - zou moeten"
+   },
+   {
+    "element": "要",
+    "rol": "Drukt een noodzaak of verplichting uit.",
+    "voorbeeld": "要 (jiu3) - moet"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Geeft de actie aan die moet worden uitgevoerd.",
+    "voorbeeld": "去 (heoi3) - gaan"
+   }
+  ],
+  "tips": [
+   "Gebruik '應該' als je iemand iets wilt aanraden zonder te dwingend te zijn.",
+   "Gebruik '要' als er een dringende noodzaak is om iets te doen.",
+   "Let op de context om te bepalen of '應該' of '要' beter past.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met het patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van '應該' met '要' in situaties waar geen urgentie is. Correctie: Gebruik '應該' voor aanbevelingen.",
+   "Gebruik van '要' zonder duidelijke noodzaak. Correctie: Gebruik '要' alleen als er een dringende reden is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "你應該學習",
+    "romaji": "nei5 jing1 goi1 hok6 zaap6",
+    "dutch": "Je zou moeten studeren."
+   },
+   {
+    "japanese": "我應該休息",
+    "romaji": "ngo5 jing1 goi1 jau1 sik1",
+    "dutch": "Ik zou moeten rusten."
+   },
+   {
+    "japanese": "佢要返工",
+    "romaji": "keoi5 jiu3 faan1 gung1",
+    "dutch": "Hij moet naar het werk."
+   },
+   {
+    "japanese": "我哋要開會",
+    "romaji": "ngo5 dei6 jiu3 hoi1 wui2",
+    "dutch": "We moeten een vergadering houden."
+   },
+   {
+    "japanese": "你應該飲水",
+    "romaji": "nei5 jing1 goi1 jam2 seoi2",
+    "dutch": "Je zou water moeten drinken."
+   },
+   {
+    "japanese": "佢要買嘢",
+    "romaji": "keoi5 jiu3 maai5 je5",
+    "dutch": "Hij moet boodschappen doen."
+   }
+  ]
+ },
+ "yue-g-jyugwo": {
+  "naam": "Gebruik van '如果...就' in het Kantonees",
+  "tagline": "Leer hoe je voorwaardelijke zinnen maakt met 'als' in het Kantonees.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '如果...就' wordt gebruikt om voorwaardelijke zinnen te maken in het Kantonees, vergelijkbaar met 'als...dan' in het Nederlands. Het geeft aan dat een bepaalde actie of situatie afhankelijk is van een voorwaarde.",
+  "patroon": "如果 + voorwaarde + 就 + gevolg",
+  "uitleg": "In het Kantonees gebruik je '如果' om een voorwaarde in te leiden, vergelijkbaar met 'als' in het Nederlands. Het woord '就' volgt de voorwaarde en introduceert het gevolg of de actie die plaatsvindt als de voorwaarde vervuld is. Dit patroon is handig voor het uitdrukken van situaties waarin één gebeurtenis afhankelijk is van een andere. In tegenstelling tot het Nederlands, waar de volgorde van de zinnen kan variëren, blijft de volgorde in het Kantonees meestal consistent met '如果' aan het begin van de zin.",
+  "opbouw": [
+   {
+    "element": "如果",
+    "rol": "Introduceert de voorwaarde, vergelijkbaar met 'als'.",
+    "voorbeeld": "如果天氣好 (jyutping: jyu4 gwo2 tin1 hei3 hou2) - Als het weer goed is"
+   },
+   {
+    "element": "就",
+    "rol": "Introduceert het gevolg of de actie die volgt op de voorwaarde.",
+    "voorbeeld": "就去行山 (jyutping: zau6 heoi3 haang4 saan1) - dan gaan we wandelen"
+   },
+   {
+    "element": "voorwaarde",
+    "rol": "De situatie of actie die moet plaatsvinden voor het gevolg.",
+    "voorbeeld": "天氣好 (jyutping: tin1 hei3 hou2) - het weer is goed"
+   },
+   {
+    "element": "gevolg",
+    "rol": "De actie of situatie die volgt als de voorwaarde vervuld is.",
+    "voorbeeld": "去行山 (jyutping: heoi3 haang4 saan1) - gaan wandelen"
+   },
+   {
+    "element": "volgorde",
+    "rol": "De volgorde van de zinsdelen blijft consistent.",
+    "voorbeeld": "如果...就..."
+   }
+  ],
+  "tips": [
+   "Gebruik '如果' altijd aan het begin van de zin om de voorwaarde in te leiden.",
+   "Zorg ervoor dat '就' direct na de voorwaarde komt om het gevolg in te leiden.",
+   "Probeer de zinnen kort en duidelijk te houden om verwarring te voorkomen.",
+   "Oefen met verschillende voorbeelden om vertrouwd te raken met de structuur."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van '就' na de voorwaarde, wat de zin onvolledig maakt. Correct: 如果你來, 我就開門 (jyutping: jyu4 gwo2 nei5 lai4, ngo5 zau6 hoi1 mun4) - Als je komt, dan doe ik de deur open.",
+   "Het omdraaien van de volgorde, wat de betekenis kan veranderen. Correct: 如果下雨, 我就唔去 (jyutping: jyu4 gwo2 haa6 jyu5, ngo5 zau6 m4 heoi3) - Als het regent, dan ga ik niet."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "如果你唔舒服, 就唔好去啦",
+    "romaji": "jyu4 gwo2 nei5 m4 syu1 fuk6, zau6 m4 hou2 heoi3 laa1",
+    "dutch": "Als je je niet goed voelt, ga dan niet."
+   },
+   {
+    "japanese": "如果佢唔嚟, 我哋就唔等佢",
+    "romaji": "jyu4 gwo2 keoi5 m4 lai4, ngo5 dei6 zau6 m4 dang2 keoi5",
+    "dutch": "Als hij niet komt, dan wachten we niet op hem."
+   },
+   {
+    "japanese": "如果我有時間, 就會幫你",
+    "romaji": "jyu4 gwo2 ngo5 jau5 si4 gaan3, zau6 wui5 bong1 nei5",
+    "dutch": "Als ik tijd heb, dan zal ik je helpen."
+   },
+   {
+    "japanese": "如果你想學, 我就教你",
+    "romaji": "jyu4 gwo2 nei5 soeng2 hok6, ngo5 zau6 gaau3 nei5",
+    "dutch": "Als je wilt leren, dan zal ik je onderwijzen."
+   },
+   {
+    "japanese": "如果佢唔食, 就留返俾我",
+    "romaji": "jyu4 gwo2 keoi5 m4 sik6, zau6 lau4 faan1 bei2 ngo5",
+    "dutch": "Als hij het niet eet, laat het dan voor mij."
+   },
+   {
+    "japanese": "如果天氣凍, 就著多件衫",
+    "romaji": "jyu4 gwo2 tin1 hei3 dung3, zau6 zoek3 do1 gin6 saam1",
+    "dutch": "Als het koud is, trek dan een extra trui aan."
+   }
+  ]
+ },
+ "yue-g-seoijin": {
+  "naam": "Gebruik van '雖然…但係' in het Kantonees",
+  "tagline": "Leer hoe je tegenstellingen uitdrukt met 'hoewel' in het Kantonees.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon '雖然…但係' wordt gebruikt om een tegenstelling uit te drukken, vergelijkbaar met 'hoewel' in het Nederlands. Het eerste deel van de zin geeft een situatie of feit aan, terwijl het tweede deel een onverwachte of tegenstrijdige uitkomst beschrijft.",
+  "patroon": "雖然 [zin 1] 但係 [zin 2]",
+  "uitleg": "In het Kantonees gebruik je '雖然' om een concessie of tegenstelling te introduceren, vergelijkbaar met 'hoewel' in het Nederlands. Het tweede deel van de zin, ingeleid door '但係', geeft de onverwachte of tegenstrijdige uitkomst aan. Dit patroon helpt om complexe zinnen te maken die twee verschillende ideeën verbinden. In tegenstelling tot het Nederlands, waar je soms 'maar' kunt weglaten, is '但係' essentieel om de tegenstelling duidelijk te maken in het Kantonees.",
+  "opbouw": [
+   {
+    "element": "雖然",
+    "rol": "Introduceert de concessie of het feit dat erkend wordt.",
+    "voorbeeld": "雖然天氣唔好 (Hoewel het weer slecht is)"
+   },
+   {
+    "element": "[zin 1]",
+    "rol": "Beschrijft de situatie of het feit dat erkend wordt.",
+    "voorbeeld": "天氣唔好 (Het weer is slecht)"
+   },
+   {
+    "element": "但係",
+    "rol": "Introduceert de onverwachte of tegenstrijdige uitkomst.",
+    "voorbeeld": "但係我哋仲去 (Maar we gaan nog steeds)"
+   },
+   {
+    "element": "[zin 2]",
+    "rol": "Beschrijft de onverwachte of tegenstrijdige uitkomst.",
+    "voorbeeld": "我哋仲去 (We gaan nog steeds)"
+   }
+  ],
+  "tips": [
+   "Gebruik '雖然' aan het begin van de zin om de concessie duidelijk te maken.",
+   "Zorg ervoor dat '但係' altijd volgt na de concessie om de tegenstelling aan te geven.",
+   "Oefen met verschillende zinnen om vertrouwd te raken met het patroon.",
+   "Let op de volgorde van de zinsdelen om verwarring te voorkomen."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van '但係' na '雖然'. Correctie: Voeg altijd '但係' toe om de tegenstelling aan te geven.",
+   "Verkeerde volgorde van de zinnen. Correctie: Begin altijd met '雖然' gevolgd door de concessie, en dan '但係' met de uitkomst."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "雖然佢病咗，但係佢仲返工。",
+    "romaji": "seoi1jin4 keoi5 beng6 zo2, daan6hai6 keoi5 zung6 faan1 gung1.",
+    "dutch": "Hoewel hij ziek is, gaat hij nog steeds naar het werk."
+   },
+   {
+    "japanese": "雖然我冇錢，但係我想去旅行。",
+    "romaji": "seoi1jin4 ngo5 mou5 cin2, daan6hai6 ngo5 soeng2 heoi3 leoi5hang4.",
+    "dutch": "Hoewel ik geen geld heb, wil ik toch reizen."
+   },
+   {
+    "japanese": "雖然佢唔鍾意魚，但係佢食咗。",
+    "romaji": "seoi1jin4 keoi5 m4 zung1ji3 jyu4, daan6hai6 keoi5 sik6 zo2.",
+    "dutch": "Hoewel hij niet van vis houdt, heeft hij het toch gegeten."
+   },
+   {
+    "japanese": "雖然今日落雨，但係我哋去咗行山。",
+    "romaji": "seoi1jin4 gam1jat6 lok6 jyu5, daan6hai6 ngo5dei6 heoi3 zo2 haang4 saan1.",
+    "dutch": "Hoewel het vandaag regent, zijn we toch gaan wandelen."
+   },
+   {
+    "japanese": "雖然佢唔識廣東話，但係佢聽得明。",
+    "romaji": "seoi1jin4 keoi5 m4 sik1 gwong2dung1waa2, daan6hai6 keoi5 teng1 dak1 ming4.",
+    "dutch": "Hoewel hij geen Kantonees spreekt, begrijpt hij het wel."
+   },
+   {
+    "japanese": "雖然呢本書好貴，但係我買咗。",
+    "romaji": "seoi1jin4 ni1 bun2 syu1 hou2 gwai3, daan6hai6 ngo5 maai5 zo2.",
+    "dutch": "Hoewel dit boek duur is, heb ik het toch gekocht."
+   }
+  ]
+ },
+ "yue-g-jyutlai": {
+  "naam": "Gebruik van '越嚟越' in het Kantonees",
+  "tagline": "Leer hoe je 'steeds meer' uitdrukt in het Kantonees.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon '越嚟越' wordt gebruikt om aan te geven dat iets in toenemende mate gebeurt. Het is vergelijkbaar met het Nederlandse 'steeds meer' en wordt vaak gebruikt om veranderingen of trends te beschrijven.",
+  "patroon": "越嚟越 + bijvoeglijk naamwoord",
+  "uitleg": "In het Kantonees gebruik je '越嚟越' om aan te geven dat een bepaalde eigenschap of toestand in toenemende mate voorkomt. Dit patroon is vergelijkbaar met het Nederlandse 'steeds meer' of 'steeds ...er'. Het wordt gevolgd door een bijvoeglijk naamwoord dat de eigenschap beschrijft die toeneemt. Het is belangrijk om te weten dat '越嚟越' alleen gebruikt wordt met bijvoeglijke naamwoorden en niet met werkwoorden. Dit patroon kan zowel positieve als negatieve veranderingen beschrijven, afhankelijk van het bijvoeglijk naamwoord dat wordt gebruikt.",
+  "opbouw": [
+   {
+    "element": "越嚟越",
+    "rol": "Geeft aan dat iets in toenemende mate gebeurt.",
+    "voorbeeld": "越嚟越熱 (jyut6 lai4 jyut6 jit6) - Steeds warmer"
+   },
+   {
+    "element": "bijvoeglijk naamwoord",
+    "rol": "Beschrijft de eigenschap die toeneemt.",
+    "voorbeeld": "熱 (jit6) - Warm"
+   },
+   {
+    "element": "onderwerp",
+    "rol": "Het onderwerp dat de verandering ondergaat.",
+    "voorbeeld": "天氣 (tin1 hei3) - Het weer"
+   }
+  ],
+  "tips": [
+   "Gebruik '越嚟越' alleen met bijvoeglijke naamwoorden, niet met werkwoorden.",
+   "Let op de context om te bepalen of de verandering positief of negatief is.",
+   "Oefen met verschillende bijvoeglijke naamwoorden om vertrouwd te raken met het patroon.",
+   "Probeer zinnen te maken met zowel positieve als negatieve veranderingen om het gebruik te begrijpen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van '越嚟越' met werkwoorden. Correct: '越嚟越忙' (steeds drukker), niet '越嚟越工作' (steeds meer werken).",
+   "Verkeerd bijvoeglijk naamwoord gebruiken. Zorg ervoor dat het bijvoeglijk naamwoord de juiste eigenschap beschrijft die toeneemt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "佢越嚟越高",
+    "romaji": "keoi5 jyut6 lai4 jyut6 gou1",
+    "dutch": "Hij wordt steeds langer."
+   },
+   {
+    "japanese": "呢個城市越嚟越繁忙",
+    "romaji": "ni1 go3 sing4 si5 jyut6 lai4 jyut6 faan4 mong4",
+    "dutch": "Deze stad wordt steeds drukker."
+   },
+   {
+    "japanese": "佢嘅中文越嚟越好",
+    "romaji": "keoi5 ge3 zung1 man4 jyut6 lai4 jyut6 hou2",
+    "dutch": "Zijn Chinees wordt steeds beter."
+   },
+   {
+    "japanese": "天氣越嚟越熱",
+    "romaji": "tin1 hei3 jyut6 lai4 jyut6 jit6",
+    "dutch": "Het weer wordt steeds warmer."
+   },
+   {
+    "japanese": "佢越嚟越唔開心",
+    "romaji": "keoi5 jyut6 lai4 jyut6 m4 hoi1 sam1",
+    "dutch": "Hij wordt steeds ongelukkiger."
+   },
+   {
+    "japanese": "呢間餐廳越嚟越受歡迎",
+    "romaji": "ni1 gaan1 caan1 teng1 jyut6 lai4 jyut6 sau6 fun1 jing4",
+    "dutch": "Dit restaurant wordt steeds populairder."
+   }
+  ]
+ },
+ "yue-g-ceoihoeng": {
+  "naam": "趨向補語 (richting complement)",
+  "tagline": "Leer hoe je richting in een zin aangeeft met het Kantonees richting complement.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het richting complement in het Kantonees wordt gebruikt om de richting van een actie aan te geven. Dit patroon helpt om duidelijk te maken waarheen een actie zich beweegt, zoals 'naar binnen gaan' of 'naar boven klimmen'.",
+  "patroon": "Werkwoord + 趨向補語",
+  "uitleg": "In het Kantonees wordt het richting complement gebruikt om de richting van een beweging of actie te specificeren. Dit is vergelijkbaar met hoe we in het Nederlands richtingen aangeven met woorden als 'naar', 'binnen', 'uit', enzovoort. Het richting complement komt direct na het werkwoord en kan bestaan uit verschillende componenten zoals '上' (soeng5) voor 'omhoog', '下' (haa6) voor 'omlaag', '入' (jap6) voor 'naar binnen', en '出' (ceot1) voor 'naar buiten'. Het gebruik van deze complementen helpt om de beweging in de zin te verduidelijken.",
+  "opbouw": [
+   {
+    "element": "Werkwoord",
+    "rol": "Geeft de actie aan die wordt uitgevoerd.",
+    "voorbeeld": "行 (haang4) - lopen"
+   },
+   {
+    "element": "上 (soeng5)",
+    "rol": "Geeft aan dat de beweging omhoog is.",
+    "voorbeeld": "上樓 (soeng5 lau4) - naar boven gaan"
+   },
+   {
+    "element": "下 (haa6)",
+    "rol": "Geeft aan dat de beweging omlaag is.",
+    "voorbeeld": "落樓 (lok6 lau4) - naar beneden gaan"
+   },
+   {
+    "element": "入 (jap6)",
+    "rol": "Geeft aan dat de beweging naar binnen is.",
+    "voorbeeld": "入屋 (jap6 uk1) - het huis binnen gaan"
+   },
+   {
+    "element": "出 (ceot1)",
+    "rol": "Geeft aan dat de beweging naar buiten is.",
+    "voorbeeld": "出門 (ceot1 mun4) - de deur uitgaan"
+   }
+  ],
+  "tips": [
+   "Let op de context van de zin om het juiste richting complement te kiezen.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met het gebruik van richting complementen.",
+   "Gebruik visuele hulpmiddelen zoals kaarten of afbeeldingen om de richtingen beter te begrijpen.",
+   "Probeer zinnen te maken met zowel fysieke als abstracte bewegingen om het gebruik van richting complementen te oefenen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen '上' (soeng5) en '下' (haa6) - zorg ervoor dat je weet of de beweging omhoog of omlaag is.",
+   "Vergeten het richting complement te gebruiken na het werkwoord, wat kan leiden tot onduidelijke zinnen.",
+   "Gebruik van een verkeerd richting complement, zoals '入' (jap6) in plaats van '出' (ceot1), wat de betekenis van de zin kan veranderen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "佢行入去。",
+    "romaji": "keoi5 haang4 jap6 heoi3.",
+    "dutch": "Hij gaat naar binnen."
+   },
+   {
+    "japanese": "我哋走出嚟。",
+    "romaji": "ngo5 dei6 zau2 ceot1 lai4.",
+    "dutch": "Wij komen naar buiten."
+   },
+   {
+    "japanese": "佢爬上山。",
+    "romaji": "keoi5 paa4 soeng5 saan1.",
+    "dutch": "Hij klimt de berg op."
+   },
+   {
+    "japanese": "佢落樓梯。",
+    "romaji": "keoi5 lok6 lau4 tai1.",
+    "dutch": "Hij gaat de trap af."
+   },
+   {
+    "japanese": "我哋行過去。",
+    "romaji": "ngo5 dei6 haang4 gwo3 heoi3.",
+    "dutch": "Wij lopen ernaartoe."
+   },
+   {
+    "japanese": "佢游水返嚟。",
+    "romaji": "keoi5 jau4 seoi2 faan1 lai4.",
+    "dutch": "Hij zwemt terug."
+   }
+  ]
+ },
+ "yue-g-ceoizo": {
+  "naam": "Gebruik van '除咗…之外' in het Kantonees",
+  "tagline": "Leren hoe je uitzonderingen en aanvullingen uitdrukt in het Kantonees.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon '除咗…之外' wordt gebruikt om uitzonderingen aan te geven, vergelijkbaar met 'behalve' in het Nederlands. Het helpt om specifieke elementen uit te sluiten of te benadrukken binnen een bredere context.",
+  "patroon": "除咗 [element] 之外, [hoofdzin]",
+  "uitleg": "In het Kantonees gebruik je '除咗…之外' om te zeggen dat iets een uitzondering is op een algemene regel of situatie. Het eerste deel, '除咗', betekent 'behalve', en '之外' betekent 'buiten'. Samen vormen ze een structuur die aangeeft dat alles behalve het genoemde element van toepassing is. Dit patroon is nuttig om variatie of contrast aan te geven, net zoals in het Nederlands wanneer je zegt 'behalve dit, is alles anders'. Het is belangrijk om het juiste element te kiezen dat je wilt uitsluiten, en de hoofdzin moet een context bieden waarin de uitzondering logisch is.",
+  "opbouw": [
+   {
+    "element": "除咗",
+    "rol": "Inleidend deel dat 'behalve' betekent.",
+    "voorbeeld": "除咗佢 (behalve hem/haar)"
+   },
+   {
+    "element": "[element]",
+    "rol": "Het specifieke element dat wordt uitgesloten.",
+    "voorbeeld": "除咗星期日 (behalve zondag)"
+   },
+   {
+    "element": "之外",
+    "rol": "Sluit het uitzonderingsdeel af en verbindt met de hoofdzin.",
+    "voorbeeld": "之外"
+   },
+   {
+    "element": "[hoofdzin]",
+    "rol": "De hoofdzin die de context biedt voor de uitzondering.",
+    "voorbeeld": "我都要返工 (moet ik werken)"
+   }
+  ],
+  "tips": [
+   "Gebruik '除咗…之外' om duidelijk te maken wat de uitzondering is binnen een reeks opties.",
+   "Zorg ervoor dat de hoofdzin logisch aansluit op het uitgesloten element.",
+   "Dit patroon kan zowel in formele als informele contexten worden gebruikt.",
+   "Let op de juiste plaatsing van '之外' om de zin vloeiend te houden."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde plaatsing van '之外', wat de zin onduidelijk maakt. Correctie: Plaats '之外' direct na het uitgesloten element.",
+   "Vergeten om de hoofdzin te specificeren, waardoor de zin onaf voelt. Correctie: Voeg altijd een hoofdzin toe na '之外'.",
+   "Gebruik van '除咗' zonder '之外', wat de betekenis onvolledig maakt. Correctie: Gebruik altijd beide delen samen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "除咗佢之外，我哋都去旅行。",
+    "romaji": "ceoi4 zo2 keoi5 zi1 ngoi6, ngo5 dei6 dou1 heoi3 leoi5 hang4.",
+    "dutch": "Behalve hij/zij, gaan wij allemaal op reis."
+   },
+   {
+    "japanese": "除咗星期日之外，我每日都做運動。",
+    "romaji": "ceoi4 zo2 sing1 kei4 jat6 zi1 ngoi6, ngo5 mui5 jat6 dou1 zou6 wan6 dung6.",
+    "dutch": "Behalve op zondag, doe ik elke dag aan sport."
+   },
+   {
+    "japanese": "除咗呢本書之外，我仲有其他書要睇。",
+    "romaji": "ceoi4 zo2 ni1 bun2 syu1 zi1 ngoi6, ngo5 zung6 jau5 kei4 taa1 syu1 jiu3 tai2.",
+    "dutch": "Behalve dit boek, heb ik nog andere boeken om te lezen."
+   },
+   {
+    "japanese": "除咗呢個問題之外，其他都解決咗。",
+    "romaji": "ceoi4 zo2 ni1 go3 man6 tai4 zi1 ngoi6, kei4 taa1 dou1 gaai2 kyut3 zo2.",
+    "dutch": "Behalve dit probleem, is de rest opgelost."
+   },
+   {
+    "japanese": "除咗佢之外，冇人知呢件事。",
+    "romaji": "ceoi4 zo2 keoi5 zi1 ngoi6, mou5 jan4 zi1 ni1 gin6 si6.",
+    "dutch": "Behalve hij/zij, weet niemand van deze zaak."
+   },
+   {
+    "japanese": "除咗香港之外，我未去過其他地方。",
+    "romaji": "ceoi4 zo2 hoeng1 gong2 zi1 ngoi6, ngo5 mei6 heoi3 gwo3 kei4 taa1 dei6 fong1.",
+    "dutch": "Behalve Hongkong, ben ik nog nooit ergens anders geweest."
+   }
+  ]
+ },
+ "yue-g-honang": {
+  "naam": "Kantonees: 可能補語 (potentieel complement)",
+  "tagline": "Leer hoe je mogelijkheden en potentieel uitdrukt in het Kantonees.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het potentieel complement in het Kantonees wordt gebruikt om de mogelijkheid of het vermogen aan te geven om een bepaalde actie uit te voeren. Het geeft aan of iets wel of niet kan gebeuren of gedaan kan worden.",
+  "patroon": "Werkwoord + 得 (dak1) / 不 (bat1) + Resultaat / Richting",
+  "uitleg": "In het Kantonees wordt het potentieel complement gebruikt om aan te geven of een actie mogelijk is of niet. Dit wordt gedaan door een werkwoord te combineren met 得 (dak1) voor positieve mogelijkheden en 不 (bat1) voor negatieve mogelijkheden, gevolgd door een resultaat of richting. Dit is vergelijkbaar met het Nederlandse 'kunnen' of 'niet kunnen', maar het Kantonees gebruikt specifieke karakters om deze betekenis over te brengen. Het patroon kan zowel fysiek als abstracte mogelijkheden uitdrukken.",
+  "opbouw": [
+   {
+    "element": "Werkwoord",
+    "rol": "Geeft de actie aan die mogelijk of onmogelijk is.",
+    "voorbeeld": "食 (sik6) - eten"
+   },
+   {
+    "element": "得 (dak1)",
+    "rol": "Geeft aan dat de actie mogelijk is.",
+    "voorbeeld": "食得 (sik6 dak1) - kunnen eten"
+   },
+   {
+    "element": "不 (bat1)",
+    "rol": "Geeft aan dat de actie niet mogelijk is.",
+    "voorbeeld": "食唔到 (sik6 m4 dou3) - niet kunnen eten"
+   },
+   {
+    "element": "Resultaat / Richting",
+    "rol": "Geeft het gevolg of de richting van de actie aan.",
+    "voorbeeld": "到 (dou3) - bereiken"
+   }
+  ],
+  "tips": [
+   "Gebruik 得 (dak1) voor positieve mogelijkheden en 不 (bat1) voor negatieve mogelijkheden.",
+   "Let op de context van de zin om te bepalen of het complement passend is.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met het patroon.",
+   "Onthoud dat het potentieel complement zowel fysieke als abstracte mogelijkheden kan uitdrukken."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 得 (dak1) en 不 (bat1) - Onthoud dat 得 (dak1) voor positieve mogelijkheden is.",
+   "Verkeerd plaatsen van het resultaat/richting - Het resultaat moet direct na 得 (dak1) of 不 (bat1) komen.",
+   "Vergeten van het werkwoord - Het werkwoord moet altijd aan het begin van het patroon staan."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "佢行得快。",
+    "romaji": "keoi5 haang4 dak1 faai3",
+    "dutch": "Hij kan snel lopen."
+   },
+   {
+    "japanese": "我睇唔到。",
+    "romaji": "ngo5 tai2 m4 dou3",
+    "dutch": "Ik kan het niet zien."
+   },
+   {
+    "japanese": "你寫得好。",
+    "romaji": "nei5 se2 dak1 hou2",
+    "dutch": "Jij kunt goed schrijven."
+   },
+   {
+    "japanese": "佢聽唔到音樂。",
+    "romaji": "keoi5 teng1 m4 dou3 jam1 ngok6",
+    "dutch": "Hij kan de muziek niet horen."
+   },
+   {
+    "japanese": "我哋去唔到嗰度。",
+    "romaji": "ngo5 dei6 heoi3 m4 dou3 go2 dou6",
+    "dutch": "Wij kunnen daar niet naartoe gaan."
+   },
+   {
+    "japanese": "佢做得晒功課。",
+    "romaji": "keoi5 zou6 dak1 saai3 gung1 fo3",
+    "dutch": "Hij kan al het huiswerk maken."
+   }
+  ]
+ }
+}

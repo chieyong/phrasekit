@@ -1,0 +1,2960 @@
+{
+ "zh-h1-shi": {
+  "naam": "Gebruik van 是 (shì) in het Mandarijn",
+  "tagline": "Leer de basis van het Chinese werkwoord 'zijn'.",
+  "niveau": "basis",
+  "kernregel": "Het werkwoord 是 (shì) wordt gebruikt om een gelijkheid of identiteit uit te drukken, vergelijkbaar met het Nederlandse 'zijn'. Het verbindt een onderwerp met een naamwoordelijk deel dat het onderwerp beschrijft of identificeert.",
+  "patroon": "[onderwerp] + 是 + [naamwoordelijk deel]",
+  "uitleg": "In het Mandarijn wordt 是 (shì) gebruikt om te zeggen dat iets of iemand gelijk is aan iets anders, vergelijkbaar met het gebruik van 'zijn' in het Nederlands. Het wordt vaak gebruikt in zinnen om te zeggen wat of wie iemand is, zoals in 'Ik ben een student' of 'Dit is een boek'. In tegenstelling tot het Nederlands, waar 'zijn' ook als hulpwerkwoord kan dienen, wordt 是 (shì) uitsluitend gebruikt voor gelijkheid of identiteit. Het wordt niet gebruikt om eigenschappen of toestanden te beschrijven, zoals 'mooi zijn' of 'blij zijn', waarvoor andere constructies nodig zijn.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de zin, degene of datgene dat geïdentificeerd wordt.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "是 (shì)",
+    "rol": "Het werkwoord dat gelijkheid of identiteit aangeeft.",
+    "voorbeeld": "是 (shì) - zijn"
+   },
+   {
+    "element": "[naamwoordelijk deel]",
+    "rol": "Het deel van de zin dat het onderwerp identificeert of beschrijft.",
+    "voorbeeld": "学生 (xuéshēng) - student"
+   }
+  ],
+  "tips": [
+   "Gebruik 是 (shì) alleen om te zeggen wat iets of iemand is, niet hoe iets of iemand is.",
+   "Vergeet niet dat 是 (shì) niet nodig is in zinnen met bijvoeglijke naamwoorden, zoals 'hij is groot'.",
+   "In vragen kan 是 (shì) worden gebruikt met 吗 (ma) aan het einde van de zin om een ja/nee-vraag te vormen.",
+   "Oefen met zinnen waarin je jezelf of anderen identificeert om vertrouwd te raken met het gebruik van 是 (shì)."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 是 (shì) in zinnen met bijvoeglijke naamwoorden, zoals '他是高' (tā shì gāo) in plaats van '他高' (tā gāo).",
+   "Vergeten 是 (shì) te gebruiken in identificerende zinnen, zoals '我学生' (wǒ xuéshēng) in plaats van '我是学生' (wǒ shì xuéshēng)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我是老师。",
+    "romaji": "wǒ shì lǎoshī.",
+    "dutch": "Ik ben een leraar."
+   },
+   {
+    "japanese": "他是医生。",
+    "romaji": "tā shì yīshēng.",
+    "dutch": "Hij is een dokter."
+   },
+   {
+    "japanese": "这是我的书。",
+    "romaji": "zhè shì wǒ de shū.",
+    "dutch": "Dit is mijn boek."
+   },
+   {
+    "japanese": "你是学生吗？",
+    "romaji": "nǐ shì xuéshēng ma?",
+    "dutch": "Ben jij een student?"
+   },
+   {
+    "japanese": "他们是朋友。",
+    "romaji": "tāmen shì péngyǒu.",
+    "dutch": "Zij zijn vrienden."
+   },
+   {
+    "japanese": "那是你的车吗？",
+    "romaji": "nà shì nǐ de chē ma?",
+    "dutch": "Is dat jouw auto?"
+   }
+  ]
+ },
+ "zh-h1-de": {
+  "naam": "Gebruik van 的 (de) voor bezit",
+  "tagline": "Leer hoe je bezit aangeeft in het Mandarijn",
+  "niveau": "basis",
+  "kernregel": "Het karakter 的 (de) wordt gebruikt om bezit aan te geven in het Mandarijn. Het fungeert als een verbindingswoord tussen de bezitter en het bezit, vergelijkbaar met 'van' of de bezits-s in het Nederlands.",
+  "patroon": "[bezitter] + 的 + [bezit]",
+  "uitleg": "In het Mandarijn wordt 的 (de) gebruikt om een relatie van bezit of eigendom aan te geven tussen twee elementen. Dit is vergelijkbaar met het gebruik van 'van' in het Nederlands, zoals in 'het boek van Jan'. In sommige gevallen, vooral bij persoonlijke bezittingen of nauwe relaties, kan 的 (de) worden weggelaten, zoals bij 'mijn moeder' (我妈妈 wǒ māma). Het gebruik van 的 (de) is essentieel om duidelijk te maken wie de eigenaar is van een bepaald object of concept. Het is belangrijk om te onthouden dat 的 (de) niet alleen voor fysieke objecten wordt gebruikt, maar ook voor abstracte concepten zoals ideeën of gevoelens.",
+  "opbouw": [
+   {
+    "element": "[bezitter]",
+    "rol": "De persoon of entiteit die iets bezit.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "的 (de)",
+    "rol": "Geeft de relatie van bezit aan tussen de bezitter en het bezit.",
+    "voorbeeld": "的 (de)"
+   },
+   {
+    "element": "[bezit]",
+    "rol": "Het object of concept dat wordt bezeten.",
+    "voorbeeld": "书 (shū) - boek"
+   }
+  ],
+  "tips": [
+   "Gebruik 的 (de) om bezit aan te geven, vergelijkbaar met 'van' in het Nederlands.",
+   "Bij nauwe relaties zoals familieleden kan 的 (de) soms worden weggelaten.",
+   "Onthoud dat 的 (de) ook wordt gebruikt voor abstracte bezittingen, niet alleen fysieke objecten.",
+   "Let op de context: 的 (de) kan ook andere functies hebben, maar in deze les focussen we op bezit."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van 的 (de) in situaties waar het wel nodig is, zoals 'het boek van de leraar' (老师的书 lǎoshī de shū).",
+   "Verwarring tussen 的 (de) en andere partikelwoorden zoals 得 (de) en 地 (de), die andere grammaticale functies hebben.",
+   "Het plaatsen van 的 (de) na het bezit in plaats van tussen bezitter en bezit."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我的朋友",
+    "romaji": "wǒ de péngyǒu",
+    "dutch": "mijn vriend"
+   },
+   {
+    "japanese": "她的猫",
+    "romaji": "tā de māo",
+    "dutch": "haar kat"
+   },
+   {
+    "japanese": "老师的书",
+    "romaji": "lǎoshī de shū",
+    "dutch": "het boek van de leraar"
+   },
+   {
+    "japanese": "公司的地址",
+    "romaji": "gōngsī de dìzhǐ",
+    "dutch": "het adres van het bedrijf"
+   },
+   {
+    "japanese": "孩子的玩具",
+    "romaji": "háizi de wánjù",
+    "dutch": "het speelgoed van het kind"
+   },
+   {
+    "japanese": "中国的文化",
+    "romaji": "Zhōngguó de wénhuà",
+    "dutch": "de cultuur van China"
+   }
+  ]
+ },
+ "zh-h1-bu": {
+  "naam": "Gebruik van 不 (bù) in het Mandarijn",
+  "tagline": "Leer hoe je 'niet' gebruikt in het Mandarijn",
+  "niveau": "basis",
+  "kernregel": "Het woord 不 (bù) wordt gebruikt om ontkenningen te maken in het Mandarijn. Het wordt voor een werkwoord of bijvoeglijk naamwoord geplaatst om aan te geven dat iets niet gebeurt of niet zo is.",
+  "patroon": "[onderwerp] + 不 + [werkwoord/bijvoeglijk naamwoord]",
+  "uitleg": "In het Mandarijn wordt 不 (bù) gebruikt om een ontkenning te vormen, vergelijkbaar met 'niet' in het Nederlands. Het wordt direct voor het werkwoord of bijvoeglijk naamwoord geplaatst dat je wilt ontkennen. In tegenstelling tot het Nederlands, waar je vaak een hulpwerkwoord nodig hebt voor ontkenning, is 不 (bù) een eenvoudig en direct woord voor ontkenning. Let op dat de toon van 不 verandert naar een tweede toon (bú) wanneer het gevolgd wordt door een vierde toon, om de uitspraak te vergemakkelijken.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert of de eigenschap heeft.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "不",
+    "rol": "Het ontkenningswoord dat 'niet' betekent.",
+    "voorbeeld": "不 (bù) - niet"
+   },
+   {
+    "element": "[werkwoord/bijvoeglijk naamwoord]",
+    "rol": "Het werkwoord of bijvoeglijk naamwoord dat je wilt ontkennen.",
+    "voorbeeld": "喜欢 (xǐhuān) - leuk vinden"
+   }
+  ],
+  "tips": [
+   "Onthoud dat 不 (bù) altijd vóór het werkwoord of bijvoeglijk naamwoord komt.",
+   "Let op de toonverandering van 不 naar bú wanneer het gevolgd wordt door een vierde toon.",
+   "Gebruik 不 (bù) niet voor werkwoorden in de verleden tijd; daarvoor gebruik je 没 (méi).",
+   "In tegenstelling tot het Nederlands, heb je geen extra woorden nodig om een ontkenning te maken."
+  ],
+  "veelgemaaktefouten": [
+   "Het plaatsen van 不 (bù) na het werkwoord. Correctie: Plaats altijd 不 (bù) vóór het werkwoord.",
+   "Vergeten de toon van 不 te veranderen naar bú voor een vierde toon. Correctie: Pas de toon aan als het gevolgd wordt door een vierde toon.",
+   "Gebruik van 不 (bù) in plaats van 没 (méi) voor verleden tijd. Correctie: Gebruik 没 (méi) voor ontkenningen in de verleden tijd."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我不喜欢吃辣的。",
+    "romaji": "Wǒ bù xǐhuān chī là de.",
+    "dutch": "Ik houd niet van pittig eten."
+   },
+   {
+    "japanese": "他不高兴。",
+    "romaji": "Tā bù gāoxìng.",
+    "dutch": "Hij is niet blij."
+   },
+   {
+    "japanese": "我们不去北京。",
+    "romaji": "Wǒmen bù qù Běijīng.",
+    "dutch": "Wij gaan niet naar Beijing."
+   },
+   {
+    "japanese": "她不喝酒。",
+    "romaji": "Tā bù hē jiǔ.",
+    "dutch": "Zij drinkt geen alcohol."
+   },
+   {
+    "japanese": "你不累吗？",
+    "romaji": "Nǐ bù lèi ma?",
+    "dutch": "Ben je niet moe?"
+   },
+   {
+    "japanese": "这本书不贵。",
+    "romaji": "Zhè běn shū bù guì.",
+    "dutch": "Dit boek is niet duur."
+   }
+  ]
+ },
+ "zh-h1-mei": {
+  "naam": "Gebruik van 没(有) in het Mandarijn",
+  "tagline": "Ontdek hoe je 'niet' en 'geen' uitdrukt in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "Het woord 没(有) wordt in het Mandarijn gebruikt om aan te geven dat iets niet is gebeurd of niet bestaat. Het wordt vaak gebruikt in de verleden tijd of om de afwezigheid van iets aan te geven.",
+  "patroon": "[onderwerp] + 没(有) + [werkwoord] + [object]",
+  "uitleg": "In het Mandarijn gebruik je 没(有) om te zeggen dat iets niet is gebeurd of dat iets niet bestaat. Het is vergelijkbaar met het Nederlandse 'niet' of 'geen', maar wordt specifiek gebruikt voor acties of situaties die niet hebben plaatsgevonden of niet bestaan. Het verschil tussen 没 en 没有 is subtiel; 没 is een kortere vorm en wordt vaak informeel gebruikt, terwijl 没有 formeler is en ook kan betekenen 'niet hebben'. In tegenstelling tot het Nederlandse 'niet', dat vaak voor het werkwoord komt, volgt 没(有) direct na het onderwerp.",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "Het onderwerp van de zin, degene die de actie niet uitvoert.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "没(有)",
+    "rol": "Geeft aan dat de actie niet is uitgevoerd of dat iets niet bestaat.",
+    "voorbeeld": "没有 (méiyǒu) - niet"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "De actie die niet is uitgevoerd.",
+    "voorbeeld": "吃 (chī) - eten"
+   },
+   {
+    "element": "object",
+    "rol": "Het object van de actie die niet is uitgevoerd.",
+    "voorbeeld": "苹果 (píngguǒ) - appel"
+   }
+  ],
+  "tips": [
+   "Gebruik 没(有) in plaats van 不 als je het hebt over acties die niet zijn gebeurd.",
+   "Vergeet niet dat 没(有) vaak in de verleden tijd wordt gebruikt, terwijl 不 meer voor de tegenwoordige tijd is.",
+   "Gebruik 没 als je informeel spreekt, maar 没有 is altijd correct en iets formeler.",
+   "Let op de plaatsing: 没(有) komt direct na het onderwerp en voor het werkwoord."
+  ],
+  "veelgemaaktefouten": [
+   "Nederlandstaligen gebruiken soms 不 in plaats van 没(有) voor verleden tijd. Correctie: Gebruik 没(有) voor acties die niet zijn gebeurd.",
+   "Het vergeten van het object na het werkwoord. Correctie: Zorg ervoor dat je altijd een object hebt als de zin erom vraagt.",
+   "Verwarring tussen 没 en 没有. Correctie: Gebruik 没有 voor een volledige zin en 没 voor kortere, informele uitspraken."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我没有吃早餐。",
+    "romaji": "Wǒ méiyǒu chī zǎocān.",
+    "dutch": "Ik heb geen ontbijt gegeten."
+   },
+   {
+    "japanese": "他没去学校。",
+    "romaji": "Tā méi qù xuéxiào.",
+    "dutch": "Hij is niet naar school gegaan."
+   },
+   {
+    "japanese": "我们没有看到他。",
+    "romaji": "Wǒmen méiyǒu kàndào tā.",
+    "dutch": "We hebben hem niet gezien."
+   },
+   {
+    "japanese": "他们没买票。",
+    "romaji": "Tāmen méi mǎi piào.",
+    "dutch": "Zij hebben geen kaartjes gekocht."
+   },
+   {
+    "japanese": "你没有告诉我。",
+    "romaji": "Nǐ méiyǒu gàosù wǒ.",
+    "dutch": "Je hebt het me niet verteld."
+   },
+   {
+    "japanese": "她没来。",
+    "romaji": "Tā méi lái.",
+    "dutch": "Zij is niet gekomen."
+   }
+  ]
+ },
+ "zh-h1-ma": {
+  "naam": "Gebruik van 吗 (ma) voor ja/nee-vragen",
+  "tagline": "Leer hoe je eenvoudige ja/nee-vragen stelt in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "Het vraagpartikel 吗 (ma) wordt aan het einde van een bewerende zin toegevoegd om deze om te zetten in een ja/nee-vraag. Het verandert de intonatie van de zin niet, maar geeft aan dat er een antwoord in de vorm van 'ja' of 'nee' wordt verwacht.",
+  "patroon": "[stelling] + 吗?",
+  "uitleg": "In het Mandarijn wordt het vraagpartikel 吗 (ma) gebruikt om een bewerende zin om te zetten in een vraag die een bevestigend of ontkennend antwoord verwacht. Dit is vergelijkbaar met het gebruik van 'is het zo?' of 'nietwaar?' in het Nederlands, maar in het Mandarijn wordt het eenvoudigweg aan het einde van de zin toegevoegd zonder de structuur van de zin te veranderen. Het gebruik van 吗 (ma) is een van de meest directe manieren om een vraag te stellen en is zeer gebruikelijk in dagelijkse gesprekken. Het is belangrijk om te onthouden dat 吗 (ma) alleen wordt gebruikt voor ja/nee-vragen en niet voor open vragen die meer gedetailleerde antwoorden vereisen.",
+  "opbouw": [
+   {
+    "element": "[stelling]",
+    "rol": "De basiszin die een bewering maakt, bijvoorbeeld '你喜欢咖啡' (nǐ xǐhuān kāfēi) - 'Jij houdt van koffie'.",
+    "voorbeeld": "你是学生 (nǐ shì xuéshēng) - Jij bent een student."
+   },
+   {
+    "element": "吗",
+    "rol": "Het vraagpartikel dat aan het einde van de zin wordt toegevoegd om een ja/nee-vraag te maken.",
+    "voorbeeld": "吗 (ma)"
+   }
+  ],
+  "tips": [
+   "Gebruik 吗 (ma) alleen voor vragen waarop je een 'ja' of 'nee' verwacht.",
+   "Verander de structuur van de zin niet; voeg gewoon 吗 (ma) toe aan het einde.",
+   "Let op de toon van 吗 (ma); het is neutraal en verandert de intonatie van de zin niet.",
+   "Oefen met het omzetten van bewerende zinnen naar vragen door 吗 (ma) toe te voegen."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd: 你是学生吗? (nǐ shì xuéshēng ma?) - Correct: 你是学生吗? (nǐ shì xuéshēng ma?) - De fout is hier niet in de structuur, maar in de intonatie; zorg ervoor dat de toon neutraal blijft.",
+   "Verkeerd: 吗你是学生 (ma nǐ shì xuéshēng) - Correct: 你是学生吗? (nǐ shì xuéshēng ma?) - Plaats 吗 (ma) altijd aan het einde van de zin."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "你喜欢中国菜吗?",
+    "romaji": "nǐ xǐhuān zhōngguó cài ma?",
+    "dutch": "Hou je van Chinees eten?"
+   },
+   {
+    "japanese": "他是你的朋友吗?",
+    "romaji": "tā shì nǐ de péngyǒu ma?",
+    "dutch": "Is hij jouw vriend?"
+   },
+   {
+    "japanese": "今天是星期五吗?",
+    "romaji": "jīntiān shì xīngqīwǔ ma?",
+    "dutch": "Is het vandaag vrijdag?"
+   },
+   {
+    "japanese": "你会说英语吗?",
+    "romaji": "nǐ huì shuō yīngyǔ ma?",
+    "dutch": "Kun je Engels spreken?"
+   },
+   {
+    "japanese": "这本书是你的书吗?",
+    "romaji": "zhè běn shū shì nǐ de shū ma?",
+    "dutch": "Is dit boek jouw boek?"
+   },
+   {
+    "japanese": "你喝茶吗?",
+    "romaji": "nǐ hē chá ma?",
+    "dutch": "Drink je thee?"
+   }
+  ]
+ },
+ "zh-h1-ne": {
+  "naam": "Gebruik van 呢 (ne) in vragen",
+  "tagline": "Leer hoe je 呢 (ne) gebruikt om vragen te stellen en gesprekken voort te zetten.",
+  "niveau": "basis",
+  "kernregel": "Het partikel 呢 (ne) wordt gebruikt aan het einde van een zin om een vraag te stellen of om een vraag terug te kaatsen naar de gesprekspartner. Het wordt vaak gebruikt om te vragen 'en jij?' of 'wat denk jij?' na een eerdere vraag of opmerking.",
+  "patroon": "[onderwerp] + 呢",
+  "uitleg": "In het Mandarijn wordt 呢 (ne) vaak gebruikt om een vraag te stellen die een eerder gestelde vraag of opmerking aanvult. Het is vergelijkbaar met het Nederlandse 'en jij?' of 'en wat denk jij?'. Dit partikel maakt de conversatie vloeiender en minder formeel, en moedigt de gesprekspartner aan om zijn of haar mening of situatie te delen. Anders dan in het Nederlands, waar je vaak een volledige vraag herhaalt, gebruik je in het Mandarijn simpelweg 呢 (ne) om dezelfde vraag te impliceren. Het is belangrijk om te onthouden dat 呢 (ne) niet op zichzelf staat, maar altijd aan het einde van een zin komt.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de zin, meestal een persoon of een ding.",
+    "voorbeeld": "你 (nǐ)"
+   },
+   {
+    "element": "呢",
+    "rol": "Het vraagpartikel dat de vraag terugkaatst naar de gesprekspartner.",
+    "voorbeeld": "呢 (ne)"
+   }
+  ],
+  "tips": [
+   "Gebruik 呢 (ne) na een zin om een vraag terug te kaatsen zonder de hele vraag te herhalen.",
+   "Denk aan 呢 (ne) als een manier om de conversatie open te houden en de ander uit te nodigen om te reageren.",
+   "Gebruik het vooral in informele gesprekken; in formele situaties kan het te informeel overkomen.",
+   "Let op de toon van de zin; 呢 (ne) maakt de vraag vriendelijk en uitnodigend."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten om 呢 (ne) aan het einde van een vraag te plaatsen. Correctie: Voeg altijd 呢 (ne) toe aan het einde van de zin.",
+   "Gebruik van 呢 (ne) zonder een eerder context of vraag. Correctie: Zorg ervoor dat er een eerdere vraag of context is voordat je 呢 (ne) gebruikt.",
+   "Gebruik van 呢 (ne) in te formele situaties. Correctie: Vermijd het gebruik van 呢 (ne) in zeer formele gesprekken."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "你呢？",
+    "romaji": "Nǐ ne?",
+    "dutch": "En jij?"
+   },
+   {
+    "japanese": "他喜欢这本书，你呢？",
+    "romaji": "Tā xǐhuān zhè běn shū, nǐ ne?",
+    "dutch": "Hij vindt dit boek leuk, en jij?"
+   },
+   {
+    "japanese": "我去过北京，你呢？",
+    "romaji": "Wǒ qùguò Běijīng, nǐ ne?",
+    "dutch": "Ik ben in Beijing geweest, en jij?"
+   },
+   {
+    "japanese": "我喝茶，你呢？",
+    "romaji": "Wǒ hē chá, nǐ ne?",
+    "dutch": "Ik drink thee, en jij?"
+   },
+   {
+    "japanese": "今天很忙，你呢？",
+    "romaji": "Jīntiān hěn máng, nǐ ne?",
+    "dutch": "Vandaag is het druk, en jij?"
+   },
+   {
+    "japanese": "我喜欢猫，你呢？",
+    "romaji": "Wǒ xǐhuān māo, nǐ ne?",
+    "dutch": "Ik hou van katten, en jij?"
+   }
+  ]
+ },
+ "zh-h1-jige": {
+  "naam": "Gebruik van 几 (jǐ) en 多少 (duōshǎo) voor 'hoeveel'",
+  "tagline": "Leer hoe je vragen stelt over hoeveelheden in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "In het Mandarijn gebruik je 几 (jǐ) voor kleinere, specifieke aantallen en 多少 (duōshǎo) voor grotere, onbepaalde hoeveelheden. Beide woorden worden gebruikt om vragen te stellen over hoeveelheden, maar ze verschillen in de context waarin ze worden toegepast.",
+  "patroon": "[vraagwoord] + [zelfstandig naamwoord] + [werkwoord]?",
+  "uitleg": "In het Mandarijn gebruik je 几 (jǐ) wanneer je vraagt naar een klein, specifiek aantal dat meestal minder dan tien is. Bijvoorbeeld, als je vraagt naar het aantal appels in een mand, gebruik je 几. Aan de andere kant gebruik je 多少 (duōshǎo) voor grotere of onbepaalde hoeveelheden, zoals het aantal mensen in een stad. Dit verschil is vergelijkbaar met het Nederlandse 'hoeveel' dat zowel voor kleine als grote aantallen kan worden gebruikt, maar in het Mandarijn is er een duidelijk onderscheid. Beide vraagwoorden worden meestal gevolgd door een zelfstandig naamwoord en een werkwoord om een vraag te vormen.",
+  "opbouw": [
+   {
+    "element": "几 (jǐ)",
+    "rol": "Vraagwoord voor kleine, specifieke aantallen",
+    "voorbeeld": "你有几本书？ (Nǐ yǒu jǐ běn shū?)"
+   },
+   {
+    "element": "多少 (duōshǎo)",
+    "rol": "Vraagwoord voor grotere, onbepaalde hoeveelheden",
+    "voorbeeld": "你有多少钱？ (Nǐ yǒu duōshǎo qián?)"
+   },
+   {
+    "element": "[zelfstandig naamwoord]",
+    "rol": "Het onderwerp van de vraag",
+    "voorbeeld": "书 (shū) in 你有几本书？"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "Het werkwoord dat de actie beschrijft",
+    "voorbeeld": "有 (yǒu) in 你有几本书？"
+   }
+  ],
+  "tips": [
+   "Gebruik 几 (jǐ) voor aantallen die je kunt tellen op je vingers.",
+   "Gebruik 多少 (duōshǎo) als je niet zeker bent over de grootte van het aantal.",
+   "Onthoud dat 几 (jǐ) meestal wordt gebruikt met een maatwoord, zoals 本 (běn) voor boeken.",
+   "In gesproken taal is het gebruik van 几 (jǐ) en 多少 (duōshǎo) vaak intuïtief, maar oefening helpt bij het maken van de juiste keuze."
+  ],
+  "veelgemaaktefouten": [
+   "Gebruik van 几 (jǐ) voor grote aantallen, zoals in 你有几个人？ (Correct: 你有多少人？)",
+   "Gebruik van 多少 (duōshǎo) voor kleine, specifieke aantallen, zoals in 你有多少本书？ (Correct: 你有几本书？)"
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "你有几只猫？",
+    "romaji": "Nǐ yǒu jǐ zhī māo?",
+    "dutch": "Hoeveel katten heb je?"
+   },
+   {
+    "japanese": "这个房间有多少人？",
+    "romaji": "Zhège fángjiān yǒu duōshǎo rén?",
+    "dutch": "Hoeveel mensen zijn er in deze kamer?"
+   },
+   {
+    "japanese": "你有几辆车？",
+    "romaji": "Nǐ yǒu jǐ liàng chē?",
+    "dutch": "Hoeveel auto's heb je?"
+   },
+   {
+    "japanese": "你有多少钱？",
+    "romaji": "Nǐ yǒu duōshǎo qián?",
+    "dutch": "Hoeveel geld heb je?"
+   },
+   {
+    "japanese": "你家有几口人？",
+    "romaji": "Nǐ jiā yǒu jǐ kǒu rén?",
+    "dutch": "Hoeveel mensen zijn er in jouw gezin?"
+   },
+   {
+    "japanese": "这本书多少钱？",
+    "romaji": "Zhè běn shū duōshǎo qián?",
+    "dutch": "Hoeveel kost dit boek?"
+   }
+  ]
+ },
+ "zh-h1-zai": {
+  "naam": "Gebruik van 在 (zài) voor locaties",
+  "tagline": "Leer hoe je locaties aanduidt in het Mandarijn met 在 (zài).",
+  "niveau": "basis",
+  "kernregel": "Het woord 在 (zài) wordt gebruikt om aan te geven waar een actie plaatsvindt of waar iets zich bevindt. Het kan vertaald worden als 'in', 'op', of 'bij' in het Nederlands, afhankelijk van de context.",
+  "patroon": "[onderwerp] + 在 + [locatie] + [werkwoord] + [object]",
+  "uitleg": "In het Mandarijn gebruik je 在 (zài) om de locatie van een actie of een object aan te geven. Het is vergelijkbaar met het gebruik van voorzetsels zoals 'in', 'op', of 'bij' in het Nederlands. Het patroon begint meestal met het onderwerp, gevolgd door 在 (zài), de locatie, en dan het werkwoord en eventueel het object. In tegenstelling tot het Nederlands, waar de locatie vaak aan het einde van de zin komt, staat de locatie in het Mandarijn direct na 在 (zài). Dit patroon is essentieel voor het beschrijven van waar iets gebeurt of zich bevindt.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert of waarover de zin gaat.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "在 (zài)",
+    "rol": "Geeft aan dat de volgende woorden een locatie beschrijven.",
+    "voorbeeld": "在 (zài)"
+   },
+   {
+    "element": "[locatie]",
+    "rol": "De plaats waar de actie plaatsvindt of waar het onderwerp zich bevindt.",
+    "voorbeeld": "学校 (xuéxiào) - school"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "De actie die wordt uitgevoerd op de locatie.",
+    "voorbeeld": "学习 (xuéxí) - studeren"
+   },
+   {
+    "element": "[object]",
+    "rol": "Optioneel, het object van de actie.",
+    "voorbeeld": "中文 (Zhōngwén) - Chinees"
+   }
+  ],
+  "tips": [
+   "Denk eraan dat 在 (zài) altijd vóór de locatie komt, net zoals 'in' of 'op' in het Nederlands.",
+   "Gebruik 在 (zài) niet zonder een locatie; het moet altijd gevolgd worden door een plaats.",
+   "In tegenstelling tot het Nederlands, komt de locatie in het Mandarijn direct na 在 (zài) en vóór het werkwoord.",
+   "Oefen met het combineren van 在 (zài) met verschillende locaties om vertrouwd te raken met het patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Nederlandstaligen plaatsen vaak het werkwoord vóór 在 (zài), zoals in het Nederlands. Correct: 我在学校学习 (Wǒ zài xuéxiào xuéxí).",
+   "Het vergeten van 在 (zài) bij het noemen van een locatie. Correct: 他在家吃饭 (Tā zài jiā chīfàn).",
+   "Het gebruik van 在 (zài) zonder een specifieke locatie. Correct: 她在公园跑步 (Tā zài gōngyuán pǎobù)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他在办公室工作。",
+    "romaji": "Tā zài bàngōngshì gōngzuò.",
+    "dutch": "Hij werkt op kantoor."
+   },
+   {
+    "japanese": "我们在餐厅吃饭。",
+    "romaji": "Wǒmen zài cāntīng chīfàn.",
+    "dutch": "Wij eten in het restaurant."
+   },
+   {
+    "japanese": "小猫在桌子上睡觉。",
+    "romaji": "Xiǎo māo zài zhuōzi shàng shuìjiào.",
+    "dutch": "Het katje slaapt op de tafel."
+   },
+   {
+    "japanese": "他们在图书馆看书。",
+    "romaji": "Tāmen zài túshūguǎn kànshū.",
+    "dutch": "Zij lezen in de bibliotheek."
+   },
+   {
+    "japanese": "我在家看电视。",
+    "romaji": "Wǒ zài jiā kàn diànshì.",
+    "dutch": "Ik kijk thuis televisie."
+   },
+   {
+    "japanese": "老师在教室教课。",
+    "romaji": "Lǎoshī zài jiàoshì jiāo kè.",
+    "dutch": "De leraar geeft les in de klas."
+   }
+  ]
+ },
+ "zh-h1-le": {
+  "naam": "Gebruik van 了 (le) voor voltooid verleden tijd",
+  "tagline": "Beheers het gebruik van 了 om voltooide acties aan te geven in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "Het partikel 了 (le) wordt gebruikt om aan te geven dat een actie is voltooid of dat er een verandering heeft plaatsgevonden. Het wordt meestal geplaatst na het werkwoord of aan het einde van de zin om de voltooiing van een actie te markeren.",
+  "patroon": "[onderwerp] + [werkwoord] + 了 + [object] + [tijd/plaats]",
+  "uitleg": "In het Mandarijn wordt 了 (le) gebruikt om aan te geven dat een actie is voltooid, vergelijkbaar met de voltooide tijd in het Nederlands. Het kan zowel na het werkwoord als aan het einde van de zin worden geplaatst, afhankelijk van de context. Wanneer 了 direct na het werkwoord komt, benadrukt het de voltooiing van de actie. Als het aan het einde van de zin staat, kan het ook een verandering in situatie of toestand aangeven. Het gebruik van 了 is essentieel om tijd en aspect in het Mandarijn correct uit te drukken, omdat er geen werkwoordvervoegingen zijn zoals in het Nederlands.",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "Geeft aan wie of wat de actie uitvoert.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Beschrijft de actie die wordt uitgevoerd.",
+    "voorbeeld": "吃 (chī) - eten"
+   },
+   {
+    "element": "了",
+    "rol": "Geeft aan dat de actie is voltooid.",
+    "voorbeeld": "了 (le)"
+   },
+   {
+    "element": "object",
+    "rol": "Geeft aan wat of wie de actie ondergaat.",
+    "voorbeeld": "苹果 (píngguǒ) - appel"
+   },
+   {
+    "element": "tijd/plaats",
+    "rol": "Biedt aanvullende informatie over wanneer of waar de actie plaatsvond.",
+    "voorbeeld": "昨天 (zuótiān) - gisteren"
+   }
+  ],
+  "tips": [
+   "Gebruik 了 direct na het werkwoord om de voltooiing van de actie te benadrukken.",
+   "Als je 了 aan het einde van de zin plaatst, kan het ook een verandering in situatie aangeven.",
+   "Onthoud dat 了 niet altijd nodig is als de context al duidelijk maakt dat de actie is voltooid.",
+   "Probeer 了 niet te verwarren met andere grammaticale partikels zoals 的 (de) of 吗 (ma)."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd: 我吃苹果了昨天 (wǒ chī píngguǒ le zuótiān). Correct: 我昨天吃了苹果 (wǒ zuótiān chī le píngguǒ).",
+   "Verkeerd: 他去学校 (tā qù xuéxiào) zonder 了 als de actie al voltooid is. Correct: 他去了学校 (tā qù le xuéxiào).",
+   "Verkeerd: 了 gebruiken in een zin die al een duidelijke tijdsaanduiding heeft zonder context. Correct: Alleen gebruiken als de voltooiing benadrukt moet worden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我喝了茶。",
+    "romaji": "wǒ hē le chá.",
+    "dutch": "Ik heb thee gedronken."
+   },
+   {
+    "japanese": "他们昨天看了电影。",
+    "romaji": "tāmen zuótiān kàn le diànyǐng.",
+    "dutch": "Zij hebben gisteren een film gekeken."
+   },
+   {
+    "japanese": "她买了新衣服。",
+    "romaji": "tā mǎi le xīn yīfu.",
+    "dutch": "Zij heeft nieuwe kleren gekocht."
+   },
+   {
+    "japanese": "我们已经吃了晚饭。",
+    "romaji": "wǒmen yǐjīng chī le wǎnfàn.",
+    "dutch": "Wij hebben al avondeten gegeten."
+   },
+   {
+    "japanese": "你写了信吗？",
+    "romaji": "nǐ xiě le xìn ma?",
+    "dutch": "Heb jij de brief geschreven?"
+   },
+   {
+    "japanese": "他去了北京。",
+    "romaji": "tā qù le Běijīng.",
+    "dutch": "Hij is naar Beijing gegaan."
+   }
+  ]
+ },
+ "zh-h1-you": {
+  "naam": "Gebruik van 有 (yǒu) in het Mandarijn",
+  "tagline": "Begrijp hoe je 'hebben' en 'er is/zijn' in het Mandarijn uitdrukt",
+  "niveau": "basis",
+  "kernregel": "Het werkwoord 有 (yǒu) wordt in het Mandarijn gebruikt om bezit aan te geven of om te zeggen dat iets bestaat. Het kan worden vertaald als 'hebben' of 'er is/zijn' afhankelijk van de context.",
+  "patroon": "[onderwerp] + 有 + [object]",
+  "uitleg": "In het Mandarijn wordt 有 (yǒu) gebruikt om aan te geven dat iemand iets bezit of dat iets aanwezig is. In tegenstelling tot het Nederlands, waar we vaak 'hebben' gebruiken voor bezit en 'er is/zijn' voor bestaan, dekt 有 beide betekenissen. Bijvoorbeeld, 'Ik heb een boek' wordt '我有一本书' (wǒ yǒu yī běn shū) en 'Er is een kat in de tuin' wordt '花园里有一只猫' (huāyuán lǐ yǒu yī zhī māo). Let op dat 有 altijd direct na het onderwerp komt en gevolgd wordt door het object dat je bezit of dat bestaat.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Geeft aan wie of wat iets bezit of waar iets bestaat.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "有",
+    "rol": "Het werkwoord dat bezit of bestaan aangeeft.",
+    "voorbeeld": "有 (yǒu) - hebben/er is/zijn"
+   },
+   {
+    "element": "[object]",
+    "rol": "Het ding dat wordt bezeten of dat bestaat.",
+    "voorbeeld": "一本书 (yī běn shū) - een boek"
+   }
+  ],
+  "tips": [
+   "Gebruik 有 altijd direct na het onderwerp om bezit of bestaan aan te geven.",
+   "Vergeet niet dat 有 zowel 'hebben' als 'er is/zijn' kan betekenen, afhankelijk van de context.",
+   "In negatieve zinnen gebruik je 没有 (méi yǒu) om aan te geven dat iets niet bestaat of niet wordt bezeten.",
+   "Let op de woordvolgorde: onderwerp + 有 + object, net als in het Nederlands 'ik heb een boek'."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde plaatsing van 有: Correct is '我有一本书', niet '我一本书有'.",
+   "Verwarring tussen 有 en 是: Gebruik 有 voor bezit en bestaan, niet 是.",
+   "Vergeten van het onderwerp: Begin altijd met wie of wat iets bezit of waar iets bestaat."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他有一辆车",
+    "romaji": "tā yǒu yī liàng chē",
+    "dutch": "Hij heeft een auto."
+   },
+   {
+    "japanese": "我们有时间",
+    "romaji": "wǒmen yǒu shíjiān",
+    "dutch": "Wij hebben tijd."
+   },
+   {
+    "japanese": "房间里有一个人",
+    "romaji": "fángjiān lǐ yǒu yī gè rén",
+    "dutch": "Er is iemand in de kamer."
+   },
+   {
+    "japanese": "学校有很多学生",
+    "romaji": "xuéxiào yǒu hěn duō xuéshēng",
+    "dutch": "De school heeft veel studenten."
+   },
+   {
+    "japanese": "桌子上有一台电脑",
+    "romaji": "zhuōzi shàng yǒu yī tái diànnǎo",
+    "dutch": "Er is een computer op de tafel."
+   },
+   {
+    "japanese": "我没有兄弟姐妹",
+    "romaji": "wǒ méiyǒu xiōngdì jiěmèi",
+    "dutch": "Ik heb geen broers of zussen."
+   }
+  ]
+ },
+ "zh-h1-liangci": {
+  "naam": "Gebruik van Telwoorden (量词) in het Mandarijn",
+  "tagline": "Begrijp de rol van telwoorden in het Mandarijn om je zinnen correct te structureren.",
+  "niveau": "basis",
+  "kernregel": "Telwoorden, of 'liàngcí', worden in het Mandarijn gebruikt om een hoeveelheid aan te geven en worden altijd tussen een getal en een zelfstandig naamwoord geplaatst. Ze zijn essentieel voor het correct tellen en specificeren van objecten, mensen, dieren en meer.",
+  "patroon": "[getal] + [telwoord] + [zelfstandig naamwoord]",
+  "uitleg": "In het Mandarijn worden telwoorden gebruikt om de hoeveelheid van een zelfstandig naamwoord aan te geven. Anders dan in het Nederlands, waar je vaak direct een getal voor een zelfstandig naamwoord kunt plaatsen (bijvoorbeeld 'twee boeken'), vereist het Mandarijn een telwoord tussen het getal en het zelfstandig naamwoord (bijvoorbeeld 'liǎng běn shū' voor 'twee boeken'). Elk zelfstandig naamwoord heeft een specifiek telwoord dat ermee wordt gebruikt, afhankelijk van de vorm, functie of andere kenmerken van het object. Het meest algemene telwoord is '个' (gè), maar er zijn veel andere telwoorden die specifiek zijn voor bepaalde categorieën, zoals '本' (běn) voor boeken en '只' (zhī) voor dieren.",
+  "opbouw": [
+   {
+    "element": "[getal]",
+    "rol": "Geeft de hoeveelheid aan.",
+    "voorbeeld": "三 (sān) betekent 'drie'."
+   },
+   {
+    "element": "[telwoord]",
+    "rol": "Specificeert het type object dat wordt geteld.",
+    "voorbeeld": "个 (gè) is een algemeen telwoord."
+   },
+   {
+    "element": "[zelfstandig naamwoord]",
+    "rol": "Het object dat wordt geteld.",
+    "voorbeeld": "苹果 (píngguǒ) betekent 'appel'."
+   }
+  ],
+  "tips": [
+   "Leer de meest voorkomende telwoorden uit je hoofd, zoals 个 (gè), 本 (běn), en 只 (zhī).",
+   "Gebruik '个' (gè) als je niet zeker weet welk telwoord je moet gebruiken; het is het meest veelzijdige telwoord.",
+   "Oefen met het koppelen van telwoorden aan de juiste categorieën van zelfstandig naamwoorden.",
+   "Let op de uitspraak en toon van telwoorden in combinatie met getallen, omdat dit de betekenis kan veranderen."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van het telwoord: Correct is '两本书' (liǎng běn shū), niet '两书' (liǎng shū).",
+   "Verkeerd telwoord gebruiken: Correct is '三只猫' (sān zhī māo), niet '三个猫' (sān gè māo)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "五个苹果",
+    "romaji": "wǔ gè píngguǒ",
+    "dutch": "vijf appels"
+   },
+   {
+    "japanese": "两本书",
+    "romaji": "liǎng běn shū",
+    "dutch": "twee boeken"
+   },
+   {
+    "japanese": "四只狗",
+    "romaji": "sì zhī gǒu",
+    "dutch": "vier honden"
+   },
+   {
+    "japanese": "一辆车",
+    "romaji": "yī liàng chē",
+    "dutch": "één auto"
+   },
+   {
+    "japanese": "七张桌子",
+    "romaji": "qī zhāng zhuōzi",
+    "dutch": "zeven tafels"
+   },
+   {
+    "japanese": "九件衣服",
+    "romaji": "jiǔ jiàn yīfu",
+    "dutch": "negen kledingstukken"
+   }
+  ]
+ },
+ "zh-h1-xiang-yao": {
+  "naam": "Gebruik van 想 en 要 om 'willen' uit te drukken",
+  "tagline": "Leer het verschil tussen 想 (xiǎng) en 要 (yào) in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "In het Mandarijn gebruik je 想 (xiǎng) om een wens of intentie uit te drukken, terwijl 要 (yào) meer nadruk legt op een vastomlijnd plan of een sterkere wil. Beide woorden kunnen worden vertaald als 'willen', maar ze hebben subtiele verschillen in betekenis en gebruik.",
+  "patroon": "[onderwerp] + 想/要 + [werkwoord] + [object]",
+  "uitleg": "In het Mandarijn worden zowel 想 (xiǎng) als 要 (yào) gebruikt om het concept van 'willen' uit te drukken, maar ze hebben verschillende nuances. 想 (xiǎng) wordt vaak gebruikt om een wens of een zachte intentie aan te geven. Het impliceert dat je ergens aan denkt of overweegt om iets te doen. Aan de andere kant wordt 要 (yào) gebruikt voor sterkere intenties of plannen, en kan ook 'moeten' betekenen in bepaalde contexten. In tegenstelling tot het Nederlands, waar 'willen' vaak zonder onderscheid wordt gebruikt, maakt het Mandarijn een duidelijk verschil tussen een wens en een plan.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "De persoon die de wens of intentie heeft.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "想/要",
+    "rol": "Geeft de mate van wens of intentie aan.",
+    "voorbeeld": "想 (xiǎng) - willen (wens), 要 (yào) - willen (plan)"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "De actie die de spreker wil ondernemen.",
+    "voorbeeld": "吃 (chī) - eten"
+   },
+   {
+    "element": "[object]",
+    "rol": "Het doel van de actie.",
+    "voorbeeld": "苹果 (píngguǒ) - appel"
+   }
+  ],
+  "tips": [
+   "Gebruik 想 (xiǎng) als je iets overweegt of als je een zachte wens hebt.",
+   "Gebruik 要 (yào) als je een vastomlijnd plan hebt of als je iets zeker wilt doen.",
+   "Let op de context: 要 (yào) kan ook 'moeten' betekenen, afhankelijk van de zin.",
+   "Probeer te luisteren naar moedertaalsprekers om het subtiele verschil in gebruik te horen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 想 (xiǎng) en 要 (yào) in contexten waar een sterke wil of verplichting wordt uitgedrukt. Correctie: Gebruik 要 (yào) voor sterke wil.",
+   "Gebruik van 要 (yào) als je slechts een wens uitdrukt zonder vast plan. Correctie: Gebruik 想 (xiǎng) voor zachte wensen.",
+   "Vergeten dat 要 (yào) ook 'moeten' kan betekenen, wat kan leiden tot misverstanden. Correctie: Let op de context van de zin."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我想喝茶。",
+    "romaji": "Wǒ xiǎng hē chá.",
+    "dutch": "Ik wil thee drinken."
+   },
+   {
+    "japanese": "他要去北京。",
+    "romaji": "Tā yào qù Běijīng.",
+    "dutch": "Hij wil naar Beijing gaan."
+   },
+   {
+    "japanese": "你想吃什么？",
+    "romaji": "Nǐ xiǎng chī shénme?",
+    "dutch": "Wat wil je eten?"
+   },
+   {
+    "japanese": "我今天要工作。",
+    "romaji": "Wǒ jīntiān yào gōngzuò.",
+    "dutch": "Ik moet vandaag werken."
+   },
+   {
+    "japanese": "她想学中文。",
+    "romaji": "Tā xiǎng xué Zhōngwén.",
+    "dutch": "Zij wil Chinees leren."
+   },
+   {
+    "japanese": "我们要买房子。",
+    "romaji": "Wǒmen yào mǎi fángzi.",
+    "dutch": "Wij willen een huis kopen."
+   }
+  ]
+ },
+ "zh-h1-hui-neng": {
+  "naam": "Gebruik van 会 en 能 in het Mandarijn",
+  "tagline": "Begrijp de nuances van 'kunnen' in het Mandarijn",
+  "niveau": "basis",
+  "kernregel": "In het Mandarijn worden 会 (huì) en 能 (néng) beide gebruikt om 'kunnen' uit te drukken, maar ze hebben verschillende betekenissen. 会 wordt gebruikt om aangeleerde vaardigheden aan te duiden, terwijl 能 verwijst naar de mogelijkheid of capaciteit om iets te doen.",
+  "patroon": "[onderwerp] + 会/能 + [werkwoord]",
+  "uitleg": "In het Mandarijn gebruik je 会 (huì) wanneer je wilt aangeven dat iemand een vaardigheid heeft geleerd, zoals fietsen of een taal spreken. Het impliceert dat er een leerproces aan vooraf is gegaan. Aan de andere kant gebruik je 能 (néng) om te praten over de mogelijkheid of capaciteit om iets te doen, ongeacht of het een aangeleerde vaardigheid is. Bijvoorbeeld, als je zegt dat je vandaag niet kunt zwemmen omdat het zwembad gesloten is, gebruik je 能. In het Nederlands gebruiken we vaak 'kunnen' voor beide situaties, maar in het Mandarijn is het onderscheid belangrijk.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "De persoon of het ding dat de actie uitvoert.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "会",
+    "rol": "Geeft aan dat het onderwerp een vaardigheid heeft geleerd.",
+    "voorbeeld": "会说中文 (huì shuō zhōngwén) - kan Chinees spreken"
+   },
+   {
+    "element": "能",
+    "rol": "Geeft aan dat het onderwerp de mogelijkheid of capaciteit heeft.",
+    "voorbeeld": "能游泳 (néng yóuyǒng) - kan zwemmen"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "De actie die uitgevoerd wordt.",
+    "voorbeeld": "吃 (chī) - eten"
+   }
+  ],
+  "tips": [
+   "Gebruik 会 als je wilt benadrukken dat iemand iets heeft geleerd.",
+   "Gebruik 能 als je praat over fysieke of situationele mogelijkheden.",
+   "Denk aan 会 als 'vaardigheid' en 能 als 'mogelijkheid'.",
+   "Let op de context van de zin om te bepalen welk woord je moet gebruiken."
+  ],
+  "veelgemaaktefouten": [
+   "会 gebruiken als je over een tijdelijke mogelijkheid praat, zoals 'ik kan vandaag niet komen'. Correctie: Gebruik 能.",
+   "能 gebruiken als je een aangeleerde vaardigheid bedoelt, zoals 'ik kan piano spelen'. Correctie: Gebruik 会.",
+   "Verwarren van 会 en 能 in zinnen zonder context, wat leidt tot onduidelijkheid. Correctie: Zorg voor voldoende context in je zin."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我会开车。",
+    "romaji": "Wǒ huì kāichē.",
+    "dutch": "Ik kan autorijden."
+   },
+   {
+    "japanese": "他能来吗？",
+    "romaji": "Tā néng lái ma?",
+    "dutch": "Kan hij komen?"
+   },
+   {
+    "japanese": "她会做饭。",
+    "romaji": "Tā huì zuòfàn.",
+    "dutch": "Zij kan koken."
+   },
+   {
+    "japanese": "我今天不能去。",
+    "romaji": "Wǒ jīntiān bù néng qù.",
+    "dutch": "Ik kan vandaag niet gaan."
+   },
+   {
+    "japanese": "你会游泳吗？",
+    "romaji": "Nǐ huì yóuyǒng ma?",
+    "dutch": "Kun jij zwemmen?"
+   },
+   {
+    "japanese": "我们能在这里停车吗？",
+    "romaji": "Wǒmen néng zài zhèlǐ tíngchē ma?",
+    "dutch": "Kunnen we hier parkeren?"
+   }
+  ]
+ },
+ "zh-h1-xihuan": {
+  "naam": "Gebruik van 喜欢 (xǐhuān) in Mandarijn",
+  "tagline": "Leren uitdrukken wat je leuk vindt in het Chinees.",
+  "niveau": "basis",
+  "kernregel": "Het werkwoord 喜欢 (xǐhuān) betekent 'leuk vinden' of 'houden van' en wordt gebruikt om voorkeuren en interesses uit te drukken. Het kan zowel voor mensen als voor dingen worden gebruikt.",
+  "patroon": "[onderwerp] + 喜欢 + [object]",
+  "uitleg": "In het Mandarijn wordt 喜欢 (xǐhuān) gebruikt om aan te geven wat iemand leuk vindt of waar iemand van houdt. Dit patroon is vergelijkbaar met het Nederlandse 'houden van' of 'leuk vinden'. Het onderwerp van de zin is degene die de voorkeur heeft, en het object is datgene wat leuk gevonden wordt. Anders dan in het Nederlands, waar we vaak een voorzetsel gebruiken zoals 'van', is het in het Chinees directer en eenvoudiger. Het werkwoord 喜欢 kan zowel voor materiële zaken, zoals eten of muziek, als voor immateriële zaken, zoals activiteiten of mensen, worden gebruikt.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Degene die de voorkeur heeft of iets leuk vindt.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "喜欢",
+    "rol": "Het werkwoord dat de voorkeur of het leuk vinden uitdrukt.",
+    "voorbeeld": "喜欢 (xǐhuān) - leuk vinden"
+   },
+   {
+    "element": "[object]",
+    "rol": "Datgene wat leuk gevonden wordt.",
+    "voorbeeld": "苹果 (píngguǒ) - appel"
+   }
+  ],
+  "tips": [
+   "Gebruik altijd een onderwerp voor 喜欢 om duidelijk te maken wie iets leuk vindt.",
+   "Vergeet niet dat het object direct na 喜欢 komt, zonder voorzetsel.",
+   "Je kunt 喜欢 gebruiken voor zowel concrete als abstracte dingen, zoals eten of activiteiten.",
+   "Gebruik 喜欢 om eenvoudige voorkeuren uit te drukken; voor sterkere gevoelens gebruik je 爱 (ài)."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 喜欢 en 爱: Gebruik 喜欢 voor algemene voorkeuren en 爱 voor diepere gevoelens.",
+   "Het weglaten van het onderwerp: Vergeet niet om altijd aan te geven wie iets leuk vindt.",
+   "Gebruik van een voorzetsel zoals 'van': In het Chinees is er geen voorzetsel nodig na 喜欢."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我喜欢猫。",
+    "romaji": "Wǒ xǐhuān māo.",
+    "dutch": "Ik vind katten leuk."
+   },
+   {
+    "japanese": "她喜欢喝茶。",
+    "romaji": "Tā xǐhuān hē chá.",
+    "dutch": "Zij houdt van thee drinken."
+   },
+   {
+    "japanese": "他们喜欢看电影。",
+    "romaji": "Tāmen xǐhuān kàn diànyǐng.",
+    "dutch": "Zij vinden het leuk om films te kijken."
+   },
+   {
+    "japanese": "我们喜欢中国菜。",
+    "romaji": "Wǒmen xǐhuān Zhōngguó cài.",
+    "dutch": "Wij houden van Chinees eten."
+   },
+   {
+    "japanese": "小明喜欢打篮球。",
+    "romaji": "Xiǎomíng xǐhuān dǎ lánqiú.",
+    "dutch": "Xiaoming vindt het leuk om basketbal te spelen."
+   },
+   {
+    "japanese": "老师喜欢听音乐。",
+    "romaji": "Lǎoshī xǐhuān tīng yīnyuè.",
+    "dutch": "De leraar houdt van muziek luisteren."
+   }
+  ]
+ },
+ "zh-h1-zhe-na": {
+  "naam": "Gebruik van 这 (zhè) en 那 (nà)",
+  "tagline": "Leer hoe je 'dit' en 'dat' in het Mandarijn correct gebruikt.",
+  "niveau": "basis",
+  "kernregel": "In het Mandarijn worden 这 (zhè) en 那 (nà) gebruikt om respectievelijk 'dit' en 'dat' aan te duiden. Ze worden vaak gevolgd door een maatwoord en een zelfstandig naamwoord om een specifiek object aan te wijzen.",
+  "patroon": "[这/那] + [maatwoord] + [zelfstandig naamwoord]",
+  "uitleg": "In het Mandarijn gebruik je 这 (zhè) om iets aan te duiden dat dichtbij is, vergelijkbaar met 'dit' in het Nederlands. Daarentegen gebruik je 那 (nà) voor iets dat verder weg is, vergelijkbaar met 'dat'. Na 这 of 那 volgt meestal een maatwoord, dat afhankelijk is van het zelfstandig naamwoord dat je gebruikt. Dit is anders dan in het Nederlands, waar je direct een zelfstandig naamwoord kunt gebruiken zonder een tussenstap. Het gebruik van maatwoorden is essentieel in het Mandarijn en kan niet worden weggelaten.",
+  "opbouw": [
+   {
+    "element": "这 (zhè)",
+    "rol": "Duidt iets aan dat dichtbij is, 'dit'",
+    "voorbeeld": "这本书 (zhè běn shū) - dit boek"
+   },
+   {
+    "element": "那 (nà)",
+    "rol": "Duidt iets aan dat verder weg is, 'dat'",
+    "voorbeeld": "那个人 (nà gè rén) - die persoon"
+   },
+   {
+    "element": "maatwoord",
+    "rol": "Verbindt 这/那 met het zelfstandig naamwoord",
+    "voorbeeld": "个 (gè) voor mensen, 本 (běn) voor boeken"
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het object dat wordt aangeduid",
+    "voorbeeld": "书 (shū) - boek"
+   }
+  ],
+  "tips": [
+   "Onthoud dat 这 (zhè) en 那 (nà) altijd gevolgd moeten worden door een maatwoord in het Mandarijn.",
+   "Gebruik 这 (zhè) voor dingen die je kunt aanraken of dichtbij zijn, en 那 (nà) voor dingen die verder weg zijn.",
+   "Leer de meest voorkomende maatwoorden zoals 个 (gè), 本 (běn), en 张 (zhāng) om je zinnen correct te maken.",
+   "Let op de toon: 这 (zhè) heeft een vierde toon, en 那 (nà) heeft ook een vierde toon, wat belangrijk is voor de uitspraak."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten een maatwoord te gebruiken: Correctie: 这书 (zhè shū) -> 这本书 (zhè běn shū)",
+   "Verkeerde toon gebruiken: Correctie: zhè (tweede toon) -> zhè (vierde toon)",
+   "Verwarring tussen 这 en 那: Correctie: Gebruik 这 voor dichtbij en 那 voor verder weg."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "这杯茶",
+    "romaji": "zhè bēi chá",
+    "dutch": "dit kopje thee"
+   },
+   {
+    "japanese": "那辆车",
+    "romaji": "nà liàng chē",
+    "dutch": "die auto"
+   },
+   {
+    "japanese": "这个问题",
+    "romaji": "zhè gè wèntí",
+    "dutch": "deze vraag"
+   },
+   {
+    "japanese": "那座山",
+    "romaji": "nà zuò shān",
+    "dutch": "die berg"
+   },
+   {
+    "japanese": "这只猫",
+    "romaji": "zhè zhī māo",
+    "dutch": "deze kat"
+   },
+   {
+    "japanese": "那条河",
+    "romaji": "nà tiáo hé",
+    "dutch": "die rivier"
+   }
+  ]
+ },
+ "zh-h1-he": {
+  "naam": "Gebruik van 和 (hé) in het Mandarijn",
+  "tagline": "Leer hoe je 'en' gebruikt in het Mandarijn om items te verbinden.",
+  "niveau": "basis",
+  "kernregel": "Het woord 和 (hé) wordt gebruikt om twee of meer gelijkwaardige elementen, zoals zelfstandige naamwoorden of zinnen, met elkaar te verbinden. Het is vergelijkbaar met het Nederlandse 'en' en wordt vaak gebruikt in opsommingen.",
+  "patroon": "[element 1] + 和 + [element 2]",
+  "uitleg": "In het Mandarijn wordt 和 (hé) gebruikt om twee of meer elementen te verbinden, net zoals 'en' in het Nederlands. Het wordt voornamelijk gebruikt om zelfstandige naamwoorden te koppelen, zoals in opsommingen of lijsten. Anders dan in het Nederlands, wordt 和 (hé) niet gebruikt om werkwoorden of bijvoeglijke naamwoorden te verbinden. Het is belangrijk om te onthouden dat 和 (hé) alleen gelijkwaardige elementen verbindt en niet de functie heeft van een voegwoord in complexe zinnen. In tegenstelling tot het Nederlands, waar 'en' ook kan worden gebruikt om zinnen te verbinden, is 和 (hé) beperkt tot het verbinden van gelijkwaardige elementen.",
+  "opbouw": [
+   {
+    "element": "element 1",
+    "rol": "Het eerste element in de opsomming, meestal een zelfstandig naamwoord.",
+    "voorbeeld": "苹果 (píngguǒ) - appel"
+   },
+   {
+    "element": "和",
+    "rol": "Het verbindingswoord dat 'en' betekent.",
+    "voorbeeld": "和 (hé)"
+   },
+   {
+    "element": "element 2",
+    "rol": "Het tweede element in de opsomming, ook een zelfstandig naamwoord.",
+    "voorbeeld": "香蕉 (xiāngjiāo) - banaan"
+   }
+  ],
+  "tips": [
+   "Gebruik 和 (hé) alleen om zelfstandige naamwoorden te verbinden, niet om zinnen of werkwoorden te koppelen.",
+   "Plaats 和 (hé) tussen de elementen die je wilt verbinden, zonder extra woorden ertussen.",
+   "Let op de uitspraak: 和 (hé) klinkt als 'huh' met een stijgende toon.",
+   "Gebruik 和 (hé) niet aan het begin of einde van een opsomming; het hoort tussen de elementen."
+  ],
+  "veelgemaaktefouten": [
+   "和 (hé) gebruiken om werkwoorden te verbinden. Correctie: Gebruik 而且 (érqiě) of 并且 (bìngqiě) voor werkwoorden.",
+   "和 (hé) aan het begin van een zin gebruiken. Correctie: Begin de zin direct met het onderwerp of gebruik een ander voegwoord.",
+   "Verkeerde toon gebruiken voor 和 (hé). Correctie: Gebruik de tweede toon (stijgend) voor 和 (hé)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我和你",
+    "romaji": "wǒ hé nǐ",
+    "dutch": "ik en jij"
+   },
+   {
+    "japanese": "猫和狗",
+    "romaji": "māo hé gǒu",
+    "dutch": "kat en hond"
+   },
+   {
+    "japanese": "书和笔",
+    "romaji": "shū hé bǐ",
+    "dutch": "boek en pen"
+   },
+   {
+    "japanese": "茶和咖啡",
+    "romaji": "chá hé kāfēi",
+    "dutch": "thee en koffie"
+   },
+   {
+    "japanese": "老师和学生",
+    "romaji": "lǎoshī hé xuéshēng",
+    "dutch": "leraar en student"
+   },
+   {
+    "japanese": "桌子和椅子",
+    "romaji": "zhuōzi hé yǐzi",
+    "dutch": "tafel en stoel"
+   }
+  ]
+ },
+ "zh-h1-cixu": {
+  "naam": "Mandarijnse Woordvolgorde",
+  "tagline": "Leer de basisstructuur van zinnen in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "De standaard woordvolgorde in het Mandarijn is onderwerp-werkwoord-object (SVO), vergelijkbaar met het Nederlands. Het is belangrijk om deze volgorde te respecteren om duidelijk en correct te communiceren.",
+  "patroon": "[onderwerp] + [werkwoord] + [object]",
+  "uitleg": "In het Mandarijn is de basiswoordvolgorde onderwerp-werkwoord-object (SVO), net als in het Nederlands. Dit betekent dat het onderwerp van de zin meestal vooraan staat, gevolgd door het werkwoord en dan het object. Deze volgorde helpt om de betekenis van de zin duidelijk te maken. In tegenstelling tot sommige andere talen, zoals Duits, waar de werkwoordvolgorde kan veranderen afhankelijk van de zin, blijft de SVO-structuur in het Mandarijn meestal consistent. Er zijn echter uitzonderingen, zoals bij vragen of zinnen met tijdsaanduidingen, maar voor beginners is het belangrijk om eerst de basis SVO-structuur te beheersen.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp is degene of datgene dat de actie uitvoert.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "Het werkwoord beschrijft de actie die wordt uitgevoerd.",
+    "voorbeeld": "吃 (chī) - eten"
+   },
+   {
+    "element": "[object]",
+    "rol": "Het object is degene of datgene dat de actie ondergaat.",
+    "voorbeeld": "苹果 (píngguǒ) - appel"
+   }
+  ],
+  "tips": [
+   "Onthoud dat de basisstructuur SVO is, net als in het Nederlands.",
+   "Plaats tijdsaanduidingen aan het begin van de zin voor extra context.",
+   "Gebruik vraagwoorden zoals 吗 (ma) aan het einde van de zin om een vraag te maken zonder de SVO-volgorde te veranderen.",
+   "Let op dat bijvoeglijke naamwoorden vóór het zelfstandig naamwoord komen dat ze beschrijven."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde volgorde: '吃我苹果' in plaats van '我吃苹果'. Correctie: Begin altijd met het onderwerp.",
+   "Vergeten van het onderwerp: '吃苹果' zonder duidelijk onderwerp. Correctie: Voeg een onderwerp toe voor duidelijkheid, zoals '我吃苹果'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他喝水",
+    "romaji": "tā hē shuǐ",
+    "dutch": "Hij drinkt water."
+   },
+   {
+    "japanese": "我们学习中文",
+    "romaji": "wǒmen xuéxí zhōngwén",
+    "dutch": "Wij leren Chinees."
+   },
+   {
+    "japanese": "她看书",
+    "romaji": "tā kàn shū",
+    "dutch": "Zij leest een boek."
+   },
+   {
+    "japanese": "你喜欢猫",
+    "romaji": "nǐ xǐhuān māo",
+    "dutch": "Jij houdt van katten."
+   },
+   {
+    "japanese": "老师教我们",
+    "romaji": "lǎoshī jiāo wǒmen",
+    "dutch": "De leraar onderwijst ons."
+   },
+   {
+    "japanese": "孩子们玩游戏",
+    "romaji": "háizimen wán yóuxì",
+    "dutch": "De kinderen spelen spelletjes."
+   }
+  ]
+ },
+ "zh-h2-ba": {
+  "naam": "De 把-constructie in het Mandarijn",
+  "tagline": "Beheers de kunst van het manipuleren van objecten in zinnen",
+  "niveau": "gemiddeld",
+  "kernregel": "De 把-constructie wordt gebruikt om de focus van de zin te verleggen naar het object dat door de actie wordt beïnvloed. Het wordt vaak gebruikt wanneer de spreker wil benadrukken wat er met het object gebeurt of wat ermee gedaan wordt.",
+  "patroon": "[onderwerp] + 把 + [object] + [werkwoord] + [resultaat/aanvulling]",
+  "uitleg": "In het Mandarijn wordt de 把-constructie gebruikt om de nadruk te leggen op het object van een actie, in plaats van op de actie zelf. Dit is anders dan in het Nederlands, waar de standaard volgorde onderwerp-werkwoord-object is. In de 把-constructie komt het object direct na 把 en voor het werkwoord, gevolgd door een resultaat of aanvulling die de actie specificeert. Deze constructie is vooral nuttig wanneer het belangrijk is om te benadrukken wat er met het object gebeurt, zoals het veranderen van toestand of het bereiken van een bepaald resultaat.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "De persoon of entiteit die de actie uitvoert.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "把",
+    "rol": "Marker die aangeeft dat het volgende element het object van de actie is.",
+    "voorbeeld": "把 (bǎ)"
+   },
+   {
+    "element": "[object]",
+    "rol": "Het ding dat door de actie wordt beïnvloed.",
+    "voorbeeld": "书 (shū) - boek"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "De actie die op het object wordt uitgevoerd.",
+    "voorbeeld": "放 (fàng) - plaatsen"
+   },
+   {
+    "element": "[resultaat/aanvulling]",
+    "rol": "Geeft het resultaat of de specificatie van de actie aan.",
+    "voorbeeld": "在桌子上 (zài zhuōzi shàng) - op de tafel"
+   }
+  ],
+  "tips": [
+   "Gebruik de 把-constructie wanneer je wilt benadrukken wat er met het object gebeurt.",
+   "Zorg ervoor dat er een duidelijk resultaat of effect van de actie is; anders is de constructie niet nodig.",
+   "De 把-constructie vereist meestal dat het werkwoord een resultaat of aanvulling heeft.",
+   "Probeer eerst de zin zonder 把 te maken en voeg het toe als je meer nadruk op het object wilt leggen."
+  ],
+  "veelgemaaktefouten": [
+   "Het vergeten van een resultaat of aanvulling na het werkwoord. Correctie: Voeg een resultaat toe, zoals '放在桌子上'.",
+   "Het gebruik van 把 zonder dat er een duidelijk effect op het object is. Correctie: Gebruik de normale SVO-volgorde als er geen specifiek resultaat is.",
+   "Het plaatsen van het werkwoord voor 把. Correctie: Plaats altijd het werkwoord na het object in de 把-constructie."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我把门打开了。",
+    "romaji": "Wǒ bǎ mén dǎkāi le.",
+    "dutch": "Ik heb de deur geopend."
+   },
+   {
+    "japanese": "她把衣服洗干净了。",
+    "romaji": "Tā bǎ yīfu xǐ gānjìng le.",
+    "dutch": "Zij heeft de kleren schoon gewassen."
+   },
+   {
+    "japanese": "请把手机关掉。",
+    "romaji": "Qǐng bǎ shǒujī guān diào.",
+    "dutch": "Zet alsjeblieft de telefoon uit."
+   },
+   {
+    "japanese": "老师把作业收起来了。",
+    "romaji": "Lǎoshī bǎ zuòyè shōu qǐlái le.",
+    "dutch": "De leraar heeft het huiswerk verzameld."
+   },
+   {
+    "japanese": "我把钥匙放在包里了。",
+    "romaji": "Wǒ bǎ yàoshi fàng zài bāo lǐ le.",
+    "dutch": "Ik heb de sleutels in de tas gedaan."
+   },
+   {
+    "japanese": "他把信寄出去了。",
+    "romaji": "Tā bǎ xìn jì chūqù le.",
+    "dutch": "Hij heeft de brief verstuurd."
+   }
+  ]
+ },
+ "zh-h2-de-graad": {
+  "naam": "Gebruik van 得 (graadcomplement) in het Mandarijn",
+  "tagline": "Leer hoe je de mate van een actie of toestand kunt beschrijven met 得.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het graadcomplement met 得 wordt gebruikt om de mate, intensiteit of kwaliteit van een actie of toestand te beschrijven. Het volgt direct na het werkwoord en wordt gevolgd door een bijwoord of bijvoeglijk naamwoord dat de graad aangeeft.",
+  "patroon": "[werkwoord] + 得 + [bijwoord/bijvoeglijk naamwoord]",
+  "uitleg": "In het Mandarijn wordt 得 gebruikt om aan te geven hoe goed, snel, langzaam, of op welke andere manier een actie wordt uitgevoerd. Dit is vergelijkbaar met het gebruik van bijwoorden in het Nederlands, zoals 'goed' in 'hij zingt goed'. Het werkwoord wordt gevolgd door 得, waarna een bijwoord of bijvoeglijk naamwoord volgt dat de graad van de actie beschrijft. Dit patroon is essentieel voor het uitdrukken van nuances in acties en toestanden, en het helpt om preciezer te zijn in je beschrijvingen.",
+  "opbouw": [
+   {
+    "element": "werkwoord",
+    "rol": "Geeft de actie aan die wordt beoordeeld.",
+    "voorbeeld": "跑 (pǎo) - rennen"
+   },
+   {
+    "element": "得",
+    "rol": "Markeringswoord dat de graad van de actie introduceert.",
+    "voorbeeld": "得 (de)"
+   },
+   {
+    "element": "bijwoord/bijvoeglijk naamwoord",
+    "rol": "Beschrijft hoe de actie wordt uitgevoerd.",
+    "voorbeeld": "快 (kuài) - snel"
+   }
+  ],
+  "tips": [
+   "Onthoud dat 得 altijd direct na het werkwoord komt.",
+   "Gebruik 得 om de kwaliteit of intensiteit van een actie te beschrijven, vergelijkbaar met bijwoorden in het Nederlands.",
+   "Let op de toon van 得; het is neutraal en verandert niet, in tegenstelling tot andere karakters met dezelfde uitspraak.",
+   "Oefen met verschillende bijwoorden en bijvoeglijke naamwoorden om variatie in je zinnen te brengen."
+  ],
+  "veelgemaaktefouten": [
+   "Het vergeten van 得 na het werkwoord, bijvoorbeeld '他跑快' in plaats van '他跑得快'.",
+   "Het plaatsen van 得 voor het werkwoord in plaats van erna, bijvoorbeeld '得跑快' in plaats van '跑得快'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他唱得很好。",
+    "romaji": "Tā chàng de hěn hǎo.",
+    "dutch": "Hij zingt heel goed."
+   },
+   {
+    "japanese": "她写得很快。",
+    "romaji": "Tā xiě de hěn kuài.",
+    "dutch": "Zij schrijft heel snel."
+   },
+   {
+    "japanese": "我们跑得很慢。",
+    "romaji": "Wǒmen pǎo de hěn màn.",
+    "dutch": "Wij rennen heel langzaam."
+   },
+   {
+    "japanese": "你说得很清楚。",
+    "romaji": "Nǐ shuō de hěn qīngchu.",
+    "dutch": "Jij spreekt heel duidelijk."
+   },
+   {
+    "japanese": "他笑得很开心。",
+    "romaji": "Tā xiào de hěn kāixīn.",
+    "dutch": "Hij lacht heel blij."
+   },
+   {
+    "japanese": "孩子们玩得很高兴。",
+    "romaji": "Háizimen wán de hěn gāoxìng.",
+    "dutch": "De kinderen spelen heel gelukkig."
+   }
+  ]
+ },
+ "zh-h2-guo": {
+  "naam": "Gebruik van 过 om ervaring uit te drukken",
+  "tagline": "Leer hoe je ervaringen in het verleden in het Mandarijn kunt uitdrukken met 过.",
+  "niveau": "basis",
+  "kernregel": "Het grammaticale partikel 过 wordt gebruikt na een werkwoord om aan te geven dat iemand een bepaalde ervaring heeft gehad. Het benadrukt dat de actie in het verleden is voltooid en dat de spreker deze ervaring heeft opgedaan.",
+  "patroon": "[onderwerp] + [werkwoord] + 过 + [object]",
+  "uitleg": "In het Mandarijn wordt 过 gebruikt om aan te geven dat iemand een bepaalde ervaring heeft gehad. Het wordt direct na het werkwoord geplaatst. Dit patroon is vergelijkbaar met het gebruik van 'hebben' in het Nederlands om ervaringen uit te drukken, zoals in 'Ik heb dat gedaan'. Het verschil is dat 过 specifiek aangeeft dat de ervaring in het verleden is opgedaan en dat het resultaat of de herinnering daarvan nog steeds relevant is. Het gebruik van 过 impliceert niet noodzakelijkerwijs dat de actie nog steeds gaande is, maar eerder dat de spreker die ervaring heeft gehad.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "De persoon die de ervaring heeft gehad.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "De actie die de ervaring beschrijft.",
+    "voorbeeld": "去 (qù) - gaan"
+   },
+   {
+    "element": "过",
+    "rol": "Partikel dat de ervaring in het verleden aangeeft.",
+    "voorbeeld": "过 (guò)"
+   },
+   {
+    "element": "[object]",
+    "rol": "Het doel of de locatie van de ervaring.",
+    "voorbeeld": "中国 (Zhōngguó) - China"
+   }
+  ],
+  "tips": [
+   "Gebruik 过 alleen als je wilt benadrukken dat je de ervaring hebt gehad, niet als de actie nog steeds gaande is.",
+   "Vergeet niet dat 过 direct na het werkwoord komt.",
+   "Als je negatieve ervaringen wilt uitdrukken, gebruik dan 没 (méi) voor het werkwoord en laat 过 weg.",
+   "Let op de toon van 过 (guò) - het is een neutrale toon, wat betekent dat het de toon van het vorige woord niet verandert."
+  ],
+  "veelgemaaktefouten": [
+   "Het plaatsen van 过 voor het werkwoord in plaats van erna. Correctie: Plaats 过 altijd direct na het werkwoord.",
+   "Het gebruik van 过 in een zin waar de actie nog steeds gaande is. Correctie: Gebruik 过 alleen voor afgesloten ervaringen.",
+   "Vergeten om het object te specificeren, waardoor de zin onvolledig wordt. Correctie: Voeg altijd een object toe als dat nodig is voor context."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我吃过北京烤鸭。",
+    "romaji": "Wǒ chī guò Běijīng kǎoyā.",
+    "dutch": "Ik heb Peking eend gegeten."
+   },
+   {
+    "japanese": "他去过法国。",
+    "romaji": "Tā qù guò Fǎguó.",
+    "dutch": "Hij is naar Frankrijk geweest."
+   },
+   {
+    "japanese": "你看过这部电影吗？",
+    "romaji": "Nǐ kàn guò zhè bù diànyǐng ma?",
+    "dutch": "Heb jij deze film gezien?"
+   },
+   {
+    "japanese": "我们见过面。",
+    "romaji": "Wǒmen jiàn guò miàn.",
+    "dutch": "Wij hebben elkaar ontmoet."
+   },
+   {
+    "japanese": "他们没去过长城。",
+    "romaji": "Tāmen méi qù guò Chángchéng.",
+    "dutch": "Zij zijn nog nooit naar de Grote Muur geweest."
+   },
+   {
+    "japanese": "我喝过中国茶。",
+    "romaji": "Wǒ hē guò Zhōngguó chá.",
+    "dutch": "Ik heb Chinese thee gedronken."
+   }
+  ]
+ },
+ "zh-h2-zhe": {
+  "naam": "Gebruik van 正在 en 着 in het Mandarijn",
+  "tagline": "Leer hoe je acties in uitvoering beschrijft in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "正在 en 着 worden gebruikt om aan te geven dat een actie momenteel plaatsvindt. 正在 benadrukt de voortgang van een actie, terwijl 着 vaak wordt gebruikt om een voortdurende staat of actie aan te geven.",
+  "patroon": "[onderwerp] + 正在 + [werkwoord] + [object] / [onderwerp] + [werkwoord] + 着 + [object]",
+  "uitleg": "In het Mandarijn gebruik je 正在 om te benadrukken dat een actie op dit moment aan de gang is, vergelijkbaar met het Nederlandse 'bezig zijn met'. 着 wordt gebruikt om een voortdurende actie of toestand aan te geven, vergelijkbaar met het Nederlandse 'aan het'. 正在 wordt vaak voor het werkwoord geplaatst, terwijl 着 direct na het werkwoord komt. Beide patronen geven aan dat iets nu gebeurt, maar 着 kan ook een voortdurende toestand beschrijven, zoals een deur die open staat. Het gebruik van deze patronen helpt om de tijdsduur en voortgang van een actie te benadrukken, wat belangrijk is in dagelijkse gesprekken.",
+  "opbouw": [
+   {
+    "element": "正在",
+    "rol": "Geeft aan dat een actie momenteel plaatsvindt",
+    "voorbeeld": "他正在吃饭 (Tā zhèngzài chīfàn) - Hij is aan het eten."
+   },
+   {
+    "element": "着",
+    "rol": "Geeft een voortdurende actie of toestand aan",
+    "voorbeeld": "他穿着衣服 (Tā chuānzhe yīfu) - Hij draagt kleding."
+   },
+   {
+    "element": "[onderwerp]",
+    "rol": "De persoon of het ding dat de actie uitvoert",
+    "voorbeeld": "我 (Wǒ) - Ik"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "De actie die wordt uitgevoerd",
+    "voorbeeld": "看 (kàn) - kijken"
+   },
+   {
+    "element": "[object]",
+    "rol": "Het doel of ontvanger van de actie",
+    "voorbeeld": "书 (shū) - boek"
+   }
+  ],
+  "tips": [
+   "Gebruik 正在 om te benadrukken dat iets precies op dit moment gebeurt.",
+   "Gebruik 着 om een actie of toestand aan te geven die voortduurt.",
+   "Onthoud dat 着 direct na het werkwoord komt, terwijl 正在 voor het werkwoord staat.",
+   "In veel gevallen kun je 正在 weglaten als de context al duidelijk maakt dat iets nu gebeurt."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 正在 en 着: Gebruik 正在 voor nadruk op de voortgang, 着 voor voortdurende toestand.",
+   "Verkeerde plaatsing van 着: Het moet direct na het werkwoord komen.",
+   "Het vergeten van het onderwerp: Zorg ervoor dat je altijd een onderwerp hebt in je zin."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他正在看电视",
+    "romaji": "Tā zhèngzài kàn diànshì",
+    "dutch": "Hij is tv aan het kijken."
+   },
+   {
+    "japanese": "他们正在学习中文",
+    "romaji": "Tāmen zhèngzài xuéxí Zhōngwén",
+    "dutch": "Zij zijn Chinees aan het leren."
+   },
+   {
+    "japanese": "她穿着一件红色的裙子",
+    "romaji": "Tā chuānzhe yī jiàn hóngsè de qúnzi",
+    "dutch": "Zij draagt een rode jurk."
+   },
+   {
+    "japanese": "门开着",
+    "romaji": "Mén kāizhe",
+    "dutch": "De deur staat open."
+   },
+   {
+    "japanese": "我正在写信",
+    "romaji": "Wǒ zhèngzài xiě xìn",
+    "dutch": "Ik ben een brief aan het schrijven."
+   },
+   {
+    "japanese": "猫在桌子上睡着",
+    "romaji": "Māo zài zhuōzi shàng shuìzhe",
+    "dutch": "De kat ligt op de tafel te slapen."
+   }
+  ]
+ },
+ "zh-h2-bi": {
+  "naam": "Vergelijkingen maken met 比",
+  "tagline": "Leer hoe je dingen met elkaar vergelijkt in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "Het patroon met 比 wordt gebruikt om vergelijkingen te maken tussen twee zaken, waarbij je aangeeft dat het ene meer of minder is dan het andere. Het is een veelvoorkomende structuur in het Mandarijn om verschillen in eigenschappen, hoeveelheden of kwaliteiten aan te geven.",
+  "patroon": "[onderwerp] + 比 + [vergelijkingsobject] + [bijvoeglijk naamwoord]",
+  "uitleg": "In het Mandarijn gebruik je 比 om te zeggen dat iets meer of minder is dan iets anders. Het onderwerp van de vergelijking komt eerst, gevolgd door 比, dan het object waarmee je vergelijkt, en ten slotte het bijvoeglijk naamwoord dat de eigenschap beschrijft. Dit patroon is vergelijkbaar met het Nederlandse 'meer ... dan ...', maar de volgorde van de woorden is anders. In tegenstelling tot het Nederlands, waar we vaak het bijvoeglijk naamwoord vooraan plaatsen, komt het in het Mandarijn aan het einde van de zin. Dit patroon is essentieel voor het uitdrukken van verschillen in grootte, snelheid, leeftijd, enzovoort.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de vergelijking, degene die de eigenschap bezit.",
+    "voorbeeld": "他 (tā) - hij"
+   },
+   {
+    "element": "比",
+    "rol": "Het woord dat de vergelijking introduceert.",
+    "voorbeeld": "比 (bǐ)"
+   },
+   {
+    "element": "[vergelijkingsobject]",
+    "rol": "Het object waarmee het onderwerp wordt vergeleken.",
+    "voorbeeld": "她 (tā) - zij"
+   },
+   {
+    "element": "[bijvoeglijk naamwoord]",
+    "rol": "Het woord dat de eigenschap beschrijft waarin het onderwerp verschilt van het object.",
+    "voorbeeld": "高 (gāo) - lang"
+   }
+  ],
+  "tips": [
+   "Onthoud dat het bijvoeglijk naamwoord aan het einde van de zin komt, anders dan in het Nederlands.",
+   "Gebruik 比 altijd direct na het onderwerp om de vergelijking te starten.",
+   "Het bijvoeglijk naamwoord wordt niet voorafgegaan door 'meer' of 'minder' zoals in het Nederlands.",
+   "Let op de context; 比 kan ook gebruikt worden in andere structuren, maar hier focussen we op vergelijkingen."
+  ],
+  "veelgemaaktefouten": [
+   "Het bijvoeglijk naamwoord voor 比 plaatsen. Correctie: Plaats het bijvoeglijk naamwoord na het vergelijkingsobject.",
+   "Vergeten 比 te gebruiken. Correctie: Voeg altijd 比 toe na het onderwerp als je een vergelijking maakt.",
+   "Het gebruik van 'meer' of 'minder' voor het bijvoeglijk naamwoord. Correctie: Laat deze woorden weg, 比 impliceert al de vergelijking."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "这个苹果比那个苹果大。",
+    "romaji": "Zhège píngguǒ bǐ nàge píngguǒ dà.",
+    "dutch": "Deze appel is groter dan die appel."
+   },
+   {
+    "japanese": "今天比昨天冷。",
+    "romaji": "Jīntiān bǐ zuótiān lěng.",
+    "dutch": "Vandaag is het kouder dan gisteren."
+   },
+   {
+    "japanese": "我比你高。",
+    "romaji": "Wǒ bǐ nǐ gāo.",
+    "dutch": "Ik ben langer dan jij."
+   },
+   {
+    "japanese": "这本书比那本书有趣。",
+    "romaji": "Zhè běn shū bǐ nà běn shū yǒuqù.",
+    "dutch": "Dit boek is interessanter dan dat boek."
+   },
+   {
+    "japanese": "他比我忙。",
+    "romaji": "Tā bǐ wǒ máng.",
+    "dutch": "Hij is drukker dan ik."
+   },
+   {
+    "japanese": "上海比北京大。",
+    "romaji": "Shànghǎi bǐ Běijīng dà.",
+    "dutch": "Shanghai is groter dan Beijing."
+   }
+  ]
+ },
+ "zh-h2-yinwei": {
+  "naam": "Gebruik van '因为...所以' in het Mandarijn",
+  "tagline": "Leer hoe je oorzaak en gevolg uitdrukt met '因为...所以'.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '因为...所以' wordt gebruikt om een oorzaak-gevolg relatie aan te geven, vergelijkbaar met 'omdat' in het Nederlands. '因为' introduceert de reden of oorzaak, terwijl '所以' het gevolg of resultaat aangeeft.",
+  "patroon": "因为 + [oorzaak] + 所以 + [gevolg]",
+  "uitleg": "In het Mandarijn gebruik je '因为...所以' om een reden en het bijbehorende gevolg in één zin te verbinden. Dit patroon is vergelijkbaar met het Nederlandse 'omdat', maar in het Mandarijn worden oorzaak en gevolg vaak expliciet met beide woorden aangegeven. '因为' betekent 'omdat' en introduceert de reden, terwijl '所以' betekent 'dus' en het gevolg introduceert. Hoewel het gebruik van beide woorden in één zin niet altijd strikt noodzakelijk is, helpt het om de zin duidelijk en gestructureerd te maken. In tegenstelling tot het Nederlands, waar 'omdat' vaak voldoende is, benadrukt het gebruik van '所以' in het Mandarijn de logische verbinding tussen de twee delen van de zin.",
+  "opbouw": [
+   {
+    "element": "因为",
+    "rol": "Introduceert de oorzaak of reden",
+    "voorbeeld": "因为天气不好 (yīnwèi tiānqì bù hǎo) - Omdat het weer slecht is"
+   },
+   {
+    "element": "[oorzaak]",
+    "rol": "De reden of oorzaak van de situatie",
+    "voorbeeld": "天气不好 (tiānqì bù hǎo) - Het weer is slecht"
+   },
+   {
+    "element": "所以",
+    "rol": "Introduceert het gevolg of resultaat",
+    "voorbeeld": "所以我们待在家里 (suǒyǐ wǒmen dāi zài jiālǐ) - Dus we blijven thuis"
+   },
+   {
+    "element": "[gevolg]",
+    "rol": "Het resultaat of gevolg van de oorzaak",
+    "voorbeeld": "我们待在家里 (wǒmen dāi zài jiālǐ) - We blijven thuis"
+   }
+  ],
+  "tips": [
+   "Gebruik '因为' en '所以' samen om de zin duidelijker te maken, vooral in geschreven tekst.",
+   "In gesproken taal kun je soms '所以' weglaten als het gevolg al duidelijk is.",
+   "Let op de volgorde: eerst de oorzaak met '因为', dan het gevolg met '所以'.",
+   "Probeer de zinnen kort en bondig te houden voor duidelijkheid."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde volgorde: '所以' voor '因为'. Correctie: Begin altijd met '因为'.",
+   "Het weglaten van '所以' in formele teksten, wat de zin minder duidelijk maakt. Correctie: Gebruik beide woorden voor duidelijkheid.",
+   "Het gebruik van '因为' zonder een duidelijke oorzaak. Correctie: Zorg ervoor dat de oorzaak duidelijk wordt vermeld na '因为'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "因为我生病了，所以我没去上班。",
+    "romaji": "Yīnwèi wǒ shēngbìng le, suǒyǐ wǒ méi qù shàngbān.",
+    "dutch": "Omdat ik ziek was, ging ik niet naar mijn werk."
+   },
+   {
+    "japanese": "因为他很忙，所以他没时间见你。",
+    "romaji": "Yīnwèi tā hěn máng, suǒyǐ tā méi shíjiān jiàn nǐ.",
+    "dutch": "Omdat hij het druk heeft, heeft hij geen tijd om je te zien."
+   },
+   {
+    "japanese": "因为下雨了，所以我们取消了野餐。",
+    "romaji": "Yīnwèi xiàyǔ le, suǒyǐ wǒmen qǔxiāo le yěcān.",
+    "dutch": "Omdat het regende, hebben we de picknick geannuleerd."
+   },
+   {
+    "japanese": "因为她努力学习，所以她通过了考试。",
+    "romaji": "Yīnwèi tā nǔlì xuéxí, suǒyǐ tā tōngguò le kǎoshì.",
+    "dutch": "Omdat ze hard studeerde, slaagde ze voor het examen."
+   },
+   {
+    "japanese": "因为交通堵塞，所以我迟到了。",
+    "romaji": "Yīnwèi jiāotōng dǔsè, suǒyǐ wǒ chídào le.",
+    "dutch": "Omdat er verkeersopstopping was, was ik te laat."
+   },
+   {
+    "japanese": "因为他不喜欢海鲜，所以他没吃。",
+    "romaji": "Yīnwèi tā bù xǐhuān hǎixiān, suǒyǐ tā méi chī.",
+    "dutch": "Omdat hij niet van zeevruchten houdt, at hij het niet."
+   }
+  ]
+ },
+ "zh-h2-suiran": {
+  "naam": "Gebruik van '虽然…但是' in het Mandarijn",
+  "tagline": "Tegenstellingen uitdrukken met 'hoewel' in het Mandarijn",
+  "niveau": "basis",
+  "kernregel": "Het patroon '虽然…但是' wordt gebruikt om twee zinnen te verbinden die een tegenstelling uitdrukken. '虽然' betekent 'hoewel' en introduceert een concessie, terwijl '但是' 'maar' betekent en de hoofdgedachte of conclusie van de zin aangeeft.",
+  "patroon": "虽然 + [clausule 1] + 但是 + [clausule 2]",
+  "uitleg": "In het Mandarijn gebruik je '虽然…但是' om een tegenstelling tussen twee ideeën uit te drukken, vergelijkbaar met 'hoewel...maar' in het Nederlands. '虽然' wordt gebruikt om een concessie of een situatie te introduceren die niet de verwachte uitkomst heeft. '但是' introduceert de hoofdgedachte of conclusie die volgt op de concessie. Dit patroon helpt om complexe zinnen te maken en nuances in gesprekken uit te drukken. In tegenstelling tot het Nederlands, waar 'hoewel' en 'maar' niet altijd samen worden gebruikt, zijn '虽然' en '但是' in het Mandarijn vaak een paar.",
+  "opbouw": [
+   {
+    "element": "虽然",
+    "rol": "Introduceert de concessie of het onverwachte deel van de zin.",
+    "voorbeeld": "虽然天气不好 (suīrán tiānqì bù hǎo) - Hoewel het weer slecht is"
+   },
+   {
+    "element": "[clausule 1]",
+    "rol": "De situatie of concessie die wordt geïntroduceerd.",
+    "voorbeeld": "天气不好 (tiānqì bù hǎo) - Het weer is slecht"
+   },
+   {
+    "element": "但是",
+    "rol": "Introduceert de hoofdgedachte of conclusie die volgt op de concessie.",
+    "voorbeeld": "但是我们还是去 (dànshì wǒmen háishì qù) - Maar we gaan toch"
+   },
+   {
+    "element": "[clausule 2]",
+    "rol": "De conclusie of hoofdgedachte van de zin.",
+    "voorbeeld": "我们还是去 (wǒmen háishì qù) - We gaan toch"
+   }
+  ],
+  "tips": [
+   "Gebruik zowel '虽然' als '但是' in één zin om de tegenstelling duidelijk te maken.",
+   "Plaats '虽然' aan het begin van de zin om de concessie te introduceren.",
+   "Vergeet niet dat '但是' de hoofdgedachte of conclusie van de zin introduceert.",
+   "In informele gesprekken kan '但是' soms worden vervangen door '可是' (kěshì) of '不过' (búguò)."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten '但是' te gebruiken na '虽然', waardoor de zin onvolledig klinkt. Correctie: Voeg '但是' toe om de zin af te maken.",
+   "Gebruik van '虽然' zonder een duidelijke tegenstelling in de tweede clausule. Correctie: Zorg ervoor dat de tweede clausule een duidelijke tegenstelling of conclusie bevat.",
+   "Verwarring tussen '虽然' en '因为' (yīnwèi). Correctie: Onthoud dat '虽然' 'hoewel' betekent en '因为' 'omdat'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "虽然他很累，但是他继续工作。",
+    "romaji": "suīrán tā hěn lèi, dànshì tā jìxù gōngzuò.",
+    "dutch": "Hoewel hij erg moe is, blijft hij werken."
+   },
+   {
+    "japanese": "虽然我不喜欢吃辣，但是我试了一点。",
+    "romaji": "suīrán wǒ bù xǐhuān chī là, dànshì wǒ shìle yīdiǎn.",
+    "dutch": "Hoewel ik niet van pittig eten houd, heb ik een beetje geprobeerd."
+   },
+   {
+    "japanese": "虽然这本书很长，但是很有趣。",
+    "romaji": "suīrán zhè běn shū hěn cháng, dànshì hěn yǒuqù.",
+    "dutch": "Hoewel dit boek erg lang is, is het heel interessant."
+   },
+   {
+    "japanese": "虽然下雨了，但是我们还是去爬山。",
+    "romaji": "suīrán xià yǔ le, dànshì wǒmen háishì qù páshān.",
+    "dutch": "Hoewel het regent, gaan we toch bergbeklimmen."
+   },
+   {
+    "japanese": "虽然他不富有，但是他很快乐。",
+    "romaji": "suīrán tā bù fùyǒu, dànshì tā hěn kuàilè.",
+    "dutch": "Hoewel hij niet rijk is, is hij heel gelukkig."
+   },
+   {
+    "japanese": "虽然我没去过中国，但是我想去。",
+    "romaji": "suīrán wǒ méi qùguò zhōngguó, dànshì wǒ xiǎng qù.",
+    "dutch": "Hoewel ik nog nooit in China ben geweest, wil ik er graag naartoe."
+   }
+  ]
+ },
+ "zh-h2-yaole": {
+  "naam": "Gebruik van het patroon '要…了' in het Mandarijn",
+  "tagline": "Leer hoe je 'bijna' of 'op het punt staan om' uitdrukt in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '要…了' wordt gebruikt om aan te geven dat een actie of gebeurtenis op het punt staat te gebeuren. Dit patroon benadrukt de nabijheid van de gebeurtenis in de tijd en kan worden vergeleken met het Nederlandse 'bijna' of 'op het punt staan om'.",
+  "patroon": "[onderwerp] + 要 + [werkwoord/actie] + 了",
+  "uitleg": "In het Mandarijn gebruik je '要…了' om aan te geven dat iets op het punt staat te gebeuren. Het is een manier om de nabijheid van een toekomstige gebeurtenis te benadrukken, vergelijkbaar met 'bijna' in het Nederlands. Dit patroon wordt vaak gebruikt in informele gesprekken om een gevoel van urgentie of verwachting uit te drukken. Het kan zowel voor positieve als negatieve gebeurtenissen worden gebruikt. In tegenstelling tot het Nederlands, waar 'bijna' soms ook een gevoel van onzekerheid kan bevatten, is '要…了' vrij definitief in zijn aanduiding dat iets snel zal gebeuren.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert of ondergaat.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "要 (yào)",
+    "rol": "Geeft aan dat iets op het punt staat te gebeuren, vergelijkbaar met 'bijna'.",
+    "voorbeeld": "要 (yào)"
+   },
+   {
+    "element": "[werkwoord/actie]",
+    "rol": "De actie die op het punt staat te gebeuren.",
+    "voorbeeld": "下雨 (xià yǔ) - regenen"
+   },
+   {
+    "element": "了 (le)",
+    "rol": "Een partikel dat de voltooiing of verandering van een situatie aangeeft.",
+    "voorbeeld": "了 (le)"
+   }
+  ],
+  "tips": [
+   "Gebruik '要…了' om een gevoel van urgentie of verwachting uit te drukken.",
+   "Plaats het werkwoord of de actie tussen '要' en '了' om de zin correct te structureren.",
+   "Dit patroon kan zowel in positieve als negatieve contexten worden gebruikt.",
+   "Vergeet niet dat '了' aan het einde van de zin komt om de verandering of nabijheid aan te geven."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van '了' aan het einde van de zin: Correctie: Vergeet niet '了' toe te voegen om de verandering aan te geven.",
+   "Verwarring met '快要' (kuài yào): Correctie: '快要' betekent 'snel' of 'binnenkort', terwijl '要…了' specifieker is voor 'bijna'.",
+   "Gebruik van '要' zonder '了': Correctie: Voeg '了' toe om de betekenis van 'bijna' te voltooien."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我快要迟到了。",
+    "romaji": "Wǒ kuài yào chídào le.",
+    "dutch": "Ik ben bijna te laat."
+   },
+   {
+    "japanese": "电影要开始了。",
+    "romaji": "Diànyǐng yào kāishǐ le.",
+    "dutch": "De film gaat bijna beginnen."
+   },
+   {
+    "japanese": "他要来了。",
+    "romaji": "Tā yào lái le.",
+    "dutch": "Hij komt bijna."
+   },
+   {
+    "japanese": "我们要到家了。",
+    "romaji": "Wǒmen yào dào jiā le.",
+    "dutch": "We zijn bijna thuis."
+   },
+   {
+    "japanese": "雨要下了。",
+    "romaji": "Yǔ yào xià le.",
+    "dutch": "Het gaat bijna regenen."
+   },
+   {
+    "japanese": "飞机要起飞了。",
+    "romaji": "Fēijī yào qǐfēi le.",
+    "dutch": "Het vliegtuig staat op het punt te vertrekken."
+   }
+  ]
+ },
+ "zh-h2-yibian": {
+  "naam": "Het gebruik van 一边…一边 (yībiān…yībiān) om gelijktijdige acties uit te drukken",
+  "tagline": "Leer hoe je meerdere acties die tegelijkertijd plaatsvinden in het Mandarijn kunt beschrijven.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 一边…一边 (yībiān…yībiān) wordt gebruikt om aan te geven dat twee acties gelijktijdig plaatsvinden. Dit is vergelijkbaar met het Nederlandse 'terwijl' of 'tegelijkertijd'.",
+  "patroon": "一边 + [actie 1] + 一边 + [actie 2]",
+  "uitleg": "In het Mandarijn gebruik je 一边…一边 (yībiān…yībiān) om twee acties die gelijktijdig plaatsvinden te beschrijven. Dit patroon is handig wanneer je wilt aangeven dat iemand bijvoorbeeld aan het zingen is terwijl hij of zij aan het koken is. In het Nederlands gebruiken we vaak 'terwijl' om dit soort zinnen te maken, maar in het Mandarijn gebruik je dus dit specifieke patroon. Het eerste 一边 introduceert de eerste actie, en de tweede 一边 introduceert de tweede actie. Beide acties zijn gelijkwaardig en vinden op hetzelfde moment plaats.",
+  "opbouw": [
+   {
+    "element": "一边",
+    "rol": "Introduceert de eerste actie die plaatsvindt.",
+    "voorbeeld": "一边唱歌 (yībiān chànggē) - terwijl (iemand) zingt"
+   },
+   {
+    "element": "[actie 1]",
+    "rol": "De eerste actie die plaatsvindt.",
+    "voorbeeld": "唱歌 (chànggē) - zingen"
+   },
+   {
+    "element": "一边",
+    "rol": "Introduceert de tweede actie die plaatsvindt.",
+    "voorbeeld": "一边做饭 (yībiān zuòfàn) - terwijl (iemand) kookt"
+   },
+   {
+    "element": "[actie 2]",
+    "rol": "De tweede actie die plaatsvindt.",
+    "voorbeeld": "做饭 (zuòfàn) - koken"
+   }
+  ],
+  "tips": [
+   "Gebruik 一边…一边 om te benadrukken dat beide acties even belangrijk zijn en tegelijkertijd gebeuren.",
+   "Zorg ervoor dat beide werkwoorden in dezelfde tijd staan om verwarring te voorkomen.",
+   "Dit patroon kan ook gebruikt worden voor meer dan twee acties, maar houd het simpel voor duidelijkheid.",
+   "Let op de toon van 一边 (yībiān), het is belangrijk voor de juiste uitspraak en betekenis."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van de tijd: '一边唱歌一边做饭了' (yībiān chànggē yībiān zuòfàn le) is incorrect. Correct zou zijn zonder 了, omdat 了 een voltooid aspect aangeeft.",
+   "Verwarring met volgorde: '做饭一边唱歌' (zuòfàn yībiān chànggē) is incorrect. Correct is '一边做饭一边唱歌' (yībiān zuòfàn yībiān chànggē)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他一边看书一边听音乐。",
+    "romaji": "Tā yībiān kànshū yībiān tīng yīnyuè.",
+    "dutch": "Hij leest een boek terwijl hij naar muziek luistert."
+   },
+   {
+    "japanese": "我喜欢一边喝咖啡一边工作。",
+    "romaji": "Wǒ xǐhuān yībiān hē kāfēi yībiān gōngzuò.",
+    "dutch": "Ik hou ervan om koffie te drinken terwijl ik werk."
+   },
+   {
+    "japanese": "他们一边聊天一边走路。",
+    "romaji": "Tāmen yībiān liáotiān yībiān zǒulù.",
+    "dutch": "Zij kletsen terwijl ze lopen."
+   },
+   {
+    "japanese": "她一边吃饭一边看电视。",
+    "romaji": "Tā yībiān chīfàn yībiān kàn diànshì.",
+    "dutch": "Zij eet terwijl ze televisie kijkt."
+   },
+   {
+    "japanese": "我们一边学习一边听音乐。",
+    "romaji": "Wǒmen yībiān xuéxí yībiān tīng yīnyuè.",
+    "dutch": "Wij studeren terwijl we naar muziek luisteren."
+   },
+   {
+    "japanese": "孩子们一边玩游戏一边笑。",
+    "romaji": "Háizimen yībiān wán yóuxì yībiān xiào.",
+    "dutch": "De kinderen spelen spelletjes terwijl ze lachen."
+   }
+  ]
+ },
+ "zh-h2-jieguo": {
+  "naam": "Resultaatcomplement in het Mandarijn",
+  "tagline": "Leer hoe je acties en hun resultaten in het Mandarijn uitdrukt",
+  "niveau": "gemiddeld",
+  "kernregel": "Het resultaatcomplement in het Mandarijn wordt gebruikt om het resultaat of de uitkomst van een actie te beschrijven. Het wordt vaak gevormd door een werkwoord te combineren met een ander werkwoord of bijvoeglijk naamwoord dat het resultaat aangeeft. Dit patroon helpt om duidelijk te maken wat er precies is gebeurd na een bepaalde actie.",
+  "patroon": "[werkwoord] + [resultaatcomplement]",
+  "uitleg": "In het Mandarijn wordt een resultaatcomplement gebruikt om de uitkomst van een actie te beschrijven. Dit is vergelijkbaar met hoe we in het Nederlands soms een bijwoord of bijvoeglijk naamwoord gebruiken om een resultaat te beschrijven, zoals in 'hij heeft het boek uitgelezen'. In het Mandarijn voeg je een extra element toe aan het werkwoord om het resultaat aan te geven. Bijvoorbeeld, in de zin '他吃完了饭' (tā chī wán le fàn), betekent '吃完' (chī wán) 'uitgegeten', waarbij '完' (wán) het resultaatcomplement is dat aangeeft dat de actie van eten is voltooid. Dit patroon is essentieel om precieze informatie te geven over de uitkomst van een actie.",
+  "opbouw": [
+   {
+    "element": "werkwoord",
+    "rol": "De actie die wordt uitgevoerd",
+    "voorbeeld": "吃 (chī) - eten"
+   },
+   {
+    "element": "resultaatcomplement",
+    "rol": "Geeft het resultaat of de uitkomst van de actie aan",
+    "voorbeeld": "完 (wán) - voltooid"
+   },
+   {
+    "element": "object",
+    "rol": "Het ding waarop de actie wordt uitgevoerd",
+    "voorbeeld": "饭 (fàn) - rijst/maaltijd"
+   },
+   {
+    "element": "hulpwerkwoord",
+    "rol": "Geeft de voltooiing van de actie aan",
+    "voorbeeld": "了 (le) - markeert voltooiing"
+   }
+  ],
+  "tips": [
+   "Onthoud dat het resultaatcomplement vaak een werkwoord of bijvoeglijk naamwoord is dat een voltooiing of verandering aangeeft.",
+   "Gebruik '了' (le) na het resultaatcomplement om aan te geven dat de actie is voltooid.",
+   "Let op de context; niet elk werkwoord kan met elk resultaatcomplement worden gecombineerd.",
+   "Oefen met veelvoorkomende combinaties zoals '看完' (kàn wán - uitkijken) en '写好' (xiě hǎo - goed schrijven)."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van het resultaatcomplement: '他吃饭完了' (tā chī fàn wán le) in plaats van '他吃完饭了' (tā chī wán fàn le). Correctie: Plaats het resultaatcomplement direct na het werkwoord.",
+   "Vergeten '了' toe te voegen: '他写好作业' (tā xiě hǎo zuòyè) zonder '了'. Correctie: Voeg '了' toe om aan te geven dat de actie is voltooid: '他写好了作业' (tā xiě hǎo le zuòyè)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他看完了书",
+    "romaji": "tā kàn wán le shū",
+    "dutch": "Hij heeft het boek uitgelezen."
+   },
+   {
+    "japanese": "她做完了工作",
+    "romaji": "tā zuò wán le gōngzuò",
+    "dutch": "Zij heeft het werk afgemaakt."
+   },
+   {
+    "japanese": "我们吃饱了",
+    "romaji": "wǒmen chī bǎo le",
+    "dutch": "Wij zijn volgegeten."
+   },
+   {
+    "japanese": "他写好了报告",
+    "romaji": "tā xiě hǎo le bàogào",
+    "dutch": "Hij heeft het verslag goed geschreven."
+   },
+   {
+    "japanese": "我找到了钥匙",
+    "romaji": "wǒ zhǎo dào le yàoshi",
+    "dutch": "Ik heb de sleutel gevonden."
+   },
+   {
+    "japanese": "他们学会了游泳",
+    "romaji": "tāmen xué huì le yóuyǒng",
+    "dutch": "Zij hebben leren zwemmen."
+   }
+  ]
+ },
+ "zh-h2-gei": {
+  "naam": "Gebruik van 给 (gěi) in het Mandarijn",
+  "tagline": "Leer hoe je 给 gebruikt om te geven of aan te duiden voor wie iets bedoeld is.",
+  "niveau": "basis",
+  "kernregel": "Het Chinese woord 给 (gěi) wordt gebruikt om aan te geven dat iets aan iemand wordt gegeven of voor iemand bedoeld is. Het kan zowel als voorzetsel als werkwoord functioneren, afhankelijk van de context.",
+  "patroon": "[onderwerp] + 给 + [ontvanger] + [object/actie]",
+  "uitleg": "In het Mandarijn wordt 给 (gěi) gebruikt om een actie van geven uit te drukken, vergelijkbaar met 'geven' in het Nederlands. Het kan ook worden gebruikt als voorzetsel om aan te geven voor wie een actie bedoeld is, vergelijkbaar met 'voor'. In tegenstelling tot het Nederlands, waar de volgorde van zinsdelen flexibel kan zijn, volgt het Mandarijn een strikte volgorde waarbij 给 altijd direct voor de ontvanger of het doel van de actie komt. Dit patroon wordt vaak gebruikt in dagelijkse conversaties om duidelijk te maken wie de ontvanger van een actie is.",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "Degene die de actie uitvoert",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "给",
+    "rol": "Geeft aan dat iets wordt gegeven of voor iemand is",
+    "voorbeeld": "给 (gěi) - geven/voor"
+   },
+   {
+    "element": "ontvanger",
+    "rol": "Degene die iets ontvangt of voor wie iets is",
+    "voorbeeld": "你 (nǐ) - jij"
+   },
+   {
+    "element": "object/actie",
+    "rol": "Wat wordt gegeven of gedaan",
+    "voorbeeld": "礼物 (lǐwù) - cadeau"
+   }
+  ],
+  "tips": [
+   "Onthoud dat 给 altijd direct voor de ontvanger komt, net als 'aan' in 'aan iemand geven'.",
+   "Gebruik 给 als voorzetsel om aan te geven voor wie een actie bedoeld is, net als 'voor' in het Nederlands.",
+   "In een zin met een werkwoord, komt 给 voor de ontvanger en het werkwoord volgt daarna.",
+   "Oefen met het vervangen van het Nederlandse 'geven' door 给 om vertrouwd te raken met de structuur."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde volgorde: '我给书你' in plaats van '我给你书'. Correcte volgorde is 'onderwerp + 给 + ontvanger + object'.",
+   "Vergeten van 给: '我你书' in plaats van '我给你书'. Vergeet niet om 给 te gebruiken om de actie van geven aan te duiden.",
+   "Gebruik van 给 zonder ontvanger: '我给书' is onvolledig. Voeg altijd een ontvanger toe na 给."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他给我一封信。",
+    "romaji": "Tā gěi wǒ yī fēng xìn.",
+    "dutch": "Hij geeft mij een brief."
+   },
+   {
+    "japanese": "请给我一点时间。",
+    "romaji": "Qǐng gěi wǒ yīdiǎn shíjiān.",
+    "dutch": "Geef me alsjeblieft wat tijd."
+   },
+   {
+    "japanese": "老师给学生作业。",
+    "romaji": "Lǎoshī gěi xuéshēng zuòyè.",
+    "dutch": "De leraar geeft de studenten huiswerk."
+   },
+   {
+    "japanese": "我给你打电话。",
+    "romaji": "Wǒ gěi nǐ dǎ diànhuà.",
+    "dutch": "Ik bel jou."
+   },
+   {
+    "japanese": "她给孩子买了玩具。",
+    "romaji": "Tā gěi háizi mǎi le wánjù.",
+    "dutch": "Zij heeft speelgoed voor het kind gekocht."
+   },
+   {
+    "japanese": "请把这个给他。",
+    "romaji": "Qǐng bǎ zhège gěi tā.",
+    "dutch": "Geef dit alsjeblieft aan hem."
+   }
+  ]
+ },
+ "zh-h2-congdao": {
+  "naam": "Gebruik van het patroon '从…到 (van…tot)' in het Mandarijn",
+  "tagline": "Leer hoe je tijd, afstand en volgorde uitdrukt met '从…到'.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '从…到' wordt gebruikt om een begin- en eindpunt aan te geven, zoals in tijd, afstand of volgorde. Het is vergelijkbaar met het Nederlandse 'van…tot' en helpt om duidelijkheid te scheppen over de reikwijdte van een actie of gebeurtenis.",
+  "patroon": "[从] + [beginpunt] + [到] + [eindpunt]",
+  "uitleg": "In het Mandarijn gebruik je '从…到' om een reeks of een traject aan te geven. Dit kan betrekking hebben op tijd (bijvoorbeeld van 9 uur tot 5 uur), ruimte (van Beijing tot Shanghai), of volgorde (van hoofdstuk 1 tot hoofdstuk 5). Het patroon is direct vergelijkbaar met het Nederlandse 'van…tot', maar het is belangrijk om te onthouden dat je altijd begint met '从' (cóng) voor het beginpunt en '到' (dào) voor het eindpunt. Dit patroon helpt om de grenzen van een actie of situatie duidelijk te maken en is essentieel voor het beschrijven van reeksen in het dagelijks leven.",
+  "opbouw": [
+   {
+    "element": "从",
+    "rol": "Geeft het beginpunt aan",
+    "voorbeeld": "从北京 (cóng Běijīng) - van Beijing"
+   },
+   {
+    "element": "到",
+    "rol": "Geeft het eindpunt aan",
+    "voorbeeld": "到上海 (dào Shànghǎi) - tot Shanghai"
+   },
+   {
+    "element": "beginpunt",
+    "rol": "Het startpunt van de reeks",
+    "voorbeeld": "从早上 (cóng zǎoshang) - van de ochtend"
+   },
+   {
+    "element": "eindpunt",
+    "rol": "Het eindpunt van de reeks",
+    "voorbeeld": "到晚上 (dào wǎnshang) - tot de avond"
+   }
+  ],
+  "tips": [
+   "Gebruik '从' altijd voor het beginpunt en '到' voor het eindpunt.",
+   "Dit patroon kan zowel voor tijd als voor fysieke afstanden worden gebruikt.",
+   "Let op de context: '从…到' kan ook worden gebruikt voor abstracte reeksen zoals hoofdstukken of niveaus.",
+   "Vergeet niet dat '从' en '到' altijd samen worden gebruikt om een reeks aan te geven."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van '从' of '到'. Correctie: Zorg ervoor dat beide woorden aanwezig zijn om de reeks te voltooien.",
+   "Verkeerde volgorde van begin- en eindpunt. Correctie: Begin altijd met '从' voor het startpunt en eindig met '到' voor het eindpunt.",
+   "Gebruik van '到' zonder een duidelijk eindpunt. Correctie: Specificeer altijd een duidelijk eindpunt na '到'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "从九点到五点",
+    "romaji": "cóng jiǔ diǎn dào wǔ diǎn",
+    "dutch": "van negen uur tot vijf uur"
+   },
+   {
+    "japanese": "从家到公司",
+    "romaji": "cóng jiā dào gōngsī",
+    "dutch": "van huis naar kantoor"
+   },
+   {
+    "japanese": "从第一章到第五章",
+    "romaji": "cóng dì yī zhāng dào dì wǔ zhāng",
+    "dutch": "van hoofdstuk één tot hoofdstuk vijf"
+   },
+   {
+    "japanese": "从春天到秋天",
+    "romaji": "cóng chūntiān dào qiūtiān",
+    "dutch": "van de lente tot de herfst"
+   },
+   {
+    "japanese": "从北京到广州",
+    "romaji": "cóng Běijīng dào Guǎngzhōu",
+    "dutch": "van Beijing tot Guangzhou"
+   },
+   {
+    "japanese": "从早上到晚上",
+    "romaji": "cóng zǎoshang dào wǎnshang",
+    "dutch": "van de ochtend tot de avond"
+   }
+  ]
+ },
+ "zh-h3-shide": {
+  "naam": "Gebruik van 是…的 voor nadruk in het Mandarijn",
+  "tagline": "Leer hoe je specifieke details benadrukt in een zin.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 是…的 wordt in het Mandarijn gebruikt om nadruk te leggen op specifieke details van een gebeurtenis, zoals tijd, plaats, manier of reden. Het benadrukt een bekend feit en wordt vaak gebruikt om te vragen naar of te bevestigen wat al bekend is.",
+  "patroon": "[onderwerp] + 是 + [nadruk] + 的",
+  "uitleg": "In het Mandarijn wordt het patroon 是…的 gebruikt om nadruk te leggen op een specifiek aspect van een gebeurtenis. Dit kan de tijd, plaats, manier of reden zijn. Het is vergelijkbaar met het gebruik van 'het is... dat' in het Nederlands, maar het wordt niet gebruikt voor toekomstige gebeurtenissen. De structuur is vooral nuttig om details te benadrukken in een gesprek waarin de gebeurtenis zelf al bekend is. Het is belangrijk om te weten dat 是 optioneel is en vaak wordt weggelaten als de nadruk al duidelijk is. Het gebruik van 是…的 is een manier om de luisteraar te informeren over specifieke details die belangrijk zijn voor de context van de gebeurtenis.",
+  "opbouw": [
+   {
+    "element": "是 (shì)",
+    "rol": "Wordt gebruikt om de nadruk te introduceren, maar kan soms worden weggelaten.",
+    "voorbeeld": "他是昨天来的。 (Tā shì zuótiān lái de.)"
+   },
+   {
+    "element": "[nadruk]",
+    "rol": "Het specifieke detail dat je wilt benadrukken, zoals tijd, plaats, manier of reden.",
+    "voorbeeld": "昨天 (zuótiān) in 'Hij kwam gisteren.'"
+   },
+   {
+    "element": "的 (de)",
+    "rol": "Sluit de nadruk af en markeert het einde van de nadrukstructuur.",
+    "voorbeeld": "来的 (lái de) in 'Hij kwam gisteren.'"
+   }
+  ],
+  "tips": [
+   "Gebruik 是…的 alleen voor gebeurtenissen die al hebben plaatsgevonden.",
+   "Vergeet niet dat 是 optioneel is; het kan worden weggelaten als de nadruk al duidelijk is.",
+   "Gebruik 的 aan het einde van de zin om de nadrukstructuur te voltooien.",
+   "Probeer te oefenen met verschillende elementen van nadruk, zoals tijd, plaats en reden, om vertrouwd te raken met het patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 是…的 voor toekomstige gebeurtenissen. Correctie: Gebruik het alleen voor gebeurtenissen die al hebben plaatsgevonden.",
+   "Het vergeten van 的 aan het einde van de zin. Correctie: Zorg ervoor dat 的 altijd de nadrukstructuur afsluit.",
+   "Het verkeerd plaatsen van 是, waardoor de nadruk niet duidelijk is. Correctie: Plaats 是 direct voor het element dat je wilt benadrukken."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他是昨天来的。",
+    "romaji": "Tā shì zuótiān lái de.",
+    "dutch": "Hij kwam gisteren."
+   },
+   {
+    "japanese": "我是坐飞机去的。",
+    "romaji": "Wǒ shì zuò fēijī qù de.",
+    "dutch": "Ik ging met het vliegtuig."
+   },
+   {
+    "japanese": "她是在北京出生的。",
+    "romaji": "Tā shì zài Běijīng chūshēng de.",
+    "dutch": "Zij is in Beijing geboren."
+   },
+   {
+    "japanese": "我们是在学校认识的。",
+    "romaji": "Wǒmen shì zài xuéxiào rènshi de.",
+    "dutch": "Wij hebben elkaar op school leren kennen."
+   },
+   {
+    "japanese": "这本书是他写的。",
+    "romaji": "Zhè běn shū shì tā xiě de.",
+    "dutch": "Dit boek is door hem geschreven."
+   },
+   {
+    "japanese": "晚饭是妈妈做的。",
+    "romaji": "Wǎnfàn shì māma zuò de.",
+    "dutch": "Het avondeten is door mama gemaakt."
+   }
+  ]
+ },
+ "zh-h3-quxiang": {
+  "naam": "Gebruik van 趋向补语 (richtingcomplementen) in het Mandarijn",
+  "tagline": "Begrijp hoe je richtingen en bewegingen in het Mandarijn uitdrukt met richtingcomplementen.",
+  "niveau": "gemiddeld",
+  "kernregel": "趋向补语 worden gebruikt om de richting van een actie in het Mandarijn aan te geven. Ze volgen meestal een werkwoord en geven aan of een beweging naar de spreker toe of van de spreker af is. Dit patroon helpt om de beweging in de ruimte duidelijk te maken.",
+  "patroon": "[werkwoord] + [richtingcomplement]",
+  "uitleg": "In het Mandarijn worden richtingcomplementen gebruikt om aan te geven waarheen een actie zich beweegt. De meest voorkomende richtingcomplementen zijn 来 (lái) en 去 (qù), die respectievelijk 'komen' en 'gaan' betekenen. Wanneer je een werkwoord combineert met 来, betekent dit dat de actie naar de spreker toe komt, terwijl 去 aangeeft dat de actie van de spreker af beweegt. Dit is anders dan in het Nederlands, waar we vaak preposities gebruiken om richting aan te geven. In het Mandarijn worden deze complementen direct na het werkwoord geplaatst om de richting van de beweging duidelijk te maken.",
+  "opbouw": [
+   {
+    "element": "werkwoord",
+    "rol": "Geeft de actie aan die wordt uitgevoerd.",
+    "voorbeeld": "走 (zǒu) - lopen"
+   },
+   {
+    "element": "richtingcomplement",
+    "rol": "Geeft de richting van de actie aan ten opzichte van de spreker.",
+    "voorbeeld": "来 (lái) - komen"
+   },
+   {
+    "element": "richtingcomplement",
+    "rol": "Geeft de richting van de actie aan ten opzichte van de spreker.",
+    "voorbeeld": "去 (qù) - gaan"
+   }
+  ],
+  "tips": [
+   "Onthoud dat 来 (lái) betekent dat de beweging naar de spreker toe is, terwijl 去 (qù) betekent dat de beweging van de spreker af is.",
+   "Gebruik richtingcomplementen direct na het werkwoord om de richting van de actie aan te geven.",
+   "Let op de context van het gesprek om te bepalen of je 来 of 去 moet gebruiken.",
+   "Oefen met het combineren van verschillende werkwoorden met 来 en 去 om vertrouwd te raken met het patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 来 en 去: '我走去' in plaats van '我走来' als je naar de spreker toe loopt. Correctie: gebruik '来' als je naar de spreker toe beweegt.",
+   "Vergeten van het richtingcomplement: '他走' in plaats van '他走来'. Correctie: Voeg het juiste richtingcomplement toe om de richting aan te geven.",
+   "Gebruik van preposities zoals in het Nederlands: '他去到学校' in plaats van '他去学校'. Correctie: Vermijd overbodige preposities en gebruik alleen het richtingcomplement."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他跑来",
+    "romaji": "tā pǎo lái",
+    "dutch": "Hij rent naar hier."
+   },
+   {
+    "japanese": "我走去",
+    "romaji": "wǒ zǒu qù",
+    "dutch": "Ik loop daarheen."
+   },
+   {
+    "japanese": "他们回来",
+    "romaji": "tāmen huí lái",
+    "dutch": "Zij komen terug."
+   },
+   {
+    "japanese": "你拿去",
+    "romaji": "nǐ ná qù",
+    "dutch": "Jij neemt het mee."
+   },
+   {
+    "japanese": "我们上去",
+    "romaji": "wǒmen shàng qù",
+    "dutch": "Wij gaan naar boven."
+   },
+   {
+    "japanese": "她下来",
+    "romaji": "tā xià lái",
+    "dutch": "Zij komt naar beneden."
+   }
+  ]
+ },
+ "zh-h3-yuelaiyue": {
+  "naam": "Gebruik van '越来越' in het Mandarijn",
+  "tagline": "Leer hoe je 'steeds meer' uitdrukt in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '越来越' wordt gebruikt om een toenemende mate of intensiteit van een eigenschap of toestand uit te drukken. Het kan worden vertaald als 'steeds meer' in het Nederlands en wordt vaak gevolgd door een bijvoeglijk naamwoord of werkwoord.",
+  "patroon": "[onderwerp] + 越来越 + [bijvoeglijk naamwoord/werkwoord]",
+  "uitleg": "'越来越' is een veelgebruikt patroon in het Mandarijn om een progressieve verandering aan te geven. Het wordt gebruikt om te zeggen dat iets in toenemende mate gebeurt, zoals 'steeds warmer' of 'steeds drukker'. In tegenstelling tot het Nederlands, waar je 'steeds meer' direct voor een bijvoeglijk naamwoord plaatst, wordt in het Mandarijn '越来越' als een vast patroon gebruikt. Het onderwerp kan expliciet worden genoemd, maar in informele contexten kan het ook weggelaten worden als het duidelijk is uit de context. Dit patroon kan zowel positieve als negatieve veranderingen uitdrukken.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de zin, dat aangeeft wie of wat de verandering ondergaat.",
+    "voorbeeld": "天气 (tiānqì) - het weer"
+   },
+   {
+    "element": "越来越",
+    "rol": "De vaste uitdrukking die 'steeds meer' betekent en de progressieve verandering aangeeft.",
+    "voorbeeld": "越来越 (yuèláiyuè)"
+   },
+   {
+    "element": "[bijvoeglijk naamwoord/werkwoord]",
+    "rol": "Het woord dat de eigenschap of toestand beschrijft die verandert.",
+    "voorbeeld": "热 (rè) - warm"
+   }
+  ],
+  "tips": [
+   "Plaats '越来越' altijd direct voor het bijvoeglijk naamwoord of werkwoord dat de verandering beschrijft.",
+   "Gebruik '越来越' om zowel positieve als negatieve veranderingen uit te drukken, afhankelijk van de context.",
+   "In informele gesprekken kan het onderwerp soms worden weggelaten als het duidelijk is uit de context.",
+   "Oefen met verschillende bijvoeglijke naamwoorden en werkwoorden om vertrouwd te raken met het patroon."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van '越来越' en alleen het bijvoeglijk naamwoord gebruiken. Correctie: Voeg '越来越' toe voor het bijvoeglijk naamwoord.",
+   "Verkeerd gebruik van '越来越' met zelfstandige naamwoorden. Correctie: Gebruik het alleen met bijvoeglijke naamwoorden of werkwoorden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "天气越来越热。",
+    "romaji": "Tiānqì yuèláiyuè rè.",
+    "dutch": "Het weer wordt steeds warmer."
+   },
+   {
+    "japanese": "他越来越忙。",
+    "romaji": "Tā yuèláiyuè máng.",
+    "dutch": "Hij wordt steeds drukker."
+   },
+   {
+    "japanese": "城市越来越大。",
+    "romaji": "Chéngshì yuèláiyuè dà.",
+    "dutch": "De stad wordt steeds groter."
+   },
+   {
+    "japanese": "她的中文越来越好。",
+    "romaji": "Tā de Zhōngwén yuèláiyuè hǎo.",
+    "dutch": "Haar Chinees wordt steeds beter."
+   },
+   {
+    "japanese": "这个问题越来越复杂。",
+    "romaji": "Zhège wèntí yuèláiyuè fùzá.",
+    "dutch": "Dit probleem wordt steeds ingewikkelder."
+   },
+   {
+    "japanese": "空气质量越来越差。",
+    "romaji": "Kōngqì zhìliàng yuèláiyuè chà.",
+    "dutch": "De luchtkwaliteit wordt steeds slechter."
+   }
+  ]
+ },
+ "zh-h3-youyou": {
+  "naam": "Gebruik van '又...又' in het Mandarijn",
+  "tagline": "Combineer eigenschappen met '又...又'!",
+  "niveau": "basis",
+  "kernregel": "Het patroon '又...又' wordt gebruikt om twee eigenschappen of kwaliteiten van een onderwerp te beschrijven. Het is vergelijkbaar met het Nederlandse 'zowel...als', en benadrukt dat beide eigenschappen tegelijkertijd van toepassing zijn.",
+  "patroon": "[onderwerp] + 又 + [eigenschap 1] + 又 + [eigenschap 2]",
+  "uitleg": "In het Mandarijn wordt '又...又' gebruikt om twee bijvoeglijke naamwoorden of werkwoorden te combineren die betrekking hebben op hetzelfde onderwerp. Dit patroon benadrukt dat beide eigenschappen tegelijkertijd aanwezig zijn. Het is vergelijkbaar met het Nederlandse 'zowel...als', maar in het Mandarijn moet je ervoor zorgen dat de eigenschappen dezelfde grammaticale functie hebben. Dit patroon wordt vaak gebruikt om een persoon, object of situatie te beschrijven die meerdere kwaliteiten bezit. Het is belangrijk om te weten dat de eigenschappen die je combineert, meestal positief of negatief zijn, maar niet gemengd.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de zin dat de eigenschappen bezit.",
+    "voorbeeld": "他 (tā) - hij"
+   },
+   {
+    "element": "又",
+    "rol": "Verbindt de eerste eigenschap met het onderwerp.",
+    "voorbeeld": "又 (yòu) - zowel"
+   },
+   {
+    "element": "[eigenschap 1]",
+    "rol": "De eerste eigenschap die het onderwerp beschrijft.",
+    "voorbeeld": "高 (gāo) - lang"
+   },
+   {
+    "element": "又",
+    "rol": "Verbindt de tweede eigenschap met de eerste.",
+    "voorbeeld": "又 (yòu) - als"
+   },
+   {
+    "element": "[eigenschap 2]",
+    "rol": "De tweede eigenschap die het onderwerp beschrijft.",
+    "voorbeeld": "帅 (shuài) - knap"
+   }
+  ],
+  "tips": [
+   "Zorg ervoor dat de eigenschappen die je gebruikt dezelfde grammaticale functie hebben (bijv. beide bijvoeglijke naamwoorden).",
+   "Gebruik '又...又' om een sterke nadruk te leggen op de combinatie van eigenschappen.",
+   "Probeer te vermijden dat je positieve en negatieve eigenschappen door elkaar gebruikt in één zin.",
+   "Dit patroon is handig om een levendige beschrijving te geven van een persoon of situatie."
+  ],
+  "veelgemaaktefouten": [
+   "Het combineren van een bijvoeglijk naamwoord met een werkwoord. Correctie: Gebruik twee bijvoeglijke naamwoorden of twee werkwoorden.",
+   "Het gebruik van '又...又' met tegenstrijdige eigenschappen. Correctie: Zorg ervoor dat de eigenschappen complementair zijn.",
+   "Vergeten om het onderwerp te vermelden. Correctie: Begin de zin altijd met het onderwerp voordat je '又...又' gebruikt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他又高又帅。",
+    "romaji": "Tā yòu gāo yòu shuài.",
+    "dutch": "Hij is zowel lang als knap."
+   },
+   {
+    "japanese": "这个菜又辣又咸。",
+    "romaji": "Zhège cài yòu là yòu xián.",
+    "dutch": "Dit gerecht is zowel pittig als zout."
+   },
+   {
+    "japanese": "她又聪明又勤奋。",
+    "romaji": "Tā yòu cōngmíng yòu qínfèn.",
+    "dutch": "Zij is zowel slim als ijverig."
+   },
+   {
+    "japanese": "这本书又有趣又有教育意义。",
+    "romaji": "Zhè běn shū yòu yǒuqù yòu yǒu jiàoyù yìyì.",
+    "dutch": "Dit boek is zowel interessant als educatief."
+   },
+   {
+    "japanese": "天气又冷又湿。",
+    "romaji": "Tiānqì yòu lěng yòu shī.",
+    "dutch": "Het weer is zowel koud als vochtig."
+   },
+   {
+    "japanese": "他的工作又忙又累。",
+    "romaji": "Tā de gōngzuò yòu máng yòu lèi.",
+    "dutch": "Zijn werk is zowel druk als vermoeiend."
+   }
+  ]
+ },
+ "zh-h3-yijiu": {
+  "naam": "Gebruik van het patroon '一...就' in het Mandarijn",
+  "tagline": "Leer hoe je opeenvolgende acties in het Mandarijn kunt uitdrukken met '一...就'.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon '一...就' wordt gebruikt om aan te geven dat een bepaalde actie onmiddellijk volgt op een andere. Het benadrukt de directe opeenvolging van twee gebeurtenissen of acties.",
+  "patroon": "[onderwerp] + 一 + [eerste actie] + 就 + [tweede actie]",
+  "uitleg": "In het Mandarijn gebruik je '一...就' om te zeggen dat zodra de eerste actie plaatsvindt, de tweede actie onmiddellijk volgt. Dit is vergelijkbaar met het Nederlandse 'zodra... dan...'. Het patroon wordt vaak gebruikt om routines, gewoontes of directe gevolgen te beschrijven. In tegenstelling tot het Nederlands, waar we vaak een bijzin gebruiken, is het in het Mandarijn een compacte constructie. Het is belangrijk om te onthouden dat beide acties in de tegenwoordige tijd of verleden tijd kunnen staan, afhankelijk van de context.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "一",
+    "rol": "Geeft het begin van de eerste actie aan.",
+    "voorbeeld": "一 (yī) - zodra"
+   },
+   {
+    "element": "[eerste actie]",
+    "rol": "De actie die als eerste plaatsvindt.",
+    "voorbeeld": "下课 (xiàkè) - de les eindigt"
+   },
+   {
+    "element": "就",
+    "rol": "Geeft aan dat de tweede actie onmiddellijk volgt.",
+    "voorbeeld": "就 (jiù) - dan"
+   },
+   {
+    "element": "[tweede actie]",
+    "rol": "De actie die onmiddellijk volgt op de eerste.",
+    "voorbeeld": "回家 (huíjiā) - naar huis gaan"
+   }
+  ],
+  "tips": [
+   "Gebruik '一...就' om snelle opeenvolging van acties uit te drukken, net als 'zodra... dan...' in het Nederlands.",
+   "Zorg ervoor dat beide acties logisch en direct op elkaar volgen.",
+   "Let op de tijd waarin de acties zich afspelen; beide moeten in dezelfde tijd staan.",
+   "Gebruik dit patroon om gewoontes of routines te beschrijven die altijd in dezelfde volgorde plaatsvinden."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen de volgorde van acties: Correct is '一...就', niet '就...一'.",
+   "Verkeerd gebruik van tijd: Beide acties moeten in dezelfde tijd staan, bijvoorbeeld beide in de tegenwoordige tijd.",
+   "Het weglaten van het onderwerp: In het Mandarijn is het belangrijk om het onderwerp te benoemen, zelfs als het in het Nederlands weggelaten kan worden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我一到家就吃饭。",
+    "romaji": "Wǒ yī dàojiā jiù chīfàn.",
+    "dutch": "Zodra ik thuis kom, eet ik."
+   },
+   {
+    "japanese": "他一看到我就笑。",
+    "romaji": "Tā yī kàndào wǒ jiù xiào.",
+    "dutch": "Zodra hij me ziet, lacht hij."
+   },
+   {
+    "japanese": "我们一上车就出发。",
+    "romaji": "Wǒmen yī shàngchē jiù chūfā.",
+    "dutch": "Zodra we in de auto stappen, vertrekken we."
+   },
+   {
+    "japanese": "她一听到音乐就跳舞。",
+    "romaji": "Tā yī tīngdào yīnyuè jiù tiàowǔ.",
+    "dutch": "Zodra ze muziek hoort, begint ze te dansen."
+   },
+   {
+    "japanese": "孩子们一放学就玩游戏。",
+    "romaji": "Háizimen yī fàngxué jiù wán yóuxì.",
+    "dutch": "Zodra de kinderen uit school komen, spelen ze spelletjes."
+   },
+   {
+    "japanese": "我一喝咖啡就精神。",
+    "romaji": "Wǒ yī hē kāfēi jiù jīngshén.",
+    "dutch": "Zodra ik koffie drink, voel ik me alert."
+   }
+  ]
+ },
+ "zh-h3-chule": {
+  "naam": "Gebruik van '除了…以外' in het Mandarijn",
+  "tagline": "Leer hoe je uitzonderingen en aanvullingen uitdrukt in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "'除了…以外' wordt gebruikt om uitzonderingen aan te geven of om iets extra's toe te voegen. Het kan vertaald worden als 'behalve' of 'naast' in het Nederlands, afhankelijk van de context.",
+  "patroon": "除了 + [onderwerp] + 以外, [hoofdzin]",
+  "uitleg": "In het Mandarijn wordt '除了…以外' gebruikt om aan te geven dat iets of iemand buiten beschouwing wordt gelaten of juist extra wordt genoemd. Het is vergelijkbaar met het Nederlandse 'behalve' wanneer je een uitzondering maakt, en 'naast' wanneer je iets toevoegt. Bijvoorbeeld, '除了他以外，我们都去了' betekent 'Behalve hij, gingen we allemaal'. Als je iets toevoegt, zoals in '除了中文以外，我还会说英语', betekent het 'Naast Chinees spreek ik ook Engels'. De context bepaalt of het om een uitzondering of een toevoeging gaat.",
+  "opbouw": [
+   {
+    "element": "除了",
+    "rol": "Inleidend deel dat 'behalve' of 'naast' betekent",
+    "voorbeeld": "除了"
+   },
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp dat wordt uitgesloten of toegevoegd",
+    "voorbeeld": "他"
+   },
+   {
+    "element": "以外",
+    "rol": "Sluit het inleidende deel af en leidt naar de hoofdzin",
+    "voorbeeld": "以外"
+   },
+   {
+    "element": "[hoofdzin]",
+    "rol": "De hoofdzin die het gevolg of de toevoeging beschrijft",
+    "voorbeeld": "我们都去了"
+   }
+  ],
+  "tips": [
+   "Gebruik '除了…以外' om zowel uitzonderingen als toevoegingen aan te geven; let op de context.",
+   "Als je een uitzondering maakt, gebruik dan vaak negatie in de hoofdzin.",
+   "Bij toevoegingen kun je vaak woorden zoals '还' (hái) gebruiken om de extra informatie te benadrukken.",
+   "Oefen met verschillende onderwerpen om vertrouwd te raken met de structuur."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van negatie: '除了他以外，没人去了' (correct: '除了他以外，我们都去了').",
+   "Verwarring tussen uitzondering en toevoeging: '除了中文以外，我会说英语' (correct: '除了中文以外，我还会说英语')."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "除了我以外，大家都喜欢吃辣的。",
+    "romaji": "Chúle wǒ yǐwài, dàjiā dōu xǐhuān chī là de.",
+    "dutch": "Behalve ik, houdt iedereen van pittig eten."
+   },
+   {
+    "japanese": "除了周末以外，我每天都工作。",
+    "romaji": "Chúle zhōumò yǐwài, wǒ měitiān dōu gōngzuò.",
+    "dutch": "Behalve in het weekend, werk ik elke dag."
+   },
+   {
+    "japanese": "除了苹果以外，我还买了香蕉。",
+    "romaji": "Chúle píngguǒ yǐwài, wǒ hái mǎile xiāngjiāo.",
+    "dutch": "Naast appels, heb ik ook bananen gekocht."
+   },
+   {
+    "japanese": "除了他以外，谁都不知道这个秘密。",
+    "romaji": "Chúle tā yǐwài, shéi dōu bù zhīdào zhège mìmì.",
+    "dutch": "Behalve hij, weet niemand dit geheim."
+   },
+   {
+    "japanese": "除了学习以外，我也喜欢运动。",
+    "romaji": "Chúle xuéxí yǐwài, wǒ yě xǐhuān yùndòng.",
+    "dutch": "Naast studeren, hou ik ook van sporten."
+   },
+   {
+    "japanese": "除了喝茶以外，我还喜欢喝咖啡。",
+    "romaji": "Chúle hē chá yǐwài, wǒ hái xǐhuān hē kāfēi.",
+    "dutch": "Naast thee drinken, hou ik ook van koffie."
+   }
+  ]
+ },
+ "zh-h3-budan": {
+  "naam": "Gebruik van '不但...而且' in het Mandarijn",
+  "tagline": "Leer hoe je complexiteit en nadruk toevoegt aan je zinnen.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon '不但...而且' wordt gebruikt om twee gerelateerde feiten of eigenschappen te verbinden, waarbij de tweede vaak een versterking of aanvulling is op de eerste. Het benadrukt dat niet alleen het eerste deel waar is, maar dat er ook nog een extra, vaak belangrijker, aspect is.",
+  "patroon": "[onderwerp] + 不但 + [eerste feit] + 而且 + [tweede feit]",
+  "uitleg": "In het Mandarijn gebruik je '不但...而且' om twee aspecten van een situatie te verbinden, waarbij het tweede aspect vaak een versterking of uitbreiding van het eerste is. Dit patroon is vergelijkbaar met het Nederlandse 'niet alleen... maar ook'. Het helpt om een zin meer diepte en complexiteit te geven, door meerdere feiten of eigenschappen te combineren. In tegenstelling tot het Nederlands, waar je vaak 'maar ook' gebruikt, gebruik je in het Mandarijn '而且' om de nadruk te leggen op het tweede deel van de zin. Dit patroon kan zowel voor positieve als negatieve eigenschappen worden gebruikt.",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "Het onderwerp van de zin, degene die de actie ondergaat of de eigenschap bezit.",
+    "voorbeeld": "他 (tā) - hij"
+   },
+   {
+    "element": "不但",
+    "rol": "Geeft aan dat er meer dan één feit of eigenschap is.",
+    "voorbeeld": "不但 (bùdàn) - niet alleen"
+   },
+   {
+    "element": "eerste feit",
+    "rol": "Het eerste feit of de eerste eigenschap die je wilt benadrukken.",
+    "voorbeeld": "聪明 (cōngmíng) - slim"
+   },
+   {
+    "element": "而且",
+    "rol": "Verbindt het eerste feit met het tweede, benadrukt het extra aspect.",
+    "voorbeeld": "而且 (érqiě) - maar ook"
+   },
+   {
+    "element": "tweede feit",
+    "rol": "Het tweede feit of de tweede eigenschap die vaak een versterking of aanvulling is.",
+    "voorbeeld": "努力 (nǔlì) - hardwerkend"
+   }
+  ],
+  "tips": [
+   "Gebruik '不但' om de aandacht te vestigen op het eerste feit, maar zorg ervoor dat '而且' het tweede feit nog belangrijker maakt.",
+   "In tegenstelling tot het Nederlands, gebruik je in het Mandarijn geen komma tussen de twee delen van de zin.",
+   "Probeer beide delen van de zin qua lengte en structuur in balans te houden voor een vloeiende uitspraak.",
+   "Je kunt dit patroon zowel in positieve als negatieve contexten gebruiken, afhankelijk van de feiten die je wilt verbinden."
+  ],
+  "veelgemaaktefouten": [
+   "Het weglaten van '而且' na '不但', wat de zin onvolledig maakt. Correctie: Voeg altijd '而且' toe na '不但'.",
+   "Verkeerd gebruik van '而且' zonder een voorafgaand '不但'. Correctie: Gebruik '而且' alleen in combinatie met '不但'.",
+   "Het plaatsen van een komma tussen '不但' en '而且', wat in het Mandarijn niet nodig is. Correctie: Laat de komma weg."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他不但会说英语，而且会说法语。",
+    "romaji": "Tā bùdàn huì shuō Yīngyǔ, érqiě huì shuō Fǎyǔ.",
+    "dutch": "Hij spreekt niet alleen Engels, maar ook Frans."
+   },
+   {
+    "japanese": "这道菜不但好吃，而且很健康。",
+    "romaji": "Zhè dào cài bùdàn hǎochī, érqiě hěn jiànkāng.",
+    "dutch": "Dit gerecht is niet alleen lekker, maar ook gezond."
+   },
+   {
+    "japanese": "她不但聪明，而且很有创造力。",
+    "romaji": "Tā bùdàn cōngmíng, érqiě hěn yǒu chuàngzàolì.",
+    "dutch": "Zij is niet alleen slim, maar ook erg creatief."
+   },
+   {
+    "japanese": "我们不但参观了博物馆，而且还去了动物园。",
+    "romaji": "Wǒmen bùdàn cānguānle bówùguǎn, érqiě hái qùle dòngwùyuán.",
+    "dutch": "We hebben niet alleen het museum bezocht, maar zijn ook naar de dierentuin geweest."
+   },
+   {
+    "japanese": "这本书不但有趣，而且很有教育意义。",
+    "romaji": "Zhè běn shū bùdàn yǒuqù, érqiě hěn yǒu jiàoyù yìyì.",
+    "dutch": "Dit boek is niet alleen interessant, maar ook erg educatief."
+   },
+   {
+    "japanese": "他不但会弹钢琴，而且会拉小提琴。",
+    "romaji": "Tā bùdàn huì tán gāngqín, érqiě huì lā xiǎotíqín.",
+    "dutch": "Hij kan niet alleen piano spelen, maar ook viool."
+   }
+  ]
+ },
+ "zh-h3-bei": {
+  "naam": "Gebruik van 被 in passieve zinnen",
+  "tagline": "Leer hoe je passieve zinnen vormt in het Mandarijn met 被.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het partikel 被 wordt gebruikt om passieve zinnen in het Mandarijn te vormen, waarbij de nadruk ligt op de ontvanger van de actie in plaats van de uitvoerder. 被 plaatst het object van de actie voorop, gevolgd door de uitvoerder en de actie zelf.",
+  "patroon": "[ontvanger] + 被 + [uitvoerder] + [werkwoord] (+ [extra informatie])",
+  "uitleg": "In het Mandarijn gebruik je 被 om een passieve zin te maken, vergelijkbaar met 'worden' in het Nederlands. Het benadrukt de ontvanger van de actie, die vaak iets ondergaat of ervaart. In tegenstelling tot Nederlands, waar de uitvoerder soms wordt weggelaten, wordt in Mandarijn de uitvoerder vaak expliciet genoemd na 被. Als de uitvoerder onbekend of onbelangrijk is, kan deze worden weggelaten. 被 wordt vooral gebruikt in contexten waar de actie een negatieve of onverwachte impact heeft op de ontvanger.",
+  "opbouw": [
+   {
+    "element": "ontvanger",
+    "rol": "Degene die de actie ondergaat of ervaart.",
+    "voorbeeld": "书 (shū) - het boek"
+   },
+   {
+    "element": "被",
+    "rol": "Marker voor de passieve stem.",
+    "voorbeeld": "被 (bèi)"
+   },
+   {
+    "element": "uitvoerder",
+    "rol": "Degene die de actie uitvoert.",
+    "voorbeeld": "小明 (Xiǎomíng) - Xiaoming"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "De actie die wordt uitgevoerd.",
+    "voorbeeld": "拿走 (ná zǒu) - meenemen"
+   },
+   {
+    "element": "extra informatie",
+    "rol": "Optionele details over de actie.",
+    "voorbeeld": "昨天 (zuótiān) - gisteren"
+   }
+  ],
+  "tips": [
+   "Gebruik 被 alleen als de actie een negatieve of onverwachte impact heeft.",
+   "Als de uitvoerder niet belangrijk is, kun je deze weglaten na 被.",
+   "Let op dat 被 niet altijd nodig is; gebruik het alleen als de zin echt passief moet zijn.",
+   "Oefen met het herkennen van de ontvanger en uitvoerder in zinnen om 被 correct te gebruiken."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van 被 in positieve contexten. Correctie: Gebruik 被 alleen voor negatieve of onverwachte acties.",
+   "Het weglaten van de uitvoerder wanneer deze belangrijk is. Correctie: Noem de uitvoerder als deze relevant is voor de context.",
+   "Verwarring tussen actieve en passieve zinnen. Correctie: Controleer of de zin echt passief moet zijn voordat je 被 gebruikt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "苹果被他吃了。",
+    "romaji": "Píngguǒ bèi tā chī le.",
+    "dutch": "De appel werd door hem gegeten."
+   },
+   {
+    "japanese": "我的手机被偷了。",
+    "romaji": "Wǒ de shǒujī bèi tōu le.",
+    "dutch": "Mijn telefoon is gestolen."
+   },
+   {
+    "japanese": "信被他寄出去了。",
+    "romaji": "Xìn bèi tā jì chūqù le.",
+    "dutch": "De brief is door hem verstuurd."
+   },
+   {
+    "japanese": "门被风吹开了。",
+    "romaji": "Mén bèi fēng chuī kāi le.",
+    "dutch": "De deur werd door de wind geopend."
+   },
+   {
+    "japanese": "他的车被撞坏了。",
+    "romaji": "Tā de chē bèi zhuàng huài le.",
+    "dutch": "Zijn auto is beschadigd geraakt."
+   },
+   {
+    "japanese": "书被小明拿走了。",
+    "romaji": "Shū bèi Xiǎomíng ná zǒu le.",
+    "dutch": "Het boek is door Xiaoming meegenomen."
+   }
+  ]
+ },
+ "zh-h3-rang": {
+  "naam": "Gebruik van 让 en 叫 in het Mandarijn",
+  "tagline": "Begrijp hoe je iemand iets kunt laten doen in het Chinees.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Mandarijn worden de werkwoorden 让 (ràng) en 叫 (jiào) gebruikt om aan te geven dat iemand iets laat doen door een ander. Beide woorden betekenen 'laten', maar 让 is formeler en wordt vaker gebruikt in geschreven taal, terwijl 叫 informeler is en vaker in gesproken taal voorkomt.",
+  "patroon": "[onderwerp] + 让/叫 + [persoon] + [werkwoord] + [overige zinsdelen]",
+  "uitleg": "Het patroon met 让 en 叫 wordt gebruikt om aan te geven dat iemand een ander iets laat doen. Dit is vergelijkbaar met het Nederlandse 'laten', maar in het Mandarijn moet je expliciet de persoon noemen die de actie uitvoert. 让 wordt vaak gebruikt in formele situaties of geschreven taal, terwijl 叫 meer informeel is en in alledaagse gesprekken voorkomt. Het is belangrijk om de juiste context te kiezen, omdat het gebruik van 叫 in een formele situatie als ongepast kan worden ervaren. Beide woorden worden gevolgd door de persoon die de actie uitvoert, gevolgd door het werkwoord dat de actie beschrijft.",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "Degene die de actie laat uitvoeren.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "让/叫",
+    "rol": "Geeft aan dat iemand iets laat doen.",
+    "voorbeeld": "让 (ràng) - laten"
+   },
+   {
+    "element": "persoon",
+    "rol": "Degene die de actie uitvoert.",
+    "voorbeeld": "他 (tā) - hij"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "De actie die uitgevoerd moet worden.",
+    "voorbeeld": "去 (qù) - gaan"
+   },
+   {
+    "element": "overige zinsdelen",
+    "rol": "Extra informatie over de actie.",
+    "voorbeeld": "学校 (xuéxiào) - school"
+   }
+  ],
+  "tips": [
+   "Gebruik 让 voor formele situaties, zoals in zakelijke correspondentie of officiële documenten.",
+   "Gebruik 叫 in informele gesprekken met vrienden of familie.",
+   "Zorg ervoor dat je altijd de persoon noemt die de actie uitvoert na 让 of 叫.",
+   "Let op de context en toon van de situatie om te kiezen tussen 让 en 叫."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de persoon te noemen die de actie uitvoert. Correctie: Voeg altijd de persoon toe na 让 of 叫.",
+   "Gebruik van 叫 in een formele situatie. Correctie: Gebruik 让 in plaats van 叫 voor formele contexten.",
+   "Verwarring tussen 让 en 叫. Correctie: Onthoud dat 让 formeler is en 叫 informeler."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "我让他去学校。",
+    "romaji": "Wǒ ràng tā qù xuéxiào.",
+    "dutch": "Ik laat hem naar school gaan."
+   },
+   {
+    "japanese": "老师叫学生回答问题。",
+    "romaji": "Lǎoshī jiào xuéshēng huídá wèntí.",
+    "dutch": "De leraar laat de student de vraag beantwoorden."
+   },
+   {
+    "japanese": "妈妈让我帮她做饭。",
+    "romaji": "Māma ràng wǒ bāng tā zuò fàn.",
+    "dutch": "Mama laat mij haar helpen met koken."
+   },
+   {
+    "japanese": "他叫我等他。",
+    "romaji": "Tā jiào wǒ děng tā.",
+    "dutch": "Hij laat mij op hem wachten."
+   },
+   {
+    "japanese": "经理让秘书安排会议。",
+    "romaji": "Jīnglǐ ràng mìshū ānpái huìyì.",
+    "dutch": "De manager laat de secretaresse de vergadering regelen."
+   },
+   {
+    "japanese": "朋友叫我去看电影。",
+    "romaji": "Péngyǒu jiào wǒ qù kàn diànyǐng.",
+    "dutch": "Een vriend laat mij naar de film gaan."
+   }
+  ]
+ },
+ "zh-h3-yinggai": {
+  "naam": "Gebruik van '应该' en '必须' in het Mandarijn",
+  "tagline": "Leer hoe je verplichtingen en aanbevelingen uitdrukt in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "'应该' (yīnggāi) en '必须' (bìxū) worden gebruikt om verplichtingen en noodzaak uit te drukken. '应该' wordt vaak gebruikt voor aanbevelingen of verwachtingen, terwijl '必须' een sterkere verplichting of noodzaak aanduidt.",
+  "patroon": "[onderwerp] + 应该/必须 + [werkwoord] + [object]",
+  "uitleg": "In het Mandarijn gebruik je '应该' om aan te geven wat iemand zou moeten doen, vaak in de zin van een advies of verwachting. Bijvoorbeeld, '你应该吃药' betekent 'Je zou medicijnen moeten nemen'. Aan de andere kant gebruik je '必须' om een sterke noodzaak of verplichting uit te drukken, zoals in '你必须去医院', wat betekent 'Je moet naar het ziekenhuis gaan'. In tegenstelling tot het Nederlands, waar 'moeten' zowel een sterke als zwakke verplichting kan uitdrukken, maakt het Mandarijn duidelijk onderscheid tussen deze twee niveaus van verplichting.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de zin, degene die de actie moet uitvoeren.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "应该",
+    "rol": "Drukt een aanbeveling of verwachting uit.",
+    "voorbeeld": "应该 (yīnggāi) - zou moeten"
+   },
+   {
+    "element": "必须",
+    "rol": "Drukt een sterke verplichting of noodzaak uit.",
+    "voorbeeld": "必须 (bìxū) - moet"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "De actie die uitgevoerd moet worden.",
+    "voorbeeld": "吃 (chī) - eten"
+   },
+   {
+    "element": "[object]",
+    "rol": "Het object van de actie, datgene waarop de actie betrekking heeft.",
+    "voorbeeld": "药 (yào) - medicijnen"
+   }
+  ],
+  "tips": [
+   "Gebruik '应该' voor situaties waarin je advies of een lichte verplichting wilt uitdrukken.",
+   "Gebruik '必须' wanneer er geen andere keuze is en de actie absoluut noodzakelijk is.",
+   "Let op de context: '应该' kan soms ook gebruikt worden om verwachtingen uit te drukken, niet alleen aanbevelingen.",
+   "Oefen met het herkennen van situaties waarin een sterke verplichting nodig is versus een aanbeveling."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van '应该' en '必须' in situaties waar een sterke verplichting nodig is: Correctie: Gebruik '必须' voor sterke verplichtingen.",
+   "Vergeten het werkwoord na '应该' of '必须' te plaatsen: Correctie: Zorg ervoor dat het werkwoord direct na '应该' of '必须' komt.",
+   "Het object van de zin vergeten: Correctie: Vergeet niet het object te vermelden waarop de actie betrekking heeft."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "你应该早点睡觉。",
+    "romaji": "Nǐ yīnggāi zǎodiǎn shuìjiào.",
+    "dutch": "Je zou eerder moeten gaan slapen."
+   },
+   {
+    "japanese": "他必须完成作业。",
+    "romaji": "Tā bìxū wánchéng zuòyè.",
+    "dutch": "Hij moet zijn huiswerk afmaken."
+   },
+   {
+    "japanese": "我们应该多锻炼身体。",
+    "romaji": "Wǒmen yīnggāi duō duànliàn shēntǐ.",
+    "dutch": "We zouden meer moeten sporten."
+   },
+   {
+    "japanese": "你必须马上去看医生。",
+    "romaji": "Nǐ bìxū mǎshàng qù kàn yīshēng.",
+    "dutch": "Je moet onmiddellijk naar de dokter gaan."
+   },
+   {
+    "japanese": "她应该每天喝八杯水。",
+    "romaji": "Tā yīnggāi měitiān hē bā bēi shuǐ.",
+    "dutch": "Ze zou elke dag acht glazen water moeten drinken."
+   },
+   {
+    "japanese": "我们必须遵守规则。",
+    "romaji": "Wǒmen bìxū zūnshǒu guīzé.",
+    "dutch": "We moeten de regels volgen."
+   }
+  ]
+ },
+ "zh-h3-ruguo": {
+  "naam": "Gebruik van '如果...就' in het Mandarijn",
+  "tagline": "Leer hoe je voorwaardelijke zinnen vormt met 'als' in het Mandarijn.",
+  "niveau": "basis",
+  "kernregel": "Het patroon '如果...就' wordt gebruikt om voorwaardelijke zinnen te maken, vergelijkbaar met 'als...dan' in het Nederlands. '如果' betekent 'als' en introduceert de voorwaarde, terwijl '就' betekent 'dan' en het gevolg aangeeft.",
+  "patroon": "如果 + [voorwaarde] + 就 + [gevolg]",
+  "uitleg": "In het Mandarijn gebruik je '如果...就' om een voorwaardelijke relatie tussen twee gebeurtenissen of situaties aan te geven. '如果' (rúguǒ) betekent 'als' en wordt gebruikt om de voorwaarde in te leiden. '就' (jiù) betekent 'dan' en volgt op de voorwaarde om het resultaat of de actie aan te geven die volgt als de voorwaarde wordt vervuld. Dit patroon is vergelijkbaar met de Nederlandse constructie 'als...dan', maar in het Mandarijn is het gebruik van '就' optioneel, hoewel het vaak wordt gebruikt om de zin vloeiender te maken. Het patroon is flexibel en kan in verschillende contexten worden gebruikt, zoals in dagelijkse gesprekken, instructies en zelfs in formele situaties.",
+  "opbouw": [
+   {
+    "element": "如果",
+    "rol": "Introduceert de voorwaarde",
+    "voorbeeld": "如果下雨 (rúguǒ xiàyǔ) - als het regent"
+   },
+   {
+    "element": "[voorwaarde]",
+    "rol": "De situatie of gebeurtenis die moet plaatsvinden",
+    "voorbeeld": "你去 (nǐ qù) - jij gaat"
+   },
+   {
+    "element": "就",
+    "rol": "Introduceert het gevolg",
+    "voorbeeld": "就打电话 (jiù dǎ diànhuà) - dan bel ik"
+   },
+   {
+    "element": "[gevolg]",
+    "rol": "De actie of situatie die volgt",
+    "voorbeeld": "我不去 (wǒ bù qù) - ik ga niet"
+   }
+  ],
+  "tips": [
+   "Gebruik '如果' aan het begin van de zin om de voorwaarde duidelijk te maken.",
+   "Hoewel '就' optioneel is, maakt het de zin vaak duidelijker en vloeiender.",
+   "Probeer '如果' en '就' samen te gebruiken om de voorwaardelijke relatie te versterken.",
+   "Oefen met het maken van zinnen door verschillende voorwaarden en gevolgen te combineren."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten '就' te gebruiken, wat de zin minder vloeiend maakt. Correctie: Voeg '就' toe na de voorwaarde.",
+   "Het gebruik van '如果' zonder een duidelijke voorwaarde. Correctie: Zorg ervoor dat de voorwaarde duidelijk en specifiek is.",
+   "Verkeerde volgorde van '如果' en '就'. Correctie: Begin altijd met '如果' voor de voorwaarde en gebruik '就' voor het gevolg."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "如果你累了，就休息一下。",
+    "romaji": "Rúguǒ nǐ lèi le, jiù xiūxi yīxià.",
+    "dutch": "Als je moe bent, rust dan even uit."
+   },
+   {
+    "japanese": "如果他来，我就告诉你。",
+    "romaji": "Rúguǒ tā lái, wǒ jiù gàosù nǐ.",
+    "dutch": "Als hij komt, dan vertel ik het je."
+   },
+   {
+    "japanese": "如果今天下雨，我们就不去公园。",
+    "romaji": "Rúguǒ jīntiān xiàyǔ, wǒmen jiù bù qù gōngyuán.",
+    "dutch": "Als het vandaag regent, gaan we niet naar het park."
+   },
+   {
+    "japanese": "如果你喜欢，就买吧。",
+    "romaji": "Rúguǒ nǐ xǐhuān, jiù mǎi ba.",
+    "dutch": "Als je het leuk vindt, koop het dan."
+   },
+   {
+    "japanese": "如果你有时间，就来我家。",
+    "romaji": "Rúguǒ nǐ yǒu shíjiān, jiù lái wǒ jiā.",
+    "dutch": "Als je tijd hebt, kom dan naar mijn huis."
+   },
+   {
+    "japanese": "如果他不想去，就别强迫他。",
+    "romaji": "Rúguǒ tā bù xiǎng qù, jiù bié qiǎngpò tā.",
+    "dutch": "Als hij niet wil gaan, dwing hem dan niet."
+   }
+  ]
+ },
+ "zh-h3-keneng": {
+  "naam": "Mandarijnse Grammatica: 可能补语 (Potentieel Complement)",
+  "tagline": "Ontdek hoe je mogelijkheden en potenties uitdrukt in het Mandarijn.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het potentieel complement in het Mandarijn wordt gebruikt om de mogelijkheid of onmogelijkheid van een actie uit te drukken. Het wordt vaak gevormd door een werkwoord te combineren met 得 (de) of 不 (bu), afhankelijk van of de actie mogelijk is of niet.",
+  "patroon": "[onderwerp] + [werkwoord] + 得/不 + [complement]",
+  "uitleg": "In het Mandarijn gebruik je het potentieel complement om te zeggen of iets kan of niet kan gebeuren. Dit patroon is vergelijkbaar met het Nederlandse 'kunnen' of 'niet kunnen'. Het werkwoord wordt gevolgd door 得 (de) als de actie mogelijk is, of 不 (bu) als de actie niet mogelijk is. Dit patroon is nuttig in situaties waar je de haalbaarheid van een actie wilt bespreken. Bijvoorbeeld, '我吃得完' (wǒ chī de wán) betekent 'Ik kan het opeten', terwijl '我吃不完' (wǒ chī bù wán) betekent 'Ik kan het niet opeten'.",
+  "opbouw": [
+   {
+    "element": "[onderwerp]",
+    "rol": "Het onderwerp van de zin, degene die de actie uitvoert.",
+    "voorbeeld": "我 (wǒ) - ik"
+   },
+   {
+    "element": "[werkwoord]",
+    "rol": "Het werkwoord dat de actie beschrijft.",
+    "voorbeeld": "吃 (chī) - eten"
+   },
+   {
+    "element": "得 (de)",
+    "rol": "Geeft aan dat de actie mogelijk is.",
+    "voorbeeld": "吃得完 (chī de wán) - kan opeten"
+   },
+   {
+    "element": "不 (bu)",
+    "rol": "Geeft aan dat de actie niet mogelijk is.",
+    "voorbeeld": "吃不完 (chī bù wán) - kan niet opeten"
+   },
+   {
+    "element": "[complement]",
+    "rol": "Het resultaat of de voltooiing van de actie.",
+    "voorbeeld": "完 (wán) - afmaken"
+   }
+  ],
+  "tips": [
+   "Onthoud dat 得 (de) en 不 (bu) direct na het werkwoord komen om mogelijkheid of onmogelijkheid aan te geven.",
+   "Gebruik 得 (de) voor positieve mogelijkheden en 不 (bu) voor negatieve mogelijkheden.",
+   "Het complement geeft vaak een resultaat of voltooiing aan, zoals 完 (wán) voor 'afmaken'.",
+   "Oefen met verschillende werkwoorden en complementen om vertrouwd te raken met de structuur."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 得 (de) en 不 (bu); zorg ervoor dat je de juiste gebruikt afhankelijk van de mogelijkheid.",
+   "Vergeten het complement toe te voegen, wat leidt tot onvolledige zinnen.",
+   "Het gebruik van 得 (de) of 不 (bu) zonder een duidelijk complement, wat de zin betekenisloos maakt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "他跑得快",
+    "romaji": "tā pǎo de kuài",
+    "dutch": "Hij kan snel rennen."
+   },
+   {
+    "japanese": "我看不懂",
+    "romaji": "wǒ kàn bù dǒng",
+    "dutch": "Ik kan het niet begrijpen."
+   },
+   {
+    "japanese": "你听得见吗？",
+    "romaji": "nǐ tīng de jiàn ma?",
+    "dutch": "Kun je het horen?"
+   },
+   {
+    "japanese": "这本书我读不完",
+    "romaji": "zhè běn shū wǒ dú bù wán",
+    "dutch": "Dit boek kan ik niet uitlezen."
+   },
+   {
+    "japanese": "我们做得好",
+    "romaji": "wǒmen zuò de hǎo",
+    "dutch": "Wij kunnen het goed doen."
+   },
+   {
+    "japanese": "他写不完作业",
+    "romaji": "tā xiě bù wán zuòyè",
+    "dutch": "Hij kan zijn huiswerk niet afmaken."
+   }
+  ]
+ }
+}

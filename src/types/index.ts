@@ -57,6 +57,10 @@ export interface WordBreakdown {
   meaning: string;
 }
 
+// Thema-groepen: "onderweg" = transactionele reissituaties (ook in demo),
+// "dagelijks" = gespreksthema's/woordvelden (alleen ingelogd).
+export type CategoryGroup = "onderweg" | "dagelijks";
+
 export interface Category {
   id: string;
   name: string;
@@ -64,6 +68,7 @@ export interface Category {
   color: string;      // Tailwind bg class
   accentColor: string; // Tailwind text class
   description: string;
+  group: CategoryGroup;
 }
 
 // ─── Ask Now ────────────────────────────────────────────────────────────────

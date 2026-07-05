@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import GrammarLessonBody from "@/components/grammar/GrammarLessonBody";
 import { useGrammarModules, GrammarModuleDetail } from "@/hooks/useGrammarModules";
+import { getStaticLesson } from "@/data/grammarLessons";
 import { useGrammarProgress } from "@/hooks/useGrammarProgress";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { getLanguage } from "@/data/languages";
@@ -34,7 +35,11 @@ export function LessonView({ topic, level, language, done, onToggle, onBack }: L
     const load = async () => {
       setLoading(true);
       setError(false);
-      // Zelfde cache als "Ontdekt in jouw zinnen": detail_{lang}_{naam}.
+      // 1. Voorgegenereerde les uit de statische bundel — direct, geen AI-call.
+      const bundled = await getStaticLesson(language, topic.id);
+      if (bundled && !cancelled) { setDetail(bundled); setLoading(false); return; }
+
+      // 2. Zelfde cache als "Ontdekt in jouw zinnen": detail_{lang}_{naam}.
       const cached = await getModuleDetail(topic.naam, language).catch(() => null);
       if (cached && !cancelled) { setDetail(cached); setLoading(false); return; }
 

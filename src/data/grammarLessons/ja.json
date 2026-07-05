@@ -1,0 +1,2711 @@
+{
+ "ja-n5-desu": {
+  "naam": "Het gebruik van です en だ",
+  "tagline": "Leer hoe je beleefdheid en informele toon in het Japans uitdrukt.",
+  "niveau": "basis",
+  "kernregel": "In het Japans gebruik je です om beleefdheid uit te drukken en だ voor een informele toon. Beide woorden worden gebruikt om een zin af te sluiten en geven aan dat de zin een bevestigende uitspraak is.",
+  "patroon": "[onderwerp] + は + [bijvoeglijk naamwoord/zelfstandig naamwoord] + です/だ",
+  "uitleg": "In het Japans zijn です en だ koppelwerkwoorden die aan het einde van een zin worden geplaatst om een uitspraak te bevestigen. です wordt gebruikt in formele of beleefde situaties, zoals wanneer je met onbekenden of superieuren spreekt. Het is vergelijkbaar met het Nederlandse 'is' in de zin 'Het is een kat.' Aan de andere kant wordt だ gebruikt in informele situaties, zoals wanneer je met vrienden of familie spreekt. Het is belangrijk om de juiste vorm te kiezen op basis van de sociale context, omdat het gebruik van だ in een formele situatie als onbeleefd kan worden ervaren.",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "Het onderwerp van de zin, vaak gevolgd door het partikel は.",
+    "voorbeeld": "ねこ (neko) - kat"
+   },
+   {
+    "element": "は",
+    "rol": "Partikel dat het onderwerp van de zin markeert.",
+    "voorbeeld": "は (wa)"
+   },
+   {
+    "element": "bijvoeglijk naamwoord/zelfstandig naamwoord",
+    "rol": "Het woord dat het onderwerp beschrijft of identificeert.",
+    "voorbeeld": "かわいい (kawaii) - schattig"
+   },
+   {
+    "element": "です",
+    "rol": "Beleefd koppelwerkwoord dat de zin afsluit.",
+    "voorbeeld": "です (desu)"
+   },
+   {
+    "element": "だ",
+    "rol": "Informeel koppelwerkwoord dat de zin afsluit.",
+    "voorbeeld": "だ (da)"
+   }
+  ],
+  "tips": [
+   "Gebruik です in formele situaties of wanneer je beleefd wilt zijn.",
+   "Gebruik だ in informele situaties, zoals met vrienden of familie.",
+   "Onthoud dat だ vaak wordt weggelaten in informele gesprekken, maar nog steeds impliciet is.",
+   "Let op de sociale context om te bepalen welke vorm je moet gebruiken."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van だ in een formele situatie kan als onbeleefd worden ervaren. Gebruik in plaats daarvan です.",
+   "Het weglaten van です in een formele situatie kan de zin onvolledig maken. Zorg ervoor dat je de zin correct afsluit.",
+   "Het gebruik van です in een zeer informele situatie kan te formeel overkomen. Gebruik だ of laat het weg als dat gepast is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "これは本です。",
+    "romaji": "Kore wa hon desu.",
+    "dutch": "Dit is een boek."
+   },
+   {
+    "japanese": "彼は学生だ。",
+    "romaji": "Kare wa gakusei da.",
+    "dutch": "Hij is een student."
+   },
+   {
+    "japanese": "あの人は先生です。",
+    "romaji": "Ano hito wa sensei desu.",
+    "dutch": "Die persoon is een leraar."
+   },
+   {
+    "japanese": "今日は暑いだ。",
+    "romaji": "Kyou wa atsui da.",
+    "dutch": "Vandaag is het warm."
+   },
+   {
+    "japanese": "彼女は優しいです。",
+    "romaji": "Kanojo wa yasashii desu.",
+    "dutch": "Zij is vriendelijk."
+   },
+   {
+    "japanese": "それは面白いだ。",
+    "romaji": "Sore wa omoshiroi da.",
+    "dutch": "Dat is interessant."
+   }
+  ]
+ },
+ "ja-n5-wa": {
+  "naam": "Het gebruik van は als onderwerpmarkeerder",
+  "tagline": "Leer hoe je het onderwerp van een zin in het Japans markeert met は.",
+  "niveau": "basis",
+  "kernregel": "In de Japanse taal wordt het partikel は gebruikt om het onderwerp van een zin aan te geven. Het markeert wat of wie het onderwerp is waarover de zin gaat, en het wordt uitgesproken als 'wa' in plaats van 'ha'.",
+  "patroon": "[onderwerp] + は + [rest van de zin]",
+  "uitleg": "Het partikel は wordt gebruikt om het onderwerp van een zin te markeren. Dit is vergelijkbaar met het gebruik van het onderwerp in Nederlandse zinnen, maar in het Japans wordt het expliciet gemarkeerd met は. Het onderwerp is vaak de focus van de zin en は helpt om deze focus te benadrukken. In tegenstelling tot het Nederlands, waar de volgorde van woorden vaak het onderwerp aangeeft, kan het Japanse は helpen om duidelijkheid te scheppen, vooral in complexere zinnen. Het is belangrijk op te merken dat は niet altijd het grammaticale onderwerp van de zin markeert, maar eerder het onderwerp van de discussie of de focus van de zin.",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "Het onderwerp van de zin dat je wilt benadrukken of bespreken.",
+    "voorbeeld": "Watashi (ik)"
+   },
+   {
+    "element": "は",
+    "rol": "Het partikel dat het onderwerp van de zin markeert.",
+    "voorbeeld": "は"
+   },
+   {
+    "element": "rest van de zin",
+    "rol": "De informatie of actie die betrekking heeft op het onderwerp.",
+    "voorbeeld": "gakusei desu (ben een student)"
+   }
+  ],
+  "tips": [
+   "Onthoud dat は wordt uitgesproken als 'wa', niet als 'ha'.",
+   "Gebruik は om het onderwerp van je zin te markeren, vooral als je het onderwerp wilt benadrukken.",
+   "In informele gesprekken kan het onderwerp soms worden weggelaten als het uit de context duidelijk is.",
+   "Let op dat は niet altijd het grammaticale onderwerp markeert, maar eerder de focus van de zin."
+  ],
+  "veelgemaaktefouten": [
+   "Het verwarren van は met が, waarbij は de focus markeert en が het grammaticale onderwerp.",
+   "Het vergeten van de juiste uitspraak van は als 'wa'.",
+   "Het overmatig gebruik van は in situaties waar de context het onderwerp al duidelijk maakt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "私は学生です。",
+    "romaji": "Watashi wa gakusei desu.",
+    "dutch": "Ik ben een student."
+   },
+   {
+    "japanese": "犬はかわいいです。",
+    "romaji": "Inu wa kawaii desu.",
+    "dutch": "De hond is schattig."
+   },
+   {
+    "japanese": "今日は暑いです。",
+    "romaji": "Kyou wa atsui desu.",
+    "dutch": "Vandaag is het warm."
+   },
+   {
+    "japanese": "彼は医者です。",
+    "romaji": "Kare wa isha desu.",
+    "dutch": "Hij is een dokter."
+   },
+   {
+    "japanese": "この本は面白いです。",
+    "romaji": "Kono hon wa omoshiroi desu.",
+    "dutch": "Dit boek is interessant."
+   },
+   {
+    "japanese": "日本は美しい国です。",
+    "romaji": "Nihon wa utsukushii kuni desu.",
+    "dutch": "Japan is een mooi land."
+   }
+  ]
+ },
+ "ja-n5-mo": {
+  "naam": "Gebruik van も (ook) in het Japans",
+  "tagline": "Leer hoe je 'ook' in het Japans gebruikt met も",
+  "niveau": "basis",
+  "kernregel": "Het partikel も wordt gebruikt om aan te geven dat een bepaalde eigenschap of handeling ook van toepassing is op een ander onderwerp of object. Het vervangt vaak het partikel は of が om een overeenkomst of toevoeging te benadrukken.",
+  "patroon": "[onderwerp] + も + [werkwoord of bijvoeglijk naamwoord]",
+  "uitleg": "In het Japans gebruik je も om aan te geven dat iets hetzelfde is voor meerdere onderwerpen of objecten, vergelijkbaar met 'ook' in het Nederlands. Het partikel も vervangt vaak andere partikels zoals は (onderwerp) of が (onderwerp) om te benadrukken dat de genoemde eigenschap of handeling ook geldt voor het nieuwe onderwerp. Dit patroon is nuttig in gesprekken om overeenkomsten te benadrukken of om extra informatie toe te voegen zonder het onderwerp te herhalen. Bijvoorbeeld, als je zegt '私は学生です' (Watashi wa gakusei desu, 'Ik ben een student'), en je wilt zeggen dat je vriend ook een student is, zeg je '友達も学生です' (Tomodachi mo gakusei desu, 'Mijn vriend is ook een student').",
+  "opbouw": [
+   {
+    "element": "onderwerp",
+    "rol": "Het onderwerp van de zin dat ook de eigenschap of handeling heeft.",
+    "voorbeeld": "友達 (Tomodachi, vriend)"
+   },
+   {
+    "element": "も",
+    "rol": "Het partikel dat 'ook' betekent en aangeeft dat de eigenschap of handeling ook op het onderwerp van toepassing is.",
+    "voorbeeld": "も (mo)"
+   },
+   {
+    "element": "werkwoord of bijvoeglijk naamwoord",
+    "rol": "De eigenschap of handeling die ook van toepassing is op het onderwerp.",
+    "voorbeeld": "学生です (gakusei desu, is een student)"
+   }
+  ],
+  "tips": [
+   "Gebruik も in plaats van は of が om aan te geven dat iets ook geldt voor een ander onderwerp.",
+   "Let op de context: も kan ook gebruikt worden om een negatieve overeenkomst aan te geven, zoals in 'Ik heb ook geen geld'.",
+   "Gebruik も om overeenkomsten te benadrukken in gesprekken, wat helpt om de communicatie vloeiender te maken.",
+   "Vergeet niet dat も altijd na het onderwerp komt dat je wilt benadrukken."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van も naast は of が: Correct is '友達も学生です' in plaats van '友達はも学生です'.",
+   "Vergeten om も te gebruiken bij meerdere onderwerpen: Als je meerdere onderwerpen wilt noemen die dezelfde eigenschap delen, vergeet dan niet om も toe te voegen aan elk onderwerp."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "私も行きます。",
+    "romaji": "Watashi mo ikimasu.",
+    "dutch": "Ik ga ook."
+   },
+   {
+    "japanese": "彼も来ました。",
+    "romaji": "Kare mo kimashita.",
+    "dutch": "Hij kwam ook."
+   },
+   {
+    "japanese": "猫も好きです。",
+    "romaji": "Neko mo suki desu.",
+    "dutch": "Ik hou ook van katten."
+   },
+   {
+    "japanese": "彼女も日本語を話します。",
+    "romaji": "Kanojo mo nihongo o hanashimasu.",
+    "dutch": "Zij spreekt ook Japans."
+   },
+   {
+    "japanese": "私たちも行きたい。",
+    "romaji": "Watashitachi mo ikitai.",
+    "dutch": "Wij willen ook gaan."
+   },
+   {
+    "japanese": "彼もそれを知っています。",
+    "romaji": "Kare mo sore o shitteimasu.",
+    "dutch": "Hij weet dat ook."
+   }
+  ]
+ },
+ "ja-n5-wo": {
+  "naam": "Het gebruik van を (wo) als lijdend voorwerp",
+  "tagline": "Leer hoe je het lijdend voorwerp in een Japanse zin correct markeert.",
+  "niveau": "basis",
+  "kernregel": "In het Japans wordt het partikel を (wo) gebruikt om het lijdend voorwerp in een zin aan te geven. Het lijdend voorwerp is het element dat de actie van het werkwoord ondergaat.",
+  "patroon": "[zelfstandig naamwoord] + を + [werkwoord]",
+  "uitleg": "In het Japans markeert het partikel を (wo) het lijdend voorwerp van een zin, vergelijkbaar met het gebruik van 'de' of 'het' in het Nederlands om het object van de actie aan te geven. Terwijl het Nederlands vaak de volgorde van woorden gebruikt om de rol van een woord in de zin aan te geven, gebruikt het Japans partikels zoals を om de functie van een woord te markeren. Het partikel を wordt altijd direct na het zelfstandig naamwoord geplaatst dat het lijdend voorwerp is. Hoewel het in het Nederlands niet altijd nodig is om een lijdend voorwerp expliciet te markeren, is dit in het Japans essentieel voor de duidelijkheid van de zin.",
+  "opbouw": [
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het object dat de actie ondergaat.",
+    "voorbeeld": "りんご (ringo) - appel"
+   },
+   {
+    "element": "を (wo)",
+    "rol": "Partikel dat het lijdend voorwerp markeert.",
+    "voorbeeld": "を"
+   },
+   {
+    "element": "werkwoord",
+    "rol": "Geeft de actie aan die op het lijdend voorwerp wordt uitgevoerd.",
+    "voorbeeld": "食べます (tabemasu) - eten"
+   }
+  ],
+  "tips": [
+   "Onthoud dat を altijd direct na het zelfstandig naamwoord komt dat als lijdend voorwerp fungeert.",
+   "In gesproken Japans wordt を vaak uitgesproken als 'o'.",
+   "Gebruik を alleen voor lijdende voorwerpen, niet voor onderwerpen of andere zinsdelen.",
+   "Oefen met eenvoudige zinnen om het gebruik van を te automatiseren."
+  ],
+  "veelgemaaktefouten": [
+   "Het partikel を weglaten: Correctie - Zorg ervoor dat を altijd wordt gebruikt om het lijdend voorwerp te markeren.",
+   "を verwarren met andere partikels zoals は (wa) of が (ga): Correctie - Onthoud dat を specifiek is voor lijdende voorwerpen, terwijl は en が andere functies hebben.",
+   "Het lijdend voorwerp en を in de verkeerde volgorde plaatsen: Correctie - Het lijdend voorwerp moet altijd vóór を komen."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "本を読みます。",
+    "romaji": "Hon o yomimasu.",
+    "dutch": "Ik lees een boek."
+   },
+   {
+    "japanese": "映画を見ます。",
+    "romaji": "Eiga o mimasu.",
+    "dutch": "Ik kijk een film."
+   },
+   {
+    "japanese": "手紙を書きます。",
+    "romaji": "Tegami o kakimasu.",
+    "dutch": "Ik schrijf een brief."
+   },
+   {
+    "japanese": "音楽を聞きます。",
+    "romaji": "Ongaku o kikimasu.",
+    "dutch": "Ik luister naar muziek."
+   },
+   {
+    "japanese": "コーヒーを飲みます。",
+    "romaji": "Koohii o nomimasu.",
+    "dutch": "Ik drink koffie."
+   },
+   {
+    "japanese": "写真を撮ります。",
+    "romaji": "Shashin o torimasu.",
+    "dutch": "Ik maak een foto."
+   }
+  ]
+ },
+ "ja-n5-ni-e": {
+  "naam": "Gebruik van に en へ voor Richting",
+  "tagline": "Leer hoe je richtingen aangeeft in het Japans met に en へ.",
+  "niveau": "basis",
+  "kernregel": "In het Japans worden de partikels に (ni) en へ (e) gebruikt om richting aan te geven. Hoewel beide partikels vaak als 'naar' worden vertaald, hebben ze subtiele verschillen in gebruik en betekenis.",
+  "patroon": "[plaats] + に/へ + [werkwoord van beweging]",
+  "uitleg": "De partikels に (ni) en へ (e) worden gebruikt om de richting van een beweging aan te geven. に wordt gebruikt wanneer de bestemming of het eindpunt van de beweging belangrijk is, terwijl へ meer de nadruk legt op de beweging zelf, zonder specifieke focus op het eindpunt. In het Nederlands vertalen we beide vaak als 'naar', maar in het Japans is het verschil belangrijk. Bijvoorbeeld, als je zegt '学校に行きます' (gakkou ni ikimasu), betekent dit 'ik ga naar school', met de nadruk op het feit dat school je bestemming is. Terwijl '学校へ行きます' (gakkou e ikimasu) ook 'ik ga naar school' betekent, maar meer de nadruk legt op de actie van het gaan.",
+  "opbouw": [
+   {
+    "element": "plaats",
+    "rol": "Geeft de bestemming of richting aan",
+    "voorbeeld": "学校 (gakkou) - school"
+   },
+   {
+    "element": "に",
+    "rol": "Partikel dat de bestemming benadrukt",
+    "voorbeeld": "学校に (gakkou ni)"
+   },
+   {
+    "element": "へ",
+    "rol": "Partikel dat de beweging benadrukt",
+    "voorbeeld": "学校へ (gakkou e)"
+   },
+   {
+    "element": "werkwoord van beweging",
+    "rol": "Geeft de actie van verplaatsing aan",
+    "voorbeeld": "行きます (ikimasu) - gaan"
+   }
+  ],
+  "tips": [
+   "Gebruik に als je de nadruk wilt leggen op de bestemming waar je naartoe gaat.",
+   "Gebruik へ als je de nadruk wilt leggen op de beweging of reis zelf.",
+   "Onthoud dat に ook voor andere functies gebruikt kan worden, zoals tijdsaanduidingen, maar in dit geval focus je op richting.",
+   "Bij twijfel kun je vaak beide gebruiken, maar let op de subtiele betekenisverschillen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van に en へ in contexten waar de bestemming belangrijk is. Correctie: Gebruik に voor duidelijke bestemmingen.",
+   "Gebruik van へ wanneer de nadruk op het eindpunt moet liggen. Correctie: Gebruik に als de bestemming belangrijk is.",
+   "Vergeten van het werkwoord van beweging na に of へ. Correctie: Voeg altijd een werkwoord van beweging toe, zoals 行きます (ikimasu)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "公園に行きます。",
+    "romaji": "kouen ni ikimasu.",
+    "dutch": "Ik ga naar het park."
+   },
+   {
+    "japanese": "駅へ歩きます。",
+    "romaji": "eki e arukimasu.",
+    "dutch": "Ik loop naar het station."
+   },
+   {
+    "japanese": "日本に旅行します。",
+    "romaji": "nihon ni ryokou shimasu.",
+    "dutch": "Ik reis naar Japan."
+   },
+   {
+    "japanese": "友達の家へ行きます。",
+    "romaji": "tomodachi no ie e ikimasu.",
+    "dutch": "Ik ga naar het huis van een vriend."
+   },
+   {
+    "japanese": "図書館に行きます。",
+    "romaji": "toshokan ni ikimasu.",
+    "dutch": "Ik ga naar de bibliotheek."
+   },
+   {
+    "japanese": "海へ行きます。",
+    "romaji": "umi e ikimasu.",
+    "dutch": "Ik ga naar de zee."
+   }
+  ]
+ },
+ "ja-n5-de": {
+  "naam": "Gebruik van で (plaats・middel)",
+  "tagline": "Leer hoe je で gebruikt om plaatsen en middelen aan te duiden.",
+  "niveau": "basis",
+  "kernregel": "Het partikel で wordt gebruikt om aan te geven waar een actie plaatsvindt of welk middel wordt gebruikt om een actie uit te voeren. Het is essentieel voor het beschrijven van de context van een handeling in een zin.",
+  "patroon": "[plaats] + で + [handeling] / [middel] + で + [handeling]",
+  "uitleg": "In het Japans wordt het partikel で gebruikt om de plaats van een handeling of het middel waarmee een handeling wordt uitgevoerd aan te geven. Dit partikel is vergelijkbaar met het Nederlandse 'in' voor plaatsen en 'met' voor middelen. Bijvoorbeeld, als je zegt 'Ik lees in de bibliotheek', gebruik je で om aan te geven dat de actie van lezen in de bibliotheek plaatsvindt. Evenzo, als je zegt 'Ik ga met de trein', gebruik je で om aan te geven dat de trein het middel is waarmee je reist. Het is belangrijk om で niet te verwarren met に, dat vaak wordt gebruikt om een bestemming of tijd aan te geven.",
+  "opbouw": [
+   {
+    "element": "plaats",
+    "rol": "Geeft de locatie aan waar de actie plaatsvindt.",
+    "voorbeeld": "としょかん (toshokan) - bibliotheek"
+   },
+   {
+    "element": "middel",
+    "rol": "Geeft het middel aan waarmee de actie wordt uitgevoerd.",
+    "voorbeeld": "でんしゃ (densha) - trein"
+   },
+   {
+    "element": "で",
+    "rol": "Partikel dat de plaats of het middel markeert.",
+    "voorbeeld": "で (de)"
+   },
+   {
+    "element": "handeling",
+    "rol": "De actie die wordt uitgevoerd.",
+    "voorbeeld": "よむ (yomu) - lezen"
+   }
+  ],
+  "tips": [
+   "Gebruik で voor plaatsen waar een actie plaatsvindt, niet voor bestemmingen.",
+   "Gebruik で om het middel of instrument aan te geven waarmee iets wordt gedaan.",
+   "Verwar で niet met に; で is voor de context van de actie, に is voor richting of tijd.",
+   "Onthoud dat で vaak 'met' of 'in' betekent in het Nederlands, afhankelijk van de context."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van に in plaats van で voor plaatsen: Correctie: としょかんでほんをよみます (Toshokan de hon o yomimasu) in plaats van としょかんにほんをよみます.",
+   "Verwarring tussen middel en plaats: Correctie: でんしゃでいきます (Densha de ikimasu) in plaats van でんしゃにいきます.",
+   "Verkeerd gebruik van で bij tijdsaanduidingen: Correctie: しちじにおきます (Shichiji ni okimasu) in plaats van しちじでおきます."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "こうえんでさんぽします。",
+    "romaji": "Kōen de sanpo shimasu.",
+    "dutch": "Ik maak een wandeling in het park."
+   },
+   {
+    "japanese": "くるまでかいしゃにいきます。",
+    "romaji": "Kuruma de kaisha ni ikimasu.",
+    "dutch": "Ik ga met de auto naar het werk."
+   },
+   {
+    "japanese": "レストランでたべます。",
+    "romaji": "Resutoran de tabemasu.",
+    "dutch": "Ik eet in het restaurant."
+   },
+   {
+    "japanese": "はしでごはんをたべます。",
+    "romaji": "Hashi de gohan o tabemasu.",
+    "dutch": "Ik eet rijst met stokjes."
+   },
+   {
+    "japanese": "コンピューターでしごとをします。",
+    "romaji": "Konpyūtā de shigoto o shimasu.",
+    "dutch": "Ik werk op de computer."
+   },
+   {
+    "japanese": "えきでともだちにあいます。",
+    "romaji": "Eki de tomodachi ni aimasu.",
+    "dutch": "Ik ontmoet een vriend op het station."
+   }
+  ]
+ },
+ "ja-n5-no": {
+  "naam": "Het bezittelijke partikel の",
+  "tagline": "Leer hoe je bezit en relaties aangeeft met の in het Japans.",
+  "niveau": "basis",
+  "kernregel": "Het partikel の wordt gebruikt om bezit of een relatie tussen twee zelfstandige naamwoorden aan te geven. Het fungeert als een verbindingswoord dat de eigenaar of de categorie van een object specificeert.",
+  "patroon": "[eigenaar] の [bezit]",
+  "uitleg": "In het Japans wordt het partikel の gebruikt om een bezittelijke relatie aan te geven, vergelijkbaar met 'van' in het Nederlands. Het wordt geplaatst tussen twee zelfstandige naamwoorden, waarbij het eerste naamwoord de eigenaar of categorie aanduidt en het tweede naamwoord het bezit of de specifieke entiteit is. Bijvoorbeeld, 'watashi no hon' betekent 'mijn boek', waarbij 'watashi' (ik) de eigenaar is en 'hon' (boek) het bezit. Dit patroon is zeer flexibel en kan ook worden gebruikt om bredere relaties aan te geven, zoals 'Nihon no kuruma' voor 'Japanse auto'.",
+  "opbouw": [
+   {
+    "element": "eigenaar",
+    "rol": "Geeft aan wie of wat het bezit heeft.",
+    "voorbeeld": "watashi (ik)"
+   },
+   {
+    "element": "の",
+    "rol": "Verbindt de eigenaar met het bezit.",
+    "voorbeeld": "の"
+   },
+   {
+    "element": "bezit",
+    "rol": "Het object of concept dat eigendom is van de eigenaar.",
+    "voorbeeld": "hon (boek)"
+   }
+  ],
+  "tips": [
+   "Gebruik の om duidelijk te maken wie de eigenaar is van een object.",
+   "Onthoud dat の ook kan worden gebruikt om bredere relaties aan te geven, niet alleen strikt bezit.",
+   "Probeer の te gebruiken in zinnen om te oefenen met het aangeven van bezit.",
+   "Let op de volgorde: eerst de eigenaar, dan の, en dan het bezit."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde volgorde: 'hon no watashi' in plaats van 'watashi no hon'. Correctie: Zorg ervoor dat de eigenaar altijd voor の komt.",
+   "Verwarring met andere partikels: の verwarren met が of は. Correctie: Onthoud dat の specifiek voor bezit en relaties is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "私の車",
+    "romaji": "watashi no kuruma",
+    "dutch": "mijn auto"
+   },
+   {
+    "japanese": "彼の猫",
+    "romaji": "kare no neko",
+    "dutch": "zijn kat"
+   },
+   {
+    "japanese": "日本の文化",
+    "romaji": "Nihon no bunka",
+    "dutch": "Japanse cultuur"
+   },
+   {
+    "japanese": "先生の本",
+    "romaji": "sensei no hon",
+    "dutch": "het boek van de leraar"
+   },
+   {
+    "japanese": "友達の家",
+    "romaji": "tomodachi no ie",
+    "dutch": "het huis van de vriend"
+   },
+   {
+    "japanese": "会社の名前",
+    "romaji": "kaisha no namae",
+    "dutch": "de naam van het bedrijf"
+   }
+  ]
+ },
+ "ja-n5-ka": {
+  "naam": "Vraagpartikel か",
+  "tagline": "Leer hoe je vragen stelt in het Japans met het vraagpartikel か.",
+  "niveau": "basis",
+  "kernregel": "Het vraagpartikel か wordt gebruikt aan het einde van een zin om een vraag te vormen. Het is vergelijkbaar met het vraagteken in het Nederlands en verandert een bewering in een vraag.",
+  "patroon": "[zin] + か",
+  "uitleg": "In het Japans wordt het vraagpartikel か aan het einde van een zin toegevoegd om deze om te vormen tot een vraag. Dit is vergelijkbaar met het gebruik van een vraagteken in het Nederlands, maar in het Japans blijft de zinsstructuur verder hetzelfde. Het partikel か maakt het niet alleen mogelijk om ja/nee-vragen te stellen, maar kan ook worden gebruikt in combinatie met vraagwoorden zoals 何 (nani, wat) of 誰 (dare, wie) om meer specifieke vragen te stellen. In informele situaties kan het partikel か soms worden weggelaten, waarbij de intonatie van de spreker de vraag aanduidt.",
+  "opbouw": [
+   {
+    "element": "zin",
+    "rol": "De basiszin die je wilt omvormen tot een vraag.",
+    "voorbeeld": "あなたは学生です (Anata wa gakusei desu) - Jij bent een student."
+   },
+   {
+    "element": "か",
+    "rol": "Het vraagpartikel dat aan het einde van de zin wordt toegevoegd.",
+    "voorbeeld": "か"
+   }
+  ],
+  "tips": [
+   "Gebruik か aan het einde van een zin om deze in een vraag te veranderen.",
+   "Let op de intonatie, vooral in informele gesprekken waar か soms wordt weggelaten.",
+   "Combineer か met vraagwoorden voor meer specifieke vragen.",
+   "In formele situaties is het gebruik van か essentieel om beleefdheid te tonen."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten か toe te voegen aan het einde van de zin, waardoor het geen vraag wordt. Correctie: Vergeet niet か toe te voegen.",
+   "Verwarring tussen vraagwoorden en het vraagpartikel か. Correctie: Onthoud dat か altijd aan het einde van de zin komt.",
+   "Gebruik van か in informele situaties waar intonatie voldoende is. Correctie: In informele situaties kan か soms worden weggelaten."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "これは何ですか。",
+    "romaji": "Kore wa nan desu ka.",
+    "dutch": "Wat is dit?"
+   },
+   {
+    "japanese": "あなたは日本人ですか。",
+    "romaji": "Anata wa Nihonjin desu ka.",
+    "dutch": "Ben jij Japans?"
+   },
+   {
+    "japanese": "彼は先生ですか。",
+    "romaji": "Kare wa sensei desu ka.",
+    "dutch": "Is hij een leraar?"
+   },
+   {
+    "japanese": "明日は雨ですか。",
+    "romaji": "Ashita wa ame desu ka.",
+    "dutch": "Zal het morgen regenen?"
+   },
+   {
+    "japanese": "どこに行きますか。",
+    "romaji": "Doko ni ikimasu ka.",
+    "dutch": "Waar ga je naartoe?"
+   },
+   {
+    "japanese": "それは本当ですか。",
+    "romaji": "Sore wa hontou desu ka.",
+    "dutch": "Is dat waar?"
+   }
+  ]
+ },
+ "ja-n5-masu": {
+  "naam": "De ます-vorm in het Japans",
+  "tagline": "Leer hoe je beleefdheid toevoegt aan je Japanse zinnen met de ます-vorm.",
+  "niveau": "basis",
+  "kernregel": "De ます-vorm wordt gebruikt om werkwoorden beleefd te maken in het Japans. Het is essentieel voor formele gesprekken en wordt vaak gebruikt in situaties waar beleefdheid vereist is, zoals bij onbekenden of in professionele omgevingen.",
+  "patroon": "[werkwoordstam] + ます",
+  "uitleg": "In het Japans is beleefdheid een belangrijk aspect van de taal, en de ます-vorm is een van de meest voorkomende manieren om beleefdheid uit te drukken. Deze vorm wordt gebruikt voor werkwoorden in de tegenwoordige tijd en is vergelijkbaar met de Nederlandse beleefde vorm 'u' of 'jij' in formele contexten. Om de ます-vorm te maken, neem je de stam van het werkwoord en voeg je ます toe. Bijvoorbeeld, van het werkwoord 'taberu' (eten), wordt de stam 'tabe' en de ます-vorm 'tabemasu'. Deze vorm is niet alleen beleefd, maar ook neutraal qua tijd, wat betekent dat het zowel voor tegenwoordige als toekomstige acties kan worden gebruikt.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de 'ru' of 'u' eindiging.",
+    "voorbeeld": "tabe (van taberu)"
+   },
+   {
+    "element": "ます",
+    "rol": "Het beleefdheidscomponent dat aan de stam wordt toegevoegd.",
+    "voorbeeld": "masu"
+   }
+  ],
+  "tips": [
+   "Gebruik de ます-vorm altijd in formele situaties of wanneer je beleefd wilt zijn.",
+   "Oefen met het herkennen van de stam van werkwoorden om snel de ます-vorm te kunnen maken.",
+   "Onthoud dat de ます-vorm zowel voor tegenwoordige als toekomstige tijd gebruikt kan worden.",
+   "Luister naar native speakers om te horen hoe de ます-vorm in verschillende contexten wordt gebruikt."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de stam correct te identificeren, bijvoorbeeld 'nomu' wordt 'nomimasu', niet 'nomumasu'.",
+   "De ます-vorm gebruiken in informele situaties waar het niet nodig is, zoals met vrienden of familie."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "私は毎日コーヒーを飲みます。",
+    "romaji": "Watashi wa mainichi koohii o nomimasu.",
+    "dutch": "Ik drink elke dag koffie."
+   },
+   {
+    "japanese": "彼は毎朝ジョギングをします。",
+    "romaji": "Kare wa maiasa jogingu o shimasu.",
+    "dutch": "Hij gaat elke ochtend joggen."
+   },
+   {
+    "japanese": "明日映画を見ます。",
+    "romaji": "Ashita eiga o mimasu.",
+    "dutch": "Ik ga morgen een film kijken."
+   },
+   {
+    "japanese": "彼女は日本語を勉強します。",
+    "romaji": "Kanojo wa nihongo o benkyou shimasu.",
+    "dutch": "Zij studeert Japans."
+   },
+   {
+    "japanese": "私は毎晩本を読みます。",
+    "romaji": "Watashi wa maiban hon o yomimasu.",
+    "dutch": "Ik lees elke avond een boek."
+   },
+   {
+    "japanese": "彼らは週末に友達と会います。",
+    "romaji": "Karera wa shuumatsu ni tomodachi to aimasu.",
+    "dutch": "Zij ontmoeten vrienden in het weekend."
+   }
+  ]
+ },
+ "ja-n5-masen": {
+  "naam": "Negatieve en verleden tijdsvormen in het Japans",
+  "tagline": "Leer hoe je acties in de verleden tijd en ontkenning uitdrukt.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 'ません' wordt gebruikt om een werkwoord in de tegenwoordige tijd te ontkennen, terwijl 'ました' wordt gebruikt om een werkwoord in de verleden tijd te zetten. Beide vormen zijn beleefd en worden vaak gebruikt in formele situaties.",
+  "patroon": "[werkwoordstam] + ません / ました",
+  "uitleg": "In het Japans zijn er specifieke uitgangen voor werkwoorden om beleefdheid en tijd aan te geven. 'ません' is de negatieve vorm van een werkwoord in de tegenwoordige tijd en wordt gebruikt om beleefd te ontkennen. Bijvoorbeeld, 'たべません' betekent 'ik eet niet'. Aan de andere kant, 'ました' is de verleden tijdsvorm van een werkwoord en wordt gebruikt om aan te geven dat een actie in het verleden heeft plaatsgevonden. Bijvoorbeeld, 'たべました' betekent 'ik heb gegeten'. Deze vormen zijn essentieel voor het voeren van beleefde gesprekken in het Japans, vooral in formele contexten zoals zakelijke bijeenkomsten of gesprekken met onbekenden.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de 'ます' uitgang.",
+    "voorbeeld": "たべ (van たべます)"
+   },
+   {
+    "element": "ません",
+    "rol": "Negatieve uitgang voor tegenwoordige tijd, beleefd.",
+    "voorbeeld": "たべません (ik eet niet)"
+   },
+   {
+    "element": "ました",
+    "rol": "Uitgang voor verleden tijd, beleefd.",
+    "voorbeeld": "たべました (ik heb gegeten)"
+   }
+  ],
+  "tips": [
+   "Onthoud dat 'ません' altijd een ontkenning uitdrukt in de tegenwoordige tijd.",
+   "Gebruik 'ました' om beleefd te spreken over gebeurtenissen die al zijn gebeurd.",
+   "Oefen met verschillende werkwoordstammen om vertrouwd te raken met de vormen.",
+   "Let op de context waarin je deze vormen gebruikt; ze zijn beleefd en formeel."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 'ません' en 'ました'. Correctie: 'ません' is voor ontkenning, 'ました' voor verleden tijd.",
+   "Verkeerde werkwoordstam gebruiken. Correctie: Zorg ervoor dat je de juiste stam van het werkwoord gebruikt voordat je 'ません' of 'ました' toevoegt.",
+   "Gebruik van 'ません' voor verleden tijd. Correctie: Gebruik 'ませんでした' voor ontkenning in de verleden tijd."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "のみません",
+    "romaji": "nomimasen",
+    "dutch": "ik drink niet"
+   },
+   {
+    "japanese": "のみました",
+    "romaji": "nomimashita",
+    "dutch": "ik heb gedronken"
+   },
+   {
+    "japanese": "いきません",
+    "romaji": "ikimasen",
+    "dutch": "ik ga niet"
+   },
+   {
+    "japanese": "いきました",
+    "romaji": "ikimashita",
+    "dutch": "ik ben gegaan"
+   },
+   {
+    "japanese": "みません",
+    "romaji": "mimasen",
+    "dutch": "ik kijk niet"
+   },
+   {
+    "japanese": "みました",
+    "romaji": "mimashita",
+    "dutch": "ik heb gekeken"
+   }
+  ]
+ },
+ "ja-n5-i-adj": {
+  "naam": "い-bijvoeglijk naamwoord",
+  "tagline": "Leer hoe je beschrijvingen maakt met い-bijvoeglijke naamwoorden.",
+  "niveau": "basis",
+  "kernregel": "い-bijvoeglijke naamwoorden worden gebruikt om eigenschappen of toestanden van zelfstandige naamwoorden te beschrijven. Ze eindigen altijd op de klank 'い' en kunnen direct voor een zelfstandig naamwoord worden geplaatst of zelfstandig worden gebruikt.",
+  "patroon": "[い-bijvoeglijk naamwoord] + [zelfstandig naamwoord]",
+  "uitleg": "In het Japans zijn er twee hoofdtypen bijvoeglijke naamwoorden: い-bijvoeglijke naamwoorden en な-bijvoeglijke naamwoorden. い-bijvoeglijke naamwoorden eindigen altijd op 'い' en kunnen direct voor een zelfstandig naamwoord worden geplaatst om een eigenschap te beschrijven, zoals 'akai kuruma' (rode auto). Ze kunnen ook zelfstandig worden gebruikt, zoals in 'kono kuruma wa akai' (deze auto is rood). In tegenstelling tot Nederlandse bijvoeglijke naamwoorden, veranderen い-bijvoeglijke naamwoorden niet afhankelijk van het geslacht of aantal van het zelfstandig naamwoord.",
+  "opbouw": [
+   {
+    "element": "い-bijvoeglijk naamwoord",
+    "rol": "Geeft een eigenschap of toestand aan.",
+    "voorbeeld": "たかい (takai) - hoog/duur"
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het woord dat wordt beschreven door het bijvoeglijk naamwoord.",
+    "voorbeeld": "やま (yama) - berg"
+   }
+  ],
+  "tips": [
+   "Onthoud dat い-bijvoeglijke naamwoorden altijd eindigen op 'い'.",
+   "Ze kunnen zowel voor een zelfstandig naamwoord staan als zelfstandig gebruikt worden.",
+   "Bij het ontkennen van een い-bijvoeglijk naamwoord vervang je 'い' door 'くない'.",
+   "Bij het verleden tijd maken vervang je 'い' door 'かった'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van い-bijvoeglijke naamwoorden met な-bijvoeglijke naamwoorden. Correctie: Let op de eindklank 'い'.",
+   "Vergeten de 'い' te behouden bij het vervoegen. Correctie: Zorg ervoor dat je de juiste vervoeging toepast, zoals 'たかくない' voor 'niet hoog/duur'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "あたらしいほん",
+    "romaji": "atarashii hon",
+    "dutch": "nieuw boek"
+   },
+   {
+    "japanese": "ふるいえ",
+    "romaji": "furui ie",
+    "dutch": "oud huis"
+   },
+   {
+    "japanese": "おおきいねこ",
+    "romaji": "ookii neko",
+    "dutch": "grote kat"
+   },
+   {
+    "japanese": "ちいさいいぬ",
+    "romaji": "chiisai inu",
+    "dutch": "kleine hond"
+   },
+   {
+    "japanese": "たかいビル",
+    "romaji": "takai biru",
+    "dutch": "hoog gebouw"
+   },
+   {
+    "japanese": "あおいそら",
+    "romaji": "aoi sora",
+    "dutch": "blauwe lucht"
+   }
+  ]
+ },
+ "ja-n5-na-adj": {
+  "naam": "な-bijvoeglijk naamwoord",
+  "tagline": "Leer hoe je eigenschappen en kwaliteiten beschrijft met な-bijvoeglijke naamwoorden.",
+  "niveau": "basis",
+  "kernregel": "な-bijvoeglijke naamwoorden worden gebruikt om eigenschappen of kwaliteiten van een zelfstandig naamwoord te beschrijven. Ze worden direct voor het zelfstandig naamwoord geplaatst en verbonden met de partikel な.",
+  "patroon": "[na-bijvoeglijk naamwoord] + な + [zelfstandig naamwoord]",
+  "uitleg": "In het Japans zijn er twee hoofdtypen bijvoeglijke naamwoorden: い-bijvoeglijke naamwoorden en な-bijvoeglijke naamwoorden. De な-bijvoeglijke naamwoorden worden zo genoemd omdat ze de partikel な gebruiken wanneer ze direct voor een zelfstandig naamwoord staan. Dit type bijvoeglijk naamwoord beschrijft vaak abstracte eigenschappen zoals 'mooi', 'stil' of 'beroemd'. In tegenstelling tot い-bijvoeglijke naamwoorden, veranderen な-bijvoeglijke naamwoorden niet van vorm afhankelijk van de tijd of negatie. Ze blijven consistent en vereisen alleen de な-partikel om correct te functioneren in een zin.",
+  "opbouw": [
+   {
+    "element": "na-bijvoeglijk naamwoord",
+    "rol": "Geeft de kwaliteit of eigenschap aan die je wilt beschrijven.",
+    "voorbeeld": "きれい (kirei) - mooi"
+   },
+   {
+    "element": "な",
+    "rol": "Verbindt het na-bijvoeglijk naamwoord met het zelfstandig naamwoord.",
+    "voorbeeld": "な (na)"
+   },
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het woord dat de eigenschap of kwaliteit krijgt toegewezen.",
+    "voorbeeld": "花 (hana) - bloem"
+   }
+  ],
+  "tips": [
+   "Onthoud dat な-bijvoeglijke naamwoorden de な-partikel nodig hebben wanneer ze voor een zelfstandig naamwoord staan.",
+   "In tegenstelling tot い-bijvoeglijke naamwoorden, veranderen な-bijvoeglijke naamwoorden niet van vorm bij tijdsverandering.",
+   "Oefen met veelgebruikte な-bijvoeglijke naamwoorden zoals しずか (shizuka - stil) en ゆうめい (yuumei - beroemd).",
+   "Gebruik voorbeelden om te onthouden welke bijvoeglijke naamwoorden な-bijvoeglijke naamwoorden zijn."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de な-partikel te gebruiken: Correctie: きれいな花 (kirei na hana) in plaats van きれい花 (kirei hana).",
+   "Verwarring met い-bijvoeglijke naamwoorden: Correctie: ゆうめいな人 (yuumei na hito) in plaats van ゆうめい人 (yuumei hito)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "しずかなまち",
+    "romaji": "shizuka na machi",
+    "dutch": "stille stad"
+   },
+   {
+    "japanese": "ゆうめいなかしゅ",
+    "romaji": "yuumei na kashu",
+    "dutch": "beroemde zanger"
+   },
+   {
+    "japanese": "へんなおと",
+    "romaji": "hen na oto",
+    "dutch": "vreemd geluid"
+   },
+   {
+    "japanese": "べんりなツール",
+    "romaji": "benri na tsuuru",
+    "dutch": "handige tool"
+   },
+   {
+    "japanese": "きれいなうみ",
+    "romaji": "kirei na umi",
+    "dutch": "mooie zee"
+   },
+   {
+    "japanese": "しんせつなひと",
+    "romaji": "shinsetsu na hito",
+    "dutch": "vriendelijk persoon"
+   }
+  ]
+ },
+ "ja-n5-te-vorm": {
+  "naam": "De て-vorm in het Japans",
+  "tagline": "Leer de veelzijdige て-vorm voor verbinding en verzoeken.",
+  "niveau": "basis",
+  "kernregel": "De て-vorm van een werkwoord wordt gebruikt om zinnen te verbinden, verzoeken te maken, en om handelingen in een opeenvolging te beschrijven. Het is een essentiële vorm in het Japans die vaak voorkomt in zowel formele als informele situaties.",
+  "patroon": "[werkwoordstam] + て",
+  "uitleg": "De て-vorm is een van de meest veelzijdige vormen in het Japans. Het wordt gebruikt om meerdere acties in een zin te verbinden, vergelijkbaar met het gebruik van 'en' in het Nederlands. Daarnaast wordt het gebruikt om beleefde verzoeken te maken door het te combineren met 'ください' (kudasai), wat 'alstublieft' betekent. De て-vorm kan ook worden gebruikt om een opeenvolging van acties aan te geven, waarbij de ene actie direct na de andere plaatsvindt. Het is belangrijk om te weten dat de て-vorm niet op zichzelf een tijd aangeeft; de context van de zin bepaalt of de handeling in het verleden, heden of toekomst plaatsvindt.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de eindklank.",
+    "voorbeeld": "たべ (tabe) van たべる (taberu)"
+   },
+   {
+    "element": "て",
+    "rol": "De verbindende vorm die aan de stam wordt toegevoegd.",
+    "voorbeeld": "たべて (tabete)"
+   }
+  ],
+  "tips": [
+   "Onthoud dat de て-vorm vaak wordt gebruikt met 'ください' voor beleefde verzoeken.",
+   "Gebruik de て-vorm om acties in een logische volgorde te verbinden.",
+   "Oefen met het omzetten van verschillende werkwoordgroepen naar de て-vorm, zoals godan- en ichidan-werkwoorden.",
+   "Let op de uitspraak van de て-vorm, vooral bij werkwoorden die eindigen op 'む', 'ぶ', en 'ぬ', die veranderen in 'んで'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de て-vorm met de verleden tijdsvorm. Correctie: De て-vorm geeft geen tijd aan, terwijl de verleden tijd dat wel doet.",
+   "Vergeten 'ください' toe te voegen bij het maken van een verzoek. Correctie: Voeg altijd 'ください' toe na de て-vorm voor beleefde verzoeken."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "本を読んでください。",
+    "romaji": "Hon o yonde kudasai.",
+    "dutch": "Lees alstublieft het boek."
+   },
+   {
+    "japanese": "ドアを開けてください。",
+    "romaji": "Doa o akete kudasai.",
+    "dutch": "Doe alstublieft de deur open."
+   },
+   {
+    "japanese": "友達と話して、映画を見ました。",
+    "romaji": "Tomodachi to hanashite, eiga o mimashita.",
+    "dutch": "Ik sprak met een vriend en keek een film."
+   },
+   {
+    "japanese": "朝ごはんを食べて、学校に行きます。",
+    "romaji": "Asagohan o tabete, gakkou ni ikimasu.",
+    "dutch": "Ik eet ontbijt en ga naar school."
+   },
+   {
+    "japanese": "音楽を聞いて、リラックスします。",
+    "romaji": "Ongaku o kiite, rirakkusu shimasu.",
+    "dutch": "Ik luister naar muziek en ontspan."
+   },
+   {
+    "japanese": "手を洗ってください。",
+    "romaji": "Te o aratte kudasai.",
+    "dutch": "Was alstublieft uw handen."
+   }
+  ]
+ },
+ "ja-n5-te-imasu": {
+  "naam": "Het gebruik van 〜ています",
+  "tagline": "Leer hoe je voortdurende acties en toestanden in het Japans uitdrukt.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 〜ています wordt gebruikt om aan te geven dat een actie op dit moment bezig is of dat een bepaalde toestand voortduurt. Het is vergelijkbaar met de tegenwoordige tijd in het Nederlands, zoals 'ik ben aan het eten'.",
+  "patroon": "[werkwoordstam] + て + います",
+  "uitleg": "In het Japans gebruik je het patroon 〜ています om aan te geven dat een actie op dit moment plaatsvindt of dat een toestand nog steeds van kracht is. Dit patroon is vergelijkbaar met de Engelse present continuous ('is eating') of de Nederlandse constructie 'is aan het eten'. Het wordt niet alleen gebruikt voor acties die op dit moment plaatsvinden, maar ook voor handelingen die regelmatig gebeuren of voor toestanden die al een tijdje duren. Het is belangrijk om te weten dat sommige werkwoorden, zoals die voor 'weten' of 'getrouwd zijn', in het Japans altijd in deze vorm staan om een voortdurende toestand uit te drukken.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De stam van het werkwoord waarop de て-vorm wordt toegepast.",
+    "voorbeeld": "たべ (tabe) van たべる (taberu, eten)"
+   },
+   {
+    "element": "て",
+    "rol": "De verbindende vorm die de stam verbindt met de volgende component.",
+    "voorbeeld": "たべて (tabete)"
+   },
+   {
+    "element": "います",
+    "rol": "Geeft aan dat de actie of toestand voortduurt.",
+    "voorbeeld": "たべています (tabeteimasu, is aan het eten)"
+   }
+  ],
+  "tips": [
+   "Gebruik 〜ています voor acties die op dit moment plaatsvinden.",
+   "Gebruik het ook voor gewoonten of acties die regelmatig plaatsvinden.",
+   "Let op dat sommige werkwoorden altijd in deze vorm staan om een toestand uit te drukken, zoals しっています (shitteimasu, weten).",
+   "Oefen met het herkennen van de stam van werkwoorden om de て-vorm correct te maken."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van 〜ています met de verleden tijd. Correctie: 〜ています is voor voortdurende acties, niet voor acties die al voltooid zijn.",
+   "Vergeten de stam van het werkwoord correct te vormen. Correctie: Zorg ervoor dat je de juiste stam gebruikt voordat je de て-vorm toevoegt.",
+   "Denken dat 〜ています alleen voor fysieke acties is. Correctie: Het kan ook voor mentale toestanden of relaties worden gebruikt, zoals けっこんしています (kekkon shiteimasu, getrouwd zijn)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "彼は今、勉強しています。",
+    "romaji": "Kare wa ima, benkyou shiteimasu.",
+    "dutch": "Hij is nu aan het studeren."
+   },
+   {
+    "japanese": "私は毎朝ジョギングしています。",
+    "romaji": "Watashi wa maiasa jogingu shiteimasu.",
+    "dutch": "Ik ben elke ochtend aan het joggen."
+   },
+   {
+    "japanese": "彼女は日本語を学んでいます。",
+    "romaji": "Kanojo wa nihongo o manandeimasu.",
+    "dutch": "Zij is Japans aan het leren."
+   },
+   {
+    "japanese": "彼は知っています。",
+    "romaji": "Kare wa shitteimasu.",
+    "dutch": "Hij weet het."
+   },
+   {
+    "japanese": "私はここに住んでいます。",
+    "romaji": "Watashi wa koko ni sundeimasu.",
+    "dutch": "Ik woon hier."
+   },
+   {
+    "japanese": "彼らは映画を見ています。",
+    "romaji": "Karera wa eiga o miteimasu.",
+    "dutch": "Zij zijn een film aan het kijken."
+   }
+  ]
+ },
+ "ja-n5-nai-vorm": {
+  "naam": "De ない-vorm in het Japans",
+  "tagline": "Leer hoe je ontkenningen maakt in het Japans met de ない-vorm.",
+  "niveau": "basis",
+  "kernregel": "De ない-vorm wordt gebruikt om negatieve zinnen te maken in het Japans. Het is de tegenhanger van de ます-vorm voor beleefde ontkenningen en wordt vaak gebruikt in informele situaties.",
+  "patroon": "[werkwoordstam] + ない",
+  "uitleg": "De ない-vorm is een van de basisvormen van werkwoorden in het Japans en wordt gebruikt om een ontkenning uit te drukken. In tegenstelling tot het Nederlands, waar we vaak 'niet' toevoegen om een zin negatief te maken, verandert in het Japans de werkwoordsvorm zelf. Voor de meeste werkwoorden wordt de stam aangepast en gevolgd door ない om de ontkenning te vormen. Deze vorm is informeel en wordt vaak gebruikt in gesprekken met vrienden of familie. Het is belangrijk om te weten dat er verschillende regels zijn voor de conjugatie van werkwoorden in de ない-vorm, afhankelijk van of het een godan- of ichidan-werkwoord is.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord waarop de ない-vorm wordt gebouwd.",
+    "voorbeeld": "たべ (tabe) van たべる (taberu)"
+   },
+   {
+    "element": "ない",
+    "rol": "Het negatieve suffix dat aan de stam wordt toegevoegd om de ontkenning te vormen.",
+    "voorbeeld": "たべない (tabenai)"
+   }
+  ],
+  "tips": [
+   "Onthoud dat godan-werkwoorden vaak een klankverandering ondergaan voordat ない wordt toegevoegd.",
+   "Ichidan-werkwoorden zijn eenvoudiger: verwijder る en voeg ない toe.",
+   "Let op uitzonderingen zoals する (suru) dat verandert in しない (shinai).",
+   "Gebruik de ない-vorm in informele situaties; voor formele situaties gebruik je de ません-vorm."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde klankverandering bij godan-werkwoorden: bijvoorbeeld かく (kaku) wordt かかない (kakanai), niet かくない (kakunai).",
+   "Vergeten dat ある (aru) een onregelmatige ontkenning heeft: het wordt ない (nai), niet あらない (aranai)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "行かない",
+    "romaji": "ikanai",
+    "dutch": "niet gaan"
+   },
+   {
+    "japanese": "見ない",
+    "romaji": "minai",
+    "dutch": "niet zien"
+   },
+   {
+    "japanese": "飲まない",
+    "romaji": "nomanai",
+    "dutch": "niet drinken"
+   },
+   {
+    "japanese": "書かない",
+    "romaji": "kakanai",
+    "dutch": "niet schrijven"
+   },
+   {
+    "japanese": "来ない",
+    "romaji": "konai",
+    "dutch": "niet komen"
+   },
+   {
+    "japanese": "しない",
+    "romaji": "shinai",
+    "dutch": "niet doen"
+   }
+  ]
+ },
+ "ja-n5-tai": {
+  "naam": "De たい-vorm in het Japans",
+  "tagline": "Uitdrukken van wensen en verlangens",
+  "niveau": "basis",
+  "kernregel": "De たい-vorm wordt gebruikt om uit te drukken dat je iets wilt doen. Het is een manier om je verlangens of wensen te communiceren in het Japans, vergelijkbaar met 'willen' in het Nederlands.",
+  "patroon": "[werkwoordstam] + たい",
+  "uitleg": "In het Japans gebruik je de たい-vorm om aan te geven dat je iets wilt doen. Dit patroon wordt gevormd door de stam van een werkwoord te nemen en daar 'たい' aan toe te voegen. Het werkt vergelijkbaar met het Nederlandse 'willen', maar het wordt direct aan het werkwoord gehecht. De たい-vorm is een i-adjectief, wat betekent dat het zich gedraagt als een bijvoeglijk naamwoord en kan worden vervoegd zoals andere i-adjectieven. Het is belangrijk om te onthouden dat deze vorm meestal alleen voor de eerste persoon wordt gebruikt, omdat het je eigen wensen uitdrukt. Voor anderen gebruik je vaak een andere constructie, zoals 'verb + たがっている'.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de 'masu'-vorm",
+    "voorbeeld": "たべ (van たべます, eten)"
+   },
+   {
+    "element": "たい",
+    "rol": "Geeft het verlangen aan om de actie van het werkwoord uit te voeren",
+    "voorbeeld": "たべたい (willen eten)"
+   }
+  ],
+  "tips": [
+   "Gebruik de たい-vorm vooral voor je eigen wensen of als je informeel bent met iemand.",
+   "Vergeet niet dat de たい-vorm zich gedraagt als een i-adjectief, dus je kunt het vervoegen zoals andere i-adjectieven.",
+   "Gebruik de たがっている-vorm als je wilt zeggen dat iemand anders iets wil doen.",
+   "Let op de context: in formele situaties kan het gepaster zijn om een andere constructie te gebruiken."
+  ],
+  "veelgemaaktefouten": [
+   "De たい-vorm gebruiken voor de wensen van anderen zonder context. Correctie: Gebruik 'たがっている' voor anderen.",
+   "Vergeten dat de たい-vorm een i-adjectief is en het niet correct vervoegen. Correctie: Behandel het als een i-adjectief en pas de juiste vervoegingen toe.",
+   "De たい-vorm gebruiken in zeer formele situaties. Correctie: Kies een meer formele uitdrukking zoals 'verb + たがっています'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "映画を見たいです。",
+    "romaji": "Eiga o mitai desu.",
+    "dutch": "Ik wil een film kijken."
+   },
+   {
+    "japanese": "日本に行きたい。",
+    "romaji": "Nihon ni ikitai.",
+    "dutch": "Ik wil naar Japan gaan."
+   },
+   {
+    "japanese": "新しいレストランで食べたい。",
+    "romaji": "Atarashii resutoran de tabetai.",
+    "dutch": "Ik wil in het nieuwe restaurant eten."
+   },
+   {
+    "japanese": "友達に会いたい。",
+    "romaji": "Tomodachi ni aitai.",
+    "dutch": "Ik wil mijn vriend ontmoeten."
+   },
+   {
+    "japanese": "本を読みたいです。",
+    "romaji": "Hon o yomitai desu.",
+    "dutch": "Ik wil een boek lezen."
+   },
+   {
+    "japanese": "海で泳ぎたい。",
+    "romaji": "Umi de oyogitai.",
+    "dutch": "Ik wil in de zee zwemmen."
+   }
+  ]
+ },
+ "ja-n5-hoshii": {
+  "naam": "Het gebruik van 〜がほしい",
+  "tagline": "Uitdrukken van verlangen in het Japans",
+  "niveau": "basis",
+  "kernregel": "Het patroon 〜がほしい wordt gebruikt om aan te geven dat je iets wilt hebben. Het is een eenvoudige manier om je wensen en verlangens uit te drukken in het Japans.",
+  "patroon": "[zelfstandig naamwoord] + がほしい",
+  "uitleg": "In het Japans gebruik je 〜がほしい om te zeggen dat je iets wilt hebben. Dit patroon is vergelijkbaar met het Nederlandse 'ik wil [iets]'. Het zelfstandig naamwoord dat je wilt, wordt gevolgd door het partikel が en vervolgens ほしい, wat 'willen' betekent. Dit patroon wordt voornamelijk gebruikt voor tastbare zaken en niet voor acties of werkwoorden. Het is belangrijk om te onthouden dat ほしい een bijvoeglijk naamwoord is en daarom vervoegd kan worden om tijd en ontkenning uit te drukken, zoals ほしくない (niet willen) of ほしかった (wilde).",
+  "opbouw": [
+   {
+    "element": "zelfstandig naamwoord",
+    "rol": "Het ding dat je wilt hebben",
+    "voorbeeld": "ケーキ (keeki) - taart"
+   },
+   {
+    "element": "が",
+    "rol": "Partikel dat het onderwerp markeert",
+    "voorbeeld": "が"
+   },
+   {
+    "element": "ほしい",
+    "rol": "Drukt het verlangen uit",
+    "voorbeeld": "ほしい"
+   }
+  ],
+  "tips": [
+   "Gebruik 〜がほしい alleen voor dingen die je kunt bezitten, niet voor acties.",
+   "Vergeet niet dat ほしい een bijvoeglijk naamwoord is en dus kan worden vervoegd.",
+   "Gebruik ほしくない om te zeggen dat je iets niet wilt.",
+   "Voor beleefde verzoeken gebruik je liever 〜たい voor werkwoorden in plaats van 〜がほしい."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 〜がほしい voor werkwoorden: Correct is om 〜たい te gebruiken voor acties.",
+   "Vergeten om が te gebruiken: Het partikel が is essentieel om het gewenste object te markeren.",
+   "Het gebruik van ほしい in formele situaties: In formele situaties is het beleefder om andere constructies te gebruiken, zoals 〜たいです."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "新しい車がほしいです。",
+    "romaji": "Atarashii kuruma ga hoshii desu.",
+    "dutch": "Ik wil een nieuwe auto."
+   },
+   {
+    "japanese": "ペンがほしい。",
+    "romaji": "Pen ga hoshii.",
+    "dutch": "Ik wil een pen."
+   },
+   {
+    "japanese": "友達がほしい。",
+    "romaji": "Tomodachi ga hoshii.",
+    "dutch": "Ik wil vrienden."
+   },
+   {
+    "japanese": "お金がほしくない。",
+    "romaji": "Okane ga hoshikunai.",
+    "dutch": "Ik wil geen geld."
+   },
+   {
+    "japanese": "昨日、新しい靴がほしかった。",
+    "romaji": "Kinou, atarashii kutsu ga hoshikatta.",
+    "dutch": "Gisteren wilde ik nieuwe schoenen."
+   },
+   {
+    "japanese": "時間がほしいです。",
+    "romaji": "Jikan ga hoshii desu.",
+    "dutch": "Ik wil tijd."
+   }
+  ]
+ },
+ "ja-n5-te-kudasai": {
+  "naam": "Verzoek doen met 〜てください",
+  "tagline": "Leer hoe je beleefd verzoeken doet in het Japans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 〜てください wordt gebruikt om beleefde verzoeken te doen in het Japans. Het impliceert dat je de ander vraagt iets te doen op een vriendelijke en respectvolle manier.",
+  "patroon": "[werkwoordstam] + て + ください",
+  "uitleg": "In het Japans gebruik je 〜てください om beleefd te vragen of iemand iets wil doen. Dit patroon is vergelijkbaar met het Nederlandse 'alsjeblieft' of 'zou je alsjeblieft kunnen'. Het is een veelgebruikte en beleefde manier om verzoeken te doen. Je neemt de stam van een werkwoord, voegt て toe, gevolgd door ください. Dit patroon kan worden gebruikt in allerlei situaties, van het vragen om hulp tot het geven van instructies. Het is belangrijk om te onthouden dat ください een beleefdheidsvorm is, wat betekent dat het geschikt is voor gebruik in zowel formele als informele contexten.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord waarop de vervoeging wordt toegepast.",
+    "voorbeeld": "たべ (tabe) van たべる (taberu, eten)"
+   },
+   {
+    "element": "て",
+    "rol": "De verbindende vorm die wordt toegevoegd aan de werkwoordstam.",
+    "voorbeeld": "たべて (tabete)"
+   },
+   {
+    "element": "ください",
+    "rol": "Het beleefde verzoekdeel dat 'alsjeblieft' betekent.",
+    "voorbeeld": "たべてください (tabete kudasai, eet alsjeblieft)"
+   }
+  ],
+  "tips": [
+   "Gebruik 〜てください om beleefd te blijven, vooral in formele situaties.",
+   "Vergeet niet de juiste werkwoordstam te gebruiken voordat je て toevoegt.",
+   "Gebruik dit patroon niet voor bevelen; het is bedoeld voor beleefde verzoeken.",
+   "Oefen met verschillende werkwoorden om je vertrouwd te maken met de vervoegingen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de verkeerde werkwoordstam. Correctie: Zorg ervoor dat je de juiste stam gebruikt voordat je て toevoegt.",
+   "Vergeten ください toe te voegen, waardoor het verzoek onbeleefd kan overkomen. Correctie: Voeg altijd ください toe na て om beleefd te blijven.",
+   "Gebruik van 〜てください in zeer informele situaties waar het niet nodig is. Correctie: In informele situaties kun je soms de ください weglaten."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "ドアを開けてください。",
+    "romaji": "Doa o akete kudasai.",
+    "dutch": "Doe alsjeblieft de deur open."
+   },
+   {
+    "japanese": "ここに座ってください。",
+    "romaji": "Koko ni suwatte kudasai.",
+    "dutch": "Ga hier alsjeblieft zitten."
+   },
+   {
+    "japanese": "名前を書いてください。",
+    "romaji": "Namae o kaite kudasai.",
+    "dutch": "Schrijf alsjeblieft je naam op."
+   },
+   {
+    "japanese": "静かにしてください。",
+    "romaji": "Shizuka ni shite kudasai.",
+    "dutch": "Wees alsjeblieft stil."
+   },
+   {
+    "japanese": "この本を読んでください。",
+    "romaji": "Kono hon o yonde kudasai.",
+    "dutch": "Lees alsjeblieft dit boek."
+   },
+   {
+    "japanese": "窓を閉めてください。",
+    "romaji": "Mado o shimete kudasai.",
+    "dutch": "Doe alsjeblieft het raam dicht."
+   }
+  ]
+ },
+ "ja-n5-te-mo-ii": {
+  "naam": "Het gebruik van 〜てもいいですか",
+  "tagline": "Leer hoe je toestemming vraagt in het Japans.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 〜てもいいですか wordt gebruikt om op een beleefde manier toestemming te vragen om iets te doen. Het kan worden vertaald als 'Mag ik...?' of 'Is het goed als ik...?'.",
+  "patroon": "[werkwoordstam] + て + もいいですか",
+  "uitleg": "In het Japans gebruik je het patroon 〜てもいいですか om beleefd te vragen of je iets mag doen. Dit patroon is vergelijkbaar met het Nederlandse 'Mag ik...?' of 'Is het goed als ik...?'. Het is een beleefde manier om toestemming te vragen en wordt vaak gebruikt in formele situaties of wanneer je iemand niet goed kent. De werkwoordstam wordt in de て-vorm gezet, gevolgd door もいいですか, wat letterlijk vertaald kan worden als 'is het ook goed?'. Dit patroon is handig in situaties zoals het vragen of je een kamer mag binnenkomen, een foto mag maken, of een boek mag lenen.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord die in de て-vorm wordt gezet.",
+    "voorbeeld": "たべる (taberu) -> たべて (tabete)"
+   },
+   {
+    "element": "て",
+    "rol": "De て-vorm van het werkwoord, die aangeeft dat er een vervolg komt.",
+    "voorbeeld": "みる (miru) -> みて (mite)"
+   },
+   {
+    "element": "も",
+    "rol": "Betekent 'ook' of 'zelfs', en wordt hier gebruikt om toestemming aan te duiden.",
+    "voorbeeld": "も (mo)"
+   },
+   {
+    "element": "いいですか",
+    "rol": "Vertaald als 'is het goed?' of 'mag het?', en wordt gebruikt om beleefd toestemming te vragen.",
+    "voorbeeld": "いいですか (ii desu ka)"
+   }
+  ],
+  "tips": [
+   "Gebruik dit patroon in formele situaties of wanneer je beleefd wilt zijn.",
+   "Zorg ervoor dat je de werkwoordstam correct in de て-vorm zet.",
+   "Let op de intonatie; het is een vraag, dus je stem gaat omhoog aan het einde.",
+   "Dit patroon kan ook worden gebruikt om beleefd te vragen of iets mogelijk is, niet alleen om toestemming te vragen."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de werkwoordstam in de て-vorm te zetten. Correctie: たべる (taberu) -> たべてもいいですか (tabete mo ii desu ka).",
+   "Het gebruik van ですか weglaten, waardoor de vraag onbeleefd klinkt. Correctie: みてもいいですか (mite mo ii desu ka)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "ここでしゃしんをとってもいいですか。",
+    "romaji": "Koko de shashin o totte mo ii desu ka.",
+    "dutch": "Mag ik hier een foto maken?"
+   },
+   {
+    "japanese": "このほんをかりてもいいですか。",
+    "romaji": "Kono hon o karite mo ii desu ka.",
+    "dutch": "Mag ik dit boek lenen?"
+   },
+   {
+    "japanese": "トイレをつかってもいいですか。",
+    "romaji": "Toire o tsukatte mo ii desu ka.",
+    "dutch": "Mag ik het toilet gebruiken?"
+   },
+   {
+    "japanese": "あなたのペンをつかってもいいですか。",
+    "romaji": "Anata no pen o tsukatte mo ii desu ka.",
+    "dutch": "Mag ik jouw pen gebruiken?"
+   },
+   {
+    "japanese": "ここにすわってもいいですか。",
+    "romaji": "Koko ni suwatte mo ii desu ka.",
+    "dutch": "Mag ik hier zitten?"
+   },
+   {
+    "japanese": "このテレビをみてもいいですか。",
+    "romaji": "Kono terebi o mite mo ii desu ka.",
+    "dutch": "Mag ik deze televisie kijken?"
+   }
+  ]
+ },
+ "ja-n5-te-wa-ikemasen": {
+  "naam": "Verbod uitdrukken met 〜てはいけません",
+  "tagline": "Leer hoe je in het Japans kunt aangeven dat iets niet is toegestaan.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 〜てはいけません wordt gebruikt om aan te geven dat iets niet mag of verboden is. Het wordt vaak gebruikt in formele situaties of wanneer je iemand beleefd wilt vertellen dat een bepaalde actie niet toegestaan is.",
+  "patroon": "[werkwoordstam] + て + はいけません",
+  "uitleg": "In het Japans gebruik je het patroon 〜てはいけません om te zeggen dat iets niet mag. Dit patroon is vergelijkbaar met het Nederlandse 'je mag niet' of 'het is verboden'. Het is een beleefde manier om een verbod uit te drukken en wordt vaak gebruikt in formele contexten, zoals op het werk of in openbare ruimtes. Het patroon begint met de て-vorm van een werkwoord, gevolgd door はいけません, wat letterlijk 'het is niet goed' betekent. Het is belangrijk om de juiste て-vorm van het werkwoord te gebruiken, afhankelijk van de werkwoordsgroep waartoe het behoort.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord die aangeeft welke actie niet is toegestaan.",
+    "voorbeeld": "たべる (taberu) -> たべ (tabe)"
+   },
+   {
+    "element": "て-vorm",
+    "rol": "De verbindingsvorm van het werkwoord die nodig is om het verbodspatroon te vormen.",
+    "voorbeeld": "たべる (taberu) -> たべて (tabete)"
+   },
+   {
+    "element": "は",
+    "rol": "Partikel dat het onderwerp van de ontkenning markeert.",
+    "voorbeeld": "は (wa)"
+   },
+   {
+    "element": "いけません",
+    "rol": "Drukt uit dat iets niet goed of niet toegestaan is.",
+    "voorbeeld": "いけません (ikemasen)"
+   }
+  ],
+  "tips": [
+   "Onthoud dat de て-vorm van een werkwoord essentieel is voor dit patroon.",
+   "Gebruik 〜てはいけません in formele situaties of wanneer je beleefd wilt zijn.",
+   "Verwar dit patroon niet met 〜てもいいです, wat toestemming geeft.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de て-vormen."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerde て-vorm gebruiken: たべる -> たべるはいけません (fout), correct is たべてはいけません.",
+   "Vergeten は te gebruiken: たべていけません (fout), correct is たべてはいけません."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "ここでたばこをすってはいけません。",
+    "romaji": "Koko de tabako o sutte wa ikemasen.",
+    "dutch": "Je mag hier niet roken."
+   },
+   {
+    "japanese": "この部屋に入ってはいけません。",
+    "romaji": "Kono heya ni haitte wa ikemasen.",
+    "dutch": "Je mag deze kamer niet binnengaan."
+   },
+   {
+    "japanese": "夜遅くまで起きてはいけません。",
+    "romaji": "Yoru osoku made okite wa ikemasen.",
+    "dutch": "Je mag niet tot laat opblijven."
+   },
+   {
+    "japanese": "この本を持ち出してはいけません。",
+    "romaji": "Kono hon o mochidashite wa ikemasen.",
+    "dutch": "Je mag dit boek niet meenemen."
+   },
+   {
+    "japanese": "ここで写真を撮ってはいけません。",
+    "romaji": "Koko de shashin o totte wa ikemasen.",
+    "dutch": "Je mag hier geen foto's maken."
+   },
+   {
+    "japanese": "そのドアを開けてはいけません。",
+    "romaji": "Sono doa o akete wa ikemasen.",
+    "dutch": "Je mag die deur niet openen."
+   }
+  ]
+ },
+ "ja-n5-kara": {
+  "naam": "Gebruik van から en ので voor redenen",
+  "tagline": "Leer hoe je redenen kunt geven in het Japans met から en ので.",
+  "niveau": "gemiddeld",
+  "kernregel": "In het Japans gebruik je から en ので om redenen of oorzaken aan te geven. Hoewel beide woorden 'omdat' betekenen, heeft ので een formelere en zachtere toon dan から.",
+  "patroon": "[reden] + から/ので + [resultaat]",
+  "uitleg": "In het Japans kun je redenen aangeven met から en ので, die beide 'omdat' betekenen. から is directer en wordt vaak in informele situaties gebruikt, terwijl ので formeler is en een zachtere, meer beleefde toon heeft. Dit maakt ので geschikt voor situaties waarin je beleefdheid wilt tonen of een excuus wilt maken. In tegenstelling tot het Nederlands, waar 'omdat' en 'want' vaak door elkaar worden gebruikt, is de keuze tussen から en ので belangrijk voor de toon van de zin. Let op dat je bij ので vaak de werkwoordsvorm aanpast naar de beleefde vorm, terwijl から meer vrijheid biedt in de werkwoordsvorm.",
+  "opbouw": [
+   {
+    "element": "reden",
+    "rol": "De oorzaak of reden van de actie of situatie.",
+    "voorbeeld": "雨が降る (ame ga furu) - Het regent"
+   },
+   {
+    "element": "から",
+    "rol": "Geeft een directe reden aan, vaak informeel.",
+    "voorbeeld": "雨が降るから (ame ga furu kara) - Omdat het regent"
+   },
+   {
+    "element": "ので",
+    "rol": "Geeft een reden aan met een formelere en zachtere toon.",
+    "voorbeeld": "雨が降るので (ame ga furu node) - Omdat het regent"
+   },
+   {
+    "element": "resultaat",
+    "rol": "De actie of situatie die voortkomt uit de reden.",
+    "voorbeeld": "出かけません (dekakemasen) - Ik ga niet naar buiten"
+   }
+  ],
+  "tips": [
+   "Gebruik から in informele gesprekken met vrienden en familie.",
+   "Gebruik ので in formele situaties of wanneer je beleefd wilt overkomen.",
+   "Probeer ので te gebruiken als je een excuus maakt, omdat het zachter overkomt.",
+   "Let op de werkwoordsvorm die je gebruikt voor ので, vaak is de beleefde vorm gepast."
+  ],
+  "veelgemaaktefouten": [
+   "Gebruik van から in een formele situatie: Correctie: Gebruik ので voor een formelere toon.",
+   "Verkeerde werkwoordsvorm bij ので: Correctie: Zorg ervoor dat je de beleefde vorm gebruikt wanneer nodig.",
+   "Gebruik van ので in een informele situatie zonder noodzaak: Correctie: Gebruik から als de situatie informeel is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "時間がないから、急ぎます。",
+    "romaji": "Jikan ga nai kara, isogimasu.",
+    "dutch": "Omdat ik geen tijd heb, haast ik me."
+   },
+   {
+    "japanese": "疲れたので、早く寝ます。",
+    "romaji": "Tsukareta node, hayaku nemasu.",
+    "dutch": "Omdat ik moe ben, ga ik vroeg slapen."
+   },
+   {
+    "japanese": "お金がないから、旅行に行けません。",
+    "romaji": "Okane ga nai kara, ryokou ni ikemasen.",
+    "dutch": "Omdat ik geen geld heb, kan ik niet op reis gaan."
+   },
+   {
+    "japanese": "天気がいいので、散歩しましょう。",
+    "romaji": "Tenki ga ii node, sanpo shimashou.",
+    "dutch": "Omdat het mooi weer is, laten we gaan wandelen."
+   },
+   {
+    "japanese": "風邪をひいたので、学校を休みます。",
+    "romaji": "Kaze o hiita node, gakkou o yasumimasu.",
+    "dutch": "Omdat ik verkouden ben, blijf ik thuis van school."
+   },
+   {
+    "japanese": "電車が遅れたから、遅刻しました。",
+    "romaji": "Densha ga okureta kara, chikoku shimashita.",
+    "dutch": "Omdat de trein vertraagd was, was ik te laat."
+   }
+  ]
+ },
+ "ja-n5-counters": {
+  "naam": "Telwoorden in het Japans",
+  "tagline": "Leer hoe je dingen correct telt in het Japans.",
+  "niveau": "basis",
+  "kernregel": "In het Japans worden telwoorden gebruikt om verschillende soorten objecten, mensen en dieren te tellen. Elk type object heeft zijn eigen telwoord, wat betekent dat je het juiste telwoord moet kiezen afhankelijk van wat je telt.",
+  "patroon": "[nummer] + [telwoord]",
+  "uitleg": "In het Japans gebruik je specifieke telwoorden afhankelijk van het type object dat je wilt tellen. Dit is anders dan in het Nederlands, waar je meestal alleen een nummer toevoegt. Bijvoorbeeld, voor platte objecten zoals papier gebruik je 'mai', terwijl je voor lange, cilindrische objecten zoals flessen 'hon' gebruikt. Het is belangrijk om het juiste telwoord te kiezen om misverstanden te voorkomen. De telwoorden veranderen soms afhankelijk van het nummer dat eraan voorafgaat, vooral bij de getallen 1 tot en met 10. Dit systeem kan in het begin verwarrend zijn, maar met oefening en memorisatie wordt het gemakkelijker.",
+  "opbouw": [
+   {
+    "element": "nummer",
+    "rol": "Geeft het aantal aan",
+    "voorbeeld": "san (drie)"
+   },
+   {
+    "element": "telwoord",
+    "rol": "Specificeert het type object",
+    "voorbeeld": "mai (voor platte objecten)"
+   }
+  ],
+  "tips": [
+   "Leer de meest voorkomende telwoorden eerst, zoals 'mai' voor platte objecten en 'hon' voor lange objecten.",
+   "Oefen met het tellen van dagelijkse voorwerpen om vertrouwd te raken met de telwoorden.",
+   "Let op de uitspraak van telwoorden, want deze kunnen veranderen afhankelijk van het nummer (bijv. 'ippon' voor één lange object).",
+   "Gebruik visuele hulpmiddelen zoals flashcards om telwoorden te onthouden."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd telwoord gebruiken: bijvoorbeeld 'san mai' voor drie flessen in plaats van 'san bon'.",
+   "Vergeten dat sommige telwoorden veranderen afhankelijk van het nummer: bijvoorbeeld 'ichi hon' in plaats van 'ippon'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "一枚の紙",
+    "romaji": "ichi mai no kami",
+    "dutch": "één vel papier"
+   },
+   {
+    "japanese": "二匹の犬",
+    "romaji": "ni hiki no inu",
+    "dutch": "twee honden"
+   },
+   {
+    "japanese": "三本のペン",
+    "romaji": "san bon no pen",
+    "dutch": "drie pennen"
+   },
+   {
+    "japanese": "四冊の本",
+    "romaji": "yon satsu no hon",
+    "dutch": "vier boeken"
+   },
+   {
+    "japanese": "五台の車",
+    "romaji": "go dai no kuruma",
+    "dutch": "vijf auto's"
+   },
+   {
+    "japanese": "六個の卵",
+    "romaji": "roku ko no tamago",
+    "dutch": "zes eieren"
+   }
+  ]
+ },
+ "ja-n4-nakereba": {
+  "naam": "Verplichting uitdrukken met 〜なければならない",
+  "tagline": "Leer hoe je verplichtingen en noodzakelijkheid in het Japans uitdrukt.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 〜なければならない wordt gebruikt om aan te geven dat iets moet gebeuren of noodzakelijk is. Het drukt een verplichting of noodzaak uit die vaak van buitenaf komt, zoals regels of verwachtingen.",
+  "patroon": "[werkwoord in negatieve stam] + なければならない",
+  "uitleg": "In het Japans gebruik je 〜なければならない om verplichtingen en noodzakelijkheid uit te drukken. Dit patroon is vergelijkbaar met het Nederlandse 'moeten'. Het wordt gevormd door de negatieve stam van een werkwoord te gebruiken, gevolgd door なければならない. Dit patroon impliceert dat er geen andere keuze is dan de genoemde handeling uit te voeren. Het is belangrijk om te begrijpen dat deze constructie vaak een externe verplichting of noodzaak aangeeft, zoals sociale normen of regels. In informele situaties kan het worden verkort tot 〜なきゃ of 〜なくちゃ.",
+  "opbouw": [
+   {
+    "element": "[werkwoord in negatieve stam]",
+    "rol": "Basisvorm van het werkwoord in negatieve stam om de noodzaak uit te drukken.",
+    "voorbeeld": "食べる (taberu) wordt 食べなければ (tabenakereba)."
+   },
+   {
+    "element": "なければ",
+    "rol": "Geeft de voorwaarde aan, vergelijkbaar met 'als niet'.",
+    "voorbeeld": "食べなければ (tabenakereba) betekent 'als je niet eet'."
+   },
+   {
+    "element": "ならない",
+    "rol": "Drukt de noodzaak of verplichting uit, vergelijkbaar met 'moet'.",
+    "voorbeeld": "ならない (naranai) betekent 'moet'."
+   }
+  ],
+  "tips": [
+   "Onthoud dat 〜なければならない formeel is; gebruik het in formele situaties.",
+   "Voor informele gesprekken kun je 〜なきゃ of 〜なくちゃ gebruiken.",
+   "Oefen met het omzetten van werkwoorden naar hun negatieve stam om dit patroon te beheersen.",
+   "Let op de context; dit patroon impliceert vaak externe druk of verplichting."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen 〜なければならない en 〜なくてもいい (niet hoeven). Correct: しなければならない (shinakereba naranai) betekent 'moet doen', niet 'niet hoeven doen'.",
+   "Vergeten de negatieve stam te gebruiken. Correct: 行かなければならない (ikanakereba naranai) voor 'moet gaan', niet 行ければならない (ikereba naranai)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "宿題をしなければならない。",
+    "romaji": "Shukudai o shinakereba naranai.",
+    "dutch": "Ik moet mijn huiswerk maken."
+   },
+   {
+    "japanese": "早く寝なければならない。",
+    "romaji": "Hayaku nenakereba naranai.",
+    "dutch": "Ik moet vroeg naar bed gaan."
+   },
+   {
+    "japanese": "薬を飲まなければならない。",
+    "romaji": "Kusuri o nomanakereba naranai.",
+    "dutch": "Ik moet mijn medicijnen innemen."
+   },
+   {
+    "japanese": "会議に出席しなければならない。",
+    "romaji": "Kaigi ni shusseki shinakereba naranai.",
+    "dutch": "Ik moet de vergadering bijwonen."
+   },
+   {
+    "japanese": "ビザを申請しなければならない。",
+    "romaji": "Biza o shinsei shinakereba naranai.",
+    "dutch": "Ik moet een visum aanvragen."
+   },
+   {
+    "japanese": "電車に乗らなければならない。",
+    "romaji": "Densha ni noranakereba naranai.",
+    "dutch": "Ik moet de trein nemen."
+   }
+  ]
+ },
+ "ja-n4-nakutemo": {
+  "naam": "Het gebruik van 〜なくてもいい",
+  "tagline": "Leer hoe je toestemming en vrijstelling uitdrukt in het Japans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 〜なくてもいい wordt gebruikt om aan te geven dat iets niet noodzakelijk is of dat iemand iets niet hoeft te doen. Het is een manier om toestemming te geven voor het niet uitvoeren van een actie.",
+  "patroon": "[negatieve stam van werkwoord] + なくてもいい",
+  "uitleg": "In het Japans wordt het patroon 〜なくてもいい gebruikt om te zeggen dat iets niet hoeft of dat het niet verplicht is. Het is vergelijkbaar met het Nederlandse 'je hoeft niet te...'. Dit patroon is nuttig in situaties waarin je iemand gerust wilt stellen dat een bepaalde actie niet nodig is. Om dit patroon te vormen, neem je de negatieve stam van een werkwoord (bijvoorbeeld '食べない' voor 'niet eten') en vervang je 'ない' door 'なくてもいい'. Dit patroon kan zowel in formele als informele contexten worden gebruikt, afhankelijk van de rest van de zin.",
+  "opbouw": [
+   {
+    "element": "negatieve stam van werkwoord",
+    "rol": "Geeft de basis van de actie die niet hoeft te worden uitgevoerd.",
+    "voorbeeld": "食べない (tabenai) - niet eten"
+   },
+   {
+    "element": "なくても",
+    "rol": "Drukt uit dat de actie niet hoeft te worden gedaan.",
+    "voorbeeld": "食べなくても (tabenakutemo) - ook al eet je niet"
+   },
+   {
+    "element": "いい",
+    "rol": "Geeft aan dat het goed is of toegestaan is om de actie niet te doen.",
+    "voorbeeld": "いい (ii) - goed"
+   }
+  ],
+  "tips": [
+   "Onthoud dat je de negatieve stam van het werkwoord nodig hebt om dit patroon te vormen.",
+   "Gebruik dit patroon om beleefd en geruststellend te zijn in sociale situaties.",
+   "Dit patroon kan zowel in formele als informele contexten worden gebruikt, afhankelijk van de rest van de zin.",
+   "Verwar dit patroon niet met 〜てもいい, wat betekent dat iets wel mag worden gedaan."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van de positieve stam in plaats van de negatieve stam. Correctie: Gebruik de negatieve stam, zoals 食べなくてもいい in plaats van 食べてもいい.",
+   "Vergeten om 'ない' te vervangen door 'なくても'. Correctie: Zorg ervoor dat je 'ない' vervangt door 'なくても' om de juiste betekenis te behouden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "今日は宿題をしなくてもいいです。",
+    "romaji": "Kyou wa shukudai o shinakutemo ii desu.",
+    "dutch": "Vandaag hoef je je huiswerk niet te maken."
+   },
+   {
+    "japanese": "その本を読まなくてもいいよ。",
+    "romaji": "Sono hon o yomanakutemo ii yo.",
+    "dutch": "Je hoeft dat boek niet te lezen."
+   },
+   {
+    "japanese": "明日は早く起きなくてもいいです。",
+    "romaji": "Ashita wa hayaku okinakutemo ii desu.",
+    "dutch": "Je hoeft morgen niet vroeg op te staan."
+   },
+   {
+    "japanese": "このレポートを提出しなくてもいいですか？",
+    "romaji": "Kono repooto o teishutsu shinakutemo ii desu ka?",
+    "dutch": "Hoef ik dit rapport niet in te leveren?"
+   },
+   {
+    "japanese": "パーティーに行かなくてもいいです。",
+    "romaji": "Paatii ni ikanakutemo ii desu.",
+    "dutch": "Je hoeft niet naar het feest te gaan."
+   },
+   {
+    "japanese": "その問題を解決しなくてもいいです。",
+    "romaji": "Sono mondai o kaiketsu shinakutemo ii desu.",
+    "dutch": "Je hoeft dat probleem niet op te lossen."
+   }
+  ]
+ },
+ "ja-n4-potential": {
+  "naam": "Kunnen-vorm (可能形)",
+  "tagline": "Leer hoe je in het Japans kunt uitdrukken dat je iets kunt doen.",
+  "niveau": "gemiddeld",
+  "kernregel": "De kunnen-vorm, of 可能形 (kanoukei), wordt gebruikt om aan te geven dat iemand in staat is om een bepaalde handeling uit te voeren. Het is vergelijkbaar met het Nederlandse 'kunnen'. Dit patroon verandert de werkwoordsvorm om de mogelijkheid of bekwaamheid uit te drukken.",
+  "patroon": "[werkwoordstam] + える/られる",
+  "uitleg": "In het Japans wordt de kunnen-vorm gebruikt om te zeggen dat iemand iets kan doen. Voor godan-werkwoorden (五段動詞) verandert de laatste klank van de stam naar de 'e'-klank en voeg je る toe. Voor ichidan-werkwoorden (一段動詞) vervang je る door られる. Dit patroon is essentieel om vaardigheden of mogelijkheden uit te drukken. In tegenstelling tot het Nederlands, waar je simpelweg 'kunnen' toevoegt, vereist het Japans een verandering in de werkwoordsvorm. Let op dat sommige werkwoorden onregelmatig zijn en speciale vormen hebben.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de laatste klank.",
+    "voorbeeld": "飲む (nomu) -> 飲め (nome)"
+   },
+   {
+    "element": "える",
+    "rol": "Toegevoegd aan de stam van godan-werkwoorden om de kunnen-vorm te maken.",
+    "voorbeeld": "書く (kaku) -> 書ける (kakeru)"
+   },
+   {
+    "element": "られる",
+    "rol": "Toegevoegd aan de stam van ichidan-werkwoorden om de kunnen-vorm te maken.",
+    "voorbeeld": "食べる (taberu) -> 食べられる (taberareru)"
+   }
+  ],
+  "tips": [
+   "Identificeer eerst of een werkwoord godan of ichidan is voordat je de kunnen-vorm maakt.",
+   "Oefen met veelvoorkomende werkwoorden om de onregelmatige vormen te onthouden.",
+   "Gebruik de kunnen-vorm om beleefd te vragen of iemand iets kan doen.",
+   "Let op de context: de kunnen-vorm kan soms ook passief of potentieel betekenen."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van godan- en ichidan-werkwoorden, bijvoorbeeld 書く (kaku) als 書けられる (kakerareru) in plaats van 書ける (kakeru).",
+   "Verkeerd gebruik van de kunnen-vorm in plaats van de te-vorm, bijvoorbeeld 食べて (tabete) in plaats van 食べられる (taberareru).",
+   "Vergeten van de onregelmatige vormen zoals する (suru) naar できる (dekiru)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "泳げる",
+    "romaji": "oyogeru",
+    "dutch": "kunnen zwemmen"
+   },
+   {
+    "japanese": "話せる",
+    "romaji": "hanaseru",
+    "dutch": "kunnen spreken"
+   },
+   {
+    "japanese": "見られる",
+    "romaji": "mirareru",
+    "dutch": "kunnen zien"
+   },
+   {
+    "japanese": "来られる",
+    "romaji": "korareru",
+    "dutch": "kunnen komen"
+   },
+   {
+    "japanese": "走れる",
+    "romaji": "hashireru",
+    "dutch": "kunnen rennen"
+   },
+   {
+    "japanese": "聞ける",
+    "romaji": "kikeru",
+    "dutch": "kunnen horen"
+   }
+  ]
+ },
+ "ja-n4-ta-koto": {
+  "naam": "Gebruik van 〜たことがある",
+  "tagline": "Ervaringen uitdrukken in het Japans",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 〜たことがある wordt gebruikt om te zeggen dat je een bepaalde ervaring hebt gehad. Het drukt uit dat je iets in het verleden hebt gedaan, ongeacht hoe vaak of wanneer precies.",
+  "patroon": "[werkwoord in ta-vorm] + ことがある",
+  "uitleg": "In het Japans gebruik je het patroon 〜たことがある om aan te geven dat je een bepaalde ervaring hebt gehad. Dit is vergelijkbaar met het Nederlandse 'ik heb ooit...' of 'ik heb wel eens...'. Het werkwoord wordt eerst in de ta-vorm gezet, wat de verleden tijd aangeeft, en vervolgens voeg je ことがある toe om de ervaring uit te drukken. Dit patroon is nuttig om te praten over dingen die je in het verleden hebt gedaan, zonder de nadruk te leggen op wanneer of hoe vaak het gebeurde. Het is belangrijk om te onthouden dat dit patroon niet gebruikt wordt voor specifieke gebeurtenissen, maar eerder voor algemene ervaringen.",
+  "opbouw": [
+   {
+    "element": "werkwoord in ta-vorm",
+    "rol": "Geeft de actie aan die je hebt ervaren.",
+    "voorbeeld": "食べた (tabeta) - gegeten"
+   },
+   {
+    "element": "こと",
+    "rol": "Verandert het werkwoord in een zelfstandig naamwoord dat 'ding' of 'geval' betekent.",
+    "voorbeeld": "こと - ding/geval"
+   },
+   {
+    "element": "が",
+    "rol": "Onderwerpsmarkeerder, geeft aan dat wat volgt een eigenschap of ervaring is.",
+    "voorbeeld": "が - (onderwerpspartikel)"
+   },
+   {
+    "element": "ある",
+    "rol": "Werkwoord dat 'er is' of 'hebben' betekent, in de zin van 'hebben ervaren'.",
+    "voorbeeld": "ある - er is/hebben"
+   }
+  ],
+  "tips": [
+   "Zorg ervoor dat je het werkwoord correct in de ta-vorm zet voordat je ことがある toevoegt.",
+   "Gebruik dit patroon om algemene ervaringen te delen, niet voor specifieke gebeurtenissen.",
+   "Onthoud dat ある in dit patroon altijd in de niet-verleden tijd staat, zelfs als de ervaring in het verleden ligt.",
+   "Dit patroon kan ook in de negatieve vorm worden gebruikt als 〜たことがない om te zeggen dat je iets nog nooit hebt gedaan."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de ta-vorm met de te-vorm. Correct: 見たことがある (mita koto ga aru), niet 見てことがある (mite koto ga aru).",
+   "Vergeten こと toe te voegen, waardoor de zin ongrammaticaal wordt. Correct: 行ったことがある (itta koto ga aru), niet 行ったがある (itta ga aru).",
+   "Gebruik van ある in de verleden tijd. Correct: 食べたことがある (tabeta koto ga aru), niet 食べたことがあった (tabeta koto ga atta)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "日本に行ったことがある。",
+    "romaji": "Nihon ni itta koto ga aru.",
+    "dutch": "Ik ben ooit naar Japan geweest."
+   },
+   {
+    "japanese": "寿司を食べたことがある。",
+    "romaji": "Sushi o tabeta koto ga aru.",
+    "dutch": "Ik heb ooit sushi gegeten."
+   },
+   {
+    "japanese": "富士山に登ったことがある。",
+    "romaji": "Fujisan ni nobotta koto ga aru.",
+    "dutch": "Ik heb ooit de Fuji-berg beklommen."
+   },
+   {
+    "japanese": "彼に会ったことがある。",
+    "romaji": "Kare ni atta koto ga aru.",
+    "dutch": "Ik heb hem ooit ontmoet."
+   },
+   {
+    "japanese": "この映画を見たことがある。",
+    "romaji": "Kono eiga o mita koto ga aru.",
+    "dutch": "Ik heb deze film ooit gezien."
+   },
+   {
+    "japanese": "フランス語を勉強したことがある。",
+    "romaji": "Furansugo o benkyou shita koto ga aru.",
+    "dutch": "Ik heb ooit Frans gestudeerd."
+   }
+  ]
+ },
+ "ja-n4-tari": {
+  "naam": "Het gebruik van 〜たり〜たり",
+  "tagline": "Leren hoe je verschillende acties kunt opsommen in het Japans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 〜たり〜たり wordt gebruikt om verschillende acties of toestanden op te sommen die niet noodzakelijk in een specifieke volgorde plaatsvinden. Het geeft een gevoel van variatie of herhaling aan, vaak zonder een specifieke volgorde of prioriteit.",
+  "patroon": "[werkwoordstam] + たり + [werkwoordstam] + たり + する",
+  "uitleg": "Het patroon 〜たり〜たり wordt vaak gebruikt om verschillende activiteiten of toestanden op te sommen die je hebt gedaan of van plan bent te doen. Het kan worden vergeleken met het Nederlandse 'dingen zoals ... en ... doen'. Het gebruik van 〜たり〜たり impliceert dat er meer activiteiten zijn dan alleen de genoemde, en dat deze activiteiten niet in een specifieke volgorde plaatsvinden. Het patroon eindigt meestal met する (suru) om aan te geven dat het om acties gaat. Dit patroon kan ook worden gebruikt met bijvoeglijke naamwoorden en zelfstandige naamwoorden, maar het meest gebruikelijk is het gebruik met werkwoorden.",
+  "opbouw": [
+   {
+    "element": "[werkwoordstam]",
+    "rol": "De stam van het werkwoord, zonder de 'masu' vorm.",
+    "voorbeeld": "たべ (tabe) van たべます (tabemasu)"
+   },
+   {
+    "element": "たり",
+    "rol": "De conjunctie die wordt toegevoegd aan de werkwoordstam om een opsomming te maken.",
+    "voorbeeld": "たべたり (tabetari)"
+   },
+   {
+    "element": "する",
+    "rol": "Het werkwoord dat de opsomming afsluit en aangeeft dat het om acties gaat.",
+    "voorbeeld": "する (suru)"
+   }
+  ],
+  "tips": [
+   "Gebruik 〜たり〜たり om een gevoel van variatie of herhaling te geven zonder specifieke volgorde.",
+   "Vergeet niet する aan het einde toe te voegen om de opsomming compleet te maken.",
+   "Dit patroon kan ook worden gebruikt met bijvoeglijke naamwoorden en zelfstandige naamwoorden, maar werkwoorden zijn het meest gebruikelijk.",
+   "Gebruik dit patroon om een ontspannen en informele toon aan te geven in je opsommingen."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten する aan het einde toe te voegen. Correct: たべたり のんだり する.",
+   "Het patroon gebruiken voor acties die in een specifieke volgorde moeten plaatsvinden. Correct gebruik: voor niet-specifieke volgorde.",
+   "Verkeerde werkwoordstam gebruiken. Correct: gebruik de stam zonder 'masu'."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "映画を見たり、本を読んだりします。",
+    "romaji": "Eiga o mitari, hon o yondari shimasu.",
+    "dutch": "Ik kijk films en lees boeken, onder andere."
+   },
+   {
+    "japanese": "週末は買い物をしたり、友達と会ったりします。",
+    "romaji": "Shuumatsu wa kaimono o shitari, tomodachi to attari shimasu.",
+    "dutch": "In het weekend ga ik winkelen en ontmoet ik vrienden, onder andere."
+   },
+   {
+    "japanese": "音楽を聴いたり、ギターを弾いたりします。",
+    "romaji": "Ongaku o kiitari, gitā o hiitari shimasu.",
+    "dutch": "Ik luister naar muziek en speel gitaar, onder andere."
+   },
+   {
+    "japanese": "雨が降ったり止んだりしています。",
+    "romaji": "Ame ga futtari yandari shiteimasu.",
+    "dutch": "Het regent en stopt dan weer, onder andere."
+   },
+   {
+    "japanese": "彼は笑ったり泣いたりしています。",
+    "romaji": "Kare wa warattari naitari shiteimasu.",
+    "dutch": "Hij lacht en huilt, onder andere."
+   },
+   {
+    "japanese": "昼寝をしたり、テレビを見たりします。",
+    "romaji": "Hirune o shitari, terebi o mitari shimasu.",
+    "dutch": "Ik doe een dutje en kijk televisie, onder andere."
+   }
+  ]
+ },
+ "ja-n4-to-omou": {
+  "naam": "Het gebruik van 〜と思う",
+  "tagline": "Leer hoe je je gedachten en meningen in het Japans uitdrukt.",
+  "niveau": "basis",
+  "kernregel": "Het patroon 〜と思う wordt gebruikt om je gedachten, meningen of vermoedens uit te drukken. Het kan zowel voor feitelijke als voor persoonlijke meningen worden gebruikt en is vergelijkbaar met het Nederlandse 'ik denk dat' of 'ik vind dat'.",
+  "patroon": "[zin] + と思う",
+  "uitleg": "In het Japans gebruik je 〜と思う om aan te geven dat iets jouw gedachte of mening is. Dit patroon is vergelijkbaar met het Nederlandse 'ik denk dat' of 'ik vind dat'. Het werkwoord 思う (omou) betekent 'denken'. Je kunt het gebruiken na een volledige zin om aan te geven dat de inhoud van die zin jouw gedachte is. Dit patroon is veelzijdig en kan worden gebruikt voor zowel objectieve als subjectieve uitspraken. Het is belangrijk om te weten dat de zin voor と思う in de informele vorm moet staan, zelfs in formele contexten.",
+  "opbouw": [
+   {
+    "element": "[zin]",
+    "rol": "De gedachte of mening die je wilt uitdrukken.",
+    "voorbeeld": "明日は雨が降る (ashita wa ame ga furu) - Morgen gaat het regenen."
+   },
+   {
+    "element": "と",
+    "rol": "Partikel dat de voorgaande zin verbindt met het werkwoord 思う.",
+    "voorbeeld": "と (to) - dat"
+   },
+   {
+    "element": "思う",
+    "rol": "Werkwoord dat 'denken' betekent.",
+    "voorbeeld": "思う (omou) - denken"
+   }
+  ],
+  "tips": [
+   "Gebruik de informele vorm van de zin voordat je と思う toevoegt.",
+   "Je kunt と思います gebruiken voor een beleefdere vorm.",
+   "Vergeet niet dat と als verbindingspartikel fungeert en essentieel is voor de structuur.",
+   "Dit patroon kan ook worden gebruikt om vermoedens uit te drukken, niet alleen sterke meningen."
+  ],
+  "veelgemaaktefouten": [
+   "Vergeten de zin in de informele vorm te zetten voor と, bijvoorbeeld: 明日は雨が降りますと思う in plaats van 明日は雨が降ると思う.",
+   "Het weglaten van と, bijvoorbeeld: 明日は雨が降る思う in plaats van 明日は雨が降ると思う.",
+   "思う verkeerd vervoegen in formele contexten, bijvoorbeeld: 思います in plaats van 思う in informele contexten."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "彼は来ると思う。",
+    "romaji": "Kare wa kuru to omou.",
+    "dutch": "Ik denk dat hij komt."
+   },
+   {
+    "japanese": "この映画は面白いと思います。",
+    "romaji": "Kono eiga wa omoshiroi to omoimasu.",
+    "dutch": "Ik vind dat deze film interessant is."
+   },
+   {
+    "japanese": "彼女は忙しいと思う。",
+    "romaji": "Kanojo wa isogashii to omou.",
+    "dutch": "Ik denk dat zij het druk heeft."
+   },
+   {
+    "japanese": "今日は寒いと思います。",
+    "romaji": "Kyou wa samui to omoimasu.",
+    "dutch": "Ik denk dat het vandaag koud is."
+   },
+   {
+    "japanese": "彼は正直だと思う。",
+    "romaji": "Kare wa shoujiki da to omou.",
+    "dutch": "Ik denk dat hij eerlijk is."
+   },
+   {
+    "japanese": "この本は難しいと思います。",
+    "romaji": "Kono hon wa muzukashii to omoimasu.",
+    "dutch": "Ik vind dat dit boek moeilijk is."
+   }
+  ]
+ },
+ "ja-n4-to-itteita": {
+  "naam": "Gebruik van 〜と言っていた",
+  "tagline": "Leer hoe je indirecte rede in het Japans kunt uitdrukken.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 〜と言っていた wordt gebruikt om te rapporteren wat iemand anders in het verleden heeft gezegd. Het drukt indirecte rede uit en geeft aan dat de spreker iets herhaalt dat eerder is gezegd.",
+  "patroon": "[zin in informele vorm] + と言っていた",
+  "uitleg": "In het Japans gebruik je 〜と言っていた om te zeggen wat iemand anders heeft gezegd, vergelijkbaar met 'zei dat' in het Nederlands. Dit patroon is nuttig wanneer je informatie wilt doorgeven die je van iemand anders hebt gehoord. Het verschil met 〜と言った is dat 〜と言っていた vaak een meer voortdurende of herhaalde actie impliceert, alsof de persoon het vaker heeft gezegd of dat het een algemeen bekend feit is. Het gebruik van de informele vorm van de werkwoorden of zinnen vóór と is belangrijk, omdat het de directe woorden van de oorspronkelijke spreker weerspiegelt. Dit patroon is handig in gesprekken waarin je wilt aangeven dat je informatie van een andere bron hebt.",
+  "opbouw": [
+   {
+    "element": "[zin in informele vorm]",
+    "rol": "De directe woorden of boodschap die je wilt rapporteren.",
+    "voorbeeld": "彼は来る (kare wa kuru) - Hij komt."
+   },
+   {
+    "element": "と",
+    "rol": "Partikel dat de gerapporteerde spraak inleidt, vergelijkbaar met 'dat' in het Nederlands.",
+    "voorbeeld": "と"
+   },
+   {
+    "element": "言っていた",
+    "rol": "Werkwoord dat aangeeft dat iets in het verleden is gezegd, in de vorm van 'zei'.",
+    "voorbeeld": "言っていた (itte ita)"
+   }
+  ],
+  "tips": [
+   "Gebruik altijd de informele vorm van het werkwoord of de zin vóór と.",
+   "Let op de context: gebruik 〜と言っていた voor herhaalde of voortdurende uitspraken.",
+   "Verwar 〜と言っていた niet met 〜と言った, dat meer een eenmalige uitspraak aanduidt.",
+   "Oefen met het herkennen van de informele vorm van werkwoorden om dit patroon effectief te gebruiken."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van de formele vorm vóór と: Correct is 彼は来ると言っていた, niet 彼は来ますと言っていた.",
+   "Verwarring tussen 〜と言っていた en 〜と言った: Gebruik 〜と言っていた voor herhaalde uitspraken.",
+   "Vergeten van と: Zorg ervoor dat je altijd と gebruikt om de gerapporteerde spraak in te leiden."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "彼女は忙しいと言っていた。",
+    "romaji": "Kanojo wa isogashii to itte ita.",
+    "dutch": "Ze zei dat ze het druk had."
+   },
+   {
+    "japanese": "彼は明日来ると言っていた。",
+    "romaji": "Kare wa ashita kuru to itte ita.",
+    "dutch": "Hij zei dat hij morgen zou komen."
+   },
+   {
+    "japanese": "先生は試験が難しいと言っていた。",
+    "romaji": "Sensei wa shiken ga muzukashii to itte ita.",
+    "dutch": "De leraar zei dat de toets moeilijk zou zijn."
+   },
+   {
+    "japanese": "友達は映画が面白いと言っていた。",
+    "romaji": "Tomodachi wa eiga ga omoshiroi to itte ita.",
+    "dutch": "Een vriend zei dat de film interessant was."
+   },
+   {
+    "japanese": "彼らはパーティーが楽しいと言っていた。",
+    "romaji": "Karera wa paatii ga tanoshii to itte ita.",
+    "dutch": "Ze zeiden dat het feest leuk was."
+   },
+   {
+    "japanese": "彼はそれを知らないと言っていた。",
+    "romaji": "Kare wa sore o shiranai to itte ita.",
+    "dutch": "Hij zei dat hij dat niet wist."
+   }
+  ]
+ },
+ "ja-n4-volitional": {
+  "naam": "Wilsvorm 〜よう",
+  "tagline": "Druk je intentie of voorstel uit met de wilsvorm.",
+  "niveau": "gemiddeld",
+  "kernregel": "De wilsvorm 〜よう wordt gebruikt om intenties of voorstellen uit te drukken in het Japans. Het is vergelijkbaar met het Nederlandse 'laten we' of 'ik zal'. Het patroon wordt vaak gebruikt in informele situaties om plannen of intenties aan te geven.",
+  "patroon": "[werkwoordstam] + よう",
+  "uitleg": "De wilsvorm, ook wel bekend als de volitionele vorm, wordt gebruikt om intenties of voorstellen uit te drukken. In het Nederlands komt dit overeen met zinnen als 'laten we gaan' of 'ik zal het doen'. De wilsvorm wordt vaak gebruikt in informele gesprekken en kan ook dienen om een suggestie te doen. Het is belangrijk om te weten dat de wilsvorm verschilt afhankelijk van of het werkwoord een godan- of ichidan-werkwoord is. Voor godan-werkwoorden wordt de laatste klank van de stam veranderd naar de o-klank en gevolgd door う, terwijl voor ichidan-werkwoorden de stam gevolgd wordt door よう.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de laatste klank.",
+    "voorbeeld": "食べ (tabe) van 食べる (taberu)"
+   },
+   {
+    "element": "よう",
+    "rol": "Partikel dat de intentie of het voorstel aangeeft.",
+    "voorbeeld": "食べよう (tabeyou) - laten we eten"
+   }
+  ],
+  "tips": [
+   "Voor godan-werkwoorden: verander de laatste klank naar de o-klank en voeg う toe.",
+   "Voor ichidan-werkwoorden: verwijder る en voeg よう toe.",
+   "Gebruik de wilsvorm in informele situaties of met vrienden.",
+   "De wilsvorm kan ook worden gebruikt om jezelf te motiveren, zoals in 'ik zal het doen'."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van godan- en ichidan-werkwoorden: Zorg ervoor dat je weet welk type werkwoord je gebruikt.",
+   "Verkeerde klankverandering bij godan-werkwoorden: Vergeet niet de laatste klank naar de o-klank te veranderen.",
+   "Gebruik van de wilsvorm in formele situaties: Gebruik in formele situaties liever de beleefde vorm."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "映画を見よう。",
+    "romaji": "Eiga o miyou.",
+    "dutch": "Laten we een film kijken."
+   },
+   {
+    "japanese": "明日、早く起きよう。",
+    "romaji": "Ashita, hayaku okiyou.",
+    "dutch": "Laten we morgen vroeg opstaan."
+   },
+   {
+    "japanese": "公園に行こう。",
+    "romaji": "Kouen ni ikou.",
+    "dutch": "Laten we naar het park gaan."
+   },
+   {
+    "japanese": "宿題を終わらせよう。",
+    "romaji": "Shukudai o owaraseyou.",
+    "dutch": "Laten we het huiswerk afmaken."
+   },
+   {
+    "japanese": "彼に電話しよう。",
+    "romaji": "Kare ni denwa shiyou.",
+    "dutch": "Laten we hem bellen."
+   },
+   {
+    "japanese": "新しいレストランを試そう。",
+    "romaji": "Atarashii resutoran o tamesou.",
+    "dutch": "Laten we het nieuwe restaurant proberen."
+   }
+  ]
+ },
+ "ja-n4-tsumori": {
+  "naam": "Het gebruik van 〜つもり",
+  "tagline": "Uitdrukken van intenties en plannen in het Japans",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 〜つもり wordt gebruikt om intenties of plannen uit te drukken. Het geeft aan wat iemand van plan is te doen of denkt te doen in de toekomst.",
+  "patroon": "[werkwoord in de gewone vorm] + つもり",
+  "uitleg": "In het Japans gebruik je 〜つもり om aan te geven dat je iets van plan bent te doen. Dit patroon kan worden toegepast op zowel positieve als negatieve intenties. Het komt overeen met het Nederlandse 'van plan zijn om te...' of 'denken te...'. Het is belangrijk om te weten dat 〜つもり zowel voor toekomstige als soms voor huidige intenties kan worden gebruikt, afhankelijk van de context. Het werkwoord dat je gebruikt, moet in de gewone vorm staan, wat betekent dat je de niet-verleden tijdsvorm gebruikt voor toekomstige intenties en de verleden tijdsvorm voor intenties die niet zijn uitgevoerd.",
+  "opbouw": [
+   {
+    "element": "werkwoord in de gewone vorm",
+    "rol": "Geeft de actie aan die gepland is",
+    "voorbeeld": "行く (iku) - gaan"
+   },
+   {
+    "element": "つもり",
+    "rol": "Duidt de intentie of het plan aan",
+    "voorbeeld": "つもり (tsumori) - van plan zijn"
+   }
+  ],
+  "tips": [
+   "Gebruik de gewone vorm van het werkwoord voor zowel positieve als negatieve intenties.",
+   "Vergeet niet dat 〜つもり ook gebruikt kan worden voor intenties die niet zijn uitgevoerd, door de verleden tijd te gebruiken.",
+   "Let op de context om te bepalen of het om een toekomstige of huidige intentie gaat.",
+   "Gebruik 〜つもり niet voor vage of onzekere plannen; het drukt een duidelijke intentie uit."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de te-vorm van het werkwoord in plaats van de gewone vorm. Correctie: Gebruik de gewone vorm, bijvoorbeeld 行くつもり (iku tsumori) in plaats van 行ってつもり (itte tsumori).",
+   "Verwarring tussen 〜つもり en 〜たい. Correctie: Gebruik 〜つもり voor plannen en intenties, en 〜たい voor wensen of verlangens."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "明日、映画を見に行くつもりです。",
+    "romaji": "Ashita, eiga o mi ni iku tsumori desu.",
+    "dutch": "Ik ben van plan om morgen naar de film te gaan."
+   },
+   {
+    "japanese": "週末に友達と会うつもりでしたが、忙しくてできませんでした。",
+    "romaji": "Shuumatsu ni tomodachi to au tsumori deshita ga, isogashikute dekimasen deshita.",
+    "dutch": "Ik was van plan om dit weekend vrienden te ontmoeten, maar ik was te druk."
+   },
+   {
+    "japanese": "来年、日本に行くつもりです。",
+    "romaji": "Rainen, Nihon ni iku tsumori desu.",
+    "dutch": "Ik ben van plan om volgend jaar naar Japan te gaan."
+   },
+   {
+    "japanese": "彼は医者になるつもりです。",
+    "romaji": "Kare wa isha ni naru tsumori desu.",
+    "dutch": "Hij is van plan om dokter te worden."
+   },
+   {
+    "japanese": "今日は早く寝るつもりです。",
+    "romaji": "Kyou wa hayaku neru tsumori desu.",
+    "dutch": "Ik ben van plan om vandaag vroeg naar bed te gaan."
+   },
+   {
+    "japanese": "彼女はその本を読むつもりはありません。",
+    "romaji": "Kanojo wa sono hon o yomu tsumori wa arimasen.",
+    "dutch": "Zij is niet van plan om dat boek te lezen."
+   }
+  ]
+ },
+ "ja-n4-conditionals": {
+  "naam": "Voorwaardelijke Zinnen in het Japans: 〜ば・たら・と",
+  "tagline": "Leer hoe je voorwaarden en condities uitdrukt in het Japans.",
+  "niveau": "gemiddeld",
+  "kernregel": "De Japanse taal kent verschillende manieren om voorwaarden en condities uit te drukken, namelijk met 〜ば, 〜たら en 〜と. Elk van deze patronen heeft zijn eigen nuances en gebruikssituaties, afhankelijk van de context en de zekerheid van de voorwaarde.",
+  "patroon": "[werkwoordstam] + ば / [werkwoord in verleden tijd] + たら / [werkwoordstam] + と",
+  "uitleg": "In het Japans kun je voorwaarden uitdrukken met 〜ば, 〜たら en 〜と. Het gebruik van 〜ば is gebruikelijk wanneer je een algemene voorwaarde stelt, vergelijkbaar met 'als' in het Nederlands. 〜たら wordt vaak gebruikt voor specifieke, eenmalige gebeurtenissen en heeft een meer persoonlijke of directe toon. 〜と wordt meestal gebruikt voor universele waarheden of onvermijdelijke resultaten, vergelijkbaar met 'wanneer' of 'zodra'. Elk van deze patronen heeft zijn eigen grammaticale structuur en wordt gekozen op basis van de context en de zekerheid van de voorwaarde.",
+  "opbouw": [
+   {
+    "element": "[werkwoordstam] + ば",
+    "rol": "Drukt een algemene voorwaarde uit.",
+    "voorbeeld": "行けば (ikeba) - als je gaat"
+   },
+   {
+    "element": "[werkwoord in verleden tijd] + たら",
+    "rol": "Gebruikt voor specifieke, eenmalige gebeurtenissen.",
+    "voorbeeld": "行ったら (ittara) - als je bent gegaan"
+   },
+   {
+    "element": "[werkwoordstam] + と",
+    "rol": "Geeft een universele waarheid of onvermijdelijk resultaat aan.",
+    "voorbeeld": "行くと (iku to) - wanneer je gaat"
+   }
+  ],
+  "tips": [
+   "Gebruik 〜ば voor algemene voorwaarden die niet gebonden zijn aan een specifieke tijd of gebeurtenis.",
+   "Gebruik 〜たら voor specifieke situaties of als je een persoonlijke ervaring wilt delen.",
+   "Gebruik 〜と voor situaties waarin het resultaat als onvermijdelijk of algemeen waar wordt beschouwd.",
+   "Let op de context en de zekerheid van de voorwaarde om het juiste patroon te kiezen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van 〜と voor persoonlijke of specifieke situaties, wat leidt tot een onnatuurlijke zin. Gebruik in plaats daarvan 〜たら.",
+   "Verwarring tussen 〜ば en 〜たら bij het uitdrukken van algemene voorwaarden. 〜ば is meestal geschikter voor algemene voorwaarden.",
+   "Verkeerd vervoegen van werkwoorden bij het gebruik van 〜ば, zoals 行くば in plaats van 行けば."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "雨が降れば、試合は中止です。",
+    "romaji": "Ame ga fureba, shiai wa chūshi desu.",
+    "dutch": "Als het regent, wordt de wedstrijd afgelast."
+   },
+   {
+    "japanese": "彼が来たら、知らせてください。",
+    "romaji": "Kare ga kitara, shirasete kudasai.",
+    "dutch": "Laat het me weten als hij komt."
+   },
+   {
+    "japanese": "このボタンを押すと、ドアが開きます。",
+    "romaji": "Kono botan o osu to, doa ga akimasu.",
+    "dutch": "Wanneer je op deze knop drukt, gaat de deur open."
+   },
+   {
+    "japanese": "時間があれば、手伝います。",
+    "romaji": "Jikan ga areba, tetsudaimasu.",
+    "dutch": "Als ik tijd heb, help ik je."
+   },
+   {
+    "japanese": "家に帰ったら、すぐに寝ます。",
+    "romaji": "Ie ni kaettara, sugu ni nemasu.",
+    "dutch": "Als ik thuiskom, ga ik meteen slapen."
+   },
+   {
+    "japanese": "春になると、桜が咲きます。",
+    "romaji": "Haru ni naru to, sakura ga sakimasu.",
+    "dutch": "Wanneer het lente wordt, bloeien de kersenbloesems."
+   }
+  ]
+ },
+ "ja-n4-nagara": {
+  "naam": "Het gebruik van 〜ながら",
+  "tagline": "Twee handelingen tegelijkertijd uitvoeren in het Japans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 〜ながら wordt gebruikt om aan te geven dat twee handelingen tegelijkertijd plaatsvinden. De eerste handeling, aangegeven door het werkwoord voor 〜ながら, is meestal een achtergrondactiviteit, terwijl de tweede handeling de hoofdactiviteit is.",
+  "patroon": "[werkwoordstam] + ながら + [hoofdhandeling]",
+  "uitleg": "In het Japans gebruik je 〜ながら om twee activiteiten die tegelijkertijd plaatsvinden te beschrijven. Dit patroon is vergelijkbaar met het Nederlandse 'terwijl' of 'al...doende'. Het werkwoord dat voor 〜ながら komt, wordt in de stamvorm gebruikt en beschrijft de activiteit die op de achtergrond plaatsvindt. De tweede activiteit, die vaak belangrijker is, volgt na 〜ながら. Dit patroon wordt vaak gebruikt in informele en formele gesprekken om dagelijkse routines of gewoonten te beschrijven. Het is belangrijk om te onthouden dat de handeling voor 〜ながら meestal een doorlopende activiteit is.",
+  "opbouw": [
+   {
+    "element": "[werkwoordstam]",
+    "rol": "De stam van het werkwoord dat de achtergrondactiviteit beschrijft.",
+    "voorbeeld": "食べ (tabe) van 食べる (taberu)"
+   },
+   {
+    "element": "ながら",
+    "rol": "Partikel dat aangeeft dat de voorafgaande handeling tegelijkertijd met de volgende plaatsvindt.",
+    "voorbeeld": "ながら"
+   },
+   {
+    "element": "[hoofdhandeling]",
+    "rol": "De belangrijkste activiteit die tegelijkertijd met de achtergrondactiviteit plaatsvindt.",
+    "voorbeeld": "テレビを見る (terebi o miru)"
+   }
+  ],
+  "tips": [
+   "Gebruik de stamvorm van het werkwoord voor 〜ながら.",
+   "De activiteit voor 〜ながら is meestal minder belangrijk dan de activiteit erna.",
+   "Dit patroon is handig om dagelijkse routines of gewoonten te beschrijven.",
+   "Let op de context om te bepalen welke activiteit de hoofdhandeling is."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarring tussen de stamvorm en de te-vorm van het werkwoord. Correct: 歌いながら (utai-nagara), niet 歌ってながら (utatte-nagara).",
+   "Gebruik van 〜ながら voor niet-gelijktijdige handelingen. Correct: 歩きながら考える (aruki-nagara kangaeru), niet voor opeenvolgende acties.",
+   "Verkeerde prioriteit aan de activiteiten geven. Correct: 音楽を聴きながら勉強する (ongaku o kiki-nagara benkyou suru), waarbij studeren de hoofdactiviteit is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "音楽を聴きながら勉強します。",
+    "romaji": "Ongaku o kiki-nagara benkyou shimasu.",
+    "dutch": "Ik studeer terwijl ik naar muziek luister."
+   },
+   {
+    "japanese": "テレビを見ながら夕食を食べます。",
+    "romaji": "Terebi o mi-nagara yuushoku o tabemasu.",
+    "dutch": "Ik eet avondeten terwijl ik televisie kijk."
+   },
+   {
+    "japanese": "歩きながら電話をします。",
+    "romaji": "Aruki-nagara denwa o shimasu.",
+    "dutch": "Ik bel terwijl ik loop."
+   },
+   {
+    "japanese": "彼は本を読みながらコーヒーを飲みます。",
+    "romaji": "Kare wa hon o yomi-nagara koohii o nomimasu.",
+    "dutch": "Hij drinkt koffie terwijl hij een boek leest."
+   },
+   {
+    "japanese": "彼女は歌いながらシャワーを浴びます。",
+    "romaji": "Kanojo wa utai-nagara shawaa o abimasu.",
+    "dutch": "Zij zingt terwijl ze een douche neemt."
+   },
+   {
+    "japanese": "音楽を聴きながら走ります。",
+    "romaji": "Ongaku o kiki-nagara hashirimasu.",
+    "dutch": "Ik ren terwijl ik naar muziek luister."
+   }
+  ]
+ },
+ "ja-n4-you-ni-naru": {
+  "naam": "Het patroon 〜ようになる",
+  "tagline": "Leer hoe je veranderingen en nieuwe gewoontes in het Japans uitdrukt!",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 〜ようになる wordt gebruikt om aan te geven dat er een verandering heeft plaatsgevonden of dat iemand een nieuwe gewoonte heeft ontwikkeld. Het kan zowel fysieke als mentale veranderingen beschrijven, zoals het leren van een nieuwe vaardigheid of het aanpassen van gedrag.",
+  "patroon": "[werkwoord in de neutrale vorm] + ようになる",
+  "uitleg": "In het Japans gebruik je 〜ようになる om te zeggen dat er een verandering is opgetreden, vaak in de context van het leren of beginnen van iets nieuws. Dit patroon kan worden vergeleken met het Nederlandse 'beginnen te' of 'in staat zijn om'. Het geeft aan dat een bepaalde actie of toestand, die voorheen niet mogelijk was, nu wel mogelijk is. Dit patroon kan zowel met werkwoorden in de positieve als negatieve vorm worden gebruikt, afhankelijk van of je wilt aangeven dat je iets bent gaan doen of juist niet meer doet.",
+  "opbouw": [
+   {
+    "element": "werkwoord in de neutrale vorm",
+    "rol": "Geeft de actie of toestand aan die verandert.",
+    "voorbeeld": "話す (hanasu) - spreken"
+   },
+   {
+    "element": "よう (you)",
+    "rol": "Geeft de intentie of mogelijkheid aan.",
+    "voorbeeld": "よう (you) - manier"
+   },
+   {
+    "element": "になる (ni naru)",
+    "rol": "Drukt de verandering of het bereiken van een nieuwe staat uit.",
+    "voorbeeld": "なる (naru) - worden"
+   }
+  ],
+  "tips": [
+   "Gebruik de neutrale vorm van het werkwoord voordat je ようになる toevoegt.",
+   "Dit patroon kan zowel met positieve als negatieve werkwoorden worden gebruikt, afhankelijk van de context.",
+   "Onthoud dat ようになる vaak een proces of verandering over tijd impliceert.",
+   "Gebruik dit patroon om nieuwe gewoontes of vaardigheden aan te geven die je hebt ontwikkeld."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de te-vorm in plaats van de neutrale vorm: Correct is 話すようになる (hanasu you ni naru), niet 話してようになる (hanashite you ni naru).",
+   "Verwarring tussen ようになる en ことになる: ようになる wordt gebruikt voor persoonlijke veranderingen, terwijl ことになる vaak formele beslissingen of afspraken aanduidt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "毎日運動するようになりました。",
+    "romaji": "Mainichi undou suru you ni narimashita.",
+    "dutch": "Ik ben begonnen elke dag te sporten."
+   },
+   {
+    "japanese": "日本語が話せるようになった。",
+    "romaji": "Nihongo ga hanaseru you ni natta.",
+    "dutch": "Ik ben Japans gaan spreken."
+   },
+   {
+    "japanese": "早く起きるようになった。",
+    "romaji": "Hayaku okiru you ni natta.",
+    "dutch": "Ik ben vroeg opstaan gaan doen."
+   },
+   {
+    "japanese": "甘いものを食べないようになった。",
+    "romaji": "Amai mono o tabenai you ni natta.",
+    "dutch": "Ik ben gestopt met het eten van zoetigheid."
+   },
+   {
+    "japanese": "車を運転できるようになった。",
+    "romaji": "Kuruma o unten dekiru you ni natta.",
+    "dutch": "Ik ben in staat om auto te rijden."
+   },
+   {
+    "japanese": "テレビを見ないようになった。",
+    "romaji": "Terebi o minai you ni natta.",
+    "dutch": "Ik ben gestopt met televisie kijken."
+   }
+  ]
+ },
+ "ja-n4-sugiru": {
+  "naam": "Het gebruik van 〜すぎる",
+  "tagline": "Leer hoe je 'te veel' of 'overmatig' uitdrukt in het Japans.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 〜すぎる wordt gebruikt om aan te geven dat iets te veel of te overdreven is. Het kan worden toegepast op werkwoorden, bijvoeglijke naamwoorden en bijwoorden om een overmaat aan te geven.",
+  "patroon": "[stam van werkwoord/bijvoeglijk naamwoord] + すぎる",
+  "uitleg": "In het Japans gebruik je 〜すぎる om te zeggen dat iets te veel is, vergelijkbaar met het Nederlandse 'te' zoals in 'te veel eten' of 'te warm'. Het kan worden toegepast op werkwoorden, waarbij de stam van het werkwoord wordt gebruikt, en op bijvoeglijke naamwoorden, waarbij de laatste klinker wordt weggelaten (bij -i bijvoeglijke naamwoorden) of direct wordt toegevoegd (bij -na bijvoeglijke naamwoorden). Het is een nuttig patroon om te beschrijven wanneer iets buiten de normale grenzen valt, zoals te veel eten, te hard werken of te warm weer.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van een werkwoord zonder de 'masu' of 'ru' eindiging.",
+    "voorbeeld": "食べる (taberu) → 食べ (tabe)"
+   },
+   {
+    "element": "i-bijvoeglijk naamwoord stam",
+    "rol": "De stam van een i-bijvoeglijk naamwoord zonder de eindklinker 'i'.",
+    "voorbeeld": "暑い (atsui) → 暑 (atsu)"
+   },
+   {
+    "element": "na-bijvoeglijk naamwoord",
+    "rol": "Het bijvoeglijk naamwoord zelf zonder enige verandering.",
+    "voorbeeld": "簡単な (kantan na) → 簡単 (kantan)"
+   },
+   {
+    "element": "すぎる",
+    "rol": "Het werkwoord dat 'te veel' of 'overmatig' betekent.",
+    "voorbeeld": "すぎる (sugiru)"
+   }
+  ],
+  "tips": [
+   "Vergeet niet de laatste 'i' te verwijderen bij i-bijvoeglijke naamwoorden voordat je すぎる toevoegt.",
+   "Gebruik すぎる na de stam van een werkwoord, niet de volledige werkwoordsvorm.",
+   "Bij na-bijvoeglijke naamwoorden voeg je すぎる direct toe zonder verandering.",
+   "Let op de context; すぎる kan zowel positief als negatief zijn afhankelijk van de situatie."
+  ],
+  "veelgemaaktefouten": [
+   "Verkeerd gebruik van de volledige werkwoordsvorm met すぎる, zoals 食べますすぎる in plaats van 食べすぎる.",
+   "Het niet verwijderen van de 'i' bij i-bijvoeglijke naamwoorden, zoals 暑いすぎる in plaats van 暑すぎる.",
+   "Gebruik van すぎる zonder de juiste context, wat kan leiden tot verwarring over de betekenis van de zin."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "食べすぎると、お腹が痛くなる。",
+    "romaji": "Tabesugiru to, onaka ga itaku naru.",
+    "dutch": "Als je te veel eet, krijg je buikpijn."
+   },
+   {
+    "japanese": "この部屋は暑すぎる。",
+    "romaji": "Kono heya wa atsusugiru.",
+    "dutch": "Deze kamer is te warm."
+   },
+   {
+    "japanese": "彼は働きすぎている。",
+    "romaji": "Kare wa hatarakisugite iru.",
+    "dutch": "Hij werkt te veel."
+   },
+   {
+    "japanese": "この問題は簡単すぎる。",
+    "romaji": "Kono mondai wa kantansugiru.",
+    "dutch": "Dit probleem is te eenvoudig."
+   },
+   {
+    "japanese": "彼女は心配しすぎる。",
+    "romaji": "Kanojo wa shinpai shisugiru.",
+    "dutch": "Zij maakt zich te veel zorgen."
+   },
+   {
+    "japanese": "この映画は長すぎる。",
+    "romaji": "Kono eiga wa nagasugiru.",
+    "dutch": "Deze film is te lang."
+   }
+  ]
+ },
+ "ja-n4-kata": {
+  "naam": "Het gebruik van 〜方 (kata) om manieren of methoden uit te drukken",
+  "tagline": "Leer hoe je in het Japans manieren en methoden kunt beschrijven met 〜方.",
+  "niveau": "gemiddeld",
+  "kernregel": "Het patroon 〜方 (kata) wordt gebruikt om de manier of methode aan te geven waarop iets gedaan wordt. Het wordt vaak toegepast door de stam van een werkwoord te combineren met 方, waardoor je kunt aangeven hoe iets moet worden uitgevoerd.",
+  "patroon": "[werkwoordstam] + 方",
+  "uitleg": "In het Japans gebruik je 〜方 (kata) om de manier waarop iets gedaan wordt te beschrijven. Dit is vergelijkbaar met het Nederlandse 'de manier van' of 'hoe te'. Je neemt de stam van een werkwoord en voegt 方 toe om de methode aan te geven. Bijvoorbeeld, 食べ方 (tabekata) betekent 'de manier van eten' of 'hoe te eten'. Dit patroon is nuttig in situaties waarin je instructies geeft of vraagt hoe iets moet worden gedaan. Het is belangrijk om te onthouden dat het werkwoord in zijn stamvorm moet staan, wat betekent dat je de -ます vorm van het werkwoord zonder de -ます gebruikt.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de -ます, die aangeeft welke actie wordt beschreven.",
+    "voorbeeld": "食べ (tabe) van 食べます (tabemasu)"
+   },
+   {
+    "element": "方",
+    "rol": "Het achtervoegsel dat 'manier' of 'methode' betekent en aangeeft hoe de actie wordt uitgevoerd.",
+    "voorbeeld": "方 (kata)"
+   }
+  ],
+  "tips": [
+   "Zorg ervoor dat je de stam van het werkwoord correct gebruikt door de -ます vorm te verwijderen.",
+   "Gebruik 〜方 om te vragen naar of uit te leggen hoe iets gedaan moet worden.",
+   "Onthoud dat dit patroon voornamelijk gebruikt wordt voor instructies of beschrijvingen van methoden.",
+   "Let op de context waarin je 〜方 gebruikt, want het kan soms formeel overkomen."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de volledige -ます vorm in plaats van de stamvorm. Correct: 読み方 (yomikata), niet 読みます方 (yomimasukata).",
+   "Vergeten om de juiste stamvorm te gebruiken voor werkwoorden die onregelmatig zijn. Bijvoorbeeld, voor する (suru) is het し方 (shikata), niet す方 (sukata)."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "書き方",
+    "romaji": "kakikata",
+    "dutch": "de manier van schrijven"
+   },
+   {
+    "japanese": "泳ぎ方",
+    "romaji": "oyogikata",
+    "dutch": "hoe te zwemmen"
+   },
+   {
+    "japanese": "使い方",
+    "romaji": "tsukaikata",
+    "dutch": "hoe te gebruiken"
+   },
+   {
+    "japanese": "作り方",
+    "romaji": "tsukurikata",
+    "dutch": "hoe te maken"
+   },
+   {
+    "japanese": "話し方",
+    "romaji": "hanashikata",
+    "dutch": "de manier van spreken"
+   },
+   {
+    "japanese": "歩き方",
+    "romaji": "arukikata",
+    "dutch": "hoe te lopen"
+   }
+  ]
+ },
+ "ja-n4-plain": {
+  "naam": "Informele Vorm (常体)",
+  "tagline": "Leer hoe je informeel Japans spreekt en schrijft.",
+  "niveau": "basis",
+  "kernregel": "De informele vorm, 常体 (joutai), wordt gebruikt in alledaagse gesprekken met vrienden, familie en mensen van dezelfde leeftijd of jonger. Het is essentieel voor het begrijpen van informele communicatie, zoals in manga, anime en informele berichten.",
+  "patroon": "[werkwoordstam] + [informele eindklank]",
+  "uitleg": "In het Japans zijn er twee hoofdniveaus van beleefdheid: de formele vorm (敬体, keitai) en de informele vorm (常体, joutai). De informele vorm wordt gebruikt in situaties waar beleefdheid minder belangrijk is, zoals onder vrienden of familie. Het is vergelijkbaar met het verschil tussen 'jij' en 'u' in het Nederlands. In de informele vorm worden werkwoorden en bijvoeglijke naamwoorden vaak in hun basisvorm gebruikt. Bijvoorbeeld, de formele vorm van 'eten' is 食べます (tabemasu), terwijl de informele vorm 食べる (taberu) is. Het is belangrijk om te weten wanneer je welke vorm moet gebruiken om niet onbedoeld onbeleefd over te komen.",
+  "opbouw": [
+   {
+    "element": "Werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de formele eindklank.",
+    "voorbeeld": "食べ (tabe)"
+   },
+   {
+    "element": "Informele eindklank",
+    "rol": "De klank die aangeeft dat het werkwoord in de informele vorm staat.",
+    "voorbeeld": "る (ru)"
+   },
+   {
+    "element": "Bijvoeglijk naamwoord",
+    "rol": "In de informele vorm blijven bijvoeglijke naamwoorden vaak ongewijzigd.",
+    "voorbeeld": "大きい (ookii)"
+   },
+   {
+    "element": "Zelfstandig naamwoord",
+    "rol": "Wordt vaak gevolgd door だ (da) in informele zinnen.",
+    "voorbeeld": "学生だ (gakusei da)"
+   }
+  ],
+  "tips": [
+   "Gebruik de informele vorm alleen met mensen die je goed kent of van dezelfde leeftijd zijn.",
+   "Oefen met het herkennen van de informele vorm in manga en anime om je begrip te verbeteren.",
+   "Let op de context waarin je de informele vorm gebruikt om beleefdheidsfouten te voorkomen.",
+   "Probeer eerst de formele vorm te beheersen voordat je naar de informele vorm overschakelt."
+  ],
+  "veelgemaaktefouten": [
+   "Het gebruik van de informele vorm in formele situaties. Correctie: Gebruik de formele vorm (敬体) in formele situaties.",
+   "Verwarring tussen de informele en formele vormen van werkwoorden. Correctie: Oefen regelmatig met beide vormen om ze te onderscheiden.",
+   "Vergeten om だ (da) toe te voegen na zelfstandige naamwoorden in informele zinnen. Correctie: Zorg ervoor dat je だ toevoegt als het nodig is."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "彼は学生だ。",
+    "romaji": "Kare wa gakusei da.",
+    "dutch": "Hij is een student."
+   },
+   {
+    "japanese": "明日映画を見る。",
+    "romaji": "Ashita eiga o miru.",
+    "dutch": "Ik ga morgen een film kijken."
+   },
+   {
+    "japanese": "この本は面白い。",
+    "romaji": "Kono hon wa omoshiroi.",
+    "dutch": "Dit boek is interessant."
+   },
+   {
+    "japanese": "私は日本に行く。",
+    "romaji": "Watashi wa Nihon ni iku.",
+    "dutch": "Ik ga naar Japan."
+   },
+   {
+    "japanese": "彼女は歌が上手だ。",
+    "romaji": "Kanojo wa uta ga jouzu da.",
+    "dutch": "Zij is goed in zingen."
+   },
+   {
+    "japanese": "友達と遊ぶ。",
+    "romaji": "Tomodachi to asobu.",
+    "dutch": "Ik ga met vrienden spelen."
+   }
+  ]
+ },
+ "ja-n4-giving": {
+  "naam": "あげる・くれる・もらう: Het geven en ontvangen in het Japans",
+  "tagline": "Begrijp de nuances van geven en ontvangen in de Japanse taal",
+  "niveau": "gemiddeld",
+  "kernregel": "De werkwoorden あげる (ageru), くれる (kureru) en もらう (morau) worden gebruikt om te beschrijven wie iets aan wie geeft of van wie iets ontvangt. Het verschil tussen deze werkwoorden ligt in het perspectief van de spreker en de betrokken partijen.",
+  "patroon": "[gever] は [ontvanger] に [object] を あげる/くれる; [ontvanger] は [gever] に [object] を もらう",
+  "uitleg": "In het Japans zijn er specifieke werkwoorden om te beschrijven wie iets aan wie geeft of van wie iets ontvangt, afhankelijk van het perspectief. あげる (ageru) wordt gebruikt wanneer de spreker of een derde persoon iets aan iemand anders geeft. くれる (kureru) wordt gebruikt wanneer iemand iets aan de spreker of een lid van de spreker's in-group geeft. もらう (morau) wordt gebruikt wanneer de spreker of een derde persoon iets ontvangt van iemand anders. Deze werkwoorden helpen om de sociale relaties en perspectieven in een gesprek duidelijk te maken, iets wat in het Nederlands vaak impliciet blijft.",
+  "opbouw": [
+   {
+    "element": "gever",
+    "rol": "De persoon die het object geeft.",
+    "voorbeeld": "田中さん (Tanaka-san)"
+   },
+   {
+    "element": "ontvanger",
+    "rol": "De persoon die het object ontvangt.",
+    "voorbeeld": "私 (watashi)"
+   },
+   {
+    "element": "object",
+    "rol": "Het item dat gegeven of ontvangen wordt.",
+    "voorbeeld": "本 (hon)"
+   },
+   {
+    "element": "あげる",
+    "rol": "Wordt gebruikt wanneer de gever iets aan een ander geeft.",
+    "voorbeeld": "田中さんは私に本をあげました。"
+   },
+   {
+    "element": "くれる",
+    "rol": "Wordt gebruikt wanneer de gever iets aan de spreker of hun in-group geeft.",
+    "voorbeeld": "田中さんは私に本をくれました。"
+   },
+   {
+    "element": "もらう",
+    "rol": "Wordt gebruikt wanneer de ontvanger iets van een ander krijgt.",
+    "voorbeeld": "私は田中さんに本をもらいました。"
+   }
+  ],
+  "tips": [
+   "Gebruik あげる als de gever en ontvanger niet de spreker zijn.",
+   "Gebruik くれる als de gever iets aan de spreker of hun in-group geeft.",
+   "Gebruik もらう om te benadrukken dat de spreker of hun in-group iets ontvangt.",
+   "Let op de context en de relatie tussen de betrokken partijen om het juiste werkwoord te kiezen."
+  ],
+  "veelgemaaktefouten": [
+   "あげる gebruiken wanneer de spreker de ontvanger is. Correctie: gebruik くれる.",
+   "くれる gebruiken wanneer de spreker de gever is. Correctie: gebruik あげる.",
+   "もらう gebruiken zonder duidelijk te maken wie de gever is. Correctie: specificeer altijd de gever met に."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "彼は彼女に花をあげました。",
+    "romaji": "Kare wa kanojo ni hana o agemashita.",
+    "dutch": "Hij gaf haar bloemen."
+   },
+   {
+    "japanese": "彼女は私にプレゼントをくれました。",
+    "romaji": "Kanojo wa watashi ni purezento o kuremashita.",
+    "dutch": "Zij gaf mij een cadeau."
+   },
+   {
+    "japanese": "私は友達に手紙をもらいました。",
+    "romaji": "Watashi wa tomodachi ni tegami o moraimashita.",
+    "dutch": "Ik kreeg een brief van een vriend."
+   },
+   {
+    "japanese": "先生は学生にアドバイスをあげました。",
+    "romaji": "Sensei wa gakusei ni adobaisu o agemashita.",
+    "dutch": "De leraar gaf de student advies."
+   },
+   {
+    "japanese": "友達が私にチョコレートをくれました。",
+    "romaji": "Tomodachi ga watashi ni chokorēto o kuremashita.",
+    "dutch": "Een vriend gaf mij chocolade."
+   },
+   {
+    "japanese": "私は母にセーターをもらいました。",
+    "romaji": "Watashi wa haha ni sētā o moraimashita.",
+    "dutch": "Ik kreeg een trui van mijn moeder."
+   }
+  ]
+ },
+ "ja-n4-passive": {
+  "naam": "Lijdende Vorm in het Japans: 〜られる",
+  "tagline": "Begrijp hoe je de lijdende vorm in het Japans gebruikt.",
+  "niveau": "gemiddeld",
+  "kernregel": "De lijdende vorm in het Japans, aangeduid met 〜られる, wordt gebruikt om aan te geven dat het onderwerp van de zin de ontvanger is van een actie, vergelijkbaar met de lijdende vorm in het Nederlands. Het benadrukt vaak het ondergaan van een handeling of een situatie waarin het onderwerp geen controle heeft.",
+  "patroon": "[werkwoordstam] + られる",
+  "uitleg": "In het Japans wordt de lijdende vorm gebruikt om te benadrukken dat het onderwerp van de zin de actie ondergaat in plaats van uitvoert. Dit kan worden vergeleken met de lijdende vorm in het Nederlands, zoals in 'De brief wordt geschreven door de man'. In het Japans wordt de lijdende vorm vaak gebruikt om een gevoel van ongemak of onvrijwilligheid uit te drukken. Het is belangrijk om te weten dat niet alle werkwoorden in het Japans een lijdende vorm hebben; het wordt meestal toegepast op transitieve werkwoorden. De lijdende vorm kan ook beleefdheid of respect uitdrukken, afhankelijk van de context.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de eindklank -u.",
+    "voorbeeld": "書く (kaku) -> 書か (kaka)"
+   },
+   {
+    "element": "られる",
+    "rol": "De suffix die aan de werkwoordstam wordt toegevoegd om de lijdende vorm te creëren.",
+    "voorbeeld": "書かれる (kakareru)"
+   }
+  ],
+  "tips": [
+   "Gebruik de lijdende vorm om te benadrukken dat het onderwerp de actie ondergaat.",
+   "Let op de context, want de lijdende vorm kan ook beleefdheid of respect uitdrukken.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met de lijdende vorm.",
+   "Onthoud dat niet alle werkwoorden een lijdende vorm hebben; focus op transitieve werkwoorden."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de lijdende vorm met de causatieve vorm. Correctie: Let op de context en de suffixen.",
+   "Verkeerd gebruik van intransitieve werkwoorden in de lijdende vorm. Correctie: Gebruik alleen transitieve werkwoorden.",
+   "Vergeten van de juiste vervoeging van de werkwoordstam. Correctie: Zorg ervoor dat de stam correct is voordat je られる toevoegt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "彼は先生に褒められた。",
+    "romaji": "Kare wa sensei ni homerareta.",
+    "dutch": "Hij werd door de leraar geprezen."
+   },
+   {
+    "japanese": "その本は多くの人に読まれている。",
+    "romaji": "Sono hon wa ooku no hito ni yomarete iru.",
+    "dutch": "Dat boek wordt door veel mensen gelezen."
+   },
+   {
+    "japanese": "私は友達に笑われた。",
+    "romaji": "Watashi wa tomodachi ni warawareta.",
+    "dutch": "Ik werd door mijn vrienden uitgelachen."
+   },
+   {
+    "japanese": "彼女は犬に噛まれた。",
+    "romaji": "Kanojo wa inu ni kamareta.",
+    "dutch": "Zij werd door een hond gebeten."
+   },
+   {
+    "japanese": "彼は上司に叱られた。",
+    "romaji": "Kare wa joushi ni shikarareta.",
+    "dutch": "Hij werd door zijn baas berispt."
+   },
+   {
+    "japanese": "その建物は地震で壊された。",
+    "romaji": "Sono tatemono wa jishin de kowasareta.",
+    "dutch": "Dat gebouw werd door een aardbeving verwoest."
+   }
+  ]
+ },
+ "ja-n4-causative": {
+  "naam": "Causatieve werkwoordsvorm: 〜させる",
+  "tagline": "Leer hoe je iemand iets laat doen in het Japans.",
+  "niveau": "gemiddeld",
+  "kernregel": "De causatieve vorm 〜させる wordt gebruikt om aan te geven dat iemand een ander iets laat doen of dwingt iets te doen. Het is een manier om verantwoordelijkheid of controle over een actie aan te duiden.",
+  "patroon": "[werkwoordstam] + させる",
+  "uitleg": "In het Japans gebruik je de causatieve vorm om aan te geven dat je iemand iets laat doen of toestaat iets te doen. Dit komt overeen met het Nederlandse 'laten' of 'dwingen'. Het patroon wordt gevormd door de stam van een werkwoord te nemen en daar させる aan toe te voegen. Bijvoorbeeld, 食べる (taberu, eten) wordt 食べさせる (tabesaseru, laten eten). Deze vorm kan zowel vrijwillige als onvrijwillige acties beschrijven, afhankelijk van de context. Het is belangrijk om te weten dat de causatieve vorm vaak een gevoel van autoriteit of controle impliceert, en daarom kan het in sommige situaties als dwingend overkomen.",
+  "opbouw": [
+   {
+    "element": "werkwoordstam",
+    "rol": "De basisvorm van het werkwoord zonder de eindigen -る of -う.",
+    "voorbeeld": "食べ (tabe) van 食べる (taberu, eten)"
+   },
+   {
+    "element": "させる",
+    "rol": "De suffix die aangeeft dat iemand iets laat doen.",
+    "voorbeeld": "させる toegevoegd aan 食べ (tabe) wordt 食べさせる (tabesaseru, laten eten)"
+   }
+  ],
+  "tips": [
+   "Gebruik de causatieve vorm om te zeggen dat je iemand toestaat of dwingt iets te doen.",
+   "Let op de context; de causatieve vorm kan dwingend overkomen.",
+   "Oefen met verschillende werkwoorden om vertrouwd te raken met het vormen van de causatieve vorm.",
+   "Vergeet niet dat de causatieve vorm ook in combinatie met andere vormen kan worden gebruikt, zoals de beleefde vorm."
+  ],
+  "veelgemaaktefouten": [
+   "Verwarren van de causatieve vorm met de passieve vorm. Correctie: Let op de suffixen, させる is causatief, terwijl れる/られる passief is.",
+   "Verkeerd gebruik van de stam van het werkwoord. Correctie: Zorg ervoor dat je de juiste stam gebruikt voordat je させる toevoegt."
+  ],
+  "extraVoorbeelden": [
+   {
+    "japanese": "彼に宿題をさせる。",
+    "romaji": "Kare ni shukudai o saseru.",
+    "dutch": "Ik laat hem huiswerk maken."
+   },
+   {
+    "japanese": "子供に野菜を食べさせる。",
+    "romaji": "Kodomo ni yasai o tabesaseru.",
+    "dutch": "Ik laat het kind groenten eten."
+   },
+   {
+    "japanese": "彼女にピアノを練習させる。",
+    "romaji": "Kanojo ni piano o renshuu saseru.",
+    "dutch": "Ik laat haar piano oefenen."
+   },
+   {
+    "japanese": "部下に報告書を書かせる。",
+    "romaji": "Buka ni houkokusho o kakaseru.",
+    "dutch": "Ik laat mijn ondergeschikte het rapport schrijven."
+   },
+   {
+    "japanese": "学生に発表をさせる。",
+    "romaji": "Gakusei ni happyou o saseru.",
+    "dutch": "Ik laat de studenten een presentatie geven."
+   },
+   {
+    "japanese": "彼にそれを考えさせる。",
+    "romaji": "Kare ni sore o kangaesaseru.",
+    "dutch": "Ik laat hem erover nadenken."
+   }
+  ]
+ }
+}
