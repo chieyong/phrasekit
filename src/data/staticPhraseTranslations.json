@@ -1,0 +1,1852 @@
+{
+ "s1": {
+  "yue": {
+   "text": "兩張去澀谷的票，麻煩你。",
+   "reading": "loeng5 zoeng1 heoi3 seot6 gwai2 dik1 piu3, maa4 faan4 nei5.",
+   "explanation": "Deze zin betekent dat je twee kaartjes naar Shibuya wilt kopen. Je kunt dit gebruiken bij een ticketverkoop of een vervoersbalie."
+  },
+  "ko": {
+   "text": "시부야행 두 장 주세요.",
+   "reading": "Sibuya-haeng du jang juseyo.",
+   "explanation": "Deze zin betekent dat je twee kaartjes naar Shibuya wilt kopen. Je kunt dit gebruiken bij een ticketverkoop of een vervoersbalie."
+  },
+  "id": {
+   "text": "Dua tiket ke Shibuya, tolong.",
+   "reading": "doe-a ti-ket ke shi-bu-ya, to-long",
+   "explanation": "Deze zin betekent dat je vraagt om twee kaartjes naar Shibuya. Je kunt dit gebruiken bij een ticketbalie of in het openbaar vervoer."
+  },
+  "en": {
+   "text": "Two tickets to Shibuya, please.",
+   "reading": "toe ti-kets toe shi-boe-ja, plees",
+   "explanation": "Deze zin gebruik je wanneer je kaartjes wilt kopen voor de trein of bus naar Shibuya. Het is een beleefde manier om je verzoek te doen."
+  },
+  "fr": {
+   "text": "Deux billets pour Shibuya, s'il vous plaît.",
+   "reading": "deu bi-jé pour shi-bu-ja, sil voo plé",
+   "explanation": "Deze zin gebruik je wanneer je twee kaartjes wilt kopen voor Shibuya. Het is een beleefde manier om je verzoek te doen."
+  },
+  "de": {
+   "text": "Zwei Tickets nach Shibuya, bitte.",
+   "reading": "tsvai tik-kets naakh shi-boe-ja, bi-te",
+   "explanation": "Deze zin gebruik je om twee kaartjes naar Shibuya te vragen, bijvoorbeeld bij een ticketverkoop. Het is een beleefde manier om je verzoek te uiten."
+  },
+  "es": {
+   "text": "Dos boletos a Shibuya, por favor.",
+   "reading": "dos bo-le-tos a shi-bu-ya, por fa-vor",
+   "explanation": "Deze zin vraag je wanneer je twee kaartjes wilt kopen voor de trein of bus naar Shibuya. Het is een veelgebruikte zin bij ticketverkoop."
+  }
+ },
+ "s2": {
+  "yue": {
+   "text": "這班火車去新宿嗎？",
+   "reading": "ze5 baan1 fo2 ce1 heoi3 san1 zuk1 maa3?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of de trein naar Shinjuku gaat. Het is handig op een treinstation of als je met iemand over je reis praat."
+  },
+  "ko": {
+   "text": "이 기차가 신주쿠로 가나요?",
+   "reading": "I gichaga Sinjuku-ro ganayo?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of de trein naar Shinjuku gaat. Het is handig om te gebruiken op een treinstation."
+  },
+  "id": {
+   "text": "Apakah kereta ini menuju Shinjuku?",
+   "reading": "a-pak-ah ker-e-ta i-ni me-nu-ju Shin-ju-ku?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of de trein naar Shinjuku gaat. Het is handig op een treinstation of als je hulp nodig hebt bij het reizen."
+  },
+  "en": {
+   "text": "Does this train go to Shinjuku?",
+   "reading": "das dis trein goe toe Shinjuku?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of de trein naar Shinjuku rijdt. Het is handig om te gebruiken op een treinstation."
+  },
+  "fr": {
+   "text": "Ce train va-t-il à Shinjuku ?",
+   "reading": "se tran va-t-il a sjin-djoek ?",
+   "explanation": "Deze zin vraag je als je wilt weten of de trein naar Shinjuku gaat. Het is handig om te gebruiken op een treinstation."
+  },
+  "de": {
+   "text": "Fährt dieser Zug nach Shinjuku?",
+   "reading": "vèèrt di-eze tsook naah Shin-djokoe?",
+   "explanation": "Deze zin vraag je als je wilt weten of de trein naar Shinjuku gaat. Het is handig op een treinstation of als je met de trein reist."
+  },
+  "es": {
+   "text": "¿Este tren va a Shinjuku?",
+   "reading": "es-te tren va a sjin-djoekoe",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of de trein naar Shinjuku gaat, bijvoorbeeld op een station."
+  }
+ },
+ "s3": {
+  "yue": {
+   "text": "邊個月台去京都？",
+   "reading": "bin1 go3 jyut6 toi4 heoi3 ging1 dou6?",
+   "explanation": "Deze zin vraag je op welk perron je de trein naar Kyoto kunt nemen. Je kunt dit gebruiken op een treinstation als je niet zeker weet waar je moet zijn."
+  },
+  "ko": {
+   "text": "교토는 어느 플랫폼인가요?",
+   "reading": "Gyo-to-neun eoneu peulraetpom-ingayo?",
+   "explanation": "Deze zin betekent 'Welk perron is voor Kyoto?' en kan gebruikt worden op een treinstation om te vragen naar het juiste perron voor de trein naar Kyoto."
+  },
+  "id": {
+   "text": "Perron mana untuk Kyoto?",
+   "reading": "per-ron ma-na un-tuk Kyo-to",
+   "explanation": "Deze zin vraag je wanneer je wilt weten op welk perron de trein naar Kyoto vertrekt. Het is handig op stations of als je hulp nodig hebt van personeel."
+  },
+  "en": {
+   "text": "Which platform for Kyoto?",
+   "reading": "witsj plat-form voor Kjoeto?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten op welk perron je de trein naar Kyoto kunt nemen. Het is handig op een station als je niet zeker weet waar je moet zijn."
+  },
+  "fr": {
+   "text": "Quel quai pour Kyoto ?",
+   "reading": "kel kwei poor Kio-toe?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten van welk perron de trein naar Kyoto vertrekt. Het is handig op een station of als je hulp nodig hebt bij het vinden van je trein."
+  },
+  "de": {
+   "text": "Welches Gleis nach Kyoto?",
+   "reading": "vel-kes glais naakh Kjoeto",
+   "explanation": "Deze zin vraag je wanneer je wilt weten op welk perron je de trein naar Kyoto moet nemen. Het is handig op een station als je niet zeker bent waar je moet zijn."
+  },
+  "es": {
+   "text": "¿Qué andén para Kyoto?",
+   "reading": "ke an-den pa-ra Kjo-to",
+   "explanation": "Deze zin vraag je wanneer je wilt weten op welk perron de trein naar Kyoto vertrekt. Het is handig om te gebruiken op een treinstation."
+  }
+ },
+ "s4": {
+  "yue": {
+   "text": "去大阪的票價是多少？",
+   "reading": "heoi3 daai6 baan2 dik1 piu3 gaa3 si6 dou1 siu2?",
+   "explanation": "Deze zin vraagt naar de prijs van een kaartje naar Osaka. Je kunt deze vraag stellen bij een ticketverkoop of informatiebalie."
+  },
+  "ko": {
+   "text": "오사카까지 가는 티켓은 얼마예요?",
+   "reading": "Osakakkaji ganeun tiket-eun eolma-yeyo?",
+   "explanation": "Deze zin vraagt naar de prijs van een kaartje naar Osaka. Je kunt deze vraag gebruiken bij het kopen van treinkaartjes of vliegtickets."
+  },
+  "id": {
+   "text": "Berapa harga tiket ke Osaka?",
+   "reading": "be-ra-pa ha-rga ti-ket ke O-sa-ka",
+   "explanation": "Deze zin vraagt naar de prijs van een ticket naar Osaka. Je kunt deze vraag gebruiken bij het kopen van treinkaartjes of vliegtickets."
+  },
+  "en": {
+   "text": "How much does a ticket to Osaka cost?",
+   "reading": "hau mach das a tik-it tu O-saka kost?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten wat de prijs is van een ticket naar Osaka. Het is handig om te gebruiken bij het kopen van treinkaartjes of vliegtickets."
+  },
+  "fr": {
+   "text": "Combien coûte un billet pour Osaka ?",
+   "reading": "kombien koot un bije pour Osaka",
+   "explanation": "Deze zin vraag je wanneer je wilt weten wat de prijs is van een kaartje naar Osaka. Dit kan handig zijn bij het kopen van treintickets of vliegtickets."
+  },
+  "de": {
+   "text": "Wie viel kostet ein Ticket nach Osaka?",
+   "reading": "wie viel kost-et ain ti-ket nahk O-saka?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten wat de prijs is van een kaartje naar Osaka, bijvoorbeeld bij een reisbureau of op het station."
+  },
+  "es": {
+   "text": "¿Cuánto cuesta un billete a Osaka?",
+   "reading": "kwan-toe kwes-ta oen bi-jet a O-saka",
+   "explanation": "Deze zin vraag je wanneer je wilt weten wat de prijs is van een kaartje naar Osaka. Het is handig om te gebruiken bij het kopen van treinkaartjes of vliegtickets."
+  }
+ },
+ "s5": {
+  "yue": {
+   "text": "我錯過咗火車。我要點做？",
+   "reading": "ngo5 co3 gwo3 zo2 fo2 ce1. ngo5 jiu3 dim2 zou6?",
+   "explanation": "Deze zin betekent dat je je trein hebt gemist en vraagt wat je nu moet doen. Gebruik dit wanneer je in een situatie bent waarin je hulp nodig hebt na het missen van een trein."
+  },
+  "ko": {
+   "text": "나는 기차를 놓쳤어요. 무엇을 해야 하나요?",
+   "reading": "naneun gichareul nohchyeosseoyo. mueoseul haeya hanayo?",
+   "explanation": "Deze zin betekent dat je je trein hebt gemist en vraagt wat je nu moet doen. Het is handig om te gebruiken in een situatie waarin je hulp nodig hebt na het missen van een trein."
+  },
+  "id": {
+   "text": "Saya ketinggalan kereta. Apa yang harus saya lakukan?",
+   "reading": "saja ke-ting-ga-lan ke-re-ta. a-pa yang ha-rus sa-ya la-ku-kan?",
+   "explanation": "Deze zin betekent dat je je trein hebt gemist en vraagt wat je nu moet doen. Je kunt dit gebruiken als je hulp nodig hebt bij het vinden van een oplossing."
+  },
+  "en": {
+   "text": "I missed my train. What should I do?",
+   "reading": "ai mist mai trein. wat sjud ai do?",
+   "explanation": "Deze zin gebruik je wanneer je je trein hebt gemist en hulp of advies nodig hebt over wat je nu moet doen."
+  },
+  "fr": {
+   "text": "J'ai raté mon train. Que dois-je faire ?",
+   "reading": "zjè ra-té mon trèn. ke dwa-zjè fer ?",
+   "explanation": "Deze zin gebruik je wanneer je je trein hebt gemist en hulp nodig hebt om te weten wat je nu moet doen. Het is een veelvoorkomende situatie op stations."
+  },
+  "de": {
+   "text": "Ich habe meinen Zug verpasst. Was soll ich tun?",
+   "reading": "ik ha-be mai-nen tsoek fer-past. vas zol ik toen?",
+   "explanation": "Deze zin gebruik je als je je trein hebt gemist en hulp nodig hebt over wat je nu moet doen. Het is een veelvoorkomende situatie op stations."
+  },
+  "es": {
+   "text": "He perdido mi tren. ¿Qué debo hacer?",
+   "reading": "e per-di-do mi tren. ke de-bo a-ser?",
+   "explanation": "Deze zin betekent dat je je trein hebt gemist en vraagt wat je nu moet doen. Je kunt dit gebruiken als je hulp nodig hebt bij het vinden van een oplossing."
+  }
+ },
+ "s6": {
+  "yue": {
+   "text": "出口喺邊度？",
+   "reading": "ceot1 hau2 hai2 bin1 dou6?",
+   "explanation": "Deze zin betekent 'Waar is de uitgang?'. Je kunt dit vragen wanneer je de uitgang van een gebouw of een ruimte wilt vinden."
+  },
+  "ko": {
+   "text": "출구가 어디에요?",
+   "reading": "chulgu-ga eodieyo?",
+   "explanation": "Deze zin betekent 'Waar is de uitgang?' en kan gebruikt worden in situaties waarin je de uitgang van een gebouw of ruimte wilt vinden."
+  },
+  "id": {
+   "text": "Di mana pintu keluar?",
+   "reading": "di ma-na pin-toe kel-uar",
+   "explanation": "Deze zin betekent 'Waar is de uitgang?' en kan gebruikt worden in bijvoorbeeld een winkel of een gebouw om de uitgang te vinden."
+  },
+  "en": {
+   "text": "Where is the exit?",
+   "reading": "wer is de eg-zit",
+   "explanation": "Deze zin vraag je wanneer je de uitgang van een gebouw of ruimte wilt vinden. Het is handig in situaties zoals een winkel, restaurant of station."
+  },
+  "fr": {
+   "text": "Où est la sortie ?",
+   "reading": "oe e la sor-ti",
+   "explanation": "Deze zin vraag je wanneer je de uitgang van een gebouw of een ruimte wilt weten. Het is handig in situaties zoals een winkel, een restaurant of een openbaar gebouw."
+  },
+  "de": {
+   "text": "Wo ist der Ausgang?",
+   "reading": "vo ist der au-sgang",
+   "explanation": "Deze zin vraag je wanneer je wilt weten waar de uitgang van een gebouw of ruimte is. Het is handig in situaties zoals winkels, theaters of luchthavens."
+  },
+  "es": {
+   "text": "¿Dónde está la salida?",
+   "reading": "don-de es-tá la sa-li-da",
+   "explanation": "Deze zin betekent 'Waar is de uitgang?' en kan gebruikt worden in situaties waarin je de uitgang van een gebouw of ruimte wilt vinden."
+  }
+ },
+ "r1": {
+  "yue": {
+   "text": "請給我一張兩人的桌子。",
+   "reading": "cing2 gei2 ngo5 jat1 zoeng1 loeng5 jan4 dik1 zyu1 zi2",
+   "explanation": "Deze zin betekent dat je een tafel voor twee personen wilt reserveren. Gebruik dit wanneer je in een restaurant aankomt en een tafel wilt aanvragen."
+  },
+  "ko": {
+   "text": "두 명 자리 부탁드립니다.",
+   "reading": "du myeong jari butakdeulibnida.",
+   "explanation": "Deze zin vraag je wanneer je een tafel voor twee personen wilt reserveren in een restaurant. Het is een beleefde manier om om een tafel te vragen."
+  },
+  "id": {
+   "text": "Meja untuk dua orang, tolong.",
+   "reading": "me-ja un-tuk doea o-rang, to-long",
+   "explanation": "Deze zin betekent dat je een tafel voor twee personen wilt reserveren. Gebruik dit wanneer je in een restaurant aankomt en een tafel wilt aanvragen."
+  },
+  "en": {
+   "text": "A table for two, please.",
+   "reading": "e te-ble for toe, plees",
+   "explanation": "Deze zin gebruik je om in een restaurant een tafel voor twee personen te reserveren. Het is een beleefde manier om je verzoek te doen."
+  },
+  "fr": {
+   "text": "Une table pour deux, s'il vous plaît.",
+   "reading": "ün tab-l pur dö, sil vu ple",
+   "explanation": "Deze zin gebruik je om in een restaurant een tafel voor twee personen te reserveren. Het is een beleefde manier om je verzoek te doen."
+  },
+  "de": {
+   "text": "Ein Tisch für zwei, bitte.",
+   "reading": "ain tish fyur tswai, biet-e",
+   "explanation": "Deze zin vraag je als je een tafel wilt reserveren voor twee personen in een restaurant. Het is een beleefde manier om een tafel te vragen."
+  },
+  "es": {
+   "text": "Una mesa para dos, por favor.",
+   "reading": "oe-na me-sa pa-ra dos, por fa-vor",
+   "explanation": "Deze zin gebruik je om in een restaurant een tafel voor twee personen te reserveren. Het is een beleefde manier om je verzoek te doen."
+  }
+ },
+ "r2": {
+  "yue": {
+   "text": "我對甲殼類過敏。",
+   "reading": "ngo5 deoi3 gaap3 hak1 leoi6 gwo3 man5.",
+   "explanation": "Deze zin betekent dat je allergisch bent voor schaaldieren. Je kunt dit gebruiken in restaurants of bij vrienden om aan te geven dat je bepaalde voedingsmiddelen moet vermijden."
+  },
+  "ko": {
+   "text": "저는 갑각류 알레르기가 있어요.",
+   "reading": "jeoneun gapgakryu alleureugiga isseoyo.",
+   "explanation": "Deze zin betekent dat je allergisch bent voor schaaldieren. Gebruik het wanneer je in een restaurant of bij het eten bent en je wilt aangeven dat je deze allergie hebt."
+  },
+  "id": {
+   "text": "Saya alergi terhadap makanan laut.",
+   "reading": "saja a-lur-gi ter-dahp ma-ka-nan laut",
+   "explanation": "Deze zin betekent dat je allergisch bent voor schaaldieren en is handig om te gebruiken in restaurants of bij het bestellen van eten."
+  },
+  "en": {
+   "text": "I am allergic to shellfish.",
+   "reading": "ai em a-lur-djik toe shel-fish",
+   "explanation": "Deze zin gebruik je om aan te geven dat je een allergie hebt voor schaaldieren, bijvoorbeeld in een restaurant of bij vrienden. Het is belangrijk om dit te vermelden om gezondheidsrisico's te vermijden."
+  },
+  "fr": {
+   "text": "Je suis allergique aux crustacés.",
+   "reading": "je siew al-er-giek o kree-sta-sé",
+   "explanation": "Deze zin betekent dat je een allergie hebt voor schaaldieren. Je kunt dit gebruiken in restaurants of bij het vragen naar voedsel om je allergie aan te geven."
+  },
+  "de": {
+   "text": "Ich bin allergisch gegen Schalentiere.",
+   "reading": "ik bin al-le-rgisch ge-gen scha-len-tie-re",
+   "explanation": "Deze zin gebruik je om aan te geven dat je allergisch bent voor schaaldieren, bijvoorbeeld in een restaurant of bij vrienden. Het is belangrijk om dit te vermelden om gezondheidsrisico's te voorkomen."
+  },
+  "es": {
+   "text": "Soy alérgico a los mariscos.",
+   "reading": "soi a-lér-gie-ko a los ma-ris-kos",
+   "explanation": "Deze zin betekent dat je een allergie hebt voor schaaldieren. Je kunt dit gebruiken in restaurants of bij vrienden om aan te geven dat je bepaalde gerechten moet vermijden."
+  }
+ },
+ "r3": {
+  "yue": {
+   "text": "我都要一樣的。",
+   "reading": "ngo5 dou1 jiu3 jat1 joeng6 dik1.",
+   "explanation": "Deze zin betekent dat je hetzelfde wilt bestellen of krijgen als iemand anders. Je kunt dit gebruiken in een restaurant of bij het winkelen."
+  },
+  "ko": {
+   "text": "저도 그녀와 같은 걸로 할게요.",
+   "reading": "jeodo geunyeowa gateun geollo halgeyo.",
+   "explanation": "Deze zin betekent dat je hetzelfde wilt bestellen of kiezen als iemand anders. Gebruik dit wanneer je in een restaurant of café bent en je wilt aangeven dat je dezelfde keuze maakt als een ander."
+  },
+  "id": {
+   "text": "Saya pesan yang sama seperti dia.",
+   "reading": "saja pes-an yang sa-ma sper-ti dia",
+   "explanation": "Deze zin betekent dat je hetzelfde wilt bestellen als een ander persoon. Je kunt dit gebruiken in een restaurant of café wanneer je een bestelling plaatst."
+  },
+  "en": {
+   "text": "I'll have the same as her.",
+   "reading": "ail hef de seim es her",
+   "explanation": "Deze zin gebruik je wanneer je in een restaurant of café iets wilt bestellen dat iemand anders heeft besteld. Het is een handige manier om aan te geven dat je dezelfde keuze maakt als een ander."
+  },
+  "fr": {
+   "text": "Je prends la même chose qu'elle.",
+   "reading": "juh pran la mem shoz kel",
+   "explanation": "Deze zin betekent dat je hetzelfde bestelt of kiest als een andere persoon. Je kunt het gebruiken in een restaurant of bij het maken van een keuze."
+  },
+  "de": {
+   "text": "Ich nehme das Gleiche wie sie.",
+   "reading": "ik ne-me das glai-khe vi zi",
+   "explanation": "Deze zin gebruik je om aan te geven dat je dezelfde keuze maakt als iemand anders, bijvoorbeeld bij het bestellen van eten of drinken."
+  },
+  "es": {
+   "text": "Yo tomo lo mismo que ella.",
+   "reading": "jo to-mo lo mi-smo ke e-ja",
+   "explanation": "Deze zin betekent dat je dezelfde keuze maakt als een andere persoon. Je kunt het gebruiken wanneer je in een restaurant of café bent en wilt aangeven dat je hetzelfde wilt bestellen als iemand anders."
+  }
+ },
+ "r4": {
+  "yue": {
+   "text": "埋單，唔該。",
+   "reading": "maai4 daan1, m4 goi1.",
+   "explanation": "Deze zin betekent 'De rekening, alstublieft' en wordt gebruikt wanneer je in een restaurant of café vraagt om de rekening."
+  },
+  "ko": {
+   "text": "계산서 주세요.",
+   "reading": "gyesanseo juseyo.",
+   "explanation": "Deze zin betekent 'De rekening, alstublieft.' en wordt gebruikt wanneer je in een restaurant of café om de rekening vraagt."
+  },
+  "id": {
+   "text": "Tagihan, tolong.",
+   "reading": "ta-gi-han, to-long",
+   "explanation": "Deze zin vraag je als je de rekening wilt ontvangen in een restaurant of café. Het is een beleefde manier om de ober of serveerster te vragen om de rekening te brengen."
+  },
+  "en": {
+   "text": "The bill, please.",
+   "reading": "de bil, plies",
+   "explanation": "Deze zin gebruik je in een restaurant of café om de ober of serveerster te vragen om de rekening te brengen."
+  },
+  "fr": {
+   "text": "L'addition, s'il vous plaît.",
+   "reading": "la-di-sjon sil voo ple",
+   "explanation": "Deze zin gebruik je om de rekening in een restaurant of café te vragen. Het is een beleefde manier om de ober of serveerster te laten weten dat je wilt afrekenen."
+  },
+  "de": {
+   "text": "Die Rechnung, bitte.",
+   "reading": "di re-chnung bi-te",
+   "explanation": "Deze zin gebruik je om de ober of serveerster te vragen om de rekening te brengen, meestal aan het einde van een maaltijd."
+  },
+  "es": {
+   "text": "La cuenta, por favor.",
+   "reading": "la kwen-ta, por fa-vor",
+   "explanation": "Deze zin vraag je wanneer je in een restaurant of café de rekening wilt ontvangen. Het is een beleefde manier om de ober of serveerster te vragen om de rekening te brengen."
+  }
+ },
+ "r5": {
+  "yue": {
+   "text": "你有英文菜單嗎？",
+   "reading": "nei5 jau5 jing1 man4 coi3 daan1 maa3?",
+   "explanation": "Deze zin vraagt of er een menu in het Engels beschikbaar is. Je kunt dit gebruiken in een restaurant als je het menu niet in het Chinees kunt lezen."
+  },
+  "ko": {
+   "text": "영어 메뉴가 있나요?",
+   "reading": "Yeongeo menyuga innayo?",
+   "explanation": "Deze zin betekent 'Heeft u een Engelstalig menu?'. Je kunt dit vragen in een restaurant of café als je het menu in het Engels wilt bekijken."
+  },
+  "id": {
+   "text": "Apakah Anda memiliki menu dalam bahasa Inggris?",
+   "reading": "apa-kah an-da me-hi-li menu dal-am ba-ha-sa ing-gris",
+   "explanation": "Deze zin vraag je in een restaurant of café als je het menu in het Engels wilt bekijken. Het is handig voor reizigers die de lokale taal niet goed beheersen."
+  },
+  "en": {
+   "text": "Do you have an English menu?",
+   "reading": "doe joew hef en ingelst menu?",
+   "explanation": "Deze zin vraag je in een restaurant of café als je het menu in het Engels wilt bekijken. Het is handig als je de lokale taal niet goed spreekt."
+  },
+  "fr": {
+   "text": "Avez-vous un menu en anglais ?",
+   "reading": "ave-vu un me-nu an an-glè",
+   "explanation": "Deze zin vraag je in een restaurant of café als je het menu in het Engels wilt bekijken. Het is handig voor als je de taal niet goed spreekt."
+  },
+  "de": {
+   "text": "Haben Sie eine englischsprachige Speisekarte?",
+   "reading": "ha-ben zi-e ai-ne eng-lis-sprá-chi-ge spái-se-kar-te",
+   "explanation": "Deze zin vraag je in een restaurant als je wilt weten of er een menu in het Engels beschikbaar is. Het is handig voor Engelstalige reizigers die de gerechten willen begrijpen."
+  },
+  "es": {
+   "text": "¿Tienen un menú en inglés?",
+   "reading": "tien-en oen me-nu en in-gles",
+   "explanation": "Deze zin vraag je als je in een restaurant bent en een menu in het Engels wilt zien. Het is handig voor Engelstalige reizigers die de gerechten willen begrijpen."
+  }
+ },
+ "r6": {
+  "yue": {
+   "text": "呢個好味！",
+   "reading": "ni1 go3 hou2 mei6!",
+   "explanation": "Deze zin betekent dat iets erg lekker is. Je kunt het gebruiken wanneer je geniet van eten of drinken."
+  },
+  "ko": {
+   "text": "정말 맛있어요!",
+   "reading": "jeongmal masisseoyo!",
+   "explanation": "Deze zin betekent dat je iets erg lekker vindt. Je kunt het gebruiken wanneer je geniet van eten of drinken in een restaurant of bij vrienden."
+  },
+  "id": {
+   "text": "Ini enak sekali!",
+   "reading": "ini e-nak se-ka-li",
+   "explanation": "Deze zin betekent dat je iets erg lekker vindt. Je kunt het gebruiken wanneer je geniet van eten of drinken."
+  },
+  "en": {
+   "text": "This is delicious!",
+   "reading": "dis is de-li-cious",
+   "explanation": "Deze zin gebruik je om aan te geven dat je iets erg lekker vindt, bijvoorbeeld bij het eten of drinken. Het is een enthousiaste reactie op een maaltijd of snack."
+  },
+  "fr": {
+   "text": "C'est délicieux !",
+   "reading": "se de-li-sju",
+   "explanation": "Deze zin betekent dat je iets heel lekker vindt, zoals eten of drinken. Je kunt het gebruiken wanneer je geniet van een maaltijd of een gerecht."
+  },
+  "de": {
+   "text": "Das ist köstlich!",
+   "reading": "das ist kös-tlich",
+   "explanation": "Deze zin gebruik je om aan te geven dat je iets erg lekker vindt, bijvoorbeeld eten of drinken. Het is een uitdrukking van genot en waardering voor de smaak."
+  },
+  "es": {
+   "text": "¡Esto es delicioso!",
+   "reading": "es-to es de-li-sjo-so",
+   "explanation": "Deze zin betekent dat je iets erg lekker vindt. Je kunt het gebruiken wanneer je geniet van eten of drinken."
+  }
+ },
+ "h1": {
+  "yue": {
+   "text": "我有一個預訂，名字是Jansen。",
+   "reading": "ngo5 jau5 jat1 go3 jyu6 ding3, ming4 zi6 si6 Jansen.",
+   "explanation": "Deze zin gebruik je om aan te geven dat je een reservering hebt gemaakt onder de naam Jansen, bijvoorbeeld bij een hotel of restaurant."
+  },
+  "ko": {
+   "text": "저는 얀센이라는 이름으로 예약했습니다.",
+   "reading": "jeoneun yanseuniraneun ireumeuro yeyakhaessseubnida.",
+   "explanation": "Deze zin gebruik je om aan te geven dat je een reservering hebt gemaakt onder de naam Jansen, bijvoorbeeld bij een hotel of restaurant."
+  },
+  "id": {
+   "text": "Saya memiliki reservasi atas nama Jansen.",
+   "reading": "saj-a me-mo-li-ki re-ser-va-si a-tas na-ma Jan-sen",
+   "explanation": "Deze zin betekent dat je een reservering hebt gemaakt op de naam Jansen. Je kunt dit gebruiken bij hotels of restaurants om je reservering te bevestigen."
+  },
+  "en": {
+   "text": "I have a reservation under the name Jansen.",
+   "reading": "ai hef a rez-er-vay-shon an-der de neim Jan-sen",
+   "explanation": "Deze zin gebruik je wanneer je bij een hotel of restaurant aankomt en je je reservering wilt bevestigen. Het is een formele manier om aan te geven dat je een boeking hebt gemaakt."
+  },
+  "fr": {
+   "text": "J'ai une réservation au nom de Jansen.",
+   "reading": "zjè un rèze-rva-sjon o nom de Jansen",
+   "explanation": "Deze zin gebruik je om aan te geven dat je een reservering hebt gemaakt op de naam Jansen, bijvoorbeeld in een restaurant of hotel."
+  },
+  "de": {
+   "text": "Ich habe eine Reservierung auf den Namen Jansen.",
+   "reading": "ik ha-be ai-ne re-ser-vi-e-ring auf den na-men Jan-sen",
+   "explanation": "Deze zin gebruik je om aan te geven dat je een reservering hebt gemaakt, bijvoorbeeld in een restaurant of hotel. Het is handig om je naam te noemen zodat ze je reservering kunnen vinden."
+  },
+  "es": {
+   "text": "Tengo una reserva a nombre de Jansen.",
+   "reading": "ten-go oena re-ser-va a nom-bre de Jansen",
+   "explanation": "Deze zin gebruik je om aan te geven dat je een reservering hebt gemaakt op de naam Jansen, bijvoorbeeld in een restaurant of hotel."
+  }
+ },
+ "h2": {
+  "yue": {
+   "text": "我可以遲啲退房嗎？",
+   "reading": "ngo5 ho2 ji5 ci4 di1 teoi3 fong4 maa3?",
+   "explanation": "Deze zin betekent 'Kan ik laat uitchecken?' en kan gebruikt worden bij de receptie van een hotel om te vragen of je langer in je kamer kunt blijven."
+  },
+  "ko": {
+   "text": "늦게 체크아웃할 수 있나요?",
+   "reading": "neujge chekeu-aut hal su innayo?",
+   "explanation": "Deze zin vraag je wanneer je na de reguliere uitchecktijd nog wat langer in je hotelkamer wilt blijven. Het is handig om deze vraag te stellen bij de receptie van het hotel."
+  },
+  "id": {
+   "text": "Bolehkah saya check-out terlambat?",
+   "reading": "bo-le-kah sa-ya tsjek-out ter-lam-bat",
+   "explanation": "Deze zin vraag je wanneer je langer wilt blijven in een hotel en later wilt uitchecken dan de gebruikelijke tijd. Het is handig om deze vraag te stellen bij de receptie."
+  },
+  "en": {
+   "text": "Can I check out late?",
+   "reading": "kan ai tsjek aut leit",
+   "explanation": "Deze zin vraag je als je wilt weten of je langer in je hotelkamer kunt blijven op de dag van vertrek. Het is handig om te gebruiken bij de receptie van een hotel."
+  },
+  "fr": {
+   "text": "Puis-je faire un check-out tardif ?",
+   "reading": "puej zje feer un sjek-aut tardief",
+   "explanation": "Deze zin vraag je wanneer je later dan de gebruikelijke tijd wilt uitchecken uit een hotel of accommodatie."
+  },
+  "de": {
+   "text": "Kann ich spät auschecken?",
+   "reading": "kan ik speet aus-tsjek-ken",
+   "explanation": "Deze zin vraag je wanneer je langer in je hotelkamer wilt blijven na de reguliere uitchecktijd. Het is handig om te gebruiken bij de receptie van een hotel."
+  },
+  "es": {
+   "text": "¿Puedo hacer el check-out más tarde?",
+   "reading": "pu-e-do a-ser el tsjek-aut mas tar-de",
+   "explanation": "Deze zin vraag je als je wilt weten of je later dan de gebruikelijke tijd kunt uitchecken. Dit is handig in hotels of accommodaties waar je misschien wat extra tijd nodig hebt."
+  }
+ },
+ "h3": {
+  "yue": {
+   "text": "空調唔運作。",
+   "reading": "hung1 tiu4 m4 wan6 zok3.",
+   "explanation": "Deze zin betekent dat de airconditioning niet werkt. Je kunt dit zeggen als je in een hotel of een andere ruimte bent en de airconditioning niet functioneert."
+  },
+  "ko": {
+   "text": "에어컨이 작동하지 않아요.",
+   "reading": "eeokeoni jakdonghaji anayo.",
+   "explanation": "Deze zin betekent dat de airconditioning niet werkt. Je kunt dit gebruiken als je in een hotel of een andere accommodatie bent en er een probleem is met de airconditioning."
+  },
+  "id": {
+   "text": "AC tidak berfungsi.",
+   "reading": "a-se ti-dak ber-fung-si",
+   "explanation": "Deze zin betekent dat de airconditioning niet werkt. Je kunt dit gebruiken als je problemen hebt met de airconditioning in een hotel of andere accommodatie."
+  },
+  "en": {
+   "text": "The air conditioning isn't working.",
+   "reading": "de eer kon-di-sjo-ning is-n' woer-king",
+   "explanation": "Deze zin betekent dat de airconditioning niet functioneert. Je kunt dit zeggen als je in een hotel of een auto bent en de airco niet werkt."
+  },
+  "fr": {
+   "text": "La climatisation ne fonctionne pas.",
+   "reading": "la kli-ma-ti-za-sjon ne fonk-sjo-ne pa",
+   "explanation": "Deze zin betekent dat de airconditioning niet werkt. Je kunt deze zin gebruiken als je problemen hebt met de airconditioning in een hotel of auto."
+  },
+  "de": {
+   "text": "Die Klimaanlage funktioniert nicht.",
+   "reading": "di klim-aan-la-ge fun-ktsie-o-neert ni-cht",
+   "explanation": "Deze zin betekent dat de airconditioning niet werkt en kan gebruikt worden als je problemen hebt met de koeling in een hotelkamer of voertuig."
+  },
+  "es": {
+   "text": "El aire acondicionado no funciona.",
+   "reading": "el ai-re a-con-di-cio-na-do no fun-cio-na",
+   "explanation": "Deze zin betekent dat de airconditioning niet werkt. Je kunt dit gebruiken als je problemen hebt met de airco in een hotel of auto."
+  }
+ },
+ "h4": {
+  "yue": {
+   "text": "我可以要多啲毛巾嗎？",
+   "reading": "ngo5 ho2 ji5 jiu3 do1 di1 mou4 gan1 maa3?",
+   "explanation": "Deze zin betekent 'Kan ik extra handdoeken krijgen?' en kan gebruikt worden in een hotel of bij een zwembad wanneer je meer handdoeken nodig hebt."
+  },
+  "ko": {
+   "text": "추가 수건을 받을 수 있을까요?",
+   "reading": "Chuga sugeon-eul bad-eul su iss-eulkkayo?",
+   "explanation": "Deze zin vraag je wanneer je in een hotel of accommodatie bent en meer handdoeken nodig hebt. Het is een beleefde manier om extra handdoeken aan te vragen."
+  },
+  "id": {
+   "text": "Bisa saya minta handuk tambahan?",
+   "reading": "bi-sa sa-ya min-ta han-duk tam-ba-han",
+   "explanation": "Deze zin betekent dat je vraagt om extra handdoeken. Je kunt dit gebruiken in een hotel of bij een zwembad."
+  },
+  "en": {
+   "text": "Can I get some extra towels?",
+   "reading": "kan ai get som eks-tra tau-wels",
+   "explanation": "Deze zin vraag je wanneer je meer handdoeken nodig hebt, bijvoorbeeld in een hotel of bij een zwembad."
+  },
+  "fr": {
+   "text": "Puis-je avoir des serviettes supplémentaires ?",
+   "reading": "puej zja avar de serviet sup-le-men-tair",
+   "explanation": "Deze zin betekent dat je vraagt om extra handdoeken. Je kunt dit gebruiken in een hotel of bij een zwembad."
+  },
+  "de": {
+   "text": "Kann ich zusätzliche Handtücher bekommen?",
+   "reading": "kan ik tsu-tsä-lie-che hant-ü-cher be-komen",
+   "explanation": "Deze zin gebruik je om te vragen of je meer handdoeken kunt krijgen, bijvoorbeeld in een hotel of bij een zwembad."
+  },
+  "es": {
+   "text": "¿Puedo recibir toallas adicionales?",
+   "reading": "pu-e-do re-si-bir to-a-jas a-di-cio-na-les",
+   "explanation": "Deze zin betekent dat je vraagt om extra handdoeken. Je kunt dit gebruiken in een hotel of bij een zwembad."
+  }
+ },
+ "sh1": {
+  "yue": {
+   "text": "你有冇大一啲嘅尺寸？",
+   "reading": "nei5 jau5 mou5 daai6 jat1 di1 ge3 ci3 seon3?",
+   "explanation": "Deze zin vraag je wanneer je een kledingstuk of item in een grotere maat wilt hebben. Het is handig om te gebruiken in winkels of markten."
+  },
+  "ko": {
+   "text": "이거 더 큰 사이즈 있어요?",
+   "reading": "igeo deo keun saijeu isseoyo?",
+   "explanation": "Deze zin vraag je wanneer je in een winkel bent en je een kledingstuk of item in een grotere maat wilt hebben. Het is handig om te gebruiken als je niet kunt vinden wat je zoekt in de huidige maat."
+  },
+  "id": {
+   "text": "Apakah Anda memiliki ini dalam ukuran yang lebih besar?",
+   "reading": "apa-kah an-da me-mi-li-ki i-ni dal-am u-ki-ran yang le-bi-h ber-sar?",
+   "explanation": "Deze zin vraag je wanneer je een kledingstuk of item wilt in een grotere maat. Het is handig in winkels of markten."
+  },
+  "en": {
+   "text": "Do you have this in a larger size?",
+   "reading": "doe joe hef dis in een lar-ger sais?",
+   "explanation": "Deze zin gebruik je wanneer je vraagt of een kledingstuk of ander item beschikbaar is in een grotere maat. Het is handig in winkels of bij het kopen van kleding."
+  },
+  "fr": {
+   "text": "Avez-vous ceci en une taille plus grande ?",
+   "reading": "ave voe se-sie an un tail plu gran-de?",
+   "explanation": "Deze zin vraag je wanneer je een kledingstuk of ander item in een grotere maat wilt hebben. Het is handig in winkels of bij markten."
+  },
+  "de": {
+   "text": "Haben Sie das in einer größeren Größe?",
+   "reading": "ha-ben zi das in ai-ner grö-ße-ren grö-ße",
+   "explanation": "Deze zin gebruik je wanneer je vraagt of een kledingstuk of artikel in een grotere maat beschikbaar is. Het is handig in winkels of bij het huren van spullen."
+  },
+  "es": {
+   "text": "¿Tiene esto en una talla más grande?",
+   "reading": "tien-e es-to en oena ta-lla mas gran-de",
+   "explanation": "Deze zin vraag je wanneer je een kledingstuk of artikel in een grotere maat wilt hebben. Het is handig in winkels of bij markten."
+  }
+ },
+ "sh2": {
+  "yue": {
+   "text": "呢個幾多錢？",
+   "reading": "ni1 go3 gei2 do1 cin2?",
+   "explanation": "Deze zin betekent 'Hoeveel kost dit?'. Je kunt het gebruiken wanneer je de prijs van een item wilt weten tijdens het winkelen of op de markt."
+  },
+  "ko": {
+   "text": "이거 얼마예요?",
+   "reading": "igeo eolmaeyo?",
+   "explanation": "Deze zin vraag je wanneer je de prijs van een product wilt weten. Het is handig in winkels of markten."
+  },
+  "id": {
+   "text": "Berapa harganya?",
+   "reading": "be-ra-pa har-ga-nya",
+   "explanation": "Deze zin betekent 'Hoeveel kost dit?' en kan gebruikt worden wanneer je de prijs van een item wilt weten in winkels of op markten."
+  },
+  "en": {
+   "text": "How much does this cost?",
+   "reading": "hau mach das dis kost?",
+   "explanation": "Deze zin vraag je als je wilt weten wat de prijs van een product of dienst is. Het is handig om te gebruiken in winkels of restaurants."
+  },
+  "fr": {
+   "text": "Combien ça coûte ?",
+   "reading": "kom-bjan sa koot?",
+   "explanation": "Deze zin vraag je wanneer je de prijs van een product of dienst wilt weten. Het is een veelgebruikte vraag in winkels of restaurants."
+  },
+  "de": {
+   "text": "Wie viel kostet das?",
+   "reading": "wie viel kostet das",
+   "explanation": "Deze zin vraag je wanneer je de prijs van een product of dienst wilt weten. Het is een veelgebruikte vraag in winkels of restaurants."
+  },
+  "es": {
+   "text": "¿Cuánto cuesta esto?",
+   "reading": "kwan-to kwe-sta es-to",
+   "explanation": "Deze zin betekent 'Hoeveel kost dit?' en kan gebruikt worden wanneer je de prijs van een product of dienst wilt weten."
+  }
+ },
+ "sh3": {
+  "yue": {
+   "text": "我可以用卡支付嗎？",
+   "reading": "ngo5 ho2 ji5 jung6 kaa3 zi6 fu3 maa3?",
+   "explanation": "Deze zin betekent 'Kan ik met kaart betalen?'. Je kunt deze vraag stellen in winkels of restaurants om te vragen of ze kaartbetalingen accepteren."
+  },
+  "ko": {
+   "text": "카드로 결제할 수 있나요?",
+   "reading": "kadeuro gyeoljehal su innayo?",
+   "explanation": "Deze zin betekent 'Kan ik met kaart betalen?' en is handig om te vragen in winkels of restaurants wanneer je wilt weten of je met een creditcard of pinpas kunt betalen."
+  },
+  "id": {
+   "text": "Bisakah saya membayar dengan kartu?",
+   "reading": "bi-sa-kah sa-ya mem-ba-yar den-gen kar-tu",
+   "explanation": "Deze zin betekent 'Kan ik met kaart betalen?' en kan gebruikt worden in winkels of restaurants om te vragen of kaartbetalingen geaccepteerd worden."
+  },
+  "en": {
+   "text": "Can I pay with a card?",
+   "reading": "kan ai pei widh a kaard",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of je met een bankkaart of creditcard kunt betalen, bijvoorbeeld in een winkel of restaurant."
+  },
+  "fr": {
+   "text": "Puis-je payer par carte ?",
+   "reading": "puej zje pé-je par kart",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of je met een bankkaart of creditcard kunt betalen, bijvoorbeeld in een winkel of restaurant."
+  },
+  "de": {
+   "text": "Kann ich mit Karte bezahlen?",
+   "reading": "kan ik mit kar-te be-zah-len",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of je met een bankkaart of creditcard kunt betalen, bijvoorbeeld in een winkel of restaurant."
+  },
+  "es": {
+   "text": "¿Puedo pagar con tarjeta?",
+   "reading": "pu-e-do pa-gar kon tar-he-ta",
+   "explanation": "Deze zin betekent dat je vraagt of je met een betaalkaart kunt afrekenen. Dit is handig om te weten in winkels of restaurants."
+  }
+ },
+ "sh4": {
+  "yue": {
+   "text": "你哋有冇免稅服務？",
+   "reading": "nei5 dei6 jau5 mou5 min5 seoi3 fuk6 mou6?",
+   "explanation": "Deze zin vraagt of er een belastingvrije service beschikbaar is. Dit kan nuttig zijn bij het winkelen of bij het boeken van diensten in Hong Kong."
+  },
+  "ko": {
+   "text": "면세 서비스가 있나요?",
+   "reading": "myeonse seobiseuga innayo?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of er een belastingvrije service beschikbaar is, bijvoorbeeld in een winkel of op een luchthaven."
+  },
+  "id": {
+   "text": "Apakah Anda memiliki layanan bebas pajak?",
+   "reading": "apa-kah an-da mi-li-ki la-yan-an be-bas pa-jak",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of er belastingvrije diensten beschikbaar zijn, bijvoorbeeld in een winkel of op een luchthaven."
+  },
+  "en": {
+   "text": "Do you have a tax-free service?",
+   "reading": "doe joe hef a tax-vrie ser-vis?",
+   "explanation": "Deze zin vraag je als je wilt weten of er een dienst is waarbij je geen belasting hoeft te betalen. Dit kan handig zijn in winkels of bij diensten die belastingvrij zijn."
+  },
+  "fr": {
+   "text": "Avez-vous un service exonéré de taxes ?",
+   "reading": "ave-oe un ser-vis exo-ne-re de taks?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of er een dienst is die vrijgesteld is van belastingen, bijvoorbeeld in een winkel of restaurant."
+  },
+  "de": {
+   "text": "Haben Sie einen steuerfreien Service?",
+   "reading": "ha-ben zi ain-en sjtau-er-frai-en ser-vis",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of er een service is die belastingvrij is, bijvoorbeeld in een restaurant of bij een hotel."
+  },
+  "es": {
+   "text": "¿Tiene un servicio libre de impuestos?",
+   "reading": "tien-e un ser-vi-cio li-bre de im-pues-tos",
+   "explanation": "Deze zin vraag je wanneer je wilt weten of er een service is waarvoor je geen belasting hoeft te betalen. Dit kan handig zijn in winkels of restaurants."
+  }
+ },
+ "e1": {
+  "yue": {
+   "text": "請打電話叫救護車。",
+   "reading": "cing2 daa2 din6 waa2 giu3 gau3 wu6 ce1",
+   "explanation": "Deze zin betekent 'Bel alstublieft een ambulance.' en kan gebruikt worden in noodgevallen wanneer medische hulp nodig is."
+  },
+  "ko": {
+   "text": "구급차를 불러 주세요.",
+   "reading": "gugeupchareul bulleo juseyo.",
+   "explanation": "Deze zin betekent 'Bel alstublieft een ambulance.' en kan gebruikt worden in noodgevallen wanneer medische hulp nodig is."
+  },
+  "id": {
+   "text": "Tolong panggil ambulans.",
+   "reading": "to-long pang-gil am-bu-lans",
+   "explanation": "Deze zin betekent dat je iemand vraagt om een ambulance te bellen. Gebruik dit in noodgevallen wanneer medische hulp nodig is."
+  },
+  "en": {
+   "text": "Please call an ambulance.",
+   "reading": "plies ko-l an am-bu-lens",
+   "explanation": "Deze zin gebruik je wanneer je dringend medische hulp nodig hebt en iemand moet vragen om een ambulance te bellen."
+  },
+  "fr": {
+   "text": "Appelez une ambulance, s'il vous plaît.",
+   "reading": "ap-plei un am-bu-lans, sil voo pleit",
+   "explanation": "Deze zin vraag je wanneer je dringend medische hulp nodig hebt. Het is belangrijk om dit te zeggen in een noodgeval."
+  },
+  "de": {
+   "text": "Bitte rufen Sie einen Krankenwagen.",
+   "reading": "biete roefn zie ai-nen kranken-vagen",
+   "explanation": "Deze zin vraag je als je dringend medische hulp nodig hebt. Het is belangrijk om dit te zeggen in een noodsituatie."
+  },
+  "es": {
+   "text": "Por favor, llame a una ambulancia.",
+   "reading": "por fa-vor, ja-me a u-na am-bu-lan-cia",
+   "explanation": "Deze zin betekent dat je iemand vraagt om een ambulance te bellen. Het is nuttig in noodgevallen wanneer medische hulp nodig is."
+  }
+ },
+ "e2": {
+  "yue": {
+   "text": "我需要醫生。",
+   "reading": "ngo5 seoi1 jiu3 ji1 saang1.",
+   "explanation": "Deze zin betekent dat je medische hulp nodig hebt. Gebruik dit wanneer je dringend een dokter nodig hebt."
+  },
+  "ko": {
+   "text": "의사가 필요해요.",
+   "reading": "uisaga piryohaeyo.",
+   "explanation": "Deze zin betekent dat je medische hulp nodig hebt. Gebruik dit wanneer je in een situatie bent waarin je een dokter moet raadplegen."
+  },
+  "id": {
+   "text": "Saya butuh dokter.",
+   "reading": "saj-a boetoe dok-ter",
+   "explanation": "Deze zin betekent dat je medische hulp nodig hebt. Gebruik het wanneer je dringend een dokter nodig hebt, bijvoorbeeld bij ziekte of verwonding."
+  },
+  "en": {
+   "text": "I need a doctor.",
+   "reading": "ai ni-d a dok-ter",
+   "explanation": "Deze zin gebruik je wanneer je medische hulp nodig hebt. Het is een directe en duidelijke manier om aan te geven dat je een arts nodig hebt."
+  },
+  "fr": {
+   "text": "J'ai besoin d'un médecin.",
+   "reading": "zjè bez-wen d'un med-sin",
+   "explanation": "Deze zin betekent dat je medische hulp nodig hebt. Gebruik het wanneer je dringend een dokter nodig hebt."
+  },
+  "de": {
+   "text": "Ich brauche einen Arzt.",
+   "reading": "ik brouw-khe ai-nen arts",
+   "explanation": "Deze zin betekent dat je medische hulp nodig hebt. Gebruik het wanneer je dringend een dokter nodig hebt."
+  },
+  "es": {
+   "text": "Necesito un médico.",
+   "reading": "ne-se-si-toe oen mè-di-ko",
+   "explanation": "Deze zin betekent dat je medische hulp nodig hebt. Je kunt het gebruiken wanneer je een dokter wilt vinden of als je hulp nodig hebt bij een gezondheidsprobleem."
+  }
+ },
+ "e3": {
+  "yue": {
+   "text": "我唔見咗我嘅護照。",
+   "reading": "ngo5 m4 gin3 zo2 ngo5 ge3 wu6 ziu3.",
+   "explanation": "Deze zin betekent dat je je paspoort kwijt bent. Gebruik dit wanneer je hulp nodig hebt bij het zoeken naar je paspoort of bij het melden van verlies aan autoriteiten."
+  },
+  "ko": {
+   "text": "저는 여권을 잃어버렸어요.",
+   "reading": "jeoneun yeogwon-eul ilh-eobeolyeoss-eoyo.",
+   "explanation": "Deze zin betekent dat je je paspoort kwijt bent. Gebruik dit wanneer je hulp nodig hebt bij het zoeken naar je paspoort."
+  },
+  "id": {
+   "text": "Saya kehilangan paspor saya.",
+   "reading": "saja ke-lo-hin-gan pas-por sa-ya",
+   "explanation": "Deze zin betekent dat je je paspoort bent kwijtgeraakt. Je kunt dit gebruiken als je hulp nodig hebt bij het zoeken naar je paspoort."
+  },
+  "en": {
+   "text": "I have lost my passport.",
+   "reading": "ai hef lost mai paspoort",
+   "explanation": "Deze zin gebruik je om aan te geven dat je je paspoort niet meer kunt vinden. Dit kan handig zijn bij de politie of op een ambassade."
+  },
+  "fr": {
+   "text": "J'ai perdu mon passeport.",
+   "reading": "zjè perdü mon pas-port",
+   "explanation": "Deze zin betekent dat je je paspoort bent verloren. Je kunt dit gebruiken als je hulp nodig hebt bij het zoeken naar je paspoort of als je het moet melden."
+  },
+  "de": {
+   "text": "Ich habe meinen Reisepass verloren.",
+   "reading": "ik ha-be mai-nen rai-ze-pass fer-lo-ren",
+   "explanation": "Deze zin betekent dat je je paspoort niet meer kunt vinden. Je kunt dit gebruiken als je hulp nodig hebt bij het zoeken naar je paspoort of als je het moet melden."
+  },
+  "es": {
+   "text": "He perdido mi pasaporte.",
+   "reading": "e per-di-do mi pas-por-te",
+   "explanation": "Deze zin betekent dat je je paspoort kwijt bent. Je kunt dit gebruiken als je hulp nodig hebt bij het zoeken naar je paspoort."
+  }
+ },
+ "e4": {
+  "yue": {
+   "text": "請打電話給警察。",
+   "reading": "cing2 daa2 din6 waa2 gei2 ging2 caat3.",
+   "explanation": "Deze zin betekent 'Bel alstublieft de politie.' en kan gebruikt worden in een noodsituatie waarin je hulp van de politie nodig hebt."
+  },
+  "ko": {
+   "text": "경찰에 전화해 주세요.",
+   "reading": "gyeongchare jeonhwae juseyo.",
+   "explanation": "Deze zin betekent 'Bel alstublieft de politie.' en kan gebruikt worden in een noodsituatie wanneer je hulp van de politie nodig hebt."
+  },
+  "id": {
+   "text": "Tolong hubungi polisi.",
+   "reading": "to-long hoe-boen-gi po-li-si",
+   "explanation": "Deze zin betekent 'Bel alstublieft de politie' en kan gebruikt worden in noodgevallen wanneer je hulp van de politie nodig hebt."
+  },
+  "en": {
+   "text": "Please call the police.",
+   "reading": "plies kohl de po-lies",
+   "explanation": "Deze zin vraagt iemand om de politie te bellen, vaak gebruikt in noodsituaties of als er hulp nodig is."
+  },
+  "fr": {
+   "text": "Veuillez appeler la police, s'il vous plaît.",
+   "reading": "ve-uil a-pel-lé la po-lis, sil voo plè",
+   "explanation": "Deze zin vraag je wanneer je dringend hulp van de politie nodig hebt. Het is een beleefde manier om iemand te vragen om de politie te bellen."
+  },
+  "de": {
+   "text": "Bitte rufen Sie die Polizei an.",
+   "reading": "bi-tte roo-fen zi di po-li-tsai an",
+   "explanation": "Deze zin vraag je iemand om de politie te bellen, bijvoorbeeld in een noodsituatie. Het is een formele manier om hulp te vragen."
+  },
+  "es": {
+   "text": "Por favor, llame a la policía.",
+   "reading": "por fa-vor, ja-me a la po-li-sia",
+   "explanation": "Deze zin betekent dat je iemand vraagt om de politie te bellen. Je kunt dit gebruiken in een noodsituatie of wanneer je hulp nodig hebt."
+  }
+ },
+ "e5": {
+  "yue": {
+   "text": "我胸口痛。",
+   "reading": "ngo5 hung1 hau2 tung4.",
+   "explanation": "Deze zin betekent dat je pijn op de borst hebt. Je kunt dit gebruiken als je medische hulp nodig hebt of als je iemand wilt informeren over je symptomen."
+  },
+  "ko": {
+   "text": "가슴이 아파요.",
+   "reading": "gaseumi apayo.",
+   "explanation": "Deze zin betekent dat je pijn op de borst hebt. Je kunt dit gebruiken wanneer je medische hulp nodig hebt of je symptomen wilt beschrijven aan een arts."
+  },
+  "id": {
+   "text": "Saya merasa sakit di dada.",
+   "reading": "saja me-ra-sa sa-kit di da-da",
+   "explanation": "Deze zin betekent dat je pijn op de borst hebt en kan gebruikt worden in een medische situatie of wanneer je hulp nodig hebt."
+  },
+  "en": {
+   "text": "I have chest pain.",
+   "reading": "ai hef tsjest pein",
+   "explanation": "Deze zin gebruik je om aan te geven dat je pijn op de borst voelt, wat kan wijzen op een medische noodsituatie. Het is belangrijk om dit serieus te nemen en hulp te zoeken."
+  },
+  "fr": {
+   "text": "J'ai des douleurs à la poitrine.",
+   "reading": "zjee deuh-loer a la pwat-rin",
+   "explanation": "Deze zin betekent dat je pijn op de borst hebt en is nuttig om aan te geven dat je medische hulp nodig hebt."
+  },
+  "de": {
+   "text": "Ich habe Brustschmerzen.",
+   "reading": "ik ha-be broest-sjmer-tsen",
+   "explanation": "Deze zin gebruik je om aan te geven dat je pijn op de borst hebt, bijvoorbeeld bij een bezoek aan een arts of in een noodsituatie."
+  },
+  "es": {
+   "text": "Tengo dolor en el pecho.",
+   "reading": "ten-go do-lor en el pe-tcho",
+   "explanation": "Deze zin betekent dat je pijn op de borst hebt en kan gebruikt worden bij een medisch noodgeval of als je hulp nodig hebt."
+  }
+ },
+ "vt1": {
+  "yue": {
+   "text": "你有咩興趣？",
+   "reading": "nei5 jau5 me1 hing3 ceoi3?",
+   "explanation": "Deze zin betekent 'Wat zijn je hobby's?' en kan gebruikt worden om iemand te vragen naar zijn of haar interesses of vrijetijdsbesteding."
+  },
+  "ko": {
+   "text": "당신의 취미는 무엇인가요?",
+   "reading": "dangsin-ui chwimi-neun mueos-ingayo?",
+   "explanation": "Deze zin betekent 'Wat zijn je hobby's?'. Je kunt dit vragen om iemand beter te leren kennen en meer te weten te komen over hun interesses."
+  },
+  "id": {
+   "text": "Apa hobi kamu?",
+   "reading": "apa ho-bi ka-moe",
+   "explanation": "Deze zin betekent 'Wat zijn je hobby's?' en kan gebruikt worden om iemand te vragen naar zijn of haar interesses of vrijetijdsbesteding."
+  },
+  "en": {
+   "text": "What are your hobbies?",
+   "reading": "wat ar joer hob-bies?",
+   "explanation": "Deze zin vraag je aan iemand om meer te weten te komen over hun interesses en vrijetijdsbesteding. Het is een gebruikelijke vraag bij het leren kennen van nieuwe mensen."
+  },
+  "fr": {
+   "text": "Quels sont tes passe-temps ?",
+   "reading": "kel son te pas-tan",
+   "explanation": "Deze zin vraag je aan iemand om te weten te komen wat diegene graag in zijn of haar vrije tijd doet. Het is een informele manier om een gesprek te beginnen."
+  },
+  "de": {
+   "text": "Was sind deine Hobbys?",
+   "reading": "vas zint dai-ne hob-ies",
+   "explanation": "Deze zin vraag je aan iemand om meer te weten te komen over zijn of haar vrijetijdsbestedingen. Het is een informele vraag die vaak voorkomt in gesprekken."
+  },
+  "es": {
+   "text": "¿Cuáles son tus pasatiempos?",
+   "reading": "kwales son toes pasatiem-pos",
+   "explanation": "Deze zin betekent 'Wat zijn je hobby's?' en kan gebruikt worden om iemand te vragen naar zijn of haar vrijetijdsbestedingen."
+  }
+ },
+ "vt2": {
+  "yue": {
+   "text": "我週末鍾意踢足球。",
+   "reading": "ngo5 zau1 mut6 zung1 ji3 tek3 zuk1 kau4.",
+   "explanation": "Deze zin betekent dat je graag in het weekend voetbalt. Je kunt dit gebruiken om je hobby of voorkeur voor sport aan te geven tijdens gesprekken met anderen."
+  },
+  "ko": {
+   "text": "주말에 축구하는 것을 좋아해요.",
+   "reading": "jumal-e chukgu-haneun geoseul joahaeyo.",
+   "explanation": "Deze zin betekent dat je het leuk vindt om in het weekend te voetballen. Je kunt deze zin gebruiken om je hobby of voorkeur aan iemand te vertellen."
+  },
+  "id": {
+   "text": "Saya suka bermain sepak bola di akhir pekan.",
+   "reading": "saja soeka ber-main sepak bo-la di a-khir pe-kan",
+   "explanation": "Deze zin betekent dat je graag in het weekend voetbalt. Je kunt dit gebruiken om je hobby of voorkeur voor sport aan te geven tijdens een gesprek."
+  },
+  "en": {
+   "text": "I like to play soccer on the weekends.",
+   "reading": "ai laik toe plei sok-ker on de wi-kends",
+   "explanation": "Deze zin betekent dat je het leuk vindt om in je vrije tijd, vooral in het weekend, te voetballen. Je kunt deze zin gebruiken om je hobby of voorkeur voor sport aan te geven."
+  },
+  "fr": {
+   "text": "J'aime jouer au football le week-end.",
+   "reading": "zjem zhoe-ro o foet-bol le week-end",
+   "explanation": "Deze zin betekent dat je graag in het weekend voetbalt. Je kunt dit gebruiken om je hobby of voorkeur voor sport aan te geven."
+  },
+  "de": {
+   "text": "Ich spiele gerne am Wochenende Fußball.",
+   "reading": "ik spie-le ger-ne am vo-chen-en-de foos-bal",
+   "explanation": "Deze zin betekent dat je het leuk vindt om in het weekend te voetballen. Je kunt deze zin gebruiken om je hobby of voorkeur voor sport aan te geven."
+  },
+  "es": {
+   "text": "Me gusta jugar al fútbol los fines de semana.",
+   "reading": "me goesta hoe-gar al foet-bol los fi-nes de se-ma-na",
+   "explanation": "Deze zin betekent dat je graag in het weekend voetbalt. Je kunt deze zin gebruiken om je hobby of voorkeur voor sport aan te geven."
+  }
+ },
+ "vt3": {
+  "yue": {
+   "text": "你有做運動嗎？",
+   "reading": "nei5 jau5 zou6 wan6 dung6 maa3?",
+   "explanation": "Deze zin betekent 'Doe je aan sport?'. Het is een informele vraag die je kunt stellen om iemand te vragen of ze actief zijn in sport of lichaamsbeweging."
+  },
+  "ko": {
+   "text": "운동해요?",
+   "reading": "undonghaeyo?",
+   "explanation": "Deze zin betekent 'Doe je aan sport?'. Je kunt deze vraag stellen om te informeren of iemand regelmatig sport of actief is in fysieke activiteiten."
+  },
+  "id": {
+   "text": "Apakah kamu berolahraga?",
+   "reading": "apa-kah ka-mu be-ro-la-rga",
+   "explanation": "Deze zin betekent 'Doe je aan sport?'. Je kunt het gebruiken om iemand te vragen of hij of zij sportactiviteiten doet."
+  },
+  "en": {
+   "text": "Do you play sports?",
+   "reading": "doe ju plei spoorts",
+   "explanation": "Deze zin vraag je aan iemand om te informeren of ze actief zijn in sport. Het is een veelvoorkomende vraag bij het leren kennen van iemand."
+  },
+  "fr": {
+   "text": "Tu fais du sport ?",
+   "reading": "Tjoefè du sport?",
+   "explanation": "Deze zin vraag je aan iemand om te weten of ze aan sport doen. Het is een informele vraag die je kunt stellen tijdens een gesprek."
+  },
+  "de": {
+   "text": "Machst du Sport?",
+   "reading": "mahts doo sport",
+   "explanation": "Deze zin vraag je aan iemand om te informeren of ze actief zijn in sport. Het is een informele vraag die vaak gesteld wordt in sociale situaties."
+  },
+  "es": {
+   "text": "¿Practicas deporte?",
+   "reading": "prakti-kas de-porte",
+   "explanation": "Deze zin betekent 'Doe je aan sport?' en kan gebruikt worden om iemand te vragen of ze actief zijn in een sport of sportieve activiteiten doen."
+  }
+ },
+ "vt4": {
+  "yue": {
+   "text": "我鍾意睇書同聽音樂。",
+   "reading": "ngo5 zung1 ji3 tai2 syu1 tung4 teng1 jam1 ngok6.",
+   "explanation": "Deze zin betekent dat je van lezen en muziek luisteren houdt. Je kunt dit gebruiken om je interesses aan iemand te vertellen."
+  },
+  "ko": {
+   "text": "나는 독서와 음악 듣는 것을 좋아해요.",
+   "reading": "naneun dokseowa eumak deun geoseul joahaeyo.",
+   "explanation": "Deze zin betekent dat je van lezen en muziek luisteren houdt. Je kunt deze zin gebruiken om je interesses aan iemand te vertellen."
+  },
+  "id": {
+   "text": "Saya suka membaca dan mendengarkan musik.",
+   "reading": "saja soeka mem-badja dan men-deng-ar-kan moesik",
+   "explanation": "Deze zin betekent dat je van lezen en muziek luisteren houdt. Je kunt het gebruiken om je interesses te delen met anderen."
+  },
+  "en": {
+   "text": "I love reading and listening to music.",
+   "reading": "ai lov ri-ding en lis-ning tu my-zik",
+   "explanation": "Deze zin drukt je passie uit voor lezen en muziek. Je kunt het gebruiken om iemand te vertellen wat je leuk vindt om te doen in je vrije tijd."
+  },
+  "fr": {
+   "text": "J'aime lire et écouter de la musique.",
+   "reading": "zjem leer e e-koute de la my-ziek",
+   "explanation": "Deze zin betekent dat je graag leest en naar muziek luistert. Je kunt deze zin gebruiken om je interesses aan iemand te vertellen."
+  },
+  "de": {
+   "text": "Ich liebe es zu lesen und Musik zu hören.",
+   "reading": "ik li-be es tsu le-zen oend mu-zik tsu heu-ren",
+   "explanation": "Deze zin betekent dat je van lezen en muziek houdt. Je kunt dit zeggen om je interesses te delen met anderen."
+  },
+  "es": {
+   "text": "Me encanta leer y escuchar música.",
+   "reading": "me en-kanta le-er i es-ku-char mu-si-ka",
+   "explanation": "Deze zin betekent dat je van lezen en het luisteren naar muziek houdt. Je kunt het gebruiken om je interesses te delen met anderen."
+  }
+ },
+ "vt5": {
+  "yue": {
+   "text": "我哋一齊去游水好嗎？",
+   "reading": "ngo5 dei6 jat1 cai4 heoi3 jau4 seoi2 hou2 maa3?",
+   "explanation": "Deze zin betekent 'Zullen we samen gaan zwemmen?'. Je kunt dit gebruiken om iemand uit te nodigen om samen te gaan zwemmen."
+  },
+  "ko": {
+   "text": "같이 수영하러 갈까요?",
+   "reading": "gachi suyeonghareo galkkayo?",
+   "explanation": "Deze zin betekent 'Zullen we samen gaan zwemmen?' en kan gebruikt worden om iemand uit te nodigen om samen te gaan zwemmen."
+  },
+  "id": {
+   "text": "Apakah kita akan berenang bersama?",
+   "reading": "apa-kah ki-ta a-kan be-renang ber-sa-ma?",
+   "explanation": "Deze zin vraagt of iemand samen wil gaan zwemmen. Je kunt dit gebruiken om een activiteit voor te stellen aan iemand."
+  },
+  "en": {
+   "text": "Shall we go swimming together?",
+   "reading": "sjal wi goo swim-min toget-er?",
+   "explanation": "Deze zin vraag of iemand samen met jou wil gaan zwemmen. Je kunt het gebruiken wanneer je iemand wilt uitnodigen voor een activiteit in het water."
+  },
+  "fr": {
+   "text": "On va nager ensemble ?",
+   "reading": "on va na-zje an-sam-bl",
+   "explanation": "Deze zin betekent 'Zullen we samen gaan zwemmen?' en kan gebruikt worden om iemand uit te nodigen om samen te gaan zwemmen."
+  },
+  "de": {
+   "text": "Wollen wir zusammen schwimmen gehen?",
+   "reading": "vol-len vi-er tsu-zam-en schvi-mmen gee-en",
+   "explanation": "Deze zin vraagt of iemand samen met jou wil gaan zwemmen. Het is een informele uitnodiging voor een activiteit."
+  },
+  "es": {
+   "text": "¿Vamos a nadar juntos?",
+   "reading": "wamos a na-dar jun-tos",
+   "explanation": "Deze zin betekent 'Laten we samen gaan zwemmen' en kan gebruikt worden om iemand uit te nodigen om samen te gaan zwemmen."
+  }
+ },
+ "th1": {
+  "yue": {
+   "text": "我需要收拾客廳。",
+   "reading": "ngo5 seoi1 jiu3 sau1 si6 haak3 teng1.",
+   "explanation": "Deze zin betekent dat je de woonkamer moet opruimen. Je kunt dit zeggen wanneer je aangeeft dat je een schoonmaaktaak hebt in je huis."
+  },
+  "ko": {
+   "text": "거실을 정리해야 해요.",
+   "reading": "geosireul jeongrihaeya haeyo.",
+   "explanation": "Deze zin betekent dat je de woonkamer moet opruimen. Je kunt dit zeggen wanneer je aangeeft dat er opruimwerkzaamheden nodig zijn in de woonkamer."
+  },
+  "id": {
+   "text": "Saya harus merapikan ruang tamu.",
+   "reading": "saja ha-rus me-ra-pi-kan ru-ang ta-mu",
+   "explanation": "Deze zin betekent dat je de woonkamer moet schoonmaken of opruimen. Je kunt dit zeggen als je een taak hebt om de ruimte netjes te maken."
+  },
+  "en": {
+   "text": "I need to tidy up the living room.",
+   "reading": "ai niid tu taidi ap de liv-ing roem",
+   "explanation": "Deze zin betekent dat je de woonkamer moet schoonmaken of ordenen. Je kunt deze zin gebruiken wanneer je aangeeft dat er opruimwerk te doen is."
+  },
+  "fr": {
+   "text": "Je dois ranger le salon.",
+   "reading": "je dwa rang-zhuh le sa-lon",
+   "explanation": "Deze zin betekent dat je de woonkamer moet opruimen. Je kunt dit gebruiken wanneer je aangeeft dat er schoonmaakwerk te doen is in de woonkamer."
+  },
+  "de": {
+   "text": "Ich muss das Wohnzimmer aufräumen.",
+   "reading": "ik moes das voon-zi-mer oaf-roy-men",
+   "explanation": "Deze zin betekent dat je de woonkamer moet schoonmaken of ordenen. Je kunt het gebruiken wanneer je aangeeft dat je een taak in huis moet uitvoeren."
+  },
+  "es": {
+   "text": "Tengo que ordenar la sala de estar.",
+   "reading": "ten-go ke or-denar la sa-la de estar",
+   "explanation": "Deze zin betekent dat je de woonkamer moet opruimen. Je kunt deze zin gebruiken wanneer je aangeeft dat je een taak moet uitvoeren in huis."
+  }
+ },
+ "th2": {
+  "yue": {
+   "text": "你可以洗碗嗎？",
+   "reading": "nei5 ho2 ji5 sai2 waan2 maa3?",
+   "explanation": "Deze zin vraagt iemand of hij of zij de afwas kan doen. Je kunt dit gebruiken wanneer je hulp nodig hebt bij het schoonmaken van de vaat."
+  },
+  "ko": {
+   "text": "설거지 좀 해줄래?",
+   "reading": "seolgeji jom haejullae?",
+   "explanation": "Deze zin betekent 'Kun je de afwas doen?' en kan gebruikt worden wanneer je iemand vraagt om te helpen met het afwassen."
+  },
+  "id": {
+   "text": "Bisakah kamu mencuci piring?",
+   "reading": "bi-sa-kah ka-mu men-choe-tji pi-ring",
+   "explanation": "Deze zin vraagt iemand om de afwas te doen. Het is een informele manier om hulp te vragen in de keuken."
+  },
+  "en": {
+   "text": "Can you do the dishes?",
+   "reading": "ken joe doo de dis-sjes?",
+   "explanation": "Deze zin vraag je aan iemand of zij de afwas willen doen. Het is een informele manier om hulp te vragen in de keuken."
+  },
+  "fr": {
+   "text": "Peux-tu faire la vaisselle ?",
+   "reading": "peu-tjue fer la vaisse-l",
+   "explanation": "Deze zin vraagt iemand om de afwas te doen. Je kunt dit gebruiken wanneer je hulp nodig hebt bij het schoonmaken van de vaat."
+  },
+  "de": {
+   "text": "Kannst du das Geschirr spülen?",
+   "reading": "kanst doe das ge-sjir spie-len",
+   "explanation": "Deze zin vraag je aan iemand of hij of zij de afwas kan doen. Het is een informele manier om hulp te vragen in het huishouden."
+  },
+  "es": {
+   "text": "¿Puedes lavar los platos?",
+   "reading": "pu-e-des la-var los pla-tos",
+   "explanation": "Deze zin vraagt iemand om de afwas te doen. Het is een informele manier om hulp te vragen in een huiselijke situatie."
+  }
+ },
+ "th3": {
+  "yue": {
+   "text": "洗手間喺樓上。",
+   "reading": "sai2 sau2 gaan1 hai2 lau4 soeng6.",
+   "explanation": "Deze zin betekent dat de badkamer zich op de bovenverdieping bevindt. Je kunt deze zin gebruiken wanneer je iemand wilt vertellen waar de badkamer is."
+  },
+  "ko": {
+   "text": "욕실은 위에 있습니다.",
+   "reading": "yoksil-eun wie issseubnida.",
+   "explanation": "Deze zin betekent dat de badkamer zich op de bovenverdieping bevindt. Je kunt dit gebruiken wanneer je iemand de locatie van de badkamer wilt aangeven."
+  },
+  "id": {
+   "text": "Kamar mandinya ada di atas.",
+   "reading": "ka-mar man-din-ya a-da di a-tas",
+   "explanation": "Deze zin betekent dat de badkamer zich op de bovenverdieping bevindt. Je kunt deze zin gebruiken om iemand de locatie van de badkamer aan te geven."
+  },
+  "en": {
+   "text": "The bathroom is upstairs.",
+   "reading": "de bath-room is ap-stairs",
+   "explanation": "Deze zin betekent dat de badkamer zich op de bovenverdieping bevindt. Je kunt dit gebruiken om iemand de locatie van de badkamer aan te geven."
+  },
+  "fr": {
+   "text": "La salle de bain est à l'étage.",
+   "reading": "la sal de ban e ta le-tazj",
+   "explanation": "Deze zin betekent dat de badkamer zich op de bovenverdieping bevindt. Je kunt deze zin gebruiken wanneer je iemand de locatie van de badkamer wilt aangeven."
+  },
+  "de": {
+   "text": "Das Badezimmer ist oben.",
+   "reading": "das ba-de-zi-mer ist o-ben",
+   "explanation": "Deze zin betekent dat de badkamer zich op de bovenverdieping bevindt. Je kunt dit gebruiken om iemand de locatie van de badkamer aan te geven."
+  },
+  "es": {
+   "text": "El baño está arriba.",
+   "reading": "el ban-jo es-ta a-ri-ba",
+   "explanation": "Deze zin betekent dat de badkamer zich op de bovenverdieping bevindt. Je kunt het gebruiken om iemand de weg te wijzen naar de badkamer."
+  }
+ },
+ "th4": {
+  "yue": {
+   "text": "我今日洗衫。",
+   "reading": "ngo5 gam1 jat6 sai2 saam1.",
+   "explanation": "Deze zin betekent dat je vandaag de was doet. Je kunt dit gebruiken wanneer je iemand vertelt over je dagelijkse huishoudelijke taken."
+  },
+  "ko": {
+   "text": "오늘 세탁해요.",
+   "reading": "oneul setakhaeyo.",
+   "explanation": "Deze zin betekent dat je vandaag de was gaat doen. Je kunt het gebruiken wanneer je met iemand praat over je plannen voor de dag."
+  },
+  "id": {
+   "text": "Saya mencuci pakaian hari ini.",
+   "reading": "saja men-tsjie pa-ka-jan ha-ri i-ni",
+   "explanation": "Deze zin betekent dat je vandaag je kleding wast. Je kunt dit gebruiken wanneer je iemand vertelt over je dagelijkse taken."
+  },
+  "en": {
+   "text": "I'm doing the laundry today.",
+   "reading": "aim do-ing de lon-dri to-dei",
+   "explanation": "Deze zin betekent dat je vandaag de was gaat doen. Je kunt het gebruiken wanneer je iemand vertelt over je plannen voor de dag."
+  },
+  "fr": {
+   "text": "Je fais la lessive aujourd'hui.",
+   "reading": "juh fe la les-sie-v o-zhoer-dwee",
+   "explanation": "Deze zin betekent dat je vandaag de was gaat doen. Je kunt het gebruiken wanneer je iemand informeert over je plannen voor de dag."
+  },
+  "de": {
+   "text": "Ich mache heute die Wäsche.",
+   "reading": "ik ma-cher ho-i-te di ve-sje",
+   "explanation": "Deze zin betekent dat je vandaag de was gaat doen. Je kunt dit gebruiken wanneer je iemand vertelt over je plannen voor de dag."
+  },
+  "es": {
+   "text": "Hoy hago la colada.",
+   "reading": "oi a-go la ko-la-da",
+   "explanation": "Deze zin betekent dat je vandaag de was gaat doen. Je kunt dit gebruiken als je iemand vertelt over je plannen voor de dag."
+  }
+ },
+ "th5": {
+  "yue": {
+   "text": "鎖匙喺廚房度。",
+   "reading": "so2 si4 hai2 cyu4 fong2 dou6.",
+   "explanation": "Deze zin betekent dat de sleutels zich in de keuken bevinden. Je kunt dit gebruiken als je iemand wilt vertellen waar de sleutels zijn."
+  },
+  "ko": {
+   "text": "열쇠가 주방에 있어요.",
+   "reading": "Yeolsoe-ga jubang-e isseoyo.",
+   "explanation": "Deze zin betekent dat de sleutels zich in de keuken bevinden. Je kunt dit gebruiken als je iemand wilt vertellen waar de sleutels zijn."
+  },
+  "id": {
+   "text": "Kunci-kunci ada di dapur.",
+   "reading": "koen-tsi koen-tsi a-da di da-poer",
+   "explanation": "Deze zin betekent dat de sleutels zich in de keuken bevinden. Je kunt deze zin gebruiken om iemand te vertellen waar de sleutels zijn."
+  },
+  "en": {
+   "text": "The keys are in the kitchen.",
+   "reading": "de kiis aar in de kitch-en",
+   "explanation": "Deze zin geeft aan waar de sleutels zich bevinden. Je kunt het gebruiken wanneer je iemand vertelt waar ze de sleutels kunnen vinden."
+  },
+  "fr": {
+   "text": "Les clés sont dans la cuisine.",
+   "reading": "le klei sont dan la kwizin",
+   "explanation": "Deze zin betekent dat de sleutels zich in de keuken bevinden. Je kunt deze zin gebruiken wanneer je iemand wilt vertellen waar de sleutels zijn."
+  },
+  "de": {
+   "text": "Die Schlüssel liegen in der Küche.",
+   "reading": "die sjü-sel li-gen in der küh-e",
+   "explanation": "Deze zin betekent dat de sleutels zich in de keuken bevinden. Je kunt deze zin gebruiken als je iemand wilt vertellen waar de sleutels zijn."
+  },
+  "es": {
+   "text": "Las llaves están en la cocina.",
+   "reading": "las javes es-tan en la ko-sie-na",
+   "explanation": "Deze zin betekent dat de sleutels zich in de keuken bevinden. Je kunt deze zin gebruiken om iemand te vertellen waar de sleutels zijn."
+  }
+ },
+ "li1": {
+  "yue": {
+   "text": "我頭痛。",
+   "reading": "ngo5 tau4 tung4.",
+   "explanation": "Deze zin betekent 'Ik heb hoofdpijn.' en kan gebruikt worden wanneer je aangeeft dat je last hebt van hoofdpijn, bijvoorbeeld bij een dokter of in een apotheek."
+  },
+  "ko": {
+   "text": "머리가 아파요.",
+   "reading": "meoriga apayo.",
+   "explanation": "Deze zin betekent 'Mijn hoofd doet pijn.' en kan gebruikt worden om aan te geven dat je hoofdpijn hebt, bijvoorbeeld bij een dokter of in een apotheek."
+  },
+  "id": {
+   "text": "Kepala saya sakit.",
+   "reading": "ke-pa-la sa-ya sa-kit",
+   "explanation": "Deze zin betekent dat je hoofdpijn hebt. Je kunt het gebruiken wanneer je iemand wilt laten weten dat je pijn in je hoofd voelt."
+  },
+  "en": {
+   "text": "I have a headache.",
+   "reading": "ai hev a hed-eik",
+   "explanation": "Deze zin gebruik je om aan te geven dat je hoofdpijn hebt. Het is handig om te zeggen als je medische hulp of advies nodig hebt."
+  },
+  "fr": {
+   "text": "J'ai mal à la tête.",
+   "reading": "zjè mal à la tèt",
+   "explanation": "Deze zin betekent dat je hoofdpijn hebt. Je kunt het gebruiken als je iemand wilt laten weten dat je pijn in je hoofd voelt."
+  },
+  "de": {
+   "text": "Ich habe Kopfschmerzen.",
+   "reading": "ik ha-be kopf-sjer-tsen",
+   "explanation": "Deze zin betekent dat je hoofdpijn hebt. Je kunt dit gebruiken als je iemand wilt vertellen dat je pijn in je hoofd voelt."
+  },
+  "es": {
+   "text": "Me duele la cabeza.",
+   "reading": "me doe-le la ka-be-sa",
+   "explanation": "Deze zin betekent dat je hoofdpijn hebt. Je kunt dit gebruiken om aan te geven dat je je niet goed voelt door pijn in je hoofd."
+  }
+ },
+ "li2": {
+  "yue": {
+   "text": "我背痛。",
+   "reading": "ngo5 bui3 tung4.",
+   "explanation": "Deze zin betekent dat je rugpijn hebt. Je kunt dit gebruiken als je medische hulp nodig hebt of wanneer je iemand vertelt over je ongemak."
+  },
+  "ko": {
+   "text": "허리가 아파요.",
+   "reading": "Heoriga apayo.",
+   "explanation": "Deze zin betekent dat je rugpijn hebt. Je kunt dit gebruiken wanneer je medische hulp nodig hebt of iemand wilt laten weten dat je pijn hebt."
+  },
+  "id": {
+   "text": "Saya sakit punggung.",
+   "reading": "saja sa-kit poeng-goeng",
+   "explanation": "Deze zin betekent dat je rugpijn hebt. Je kunt dit gebruiken om aan te geven dat je last hebt van je rug, bijvoorbeeld bij een dokter of in een apotheek."
+  },
+  "en": {
+   "text": "I have back pain.",
+   "reading": "ai hef bek pein",
+   "explanation": "Deze zin gebruik je om aan te geven dat je last hebt van je rug. Het is handig om te zeggen bij een dokter of als je hulp nodig hebt."
+  },
+  "fr": {
+   "text": "J'ai mal au dos.",
+   "reading": "zjè mal o do",
+   "explanation": "Deze zin betekent dat je rugpijn hebt. Je kunt dit gebruiken als je medische hulp nodig hebt of als je iemand vertelt over je ongemak."
+  },
+  "de": {
+   "text": "Ich habe Rückenschmerzen.",
+   "reading": "ik ha-be rük-ken-smer-tsen",
+   "explanation": "Deze zin betekent dat je last hebt van je rug en kan gebruikt worden om medische hulp te vragen of je situatie uit te leggen."
+  },
+  "es": {
+   "text": "Me duele la espalda.",
+   "reading": "me dwa-le la es-pal-da",
+   "explanation": "Deze zin betekent dat je rugpijn hebt. Je kunt dit gebruiken om aan te geven dat je ongemak voelt in je rug, bijvoorbeeld bij een dokter of in een apotheek."
+  }
+ },
+ "li3": {
+  "yue": {
+   "text": "我行得太多，腳好攰。",
+   "reading": "ngo5 haang4 dak1 taai3 do1, goek3 hou2 gui6.",
+   "explanation": "Deze zin betekent dat je benen moe zijn van het lopen. Je kunt dit gebruiken wanneer je moe bent na een lange wandeling."
+  },
+  "ko": {
+   "text": "내 다리가 걷느라 피곤해요.",
+   "reading": "nae dariga geodneura pigonhaeyo.",
+   "explanation": "Deze zin betekent dat je benen moe zijn van het lopen. Je kunt dit gebruiken om aan te geven dat je vermoeid bent na een lange wandeling."
+  },
+  "id": {
+   "text": "Kaki saya lelah dari berjalan.",
+   "reading": "ka-ki sa-ya le-lah da-ri ber-ja-lan",
+   "explanation": "Deze zin betekent dat je benen moe zijn van het lopen. Je kunt dit gebruiken als je aangeeft dat je moe bent na een lange wandeling."
+  },
+  "en": {
+   "text": "My legs are tired from walking.",
+   "reading": "mai legs aar tai-erd from wo-king",
+   "explanation": "Deze zin geeft aan dat je benen vermoeid zijn door het lopen. Je kunt dit gebruiken als je moe bent na een lange wandeling."
+  },
+  "fr": {
+   "text": "Mes jambes sont fatiguées d'avoir marché.",
+   "reading": "me zjam sôn fa-ti-ge d'a-var mar-sjé",
+   "explanation": "Deze zin betekent dat je benen moe zijn door het lopen. Je kunt dit gebruiken na een lange wandeling."
+  },
+  "de": {
+   "text": "Meine Beine sind müde vom Laufen.",
+   "reading": "maij-ne bai-ne zint myu-de fom lau-fen",
+   "explanation": "Deze zin betekent dat je benen vermoeid zijn door het lopen. Je kunt dit zeggen na een lange wandeling of als je veel hebt gelopen."
+  },
+  "es": {
+   "text": "Mis piernas están cansadas de caminar.",
+   "reading": "mis pier-nas es-tan kan-sa-das de ka-mi-nar",
+   "explanation": "Deze zin betekent dat je benen moe zijn van het lopen. Je kunt het gebruiken wanneer je na een lange wandeling even wilt uitrusten."
+  }
+ },
+ "li4": {
+  "yue": {
+   "text": "我眼入咗啲嘢。",
+   "reading": "ngo5 ngaan3 jap6 zo2 di1 je5.",
+   "explanation": "Deze zin betekent dat er iets in je oog zit. Je kunt dit gebruiken wanneer je ongemak in je oog voelt en hulp nodig hebt."
+  },
+  "ko": {
+   "text": "눈에 뭔가 들어갔어요.",
+   "reading": "nune mwonga deureogasseoyo.",
+   "explanation": "Deze zin betekent dat er iets in je oog zit. Je kunt dit gebruiken als je hulp nodig hebt of als je iemand wilt laten weten dat je ongemak ervaart in je oog."
+  },
+  "id": {
+   "text": "Saya punya sesuatu di mata saya.",
+   "reading": "saja pun-ya se-sua-tu di ma-ta sa-ya",
+   "explanation": "Deze zin betekent dat je iets in je oog hebt, wat kan wijzen op ongemak of irritatie. Je kunt deze zin gebruiken als je hulp nodig hebt of als je iemand wilt laten weten dat er iets mis is met je oog."
+  },
+  "en": {
+   "text": "I have something in my eye.",
+   "reading": "ai hef som-thing in mai ai",
+   "explanation": "Deze zin gebruik je wanneer je ongemak in je oog voelt door een vreemd voorwerp. Het kan handig zijn om dit te zeggen als je hulp nodig hebt om het eruit te krijgen."
+  },
+  "fr": {
+   "text": "J'ai quelque chose dans l'œil.",
+   "reading": "zjè kel-kə shoz dã l'œj",
+   "explanation": "Deze zin gebruik je wanneer je aangeeft dat er iets in je oog zit, wat ongemak of irritatie kan veroorzaken."
+  },
+  "de": {
+   "text": "Ich habe etwas in meinem Auge.",
+   "reading": "ik ha-be et-was in mai-nem au-ge",
+   "explanation": "Deze zin gebruik je om aan te geven dat er iets in je oog zit, wat ongemak kan veroorzaken. Het is handig om dit te zeggen als je hulp nodig hebt of als je iemand wilt waarschuwen."
+  },
+  "es": {
+   "text": "Tengo algo en el ojo.",
+   "reading": "ten-go al-go en el o-ho",
+   "explanation": "Deze zin betekent dat je iets in je oog hebt, bijvoorbeeld een stofje of een wimper. Je kunt deze zin gebruiken als je hulp nodig hebt om het eruit te halen."
+  }
+ },
+ "li5": {
+  "yue": {
+   "text": "你可以幫我包紮手嗎？",
+   "reading": "nei5 ho2 ji5 bong1 ngo5 baau1 zaat3 sau2 maa3?",
+   "explanation": "Deze zin vraag je wanneer je hulp nodig hebt bij het verbinden van een verwonding aan je hand. Het is handig in een medische situatie of bij een ongeluk."
+  },
+  "ko": {
+   "text": "제 손을 감아 주실 수 있나요?",
+   "reading": "je son-eul gam-a jusil su innayo?",
+   "explanation": "Deze zin vraag je aan iemand om je hand te verbinden, bijvoorbeeld na een verwonding. Het is handig in een medische situatie of als je hulp nodig hebt."
+  },
+  "id": {
+   "text": "Bisakah Anda membalut tangan saya?",
+   "reading": "bi-sa-kah an-da mem-ba-lut tan-gan sa-ya",
+   "explanation": "Deze zin vraag je wanneer je hulp nodig hebt bij het verbinden van een verwonding aan je hand. Het is handig in medische situaties of bij een ongeluk."
+  },
+  "en": {
+   "text": "Can you bandage my hand?",
+   "reading": "ken joe ban-didz mijn hant?",
+   "explanation": "Deze zin gebruik je wanneer je medische hulp nodig hebt voor een verwonding aan je hand. Het is handig om te vragen in een ziekenhuis of bij een EHBO'er."
+  },
+  "fr": {
+   "text": "Pouvez-vous bander ma main ?",
+   "reading": "poe-vez voe ban-de ma man",
+   "explanation": "Deze zin vraag je als je hulp nodig hebt bij het verbinden van een verwonding aan je hand. Het is handig in een medische situatie of bij een eerste hulpverlening."
+  },
+  "de": {
+   "text": "Könnten Sie meine Hand verbinden?",
+   "reading": "kön-ten zi-mai-ne hant fer-bin-den",
+   "explanation": "Deze zin gebruik je als je medische hulp nodig hebt, bijvoorbeeld bij een verwonding. Het is een beleefde manier om iemand te vragen om je hand te verbinden."
+  },
+  "es": {
+   "text": "¿Puede vendarme la mano?",
+   "reading": "pwe-de ven-dar-me la ma-no",
+   "explanation": "Deze zin vraag je als je hulp nodig hebt bij het verbinden van een verwonding aan je hand. Het is handig in een medische situatie of bij een EHBO-post."
+  }
+ },
+ "td1": {
+  "yue": {
+   "text": "而家幾點鐘？",
+   "reading": "ji4 gaa1 gei2 dim3 zung1?",
+   "explanation": "Deze zin betekent 'Hoe laat is het nu?' en kan gebruikt worden wanneer je de tijd wilt weten, bijvoorbeeld van een lokale inwoner of medereiziger."
+  },
+  "ko": {
+   "text": "지금 몇 시예요?",
+   "reading": "jigeum myeot siyeyo?",
+   "explanation": "Deze zin betekent 'Hoe laat is het nu?' en kan gebruikt worden om de tijd te vragen in een informele of formele situatie."
+  },
+  "id": {
+   "text": "Jam berapa sekarang?",
+   "reading": "jam be-ra-pa se-ka-rang",
+   "explanation": "Deze zin betekent 'Hoe laat is het nu?' en kan gebruikt worden om de huidige tijd te vragen."
+  },
+  "en": {
+   "text": "What time is it now?",
+   "reading": "wat tajm is it nou?",
+   "explanation": "Deze zin gebruik je om te vragen naar de huidige tijd. Het is een veelvoorkomende vraag in dagelijkse situaties, bijvoorbeeld als je een afspraak hebt."
+  },
+  "fr": {
+   "text": "Quelle heure est-il maintenant ?",
+   "reading": "kel eur e til man-tan",
+   "explanation": "Deze zin vraag je wanneer je wilt weten hoe laat het is. Het is handig om te gebruiken in situaties waar je de tijd wilt weten, bijvoorbeeld in een restaurant of op straat."
+  },
+  "de": {
+   "text": "Wie spät ist es jetzt?",
+   "reading": "wie speet ist es jets?",
+   "explanation": "Deze zin vraag je wanneer je wilt weten hoe laat het is. Het is een veelgebruikte vraag in dagelijkse situaties, bijvoorbeeld als je een afspraak hebt."
+  },
+  "es": {
+   "text": "¿Qué hora es ahora?",
+   "reading": "ke o-ra es a-o-ra",
+   "explanation": "Deze zin betekent 'Hoe laat is het nu?' en kan gebruikt worden om de huidige tijd te vragen."
+  }
+ },
+ "td2": {
+  "yue": {
+   "text": "今日幾號？",
+   "reading": "gam1 jat6 gei2 hou6?",
+   "explanation": "Deze zin betekent 'Welke dag is het vandaag?'. Je kunt deze vraag stellen wanneer je wilt weten welke datum het is."
+  },
+  "ko": {
+   "text": "오늘 무슨 요일이에요?",
+   "reading": "oneul museun yoil-ieyo?",
+   "explanation": "Deze zin betekent 'Welke dag is het vandaag?'. Je kunt dit vragen wanneer je wilt weten welke dag het is tijdens je reis."
+  },
+  "id": {
+   "text": "Hari apa hari ini?",
+   "reading": "ha-ri a-pa ha-ri i-ni",
+   "explanation": "Deze zin betekent 'Welke dag is het vandaag?' en kan gebruikt worden om te vragen naar de huidige dag van de week."
+  },
+  "en": {
+   "text": "What day is it today?",
+   "reading": "wat dei is it te-dei?",
+   "explanation": "Deze zin vraag je als je wilt weten welke dag van de week het is. Het is een veelgebruikte vraag in dagelijkse gesprekken."
+  },
+  "fr": {
+   "text": "Quel jour sommes-nous aujourd'hui ?",
+   "reading": "kel zjoer so-mã nu o-zjoer-d'ui",
+   "explanation": "Deze zin vraag je wanneer je wilt weten welke dag het is. Het is handig om te gebruiken in gesprekken of bij het plannen van activiteiten."
+  },
+  "de": {
+   "text": "Welcher Tag ist heute?",
+   "reading": "vel-cher tak ist ho-ite",
+   "explanation": "Deze zin vraag je om te achterhalen welke dag het is. Het is een veelgebruikte vraag in dagelijkse situaties, bijvoorbeeld bij het plannen van activiteiten."
+  },
+  "es": {
+   "text": "¿Qué día es hoy?",
+   "reading": "ke dia es oj",
+   "explanation": "Deze zin betekent 'Welke dag is het vandaag?' en kan gebruikt worden om te vragen naar de huidige dag van de week."
+  }
+ },
+ "td3": {
+  "yue": {
+   "text": "約定係兩點半。",
+   "reading": "joek3 ding6 hai6 loeng5 dim2 bun3.",
+   "explanation": "Deze zin betekent dat de afspraak om half drie is. Je kunt dit gebruiken om iemand te informeren over de tijd van een afspraak."
+  },
+  "ko": {
+   "text": "약속은 2시 반이에요.",
+   "reading": "Yaksogeun 2si ban-ieyo.",
+   "explanation": "Deze zin betekent dat de afspraak om half drie is. Je kunt dit gebruiken om iemand te informeren over de tijd van een afspraak."
+  },
+  "id": {
+   "text": "Janji temu adalah jam setengah tiga.",
+   "reading": "djan-dji te-mo a-da-lah djam se-tan-gah ti-ga",
+   "explanation": "Deze zin betekent dat de afspraak om 14:30 uur is. Je kunt deze zin gebruiken om iemand te informeren over de tijd van een afspraak."
+  },
+  "en": {
+   "text": "The appointment is at half past two.",
+   "reading": "de epp-oint-ment is at half past too",
+   "explanation": "Deze zin geeft aan wanneer een afspraak is gepland. Gebruik het wanneer je iemand wilt informeren over de tijd van een afspraak."
+  },
+  "fr": {
+   "text": "Le rendez-vous est à deux heures et demie.",
+   "reading": "le ran-de-vou e a deu zeur e de-mie",
+   "explanation": "Deze zin betekent dat de afspraak om half drie is. Je kunt deze zin gebruiken om iemand te informeren over de tijd van een afspraak."
+  },
+  "de": {
+   "text": "Der Termin ist um halb drei.",
+   "reading": "der ter-min ist oem halp drai",
+   "explanation": "Deze zin geeft aan wanneer een afspraak is gepland. Je kunt het gebruiken om iemand te informeren over de tijd van een afspraak."
+  },
+  "es": {
+   "text": "La cita es a las dos y media.",
+   "reading": "la si-ta es a las dos ie me-dia",
+   "explanation": "Deze zin betekent dat de afspraak om half drie is. Je kunt deze zin gebruiken om iemand te informeren over het tijdstip van een afspraak."
+  }
+ },
+ "td4": {
+  "yue": {
+   "text": "我嘅生日係三月。",
+   "reading": "ngo5 ge3 saang1 jat6 hai6 saam1 jyut6.",
+   "explanation": "Deze zin betekent dat jouw verjaardag in maart valt. Je kunt dit gebruiken om anderen te vertellen wanneer je jarig bent."
+  },
+  "ko": {
+   "text": "내 생일은 3월이에요.",
+   "reading": "nae saengil-eun sam-wol-ieyo.",
+   "explanation": "Deze zin betekent dat je verjaardag in maart valt. Je kunt dit gebruiken om anderen te vertellen wanneer je jarig bent."
+  },
+  "id": {
+   "text": "Ulang tahunku di bulan Maret.",
+   "reading": "oe-lang ta-hun-koe di boelan Ma-ret",
+   "explanation": "Deze zin betekent dat je jarig bent in de maand maart. Je kunt dit gebruiken om anderen te vertellen wanneer je verjaardag is."
+  },
+  "en": {
+   "text": "My birthday is in March.",
+   "reading": "mai ber-dai is in maart",
+   "explanation": "Deze zin geeft aan wanneer je jarig bent. Je kunt het gebruiken om iemand te vertellen wanneer je verjaardag valt."
+  },
+  "fr": {
+   "text": "Mon anniversaire est en mars.",
+   "reading": "mon an-ni-ver-sair es an mars",
+   "explanation": "Deze zin betekent dat je jarig bent in de maand maart. Je kunt dit gebruiken om iemand te vertellen wanneer je verjaardag valt."
+  },
+  "de": {
+   "text": "Mein Geburtstag ist im März.",
+   "reading": "main ge-boor-ts-tak ist im mer-ts",
+   "explanation": "Deze zin betekent dat je verjaardag in de maand maart valt. Je kunt deze zin gebruiken om anderen te vertellen wanneer je jarig bent."
+  },
+  "es": {
+   "text": "Mi cumpleaños es en marzo.",
+   "reading": "mi kum-ple-an-jos es en mar-so",
+   "explanation": "Deze zin betekent dat je verjaardag in de maand maart valt. Je kunt dit gebruiken om iemand te vertellen wanneer je jarig bent."
+  }
+ },
+ "td5": {
+  "yue": {
+   "text": "春天是我最喜愛的季節。",
+   "reading": "ceon1 tin1 si6 ngo5 zeoi3 hei2 oi3 dik1 gwai3 zit3.",
+   "explanation": "Deze zin betekent dat de spreker de lente het leukste seizoen vindt. Je kunt dit gebruiken om je voorkeur voor de lente uit te drukken tijdens een gesprek over seizoenen."
+  },
+  "ko": {
+   "text": "봄은 내가 가장 좋아하는 계절입니다.",
+   "reading": "Bom-eun naega gajang joh-ahaneun gyejeol-imnida.",
+   "explanation": "Deze zin betekent dat de spreker de lente als zijn of haar favoriete seizoen beschouwt. Je kunt dit zeggen om je voorkeur voor het voorjaar te uiten, bijvoorbeeld tijdens een gesprek over seizoenen."
+  },
+  "id": {
+   "text": "Musim semi adalah musim favorit saya.",
+   "reading": "moesim semi a-dah-lah moesim fa-vo-rit sa-ya",
+   "explanation": "Deze zin betekent dat de spreker de lente het leukste seizoen vindt. Je kunt het gebruiken om je voorkeur voor de lente uit te drukken tijdens een gesprek over seizoenen."
+  },
+  "en": {
+   "text": "Spring is my favorite season.",
+   "reading": "spring is mai fei-vrit si-zen",
+   "explanation": "Deze zin drukt uit dat de spreker de lente het leukste seizoen vindt. Je kunt het gebruiken om je voorkeur voor de lente aan te geven in een gesprek over seizoenen."
+  },
+  "fr": {
+   "text": "Le printemps est ma saison préférée.",
+   "reading": "le prent-om e ma se-zon pre-fe-re",
+   "explanation": "Deze zin betekent dat de spreker de lente het leukste seizoen vindt. Je kunt deze zin gebruiken om je voorkeur voor de lente uit te drukken tijdens een gesprek over seizoenen."
+  },
+  "de": {
+   "text": "Der Frühling ist meine Lieblingsjahreszeit.",
+   "reading": "der fru-ling ist mai-ne lie-blings-jaar-es-zait",
+   "explanation": "Deze zin betekent dat de spreker de lente het leukste seizoen vindt. Je kunt deze zin gebruiken om je voorkeur voor het seizoen aan te geven."
+  },
+  "es": {
+   "text": "La primavera es mi estación favorita.",
+   "reading": "la pri-me-ra es mi es-ta-ción fa-vo-ri-ta",
+   "explanation": "Deze zin betekent dat de spreker de lente het leukste seizoen vindt. Je kunt deze zin gebruiken om je voorkeur voor de lente aan te geven in een gesprek."
+  }
+ },
+ "at1": {
+  "yue": {
+   "text": "早餐準備好了！",
+   "reading": "zaau2 caan1 zeon3 bei6 hou2 liu5!",
+   "explanation": "Deze zin betekent dat het ontbijt klaar is. Je kunt het gebruiken om anderen te laten weten dat ze kunnen gaan eten."
+  },
+  "ko": {
+   "text": "아침이 준비됐어요!",
+   "reading": "Achimi junbidaess-eoyo!",
+   "explanation": "Deze zin betekent dat het ontbijt klaar is. Je kunt het gebruiken om anderen te laten weten dat ze kunnen komen eten."
+  },
+  "id": {
+   "text": "Sarapan sudah siap!",
+   "reading": "sa-ra-pan so-dah si-ap",
+   "explanation": "Deze zin betekent dat het ontbijt klaar is. Je kunt het gebruiken om anderen te laten weten dat ze kunnen komen eten."
+  },
+  "en": {
+   "text": "Breakfast is ready!",
+   "reading": "breg-fest is red-i",
+   "explanation": "Deze zin betekent dat het ontbijt bereid is en klaar om te worden geserveerd. Je kunt het gebruiken om anderen te laten weten dat ze kunnen komen eten."
+  },
+  "fr": {
+   "text": "Le petit déjeuner est prêt !",
+   "reading": "le pe-tie de-jeuner e pré",
+   "explanation": "Deze zin betekent dat het ontbijt gereed is. Je kunt het gebruiken om aan te geven dat je kunt gaan eten."
+  },
+  "de": {
+   "text": "Das Frühstück ist fertig!",
+   "reading": "das frühs-tük is fer-tig",
+   "explanation": "Deze zin betekent dat het ontbijt klaar is om gegeten te worden. Je kunt het gebruiken om anderen te laten weten dat ze kunnen komen eten."
+  },
+  "es": {
+   "text": "¡El desayuno está listo!",
+   "reading": "el de-sa-ju-no es-ta lis-to",
+   "explanation": "Deze zin betekent dat het ontbijt klaar is. Je kunt het gebruiken om aan te geven dat je kunt gaan eten."
+  }
+ },
+ "at2": {
+  "yue": {
+   "text": "你仲要唔要飯？",
+   "reading": "nei5 zung6 jiu3 m4 jiu3 faan6?",
+   "explanation": "Deze zin vraag of iemand nog meer rijst wil. Je kunt het gebruiken tijdens een maaltijd wanneer je aanbiedt om meer rijst te geven."
+  },
+  "ko": {
+   "text": "밥 더 드릴까요?",
+   "reading": "bap deo deulilkkaeyo?",
+   "explanation": "Deze zin betekent 'Wil je nog wat rijst?' en kan gebruikt worden tijdens een maaltijd om aan te bieden extra rijst te nemen."
+  },
+  "id": {
+   "text": "Apakah kamu mau nasi lagi?",
+   "reading": "a-pa-kah ka-mu mau na-si la-gi",
+   "explanation": "Deze zin betekent 'Wil je nog wat rijst?'. Je kunt dit vragen als je iemand aanbiedt om meer rijst te nemen tijdens een maaltijd."
+  },
+  "en": {
+   "text": "Would you like some more rice?",
+   "reading": "woed joo laik som moor rijs?",
+   "explanation": "Deze zin vraag je aan iemand om te weten of ze nog meer rijst willen. Het is handig tijdens een maaltijd of als je iemand iets aanbiedt."
+  },
+  "fr": {
+   "text": "Tu veux encore du riz ?",
+   "reading": "tü vö an-kor dü ri",
+   "explanation": "Deze zin betekent 'Wil je nog wat rijst?' en kan gebruikt worden tijdens een maaltijd om aan te bieden of te vragen of iemand meer rijst wil."
+  },
+  "de": {
+   "text": "Möchtest du noch etwas Reis?",
+   "reading": "mörk-tes do no-ch et-was ra-is",
+   "explanation": "Deze zin vraag je aan iemand of hij of zij nog meer rijst wil. Het is een informele manier om te vragen of iemand nog honger heeft."
+  },
+  "es": {
+   "text": "¿Quieres más arroz?",
+   "reading": "ki-e-res mas a-ros",
+   "explanation": "Deze zin betekent 'Wil je nog wat rijst?' en kan gebruikt worden tijdens een maaltijd om te vragen of iemand meer rijst wil."
+  }
+ },
+ "at3": {
+  "yue": {
+   "text": "可唔可以幫我遞鹽？",
+   "reading": "ho2 m4 ho2 ji5 bong1 ngo5 dai3 jim4?",
+   "explanation": "Deze zin vraag je iemand om je het zout aan te geven, bijvoorbeeld tijdens een maaltijd. Het is een beleefde manier om om hulp te vragen aan tafel."
+  },
+  "ko": {
+   "text": "소금을 건네줄 수 있어요?",
+   "reading": "sogeumeul geonnejul su isseoyo?",
+   "explanation": "Deze zin vraag je wanneer je iemand vraagt om het zout aan je door te geven, bijvoorbeeld tijdens een maaltijd."
+  },
+  "id": {
+   "text": "Bisakah kamu memberikan garam?",
+   "reading": "bi-sa-kah ka-mu me-be-ri-kan ga-ram",
+   "explanation": "Deze zin vraag je als je iemand wilt vragen om het zout aan je door te geven, bijvoorbeeld tijdens een maaltijd."
+  },
+  "en": {
+   "text": "Could you pass the salt?",
+   "reading": "koed joe pes de soolt?",
+   "explanation": "Deze zin gebruik je wanneer je iemand vraagt om het zout aan je door te geven, meestal tijdens een maaltijd."
+  },
+  "fr": {
+   "text": "Peux-tu passer le sel ?",
+   "reading": "peu-tü pas-se le sel",
+   "explanation": "Deze zin vraag je wanneer je aan tafel zit en iemand het zout moet doorgeven. Het is een informele manier om om hulp te vragen."
+  },
+  "de": {
+   "text": "Kannst du das Salz reichen?",
+   "reading": "kanst do das zalts ra-i-chen",
+   "explanation": "Deze zin vraag je aan iemand om het zout aan je door te geven, bijvoorbeeld tijdens het eten. Het is een informele manier om om hulp te vragen aan tafel."
+  },
+  "es": {
+   "text": "¿Puedes pasarme la sal?",
+   "reading": "pu-edes pas-ar-me la sal",
+   "explanation": "Deze zin betekent 'Kun je het zout aan mij geven?' en wordt gebruikt wanneer je iemand vraagt om het zout door te geven tijdens een maaltijd."
+  }
+ },
+ "at4": {
+  "yue": {
+   "text": "今晚食咩好？",
+   "reading": "gam1 maan5 sik6 me1 hou2?",
+   "explanation": "Deze zin betekent 'Wat eten we vanavond?' en kan gebruikt worden wanneer je wilt vragen naar het avondeten of suggesties wilt voor het diner."
+  },
+  "ko": {
+   "text": "오늘 저녁에 뭐 먹을까요?",
+   "reading": "oneul jeonyeoge mwo meogeulkkayo?",
+   "explanation": "Deze zin betekent 'Wat eten we vanavond?' en kan gebruikt worden om een gesprek te beginnen over het avondeten."
+  },
+  "id": {
+   "text": "Apa yang kita makan malam ini?",
+   "reading": "apa yang ki-ta ma-kan ma-lam i-ni",
+   "explanation": "Deze zin betekent 'Wat eten we vanavond?' en kan gebruikt worden om te vragen naar het avondeten."
+  },
+  "en": {
+   "text": "What are we having for dinner tonight?",
+   "reading": "wat ar wi hev-ing for din-er tu-nait",
+   "explanation": "Deze zin vraag je wanneer je wilt weten wat er 's avonds te eten is. Het is een veelgebruikte vraag in gezinnen of bij vrienden die samen eten."
+  },
+  "fr": {
+   "text": "Qu'est-ce qu'on mange ce soir ?",
+   "reading": "kes-kon maans se swar",
+   "explanation": "Deze zin vraag je wanneer je wilt weten wat er voor het avondeten op het menu staat. Het is een informele manier om naar de plannen voor het diner te vragen."
+  },
+  "de": {
+   "text": "Was essen wir heute Abend?",
+   "reading": "vas es-sen wir ho-i-te a-bend",
+   "explanation": "Deze zin betekent 'Wat eten we vanavond?' en kan gebruikt worden om te vragen naar het avondeten of om een maaltijd te plannen."
+  },
+  "es": {
+   "text": "¿Qué comemos esta noche?",
+   "reading": "ke ko-me-mos es-ta no-che",
+   "explanation": "Deze zin betekent 'Wat eten we vanavond?' en kan gebruikt worden om te vragen naar het avondeten of om een maaltijd te plannen."
+  }
+ },
+ "at5": {
+  "yue": {
+   "text": "多謝你嘅飯，真係好好味。",
+   "reading": "do1 ze6 nei5 ge3 faan6, zan1 hai6 hou2 hou2 mei6.",
+   "explanation": "Deze zin gebruik je om je waardering te uiten na een maaltijd. Het is een beleefde manier om de kok of gastheer te bedanken voor het eten."
+  },
+  "ko": {
+   "text": "식사 감사합니다, 정말 맛있었어요.",
+   "reading": "Siksa gamsahamnida, jeongmal masisseosseoyo.",
+   "explanation": "Deze zin gebruik je om je waardering te uiten na een maaltijd. Het is een beleefde manier om de gastheer of kok te bedanken voor het eten."
+  },
+  "id": {
+   "text": "Terima kasih untuk makanannya, itu sangat lezat.",
+   "reading": "te-ri-ma ka-sih un-tuk ma-ka-nan-nya, i-tu sa-ngat le-zat.",
+   "explanation": "Deze zin gebruik je om je waardering te uiten na een maaltijd. Het is een vriendelijke manier om de gastheer of kok te bedanken."
+  },
+  "en": {
+   "text": "Thank you for the meal, it was delicious.",
+   "reading": "tenk joer for de miel, it was de-li-shes",
+   "explanation": "Deze zin gebruik je om je waardering te uiten na een maaltijd. Het is een vriendelijke manier om de gastheer of kok te bedanken."
+  },
+  "fr": {
+   "text": "Merci pour le repas, c'était délicieux.",
+   "reading": "mer-sie pour le re-pah, se-tait de-li-sieu",
+   "explanation": "Deze zin gebruik je om je waardering te uiten na een maaltijd. Het is een beleefde manier om iemand te bedanken voor het eten."
+  },
+  "de": {
+   "text": "Danke für das Essen, es war köstlich.",
+   "reading": "danke voor das es-sen, es vaar kös-tlich",
+   "explanation": "Deze zin gebruik je om je waardering te uiten na een maaltijd. Het is een vriendelijke manier om de gastheer of gastvrouw te bedanken."
+  },
+  "es": {
+   "text": "Gracias por la comida, estaba deliciosa.",
+   "reading": "gra-sjas por la ko-mi-da, es-ta-ba de-li-sjo-sa",
+   "explanation": "Deze zin gebruik je om je waardering voor een maaltijd te uiten. Het is een vriendelijke manier om iemand te bedanken na het eten."
+  }
+ }
+}

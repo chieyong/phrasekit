@@ -1,24 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getLanguage } from "@/data/languages";
-
-// Vertaalt één Nederlandse zin naar een doeltaal, opgebouwd uit het taalregister
-// zodat elke (ook nieuwe) taal werkt. Levert tekst + lezing + korte uitleg.
-function buildPrompt(langCode: string): string | null {
-  const l = getLanguage(langCode);
-  if (!l) return null;
-  return `Je bent een taalassistent voor Nederlandstalige reizigers. Vertaal de gegeven Nederlandse zin naar het ${l.label} (${l.scriptNote}), natuurlijk en geschikt voor dagelijkse reissituaties.
-
-Reageer met ALLEEN geldig JSON:
-{
-  "text": "<vertaling ${l.scriptNote}>",
-  "reading": "<${l.readingLabel}-lezing>",
-  "explanation": "<in het Nederlands: wat de zin betekent en wanneer te gebruiken, max 2 zinnen>"
-}
-
-Regels:
-- Natuurlijke, correcte vertaling — geen letterlijke woord-voor-woord vertaling.
-- Geef de ${l.readingLabel}-lezing correct weer.`;
-}
+import { buildPhraseTranslatePrompt } from "@/lib/phraseTranslatePrompt";
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.OPENAI_API_KEY;
@@ -37,7 +18,7 @@ export async function POST(request: NextRequest) {
 
   if (!sourceText) return NextResponse.json({ error: "sourceText is required" }, { status: 400 });
 
-  const systemPrompt = buildPrompt(language);
+  const systemPrompt = buildPhraseTranslatePrompt(language);
   if (!systemPrompt) return NextResponse.json({ error: "Unknown language" }, { status: 400 });
 
   try {

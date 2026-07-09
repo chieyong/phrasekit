@@ -1,4 +1,5 @@
-import { Category, Phrase, ExampleChip, AskNowResult } from "@/types";
+import { Category, Phrase, PhraseTranslation, ExampleChip, AskNowResult } from "@/types";
+import staticPhraseTranslations from "./staticPhraseTranslations.json";
 
 // ─── Categorieën ──────────────────────────────────────────────────────────────
 
@@ -99,7 +100,13 @@ export const categories: Category[] = [
 
 // ─── Zinnen ───────────────────────────────────────────────────────────────────
 
-export const phrases: Phrase[] = [
+// Handgeschreven basis: ja/zh staan als legacy-velden op elke zin hieronder.
+// De overige app-talen komen uit het voorgegenereerde
+// staticPhraseTranslations.json (zie scripts/generate-phrase-translations.ts)
+// en worden verderop in `translations` gemerged — zo heeft elke zin in élke
+// taal meteen tekst + audio, zonder on-demand AI-call (die bestaat toch alleen
+// voor eigen zinnen van gebruikers, zie PhraseCard's `needsTranslation`).
+export const phrasesBase: Phrase[] = [
   // STATION
   {
     id: "s1",
@@ -840,6 +847,15 @@ export const mockAskNowResponses: Record<string, AskNowResult> = {
     },
   },
 };
+
+// ─── Merge met voorgegenereerde vertalingen ───────────────────────────────────
+
+const GEN_PHRASE_TR = staticPhraseTranslations as Record<string, Record<string, PhraseTranslation>>;
+
+export const phrases: Phrase[] = phrasesBase.map((p) => ({
+  ...p,
+  translations: { ...GEN_PHRASE_TR[p.id], ...p.translations },
+}));
 
 // ─── Hulpfuncties ─────────────────────────────────────────────────────────────
 
